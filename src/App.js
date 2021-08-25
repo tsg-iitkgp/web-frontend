@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// React imports
+import React from 'react';
+// Third-party imports
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
+// fs imports
+import Home from './pages/Home';
+import Dashboard from './pages/admin/Dashboard';
+import NotFound from './pages/NotFound';
+import PrivateRoute from './routes/PrivateRoute';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <PrivateRoute exact path="/dashboard" component={Dashboard} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
   );
 }
 
