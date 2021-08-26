@@ -1,3 +1,10 @@
-.carouselItem img {
-    height: 10vh;
+.carouselContainer img {
+    object-fit: contain;
+    background-color: #fff;
+}
+
+.carouselContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }

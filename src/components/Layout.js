@@ -36,9 +36,6 @@ export default function Layout({ children }) {
                         </ul>
                     </li> */}
                         <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
                             <Link to="/blog">Blog</Link>
                         </li>
                         <li>
@@ -47,8 +44,11 @@ export default function Layout({ children }) {
                         <li>
                             <Link to="/awards">Awards</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/elections">Elections</Link>
+                        </li> */}
+                        <li>
+                            <Link to="/booking">Booking</Link>
                         </li>
                         <li>
                             <Link to="/contacts">Contacts</Link>
