@@ -1,0 +1,48 @@
+.card {
+    width: 90%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+    overflow: hidden;
+    text-align: center;
+    margin: 15px 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in;
+}
+
+.card img {
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.card .contentContainer {
+    padding: 12px 10px;
+}
+
+.card .contentContainer h1 {
+    margin: 10px;
+}
+
+.card .contentContainer h2 {
+    margin: 7px 0;
+    font-size: 16px;
+    color: rgb(129, 129, 129);
+}
+
+.card .iconsContainer a {
+    font-size: 24px;
+    margin: 10px;
+    color: rgb(129, 129, 129);
+    transition: color 0.3s ease;
+}
+
+.card .iconsContainer a:hover {
+    color: rgb(43, 43, 43);
+    transition: color 0.3s ease;
+}

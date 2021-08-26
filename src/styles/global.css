@@ -23,3 +23,10 @@ section {
   align-self: center;
   padding: 30px;
 }
+
+.pageHeading {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0;
+}

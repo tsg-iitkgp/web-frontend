@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { FaFacebook, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
 import NavbarStyles from '../styles/components/navbar.module.css';
 import FooterStyles from '../styles/components/footer.module.css';
-import kgpLogo from '../data/images/general/IIT_Kharagpur_Logo.svg';
 
 export default function Layout({ children }) {
     return (
@@ -65,7 +64,7 @@ export default function Layout({ children }) {
                 <div className={FooterStyles.footerContainer}>
                     <div className={FooterStyles.footerCol}>
                         <div className={FooterStyles.address}>
-                            <img src={kgpLogo} alt="IITKGP Logo" />
+                            <img src={'/data/images/general/IIT_Kharagpur_Logo.svg'} alt="IITKGP Logo" />
                             <div>
                                 <h1>
                                     Technology Students' Gymkhana

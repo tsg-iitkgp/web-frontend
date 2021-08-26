@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Dashboard from './pages/admin/Dashboard';
 import NotFound from './pages/NotFound';
 import PrivateRoute from './routes/PrivateRoute';
+import Contacts from './pages/Contacts';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/contacts" component={Contacts} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <Route component={NotFound} />
       </Switch>
