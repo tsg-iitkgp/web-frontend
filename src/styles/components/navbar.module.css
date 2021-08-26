@@ -1,0 +1,189 @@
+/* header */
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    padding: 0 5%;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.navbar li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+
+.navbar li a:hover,
+.navbar .menuBtn:hover {
+    background-color: #f4f4f4;
+}
+
+.navbar .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: black;
+}
+
+/* menu */
+
+.navbar .menu {
+    clear: both;
+    height: 0;
+    transition: height 0.3s ease-out;
+}
+
+/* menu icon */
+
+.navbar .menuIcon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.navbar .menuIcon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+}
+
+.navbar .menuIcon .navicon:before,
+.navbar .menuIcon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+.navbar .menuIcon .navicon:before {
+    top: 5px;
+}
+
+.navbar .menuIcon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.navbar .menuBtn {
+    display: none;
+}
+
+.navbar .menuBtn:checked ~ .menu {
+    height: unset;
+}
+
+.navbar .menuBtn:checked ~ .menuIcon .navicon {
+    background: transparent;
+}
+
+.navbar .menuBtn:checked ~ .menuIcon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.navbar .menuBtn:checked ~ .menuIcon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.navbar .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:before,
+.navbar .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .navbar li {
+        float: left;
+    }
+    .navbar li a {
+        padding: 20px 30px;
+    }
+    .navbar .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .navbar .menuIcon {
+        display: none;
+    }
+}
+
+/* DropDownMenu Styling */
+
+.navbar ul ul {
+    display: none;
+    margin: 1px;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+.navbar ul ul li {
+    width: 100%;
+    float: none;
+    display: list-item;
+}
+
+/* Change this in order to change the Dropdown symbol */
+.navbar li > a:after {
+    content: " +";
+}
+.navbar li > a:only-child:after {
+    content: "";
+}
+
+.navbar .menu {
+    overflow: hidden;
+}
+
+@media (min-width: 48em) {
+    .navbar .menu {
+        overflow: visible;
+    }
+
+    .navbar ul ul {
+        position: absolute;
+        top: 56px; /* the height of the main navbar */
+    }
+    .navbar ul ul li {
+        width: 170px;
+        position: relative;
+    }
+    .navbar ul ul ul {
+        top: 0px;
+        left: 170px;
+    }
+
+    .navbar ul ul ul li {
+        left: 0px;
+    }
+    .navbar ul li:hover > ul {
+        display: inherit;
+    }
+}
