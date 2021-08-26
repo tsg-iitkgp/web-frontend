@@ -6,7 +6,13 @@
     position: fixed;
     width: 100%;
     z-index: 3;
-    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar > div {
+    width: 90%;
+    max-width: 1500px;
 }
 
 .navbar ul {
@@ -116,7 +122,7 @@
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 1100px) {
     .navbar li {
         float: left;
     }
@@ -162,7 +168,7 @@
     overflow: hidden;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 1100px) {
     .navbar .menu {
         overflow: visible;
     }
