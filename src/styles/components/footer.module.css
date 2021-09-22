@@ -7,21 +7,47 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     max-width: 1500px;
     padding: 30px 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .footerCol {
     display: flex;
     flex-direction: column;
+    width: 30%;
+
+
 }
 
+.footerCol img{
+    height: 8em;
+    width: 7em;
+
+} 
+
+.footerCol .columnOne{
+    border-right: 3px dashed rgb(255, 255, 255);
+  align-items: center;
+    padding-right: 0%;
+    width: 85%;
+    margin: 0 0 0 25%;
+    justify-content: center;
+}
+
+svg{
+    fill: white;
+}
+
+
+
+
 .footerCol .address {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .footerCol .address img {
@@ -41,7 +67,7 @@ footer {
 .iconsContainer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .iconsContainer a {
@@ -53,11 +79,37 @@ footer {
 .iconsContainer a:hover {
     color: #000;
 }
+.footerCol .columnTwo{
+    color: white;
+    margin: 0 0 0 20%;
+    
+}
+.quickLinkHeader {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 22px;
+    border-bottom: 3px solid grey;
+    border-width: 70%;
+   padding: 0 0 2% 0;
+}
+.quickLinkOne {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 5% 0 0 0;
+    border-bottom: 1.5px dotted grey;
+    padding: 0 0 0.6% 0;
+}
 
+.footerCol .columnThree{
+    color: white;
+    margin: 0 0 0 -15%;
+    
+}
 .quickLink {
-    color: #000;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
 
 .quickLink:hover {
     text-decoration: underline;
