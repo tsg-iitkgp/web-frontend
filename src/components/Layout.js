@@ -18,23 +18,7 @@ export default function Layout({ children }) {
                         <li>
                             <Link to="/">Home</Link>
                         </li>
-                        {/* <li>
-                        <a href>About</a>
-                        <ul className={NavbarStyles.menu}>
-                            <li><a href="#work">Our Work</a></li>
-                            <li>
-                                <a href>About</a>
-                                <ul className={NavbarStyles.menu}>
-                                    <li><a href="#work">Our Work</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#careers">Careers</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#careers">Careers</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </li> */}
+
                         <li>
                             <Link to="/blog">Blog</Link>
                         </li>
@@ -57,56 +41,109 @@ export default function Layout({ children }) {
                 </div>
 
             </nav>
+
+
+
             <div className="main-container">
                 {children}
             </div>
             <footer>
                 <div className={FooterStyles.footerContainer}>
+
+
                     <div className={FooterStyles.footerCol}>
-                        <div className={FooterStyles.address}>
-                            <img src={'/data/images/general/IIT_Kharagpur_Logo.svg'} alt="IITKGP Logo" />
-                            <div>
-                                <h1>
-                                    Technology Students' Gymkhana
-                                </h1>
-                                <p>
-                                    Indian Institute of Technology Kharagpur, <br />
-                                    West Bengal - 721302
-                                </p>
-                                <div className={FooterStyles.iconsContainer}>
-                                    <a href="https://www.facebook.com/TSG.IITKharagpur">
-                                        <FaFacebook />
-                                    </a>
-                                    <a href="https://twitter.com/tsg_iitkgp">
-                                        <FaTwitter />
-                                    </a>
-                                    <a href="https://www.youtube.com/channel/UCuTNELMlkNfJxAQ2vGJIe5Q">
-                                        <FaYoutube />
-                                    </a>
-                                    <a href="https://github.com/tsg-iitkgp">
-                                        <FaGithub />
-                                    </a>
+                        <center>
+                            <div className={FooterStyles.columnOne}>
+                                <img src={'/data/images/general/IIT_Kharagpur_Logo.png'} alt="IITKGP Logo" />
+                                <div className={FooterStyles.address}>
+
+                                    <div>
+                                        <br />
+
+                                        <h3>
+                                            Technology Students' Gymkhana
+                                        </h3>
+                                        <p>
+                                            Indian Institute of Technology Kharagpur, <br />
+                                            West Bengal - 721302
+                                        </p>
+                                        <br />
+                                        <div className={FooterStyles.iconsContainer}>
+                                            <a href="https://www.facebook.com/TSG.IITKharagpur">
+                                                <FaFacebook />
+                                            </a>
+                                            <a href="https://twitter.com/tsg_iitkgp">
+                                                <FaTwitter />
+                                            </a>
+                                            <a href="https://www.youtube.com/channel/UCuTNELMlkNfJxAQ2vGJIe5Q">
+                                                <FaYoutube />
+                                            </a>
+                                            <a href="https://github.com/tsg-iitkgp">
+                                                <FaGithub />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
-
+                        </center>
+                    </div>
+                    <div className={FooterStyles.footerCol}>
+                        <div className={FooterStyles.columnTwo}>
+                            <a className={FooterStyles.quickLinkHeader} href="/">
+                                Quick Links
+                            </a>
+                            <br />
+                            <br />
+                            <br />
+                            <a className={FooterStyles.quickLinkOne} href="/">
+                                Departments
+                            </a>
+                            <br />
+                            <br />
+                            <a className={FooterStyles.quickLinkOne} href="/">
+                                Centres
+                            </a>
+                            <br />
+                            <br />
+                            <a className={FooterStyles.quickLinkOne} href="/">
+                                Departments
+                            </a>
+                            <br />
+                            <br />
+                            <a className={FooterStyles.quickLinkOne} href="/">
+                                Departments
+                            </a>
                         </div>
-
                     </div>
                     <div className={FooterStyles.footerCol}>
-                        <a className={FooterStyles.quickLink} href="/">
-                            IITKGP Website
-                        </a>
-                        <a className={FooterStyles.quickLink} href="/">
-                            IITKGP Website
-                        </a>
-                    </div>
-                    <div className={FooterStyles.footerCol}>
-                        <a className={FooterStyles.quickLink} href="/">
-                            IITKGP Website
-                        </a>
-                        <a className={FooterStyles.quickLink} href="/">
-                            IITKGP Website
-                        </a>
+                        <div className={FooterStyles.columnThree}>
+                            <a className={FooterStyles.quickLinkHeader} href="/">
+                                Explore
+                            </a>
+                            <br />
+                            <br />
+                            <br />
+                            <a className={FooterStyles.quickLinkOne} href="/">
+                                IITKGP Website
+                            </a>
+                            <br />
+                            <br />
+                            <a className={FooterStyles.quickLinkOne} href="/">
+                                Departments
+                            </a>
+                            <br />
+                            <br />
+                            <a className={FooterStyles.quickLinkOne} href="/">
+                                Departments
+                            </a>
+                            <br />
+                            <br />
+                            <a className={FooterStyles.quickLinkOne} href="/">
+                                Departments
+                            </a>
+                        </div>
                     </div>
                 </div>
             </footer>
