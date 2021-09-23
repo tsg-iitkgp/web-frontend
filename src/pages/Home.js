@@ -54,8 +54,10 @@ export default function Home() {
           their extra-curricular talents.
         </p>
       </Section>
-
-      <SocAndCell></SocAndCell>
+      <Section>
+        <h1 className="section-heading">Societies And Cells</h1>
+        <SocAndCell></SocAndCell>
+      </Section>
     </Layout>
   );
 }
