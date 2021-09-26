@@ -20,7 +20,7 @@ import Booking from './pages/Booking';
 
 function App() {
   return (
-    <Router basename="/web-frontend">
+    <Router>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/blog" component={Blog} />
