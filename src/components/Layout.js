@@ -3,11 +3,33 @@ import { Link } from 'react-router-dom';
 import { FaFacebook, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
 import NavbarStyles from '../styles/components/navbar.module.css';
 import FooterStyles from '../styles/components/footer.module.css';
+import { useState } from 'react';
+import logo from '../images/IIT_Kharagpur_Logo.png';
 
 export default function Layout({ children }) {
+    // using setIsScrolled state to render navbar on the basis of scroll status
+
+    const [isScrolled, setIsScrolled] = useState(false);
+    const logoText = document.querySelector(`.${NavbarStyles.logo}`);
+    const changeNavbarBackground = ()=>{
+        window.scrollY>80? setIsScrolled(true) : setIsScrolled(false); 
+        
+    }
+
+    window.addEventListener('scroll',changeNavbarBackground);
+    // navbar class on the basis of scroll status
+    let navbarClass;
+    if(isScrolled){
+        navbarClass= `${NavbarStyles.navbar} ${NavbarStyles.active}`;
+        logoText.textContent= 'Gymkhana';
+    }else{
+        navbarClass=`${NavbarStyles.navbar}`;
+        // logoText.textContent = ' ';
+    }
+
     return (
         <div className="layout">
-            <nav className={NavbarStyles.navbar}>
+            <nav className={navbarClass}>
                 <div>
                     <Link to="/" className={NavbarStyles.logo}>Gymkhana</Link>
                     <input className={NavbarStyles.menuBtn} type="checkbox" id={NavbarStyles.menuBtn} />
@@ -54,7 +76,7 @@ export default function Layout({ children }) {
                     <div className={FooterStyles.footerCol}>
                         <center>
                             <div className={FooterStyles.columnOne}>
-                                <img src={'/data/images/general/IIT_Kharagpur_Logo.png'} alt="IITKGP Logo" />
+                                <img src={logo} alt="IITKGP Logo" />
                                 <div className={FooterStyles.address}>
 
                                     <div>

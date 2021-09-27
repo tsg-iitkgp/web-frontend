@@ -8,7 +8,7 @@ import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/open-animation.css";
 import Styles from "../styles/home.module.css";
-
+import logo from '../images/IIT_Kharagpur_Logo.png';
 export default function Home() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
@@ -19,22 +19,18 @@ export default function Home() {
   document.title = "Home | TSG";
   return (
     <Layout>
-      <Section>
-        <AutoplaySlider
-          className={Styles.carouselContainer}
-          play={true}
-          interval={5000}
-        >
-          <div
-            data-src={"/data/images/posters/cyclothon.jpeg"}
-            onClick={() => openLink("")}
-          />
-          <div
-            data-src={"/data/images/posters/case_study.jpg"}
-            onClick={() => openLink("")}
-          />
-        </AutoplaySlider>
-      </Section>
+      <div className={Styles.backgroundImage}>
+                <div className={Styles.textOverlay}>
+                    <div className={Styles.kgpSvg}>
+                        <img src= {logo} alt='KGP_logo' />                            
+                    </div>
+                    <div className= {Styles.heading}>
+                        <h1>Technology Student's Gymkhana</h1>
+                        <h2>IIT Kharagpur</h2>
+                        <h2>Welcomes You</h2>
+                    </div>
+                </div>
+            </div>
       <Section>
         <h2 className="section-heading">About Us</h2>
         <p className="description">
