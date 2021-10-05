@@ -2,20 +2,10 @@ import React from "react";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import SocAndCell from "./SocAndCell";
-
-import AwesomeSlider from "react-awesome-slider";
-import withAutoplay from "react-awesome-slider/dist/autoplay";
-import "react-awesome-slider/dist/styles.css";
-import "react-awesome-slider/dist/custom-animations/open-animation.css";
 import Styles from "../styles/home.module.css";
 import logo from '../images/IIT_Kharagpur_Logo.png';
+
 export default function Home() {
-  const AutoplaySlider = withAutoplay(AwesomeSlider);
-
-  const openLink = (videoLink) => {
-    window.open(videoLink);
-  };
-
   document.title = "Home | TSG";
   return (
     <Layout>

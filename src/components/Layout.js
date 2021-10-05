@@ -1,30 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useLocation} from 'react-router-dom';
 import { FaFacebook, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
 import NavbarStyles from '../styles/components/navbar.module.css';
 import FooterStyles from '../styles/components/footer.module.css';
 import { useState } from 'react';
 import logo from '../images/IIT_Kharagpur_Logo.png';
-
 export default function Layout({ children }) {
     // using setIsScrolled state to render navbar on the basis of scroll status
-
+    const location = useLocation(); //to render navbar on the basis of route
     const [isScrolled, setIsScrolled] = useState(false);
     const logoText = document.querySelector(`.${NavbarStyles.logo}`);
     const changeNavbarBackground = ()=>{
-        window.scrollY>80? setIsScrolled(true) : setIsScrolled(false); 
-        
+        window.scrollY>80? setIsScrolled(true) : setIsScrolled(false);
     }
-
     window.addEventListener('scroll',changeNavbarBackground);
     // navbar class on the basis of scroll status
     let navbarClass;
-    if(isScrolled){
-        navbarClass= `${NavbarStyles.navbar} ${NavbarStyles.active}`;
-        logoText.textContent= 'Gymkhana';
+    
+    //if path is home then render tranparent navbar
+    if(location.pathname === '/'){
+        if(isScrolled){
+            navbarClass= `${NavbarStyles.navbar} ${NavbarStyles.active}`;
+            logoText.textContent= 'Gymkhana';
+        }else{
+            navbarClass=`${NavbarStyles.navbar}`;
+            // logoText.textContent = ' ';
+        }
     }else{
-        navbarClass=`${NavbarStyles.navbar}`;
-        // logoText.textContent = ' ';
+        navbarClass= `${NavbarStyles.navbar} ${NavbarStyles.active}`;
     }
 
     return (
