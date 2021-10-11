@@ -12,11 +12,11 @@ body * {
   min-height: 100vh;
 }
 
-.main-container {
-  /* padding-top: 100px; */
+/* .main-container {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
-}
+} */
 
 section {
   width: 90%;
