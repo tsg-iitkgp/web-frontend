@@ -108,3 +108,9 @@
   background: #333;
   color: #fff;
 }
+
+/* new */
+
+.card-front {
+  height: 100%;
+}
