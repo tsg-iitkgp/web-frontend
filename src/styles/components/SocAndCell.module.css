@@ -1,5 +1,4 @@
 .socs {
-  margin: 0;
   padding: 0;
   min-height: 60vh;
   display: flex;
@@ -9,7 +8,7 @@
 }
 
 .container {
-  width: 1000px;
+  width: auto;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -51,6 +50,16 @@
 }
 .container .card:hover .face.face1.sc {
   background-image: url("https://qph.fs.quoracdn.net/main-qimg-e3b4b784f8de5e3832062022d3a807bc");
+  background-size: cover;
+  transform: translateY(20%);
+}
+.container .card:hover .face.face1.wf {
+  background-image: url("https://c.ndtvimg.com/2021-09/q928ee4o_peace-generic_625x300_20_September_21.jpg");
+  background-size: cover;
+  transform: translateY(20%);
+}
+.container .card:hover .face.face1.sg {
+  background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/tennis-647_112117022750.jpg?6QEeQ03DDmg.ja7uFYYGAadlCGBZOAHt&size=770:433");
   background-size: cover;
   transform: translateY(20%);
 }

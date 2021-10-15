@@ -19,7 +19,7 @@ export default function SocAndCell() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                 cum cumque minus iste veritatis provident at.
               </p>
-              <a href="#">Read More</a>
+              <a href="/societies">Read More</a>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function SocAndCell() {
         <div className={Styles.card}>
           <div className={`${Styles.face} ${Styles.face1} ${Styles.te}`}>
             <div className={Styles.content}>
-              <h3>Tech and Educational</h3>
+              <h3>Technology</h3>
             </div>
           </div>
           <div className={`${Styles.face} ${Styles.face2}`}>
@@ -36,15 +36,15 @@ export default function SocAndCell() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                 cum cumque minus iste veritatis provident at.
               </p>
-              <a href="#">Read More</a>
+              <a href="/societies">Read More</a>
             </div>
           </div>
         </div>
 
         <div className={Styles.card}>
-          <div className={`${Styles.face} ${Styles.face1} ${Styles.rg}`}>
+          <div className={`${Styles.face} ${Styles.face1} ${Styles.wf}`}>
             <div className={Styles.content}>
-              <h3>Research Groups</h3>
+              <h3>Welfare</h3>
             </div>
           </div>
           <div className={`${Styles.face} ${Styles.face2}`}>
@@ -53,7 +53,24 @@ export default function SocAndCell() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                 cum cumque minus iste veritatis provident at.
               </p>
-              <a href="#">Read More</a>
+              <a href="/societies">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div className={Styles.card}>
+          <div className={`${Styles.face} ${Styles.face1} ${Styles.sg}`}>
+            <div className={Styles.content}>
+              <h3>Sports and Games</h3>
+            </div>
+          </div>
+          <div className={`${Styles.face} ${Styles.face2}`}>
+            <div className={Styles.content}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                cum cumque minus iste veritatis provident at.
+              </p>
+              <a href="/societies">Read More</a>
             </div>
           </div>
         </div>

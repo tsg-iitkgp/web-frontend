@@ -1,4 +1,4 @@
-* {
+/* * {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -7,22 +7,22 @@
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-}
+} */
 
-html {
+/* html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 10px;
   cursor: default;
-}
+} */
 
-body {
+/* body {
   font: 1.6rem Arial, Helvetica, sans-serif;
   color: #333;
   background: #f7f7f7;
   margin: 0;
-}
-
+} */
+/* 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,27 +40,16 @@ main {
   min-height: 100vh;
   padding: 3rem;
   gap: 3rem;
+} */
+.heading {
+  text-align: center;
 }
 
-h1,
-h2,
-p {
-  margin: 0;
+.full {
+  margin: 0 5% 0 5%;
 }
 
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3.6rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
+.img1 {
   display: block;
   max-width: 100%;
   height: 100%;
@@ -68,7 +57,7 @@ img {
   object-fit: cover;
 }
 
-.cards-wrapper {
+.cardswrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -88,26 +77,26 @@ img {
   height: 316px;
 }
 
-.card:hover .card-front {
+.card:hover .cardfront {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
   visibility: hidden;
   opacity: 0;
 }
 
-.card:hover .card-back {
+.card:hover .cardback {
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
   visibility: visible;
   opacity: 1;
 }
 
-.card:hover .card-back-content {
+.card:hover .cardback-content {
   -webkit-animation: translate 1s ease-in-out;
   animation: translate 1s ease-in-out;
 }
 
-.card-front {
+.cardfront {
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   border-radius: 1rem;
@@ -117,7 +106,7 @@ img {
   overflow: hidden;
 }
 
-.card-back {
+.cardback {
   position: absolute;
   height: 100%;
   padding: 2rem;
@@ -135,7 +124,7 @@ img {
   opacity: 0;
 }
 
-.card-back-content {
+.cardbackcontent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,35 +140,35 @@ img {
 }
 
 /* .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
-  color: #fff;
-  font-weight: 700;
-  background: #2b5ed4;
-  padding: 1.5rem;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-  border-radius: 0.5rem;
-} */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    background: #2b5ed4;
+    padding: 1.5rem;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    border-radius: 0.5rem;
+  } */
 
 /* .button:hover,
-.button:focus {
-  background: #2754be;
-}
-
-.button:active {
-  background: #234ba9;
-} */
+  .button:focus {
+    background: #2754be;
+  }
+  
+  .button:active {
+    background: #234ba9;
+  } */
 
 @-webkit-keyframes translate {
   0% {
@@ -210,55 +199,35 @@ img {
 }
 
 @media (max-width: 1024px) {
-  .cards-wrapper {
+  .cardswrapper {
     grid-template-columns: auto;
     width: auto;
   }
 }
 
-@media (max-width: 425px) {
-  body {
-    font-size: 1.2rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2.6rem;
-  }
-
-  /* .button {
-    padding: 1rem;
-  } */
-}
-
 /* new */
-.card-front {
+.cardfront {
   height: 100%;
 }
 
-/* new */
-a {
+.a1 {
+  text-decoration: none;
   color: black;
   letter-spacing: 0.1em;
-  display: inline;
   padding: 5px 5px;
   position: relative;
 }
-a:after {
+.a1:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
   height: 2px;
-
   position: absolute;
   background: #333;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after {
-  width: 30%;
+.a1:hover:after {
+  width: 100px;
   left: 0;
 }

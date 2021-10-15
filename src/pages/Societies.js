@@ -1,8 +1,7 @@
 import React from "react";
-import Layout from "../components/Layout";
-import Section from "../components/Section";
-import Styles from "../styles/components/Societies.css";
+import Styles from "../styles/components/soc.module.css";
 import Data from "../data/soc";
+import Layout from "../components/Layout";
 
 import bclub from "../images/societies/bclub.png";
 import chess from "../images/societies/chess.png";
@@ -79,172 +78,172 @@ const arr2 = [
 
 export default function Societies() {
   return (
-    <main>
-      <h1>Social And Cultural</h1>
+    <Layout>
+      <div className={Styles.full}>
+        <h1 className={Styles.heading}>Social And Cultural</h1>
+        <section className={Styles.cardswrapper}>
+          {Data.data
+            .filter((data) => data.category === "Socult")
+            .map((society, i) => {
+              return (
+                <div className={Styles.card}>
+                  <div className={Styles.cardfront}>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet={arr[arr2.indexOf(society.shortform)]}
+                      />
+                      <img
+                        className={Styles.img1}
+                        src={arr[arr2.indexOf(society.shortform)]}
+                        loading="lazy"
+                        alt="Image 01"
+                        width={600}
+                        height={600}
+                      />
+                    </picture>
+                  </div>
+                  <div className={Styles.cardback}>
+                    <div className={Styles.cardbackcontent}>
+                      <h3>{society.name}</h3>
+                      <p>{society.description}</p>
+                      <a
+                        className={`${Styles.button} ${Styles.a1}`}
+                        title="Lorem Ipsum"
+                        href={society.facebook_link}
+                      >
+                        Learn More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+        </section>
+        <h1 className={Styles.heading}>Technology</h1>
 
-      <section className="cards-wrapper">
-        {Data.data
-          .filter((data) => data.category === "Socult")
-          .map((society, i) => {
-            const url_ = `../images/societies/bclub.png`;
-            return (
-              <div className="card">
-                <div className="card-front">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcSet={arr[arr2.indexOf(society.shortform)]}
-                    />
-                    <img
-                      src={arr[arr2.indexOf(society.shortform)]}
-                      loading="lazy"
-                      alt="Image 01"
-                      width={600}
-                      height={600}
-                    />
-                  </picture>
-                </div>
-                <div className="card-back">
-                  <div className="card-back-content">
-                    <h3>{society.name}</h3>
-                    <p>{society.description}</p>
-                    <a
-                      className="button"
-                      title="Lorem Ipsum"
-                      href={society.facebook_link}
-                    >
-                      Learn More
-                    </a>
+        <section className={Styles.cardswrapper}>
+          {Data.data
+            .filter((data) => data.category === "Tech")
+            .map((society, i) => {
+              return (
+                <div className={Styles.card}>
+                  <div className={Styles.cardfront}>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        src={arr[arr2.indexOf(society.shortform)]}
+                      />
+                      <img
+                        className={Styles.img1}
+                        src={arr[arr2.indexOf(society.shortform)]}
+                        loading="lazy"
+                        alt="Image 01"
+                        width={600}
+                        height={600}
+                      />
+                    </picture>
                   </div>
-                </div>
-              </div>
-            );
-          })}
-      </section>
-      <h1>Technology</h1>
+                  <div className={Styles.cardback}>
+                    <div className={Styles.cardbackcontent}>
+                      <h3>{society.name}</h3>
 
-      <section className="cards-wrapper">
-        {Data.data
-          .filter((data) => data.category === "Tech")
-          .map((society, i) => {
-            const url_ = `../images/societies/bclub.png`;
-            return (
-              <div className="card">
-                <div className="card-front">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      src={arr[arr2.indexOf(society.shortform)]}
-                    />
-                    <img
-                      src={arr[arr2.indexOf(society.shortform)]}
-                      loading="lazy"
-                      alt="Image 01"
-                      width={600}
-                      height={600}
-                    />
-                  </picture>
-                </div>
-                <div className="card-back">
-                  <div className="card-back-content">
-                    <h3>{society.name}</h3>
-                    <br />
-                    <p>{society.description}</p>
-                    <br />
-                    <a
-                      className="button"
-                      title="Lorem Ipsum"
-                      href={society.facebook_link}
-                    >
-                      Learn More
-                    </a>
+                      <p>{society.description}</p>
+
+                      <a
+                        className={`${Styles.button} ${Styles.a1}`}
+                        title="Lorem Ipsum"
+                        href={society.facebook_link}
+                      >
+                        Learn More
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-      </section>
-      <h1>Sports And Games</h1>
-      <section className="cards-wrapper">
-        {Data.data
-          .filter((data) => data.category === "Sports & Games")
-          .map((society, i) => {
-            const url_ = `../images/societies/bclub.png`;
-            return (
-              <div className="card">
-                <div className="card-front">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      src={arr[arr2.indexOf(society.shortform)]}
-                    />
-                    <img
-                      src={arr[arr2.indexOf(society.shortform)]}
-                      loading="lazy"
-                      alt="Image 01"
-                      width={600}
-                      height={600}
-                    />
-                  </picture>
-                </div>
-                <div className="card-back">
-                  <div className="card-back-content">
-                    <h3>{society.name}</h3>
-                    <p>{society.description}</p>
-                    <a
-                      className="button"
-                      title="Lorem Ipsum"
-                      href={society.facebook_link}
-                    >
-                      Learn More
-                    </a>
+              );
+            })}
+        </section>
+        <h1 className={Styles.heading}>Sports And Games</h1>
+        <section className={Styles.cardswrapper}>
+          {Data.data
+            .filter((data) => data.category === "Sports & Games")
+            .map((society, i) => {
+              return (
+                <div className={Styles.card}>
+                  <div className={Styles.cardfront}>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        src={arr[arr2.indexOf(society.shortform)]}
+                      />
+                      <img
+                        className={Styles.img1}
+                        src={arr[arr2.indexOf(society.shortform)]}
+                        loading="lazy"
+                        alt="Image 01"
+                        width={600}
+                        height={600}
+                      />
+                    </picture>
+                  </div>
+                  <div className={Styles.cardback}>
+                    <div className={Styles.cardbackcontent}>
+                      <h3>{society.name}</h3>
+                      <p>{society.description}</p>
+                      <a
+                        className={`${Styles.button} ${Styles.a1}`}
+                        title="Lorem Ipsum"
+                        href={society.facebook_link}
+                      >
+                        Learn More
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-      </section>
-      <h1>Welfare</h1>
-      <section className="cards-wrapper">
-        {Data.data
-          .filter((data) => data.category === "Welfare")
-          .map((society, i) => {
-            const url_ = `../images/societies/bclub.png`;
-            return (
-              <div className="card">
-                <div className="card-front">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcSet={arr[arr2.indexOf(society.shortform)]}
-                    />
-                    <img
-                      src={arr[arr2.indexOf(society.shortform)]}
-                      loading="lazy"
-                      alt="Image 01"
-                      width={600}
-                      height={600}
-                    />
-                  </picture>
-                </div>
-                <div className="card-back">
-                  <div className="card-back-content">
-                    <h3>{society.name}</h3>
-                    <br />
-                    <p>{society.description}</p>
-                    <a
-                      className="button"
-                      title="Lorem Ipsum"
-                      href={society.facebook_link}
-                    >
-                      Learn More
-                    </a>
+              );
+            })}
+        </section>
+        <h1 className={Styles.heading}>Welfare</h1>
+        <section className={Styles.cardswrapper}>
+          {Data.data
+            .filter((data) => data.category === "Welfare")
+            .map((society, i) => {
+              return (
+                <div className={Styles.card}>
+                  <div className={Styles.cardfront}>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet={arr[arr2.indexOf(society.shortform)]}
+                      />
+                      <img
+                        className={Styles.img1}
+                        src={arr[arr2.indexOf(society.shortform)]}
+                        loading="lazy"
+                        alt="Image 01"
+                        width={600}
+                        height={600}
+                      />
+                    </picture>
+                  </div>
+                  <div className={Styles.cardback}>
+                    <div className={Styles.cardbackcontent}>
+                      <h3>{society.name}</h3>
+                      <p>{society.description}</p>
+                      <a
+                        className={`${Styles.button} ${Styles.a1}`}
+                        title="Lorem Ipsum"
+                        href={society.facebook_link}
+                      >
+                        Learn More
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-      </section>
-    </main>
+              );
+            })}
+        </section>
+      </div>
+    </Layout>
   );
 }

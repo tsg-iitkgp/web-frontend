@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import SocAndCell from "./SocAndCell";
-import Societies from "./Societies";
 
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
