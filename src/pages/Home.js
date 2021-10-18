@@ -3,17 +3,7 @@ import Layout from "../components/Layout";
 import Section from "../components/Section";
 import SocAndCell from "./SocAndCell";
 import Styles from "../styles/home.module.css";
-<<<<<<< HEAD
-import logo from '../images/IIT_Kharagpur_Logo.png';
-=======
 import logo from "../images/IIT_Kharagpur_Logo.png";
-export default function Home() {
-  const AutoplaySlider = withAutoplay(AwesomeSlider);
-
-  const openLink = (videoLink) => {
-    window.open(videoLink);
-  };
->>>>>>> upstream/main
 
 export default function Home() {
   document.title = "Home | TSG";
