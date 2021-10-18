@@ -1,6 +1,4 @@
 import React from "react";
-import Layout from "../components/Layout";
-import Section from "../components/Section";
 import Styles from "../styles/components/SocAndCell.module.css";
 
 export default function SocAndCell() {

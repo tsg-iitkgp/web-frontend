@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.resultsSection {
+  display: flex;
+  max-height: 90vh;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.content {
+  padding: 2rem;
+  width: 75%;
+  max-height: 90vh;
+  overflow-y: scroll;
+}

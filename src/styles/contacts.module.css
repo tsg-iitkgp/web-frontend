@@ -1,5 +1,38 @@
 .contactsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pageHeading {
+  font-size: 2rem;
+  text-align: center;
+}
+.maincontainer {
+  display: flex;
+  max-height: 90vh;
+  width: 100%;
+  margin-top: 10vh;
+}
+.content {
+  padding: 2rem;
+  width: 75%;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+.postHeading {
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+.multipleCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: c;
+}
+.multipleCards > div {
+  margin: 1.5rem 1rem;
 }
