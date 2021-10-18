@@ -1,76 +1,59 @@
-import React from "react";
-import ContactCard from "../components/ContactCard";
+import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
-import contactsData from "../data/contactsData.js";
+import CurrentSenate from "./Contacts/CurrentSenate";
 import Styles from "../styles/contacts.module.css";
-import img from "../images/19AE10017.png";
+import Sidebar from "../components/Sidebar/Sidebar";
+import { useLocation } from "react-router-dom";
+import Secretaries from "./Contacts/Secretaries";
+import PastBearers from "./Contacts/PastBearers";
 function Contacts() {
   document.title = "Contacts | TSG";
-  const President = contactsData.data.find(
-    (contact) => contact.Post === "President"
-  );
-  const VicePresident = contactsData.data.find(
-    (contact) => contact.Post === "Vice-President"
-  );
-  const generalSecretaries = contactsData.data.filter(
-    (element) => element.Category === "General Secretary"
-  );
-  const nominatedPost = contactsData.data.filter(
-    (element) => element.Category === "Nominated Posts"
-  );
+  const [currentSenate, setCurrentSenate] = useState(true);
+  const [secretaries, setSecretaries] = useState(false);
+  const [pastBearers, setPastBearers] = useState(false);
+  const itemsList = [
+    {
+      title: "Current Senate",
+      route: "/contacts/currentSenate",
+    },
+    {
+      title: "Secretaries",
+      route: "/contacts/secretaries",
+    },
+    {
+      title: "Past Office Bearers",
+      route: "/contacts/past_bearers",
+    },
+  ];
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/contacts") {
+      setCurrentSenate(true);
+      setPastBearers(false);
+      setSecretaries(false);
+    } else if (location.pathname === "/contacts/currentSenate") {
+      setCurrentSenate(true);
+      setPastBearers(false);
+      setSecretaries(false);
+    } else if (location.pathname === "/contacts/secretaries") {
+      setCurrentSenate(false);
+      setPastBearers(false);
+      setSecretaries(true);
+    } else if (location.pathname === "/contacts/past_bearers") {
+      setCurrentSenate(false);
+      setPastBearers(true);
+      setSecretaries(false);
+    }
+  }, [location.pathname]);
+
   return (
     <Layout>
       <div className={Styles.maincontainer}>
-        <h1 className="pageHeading">Contact Us</h1>
-        <div className={Styles.contactsContainer}>
-          <div>
-            <h2 className={Styles.postHeading}>President</h2>
-            <ContactCard
-              name={President.Name}
-              designation={President.Post}
-              email={President.Email}
-              imgSrc={`../data/images/contacts/${President.img}`}
-            />
-          </div>
-          <div>
-            <h2 className={Styles.postHeading}>Vice-President</h2>
-            <ContactCard
-              name={VicePresident.Name}
-              designation={VicePresident.Post}
-              email={VicePresident.Email}
-              imgSrc={`../data/images/contacts/${VicePresident.img}`}
-            />
-          </div>
-          <div>
-            <h2 className={Styles.postHeading}>General Secretaries</h2>
-            <div className={Styles.multipleCards}>
-              {generalSecretaries.map((Gsec, index) => {
-                return (
-                  <ContactCard
-                    name={Gsec.Name}
-                    designation={Gsec.Post}
-                    email={Gsec.Email}
-                    imgSrc={`../data/images/contacts/${Gsec.img}`}
-                  />
-                );
-              })}
-            </div>
-          </div>
-          <div>
-            <h2 className={Styles.postHeading}>Nominated Posts</h2>
-            <div className={Styles.multipleCards}>
-              {nominatedPost.map((member, index) => {
-                return (
-                  <ContactCard
-                    name={member.Name}
-                    designation={member.Post}
-                    email={member.Email}
-                    imgSrc={`../data/images/contacts/${member.img}`}
-                  />
-                );
-              })}
-            </div>
-          </div>
+        <Sidebar itemsList={itemsList} />
+        <div className={Styles.content}>
+          {currentSenate && <CurrentSenate />}
+          {secretaries && <Secretaries />}
+          {pastBearers && <PastBearers />}
         </div>
       </div>
     </Layout>
