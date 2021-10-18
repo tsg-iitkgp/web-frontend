@@ -1,7 +1,7 @@
 import React from "react";
 import ContactCard from "../../components/ContactCard";
 import contactsData from "../../data/contactsData.js";
-import Styles from "../../styles/contacts.module.css";
+import Styles from "../../styles/pages/contacts.module.css";
 export default function CurrentSenate() {
   const President = contactsData.data.find(
     (contact) => contact.Post === "President"

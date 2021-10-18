@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import SocAndCell from "./SocAndCell";
-import Styles from "../styles/home.module.css";
+import Styles from "../styles/pages/home.module.css";
 import logo from "../images/IIT_Kharagpur_Logo.png";
 
 export default function Home() {
