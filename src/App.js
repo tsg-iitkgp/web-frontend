@@ -15,6 +15,10 @@ import Blog from "./pages/Blog";
 import Results from "./pages/Results";
 import Awards from "./pages/Awards";
 import Booking from "./pages/Booking";
+<<<<<<< HEAD
+=======
+import Societies from "./pages/Societies";
+>>>>>>> upstream/main
 
 function App() {
   return (
@@ -27,10 +31,14 @@ function App() {
         <Route exact path="/booking" component={Booking} />
         <Route exact path="/contacts" component={Contacts} />
         <Route exact path="/login" component={Login} />
+<<<<<<< HEAD
         <Route exact path="/results/gc" component={Results} />
         <Route exact path="/results/inter_iit" component={Results} />
         <Route exact path="/contacts/secretaries" component={Contacts} />
         <Route exact path="/contacts/currentSenate" component={Contacts} />
+=======
+        <Route exact path="/Societies" component={Societies} />
+>>>>>>> upstream/main
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
 
         <Route component={NotFound} />

@@ -13,7 +13,11 @@ footer {
   width: 100%;
   max-width: 1500px;
   padding: 30px 0;
+<<<<<<< HEAD
   min-height: 50vh;
+=======
+
+>>>>>>> upstream/main
   color: rgb(255, 255, 255);
   z-index: 99;
 }

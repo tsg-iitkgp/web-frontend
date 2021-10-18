@@ -1,0 +1,233 @@
+/* * {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+} */
+
+/* html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+  cursor: default;
+} */
+
+/* body {
+  font: 1.6rem Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #f7f7f7;
+  margin: 0;
+} */
+/* 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem;
+  gap: 3rem;
+} */
+.heading {
+  text-align: center;
+}
+
+.full {
+  margin: 0 5% 0 5%;
+}
+
+.img1 {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.cardswrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 90vw;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-perspective: 100rem;
+  perspective: 100rem;
+  height: 316px;
+}
+
+.card:hover .cardfront {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.card:hover .cardback {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+.card:hover .cardback-content {
+  -webkit-animation: translate 1s ease-in-out;
+  animation: translate 1s ease-in-out;
+}
+
+.cardfront {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 1rem rgba(51, 51, 51, 0.1),
+    0 0 1rem rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 1rem rgba(51, 51, 51, 0.1), 0 0 1rem rgba(51, 51, 51, 0.1);
+  overflow: hidden;
+}
+
+.cardback {
+  position: absolute;
+  height: 100%;
+  padding: 2rem;
+  background: #eee;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 1rem rgba(51, 51, 51, 0.1),
+    0 0 1rem rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 1rem rgba(51, 51, 51, 0.1), 0 0 1rem rgba(51, 51, 51, 0.1);
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cardbackcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  height: inherit;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    background: #2b5ed4;
+    padding: 1.5rem;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    border-radius: 0.5rem;
+  } */
+
+/* .button:hover,
+  .button:focus {
+    background: #2754be;
+  }
+  
+  .button:active {
+    background: #234ba9;
+  } */
+
+@-webkit-keyframes translate {
+  0% {
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes translate {
+  0% {
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cardswrapper {
+    grid-template-columns: auto;
+    width: auto;
+  }
+}
+
+/* new */
+.cardfront {
+  height: 100%;
+}
+
+.a1 {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  position: relative;
+}
+.a1:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  position: absolute;
+  background: #333;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.a1:hover:after {
+  width: 100px;
+  left: 0;
+}

@@ -3,24 +3,34 @@ import Layout from "../components/Layout";
 import Section from "../components/Section";
 import SocAndCell from "./SocAndCell";
 import Styles from "../styles/home.module.css";
+<<<<<<< HEAD
 import logo from '../images/IIT_Kharagpur_Logo.png';
+=======
+import logo from "../images/IIT_Kharagpur_Logo.png";
+export default function Home() {
+  const AutoplaySlider = withAutoplay(AwesomeSlider);
+
+  const openLink = (videoLink) => {
+    window.open(videoLink);
+  };
+>>>>>>> upstream/main
 
 export default function Home() {
   document.title = "Home | TSG";
   return (
     <Layout>
       <div className={Styles.backgroundImage}>
-                <div className={Styles.textOverlay}>
-                    <div className={Styles.kgpSvg}>
-                        <img src= {logo} alt='KGP_logo' />                            
-                    </div>
-                    <div className= {Styles.heading}>
-                        <h1>Technology Student's Gymkhana</h1>
-                        <h2>IIT Kharagpur</h2>
-                        <h2>Welcomes You</h2>
-                    </div>
-                </div>
-            </div>
+        <div className={Styles.textOverlay}>
+          <div className={Styles.kgpSvg}>
+            <img src={logo} alt="KGP_logo" />
+          </div>
+          <div className={Styles.heading}>
+            <h1>Technology Student's Gymkhana</h1>
+            <h2>IIT Kharagpur</h2>
+            <h2>Welcomes You</h2>
+          </div>
+        </div>
+      </div>
       <Section>
         <h2 className="section-heading">About Us</h2>
         <p className="description">
