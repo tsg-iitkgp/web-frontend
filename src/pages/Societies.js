@@ -97,7 +97,7 @@ export default function Societies() {
                         className={Styles.img1}
                         src={arr[arr2.indexOf(society.shortform)]}
                         loading="lazy"
-                        alt="Image 01"
+                        alt="image01"
                         width={600}
                         height={600}
                       />
@@ -138,7 +138,7 @@ export default function Societies() {
                         className={Styles.img1}
                         src={arr[arr2.indexOf(society.shortform)]}
                         loading="lazy"
-                        alt="Image 01"
+                        alt="image01"
                         width={600}
                         height={600}
                       />
@@ -180,7 +180,7 @@ export default function Societies() {
                         className={Styles.img1}
                         src={arr[arr2.indexOf(society.shortform)]}
                         loading="lazy"
-                        alt="Image 01"
+                        alt="image01"
                         width={600}
                         height={600}
                       />
@@ -220,7 +220,7 @@ export default function Societies() {
                         className={Styles.img1}
                         src={arr[arr2.indexOf(society.shortform)]}
                         loading="lazy"
-                        alt="Image 01"
+                        alt="image01"
                         width={600}
                         height={600}
                       />

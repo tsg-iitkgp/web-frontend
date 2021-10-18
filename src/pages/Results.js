@@ -1,29 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Layout from "../components/Layout";
 import Styles from "../styles/pages/Results/results.module.css";
-import { useLocation } from "react-router-dom";
-// import { NavLink } from "react-router-dom";
-// import GC from "./results/GC";
-// import Interiit from "./results/Interiit";
-import { useEffect } from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 import GC from "./results/GC";
 import Interiit from "./results/Interiit";
+import { resultsSidebarList } from "../components/Sidebar/SidebarList";
 function Results() {
   document.title = "Results | TSG";
+  // state variables for conditional rendering
   const [gC, setGC] = useState(true);
   const [interIIT, setInterIIT] = useState(false);
-  const itemsList = [
-    {
-      title: "General Championship",
-      route: "/results/gc",
-    },
-    {
-      title: "Inter IIT",
-      route: "/results/inter_iit",
-    },
-  ];
   const location = useLocation();
+
   useEffect(() => {
     if (location.pathname === "/results") {
       setInterIIT(false);
@@ -36,11 +25,14 @@ function Results() {
       setGC(false);
     }
   }, [location.pathname]);
+
   return (
     <Layout>
       <div className={Styles.resultsSection}>
-        <Sidebar itemsList={itemsList} />
+        <Sidebar itemsList={resultsSidebarList} />
+
         <div className={Styles.content}>
+          {/* Conditional Rendering of routes on the basis of route */}
           {gC && <GC />}
           {interIIT && <Interiit />}
         </div>

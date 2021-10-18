@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../../styles/contacts.module.css";
+import Styles from "../../styles/pages/contacts.module.css";
 import ContactCard from "../../components/ContactCard";
 import { secyData } from "../../data/secyData";
 export default function Secretaries() {
