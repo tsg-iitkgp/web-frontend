@@ -2,20 +2,31 @@
 * {
   box-sizing: border-box;
 }
+.navbarContainer {
+  width: 100%;
+  top: 1vh;
+  position: fixed;
+  z-index: 99;
+}
 .navbar {
   height: 10vh;
   background: transparent;
   /* background-color: white; */
   /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1); */
-  position: fixed;
-  width: 100%;
-  z-index: 99;
+  border-radius: 2rem;
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0.5rem;
 }
 .menuIcon {
   display: none;
+}
+.navLogo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
 .navLogo a {
   text-decoration: none;
@@ -27,7 +38,11 @@
   color: white;
 }
 .activeNavbar {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2rem);
+  box-shadow: 0 0rem 1rem 0 rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2rem);
+  border: 1px solid rgba(0, 0, 0, 0.18);
 }
 ul.navMenu {
   padding: 0rem 1rem;
@@ -69,10 +84,6 @@ ul li a {
   transform: translateX(0);
   z-index: -1;
 }
-.navbar li a:hover {
-  color: rgba(255, 255, 255, 0.3);
-}
-
 @media screen and (max-width: 960px) {
   .menuIcon {
     color: rgba(255, 255, 255, 0.9);

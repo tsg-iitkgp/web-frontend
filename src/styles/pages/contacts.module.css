@@ -17,7 +17,7 @@
 }
 .content {
   padding: 2rem;
-  width: 75%;
+  max-width: 90%;
   max-height: 90vh;
   overflow-y: scroll;
 }
@@ -25,6 +25,7 @@
   font-size: 1.75rem;
   text-align: center;
   margin: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 .multipleCards {
   display: flex;

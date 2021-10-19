@@ -2,6 +2,7 @@ import React from "react";
 import ContactCard from "../../components/ContactCard";
 import contactsData from "../../data/contactsData.js";
 import Styles from "../../styles/pages/contacts.module.css";
+import imgSrc from "../../images/19AE10017.png";
 export default function CurrentSenate() {
   const President = contactsData.data.find(
     (contact) => contact.Post === "President"
@@ -24,7 +25,8 @@ export default function CurrentSenate() {
             name={President.Name}
             designation={President.Post}
             email={President.Email}
-            imgSrc={`../data/images/contacts/${President.img}`}
+            // imgSrc={`../data/images/contacts/${President.img}`}
+            imgSrc={imgSrc}
           />
         </div>
         <div>
@@ -33,7 +35,8 @@ export default function CurrentSenate() {
             name={VicePresident.Name}
             designation={VicePresident.Post}
             email={VicePresident.Email}
-            imgSrc={`../data/images/contacts/${VicePresident.img}`}
+            // imgSrc={`../data/images/contacts/${VicePresident.img}`}
+            imgSrc={imgSrc}
           />
         </div>
         <div>
@@ -45,7 +48,8 @@ export default function CurrentSenate() {
                   name={member.Name}
                   designation={member.Post}
                   email={member.Email}
-                  imgSrc={`../data/images/contacts/${member.img}`}
+                  // imgSrc={`../data/images/contacts/${member.img}`}
+                  imgSrc={imgSrc}
                 />
               );
             })}
@@ -60,7 +64,8 @@ export default function CurrentSenate() {
                   name={member.Name}
                   designation={member.Post}
                   email={member.Email}
-                  imgSrc={`../data/images/contacts/${member.img}`}
+                  // imgSrc={`../data/images/contacts/${member.img}`}
+                  imgSrc={imgSrc}
                 />
               );
             })}
