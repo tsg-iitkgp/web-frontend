@@ -38,7 +38,7 @@ export default function Navbar() {
     listClass = `${Styles.navMenu}`;
   }
   return (
-    <div>
+    <div className={Styles.navbarContainer}>
       <nav className={navbarClass}>
         {/* Navbar logo */}
 
