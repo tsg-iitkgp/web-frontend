@@ -1,7 +1,7 @@
 {
   "name": "tsg-frontend",
   "version": "0.1.0",
-  "homepage": "https://tsg-iitkgp.github.io/web-frontend/",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
