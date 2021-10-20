@@ -80,6 +80,10 @@ export default function Societies() {
   return (
     <Layout>
       <div className={Styles.full}>
+        <div className={Styles.aboutUsCircle1}></div>
+        <div className={Styles.aboutUsCircle2}></div>
+        <div className={Styles.aboutUsCircle3}></div>
+        <div className={Styles.aboutUsCircle4}></div>
         <h1 className={Styles.heading}>Social And Cultural</h1>
         <section className={Styles.cardswrapper}>
           {Data.data

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 .carouselContainer img {
   object-fit: contain;
   background-color: #fff;
@@ -46,7 +48,24 @@
   font-weight: 400;
   margin-bottom: 0.25rem;
 }
-
+.textOverlay .heading h2.greetText {
+  position: relative;
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  overflow: hidden;
+  background: linear-gradient(90deg, #fff, #fff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 6s linear 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+}
 .textOverlay .kgpSvg {
   height: 30%;
   margin-right: 1rem;
@@ -65,6 +84,7 @@
   align-items: center;
   background-color: black;
 }
+
 .aboutUsContent {
   padding: 3rem;
   background: linear-gradient(
@@ -82,7 +102,7 @@
       rgba(255, 255, 255, 0.2)
     ); */
   color: white;
-  width: 80%;
+  width: 90%;
   z-index: 2;
 }
 .sectionHeading {
@@ -104,11 +124,6 @@
   right: 5%;
   background-color: white;
   background: linear-gradient(45deg, #fc466b, #3f5efb);
-  /* background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.3)
-  ); */
   height: 15rem;
   width: 15rem;
   position: absolute;
