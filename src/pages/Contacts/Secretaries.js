@@ -2,7 +2,6 @@ import React from "react";
 import Styles from "../../styles/pages/contacts.module.css";
 import ContactCard from "../../components/ContactCard";
 import { secyData } from "../../data/secyData";
-import imgSrc from "../../images/19AE10017.png";
 export default function Secretaries() {
   return (
     <div>
@@ -14,7 +13,7 @@ export default function Secretaries() {
               name={member.Name}
               designation={member.Post}
               email={member.Email}
-              imgSrc={imgSrc}
+              imgSrc={`/media/images/secyImages/${member.RollNo}.png`}
             />
           );
         })}

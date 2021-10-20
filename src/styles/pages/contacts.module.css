@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .contactsContainer {
   display: flex;
   flex-direction: column;
@@ -36,4 +39,48 @@
 }
 .multipleCards > div {
   margin: 1.5rem 1rem;
+}
+.contactsCircle1 {
+  top: 5%;
+  right: -2%;
+  background-color: white;
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  height: 18rem;
+  width: 18rem;
+  position: absolute;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.contactsCircle2 {
+  bottom: 0%;
+  left: 5%;
+  background-color: white;
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  height: 18rem;
+  width: 18rem;
+  position: absolute;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.contactsCircle3 {
+  top: 15%;
+  left: 30%;
+  background-color: white;
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.contactsCircle4 {
+  bottom: 5%;
+  right: 30%;
+  background-color: white;
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  border-radius: 10rem;
+  z-index: -1;
 }

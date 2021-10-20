@@ -45,7 +45,10 @@ function Contacts() {
 
         <div className={Styles.content}>
           {/* Contacts of the page on basis of route */}
-
+          <div className={Styles.contactsCircle1}></div>
+          <div className={Styles.contactsCircle2}></div>
+          <div className={Styles.contactsCircle3}></div>
+          <div className={Styles.contactsCircle4}></div>
           {currentSenate && <CurrentSenate />}
           {secretaries && <Secretaries />}
           {pastBearers && <PastBearers />}
