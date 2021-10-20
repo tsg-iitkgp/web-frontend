@@ -3,6 +3,7 @@ import { FaFacebook, FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
 import FooterStyles from "../styles/components/footer.module.css";
 import logo from "../images/IIT_Kharagpur_Logo.png";
 import Navbar from "./Navbar/Navbar";
+
 export default function Layout({ children }) {
   return (
     <div className="layout">
