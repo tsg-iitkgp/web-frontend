@@ -21,6 +21,7 @@ body {
 .content {
   padding: 2rem;
   max-width: 90%;
+  margin-right: 0.05 rem;
   max-height: 90vh;
   overflow-y: scroll;
 }

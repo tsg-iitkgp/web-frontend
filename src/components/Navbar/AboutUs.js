@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "../../styles/pages/home.module.css";
 export default function AboutUs() {
   return (
-    <div className={Styles.aboutUsContainer}>
+    <div className={Styles.aboutUsContainer} id="aboutUs">
       <div className={Styles.aboutUsContent}>
         <h2 className={Styles.sectionHeading}>About Us</h2>
         <p className={Styles.description}>
