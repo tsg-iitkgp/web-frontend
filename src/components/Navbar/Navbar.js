@@ -110,6 +110,15 @@ export default function Navbar() {
               Contacts
             </NavLink>
           </li>
+          <li className={Styles.navItem}>
+            <NavLink
+              to="/events"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Events
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </div>
