@@ -16,6 +16,7 @@ import Results from "./pages/Results";
 import Awards from "./pages/Awards";
 import Booking from "./pages/Booking";
 import Societies from "./pages/Societies";
+import Events from "./pages/Events";
 
 function App() {
   return (
@@ -32,7 +33,9 @@ function App() {
         <Route exact path="/results/inter_iit" component={Results} />
         <Route exact path="/contacts/secretaries" component={Contacts} />
         <Route exact path="/contacts/currentSenate" component={Contacts} />
-        <Route exact path="/Societies" component={Societies} />
+        <Route exact path="/societies" component={Societies} />
+        <Route exact path="/events" component={Events} />
+
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
 
         <Route component={NotFound} />
