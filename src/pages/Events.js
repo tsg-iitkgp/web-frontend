@@ -9,24 +9,33 @@ export default function Events() {
   return (
     <Layout>
       <div className={Styles.mainContainer}>
+        <div className={Styles.aboutUsCircle1}></div>
+        <div className={Styles.aboutUsCircle2}></div>
+        <div className={Styles.aboutUsCircle3}></div>
+        <div className={Styles.aboutUsCircle4}></div>
         {/* Upcoming Events Container */}
-        <div className={Styles.upcomingContainer}>
-          {UpcomingEvents.map((event, index) => {
-            return (
-              <EventCard
-                title={event.title}
-                date={event.date}
-                description={event.description}
-                bodyContent={event.bodyContent}
-                imgName={event.imgName}
-                eventCategory="upcoming"
-              />
-            );
-          })}
+
+        <div className={Styles.categoryContainer}>
+          <h2 className={Styles.categoryHeading}>Upcoming Events</h2>
+          <div className={Styles.cardsWrapper}>
+            {UpcomingEvents.map((event, index) => {
+              return (
+                <EventCard
+                  title={event.title}
+                  date={event.date}
+                  description={event.description}
+                  bodyContent={event.bodyContent}
+                  imgName={event.imgName}
+                  eventCategory="upcoming"
+                />
+              );
+            })}
+          </div>
         </div>
 
         {/* Ongoing Events Container */}
-        <div className={Styles.ongoingContainer}>
+        <div className={Styles.categoryContainer}>
+          <h2 className={Styles.categoryHeading}>Ongoing Events</h2>
           {OngoingEvents.map((event, index) => {
             return (
               <EventCard
@@ -34,6 +43,7 @@ export default function Events() {
                 date={event.date}
                 description={event.description}
                 bodyContent={event.bodyContent}
+                imgName={event.imgName}
                 eventCategory="ongoing"
               />
             );

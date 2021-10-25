@@ -95,12 +95,6 @@ html {
   backdrop-filter: blur(1.5rem);
   -webkit-backdrop-filter: blur(1.5rem);
   border-radius: 1rem;
-  /* border: 1px solid
-    linear-gradient(
-      to bottom right,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.2)
-    ); */
   color: white;
   width: 90%;
   z-index: 2;
