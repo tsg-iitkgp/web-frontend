@@ -16,9 +16,10 @@ export default function EventCard({
         <img src={imgSrc} alt={title} />
       </div>
       <div className={Styles.content}>
-        <div className={Styles.title}></div>
-        <div className={Styles.date}></div>
-        <div className={Styles.bodyContent}></div>
+        <div className={Styles.title}>{title}</div>
+        <div className={Styles.date}>{date}</div>
+        <div className={Styles.description}>{description}</div>
+        <button>Learn More</button>
       </div>
     </div>
   );
