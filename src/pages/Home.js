@@ -32,7 +32,14 @@ export default function Home() {
       <div>
         <AboutUs />
       </div>
+      <h2
+        className={Styles.sectionHeading}
+        style={{ fontSize: "2.5rem", marginBottom: 0 }}
+      >
+        Committees
+      </h2>
       <SocAndCell />
+      <div className={Styles.container}></div>
     </Layout>
   );
 }
