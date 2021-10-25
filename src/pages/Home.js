@@ -32,8 +32,7 @@ export default function Home() {
       <div>
         <AboutUs />
       </div>
-
-      <SocAndCell></SocAndCell>
+      <SocAndCell />
     </Layout>
   );
 }
