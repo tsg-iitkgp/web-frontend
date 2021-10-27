@@ -16,6 +16,7 @@ export default function Events() {
         {/* Upcoming Events Container */}
 
         <div className={Styles.categoryContainer}>
+          <h2 className={Styles.categoryHeading}>Recent Events</h2>
           <h2 className={Styles.categoryHeading}>Upcoming Events</h2>
           <div className={Styles.cardsWrapper}>
             {UpcomingEvents.map((event, index) => {
