@@ -20,7 +20,7 @@ body {
 }
 .content {
   padding: 2rem;
-  max-width: 90%;
+
   margin-right: 0.05 rem;
   max-height: 90vh;
   overflow-y: scroll;
@@ -84,4 +84,14 @@ body {
   position: absolute;
   border-radius: 10rem;
   z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .maincontainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 11vh;
+    min-height: 90vh;
+  }
 }
