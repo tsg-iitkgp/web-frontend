@@ -1,10 +1,7 @@
 import { useState } from "react";
-// import Head from "next/head";
-// import Layout from "../components/layout";
-import { ResponsiveBar } from "@nivo/bar";
 import pointsData from "./pointsData";
 import Chart from "./chart";
-import './interiit.css'
+import "./interiit.css";
 
 const years = ["2018-19"];
 
@@ -21,33 +18,53 @@ export default function Sports() {
       <h2>
         <title>GC results</title>
       </h2>
-      <section className="points content" style={{width: "100%", padding: "0"}}>
-        <h2 style={{display: "flex", flexDirection: "row", justifyContent: "center", paddingBottom: "3%", alignItems: "center"}}> Points Tally General Championship {currentYear} </h2>
+      <section className="points" style={{ width: "100%", padding: "0" }}>
+        <h2
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            paddingBottom: "3%",
+            alignItems: "center",
+          }}
+        >
+          {" "}
+          Points Tally General Championship {currentYear}{" "}
+        </h2>
 
         <div className="tabs">
-          <div className={`tab ${currentTab === "sports" ? "active" : ""}`} onClick={() => handleTabChange("sports")}>
+          <div
+            className={`tab ${currentTab === "sports" ? "active" : ""}`}
+            onClick={() => handleTabChange("sports")}
+          >
             <button className="btn_interiit">Sports &amp; Games</button>
           </div>
           {/* <div className={`tab ${currentTab == "tech" ? "active" : ""}`} onClick={() => handleTabChange("tech")}>
             Technology
           </div> */}
-          <div className={`tab ${currentTab === "socult" ? "active" : ""}`} onClick={() => handleTabChange("socult")}>
-           <button className="btn_interiit"> Socult</button>
+          <div
+            className={`tab ${currentTab === "socult" ? "active" : ""}`}
+            onClick={() => handleTabChange("socult")}
+          >
+            <button className="btn_interiit"> Socult</button>
           </div>
         </div>
-        <div className="select" style={{marginLeft: "40%"}}>
-        <select value={currentYear} onChange={(e) => setCurrentYear(e.target.value)}>
-          {years.map((year) => (
-            <option key={year} value={year}>
-              {year}
-            </option>
-          ))}
-        </select>
+        <div className="select" style={{ marginLeft: "40%" }}>
+          <select
+            value={currentYear}
+            onChange={(e) => setCurrentYear(e.target.value)}
+          >
+            {years.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div className="chart">
           {currentTab === "sports" ? (
-            <Chart 
+            <Chart
               data={pointsData.sports}
               keys={[
                 "Athletics",

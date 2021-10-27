@@ -16,7 +16,6 @@ body {
 
 .content {
   color: white;
-  padding: 2rem;
   flex-grow: 1;
   min-width: 80%;
   max-width: 100%;

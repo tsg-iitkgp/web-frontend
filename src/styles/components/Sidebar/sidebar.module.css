@@ -4,7 +4,8 @@
 }
 .sidebar {
   padding: 2rem 0rem;
-  width: 15%;
+  width: min-content;
+  max-width: 20%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -46,12 +47,12 @@ a.sidebarItem {
   transition: 0.2s;
   text-align: center;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 01rem;
   font-size: 1rem;
   margin-right: 0rem;
 
   max-width: 90%;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0.5rem;
   margin-bottom: 0.5rem;
   background-color: white;
   text-decoration: none;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './interiit.css'
+import "./interiit.css";
 import pointsData from "./pointsData";
 
 const years = ["2019-20"];
@@ -17,43 +17,59 @@ export default function InterIIT() {
       <h1>
         <title>InterIIT 2019</title>
       </h1>
-      <section className="awards content">
-        <h2 style={{display: "flex", flexDirection: "row", justifyContent: "center", paddingBottom: "3%", alignItems: "center"}}>
+      <section className="awards">
+        <h2
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            paddingBottom: "3%",
+            alignItems: "center",
+          }}
+        >
           InterIIT {currentYear} {currentTab} Standings
         </h2>
         <div className="tabs">
-          <div className={`tab ${currentTab === "Sports" ? "active" : ""}`} onClick={() => handleTabChange("Sports")}>
+          <div
+            className={`tab ${currentTab === "Sports" ? "active" : ""}`}
+            onClick={() => handleTabChange("Sports")}
+          >
             <button className="btn_interiit">Sports &amp; Games</button>
           </div>
 
           <div
             className={`tab ${currentTab === "Technology" ? "active" : ""}`}
             onClick={() => handleTabChange("Technology")}
-            
           >
             <button className="btn_interiit">Technology</button>
           </div>
-          <div className={`tab ${currentTab === "Socult" ? "active" : ""}`} onClick={() => handleTabChange("Socult")}>
+          <div
+            className={`tab ${currentTab === "Socult" ? "active" : ""}`}
+            onClick={() => handleTabChange("Socult")}
+          >
             <button className="btn_interiit">Socult</button>
           </div>
         </div>
-        <div className="select" style={{marginLeft: "40%"}}>
-        <select value={currentYear} onChange={(e) => setCurrentYear(e.target.value)}>
-          {years.map((year) => (
-            <option key={year} value={year}>
-              {year}
-            </option>
-          ))}
-        </select>
+        <div className="select" style={{ marginLeft: "40%" }}>
+          <select
+            value={currentYear}
+            onChange={(e) => setCurrentYear(e.target.value)}
+          >
+            {years.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
         </div>
 
         {currentTab === "Sports" && (
           <>
-            <h2 style={{padding: "1%"}}> Men's Standings</h2>
+            <h2 style={{ padding: "1%" }}> Men's Standings</h2>
             <div className="table-container">
               <table>
-                <thead style={{border: "10px solid #fff"}}>
-                  <tr > 
+                <thead style={{ border: "10px solid #fff" }}>
+                  <tr>
                     <th>Sport</th>
                     <th>
                       <span className="medal gold"></span> Gold
@@ -66,7 +82,7 @@ export default function InterIIT() {
                     </th>
                   </tr>
                 </thead>
-                <tbody style={{border: "10px solid #fff"}}>
+                <tbody style={{ border: "10px solid #fff" }}>
                   {pointsData.interIIT[0].map((item) => (
                     <tr id="overall">
                       <td>{item.Sport}</td>
@@ -79,7 +95,7 @@ export default function InterIIT() {
               </table>
             </div>
 
-            <h2 style={{padding: "1%"}}> Women's Standings</h2>
+            <h2 style={{ padding: "1%" }}> Women's Standings</h2>
             <div className="table-container">
               <table>
                 <thead>
@@ -112,7 +128,7 @@ export default function InterIIT() {
         )}
         {currentTab === "Socult" && (
           <>
-            <div className="table-container" style={{paddingTop: "3%"}}>
+            <div className="table-container" style={{ paddingTop: "3%" }}>
               <table>
                 <thead>
                   <tr>
@@ -142,7 +158,6 @@ export default function InterIIT() {
             </div>
           </>
         )}
-        
       </section>
     </>
   );
