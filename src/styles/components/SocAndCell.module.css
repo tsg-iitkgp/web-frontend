@@ -14,10 +14,12 @@
 }
 
 .container {
+  max-width: 1024px;
   width: 90%;
   height: 100%;
   position: relative;
   display: flex;
+  flex-flow: row wrap;
 }
 
 .container .card {
@@ -107,9 +109,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding: 1.5rem;
   transform: translateY(-50%);
   opacity: 0;
   background: linear-gradient(
@@ -147,54 +148,15 @@
 .card-front {
   height: 100%;
 }
-/* Circles */
-.aboutUsCircle1 {
-  border: none;
-  top: -15%;
-  right: -10%;
-  background-color: white;
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
-  /* background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.3)
-  ); */
-  height: 20rem;
-  width: 20rem;
-  position: absolute;
-  border-radius: 15rem;
-  z-index: 1;
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container .card {
+    width: 50%;
+  }
 }
-.aboutUsCircle2 {
-  bottom: 0%;
-  left: -10%;
-  background-color: white;
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
-  height: 20rem;
-  width: 20rem;
-  position: absolute;
-  border-radius: 10rem;
-  z-index: -1;
-}
-.aboutUsCircle3 {
-  top: 20%;
-  left: 30%;
-  background-color: white;
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
-  height: 10rem;
-  width: 10rem;
-  position: absolute;
-  border-radius: 10rem;
-  z-index: -1;
-}
-.aboutUsCircle4 {
-  bottom: 15%;
-  right: 20%;
-  background-color: white;
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
-  height: 10rem;
-  width: 10rem;
-  position: absolute;
-  border-radius: 10rem;
-  z-index: -1;
+@media screen and (max-width: 576px) {
+  .container .card {
+    width: 75%;
+    margin: auto;
+  }
 }

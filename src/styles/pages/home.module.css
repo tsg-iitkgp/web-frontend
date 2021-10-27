@@ -2,16 +2,7 @@
 html {
   scroll-behavior: smooth;
 }
-.carouselContainer img {
-  object-fit: contain;
-  background-color: #fff;
-}
 
-.carouselContainer {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .backgroundImage {
   width: 100%;
   height: 100vh;
@@ -77,15 +68,15 @@ html {
 .aboutUsContainer {
   padding: 1rem;
   width: 100%;
+  max-width: 1024px;
+  margin: auto;
   min-height: 90vh;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: black;
 }
 
 .aboutUsContent {
+  margin-right: 0;
   padding: 3rem;
   background: linear-gradient(
     to bottom right,
@@ -96,7 +87,7 @@ html {
   -webkit-backdrop-filter: blur(1.5rem);
   border-radius: 1rem;
   color: white;
-  width: 90%;
+  width: 100%;
   z-index: 2;
 }
 .sectionHeading {
