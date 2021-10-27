@@ -19,8 +19,6 @@ export default function AboutUs() {
           their extra-curricular talents.
         </p>
       </div>
-      <div className={Styles.aboutUsCircle1}></div>
-      <div className={Styles.aboutUsCircle2}></div>
     </div>
   );
 }

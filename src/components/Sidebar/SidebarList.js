@@ -14,12 +14,11 @@ export const contactsSidebarList = [
 ];
 export const resultsSidebarList = [
   {
-    title: "GC",
-    hover_title: "General Championship",
+    title: "General Championship",
     route: "/results/gc",
   },
   {
-    title: "IIT",
+    title: "Inter IIT",
     route: "/results/inter_iit",
   },
 ];

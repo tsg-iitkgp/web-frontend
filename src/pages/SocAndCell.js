@@ -4,11 +4,6 @@ import Styles from "../styles/components/SocAndCell.module.css";
 export default function SocAndCell() {
   return (
     <div className={Styles.socs}>
-      <div className={Styles.aboutUsCircle1}></div>
-      <div className={Styles.aboutUsCircle2}></div>
-      <div className={Styles.aboutUsCircle3}></div>
-      <div className={Styles.aboutUsCircle4}></div>
-
       <div className={Styles.container}>
         <div className={Styles.card}>
           <div className={`${Styles.face} ${Styles.face1} ${Styles.sc}`}>

@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.awards {
+  margin: auto;
+  padding: 0;
+}
 .awards .table-container {
   font-size: 1.2rem;
-}
-@include sm {
-  font-size: 1rem;
 }
 .awards .table-container table {
   margin-bottom: 1rem;
@@ -32,9 +38,6 @@
 .awards .table-container th .bronze,
 .awards .table-container td .bronze {
   color: #cd7f32;
-}
-@include sm {
-  padding: 0.1rem;
 }
 .awards .table-container th {
   text-align: left;
@@ -68,20 +71,6 @@
 .awards .table-container tbody td ul {
   list-style-type: none;
 }
-@include sm {
-  ul {
-    padding: 0.25rem;
-  }
-}
-.content {
-  color: white;
-  padding: 2rem;
-  flex-grow: 1;
-  min-width: 80%;
-  max-width: 100%;
-  max-height: 90vh;
-  overflow-y: scroll;
-}
 :root {
   --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
   --gray: #34495e;
@@ -111,25 +100,25 @@ select::-ms-expand {
   display: flex;
   width: 20em;
   height: 3em;
-  border-radius: .25em;
+  border-radius: 0.25em;
   overflow: hidden;
 }
 /* Arrow */
 .select::after {
-  content: '\25BC';
+  content: "\25BC";
   position: absolute;
   top: 0;
   right: 0;
   padding: 1em;
   background-color: #34495e;
-  transition: .25s all ease;
+  transition: 0.25s all ease;
   pointer-events: none;
 }
 /* Transition */
 .select:hover::after {
   color: #f39c12;
 }
-.tabs{
+.tabs {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -137,8 +126,8 @@ select::-ms-expand {
 .btn_interiit {
   box-sizing: border-box;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 2px solid #e74c3c;
   border-radius: 0.6em;
@@ -157,7 +146,8 @@ select::-ms-expand {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
-.btn_interiit:hover, .btn_interiit:focus {
+.btn_interiit:hover,
+.btn_interiit:focus {
   color: #fff;
   outline: 0;
 }
@@ -172,7 +162,6 @@ select::-ms-expand {
 .btn_interiit:hover {
   background-position: 0;
 }
-.chart{
+.chart {
   height: 50rem;
 }
-

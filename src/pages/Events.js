@@ -9,10 +9,13 @@ export default function Events() {
   return (
     <Layout>
       <div className={Styles.mainContainer}>
-        <div className={Styles.aboutUsCircle1}></div>
-        <div className={Styles.aboutUsCircle2}></div>
-        <div className={Styles.aboutUsCircle3}></div>
-        <div className={Styles.aboutUsCircle4}></div>
+        {/* Recents Events */}
+
+        <div className={Styles.categoryContainer}>
+          <h2 className={Styles.categoryHeading}>Recent Events</h2>
+          <div className={Styles.recentEventsSlider}></div>
+        </div>
+
         {/* Upcoming Events Container */}
 
         <div className={Styles.categoryContainer}>
