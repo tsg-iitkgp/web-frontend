@@ -7,7 +7,7 @@
   display: flex;
   margin: auto;
   margin-bottom: 2rem;
-  min-height: 50vh;
+  min-height: 40vh;
   width: 90%;
   max-width: 1024px;
   background: linear-gradient(
@@ -38,7 +38,6 @@
 }
 .content {
   position: relative;
-  padding-right: 1rem;
   flex-grow: 1;
 }
 .title {
@@ -54,8 +53,8 @@
   margin-bottom: 1rem;
 }
 .description {
-  font-size: 1.25rem;
-  margin-top: 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
   color: rgba(255, 255, 255, 0.9);
 }
 /* Button CSS */
@@ -65,12 +64,12 @@
   border: none;
   color: white;
   background: #724cf0;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
   font-size: 1rem;
   position: absolute;
-  right: 10%;
-  bottom: 10%;
+  left: 0%;
+  bottom: 0%;
   cursor: pointer;
   transition: 0.3s;
   outline: none;
@@ -91,32 +90,35 @@
 }
 @media screen and (max-width: 768px) {
   .cardContainer {
-    max-height: 60rem;
+    max-height: 40rem;
   }
   .cardContainer {
     margin-top: 10%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
   .imgContainer {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 90%;
+    max-width: 90%;
+    display: block;
+    margin: 0rem auto;
+    transform: translateX(0%);
   }
   .imgContainer img {
-    display: block;
-    transform: translateX(0%);
-    min-width: 80%;
-    max-width: 90%;
+    width: 100%;
     margin: 0rem auto;
     transform: translateY(-20%);
   }
   .content {
     transform: translateY(-15%);
+    padding: 1rem;
   }
   .content button {
     display: block;
     position: static;
-    margin: 1rem auto 0rem;
+    bottom: 0%;
+  }
+  .description {
   }
 }
