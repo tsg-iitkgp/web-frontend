@@ -65,7 +65,7 @@ section blockquote {
   border-style: solid;
   border-color: rgb(117, 117, 117);
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 16px;
   }
