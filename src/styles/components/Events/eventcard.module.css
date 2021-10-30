@@ -1,122 +1,196 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-.cardContainer {
+body {
+  background: black;
+}
+/*Font Awesome Fonts*/
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-display: auto;
+  font-style: normal;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2")
+    format("woff2");
+}
+.blogCard {
   display: flex;
-  margin: auto;
-  margin-bottom: 2rem;
-  min-height: 40vh;
-  width: 90%;
-  max-width: 1024px;
-  background: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.1)
-  );
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(2rem);
-  border-radius: 1rem;
-  color: white;
-  z-index: 2;
-  box-shadow: 0 0rem 0.5rem 0 rgba(255, 255, 255, 0.2);
-  padding: 1rem;
-}
-.imgContainer {
-  min-width: 30%;
-  max-width: 30%;
-  border-radius: 1rem;
-  flex-grow: 1;
-}
-.imgContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  border-radius: 1rem;
-  transform: translateX(-20%);
-}
-.content {
-  position: relative;
-  flex-grow: 1;
-}
-.title {
-  letter-spacing: 2px;
-  color: #451bcf;
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-.date {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-.description {
-  font-size: 1rem;
-  margin-top: 1rem;
-  color: rgba(255, 255, 255, 0.9);
-}
-/* Button CSS */
-.content button {
-  margin-top: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  background: #724cf0;
-  padding: 0.5rem 0.75rem;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  line-height: 1.4;
+  font-family: sans-serif;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  overflow: hidden;
+  z-index: 0;
+  width: 100%;
+}
+.blogCard a {
+  color: inherit;
+}
+.blogCard a:hover {
+  color: #400bee;
+}
+.blogCard:hover .photo {
+  transform: scale(1.3) rotate(3deg);
+}
+.blogCard .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.blogCard .photo {
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+.blogCard .details,
+.blogCard .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.blogCard .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.blogCard .details a {
+  text-decoration: none;
+}
+.blogCard .details ul li {
+  display: inline-block;
+}
+.blogCard .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f133";
+}
+.blogCard .details .tags ul:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  margin-right: 10px;
+}
+.blogCard .details .tags li {
+  margin-right: 2px;
+}
+.blogCard .details .tags li:first-child {
+  margin-left: -4px;
+}
+.blogCard .description {
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+}
+.blogCard .description h1,
+.blogCard .description h2 {
+  font-family: Poppins, sans-serif;
+}
+.blogCard .description h1 {
+  color: black;
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.blogCard .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #918a8a;
+  margin-top: 5px;
+}
+.blogCard .description .readMore {
+  text-align: right;
+}
+.blogCard .description .readMore a {
+  color: #400bee;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  border: 2px solid #400bee;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+.blogCard .description .readMore a:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+.blogCard .description .readMore a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.blogCard p {
+  position: relative;
+  margin: 1rem 0 0;
+  color: black;
+}
+.blogCard p:first-of-type {
+  margin-top: 1.25rem;
+}
+.blogCard p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #400bee;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.blogCard:hover .details {
   left: 0%;
-  bottom: 0%;
-  cursor: pointer;
-  transition: 0.3s;
-  outline: none;
 }
-.content button:hover {
-  color: rgba(255, 255, 255, 0.5);
-  background: #7c5aec;
-  outline: none;
-}
-@media screen and (max-width: 1024px) {
-  .cardContainer {
-    max-height: 30rem;
+@media (min-width: 640px) {
+  .blogCard {
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 40vh;
   }
-  .imgContainer {
-    min-width: 30%;
-    max-width: 40%;
+  .blogCard .meta {
+    flex-basis: 40%;
+    height: auto;
   }
-}
-@media screen and (max-width: 768px) {
-  .cardContainer {
-    max-height: 40rem;
+  .blogCard .description {
+    flex-basis: 60%;
   }
-  .cardContainer {
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+  .blogCard .description:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
   }
-  .imgContainer {
-    min-width: 90%;
-    max-width: 90%;
-    display: block;
-    margin: 0rem auto;
-    transform: translateX(0%);
+  .blogCard.alt {
+    flex-direction: row-reverse;
   }
-  .imgContainer img {
-    width: 100%;
-    margin: 0rem auto;
-    transform: translateY(-20%);
+  .blogCard.alt .description:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
   }
-  .content {
-    transform: translateY(-15%);
-    padding: 1rem;
-  }
-  .content button {
-    display: block;
-    position: static;
-    bottom: 0%;
+  .blogCard.alt .details {
+    padding-left: 25px;
   }
 }

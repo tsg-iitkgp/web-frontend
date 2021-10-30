@@ -29,6 +29,7 @@ export default function Events() {
                   description={event.description}
                   bodyContent={event.bodyContent}
                   imgName={event.imgName}
+                  index={index}
                   eventCategory="upcoming"
                 />
               );
@@ -44,6 +45,7 @@ export default function Events() {
               <EventCard
                 title={event.title}
                 date={event.date}
+                index={index}
                 description={event.description}
                 bodyContent={event.bodyContent}
                 imgName={event.imgName}
