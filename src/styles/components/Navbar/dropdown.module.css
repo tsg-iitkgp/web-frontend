@@ -29,10 +29,6 @@
   color: white;
 }
 
-/* .dropdownMenu li:hover {
-
-} */
-
 .dropdownMenu.clicked {
   display: none;
 }
