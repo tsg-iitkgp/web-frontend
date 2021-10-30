@@ -19,28 +19,28 @@ const years = ["2019-20", "2018-19", "2017-18", "2016-17", "2015-16"];
         <title>Hall of Fame</title>
       </h1>
       <section className="awards content">
-        <h2 style={{display: "flex", flexDirection: "row", justifyContent: "center", padding: "3%", alignItems: "center", marginTop: "5%"}}>TSG Awards!</h2>
+        <h2 className="awards_h2" >TSG Awards!</h2>
 
         <div className="tabs">
-          <div className={`tab ${currentTab === "socult" ? "active" : ""}`} onClick={() => handleTabChange("socult")}>
+          <div className={`tab ${currentTab === "socult" ? "active" : ""}`} onClick={() => handleTabChange("socult")} style={{display: "flex", justifyContent: "center"}}>
             <button className="btn_interiit">Social &amp; Cultural</button>
           </div>
-          <div className={`tab ${currentTab === "sports" ? "active" : ""}`} onClick={() => handleTabChange("sports")}>
+          <div className={`tab ${currentTab === "sports" ? "active" : ""}`} onClick={() => handleTabChange("sports")} style={{display: "flex", justifyContent: "center"}}>
             <button className="btn_interiit">Sports &amp; Games</button>
           </div>
-          <div className={`tab ${currentTab === "tech" ? "active" : ""}`} onClick={() => handleTabChange("tech")}>
+          <div className={`tab ${currentTab === "tech" ? "active" : ""}`} onClick={() => handleTabChange("tech")} style={{display: "flex", justifyContent: "center"}}>
             <button className="btn_interiit">Technology</button>
           </div>
           {Object.keys(awardsData[currentYear]).length === 4 && (
             <div
               className={`tab ${currentTab === "specialRecog" ? "active" : ""}`}
-              onClick={() => handleTabChange("specialRecog")}
+              onClick={() => handleTabChange("specialRecog")} style={{display: "flex", justifyContent: "center"}}
             >
               <button className="btn_interiit">Special Recognition</button>
             </div>
           )}
         </div>
-        <div className="select" style={{marginLeft: "40%"}}>
+        <div className="select GC_dropdown" >
         <select value={currentYear} onChange={(e) => setCurrentYear(e.target.value)}>
           {years.map((year) => (
             <option key={year} value={year}>

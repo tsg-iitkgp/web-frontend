@@ -4,6 +4,7 @@ import SocAndCell from "./SocAndCell";
 import Styles from "../styles/pages/home.module.css";
 import logo from "../images/IIT_Kharagpur_Logo.png";
 import AboutUs from "../components/Navbar/AboutUs";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 export default function Home() {
   document.title = "Home | TSG";
@@ -40,6 +41,15 @@ export default function Home() {
       </h2>
       <SocAndCell />
       <div className={Styles.container}></div>
+      
+      <h2
+        className={Styles.sectionHeading}
+        style={{ fontSize: "2.5rem", marginBottom: 0 }}
+      >
+        Contact Form
+      </h2>
+      <ContactForm />
+      
     </Layout>
   );
 }

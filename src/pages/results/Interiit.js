@@ -33,6 +33,7 @@ export default function InterIIT() {
           <div
             className={`tab ${currentTab === "Sports" ? "active" : ""}`}
             onClick={() => handleTabChange("Sports")}
+            style={{display: "flex", justifyContent: "center"}}
           >
             <button className="btn_interiit">Sports &amp; Games</button>
           </div>
@@ -40,17 +41,19 @@ export default function InterIIT() {
           <div
             className={`tab ${currentTab === "Technology" ? "active" : ""}`}
             onClick={() => handleTabChange("Technology")}
+            style={{display: "flex", justifyContent: "center"}}
           >
             <button className="btn_interiit">Technology</button>
           </div>
           <div
             className={`tab ${currentTab === "Socult" ? "active" : ""}`}
             onClick={() => handleTabChange("Socult")}
+            style={{display: "flex", justifyContent: "center"}}
           >
             <button className="btn_interiit">Socult</button>
           </div>
         </div>
-        <div className="select" style={{ marginLeft: "40%" }}>
+        <div className="select GC_dropdown">
           <select
             value={currentYear}
             onChange={(e) => setCurrentYear(e.target.value)}

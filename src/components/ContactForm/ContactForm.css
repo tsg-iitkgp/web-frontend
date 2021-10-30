@@ -1,0 +1,312 @@
+/* extends */
+.frm--create-account input[type="text"],
+.frm--create-account input[type="email"],
+.frm--create-account input[type="password"],
+.frm--create-account input[type="tel"],
+.frm__btn-primary, .frm__twitter, .frm__facebook {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: .5px;
+  font-weight: bold;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 0 18px;
+  height: 40px;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+}
+.frm--create-account input[type="textarea"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: .5px;
+  font-weight: bold;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 0 18px;
+  height: 120px;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*::before,
+*:after,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: #e9f1f3;
+  color: #0c0c0d;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+a {
+  color: #0060DF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #167FFF;
+}
+
+/* layout css */
+.maindiv_loginpage{
+    display: flex;
+    flex-direction: row;
+    background: url("./../../images/tsg.jpg") no-repeat;
+    height: 100vh;
+}
+
+.container_cf {
+  width: 40vw;
+  height: 72vh;
+  margin: auto;
+}
+
+.img_loginpage{
+    width: 70vw;
+    height: 82vh;
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+/* global css */
+.frm--create-account {
+  width: 100%; 
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 50px 1em 20px 1em ;
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  -moz-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
+}
+
+.frm--create-account label {
+  font-family: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #adadb5;
+  font-weight: bold;
+  letter-spacing: .5px;
+  padding: 0 18px;
+  margin: 0 0 3px;
+  display: block;
+}
+
+.frm--create-account input[type="text"],
+.frm--create-account input[type="email"],
+.frm--create-account input[type="password"],
+.frm--create-account input[type="tel"],
+.frm--create-account input[type="textarea"] {
+  background-color: #eff2f7;
+  border: 1px solid #eff2f7;
+  -webkit-transition: -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), -moz-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), -moz-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.frm--create-account input[type="text"]:hover,
+.frm--create-account input[type="email"]:hover,
+.frm--create-account input[type="password"]:hover,
+.frm--create-account input[type="tel"]:hover,
+.frm--create-account input[type="textarea"]:hover{
+  outline: none;
+  border: 1px solid #e0e2e8;
+}
+
+.frm--create-account input[type="text"]:focus,
+.frm--create-account input[type="email"]:focus,
+.frm--create-account input[type="password"]:focus,
+.frm--create-account input[type="tel"]:focus,
+.frm--create-account input[type="textarea"]:focus {
+  border: 1px solid #fff;
+  line-height: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  -moz-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
+}
+
+.frm-group {
+  margin: 0 0 15px;
+}
+
+
+
+.frm-group.inline .frm-group {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -moz-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.frm-group.inline .frm-group:not(:last-child) {
+  margin: 0 15px 15px 0;
+}
+
+.frm__title {
+  font-size: 1.8em;
+  text-align: center;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  margin: 0;
+  padding: 1em 0 1em;
+}
+
+.frm-info {
+  margin: 1em 0;
+}
+
+.frm__txt {
+  font-family: inherit;
+  font-size: 14px;
+  text-align: center;
+}
+
+.frm__link {
+  font-family: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #B2002D;
+}
+
+.frm__btn-primary {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #B2002D;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.frm__btn-primary:hover {
+  background-color: #B2002D;
+}
+
+.frm__or {
+  width: 100%;
+  height: 1px;
+  position: relative;
+  background-color: #f7f7f7;
+  margin: 2em 0;
+}
+
+.frm__or:before {
+  content: 'OR';
+  text-align: center;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ebebeb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 0 10px;
+}
+
+.text_image_login{
+    position: absolute;
+    top: 45%;
+    margin-left: 5%;
+    
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .frm-group.inline {
+    display: block;
+  }
+  .frm-group.inline .frm-group:not(:last-child) {
+    margin: 0 0 15px;
+  }
+  .img_loginpage, .text_image_login{
+    display: none;
+  }
+  .frm--create-account {
+    padding: 100px 1em 100px 1em ;
+  }
+  .container_cf {
+    width: 90vw;
+    height: 72vh;
+    margin: auto;
+  }
+  .frm--create-account {   
+    padding: 0px 1em 10px 1em ;
+    }
+    .frm--create-account input[type="textarea"]{
+      height: 70px;
+    }
+}
+
+.ajay {
+  font-family: sans-serif;
+  font-size: 14px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+}
+.ajay a {
+  text-decoration: none;
+  color: #333;
+}
+.ajay a:hover {
+  text-decoration: underline;
+  color: #000;
+}

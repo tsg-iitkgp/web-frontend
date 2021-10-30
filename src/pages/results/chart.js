@@ -2,6 +2,25 @@ import { ResponsiveBar } from "@nivo/bar";
 import pointsData from "./pointsData";
 
 export default function Chart(props) {
+  const theme = {
+    
+    axis: {
+      
+      
+      ticks: {
+        
+        text: {
+          fill: "#ffffff"
+        }
+      },legend: {
+        text: {
+          fill: "#fff"
+        }
+      }
+      
+    },
+    
+  };
   return (
     <ResponsiveBar
       data={props.data}
@@ -16,13 +35,14 @@ export default function Chart(props) {
       borderColor={{ from: "color", modifiers: [["darker", 1.6]] }}
       axisTop={null}
       axisRight={null}
+      theme={theme}
       axisBottom={{
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
         legend: "hall",
         legendPosition: "middle",
-        legendOffset: 32,
+        legendOffset: 35,
       }}
       axisLeft={{
         tickSize: 5,
@@ -30,7 +50,7 @@ export default function Chart(props) {
         tickRotation: 0,
         legend: "points",
         legendPosition: "middle",
-        legendOffset: -40,
+        legendOffset: -30,
       }}
       labelSkipWidth={12}
       labelSkipHeight={12}
@@ -41,13 +61,14 @@ export default function Chart(props) {
           anchor: "bottom-right",
           direction: "column",
           justify: false,
-          translateX: 120,
+          translateX: 100,
           translateY: 0,
           itemsSpacing: 2,
           itemWidth: 100,
           itemHeight: 20,
           itemDirection: "left-to-right",
           itemOpacity: 0.85,
+          itemTextColor: "#fff",
           symbolSize: 20,
           effects: [
             {
