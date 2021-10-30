@@ -98,7 +98,7 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 20em;
+  width: 18em;
   height: 3em;
   border-radius: 0.25em;
   overflow: hidden;
@@ -164,4 +164,29 @@ select::-ms-expand {
 }
 .chart {
   height: 50rem;
+}
+.GC_dropdown{
+  margin-left: 42%;
+}
+.awards_h2{
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding: 3%;
+    align-items: center;
+     margin-top: 8%;
+      color: #fff ;
+}
+@media screen and (max-width: 768px) {
+  .GC_dropdown{
+    margin-left: 0%;
+  }
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .awards_h2{
+       margin-top: 22%;
+  }
 }

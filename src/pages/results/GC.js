@@ -1,7 +1,9 @@
 import { useState } from "react";
+// import Head from "next/head";
 import pointsData from "./pointsData";
 import Chart from "./chart";
 import "./interiit.css";
+
 
 const years = ["2018-19"];
 
@@ -36,6 +38,7 @@ export default function Sports() {
           <div
             className={`tab ${currentTab === "sports" ? "active" : ""}`}
             onClick={() => handleTabChange("sports")}
+            style={{display: "flex", justifyContent: "center"}}
           >
             <button className="btn_interiit">Sports &amp; Games</button>
           </div>
@@ -45,11 +48,12 @@ export default function Sports() {
           <div
             className={`tab ${currentTab === "socult" ? "active" : ""}`}
             onClick={() => handleTabChange("socult")}
+            style={{display: "flex", justifyContent: "center"}}
           >
             <button className="btn_interiit"> Socult</button>
           </div>
         </div>
-        <div className="select" style={{ marginLeft: "40%" }}>
+        <div className="select GC_dropdown" >
           <select
             value={currentYear}
             onChange={(e) => setCurrentYear(e.target.value)}
