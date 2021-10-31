@@ -109,7 +109,138 @@ html {
   color: rgba(255, 255, 255, 0.7);
   line-height: 125%;
 }
+.societiesSection {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.readMore {
+  width: 20%;
+}
+
+/* ReadMore Section */
+
+.animationTrigger {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.moreText {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 3rem;
+  color: #fff;
+  color: white;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.25s ease-out;
+  text-transform: uppercase;
+}
+.moreText:hover {
+  background-color: white;
+  color: #6e4cdd;
+}
+.animationTrigger:hover .moreText {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+.moreDots {
+  transform: translateY(-15px);
+  transition: all 0.3s ease;
+}
+.animationTrigger:hover .moreDots {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-out;
+}
+.moreDots .dot {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  margin: 0.25rem;
+  background: white;
+}
+.animationTrigger:hover .moreDots .dot {
+  animation: bounce-3 0.8s 1 ease;
+  animation-fill-mode: forwards;
+}
+.animationTrigger:hover .moreDots .dot.dot2 {
+  animation-delay: 0.1s;
+}
+.animationTrigger:hover .moreDots .dot.dot3 {
+  animation-delay: 0.2s;
+}
+.animationTrigger:hover .moreDots .dot.dot4 {
+  animation-delay: 0.3s;
+}
+@keyframes bounce-1 {
+  0%,
+  25% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(0, 30px) scale(0.2);
+    background: #dcdcdc;
+  }
+  75%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+}
+@keyframes bounce-2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(0, 30px) scale(0.2);
+    background: #dcdcdc;
+  }
+}
+@keyframes bounce-3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(0, 15px);
+    background: #dcdcdc;
+  }
+  70% {
+    transform: translate(0, 13px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .societiesSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .societiesSection .readMore {
+    margin: auto;
+    padding: 2rem;
+  }
+  .readMore .moreDots {
+    display: none;
+  }
+  .readMore .moreText {
+    opacity: 1;
+    transform: translateY(0);
+  }
   .textOverlay {
     display: flex;
     flex-direction: column;
