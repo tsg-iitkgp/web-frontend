@@ -1,0 +1,38 @@
+.contactsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+h1 {
+  color: white;
+}
+.row1 {
+  width: 150%;
+  border: 1px soid black;
+  background-color: white;
+}
+.col1p {
+  width: 50%;
+  border: 1px solid black;
+  text-align: left;
+  border-right: none;
+  padding: 0 10% 0 2%;
+}
+
+.col2p {
+  width: 20em;
+  border: 1px solid black;
+  text-align: left;
+  padding: 0 2% 0 2%;
+}
+.row1 :hover {
+  background-color: whitesmoke;
+}
+.contacts_content__1wT_L {
+  padding: 2 rem;
+  margin-right: 0.05 rem;
+  max-height: 90 vh;
+  overflow-y: scroll;
+  width: 100%;
+}

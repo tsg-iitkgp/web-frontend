@@ -7,7 +7,11 @@
     "bootstrap": "^5.1.1",
     "react": "^17.0.2",
     "react-awesome-slider": "^4.1.0",
+<<<<<<< Updated upstream
     "react-bootstrap": "^1.6.3",
+=======
+    "react-carousel-minimal": "^1.4.1",
+>>>>>>> Stashed changes
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",

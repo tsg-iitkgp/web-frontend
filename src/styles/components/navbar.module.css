@@ -14,6 +14,7 @@
     width: 90%;
     max-width: 1500px;
 }
+<<<<<<< Updated upstream
 
 .navbar ul {
     margin: 0;
@@ -24,6 +25,90 @@
 }
 
 .navbar li a {
+=======
+.navbar {
+  height: 10vh;
+  background: transparent;
+  /* background-color: white; */
+  /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1); */
+  border-radius: 2rem;
+  width: 90%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+}
+.menuIcon {
+  display: none;
+}
+.navLogo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.navLogo a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.navLinks {
+  font-size: 1.1rem;
+  color: white;
+}
+.activeNavbar {
+  backdrop-filter: blur(2rem);
+  box-shadow: 0 0rem 1rem 0 rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2rem);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+ul.navMenu {
+  padding: 0rem 1rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+li {
+  margin-right: 1rem;
+  padding: 0.25rem;
+  display: block;
+  list-style: none;
+}
+ul li a {
+  padding: 0.5rem 0rem;
+  color: black;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: ease-out 0.5s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.navbar li a::before {
+  content: "";
+  position: absolute;
+  top: 95%;
+  left: 0;
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  transform: translateX(-101%);
+  transition: ease-out 0.5s;
+}
+.navbar li a:hover:before {
+  transform: translateX(0);
+  z-index: -1;
+}
+.active {
+  background-color: red !important;
+}
+@media screen and (max-width: 960px) {
+  .menuIcon {
+    color: rgba(255, 255, 255, 0.9);
+>>>>>>> Stashed changes
     display: block;
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
