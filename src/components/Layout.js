@@ -53,8 +53,8 @@ export default function Layout({ children }) {
               <br />
               <br />
               <br />
-              <a className={FooterStyles.quickLinkOne} href="/">
-                Departments
+              <a className={FooterStyles.quickLinkOne} href="/ContactUs">
+                Contact Us
               </a>
               <br />
               <br />
