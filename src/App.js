@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // fs imports
 import Login from "./pages/admin/Login";
 import Dashboard from "./pages/admin/Dashboard";
-
+import ContactUs from "./components/ContactForm/ContactForm";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./routes/PrivateRoute";
@@ -35,9 +35,8 @@ function App() {
         <Route exact path="/contacts/currentSenate" component={Contacts} />
         <Route exact path="/societies" component={Societies} />
         <Route exact path="/events" component={Events} />
-
+        <Route exact path="/ContactUs" component={ContactUs} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
-
         <Route component={NotFound} />
       </Switch>
     </Router>

@@ -42,13 +42,7 @@ export default function Home() {
       <SocAndCell />
       <div className={Styles.container}></div>
       
-      <h2
-        className={Styles.sectionHeading}
-        style={{ fontSize: "2.5rem", marginBottom: 0 }}
-      >
-        Contact Form
-      </h2>
-      <ContactForm />
+      
       
     </Layout>
   );
