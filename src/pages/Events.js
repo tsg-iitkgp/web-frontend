@@ -4,6 +4,7 @@ import UpcomingEvents from "../components/Events/UpcomingEvents";
 import OngoingEvents from "../components/Events/UpcomingEvents";
 import EventCard from "../components/Events/EventCard";
 import Layout from "../components/Layout";
+
 export default function Events() {
   document.title = "Events | TSG";
   return (

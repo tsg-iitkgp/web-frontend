@@ -42,10 +42,10 @@
   -webkit-perspective: 100rem;
   perspective: 100rem;
   height: 316px;
-  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .card:hover .cardfront {
+  box-shadow: 0rem 0rem 1rem rgba(255, 255, 255, 0.1);
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
   visibility: hidden;
@@ -139,7 +139,7 @@
     opacity: 1;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .cardswrapper {
     grid-template-columns: auto;
     width: auto;
