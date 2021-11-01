@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../styles/components/SocAndCell.module.css";
+import Styles from "./committeeCard.module.css";
 
 export default function SocAndCell() {
   return (
