@@ -78,6 +78,9 @@ ul li a {
   transform: translateX(-101%);
   transition: ease-out 0.5s;
 }
+/* .acitveLink {
+  color: #f1c40f;
+} */
 .navbar li a:hover:before {
   transform: translateX(0);
   z-index: -1;

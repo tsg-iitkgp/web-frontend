@@ -2,7 +2,35 @@
   padding: 0;
   margin: 0;
 }
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  background-color: #f1c40f;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.arrowButton.right {
+  transition: 0.3s;
+  right: -30%;
+}
+.arrowButton.left {
+  transition: 0.3s;
+  right: -8%;
+}
+.arrowButton i {
+  transition: 0.3s;
+  color: black;
+  font-weight: 800;
+  font-size: 2rem;
+}
 .sidebar {
+  position: relative;
   background-color: rgba(70, 69, 69, 0.9);
   min-width: 5%;
   max-width: 5%;
@@ -10,7 +38,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  transition: 0.2s;
+  transition: 0.3s ease-in-out;
   padding: 2rem 0rem;
 }
 .sidebar li {
@@ -40,7 +68,7 @@ a.sidebarItem {
   transition: 0.2s;
   font-size: 1rem;
   max-width: 100%;
-  padding: 1rem 1rem;
+  padding: 1.25rem 1rem;
   text-decoration: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -53,7 +81,6 @@ a.sidebarItem {
   align-items: center;
   font-size: 1rem;
   font-weight: 400;
-  /* line-height: 1; */
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   border: 2px solid #f1c40f;
