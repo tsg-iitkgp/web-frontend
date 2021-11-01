@@ -1,25 +1,19 @@
 import { ResponsiveBar } from "@nivo/bar";
-import pointsData from "./pointsData";
 
 export default function Chart(props) {
   const theme = {
-    
     axis: {
-      
-      
       ticks: {
-        
         text: {
-          fill: "#ffffff"
-        }
-      },legend: {
+          fill: "#ffffff",
+        },
+      },
+      legend: {
         text: {
-          fill: "#fff"
-        }
-      }
-      
+          fill: "#fff",
+        },
+      },
     },
-    
   };
   return (
     <ResponsiveBar

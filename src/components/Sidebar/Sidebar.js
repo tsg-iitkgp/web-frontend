@@ -10,26 +10,41 @@ export default function Sidebar({ itemsList }) {
     setActive(false);
   }
   return (
-    <ul
-      className={
-        active ? `${Styles.sidebar} ${Styles.active}` : `${Styles.sidebar}`
-      }
-      onMouseEnter={() => onMouseEnter()}
-      onMouseLeave={() => onMouseLeave()}
-    >
-      {itemsList.map((item, index) => {
-        return (
-          <li key={index}>
-            <NavLink
-              to={item.route}
-              className={Styles.sidebarItem}
-              activeClassName={Styles.active}
-            >
-              {item.title}
-            </NavLink>
-          </li>
-        );
-      })}
-    </ul>
+    <>
+      <ul
+        className={
+          active ? `${Styles.sidebar} ${Styles.active}` : `${Styles.sidebar}`
+        }
+        onMouseEnter={() => onMouseEnter()}
+        onMouseLeave={() => onMouseLeave()}
+      >
+        {itemsList.map((item, index) => {
+          return (
+            <li key={index}>
+              <NavLink
+                to={item.route}
+                className={Styles.sidebarItem}
+                activeClassName={Styles.active}
+              >
+                {item.title}
+              </NavLink>
+            </li>
+          );
+        })}
+        <div
+          className={
+            active
+              ? `${Styles.arrowButton} ${Styles.left}`
+              : `${Styles.arrowButton} ${Styles.right}`
+          }
+        >
+          <i
+            className={
+              active ? `fas fa-chevron-left left` : `fas fa-chevron-right right`
+            }
+          ></i>
+        </div>
+      </ul>
+    </>
   );
 }

@@ -25,10 +25,10 @@ body {
   overflow-y: scroll;
 }
 .postHeading {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   text-align: center;
   margin: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #6e4cdd;
 }
 .multipleCards {
   display: flex;
