@@ -110,14 +110,12 @@ html {
   line-height: 125%;
 }
 .societiesSection {
-  width: 90%;
+  position: relative;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   margin-bottom: 2rem;
   display: flex;
-}
-.readMore {
-  width: 20%;
 }
 
 /* ReadMore Section */
@@ -149,7 +147,7 @@ html {
 }
 .moreText:hover {
   background-color: white;
-  color: #6e4cdd;
+  color: #f1c40f;
 }
 .animationTrigger:hover .moreText {
   opacity: 1;

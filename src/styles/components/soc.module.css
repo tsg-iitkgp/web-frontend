@@ -158,13 +158,16 @@
   padding: 5px 5px;
   position: relative;
 }
+.a1:hover {
+  color: black;
+}
 .a1:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
   height: 2px;
   position: absolute;
-  background: #333;
+  background: #f1c40f;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }

@@ -47,11 +47,11 @@ export default function Home() {
         </h2>
         {/* Rotating Cards */}
         <div className={Styles.societiesSection}>
-          <div className={CardsStyles.cardswrapper}>
+          <div className={CardsStyles.cardswrapper} style={{ width: "100%" }}>
             {Data.data
               .filter((data) => data.category === "Socult")
               .map((item, i) => {
-                while (i < 3) {
+                while (i < 5) {
                   return (
                     <RotatingCard
                       name={item.name}
@@ -62,18 +62,18 @@ export default function Home() {
                   );
                 }
               })}
-          </div>
-          <div className={Styles.readMore}>
-            <div class={Styles.animationTrigger}>
-              <div class={Styles.moreWrap}>
-                <Link to="/societies" class={Styles.moreText}>
-                  See more
-                </Link>
-                <div class={Styles.moreDots}>
-                  <div class={`${Styles.dot} ${Styles.dot1}`}></div>
-                  <div class={`${Styles.dot} ${Styles.dot2}`}></div>
-                  <div class={`${Styles.dot} ${Styles.dot3}`}></div>
-                  <div class={`${Styles.dot} ${Styles.dot4}`}></div>
+            <div className={Styles.readMore}>
+              <div class={Styles.animationTrigger}>
+                <div class={Styles.moreWrap}>
+                  <Link to="/societies" class={Styles.moreText}>
+                    See more
+                  </Link>
+                  <div class={Styles.moreDots}>
+                    <div class={`${Styles.dot} ${Styles.dot1}`}></div>
+                    <div class={`${Styles.dot} ${Styles.dot2}`}></div>
+                    <div class={`${Styles.dot} ${Styles.dot3}`}></div>
+                    <div class={`${Styles.dot} ${Styles.dot4}`}></div>
+                  </div>
                 </div>
               </div>
             </div>
