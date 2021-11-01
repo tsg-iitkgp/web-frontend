@@ -30,17 +30,6 @@ function App() {
         <Route exact path="/booking" component={Booking} />
         <Route exact path="/contacts" component={Contacts} />
         <Route exact path="/login" component={Login} />
-<<<<<<< Updated upstream
-=======
-        <Route exact path="/results/gc" component={Results} />
-        <Route exact path="/results/inter_iit" component={Results} />
-        <Route exact path="/contacts/secretaries" component={Contacts} />
-        <Route exact path="/contacts/currentSenate" component={Contacts} />
-        <Route exact path="/contacts/pastBearers" component={Contacts} />
-        <Route exact path="/societies" component={Societies} />
-        <Route exact path="/events" component={Events} />
-
->>>>>>> Stashed changes
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <Route component={NotFound} />
       </Switch>
