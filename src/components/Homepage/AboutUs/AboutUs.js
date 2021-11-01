@@ -1,9 +1,9 @@
 import React from "react";
-import Styles from "../../styles/pages/home.module.css";
+import Styles from "../../../styles/pages/home.module.css";
 export default function AboutUs() {
   return (
-    <div className={Styles.aboutUsContainer} id="aboutUs">
-      <div className={Styles.aboutUsContent}>
+    <div className={Styles.container} id="aboutUs">
+      <div className={Styles.aboutUsSection}>
         <h2 className={Styles.sectionHeading}>About Us</h2>
         <p className={Styles.description}>
           Technology Students’ Gymkhana is the hub of the numerous

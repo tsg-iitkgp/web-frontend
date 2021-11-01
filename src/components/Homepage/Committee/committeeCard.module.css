@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 .socs {
-  width: 100%;
+  width: 90%;
   padding: 0;
-  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
