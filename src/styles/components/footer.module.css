@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: center;
-  width: 110%;
+  
   margin: 0 0 0 -5%;
   z-index: 99;
   background-color: rgb(0, 0, 0);
@@ -10,13 +10,19 @@ footer {
 .footerContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
   width: 100%;
   max-width: 1500px;
   padding: 30px 0;
   min-height: 50vh;
   color: rgb(255, 255, 255);
   z-index: 99;
+}
+
+.footer_heading1 {
+  color: #fff;
+  font-size: 48px;
+  
 }
 
 .footerCol {
@@ -34,7 +40,7 @@ footer {
   border-right: 3px dashed grey;
   align-items: center;
   padding-right: 0%;
-  width: 110%;
+  width: 100%;
   margin: 0 0 0 0%;
   justify-content: center;
 }
@@ -81,7 +87,8 @@ svg {
 .columnTwo {
   color: white;
   margin: 0 0 0 0%;
- 
+  text-align: center;
+  
 }
 .quickLinkHeader {
   color: rgb(255, 255, 255);
@@ -101,8 +108,13 @@ svg {
 
 .columnThree {
   color: white;
-  margin: 0 0 0 0%;
-  
+  margin: 0 0 0 -90%;
+  text-align: center;
+}
+.columnFour{
+  color: white;
+  margin: -70% 0 0 250%;
+  width: 80%;
 }
 .quickLink {
   color: rgb(255, 255, 255);
@@ -112,16 +124,68 @@ svg {
 .quickLink:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 464px) {
-  .columnOne {
-    display: none;
+
+.footer_heading2 {
+  color: #f1c40f;
+  font-size: 38px;
+  margin-bottom: 3%;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .columnFour{
+    margin-top: -80%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .columnFour{
+    margin-top: -97%;
   }
   .columnTwo {
-    width: 50%;
-    margin: 0 0 0 -20%;
+    width: 80%;
+    margin: 0 0 0 -2%;
   }
-  .columnThree {
-    width: 50%;
-    margin: 0 0 0 -20%;
+}
+@media screen and (max-width: 768px) {
+  .columnFour{
+    margin-top: -130%;
+  }
+  .footerContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .columnOne{
+    margin-left: 80%;
+    width: 200%;
+    border-right: none;
+  }
+  .imgLogo{
+    display: none;
+  }
+  .columnTwo{
+    margin-left: 30%;
+    width: 150%;
+    margin-top: 20%;
+  }
+  .columnThree{
+    margin-left: 200%;
+    width: 100%;
+    margin-top: -168%;
+  }
+  .columnFour{
+    margin-left: 50%;
+    width: 200%;
+    margin-top: 30%;
+  }
+}
+@media screen and (max-width: 464px) {
+
+  .footer_heading1 {
+    font-size: 40px;
+    margin-top: 18%;
+  }
+  .footer_heading2 {
+    font-size: 34px;
+    
   }
 }

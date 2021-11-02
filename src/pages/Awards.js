@@ -52,7 +52,7 @@ const years = ["2019-20", "2018-19", "2017-18", "2016-17", "2015-16"];
 
         {(awardsData[currentYear][currentTab]["awards"] !== undefined || currentTab === "specialRecog") && (
           <>
-            <h2 style={{display: "flex", flexDirection: "row", justifyContent: "center", padding: "3%", alignItems: "center"}}> Awards </h2>
+            <h2 style={{display: "flex", flexDirection: "row", justifyContent: "center", padding: "3%", alignItems: "center", color: "#fff"}}> Awards </h2>
             <div className="cards">
               {currentTab !== "specialRecog"
                 ? awardsData[currentYear][currentTab]["awards"]?.map((winner) => (
@@ -67,7 +67,7 @@ const years = ["2019-20", "2018-19", "2017-18", "2016-17", "2015-16"];
 
         {currentTab !== "specialRecog" && (
           <>
-            <h2 style={{display: "flex", flexDirection: "row", justifyContent: "center", padding: "3%", alignItems: "center"}}> Honours </h2>
+            <h2 style={{display: "flex", flexDirection: "row", justifyContent: "center", padding: "3%", alignItems: "center", color: "#fff"}}> Honours </h2>
             <div className="table-container">
               <table>
                 <thead>
