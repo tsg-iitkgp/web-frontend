@@ -31,6 +31,13 @@ body * {
 .active {
   background-color: transparent !important;
 }
+.contacts_content__1wT_L {
+  padding: 2 rem;
+  margin-right: 0.05 rem;
+  max-height: 90 vh;
+  overflow-y: scroll;
+  width: 100% !important;
+}
 /* .main-container {
   padding-top: 100px;
   display: flex;

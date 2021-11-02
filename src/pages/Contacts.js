@@ -31,7 +31,7 @@ function Contacts() {
       setCurrentSenate(false);
       setPastBearers(false);
       setSecretaries(true);
-    } else if (location.pathname === "/contacts/past_bearers") {
+    } else if (location.pathname === "/contacts/pastBearers") {
       setCurrentSenate(false);
       setPastBearers(true);
       setSecretaries(false);

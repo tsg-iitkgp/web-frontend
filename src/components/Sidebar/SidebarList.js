@@ -9,7 +9,7 @@ export const contactsSidebarList = [
   },
   {
     title: "Past Office Bearers",
-    route: "/contacts/past_bearers",
+    route: "/contacts/pastBearers",
   },
 ];
 export const resultsSidebarList = [

@@ -46,7 +46,7 @@ export default function Events() {
        {/* Recents Events */}
 
        <div className={Styles.categoryContainer}>
-          <h2 className={Styles.categoryHeading}>Recent Events</h2>
+          <h2 className={Styles.categoryHeading1}>Recent Events</h2>
           <div className={Styles.recentEventsSlider}></div>
         </div>
 
@@ -61,7 +61,7 @@ export default function Events() {
             data={data}
             time={2000}
             width="100%"
-            height="800px"
+            height="600px"
             captionStyle={captionStyle}
             radius="10px"
             slideNumber={true}
@@ -80,7 +80,7 @@ export default function Events() {
               width: "90%",
               maxHeight: "600px",
               margin: "40px auto",
-              height:"800px",
+              height:"600px",
               marginBottom:"10%"
              
             }}

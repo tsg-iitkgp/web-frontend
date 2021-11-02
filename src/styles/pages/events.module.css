@@ -26,8 +26,15 @@
   font-size: 2rem;
   color: #3f5efb;
   margin-bottom: 2rem;
-  margin-top: 10%;
+  margin-top: -3%;
 }
+.categoryHeading1 {
+  font-size: 2rem;
+  color: #3f5efb;
+  margin-bottom: -2.5%;
+  margin-top: 0%;
+}
+
 .cardsWrapper {
   display: flex;
   flex-direction: column;
