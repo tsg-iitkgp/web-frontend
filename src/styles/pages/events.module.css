@@ -22,6 +22,12 @@
   color: #3f5efb;
   margin-bottom: 2rem;
 }
+.categoryHeading2 {
+  font-size: 2rem;
+  color: #3f5efb;
+  margin-bottom: 2rem;
+  margin-top: 10%;
+}
 .cardsWrapper {
   display: flex;
   flex-direction: column;
@@ -31,6 +37,30 @@
 }
 
 /* Slider */
-.recentEventsSlider {
-  /* Styles for recent events slider container go here */
+.events {
+  margin: auto;
+}
+
+.carousel-caption-bottom {
+  font-size: 15px !important;
+  color: black !important;
+}
+.thumbnails img {
+  width: 10% !important;
+}
+.eventCaro {
+  text-align: center;
+  max-width: 75%;
+  max-height: 600px;
+  margin: 40px auto;
+  height: 800px;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 576px) {
+  .categoryHeading2 {
+    font-size: 2rem;
+    color: #3f5efb;
+    margin-bottom: 2rem;
+    margin-top: -105%;
+  }
 }

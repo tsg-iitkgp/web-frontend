@@ -43,6 +43,9 @@
   -webkit-backdrop-filter: blur(2rem);
   border: 1px solid rgba(0, 0, 0, 0.18);
 }
+.active {
+  background-color: transparent;
+}
 ul.navMenu {
   padding: 0rem 1rem;
   display: flex;

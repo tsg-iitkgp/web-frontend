@@ -19,14 +19,18 @@ body * {
   margin: 0;
   padding: 0;
 }
-
+.thumbnails img {
+  width: 10% !important;
+}
 .layout {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
 }
-
+.active {
+  background-color: transparent !important;
+}
 /* .main-container {
   padding-top: 100px;
   display: flex;
