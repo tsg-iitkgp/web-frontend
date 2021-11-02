@@ -3,13 +3,15 @@
 .frm--create-account input[type="email"],
 .frm--create-account input[type="password"],
 .frm--create-account input[type="tel"],
-.frm__btn-primary, .frm__twitter, .frm__facebook {
+.frm__btn-primary,
+.frm__twitter,
+.frm__facebook {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-family: inherit;
   font-size: 12px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: bold;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -21,13 +23,13 @@
   outline: none;
   border: none;
 }
-.frm--create-account input[type="textarea"]{
+.frm--create-account input[type="textarea"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-family: inherit;
   font-size: 12px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: bold;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -73,40 +75,44 @@ body,
 body {
   background: #e9f1f3;
   color: #0c0c0d;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 700;
 }
 
 a {
-  color: #0060DF;
+  color: #0060df;
   text-decoration: none;
 }
 
 a:hover {
-  color: #167FFF;
+  color: #167fff;
 }
 
 /* layout css */
-.maindiv_loginpage{
-    display: flex;
-    flex-direction: row;
-    background: url("./../../images/tsg.jpg") no-repeat;
-    height: 100vh;
+.maindiv_loginpage {
+  margin-top: 9vh;
+  display: flex;
+  flex-direction: row;
+  background: url("./../../images/tsg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
-
+.background_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .container_cf {
-  width: 40vw;
-  height: 72vh;
-  margin: auto;
-}
-
-.img_loginpage{
-    width: 70vw;
-    height: 82vh;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  z-index: 2;
 }
 
 .wrapper {
@@ -115,24 +121,32 @@ a:hover {
 
 /* global css */
 .frm--create-account {
-  width: 100%; 
+  width: 100%;
+
   background-color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
-  padding: 50px 1em 20px 1em ;
-  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
-  -moz-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(160, 170, 179, 0.12),
+    0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  -moz-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(160, 170, 179, 0.12),
+    0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(160, 170, 179, 0.12),
+    0 8px 10px -5px rgba(171, 191, 216, 0.4);
 }
 
 .frm--create-account label {
+  color: #7b5ddd;
   font-family: inherit;
   font-size: 11px;
   text-transform: uppercase;
-  color: #adadb5;
+
   font-weight: bold;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   padding: 0 18px;
   margin: 0 0 3px;
   display: block;
@@ -143,21 +157,24 @@ a:hover {
 .frm--create-account input[type="password"],
 .frm--create-account input[type="tel"],
 .frm--create-account input[type="textarea"] {
-  background-color: #eff2f7;
-  border: 1px solid #eff2f7;
+  background-color: #d6d8db;
+  border: 1px solid #d6d8db;
   -webkit-transition: -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-  -moz-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), -moz-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    -moz-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), -moz-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    -moz-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .frm--create-account input[type="text"]:hover,
 .frm--create-account input[type="email"]:hover,
 .frm--create-account input[type="password"]:hover,
 .frm--create-account input[type="tel"]:hover,
-.frm--create-account input[type="textarea"]:hover{
+.frm--create-account input[type="textarea"]:hover {
   outline: none;
   border: 1px solid #e0e2e8;
 }
@@ -170,16 +187,20 @@ a:hover {
   border: 1px solid #fff;
   line-height: 30px;
   background-color: #fff;
-  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
-  -moz-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(160, 170, 179, 0.12), 0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(160, 170, 179, 0.12),
+    0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  -moz-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(160, 170, 179, 0.12),
+    0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(160, 170, 179, 0.12),
+    0 8px 10px -5px rgba(171, 191, 216, 0.4);
 }
 
 .frm-group {
   margin: 0 0 15px;
 }
-
-
 
 .frm-group.inline .frm-group {
   -webkit-box-flex: 1;
@@ -194,12 +215,13 @@ a:hover {
 }
 
 .frm__title {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   text-align: center;
   letter-spacing: -1px;
   word-spacing: -1px;
   margin: 0;
   padding: 1em 0 1em;
+  color: #613ae2;
 }
 
 .frm-info {
@@ -216,21 +238,22 @@ a:hover {
   font-family: inherit;
   font-weight: 600;
   text-decoration: underline;
-  color: #B2002D;
+  color: #b2002d;
 }
 
 .frm__btn-primary {
+  margin-top: 2rem;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
-  background-color: #B2002D;
+  background-color: #b2002d;
   border: 1px solid;
   cursor: pointer;
 }
 
 .frm__btn-primary:hover {
-  background-color: #B2002D;
+  background-color: #b2002d;
 }
 
 .frm__or {
@@ -242,7 +265,7 @@ a:hover {
 }
 
 .frm__or:before {
-  content: 'OR';
+  content: "OR";
   text-align: center;
   font-family: inherit;
   font-weight: 600;
@@ -261,38 +284,51 @@ a:hover {
   padding: 0 10px;
 }
 
-.text_image_login{
-    position: absolute;
-    top: 45%;
-    margin-left: 5%;
-    
-    color: #fff;
-}
+.text_image_login {
+  position: absolute;
+  top: 45%;
+  margin-left: 5%;
 
-@media screen and (max-width: 480px) {
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .container_cf {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container_cf {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 568px) {
   .frm-group.inline {
     display: block;
   }
   .frm-group.inline .frm-group:not(:last-child) {
     margin: 0 0 15px;
   }
-  .img_loginpage, .text_image_login{
+  .img_loginpage,
+  .text_image_login {
     display: none;
   }
   .frm--create-account {
-    padding: 100px 1em 100px 1em ;
+    padding: 100px 1em 100px 1em;
   }
   .container_cf {
-    width: 90vw;
-    height: 72vh;
-    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index: 2;
   }
-  .frm--create-account {   
-    padding: 0px 1em 10px 1em ;
-    }
-    .frm--create-account input[type="textarea"]{
-      height: 70px;
-    }
+  .frm--create-account {
+    padding: 0px 1em 10px 1em;
+  }
+  .frm--create-account input[type="textarea"] {
+    height: 70px;
+  }
 }
 
 .ajay {

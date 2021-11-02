@@ -10,7 +10,6 @@ export default function EventCard({
   eventCategory: category,
   imgName,
 }) {
-  const imgSrc = `/media/images/events/${category}/${imgName}`;
   let blogCardClass;
   if (index % 2 !== 0) {
     blogCardClass = `${Styles.blogCard} ${Styles.alt}`;
