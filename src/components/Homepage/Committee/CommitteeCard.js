@@ -1,78 +1,24 @@
 import React from "react";
-import Styles from "./committeeCard.module.css";
+import { Link } from "react-router-dom";
+import Styles from "./committee-card.module.css";
 
-export default function SocAndCell() {
+export default function CommitteeCard({ data }) {
   return (
-    <div className={Styles.socs}>
-      <div className={Styles.container}>
-        <div className={Styles.card}>
-          <div className={`${Styles.face} ${Styles.face1} ${Styles.sc}`}>
-            <div className={Styles.content}>
-              <h3>Social and Cultural</h3>
-            </div>
-          </div>
-          <div className={`${Styles.face} ${Styles.face2} `}>
-            <div className={Styles.content}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                cum cumque minus iste veritatis provident at.
-              </p>
-              <a href="/societies">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div className={Styles.card}>
-          <div className={`${Styles.face} ${Styles.face1} ${Styles.te}`}>
-            <div className={Styles.content}>
-              <h3>Technology</h3>
-            </div>
-          </div>
-          <div className={`${Styles.face} ${Styles.face2}`}>
-            <div className={Styles.content}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                cum cumque minus iste veritatis provident at.
-              </p>
-              <a href="/societies">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div className={Styles.card}>
-          <div className={`${Styles.face} ${Styles.face1} ${Styles.wf}`}>
-            <div className={Styles.content}>
-              <h3>Welfare</h3>
-            </div>
-          </div>
-          <div className={`${Styles.face} ${Styles.face2}`}>
-            <div className={Styles.content}>
-              <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                cum cumque minus iste veritatis provident at.
-              </div>
-              <div>
-                <a href="/societies">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={Styles.card}>
-          <div className={`${Styles.face} ${Styles.face1} ${Styles.sg}`}>
-            <div className={Styles.content}>
-              <h3>Sports and Games</h3>
-            </div>
-          </div>
-          <div className={`${Styles.face} ${Styles.face2}`}>
-            <div className={Styles.content}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                cum cumque minus iste veritatis provident at.
-              </p>
-              <a href="/societies">Read More</a>
-            </div>
-          </div>
+    <div class={Styles.card}>
+      <div class={Styles.box}>
+        <div class={Styles.content}>
+          <h2>
+            {data.number}
+          </h2>
+          <h3>
+            {data.heading}
+          </h3>
+          <p>
+            {data.description}
+          </p>
+          <Link className={Styles.readMore} to={data.route}>
+            Read More
+          </Link>
         </div>
       </div>
     </div>

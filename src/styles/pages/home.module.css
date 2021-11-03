@@ -72,19 +72,14 @@ html {
   align-items: center;
   width: 100%;
   margin: auto;
-  min-height: 80vh;
   position: relative;
   background-color: black;
 }
 .aboutUsSection {
   text-align: center;
-  margin-right: 0;
-  padding: 3rem;
-  background: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.2)
-  );
+  margin: 18vh auto;
+  padding: 4rem 3rem;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
   backdrop-filter: blur(1.5rem);
   -webkit-backdrop-filter: blur(1.5rem);
   border-radius: 1rem;
@@ -250,4 +245,15 @@ html {
   .textOverlay .kgpSvg img {
     object-fit: contain;
   }
+}
+
+.committeesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 18vh;
 }
