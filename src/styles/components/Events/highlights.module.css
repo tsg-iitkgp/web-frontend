@@ -1,0 +1,26 @@
+.highlight {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlightHeadingContainer {
+    padding: 10px 0;
+}
+
+.highlightHeadingContainer h1 {
+}
+
+.highlightBody {
+    padding: 0px 0px;
+}
+
+.highlightFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+
+.highlightFooterContactCard {
+    padding: 10px 0;
+}
