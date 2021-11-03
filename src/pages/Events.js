@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Styles from "../styles/pages/events.module.css";
-import UpcomingEvents from "../components/Events/UpcomingEvents";
-import OngoingEvents from "../components/Events/UpcomingEvents";
+import eventsData from "../components/Events/UpcomingEvents";
 import EventCard from "../components/Events/EventCard";
 import Layout from "../components/Layout";
 import { Carousel } from "react-carousel-minimal";
 
 export default function Events() {
+  const [events, setEvents] = useState(eventsData);
   const data = [
     {
       image:
@@ -53,7 +53,7 @@ export default function Events() {
             >
               <Carousel
                 data={data}
-                time={2000}
+                time={2500}
                 width="100%"
                 height="600px"
                 captionStyle={captionStyle}
@@ -65,8 +65,8 @@ export default function Events() {
                 dots={true}
                 pauseIconColor="white"
                 pauseIconSize="40px"
-                slideBackgroundColor="darkgrey"
-                slideImageFit="cover"
+                slideBackgroundColor="black"
+                slideImageFit="contain"
                 thumbnails={true}
                 thumbnailWidth="100px"
                 style={{
@@ -77,7 +77,6 @@ export default function Events() {
                   height: "600px",
                   marginBottom: "10%",
                 }}
-                className={Styles.recentCaro}
               />
             </div>
           </div>
@@ -88,9 +87,11 @@ export default function Events() {
         {/* Upcoming Events Container */}
 
         <div className={Styles.categoryContainer}>
-          <h2 className={Styles.categoryHeading2}>Upcoming Events</h2>
+          <h2 className={Styles.categoryHeading2}>
+            Events
+          </h2>
           <div className={Styles.cardsWrapper}>
-            {UpcomingEvents.map((event, index) => {
+            {events.map((event, index) => {
               return (
                 <EventCard
                   title={event.title}
@@ -106,23 +107,6 @@ export default function Events() {
           </div>
         </div>
 
-        {/* Ongoing Events Container */}
-        <div className={Styles.categoryContainer}>
-          <h2 className={Styles.categoryHeading}>Ongoing Events</h2>
-          {OngoingEvents.map((event, index) => {
-            return (
-              <EventCard
-                title={event.title}
-                date={event.date}
-                index={index}
-                description={event.description}
-                bodyContent={event.bodyContent}
-                imgName={event.imgName}
-                eventCategory="ongoing"
-              />
-            );
-          })}
-        </div>
       </div>
     </Layout>
   );

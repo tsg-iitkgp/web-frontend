@@ -28,7 +28,7 @@ body {
   font-size: 2.25rem;
   text-align: center;
   margin: 1.5rem;
-  color: #6e4cdd;
+  color: #f1c40f;
 }
 .multipleCards {
   display: flex;
@@ -44,7 +44,7 @@ body {
   top: 5%;
   right: -2%;
   background-color: white;
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  background: linear-gradient(45deg, #fc466b, #f1c40f);
   height: 18rem;
   width: 18rem;
   position: absolute;
@@ -55,7 +55,7 @@ body {
   bottom: 0%;
   left: 5%;
   background-color: white;
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  background: linear-gradient(45deg, #fc466b, #f1c40f);
   height: 18rem;
   width: 18rem;
   position: absolute;
@@ -66,7 +66,7 @@ body {
   top: 15%;
   left: 30%;
   background-color: white;
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  background: linear-gradient(45deg, #fc466b, #f1c40f);
   height: 15rem;
   width: 15rem;
   position: absolute;
@@ -77,7 +77,7 @@ body {
   bottom: 5%;
   right: 30%;
   background-color: white;
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  background: linear-gradient(45deg, #fc466b, #f1c40f);
   height: 10rem;
   width: 10rem;
   position: absolute;
