@@ -52,7 +52,7 @@ export default function Layout({ children }) {
           </div>
           <div className={FooterStyles.footerCol}>
             <div className={FooterStyles.columnTwo}>
-              <a className={FooterStyles.quickLinkHeader} href=" ">
+              <a className={FooterStyles.quickLinkHeader} href="/">
                 Quick Links
               </a>
               <br />
@@ -100,7 +100,7 @@ export default function Layout({ children }) {
           </div>
           <div className={FooterStyles.footerCol}>
             <div className={FooterStyles.columnThree}>
-              <a className={FooterStyles.quickLinkHeader} href=" ">
+              <a className={FooterStyles.quickLinkHeader} href="/">
                 Quick Links
               </a>
               <br />
