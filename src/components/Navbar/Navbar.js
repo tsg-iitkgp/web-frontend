@@ -64,7 +64,7 @@ export default function Navbar() {
               Home
             </NavLink>
           </li>
-          <li className={Styles.navItem}>
+          {/* <li className={Styles.navItem}>
             <NavLink
               to="/blog"
               className={Styles.navLinks}
@@ -72,7 +72,7 @@ export default function Navbar() {
             >
               Blog
             </NavLink>
-          </li>
+          </li> */}
           {/* <li
             className={Styles.navItem}
             onMouseEnter={() => handleMouseEnter("Results")}
