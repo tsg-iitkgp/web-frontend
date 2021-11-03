@@ -4,9 +4,9 @@ import Styles from "./committee-card.module.css";
 
 export default function CommitteeCard({ data }) {
   return (
-    <div class={Styles.card}>
-      <div class={Styles.box}>
-        <div class={Styles.content}>
+    <div className={Styles.card}>
+      <div className={Styles.box}>
+        <div className={Styles.content}>
           <h2>
             {data.number}
           </h2>

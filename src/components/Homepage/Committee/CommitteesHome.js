@@ -29,7 +29,7 @@ export default function CommitteesHome() {
     }
   ];
   return (
-    <div class={Styles.committeesContainer}>
+    <div className={Styles.committeesContainer}>
       {data.map((item, index) => (
         <CommitteeCard key={index} data={item} />
       ))}

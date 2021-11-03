@@ -33,16 +33,16 @@ export default function Societies() {
             })}
           {/* ReadMore Button */}
           <div className={Styles.readMore}>
-            <div class={Styles.animationTrigger}>
-              <div class={Styles.moreWrap}>
-                <Link to="/societies" class={Styles.moreText}>
+            <div className={Styles.animationTrigger}>
+              <div className={Styles.moreWrap}>
+                <Link to="/societies" className={Styles.moreText}>
                   See more
                 </Link>
-                <div class={Styles.moreDots}>
-                  <div class={`${Styles.dot} ${Styles.dot1}`}></div>
-                  <div class={`${Styles.dot} ${Styles.dot2}`}></div>
-                  <div class={`${Styles.dot} ${Styles.dot3}`}></div>
-                  <div class={`${Styles.dot} ${Styles.dot4}`}></div>
+                <div className={Styles.moreDots}>
+                  <div className={`${Styles.dot} ${Styles.dot1}`}></div>
+                  <div className={`${Styles.dot} ${Styles.dot2}`}></div>
+                  <div className={`${Styles.dot} ${Styles.dot3}`}></div>
+                  <div className={`${Styles.dot} ${Styles.dot4}`}></div>
                 </div>
               </div>
             </div>
