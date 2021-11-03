@@ -7,6 +7,7 @@
     border-radius: 15px;
     transition: 0.5s;
     margin: 30px auto;
+    flex: 1 1 50%;
 }
 
 .card .box .content .readMore {
@@ -86,5 +87,5 @@
 .card .box .content a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
     background: #fff;
-    color: #000;
+    color: #d4aa00;
 }

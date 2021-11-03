@@ -27,6 +27,7 @@ export default function Events() {
   const captionStyle = {
     fontSize: "2em",
     fontWeight: "bold",
+    textTransform: 'uppercase'
   };
   const slideNumberStyle = {
     fontSize: "20px",
@@ -49,13 +50,15 @@ export default function Events() {
             <div
               style={{
                 padding: "0 20px",
+                width: '100%',
+                margin: 'auto'
               }}
             >
               <Carousel
                 data={data}
                 time={2500}
                 width="100%"
-                height="600px"
+                height="60vh"
                 captionStyle={captionStyle}
                 radius="10px"
                 slideNumber={true}

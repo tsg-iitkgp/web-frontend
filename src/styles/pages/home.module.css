@@ -79,7 +79,7 @@ html {
   text-align: center;
   margin: 18vh auto;
   padding: 4rem 3rem;
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  background-color: #2a2b2f;
   backdrop-filter: blur(1.5rem);
   -webkit-backdrop-filter: blur(1.5rem);
   border-radius: 1rem;

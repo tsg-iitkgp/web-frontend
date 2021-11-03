@@ -5,13 +5,15 @@ import awardsData from "./awardsData.json";
 import "./Awards.css";
 
 const years = ["2019-20", "2018-19", "2017-18", "2016-17", "2015-16"];
-function Fame() {
+function Awards() {
   const [currentTab, setCurrentTab] = useState("socult");
   const [currentYear, setCurrentYear] = useState("2019-20");
 
   const handleTabChange = (s) => {
     setCurrentTab(s);
   };
+
+  document.title = "Hall Of Fame | TSG";
 
   return (
     <Layout>
@@ -150,4 +152,4 @@ function Fame() {
   );
 }
 
-export default Fame;
+export default Awards;
