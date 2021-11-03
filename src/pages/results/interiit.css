@@ -48,7 +48,7 @@
   top: 1;
 }
 .awards .table-container thead th {
-  background-color: #009879;
+  background-color: #e7bd12;
 }
 .awards .table-container tbody {
   margin-top: 2rem;
@@ -63,7 +63,7 @@
   border-bottom: 2px solid #04d6ac;
 }
 .awards .table-container tbody #overall:first-of-type {
-  background-color: lightblue;
+  background-color: hsl(168, 76%, 80%);
 }
 .awards .table-container tbody td {
   position: relative;

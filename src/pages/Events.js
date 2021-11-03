@@ -15,16 +15,16 @@ export default function Events() {
     {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/c/c2/Cyclothon.jpg",
-      caption: "cyclothon",
+      caption: "Cyclothon",
     },
     {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/a/ab/CaseStudy.jpg",
-      caption: "case study",
+      caption: "Case Study",
     },
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/8/84/Iitkgp.jpg",
-      caption: "iit kgp",
+      caption: "IITKGP",
     },
   ];
 
@@ -99,11 +99,10 @@ export default function Events() {
               pauseIconSize="40px"
               slideBackgroundColor="black"
               slideImageFit="contain"
-              thumbnails={true}
-              thumbnailWidth="100px"
+              thumbnails={false}
               style={{
                 textAlign: "center",
-                width: "90%",
+                width: "100%",
                 maxHeight: "600px",
                 margin: "40px auto",
                 height: "600px",
