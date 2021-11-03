@@ -16,7 +16,7 @@ function Highlight() {
                     This application would serve as a non-academic ERP for all the students of the Indian Institute of Technology Kharagpur.
                 </p>
                 <p>
-                    Link to the pdf: <a href='/'>PDF</a>
+                    Link to the Problem Statement: <a href='/'>PDF</a>
                 </p>
             </div>
             <div className={Styles.highlightFooter}>
