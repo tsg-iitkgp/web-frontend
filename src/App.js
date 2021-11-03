@@ -17,29 +17,32 @@ import Awards from "./pages/Awards";
 import Booking from "./pages/Booking";
 import Societies from "./pages/Societies";
 import Events from "./pages/Events";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/blog" component={Blog} />
-        <Route exact path="/results" component={Results} />
-        <Route exact path="/awards" component={Awards} />
-        <Route exact path="/booking" component={Booking} />
-        <Route exact path="/contacts" component={Contacts} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/results/gc" component={Results} />
-        <Route exact path="/results/inter_iit" component={Results} />
-        <Route exact path="/contacts/secretaries" component={Contacts} />
-        <Route exact path="/contacts/currentSenate" component={Contacts} />
-        <Route exact path="/contacts/pastBearers" component={Contacts} />
-        <Route exact path="/societies" component={Societies} />
-        <Route exact path="/events" component={Events} />
-        <Route exact path="/ContactUs" component={ContactUs} />
-        <PrivateRoute exact path="/dashboard" component={Dashboard} />
-        <Route component={NotFound} />
-      </Switch>
+      <ScrollToTop>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/results" component={Results} />
+          <Route exact path="/awards" component={Awards} />
+          <Route exact path="/booking" component={Booking} />
+          <Route exact path="/contacts" component={Contacts} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/results/gc" component={Results} />
+          <Route exact path="/results/inter_iit" component={Results} />
+          <Route exact path="/contacts/secretaries" component={Contacts} />
+          <Route exact path="/contacts/currentSenate" component={Contacts} />
+          <Route exact path="/contacts/pastBearers" component={Contacts} />
+          <Route exact path="/societies" component={Societies} />
+          <Route exact path="/events" component={Events} />
+          <Route exact path="/ContactUs" component={ContactUs} />
+          <PrivateRoute exact path="/dashboard" component={Dashboard} />
+          <Route component={NotFound} />
+        </Switch>
+      </ScrollToTop>
     </Router>
   );
 }

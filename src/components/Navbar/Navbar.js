@@ -73,7 +73,7 @@ export default function Navbar() {
               Blog
             </NavLink>
           </li>
-          <li
+          {/* <li
             className={Styles.navItem}
             onMouseEnter={() => handleMouseEnter("Results")}
             onMouseLeave={() => handleMouseLeave("Results")}
@@ -99,6 +99,24 @@ export default function Navbar() {
             >
               Awards <i class="fas fa-caret-down"></i>
               {awardsDropdown && <AwardsDropdown />}
+            </NavLink>
+          </li> */}
+          <li className={Styles.navItem}>
+            <NavLink
+              to="/results"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Results
+            </NavLink>
+          </li>
+          <li className={Styles.navItem}>
+            <NavLink
+              to="/awards"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Hall of Fame
             </NavLink>
           </li>
           <li className={Styles.navItem}>
