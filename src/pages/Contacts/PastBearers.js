@@ -49,7 +49,7 @@ export default function PastBearers() {
         {(senateData[currentYear][currentTab]["profs"] !== undefined ||
           currentTab === "specialRecog") && (
           <>
-            <h2
+            <div
               style={{
                 display: "flex",
                 flexDirection: "row",
@@ -57,11 +57,12 @@ export default function PastBearers() {
                 padding: "3%",
                 alignItems: "center",
                 color: "#fff",
+                fontSize:"35px"
               }}
             >
               {" "}
               Previous   Year  Senate{" "}
-            </h2>
+            </div>
             <div className="cards">
               {currentTab !== "specialRecog"
                 ? senateData[currentYear][currentTab]["profs"]?.map(
