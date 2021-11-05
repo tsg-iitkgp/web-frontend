@@ -21,7 +21,7 @@ export default function PastBearers() {
   return (
     
     <div>
-      <center>
+      
 
     
 
@@ -50,15 +50,7 @@ export default function PastBearers() {
           currentTab === "specialRecog") && (
           <>
             <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                padding: "3%",
-                alignItems: "center",
-                color: "#fff",
-                fontSize:"35px"
-              }}
+              className={Styles.shead1}
             >
               {" "}
               Previous   Year  Senate{" "}
@@ -87,42 +79,45 @@ export default function PastBearers() {
 
         {currentTab !== "specialRecog" && (
           <>
-            <h2
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                padding: "3%",
-                alignItems: "center",
-                color: "#fff",
-              }}
-            >
-              {" "}
-              {" "}
-            </h2>
-            <div className="table-container">
-              <table>
-                <thead>
+     
+            <div  className={Styles.senateCard}>
+             
+                {/* <thead>
                   <tr>
                     <th>Post</th>
                     <th>Name</th>
                  
                   </tr>
-                </thead>
-                <tbody>
+                </thead> */}
+                
                   {senateData[currentYear][currentTab]["honours"].map(
                     (winner) => (
-                      <tr>
-                        <td>{winner.Post}</td>
-                        <td>{winner.Name} </td>
+                      
+                        <card className={Styles.card1}>
+                          <p >
+                        {winner.Post}<br/>
+                          
+                          
+                          {winner.Name}
+                          </p>
+                        
+                        </card>
+                        
+                      // <tr>
+                      //   <td>{winner.Post}</td>
+                      //   <td>{winner.Name} </td>
           
                        
-                      </tr>
+                      // </tr>
+
+                   
                     )
                   )}
-                </tbody>
-              </table>
+                
+              
             </div>
+
+          
           </>
         )}
       </section>
@@ -136,7 +131,7 @@ export default function PastBearers() {
         <br />
         <br />
       
-      </center>
+      
     </div>
   );
 }
