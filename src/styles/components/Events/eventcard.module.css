@@ -160,8 +160,7 @@ body {
 @media (min-width: 640px) {
   .blogCard {
     flex-direction: row;
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
   }
   .blogCard .meta {
     flex-basis: 40%;

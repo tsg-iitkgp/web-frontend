@@ -1,0 +1,33 @@
+.calendarContainer {
+    align-self: stretch;
+    background-color: whitesmoke;
+}
+
+.calendarContainer .fc {
+    border-radius: 10px;
+}
+
+.calendarContainer .fc .fc-daygrid {
+}
+
+.calendarContainer .fc .fc-daygrid table {
+}
+
+
+.calendarContainer .fc .fc-daygrid table thead {
+
+}
+
+
+.calendarContainer .fc .fc-daygrid table tbody {
+
+}
+
+
+.calendarContainer h2 {
+    color: black;
+}
+
+.calendarContainer .eventTimeText {
+    margin-right: 5px;
+}
