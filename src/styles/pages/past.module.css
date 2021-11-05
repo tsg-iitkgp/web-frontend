@@ -115,6 +115,7 @@ img {
   color: rgb(86, 38, 139);
   font-size: 1rem;
   font-weight: 600;
+  text-align: center;
 }
 .cards {
   display: flex;
@@ -124,7 +125,7 @@ img {
 }
 .card1 {
   color: white;
-  text-align: left;
+  text-align: center;
   font-size: 21px;
   width: 35%;
   box-shadow: 0 0 10px white;

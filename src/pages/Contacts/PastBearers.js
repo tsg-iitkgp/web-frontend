@@ -95,7 +95,8 @@ export default function PastBearers() {
                       
                         <card className={Styles.card1}>
                           <p >
-                        {winner.Post}<br/>
+                       <span style={{color:"rgb(190, 190, 190)"}}> {winner.Post}</span>
+                        <br/>
                           
                           
                           {winner.Name}
