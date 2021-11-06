@@ -31,12 +31,12 @@ export default function Events() {
 
   const closeHighlight = (e) => {
     setIsHighlightOpen(false);
-  }
+  };
 
   const captionStyle = {
     fontSize: "2em",
     fontWeight: "bold",
-    textTransform: 'uppercase'
+    textTransform: "uppercase",
   };
   const slideNumberStyle = {
     fontSize: "20px",
@@ -46,28 +46,24 @@ export default function Events() {
   return (
     <Layout>
       <div className={Styles.bgContainer}>
-        {
-          isHighlightOpen && (
-            <section className={Styles.mainContainer}>
-              <div className={Styles.highlightsContainer}>
-                <div className={Styles.highlightsContainerHeader}>
-                  <div className={Styles.highlightsContainerMainHeading}>
-                    <FaBell className={Styles.bellIcon} />
-                    <h1>
-                      Notifications
-                    </h1>
-                  </div>
-                  <div onClick={closeHighlight}>
-                    <FaTimes className={Styles.timesIcon} />
-                  </div>
+        {isHighlightOpen && (
+          <section className={Styles.mainContainer}>
+            <div className={Styles.highlightsContainer}>
+              <div className={Styles.highlightsContainerHeader}>
+                <div className={Styles.highlightsContainerMainHeading}>
+                  <FaBell className={Styles.bellIcon} />
+                  <h1>Notifications</h1>
                 </div>
-                <div className={Styles.highlightsContainerBody}>
-                  <Highlight />
+                <div onClick={closeHighlight}>
+                  <FaTimes className={Styles.timesIcon} />
                 </div>
               </div>
-            </section>
-          )
-        }
+              <div className={Styles.highlightsContainerBody}>
+                <Highlight />
+              </div>
+            </div>
+          </section>
+        )}
         <div className={Styles.mainContainer}>
           {/* Recents Events */}
 
@@ -108,14 +104,11 @@ export default function Events() {
         </div>
 
         <div className={Styles.mainContainer}>
-
           <Calendar events={events} />
           {/* Upcoming Events Container */}
 
           <div className={Styles.categoryContainer}>
-            <h2 className={Styles.categoryHeading2}>
-              Events
-            </h2>
+            <h2 className={Styles.categoryHeading2}>Events</h2>
             <div className={Styles.cardsWrapper}>
               {events.map((event, index) => {
                 return (
@@ -132,7 +125,6 @@ export default function Events() {
               })}
             </div>
           </div>
-
         </div>
       </div>
     </Layout>

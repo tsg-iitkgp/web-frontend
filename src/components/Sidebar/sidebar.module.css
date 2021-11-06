@@ -135,4 +135,7 @@ a.sidebarItem {
     width: 100%;
     margin: 0;
   }
+  .arrowButton {
+    display: none;
+  }
 }

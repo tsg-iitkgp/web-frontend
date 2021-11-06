@@ -224,12 +224,14 @@ html {
   }
   .societiesSection .readMore {
     margin: auto;
-    padding: 2rem;
+    /* padding: 2rem; */
   }
   .readMore .moreDots {
     display: none;
   }
   .readMore .moreText {
+    color: #f1c40f;
+    border: 1px solid #f1c40f;
     opacity: 1;
     transform: translateY(0);
   }

@@ -1,36 +1,36 @@
 import React, { useState } from "react";
 
 import { NavLink } from "react-router-dom";
-import ResultsDropdown from "./ResultsDropdown";
-import AwardsDropdown from "./AwardsDropdown";
+// import ResultsDropdown from "./ResultsDropdown";
+// import AwardsDropdown from "./AwardsDropdown";
 import Styles from "../../styles/components/navbar.module.css";
 import useNavbar from "./useNavbar";
 export default function Navbar() {
   //using Custom Hook useNavbar for logic of navbarClass
   const navbarClass = useNavbar();
-  const [resultsDropdown, setResultsDropdown] = useState(false);
-  const [awardsDropdown, setAwardsDropdown] = useState(false);
+  // const [resultsDropdown, setResultsDropdown] = useState(false);
+  // const [awardsDropdown, setAwardsDropdown] = useState(false);
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
-  const handleMouseEnter = (dropdownName) => {
-    if (window.innerWidth < 960) {
-      setResultsDropdown(false);
-      setAwardsDropdown(false);
-    } else {
-      if (dropdownName === "Results") setResultsDropdown(true);
-      else setAwardsDropdown(true);
-    }
-  };
-  const handleMouseLeave = (dropdownName) => {
-    if (window.innerWidth < 960) {
-      setResultsDropdown(false);
-      setAwardsDropdown(false);
-    } else {
-      if (dropdownName === "Results") setResultsDropdown(false);
-      else setAwardsDropdown(false);
-    }
-  };
+  // const handleMouseEnter = (dropdownName) => {
+  //   if (window.innerWidth < 960) {
+  //     setResultsDropdown(false);
+  //     setAwardsDropdown(false);
+  //   } else {
+  //     if (dropdownName === "Results") setResultsDropdown(true);
+  //     else setAwardsDropdown(true);
+  //   }
+  // };
+  // const handleMouseLeave = (dropdownName) => {
+  //   if (window.innerWidth < 960) {
+  //     setResultsDropdown(false);
+  //     setAwardsDropdown(false);
+  //   } else {
+  //     if (dropdownName === "Results") setResultsDropdown(false);
+  //     else setAwardsDropdown(false);
+  //   }
+  // };
   let listClass;
   if (click) {
     listClass = `${Styles.navMenu} ${Styles.active}`;
@@ -38,8 +38,8 @@ export default function Navbar() {
     listClass = `${Styles.navMenu}`;
   }
   return (
-    <div className={Styles.navbarContainer}>
-      <nav className={navbarClass}>
+    <div className={navbarClass}>
+      <nav className={Styles.navbar}>
         {/* Navbar logo */}
 
         <div className={Styles.navLogo}>
