@@ -15,12 +15,12 @@ export default function useNavbar() {
   //if path is home then render tranparent navbar
   if (location.pathname === "/") {
     if (isScrolled) {
-      navbarClass = `${Styles.navbar} ${Styles.activeNavbar}`;
+      navbarClass = `${Styles.navbarContainer} ${Styles.activeNavbar}`;
     } else {
-      navbarClass = `${Styles.navbar}`;
+      navbarClass = `${Styles.navbarContainer}`;
     }
   } else {
-    navbarClass = `${Styles.navbar} ${Styles.activeNavbar}`;
+    navbarClass = `${Styles.navbarContainer} ${Styles.activeNavbar}`;
   }
   return navbarClass;
 }
