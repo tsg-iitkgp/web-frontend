@@ -137,6 +137,15 @@ export default function Navbar() {
               Events
             </NavLink>
           </li>
+          <li className={Styles.navItem}>
+            <NavLink
+              to="/gallery"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Gallery
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </div>

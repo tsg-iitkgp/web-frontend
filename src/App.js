@@ -18,6 +18,7 @@ import Booking from "./pages/Booking";
 import Societies from "./pages/Societies";
 import Events from "./pages/Events";
 import ScrollToTop from "./components/ScrollToTop";
+import Gallery from "./components/Gallery/Gallery";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/booking" component={Booking} />
           <Route exact path="/contacts" component={Contacts} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/inter_iit" component={Results} />
           <Route exact path="/contacts/secretaries" component={Contacts} />
