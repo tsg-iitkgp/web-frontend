@@ -29,6 +29,9 @@ function Gallery() {
                             <Col style={{width: 400}}>
                                 <div className="grid_imgs" style={{width: 400, height: 400}}>
                                 <img src="https://source.unsplash.com/2ShvY8Lf6l0/800x599" alt="..." className="myimg" />
+                                <div class="layer">
+                                    <h3>Some text describing the image</h3>
+                                    </div>
                                 </div>
                             </Col>                       
                             <Col style={{width: 400}}>
