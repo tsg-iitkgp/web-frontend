@@ -146,6 +146,15 @@ export default function Navbar() {
               Gallery
             </NavLink>
           </li>
+          <li className={Styles.navItem}>
+            <NavLink
+              to="/faq"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              FAQ
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </div>

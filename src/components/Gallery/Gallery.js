@@ -9,17 +9,18 @@ function Gallery() {
         <Layout >
         <div className="maindiv_gallery" >
     <div >
-    <div className="heading_box">
-      <div>
-        <p className="btn">
-          <span>
-            <span>
-              <span className="border_box">THE GALLERY</span>
-            </span>
-          </span>
-        </p>
-      </div>
-      </div>
+    <h2
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "#fff",
+            fontSize: "36px"
+          }}
+        >
+          GALLERY
+        </h2>
         <Container>
             <Row style={{marginTop: "5%"}}>
                 
