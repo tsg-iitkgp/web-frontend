@@ -37,7 +37,6 @@
   margin-bottom: -2%;
   margin-top: 0%;
 }
-
 .cardsWrapper {
   display: flex;
   flex-direction: column;
@@ -45,7 +44,6 @@
   height: 100%;
   width: 100%;
 }
-
 /* Slider */
 .events {
   margin: auto;
@@ -88,7 +86,6 @@
   cursor: pointer;
 }
 
-
 .highlightsContainerHeader {
   display: flex;
   justify-content: space-between;
@@ -119,6 +116,6 @@
   font-weight: bold;
 }
 
-.highlightsContainerBody{
+.highlightsContainerBody {
   padding: 20px 50px;
 }
