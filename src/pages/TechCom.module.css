@@ -1,0 +1,82 @@
+.mainContainer {
+  margin-top: 15vh;
+}
+.pageHeading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  color: #f1c40f;
+}
+.teamContainer {
+  width: 90%;
+  margin: 0rem auto 5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0rem auto 5rem;
+  position: relative;
+  background-color: black;
+}
+.aboutUsSection {
+  text-align: center;
+  padding: 4rem 3rem;
+  background-color: #2a2b2f;
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  border-radius: 1rem;
+  color: white;
+  width: 90%;
+  max-width: 1200px;
+  z-index: 2;
+}
+.sectionHeading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  color: #f1c40f;
+}
+.description {
+  letter-spacing: 1.5px;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 125%;
+}
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0rem auto 5rem;
+  max-width: 1200px;
+}
+.categoryHeading {
+  font-size: 2rem;
+  color: #f1c40f;
+  margin-bottom: 2rem;
+}
+.categoryHeading2 {
+  font-size: 2rem;
+  color: #f1c40f;
+  margin-bottom: 2rem;
+}
+.categoryHeading1 {
+  font-size: 2.2rem;
+  color: #f1c40f;
+  margin-bottom: -2%;
+  margin-top: 0%;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}

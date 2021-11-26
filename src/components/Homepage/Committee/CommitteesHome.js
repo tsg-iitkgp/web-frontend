@@ -5,28 +5,28 @@ export default function CommitteesHome() {
   const data = [
     {
       number: 1,
-      heading: 'Technology',
+      heading: "Technology",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: '/tech'
+      route: "committees/techCom",
     },
     {
       number: 2,
-      heading: 'Social and Culture',
+      heading: "Social and Culture",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: '/socult'
+      route: "committees/socult",
     },
     {
       number: 3,
-      heading: 'Sports and Games',
+      heading: "Sports and Games",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: '/sports'
+      route: "committees/sports",
     },
     {
       number: 4,
       heading: "Students' Welfare",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: '/welfare'
-    }
+      route: "committees/welfare",
+    },
   ];
   return (
     <div className={Styles.committeesContainer}>

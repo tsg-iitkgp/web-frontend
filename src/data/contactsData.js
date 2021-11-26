@@ -77,11 +77,11 @@ export default {
       "Institute mail ids": "gsectsg-tech@hijli.iitkgp.ac.in",
     },
     {
-      RollNo: "19CE10028 ",
+      RollNo: "19CE10028",
       Name: "Gaurav Kumar",
       Category: "General Secretary",
       Post: "GSec - Technology",
-      img: "19CE10028.jpg",
+      img: "19CE10028.png",
       Contact: 9350031637,
       Email: "gauyadav05@gmail.com ",
       "Institue ids": "gauyadav05@gmail.com",
