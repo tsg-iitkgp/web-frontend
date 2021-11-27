@@ -47,7 +47,7 @@ export default function Events() {
     <Layout>
       <div className={Styles.bgContainer}>
         {isHighlightOpen && (
-          <section className={Styles.mainContainer}>
+          <section className={Styles.mainContainer} data-aos="zoom-in-up">
             <div className={Styles.highlightsContainer}>
               <div className={Styles.highlightsContainerHeader}>
                 <div className={Styles.highlightsContainerMainHeading}>
@@ -64,7 +64,7 @@ export default function Events() {
             </div>
           </section>
         )}
-        <div className={Styles.mainContainer}>
+        <div className={Styles.mainContainer} data-aos="zoom-in-up">
           {/* Recents Events */}
 
           <div className={Styles.categoryContainer}>
@@ -107,7 +107,7 @@ export default function Events() {
           <Calendar events={events} />
           {/* Upcoming Events Container */}
 
-          <div className={Styles.categoryContainer}>
+          <div className={Styles.categoryContainer} data-aos="zoom-in-up">
             <h2 className={Styles.categoryHeading2}>Events</h2>
             <div className={Styles.cardsWrapper}>
               {events.map((event, index) => {

@@ -6,7 +6,7 @@ import Data from "../../../data/soc";
 import { Link } from "react-router-dom";
 export default function Societies() {
   return (
-    <div className={Styles.container}>
+    <div className={Styles.container} data-aos="zoom-in-up">
       {/* Heading */}
       <h2
         className={Styles.sectionHeading}

@@ -20,43 +20,6 @@ html {
   justify-content: center;
   background: rgba(0, 0, 0, 0.7);
 }
-
-.textOverlay .heading {
-  font-family: "Lato", sans-serif;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-.textOverlay .heading h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.25rem;
-  letter-spacing: 0.5rem;
-  font-weight: 700;
-}
-.textOverlay .heading h2 {
-  font-size: 2.25rem;
-  letter-spacing: 0.25rem;
-  font-weight: 400;
-  margin-bottom: 0.25rem;
-}
-.textOverlay .heading h2.greetText {
-  position: relative;
-  font-size: 2.5rem;
-  letter-spacing: 0.25rem;
-  overflow: hidden;
-  background: linear-gradient(90deg, #fff, #fff);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 7s linear 1;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
-@keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-}
 .textOverlay .kgpSvg {
   height: 30%;
   margin-right: 1rem;

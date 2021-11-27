@@ -29,16 +29,13 @@ export default function CommitteesHome() {
     },
   ];
   return (
-    <div>
-      <h2 className={Styles.sectionHeading}>
-        Committees
-      </h2>
+    <div data-aos="zoom-in-up">
+      <h2 className={Styles.sectionHeading}>Committees</h2>
       <div className={Styles.committeesContainer}>
         {data.map((item, index) => (
           <CommitteeCard key={index} data={item} />
         ))}
       </div>
     </div>
-
   );
 }

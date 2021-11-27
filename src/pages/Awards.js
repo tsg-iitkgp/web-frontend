@@ -20,7 +20,7 @@ function Awards() {
       <h1>
         <title>Hall of Fame</title>
       </h1>
-      <section className="awards content">
+      <section className="awards content" data-aos="zoom-in-up">
         <h2 className="awards_h2">TSG Awards!</h2>
 
         <div className="tabs">
@@ -70,23 +70,23 @@ function Awards() {
 
         {(awardsData[currentYear][currentTab]["awards"] !== undefined ||
           currentTab === "specialRecog") && (
-            <>
-              <h2
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  padding: "3%",
-                  alignItems: "center",
-                  color: "#fff",
-                }}
-              >
-                {" "}
-                Awards{" "}
-              </h2>
-              <div className="cards">
-                {currentTab !== "specialRecog"
-                  ? awardsData[currentYear][currentTab]["awards"]?.map(
+          <>
+            <h2
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                padding: "3%",
+                alignItems: "center",
+                color: "#fff",
+              }}
+            >
+              {" "}
+              Awards{" "}
+            </h2>
+            <div className="cards" data-aos="zoom-in-up">
+              {currentTab !== "specialRecog"
+                ? awardsData[currentYear][currentTab]["awards"]?.map(
                     (winner, index) => (
                       <ContactCard
                         key={index}
@@ -96,7 +96,7 @@ function Awards() {
                       />
                     )
                   )
-                  : awardsData[currentYear][currentTab].map((winner, index) => (
+                : awardsData[currentYear][currentTab].map((winner, index) => (
                     <ContactCard
                       key={index}
                       name={winner.Name}
@@ -104,9 +104,9 @@ function Awards() {
                       designation={winner.Award}
                     />
                   ))}
-              </div>
-            </>
-          )}
+            </div>
+          </>
+        )}
 
         {currentTab !== "specialRecog" && (
           <>
@@ -123,7 +123,7 @@ function Awards() {
               {" "}
               Honours{" "}
             </h2>
-            <div className="table-container">
+            <div className="table-container" data-aos="zoom-in-up">
               <table>
                 <thead>
                   <tr>

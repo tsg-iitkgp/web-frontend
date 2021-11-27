@@ -4,6 +4,7 @@ import Styles from "../styles/pages/home.module.css";
 import AboutUs from "../components/Homepage/AboutUs/AboutUs";
 import CommitteesHome from "../components/Homepage/Committee/CommitteesHome";
 import Societies from "../components/Homepage/Societies/Societies";
+import Greet from "../components/Homepage/Greet";
 export default function Home() {
   document.title = "Home | TSG";
   return (
@@ -13,10 +14,8 @@ export default function Home() {
           <div className={Styles.kgpSvg}>
             <img src="/media/images/general/gymkhanaLogo.png" alt="KGP_logo" />
           </div>
-          <div className={Styles.heading}>
-            <h1>Technology Student's Gymkhana</h1>
-            <h2>IIT Kharagpur</h2>
-            <h2 className={Styles.greetText}>Welcomes You</h2>
+          <div className={Styles.greetMessage}>
+            <Greet />
           </div>
         </div>
       </div>

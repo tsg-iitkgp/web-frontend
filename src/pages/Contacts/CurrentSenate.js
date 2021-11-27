@@ -17,7 +17,7 @@ export default function CurrentSenate() {
   );
   return (
     <>
-      <div className={Styles.contactsContainer}>
+      <div className={Styles.contactsContainer} data-aos="zoom-in-up">
         <div>
           <h2 className={Styles.postHeading}>President</h2>
           <ContactCard

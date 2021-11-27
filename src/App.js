@@ -1,5 +1,5 @@
 // React imports
-import React from "react";
+import React, { useEffect } from "react";
 // Third-party imports
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -21,8 +21,13 @@ import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./components/Gallery/Gallery";
 import faq from "./components/FAQ/faq";
 import Tech from "./pages/committees/2021/Tech";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Router>
       <ScrollToTop>
