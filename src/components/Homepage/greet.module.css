@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animatedTitle {
+  font-family: Roboto, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+.animatedTitle > div {
+  height: 50%;
+  overflow: hidden;
+  width: 100%;
+}
+.animatedTitle > div div span {
+  display: block;
+}
+.animatedTitle > div.textTop {
+  letter-spacing: 2px;
+  font-size: 2.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 0.15rem solid #dab834;
+  padding: 0.5rem 0rem;
+}
+.animatedTitle > div.textTop div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  transform: translate(0, 100%);
+}
+.animatedTitle > div.textTop div span:first-child {
+  color: white;
+}
+.animatedTitle > div.textBottom {
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 1);
+  padding: 0.5rem 0rem;
+}
+.animatedTitle > div.textBottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  transform: translate(0, -100%);
+}

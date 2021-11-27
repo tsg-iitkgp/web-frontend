@@ -5,7 +5,7 @@ import RotatingCard from "./RotatingCard";
 export default function RotatingCards({ name, category }) {
   const committeeName = name;
   return (
-    <div>
+    <div data-aos="zoom-in-up">
       <h1 className={Styles.heading}>{committeeName}</h1>
       <section className={Styles.cardswrapper}>
         {Data.data

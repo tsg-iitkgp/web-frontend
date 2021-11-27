@@ -12,7 +12,7 @@ export default function Societies() {
   ];
   return (
     <Layout>
-      <div className={Styles.full}>
+      <div className={Styles.full} data-aos="zoom-in-up">
         {committees.map((committee, index) => {
           return (
             <RotatingCards
