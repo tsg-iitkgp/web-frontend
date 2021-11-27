@@ -1,0 +1,52 @@
+.mainContainer {
+  margin-top: 11vh;
+}
+section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+section h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  color: #f1c40f;
+}
+section .description {
+  letter-spacing: 1.5px;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 125%;
+}
+
+/* Welcome Section */
+.welcomeSection {
+  position: relative;
+  height: 60vh;
+}
+.backgroundImage {
+  background-image: url("../../../images/tsg.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(0.1rem);
+}
+.welcomeContent {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.welcomeContent h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
