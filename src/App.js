@@ -20,7 +20,7 @@ import Events from "./pages/Events";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./components/Gallery/Gallery";
 import faq from "./components/FAQ/faq";
-import TechCom from "./pages/TechCom";
+import Tech from "./pages/committees/2021/Tech";
 
 function App() {
   return (
@@ -41,7 +41,7 @@ function App() {
           <Route exact path="/contacts/currentSenate" component={Contacts} />
           <Route exact path="/contacts/pastBearers" component={Contacts} />
           <Route exact path="/societies" component={Societies} />
-          <Route exact path="/committees/techCom" component={TechCom} />
+          <Route exact path="/committees/2021/tech" component={Tech} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/ContactUs" component={ContactUs} />
           <Route exact path="/faq" component={faq} />

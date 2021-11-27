@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* Menu icon on smaller devices */}
 
         <div className={Styles.menuIcon} onClick={() => handleClick()}>
-          <i class={click ? "fas fa-times" : "fas fa-bars"}></i>
+          <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
 
         {/* Navlinks */}

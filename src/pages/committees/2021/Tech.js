@@ -1,13 +1,13 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../../../components/Layout";
 import { Carousel } from "react-carousel-minimal";
-import Styles from "./TechCom.module.css";
-import ContactStyles from "../styles/pages/contacts.module.css";
-import EventCard from "../components/Events/EventCard";
-import events from "../components/Events/UpcomingEvents";
-import ContactCard from "../components/ContactCard";
-import { secyData } from "../data/secyData";
-export default function TechCom() {
+import Styles from "../../../styles/pages/committees/2021/tech.module.css";
+import ContactStyles from "../../../styles/pages/contacts.module.css";
+import EventCard from "../../../components/Events/EventCard";
+import events from "../../../components/Events/UpcomingEvents";
+import ContactCard from "../../../components/ContactCard";
+
+export default function Tech() {
   const data = [
     {
       image:
@@ -116,12 +116,10 @@ export default function TechCom() {
   return (
     <Layout>
       <div style={{ textAlign: "center" }} className={Styles.mainContainer}>
-        <div>
-          <h2 className={Styles.pageHeading}>Tech Committee</h2>
-
+        <div className={Styles.welcomeSection}>
           {/* ----Carousel---- */}
 
-          <Carousel
+          {/* <Carousel
             data={data}
             time={2500}
             width="100%"
@@ -145,14 +143,18 @@ export default function TechCom() {
               height: "80vh",
               marginBottom: "5%",
             }}
-          />
+          /> */}
+
+        </div>
+        <div className={Styles.welcomeContent}>
+          <h1>Tech Committee</h1>
         </div>
 
         {/* ----About Us Section---- */}
 
-        <div className={Styles.container} id="aboutUs">
+        <section className={Styles.container} id="aboutUs">
           <div className={Styles.aboutUsSection}>
-            <h2 className={Styles.sectionHeading}>About Us</h2>
+            <h1 className={Styles.sectionHeading}>About Us</h1>
             <p className={Styles.description}>
               Technology Students’ Gymkhana is the hub of the numerous
               extra-curricular and co-curricular activities in IIT Kharagpur
@@ -167,11 +169,17 @@ export default function TechCom() {
               cultivating and nurturing their extra-curricular talents.
             </p>
           </div>
-        </div>
+        </section>
+
+        <section>
+          <h1>
+            
+          </h1>
+        </section>
 
         {/* ----Our Team---- */}
 
-        <div className={Styles.teamContainer}>
+        <section className={Styles.teamContainer}>
           <h2 className={ContactStyles.postHeading}>Our Team</h2>
           <div className={ContactStyles.multipleCards}>
             {techComTeam.map((member, index) => {
@@ -190,48 +198,7 @@ export default function TechCom() {
               );
             })}
           </div>
-        </div>
-        {/* ----Upcoming Events---- */}
-
-        <div className={Styles.categoryContainer}>
-          <h2 className={Styles.categoryHeading2}> Upcoming Events</h2>
-          <div className={Styles.cardsWrapper}>
-            {events.map((event, index) => {
-              return (
-                <EventCard
-                  title={event.title}
-                  date={event.date || event.start}
-                  description={event.description}
-                  bodyContent={event.bodyContent}
-                  imgName={event.imgName}
-                  index={index}
-                  eventCategory="upcoming"
-                />
-              );
-            })}
-          </div>
-        </div>
-
-        {/* ----Archived Events---- */}
-
-        <div className={Styles.categoryContainer}>
-          <h2 className={Styles.categoryHeading2}> Archived Events</h2>
-          <div className={Styles.cardsWrapper}>
-            {events.map((event, index) => {
-              return (
-                <EventCard
-                  title={event.title}
-                  date={event.date || event.start}
-                  description={event.description}
-                  bodyContent={event.bodyContent}
-                  imgName={event.imgName}
-                  index={index}
-                  eventCategory="archived"
-                />
-              );
-            })}
-          </div>
-        </div>
+        </section>
       </div>
     </Layout>
   );

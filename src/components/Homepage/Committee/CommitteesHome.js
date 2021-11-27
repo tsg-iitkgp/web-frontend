@@ -7,32 +7,38 @@ export default function CommitteesHome() {
       number: 1,
       heading: "Technology",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "committees/techCom",
+      route: "/committees/2021/tech",
     },
     {
       number: 2,
       heading: "Social and Culture",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "committees/socult",
+      route: "/committees/2021/socult",
     },
     {
       number: 3,
       heading: "Sports and Games",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "committees/sports",
+      route: "/committees/2021/sports",
     },
     {
       number: 4,
       heading: "Students' Welfare",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "committees/welfare",
+      route: "/committees/2021/welfare",
     },
   ];
   return (
-    <div className={Styles.committeesContainer}>
-      {data.map((item, index) => (
-        <CommitteeCard key={index} data={item} />
-      ))}
+    <div>
+      <h2 className={Styles.sectionHeading}>
+        Committees
+      </h2>
+      <div className={Styles.committeesContainer}>
+        {data.map((item, index) => (
+          <CommitteeCard key={index} data={item} />
+        ))}
+      </div>
     </div>
+
   );
 }

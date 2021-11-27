@@ -70,41 +70,43 @@ function Awards() {
 
         {(awardsData[currentYear][currentTab]["awards"] !== undefined ||
           currentTab === "specialRecog") && (
-          <>
-            <h2
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                padding: "3%",
-                alignItems: "center",
-                color: "#fff",
-              }}
-            >
-              {" "}
-              Awards{" "}
-            </h2>
-            <div className="cards">
-              {currentTab !== "specialRecog"
-                ? awardsData[currentYear][currentTab]["awards"]?.map(
-                    (winner) => (
+            <>
+              <h2
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  padding: "3%",
+                  alignItems: "center",
+                  color: "#fff",
+                }}
+              >
+                {" "}
+                Awards{" "}
+              </h2>
+              <div className="cards">
+                {currentTab !== "specialRecog"
+                  ? awardsData[currentYear][currentTab]["awards"]?.map(
+                    (winner, index) => (
                       <ContactCard
+                        key={index}
                         name={winner.Name}
                         imgSrc={""}
                         designation={winner.Award}
                       />
                     )
                   )
-                : awardsData[currentYear][currentTab].map((winner) => (
+                  : awardsData[currentYear][currentTab].map((winner, index) => (
                     <ContactCard
+                      key={index}
                       name={winner.Name}
                       imgSrc={""}
                       designation={winner.Award}
                     />
                   ))}
-            </div>
-          </>
-        )}
+              </div>
+            </>
+          )}
 
         {currentTab !== "specialRecog" && (
           <>
@@ -133,8 +135,8 @@ function Awards() {
                 </thead>
                 <tbody>
                   {awardsData[currentYear][currentTab]["honours"].map(
-                    (winner) => (
-                      <tr>
+                    (winner, index) => (
+                      <tr key={index}>
                         <td>{winner.Name}</td>
                         <td>{winner.Roll} </td>
                         <td>{winner.Award}</td>

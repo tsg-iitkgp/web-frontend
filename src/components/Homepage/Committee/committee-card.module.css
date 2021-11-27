@@ -7,7 +7,6 @@
     border-radius: 15px;
     transition: 0.5s;
     margin: 30px auto;
-    flex: 1 1 50%;
 }
 
 .card .box .content .readMore {
@@ -88,4 +87,10 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
     background: #fff;
     color: #d4aa00;
+}
+
+@media (min-width: 700px) {
+    .card {
+        min-width: 500px;
+    }
 }

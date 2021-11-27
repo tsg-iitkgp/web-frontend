@@ -18,7 +18,7 @@ function ContactCard({
             <img src={imgSrc} alt={`${name}_image`} />
           ) : (
             <div className={Styles.svgContainer}>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 512 512" space="preserve">
                 <g>
                   <path d="M256,256c62.1,0,112.5-50.4,112.5-112.5S318.1,31,256,31S143.5,81.4,143.5,143.5S193.9,256,256,256z M340.2,284.7
@@ -33,17 +33,17 @@ function ContactCard({
       <ul className={Styles.sociallinks}>
         <li>
           <a href="www.facebook.com">
-            <i class="fab fa-facebook-f"></i>
+            <i className="fab fa-facebook-f"></i>
           </a>
         </li>
         <li>
           <a href="mail.google.com">
-            <i class="fas fa-envelope"></i>
+            <i className="fas fa-envelope"></i>
           </a>
         </li>
         <li>
           <a href="www.linkedin.com">
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-linkedin-in"></i>
           </a>
         </li>
       </ul>
