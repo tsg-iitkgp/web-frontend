@@ -4,10 +4,10 @@ import Layout from "../components/Layout";
 import awardsData from "./awardsData.json";
 import "./Awards.css";
 
-const years = ["2019-20", "2018-19", "2017-18", "2016-17", "2015-16"];
+const years = ["2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16"];
 function Awards() {
   const [currentTab, setCurrentTab] = useState("socult");
-  const [currentYear, setCurrentYear] = useState("2019-20");
+  const [currentYear, setCurrentYear] = useState("2020-21");
 
   const handleTabChange = (s) => {
     setCurrentTab(s);
