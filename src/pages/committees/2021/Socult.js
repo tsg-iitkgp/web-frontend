@@ -6,95 +6,85 @@ import ContactStyles from "../../../styles/pages/contacts.module.css";
 import events from "../../../components/Events/UpcomingEvents";
 import ContactCard from "../../../components/ContactCard";
 
-export default function Tech() {
+export default function Socult() {
   const techComTeam = [
     {
-      RollNo: "19IM30022",
-      Name: "Vadthya Sanjay Kumar",
-      Category: "General Secretary",
-      Post: "GSec - Technology",
-      img: "19IM30022.png",
-      Contact: 9121372359,
-      Email: "sanjayvadthya789@gmail.com",
-      "Institue ids": "sanjayvadthya789@gmail.com",
-      "Institute mail ids": "gsectsg-tech@hijli.iitkgp.ac.in",
-    },
-    {
-      RollNo: "19CE10028",
-      Name: "Gaurav Kumar",
-      Category: "General Secretary",
-      Post: "GSec - Technology",
-      img: "19CE10028.jpg",
-      Contact: 9350031637,
-      Email: "gauyadav05@gmail.com ",
-      "Institue ids": "gauyadav05@gmail.com",
-      "Institute mail ids": "",
-    },
-    {
-      RollNo: "19AE10017",
-      Name: "Praneeth Reddy Kolanu",
-      Category: "Nominated Posts",
-      Post: "Technology Coordinator",
-      img: "19AE10017.png",
-      Contact: 7013160459,
-      Email: "praneeth.kolanu.iitkgp@gmail.com",
-      "Institue ids": "k.praneeth1199@iitkgp.ac.in",
-      "Institute mail ids": "",
-    },
-    {
-      id: 30,
-      RollNo: "20AR10023",
-      Name: "Nidam Kumar Jha",
-      Post: "Secretary Innovation Cup",
-      Email: "nidamjha@gmail.com",
-      Phone: "9310525609/7291893736",
-      Hall: "LBS",
-    },
-    {
-      id: 31,
-      RollNo: "20HS20022",
-      Name: "Gaurav Chanchal",
-      Post: "Secretary Strategy Cup",
-      Email: "gauravchanchal2003@gmail.com",
-      Phone: 9044750387,
-      Hall: "LBS",
-    },
-    {
-      id: 29,
-      RollNo: "20CE30012",
-      Name: "Ikshita Agarwal",
-      Post: "Secretary Application Cup",
-      Email: "agarwalikshita13@gmail.com",
-      Phone: 8118868021,
-      Hall: "SNIG",
-    },
-    {
-      id: 8,
-      RollNo: "20HS20041",
-      Name: "Nirmal Kumawat",
-      Post: "Web Secretary",
-      Email: "kumavatshubham0@gmail.com",
-      Phone: 7587579052,
-      Hall: "LBS",
-    },
-    {
-      id: 34,
-      RollNo: "20AR10026",
-      Name: "Nitish Kumar",
-      Post: "Web Secretary",
-      Email: "nitish.bpns@gmail.com",
-      Phone: 9507816000,
-      Hall: "Patel",
-    },
-    {
-      id: 9,
-      RollNo: "20HS20067",
-      Name: "Suraj Gupta",
-      Post: "Web Secretary",
-      Email: "surajgupta.3072@gmail.com",
-      Phone: 8879555132,
-      Hall: "LBS",
-    },
+        RollNo: "19AR10043",
+        Name: "Yashraj Bagaria",
+        Category: "General Secretary",
+        Post: "GSec - Social and Cultural",
+        img: "19AR10043.png",
+        Contact: 8240719132,
+        Email: "YashrajBagaria.iitkgp@gmail.com",
+        "Institue ids": "YashrajBagaria.iitkgp@gmail.com",
+        "Institute mail ids": "gsectsg-socult@hijli.iitkgp.ac.in",
+      },
+      {
+        RollNo: "19BT30021",
+        Name: "Saggurthi Deenaraju",
+        Category: "General Secretary",
+        Post: "GSec - Social and Cultural",
+        img: "19BT30021.png",
+        Contact: 9849401491,
+        Email: "saggurthi2020@gmail.com",
+        "Institue ids": "saggurthi2020@gmail.com",
+        "Institute mail ids": "",
+      },
+      {
+        id: 22,
+        RollNo: "20CS10018",
+        Name: "Burra Nithish",
+        Post: "Secretary Entertainment",
+        Email: "nithishnani.277@gmail.com",
+        Phone: 8985672148,
+        Hall: "LBS",
+      },
+      {
+        id: 23,
+        RollNo: "20CY20022",
+        Name: "Muskan Gupta",
+        Post: "Secretary Dramatics",
+        Email: "muskanyashi0303@gmail.com",
+        Phone: 7233845331,
+        Hall: "SNIG",
+      },
+      {
+        id: 24,
+        RollNo: "20GG20016",
+        Name: "Bobade Kshitija Vishal",
+        Post: "Secretary Journal",
+        Email: "kshitijaiitkgp2020@gmail.com",
+        Phone: 9373132441,
+        Hall: "SNIG",
+      },
+      {
+        id: 25,
+        RollNo: "20EX20024",
+        Name: "Rashi Goyal",
+        Post: "Secretary Literary",
+        Email: "goyalrashi1710@gmail.com",
+        Phone: 8302741699,
+        Hall: "SNIG",
+      },
+      {
+        id: 26,
+        RollNo: "20MI33001",
+        Name: "Aastha Banjare",
+        Post: "Secretary Films and Photography",
+        Email: "abanjare25032001@gmail.com",
+        Phone: 6268809001,
+        Hall: "SN/IG",
+      },
+      {
+        id: 27,
+        RollNo: "20ME30017",
+        Name: "Daivik Agrawal",
+        Post: "Secretary Fine Arts and Modelling",
+        Email: "daivik.agrawal@gmail.com",
+        Phone: 8800179257,
+        Hall: "LBS",
+      },
+
   ];
   return (
     <Layout>
@@ -104,7 +94,7 @@ export default function Tech() {
         <div className={globalStyles.welcomeSection}>
           <div className={globalStyles.backgroundImage}></div>
           <div className={globalStyles.welcomeContent}>
-            <h1>Tech Committee</h1>
+            <h1>Social and Cultural Committee</h1>
           </div>
         </div>
 

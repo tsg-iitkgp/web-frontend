@@ -6,95 +6,49 @@ import ContactStyles from "../../../styles/pages/contacts.module.css";
 import events from "../../../components/Events/UpcomingEvents";
 import ContactCard from "../../../components/ContactCard";
 
-export default function Tech() {
+export default function Welfare() {
   const techComTeam = [
     {
-      RollNo: "19IM30022",
-      Name: "Vadthya Sanjay Kumar",
-      Category: "General Secretary",
-      Post: "GSec - Technology",
-      img: "19IM30022.png",
-      Contact: 9121372359,
-      Email: "sanjayvadthya789@gmail.com",
-      "Institue ids": "sanjayvadthya789@gmail.com",
-      "Institute mail ids": "gsectsg-tech@hijli.iitkgp.ac.in",
-    },
-    {
-      RollNo: "19CE10028",
-      Name: "Gaurav Kumar",
-      Category: "General Secretary",
-      Post: "GSec - Technology",
-      img: "19CE10028.jpg",
-      Contact: 9350031637,
-      Email: "gauyadav05@gmail.com ",
-      "Institue ids": "gauyadav05@gmail.com",
-      "Institute mail ids": "",
-    },
-    {
-      RollNo: "19AE10017",
-      Name: "Praneeth Reddy Kolanu",
-      Category: "Nominated Posts",
-      Post: "Technology Coordinator",
-      img: "19AE10017.png",
-      Contact: 7013160459,
-      Email: "praneeth.kolanu.iitkgp@gmail.com",
-      "Institue ids": "k.praneeth1199@iitkgp.ac.in",
-      "Institute mail ids": "",
-    },
-    {
-      id: 30,
-      RollNo: "20AR10023",
-      Name: "Nidam Kumar Jha",
-      Post: "Secretary Innovation Cup",
-      Email: "nidamjha@gmail.com",
-      Phone: "9310525609/7291893736",
-      Hall: "LBS",
-    },
-    {
-      id: 31,
-      RollNo: "20HS20022",
-      Name: "Gaurav Chanchal",
-      Post: "Secretary Strategy Cup",
-      Email: "gauravchanchal2003@gmail.com",
-      Phone: 9044750387,
-      Hall: "LBS",
-    },
-    {
-      id: 29,
-      RollNo: "20CE30012",
-      Name: "Ikshita Agarwal",
-      Post: "Secretary Application Cup",
-      Email: "agarwalikshita13@gmail.com",
-      Phone: 8118868021,
-      Hall: "SNIG",
-    },
-    {
-      id: 8,
-      RollNo: "20HS20041",
-      Name: "Nirmal Kumawat",
-      Post: "Web Secretary",
-      Email: "kumavatshubham0@gmail.com",
-      Phone: 7587579052,
-      Hall: "LBS",
-    },
-    {
-      id: 34,
-      RollNo: "20AR10026",
-      Name: "Nitish Kumar",
-      Post: "Web Secretary",
-      Email: "nitish.bpns@gmail.com",
-      Phone: 9507816000,
-      Hall: "Patel",
-    },
-    {
-      id: 9,
-      RollNo: "20HS20067",
-      Name: "Suraj Gupta",
-      Post: "Web Secretary",
-      Email: "surajgupta.3072@gmail.com",
-      Phone: 8879555132,
-      Hall: "LBS",
-    },
+        RollNo: "19EE10016",
+        Name: "Bhosale Shivam Pravin",
+        img: "19EE10016.png",
+        Category: "General Secretary",
+        Post: "GSec - Students' Welfare",
+        Contact: 9890359987,
+        Email: "bhosaleshivam3333@gmail.com",
+        "Institue ids": "bhosaleshivam3333@gmail.com",
+        "Institute mail ids": "gsectsg-welfare@hijli.iitkgp.ac.in",
+      },
+      {
+        RollNo: "19AE10014",
+        Name: "Jeripothula Sindhu",
+        Post: "GSec - Students' Welfare",
+        Category: "General Secretary",
+        img: "19AE10014.png",
+        Contact: 9502834599,
+        Email: "sindhujeripothula@gmail.com",
+        "Institue ids": "sindhujeripothula@gmail.com",
+        "Institute mail ids": "",
+      },
+      {
+        id: 32,
+        RollNo: "20CS10031",
+        Name: "Kartik Pontula",
+        Post: "Secretary Academic Help",
+        Email: "kartikpontula@gmail.com",
+        Phone: 9110344714,
+        Hall: "LBS",
+      },
+      {
+        id: 33,
+        RollNo: "20EX20001",
+        Name: "Aaditri Vaibhav",
+        Post: "Secretary Community And Crisis",
+        Email: "aaditri.vaibhav@gmail.com",
+        Phone: 8789617065,
+        Hall: "SN/IG",
+      },
+
   ];
   return (
     <Layout>
@@ -104,7 +58,7 @@ export default function Tech() {
         <div className={globalStyles.welcomeSection}>
           <div className={globalStyles.backgroundImage}></div>
           <div className={globalStyles.welcomeContent}>
-            <h1>Tech Committee</h1>
+            <h1>Students' Welfare Committee</h1>
           </div>
         </div>
 

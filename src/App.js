@@ -21,6 +21,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./components/Gallery/Gallery";
 import faq from "./components/FAQ/faq";
 import Tech from "./pages/committees/2021/Tech";
+import Sports from "./pages/committees/2021/sports";
+import Welfare from "./pages/committees/2021/welfare";
+import Socult from "./pages/committees/2021/Socult";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -47,6 +50,9 @@ function App() {
           <Route exact path="/contacts/pastBearers" component={Contacts} />
           <Route exact path="/societies" component={Societies} />
           <Route exact path="/committees/2021/tech" component={Tech} />
+          <Route exact path="/committees/2021/sports" component={Sports} />
+          <Route exact path="/committees/2021/welfare" component={Welfare} />
+          <Route exact path="/committees/2021/Socult" component={Socult} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/ContactUs" component={ContactUs} />
           <Route exact path="/faq" component={faq} />
