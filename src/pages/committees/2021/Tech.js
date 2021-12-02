@@ -130,10 +130,23 @@ export default function Tech() {
         </section>
 
         <section>
-          <h1>Upcoming Events</h1>
+          <h1>
+            Inter IIT Tech Meet
+          </h1>
         </section>
         <section>
-          <h1>Recent Events</h1>
+          <h1>
+            Tech Movie
+          </h1>
+          <div className={Styles.videoContainer}>
+            <iframe
+              src="https://www.youtube.com/embed/yZTGtIHYQpU?rel=0"
+              allow='autoplay; encrypted-media'
+              allowFullScreen
+              title='Illumination 2021'
+              className={Styles.techMovieVideo}
+            />
+          </div>
         </section>
 
         {/* ----Our Team---- */}
@@ -147,12 +160,11 @@ export default function Tech() {
                   name={member.Name}
                   designation={member.Post}
                   email={member.Email}
-                  imgSrc={`/media/images/${
-                    member.Category === "General Secretary" ||
+                  imgSrc={`/media/images/${member.Category === "General Secretary" ||
                     member.Category === "Nominated Posts"
-                      ? "contacts"
-                      : "secyImages"
-                  }/${member.RollNo}.png`}
+                    ? "contacts"
+                    : "secyImages"
+                    }/${member.RollNo}.png`}
                 />
               );
             })}
