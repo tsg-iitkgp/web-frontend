@@ -1,0 +1,211 @@
+
+  @include sm {
+    width: 95vw;
+  }
+  body .home {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+  @include sm {
+    flex-direction: column;
+    height: 100%;
+  }
+  body .home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  body .home .headings h1,
+  body .home .headings h2 {
+    margin: 0;
+    font-weight: normal;
+  }
+  @include sm {
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+  body .home .logo img {
+    width: 150px;
+    padding: 0 2rem;
+  }
+  @include sm {
+    width: 100px;
+  }
+  @include sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .intro-image {
+    width: 100%;
+  }
+  body .m-content {
+    width: 100%;
+    
+    border-radius: 20px;
+    padding: 1rem;
+  }
+  @include sm {
+    margin-top: 1rem;
+    h2 {
+      margin-top: 0.5rem;
+    }
+  }
+  body .events-slider {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  @include sm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .facilities {
+    width: 100%;
+    margin: 0 auto;
+  }
+  body .facilities .image-modals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body .facilities .image-modals .column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  body .facilities .image-modals .image-container {
+    padding: 0.5rem;
+  }
+  @include sm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .societies {
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  body .societies .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body .societies h2 a {
+    text-decoration: none;
+    
+  }
+  @include sm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-content {
+      flex-direction: column;
+    }
+  }
+  body .fests {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  body .fests .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body .fests .society-cards .card .intro .image-container .main-image {
+    max-width: none;
+  }
+  @include sm {
+    width: 20rem;
+  }
+  body .fests .fest .card {
+    width: 40%;
+  }
+  @include sm {
+    width: 20rem;
+  }
+  @include sm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-content {
+      flex-direction: column;
+    }
+  }
+  body .fake-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #26a69a;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-out;
+  }
+  body .fake-button:hover {
+    background-color: #2bbbad;
+  }
+  body .points {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+  }
+  body .tabs {
+    display: flex;
+    flex-direction: row;
+  }
+  body .tabs .tab {
+    margin: 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #219287;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-out;
+    cursor: pointer;
+  }
+  body .tabs .tab:hover {
+    background-color: #2bbbad;
+  }
+  body .tabs .active {
+    background-color: #2bbbad;
+  }
+  @include sm {
+    flex-direction: column;
+    .tab {
+      margin: 0.5rem;
+    }
+  }
+  body .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 75vh;
+  }
+  body .content h1 {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  body .content img {
+    width: 70%;
+    align-self: center;
+  }
+  body .content .chart {
+    height: 50rem;
+  }
+  

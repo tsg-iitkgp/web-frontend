@@ -45,10 +45,9 @@ body * {
 } */
 
 section {
-  width: 90%;
   max-width: 1500px;
   align-self: center;
-  padding: 30px;
+  
 }
 
 .pageHeading {

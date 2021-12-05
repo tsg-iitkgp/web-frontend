@@ -10,19 +10,19 @@ export default function Footer() {
       links: [
         {
           title: "Counselling Centre",
-          href: "#",
+          href: "http://www.counsellingcentre.iitkgp.ac.in/",
         },
         {
           title: "IIT KGP Website",
-          href: "#",
+          href: "http://www.iitkgp.ac.in/",
         },
         {
           title: "Yellow Pages",
-          href: "#",
+          href: "https://wiki.metakgp.org/w/Yellow_pages",
         },
         {
           title: "Hall Management Centre",
-          href: "#",
+          href: "http://www.hmc.iitkgp.ac.in/web/",
         },
       ],
     },
@@ -31,19 +31,19 @@ export default function Footer() {
       links: [
         {
           title: "ERP",
-          href: "#",
+          href: "https://erp.iitkgp.ac.in/SSOAdministration/login.htm?sessionToken=F90F79C925A0FE0DC48AE7CBFDE3D20A.worker1&requestedUrl=https://erp.iitkgp.ac.in/IIT_ERP3/",
         },
         {
           title: "Zimbra Webmail",
-          href: "#",
+          href: "https://iitkgpmail.iitkgp.ac.in/",
         },
         {
           title: "Your Dost",
-          href: "#",
+          href: "https://wiki.metakgp.org/w/Yellow_pages/",
         },
         {
           title: "Grievance Form",
-          href: "#",
+          href: "https://docs.google.com/forms/d/e/1FAIpQLSft9FXZYvLiNt3oy0K3Iu4d6HoE830RhNWFHMXx1R4IjlhHKA/viewform",
         },
       ],
     },
@@ -64,16 +64,16 @@ export default function Footer() {
             </p>
           </div>
           <div className={Styles.iconsContainer}>
-            <a href="https://www.facebook.com/TSG.IITKharagpur">
+            <a target="_blank" href="https://www.facebook.com/TSG.IITKharagpur">
               <FaFacebook />
             </a>
-            <a href="https://twitter.com/tsg_iitkgp">
+            <a target="_blank" href="https://twitter.com/tsg_iitkgp">
               <FaTwitter />
             </a>
-            <a href="https://www.youtube.com/channel/UCuTNELMlkNfJxAQ2vGJIe5Q">
+            <a target="_blank" href="https://www.youtube.com/channel/UCuTNELMlkNfJxAQ2vGJIe5Q">
               <FaYoutube />
             </a>
-            <a href="https://github.com/tsg-iitkgp">
+            <a target="_blank" href="https://github.com/tsg-iitkgp">
               <FaGithub />
             </a>
           </div>
@@ -87,7 +87,7 @@ export default function Footer() {
                   {linkGroup.links.map((link, index) => {
                     return (
                       <li key={index}>
-                        <a href={link.href}>{link.title}</a>
+                        <a target="_blank" href={link.href}>{link.title}</a>
                       </li>
                     );
                   })}
@@ -99,7 +99,7 @@ export default function Footer() {
         <div className={Styles.contactSection}>
           <span>We're here</span>
           <span>Let's talk</span>
-          <button className={Styles.contactButton}>Get in Touch</button>
+          <a href="/ContactUs"><button className={Styles.contactButton}>Get in Touch</button></a>
         </div>
       </div>
     </footer>

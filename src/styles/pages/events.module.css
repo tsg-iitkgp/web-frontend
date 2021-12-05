@@ -64,6 +64,10 @@
     margin-bottom: 2rem;
     margin-top: -105%;
   }
+  .categoryContainer {
+    margin: 2rem 0;
+
+  }
 }
 
 .highlightsContainer {
@@ -118,4 +122,123 @@
 
 .highlightsContainerBody {
   padding: 20px 50px;
+}
+
+.scheduleTile {
+  padding: 1.5rem 0;
+  color: #fff;
+  align-self: stretch;
+}
+
+.details {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.details > .summary {
+  padding: 8px;
+  padding-left: 2.2rem;
+  border: none;
+  cursor: pointer;
+  list-style-position: inside;
+  border-bottom: 2px solid #f1c40f;
+  position: relative;
+  display: block;
+  transition: all 0.3s;
+  font-family: var(--font1);
+}
+
+.details > div {
+  padding: 8px;
+  border-bottom: 2px solid #f1c40f;
+  line-height: 2rem;
+  font-family: var(--font2);
+  transition: 0.3s all ease;
+}
+
+.summary:before {
+  content: "";
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #f1c40f;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: 0.2rem 50%;
+  transition: 0.3s transform ease;
+}
+
+.details .summary::-webkit-details-marker {
+  display: none;
+}
+
+.details[open] > .summary:before {
+  transform: rotate(90deg);
+}
+
+
+.details li {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.details .liIcon {
+  margin: auto 10px;
+}
+
+.illuVideoSection {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.illuVideoSection .illuVideo {
+  min-height: 250px;
+}
+
+.inductionIntro .info {
+  padding: 50px;
+  border: 1px solid red;
+  border-radius: 8px;
+  max-width: 350px;
+  width: 80%;
+  margin: auto 20px;
+}
+
+@media (min-width: 700px) {
+  .illuVideoSection .illuVideo {
+      min-height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .inductionIntro .info {
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 20px 20px;
+  }
+  .inductionIntro .info p{
+    font-size: 20px;
+  }
+}
+
+.inductionIntro {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+.inductionIntro .handbookContainer iframe {
+  height: 450px;
+}
+
+.inductionIntro .handbookContainer {
+  text-align: center;
 }
