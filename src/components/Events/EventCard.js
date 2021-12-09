@@ -28,17 +28,16 @@ export default function EventCard({
         ></div>
         <ul className={Styles.details}>
           <li className={Styles.author}>
-            <a href="#">John Doe</a>
+            <a href="#">Praneeth Reddy Kolanu</a>
           </li>
           <li className={Styles.author}>
-            <a href="#">+91 11111 11111</a>
+            <a href="#">+91 7013 160 59</a>
           </li>
         </ul>
       </div>
       <div className={Styles.description}>
         <h1>{title}</h1>
         <h2>{date}</h2>
-        <h2>Opening a door to the future</h2>
         <p> {description}</p>
         <p className={Styles.readMore}>
           <a href="#">Read More</a>

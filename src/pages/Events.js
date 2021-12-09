@@ -137,7 +137,7 @@ export default function Events() {
               /> */}
             </AutoplaySlider>
           </section>
-          <section className="facilities">
+          {/* <section className="facilities">
             <div className="image-modals">
               <div className="column">
                 <FacilityModal
@@ -147,14 +147,14 @@ export default function Events() {
                   facilityData={facilityData.facilities}
                   slotsData={facilityData.slots}
                 />
-                {/* <FrModal /> */}
+                <FrModal />
               </div>
-              {/* <div className="column">
+              <div className="column">
                 <CyclothonModal />
-              </div> */}
+              </div>
             </div>
-          </section>
-          <section className={`${Styles.illuVideoSection}`}>
+          </section> */}
+          {/* <section className={`${Styles.illuVideoSection}`}>
             <iframe
               src="https://www.youtube.com/embed/kstN-Adi7r8?rel=0"
               allow='autoplay; encrypted-media'
@@ -162,14 +162,14 @@ export default function Events() {
               title='Illumination 2021'
               className={Styles.illuVideo}
             />
-          </section>
+          </section> */}
           <section className="facilities">
-            <div className={Styles.categoryContainer}>
+            {/* <div className={Styles.categoryContainer}>
             <h2 className={Styles.categoryHeading1}>UG Induction Program - 2021</h2><br/><br/>
             <h4 className={Styles.categoryHeading1}>Induction Handbook</h4>
             <div className={Styles.recentEventsSlider}></div>
-          </div>
-            <div className={Styles.inductionIntro}>
+          </div> */}
+            {/* <div className={Styles.inductionIntro}>
               <div className={Styles.handbookContainer}>
                 <iframe src="/handbook.pdf" type="application/pdf" >
 
@@ -189,8 +189,8 @@ export default function Events() {
                   </a>
                 </p>
               </div>
-            </div>
-            <div className={Styles.scheduleTile}>
+            </div> */}
+            {/* <div className={Styles.scheduleTile}>
               <details className={Styles.details}>
                 <summary className={Styles.summary}>
                   Day1 - 26th November 2021
@@ -247,8 +247,8 @@ export default function Events() {
                   </div>
                 </div>
               </details>
-            </div>
-            <div className={Styles.scheduleTile}>
+            </div> */}
+            {/* <div className={Styles.scheduleTile}>
               <details className={Styles.details}>
                 <summary className={Styles.summary}>
                   Day2 - 27th November 2021
@@ -316,8 +316,8 @@ export default function Events() {
                   </div>
                 </div>
               </details>
-            </div>
-            <div className={Styles.scheduleTile}>
+            </div> */}
+            {/* <div className={Styles.scheduleTile}>
               <details className={Styles.details}>
                 <summary className={Styles.summary}>
                   Day3 - 28th November 2021
@@ -389,8 +389,8 @@ export default function Events() {
                   </div>
                 </div>
               </details>
-            </div>
-            <div className={Styles.scheduleTile}>
+            </div> */}
+            {/* <div className={Styles.scheduleTile}>
               <details className={Styles.details}>
                 <summary className={Styles.summary}>
                   Day4 - 29th November 2021
@@ -518,7 +518,7 @@ export default function Events() {
                   </div>
                 </div>
               </details>
-            </div>
+            </div> */}
           </section>
         </section>
 
@@ -536,7 +536,7 @@ export default function Events() {
                     title={event.title}
                     date={event.date || event.start}
                     description={event.description}
-                    bodyContent={event.bodyContent}
+                    // bodyContent={event.bodyContent}
                     imgName={event.imgName}
                     index={index}
                     eventCategory="upcoming"
