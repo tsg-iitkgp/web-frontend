@@ -46,7 +46,7 @@ function App() {
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/inter_iit" component={Results} />
           <Route exact path="/contacts/secretaries" component={Contacts} />
-          <Route exact path="/contacts/currentSenate" component={Contacts} />
+          <Route exact path="/contacts/current-office-bearers" component={Contacts} />
           <Route exact path="/contacts/pastBearers" component={Contacts} />
           <Route exact path="/societies" component={Societies} />
           <Route exact path="/committees/2021/tech" component={Tech} />

@@ -2,7 +2,7 @@ import React from "react";
 import ContactCard from "../../components/ContactCard";
 import contactsData from "../../data/contactsData.js";
 import Styles from "../../styles/pages/contacts.module.css";
-export default function CurrentSenate() {
+export default function CurrentOffceBearers() {
   const President = contactsData.data.find(
     (contact) => contact.Post === "President"
   );
