@@ -103,6 +103,15 @@ export default function Navbar() {
           </li> */}
           <li className={Styles.navItem}>
             <NavLink
+              to="/events"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Events
+            </NavLink>
+          </li>
+          <li className={Styles.navItem}>
+            <NavLink
               to="/results"
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
@@ -126,15 +135,6 @@ export default function Navbar() {
               activeClassName={Styles.acitveLink}
             >
               Contacts
-            </NavLink>
-          </li>
-          <li className={Styles.navItem}>
-            <NavLink
-              to="/events"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
-              Events
             </NavLink>
           </li>
           <li className={Styles.navItem}>
