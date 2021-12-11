@@ -1,7 +1,7 @@
 export const contactsSidebarList = [
   {
-    title: "Current Senate",
-    route: "/contacts/currentSenate",
+    title: "Current Office Bearers",
+    route: "/contacts/current-office-bearers",
   },
   {
     title: "Secretaries",

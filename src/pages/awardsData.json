@@ -2947,5 +2947,368 @@
         "Award": "Prof. Ashoke Mukherjee Cup"
       }
     ]
+  },
+  "2020-21": {
+    "tech": {
+      "awards": [
+        {
+          "Name": "Harsh Maheshwari",
+          "Roll": "16EE35008",
+          "Award": "Prof. G.S Sanyal Cup"
+        }
+      ],
+      "honours": [
+        {
+          "Name": "Harsh Maheshwari",
+          "Roll": "16EE35008",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Nagesh Patle",
+          "Roll": "16EC32010",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Utkarsh Sharma",
+          "Roll": "16ME33017",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "C Siva Vignesh Krishnan",
+          "Roll": "17ME10069",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Shah Het",
+          "Roll": "16ME33016",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Manthan Patel",
+          "Roll": "17ME10078",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Abhinav Gupta",
+          "Roll": "17ME10001",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Chinmay Singh",
+          "Roll": "17CH10013",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Tushar Singhla",
+          "Roll": "17IE10034",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Ner Rohit",
+          "Roll": "16MA20053",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Amritash Bharadwaj",
+          "Roll": "16AG3EP05",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Yash Khandelwal",
+          "Roll": "17CH10051",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Siddhant Haldar",
+          "Roll": "16EE35018",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Aman Sharma",
+          "Roll": "16CH30003",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Aditya Rathore",
+          "Roll": "16IE32001",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "Shreyansh Vats",
+          "Roll": "17ME10077",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "Prerit Jain",
+          "Roll": "16IM30033",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "Krishnam Kapoor",
+          "Roll": "17EC10026",
+          "Award": "Special Mention"
+        }
+      ]
+    },
+    "socult": {
+      "awards": [
+        {
+          "Name": "Piyush Kedia",
+          "Roll": "16MT30022",
+          "Award": "Srimati Chandramani Cup"
+        }
+      ],
+      "honours": [
+        {
+          "Name": "Piyush Kedia",
+          "Roll": "16MT30022",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Jawalikar Paritosh",
+          "Roll": "16EC32002",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Idrish Islahi",
+          "Roll": "16QM30005",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Deepanshu Sinha",
+          "Roll": "16MI3PE02",
+          "Award": "Institute Order Of Merit"
+        },
+        {
+          "Name": "Siddhant Gautam",
+          "Roll": "16ME31010",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Arka Mallik",
+          "Roll": "16EX20006",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Devendra Lohar",
+          "Roll": "16HS20011",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Suyash Sharma",
+          "Roll": "16CE3FP11",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Soumya Yadav",
+          "Roll": "16CE33008",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Kushagra Ramnani",
+          "Roll": "16AR10020",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Vaibhav Gambhir",
+          "Roll": "16CH3FP02",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "Ashish Meena",
+          "Roll": "16MT30027",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "Bandana Badu",
+          "Roll": "16GG20008",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "Bhutwala Raj",
+          "Roll": "16EX20007",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "Kartik Tyagi",
+          "Roll": "16AR10017",
+          "Award": "Special Mention"
+        }
+      ]
+    },
+    "sports": {
+      "awards": [
+        {
+          "Name": "Pushpak Roy",
+          "Game": "WP & Swimming",
+          "Roll": "16IM30015",
+          "Award": "Bhandarkar Cup"
+        },
+        {
+          "Name": "Abhinav Gupta",
+          "Game": "Table Tennis",
+          "Roll": "17ME10001",
+          "Award": "Ankik Dhar Trophy"
+        }
+      ],
+      "honours": [
+        {
+          "Name": "Pushpak Roy",
+          "Game": "WP & Swimming",
+          "Roll": "16IM30015",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Sumit Gaurav",
+          "Game": "Athletics",
+          "Roll": "16IM30029",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Dipesh Kumar",
+          "Game": "Basketball",
+          "Roll": "16EE35007",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Aniruddha Patel",
+          "Game": "Athletics",
+          "Roll": "16EX20003",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Reetam Roy",
+          "Game": "Table Tennis",
+          "Roll": "16IE10024",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Swati Rawat",
+          "Game": "BB & VB",
+          "Roll": "16CH30022",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Abhinav Gupta",
+          "Game": "Table Tennis",
+          "Roll": "17ME10001",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Yugal Kishor Patanwar",
+          "Game": "Football",
+          "Roll": "13MI92F02",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Akhil Andasu",
+          "Game": "Tennis",
+          "Roll": "16MA20008",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Agnihotri Pushkar Ajay",
+          "Game": "Basketball",
+          "Roll": "16MT30003",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Nachiketa Vaghela",
+          "Game": "Football",
+          "Roll": "16CY20020",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Rohit Rao",
+          "Game": "Badminton",
+          "Roll": "16HS20031",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Guraang Kothari",
+          "Game": "Football",
+          "Roll": "16GG20013",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Sumit Raman",
+          "Game": "Athletics",
+          "Roll": "16AG32007",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Pankaj Kulria",
+          "Game": "Athletics",
+          "Roll": "16AG32002",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Sayan Naskar",
+          "Game": "Football",
+          "Roll": "15AE30015",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "Yogshree Choukse",
+          "Game": "Tennis",
+          "Roll": "16HS20044",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Rana Prathap",
+          "Game": "Squash",
+          "Roll": "16MA20034",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Meghana Sai Jasti",
+          "Game": "Volleyball",
+          "Roll": "16EC35014",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Dikhya Dutta",
+          "Game": "Athletics",
+          "Roll": "17IE10015",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Pawan Kumar Singh",
+          "Game": "Weight Lifting",
+          "Roll": "16CE36004",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "Mohd Issa",
+          "Game": "Hockey",
+          "Roll": "16HS20022",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "Roshni Bhowmik",
+          "Game": "Table Tennis",
+          "Roll": "16AR10030",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "Raghav Agarwal",
+          "Game": "Squash",
+          "Roll": "16EX20020",
+          "Award": "Special Mention"
+        }
+      ]
+    },
+    "specialRecog": [
+      {
+        "Name": "Shivam Singh",
+        "Roll": "17IM30030",
+        "Award": "Amrit Barman Memorial Award"
+      },
+      {
+        "Name": "Arpit Raj",
+        "Roll": "16CE36002",
+        "Award": "Prof. Ashoke Mukherjee Cup"
+      }
+    ]
   }
 }

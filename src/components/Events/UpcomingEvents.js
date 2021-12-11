@@ -4,23 +4,19 @@ let todayStr = new Date().toISOString().replace(/T.*$/, '') // YYYY-MM-DD of tod
 
 const UpcomingEvents = [
   {
-    title: "Something1",
-    imgName: "something.jpg",
-    start: "2021-11-05",
+    title: "Web Hackathon",
+    imgName: "web-hack.jpg",
+    start: "1st Dec, 2021",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!",
-    bodyContent:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!",
-  },
+      "Technology Students' Gymkhana is organising a hackathon of developing a web application for gymkhana. The main purpose of this web application is to bring all the gymkhana related information and services under a single umbrella. This application would serve as a non-academic ERP for all the students of the Indian Institute of Technology Kharagpur.",
+    },
   {
-    title: "Something2",
-    imgName: "something.jpg",
-    start: "2021-11-06",
+    title: "Mime Competition",
+    imgName: "Mime Competition",
+    start: "9th Dec, 2021",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!",
-    bodyContent:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis! Recusandae cum provident quia rem perspiciatis sit ex unde esse odit, ullam aliquid sequi doloribus vel ducimus? Est, in commodi!",
-  },
+      "Depict your theatrical skills and engender the audience spellbound. Explore through ideas, topics – your performance could be based on any theme. ",
+    },
   {
     title: "Something3",
     imgName: "something.jpg",
