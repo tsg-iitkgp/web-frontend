@@ -61,3 +61,13 @@
   animation-fill-mode: forwards;
   transform: translate(0, -100%);
 }
+@media screen and (max-width: 768px) {
+  .animatedTitle > div {
+    height: 70%;
+  }
+}
+@media screen and (max-width: 562px) {
+  .animatedTitle > div {
+    height: 80%;
+  }
+}
