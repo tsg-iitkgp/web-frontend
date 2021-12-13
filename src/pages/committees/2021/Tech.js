@@ -148,28 +148,6 @@ export default function Tech() {
             />
           </div>
         </section>
-
-        {/* ----Our Team---- */}
-
-        <section>
-          <h1>Our Team</h1>
-          <div className={ContactStyles.multipleCards}>
-            {techComTeam.map((member, index) => {
-              return (
-                <ContactCard
-                  name={member.Name}
-                  designation={member.Post}
-                  email={member.Email}
-                  imgSrc={`/media/images/${member.Category === "General Secretary" ||
-                    member.Category === "Nominated Posts"
-                    ? "contacts"
-                    : "secyImages"
-                    }/${member.RollNo}.png`}
-                />
-              );
-            })}
-          </div>
-        </section>
       </div>
     </Layout>
   );
