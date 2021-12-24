@@ -104,7 +104,7 @@ export default function Tech() {
         <div className={globalStyles.welcomeSection}>
           <div className={globalStyles.backgroundImage}></div>
           <div className={globalStyles.welcomeContent}>
-            <h1>Tech Committee</h1>
+            <h1 className={globalStyles.committeeHeading}>Tech Committee</h1>
           </div>
         </div>
 
@@ -114,39 +114,106 @@ export default function Tech() {
           <div className={Styles.aboutUsSection}>
             <h1>About Us</h1>
             <p className={globalStyles.description}>
-              Technology Students’ Gymkhana is the hub of the numerous
-              extra-curricular and co-curricular activities in IIT Kharagpur
-              ranging from sports to socio-cultural. The Gymkhana is managed by
-              the students, for the students, under the guidance and active
-              participation of the faculty and staff members.
+              Technology, as we know, makes everything possible around us. It
+              encompasses all possibilities that mankind has to foster and
+              implement in order to secure a better future. Special emphasis is
+              given on Technology in IIT Kharagpur, therefore we have many
+              facilities which can be used by all the students. Technology
+              Committee consists of four subcommittees: Innovation Cup,
+              Application Cup, Knowledge Cup, Strategy Cup.
             </p>
-            <p className={globalStyles.description}>
+            {/* <p className={globalStyles.description}>
               The moto of Technology Students' Gymkhana is YOGAH KARMASU
               KAUSALAM which in English means "Perfection in action is Yoga".
               Our goal is to bring overall development in IITians through
               cultivating and nurturing their extra-curricular talents.
-            </p>
+            </p> */}
           </div>
         </section>
+        {/* Tech Movie */}
 
         <section>
-          <h1>
-            Inter IIT Tech Meet
-          </h1>
-        </section>
-        <section>
-          <h1>
-            Tech Movie
-          </h1>
+          <h2>Tech Movie</h2>
           <div className={Styles.videoContainer}>
             <iframe
               src="https://www.youtube.com/embed/yZTGtIHYQpU?rel=0"
-              allow='autoplay; encrypted-media'
+              allow="autoplay; encrypted-media"
               allowFullScreen
-              title='Illumination 2021'
+              title="Illumination 2021"
               className={Styles.techMovieVideo}
             />
           </div>
+        </section>
+        <h1>Events</h1>
+
+        {/*  Website Hackathon*/}
+        <section>
+          <h2>Website Hackathon(Ongoing)</h2>
+          <div className={globalStyles.imgContainer}>
+            <img
+              src="https://scontent.fidr5-1.fna.fbcdn.net/v/t39.30808-6/p180x540/253681335_5141120845902909_6735602843781157004_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=WhRca1ApWzkAX-4kA38&_nc_ht=scontent.fidr5-1.fna&oh=00_AT_L-89fV4auxSZsX2Rg88oIXW0yMQFFhiX7ZdiURMu3UA&oe=61CC09D9"
+              alt="Website Hackathon Poster"
+            />
+          </div>
+
+          <p className={globalStyles.description}>
+            In this event, the students were expected to develop a website that
+            would synchronize a student's academic, extracurricular, and
+            co-curricular information in one place. As a part of the event, the
+            participating teams would develop an API-based backend for the
+            website and use it to serve the content for the frontend(s).
+            <br />
+            <br />
+            Link to Problem Statement:{" "}
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1Hmfomj7pa0o8AZonzxC0O0GNTPU0PjgW/view?usp=sharing"
+              rel="noreferrer"
+            >
+              Click Here
+            </a>
+          </p>
+        </section>
+        {/* Samsung Innovation Award : IIT Kharagpur Chapter */}
+        <section>
+          <h2>Samsung Innovation Award : IIT Kharagpur Chapter</h2>
+          <div className={globalStyles.imgContainer}>
+            <img
+              src="https://scontent.fidr5-1.fna.fbcdn.net/v/t39.30808-6/237751029_4294286557284893_8613534195140749203_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=37veDESCR1QAX9D1mwg&tn=i2xYXWM7CFprovg_&_nc_ht=scontent.fidr5-1.fna&oh=00_AT_M62f1XREPmTiTtmIEtbX8cqjD34LeWKgHwdm8A7iTBQ&oe=61CB99AD"
+              alt="Website Hackathon Poster"
+            />
+          </div>
+
+          <p className={globalStyles.description}>
+            Samsung Innovation Award-IIT Kharagpur Chapter was organised by
+            Technology Students' Gymkhana, IIT Kharagpur, and Entrepreneurship
+            Cell, IIT Kharagpur. Samsung Innovation Award is organized annually
+            by the Samsung R&D Institute India Bangalore aims to identify,
+            encourage and reward innovative ideas and projects.
+            <br />
+            The Silver Jubilee Edition is a Multi-IIT event with all our IIT
+            partners from the last ten editions. The theme for the 2021 edition
+            is 'Metaverse', i.e., technologies ranging from AR/VR, 3d Spaces and
+            Reconstruction, to experiences in gaming, tourism, and many more.
+          </p>
+        </section>
+        {/* TechVistara */}
+        <section>
+          <h2>TechVistara</h2>
+          <div className={globalStyles.imgContainer}>
+            <img
+              src="https://scontent.fidr5-1.fna.fbcdn.net/v/t39.30808-6/p526x296/254608509_4557772204269659_4166367022365891309_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=puq3Bqo42wgAX846-42&_nc_ht=scontent.fidr5-1.fna&oh=00_AT_jOavBxpNwGt1TQ5KAAvnksJ4Q2pmgWYB8Za67DBP_qg&oe=61CA7E8E"
+              alt="Website Hackathon Poster"
+            />
+          </div>
+
+          <p className={globalStyles.description}>
+            TechVistara is a series of interactive sessions aimed to unravel the
+            world around us and present it in the most optimized way possible.
+            The first episode shed light on “Discovery of Exoplanets and Search
+            for the habitable world”. It was presented by Professor Anand
+            Narayanan, an astrophysicist scholar and a professor at IIST.
+          </p>
         </section>
       </div>
     </Layout>
