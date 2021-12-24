@@ -1,12 +1,23 @@
 .mainContainer {
   margin-top: 11vh;
 }
+
+h1 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  color: hsl(207, 70%, 71%);
+}
+h1.committeeHeading {
+  color: white;
+}
 section {
   width: 90%;
   max-width: 1200px;
   margin: 3rem auto;
 }
-section h1 {
+section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -15,11 +26,23 @@ section h1 {
 }
 section .description {
   letter-spacing: 1.5px;
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
   line-height: 125%;
+  padding: 0rem 2rem;
 }
-
+.imgContainer {
+  height: 100%;
+  width: 90%;
+  border-radius: 1rem;
+  margin: 0rem auto 2rem;
+}
+.imgContainer img {
+  max-height: 100vh;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  object-position: top;
+}
 /* Welcome Section */
 .welcomeSection {
   position: relative;
