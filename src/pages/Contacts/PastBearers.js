@@ -19,19 +19,19 @@ export default function PastBearers() {
 
   const president = senateData.President;
   return (
-    
-    <div>
-      
 
-    
+    <div>
+
+
+
 
       <section className="awards content">
- 
+
 
         <div className="tabs">
-    
-     
-         
+
+
+
         </div>
         <div className="select GC_dropdown">
           <select
@@ -48,16 +48,16 @@ export default function PastBearers() {
 
         {(senateData[currentYear][currentTab]["profs"] !== undefined ||
           currentTab === "specialRecog") && (
-          <>
-            <div
-              className={Styles.shead1}
-            >
-              {" "}
-              Previous   Year  Senate{" "}
-            </div>
-            <div className="cards">
-              {currentTab !== "specialRecog"
-                ? senateData[currentYear][currentTab]["profs"]?.map(
+            <>
+              <div
+                className={Styles.shead1}
+              >
+                {" "}
+                Previous   Year  Senate{" "}
+              </div>
+              <div className="cards">
+                {currentTab !== "specialRecog"
+                  ? senateData[currentYear][currentTab]["profs"]?.map(
                     (winner) => (
                       <ContactCard
                         name={winner.Name}
@@ -66,73 +66,73 @@ export default function PastBearers() {
                       />
                     )
                   )
-                : senateData[currentYear][currentTab].map((winner) => (
+                  : senateData[currentYear][currentTab].map((winner) => (
                     <ContactCard
                       name={winner.Name}
                       imgSrc={""}
                       designation={winner.Post}
                     />
                   ))}
-            </div>
-          </>
-        )}
+              </div>
+            </>
+          )}
 
         {currentTab !== "specialRecog" && (
           <>
-     
-            <div  className={Styles.senateCard}>
-             
-                {/* <thead>
+
+            <div className={Styles.senateCard}>
+
+              {/* <thead>
                   <tr>
                     <th>Post</th>
                     <th>Name</th>
                  
                   </tr>
                 </thead> */}
-                
-                  {senateData[currentYear][currentTab]["honours"].map(
-                    (winner) => (
-                      
-                        <card className={Styles.card1}>
-                          <p >
-                       <span style={{color:"rgb(190, 190, 190)"}}> {winner.Post}</span>
-                        <br/>
-                          
-                          
-                          {winner.Name}
-                          </p>
-                        
-                        </card>
-                        
-                      // <tr>
-                      //   <td>{winner.Post}</td>
-                      //   <td>{winner.Name} </td>
-          
-                       
-                      // </tr>
 
-                   
-                    )
-                  )}
-                
-              
+              {senateData[currentYear][currentTab]["honours"].map(
+                (winner) => (
+
+                  <card className={Styles.card1}>
+                    <p >
+                      <span style={{ color: "rgb(190, 190, 190)" }}> {winner.Post}</span>
+                      <br />
+
+
+                      {winner.Name}
+                    </p>
+
+                  </card>
+
+                  // <tr>
+                  //   <td>{winner.Post}</td>
+                  //   <td>{winner.Name} </td>
+
+
+                  // </tr>
+
+
+                )
+              )}
+
+
             </div>
 
-          
+
           </>
         )}
       </section>
 
 
 
-      
-        <br />
-        <br />
-     
-        <br />
-        <br />
-      
-      
+
+      <br />
+      <br />
+
+      <br />
+      <br />
+
+
     </div>
   );
 }

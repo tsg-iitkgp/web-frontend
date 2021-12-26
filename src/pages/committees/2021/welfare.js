@@ -9,45 +9,45 @@ import ContactCard from "../../../components/ContactCard";
 export default function Welfare() {
   const techComTeam = [
     {
-        RollNo: "19EE10016",
-        Name: "Bhosale Shivam Pravin",
-        img: "19EE10016.png",
-        Category: "General Secretary",
-        Post: "GSec - Students' Welfare",
-        Contact: 9890359987,
-        Email: "bhosaleshivam3333@gmail.com",
-        "Institue ids": "bhosaleshivam3333@gmail.com",
-        "Institute mail ids": "gsectsg-welfare@hijli.iitkgp.ac.in",
-      },
-      {
-        RollNo: "19AE10014",
-        Name: "Jeripothula Sindhu",
-        Post: "GSec - Students' Welfare",
-        Category: "General Secretary",
-        img: "19AE10014.png",
-        Contact: 9502834599,
-        Email: "sindhujeripothula@gmail.com",
-        "Institue ids": "sindhujeripothula@gmail.com",
-        "Institute mail ids": "",
-      },
-      {
-        id: 32,
-        RollNo: "20CS10031",
-        Name: "Kartik Pontula",
-        Post: "Secretary Academic Help",
-        Email: "kartikpontula@gmail.com",
-        Phone: 9110344714,
-        Hall: "LBS",
-      },
-      {
-        id: 33,
-        RollNo: "20EX20001",
-        Name: "Aaditri Vaibhav",
-        Post: "Secretary Community And Crisis",
-        Email: "aaditri.vaibhav@gmail.com",
-        Phone: 8789617065,
-        Hall: "SN/IG",
-      },
+      RollNo: "19EE10016",
+      Name: "Bhosale Shivam Pravin",
+      img: "19EE10016.png",
+      Category: "General Secretary",
+      Post: "GSec - Students' Welfare",
+      Contact: 9890359987,
+      Email: "bhosaleshivam3333@gmail.com",
+      "Institue ids": "bhosaleshivam3333@gmail.com",
+      "Institute mail ids": "gsectsg-welfare@hijli.iitkgp.ac.in",
+    },
+    {
+      RollNo: "19AE10014",
+      Name: "Jeripothula Sindhu",
+      Post: "GSec - Students' Welfare",
+      Category: "General Secretary",
+      img: "19AE10014.png",
+      Contact: 9502834599,
+      Email: "sindhujeripothula@gmail.com",
+      "Institue ids": "sindhujeripothula@gmail.com",
+      "Institute mail ids": "",
+    },
+    {
+      id: 32,
+      RollNo: "20CS10031",
+      Name: "Kartik Pontula",
+      Post: "Secretary Academic Help",
+      Email: "kartikpontula@gmail.com",
+      Phone: 9110344714,
+      Hall: "LBS",
+    },
+    {
+      id: 33,
+      RollNo: "20EX20001",
+      Name: "Aaditri Vaibhav",
+      Post: "Secretary Community And Crisis",
+      Email: "aaditri.vaibhav@gmail.com",
+      Phone: 8789617065,
+      Hall: "SN/IG",
+    },
 
   ];
   return (
@@ -58,7 +58,7 @@ export default function Welfare() {
         <div className={globalStyles.welcomeSection}>
           <div className={globalStyles.backgroundImage}></div>
           <div className={globalStyles.welcomeContent}>
-            <h1>Students' Welfare Committee</h1>
+            <h1 className={globalStyles.committeeHeading}>Students' Welfare Committee</h1>
           </div>
         </div>
 

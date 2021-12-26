@@ -94,7 +94,7 @@ export default function Socult() {
         <div className={globalStyles.welcomeSection}>
           <div className={globalStyles.backgroundImage}></div>
           <div className={globalStyles.welcomeContent}>
-            <h1>Social and Cultural Committee</h1>
+            <h1 className={globalStyles.committeeHeading}>Social and Cultural Committee</h1>
           </div>
         </div>
 

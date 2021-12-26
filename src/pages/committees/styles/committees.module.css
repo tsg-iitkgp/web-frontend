@@ -19,10 +19,10 @@ section {
 }
 section h2 {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  letter-spacing: 2px;
-  color: #f1c40f;
+  /* font-size: 2rem;  PAHLE CLASSNAME DEFINE KAR LE, TAB CSS DEFINE KAR...BAHUT JAGAH CHANGE HO JA RHI HAI */
+  /* margin-bottom: 2rem;
+  letter-spacing: 2px; */
+  /* color: #f1c40f; */
 }
 section .description {
   letter-spacing: 1.5px;
