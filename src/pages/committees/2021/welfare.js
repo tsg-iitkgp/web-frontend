@@ -83,11 +83,26 @@ export default function Welfare() {
           </div>
         </section>
 
-        <section>
-          <h1>Upcoming Events</h1>
-        </section>
+
         <section>
           <h1>Recent Events</h1>
+          <center>
+            <div className={globalStyles.img2Container}>
+              <img
+                src="https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/255445178_260023659424383_6438569372240643745_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=Zwmgyozs3kcAX9SUe6s&_nc_ht=scontent.fdel29-1.fna&oh=00_AT_JC6DwveXyIpCC3IqpxR-2SEmSPtvqxQQhp1WF1unZdw&oe=61D32FD2"
+                alt="Have you felt anxious"
+              />
+            </div>
+            <br /><br /><br />
+            <h1>Mental Wellness Workshop</h1>
+            <div className={globalStyles.img2Container}>
+              <img
+                src="https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/252668176_258333172926765_5644337525993871283_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=4M1f833dROQAX9ado8M&_nc_ht=scontent.fdel29-1.fna&oh=00_AT96AjIPWx_5Pj-t1yJeEeSJduHjQQVxz6ElJ33G8TE8RQ&oe=61D220BB"
+                alt="Mental welness workshop"
+              />
+            </div>
+          </center>
+
         </section>
       </div>
     </Layout>

@@ -43,6 +43,13 @@ section .description {
   object-fit: cover;
   object-position: top;
 }
+.img2Container img {
+  max-height: auto;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  object-position: top;
+  width: 500px;
+}
 /* Welcome Section */
 .welcomeSection {
   position: relative;
@@ -72,4 +79,22 @@ section .description {
 .welcomeContent h1 {
   font-size: 3rem;
   font-weight: bolder;
+}
+@media screen and (max-width: 900px) {
+  .img2Container img {
+    max-height: auto;
+    border-radius: 1.25rem;
+    object-fit: cover;
+    object-position: top;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 464px) {
+.img2Container img {
+  max-height: auto;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  object-position: top;
+  width: 280px;
+}
 }

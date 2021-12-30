@@ -132,6 +132,20 @@ export default function Socult() {
               className={Styles.illuVideo}
             />
           </section>
+          <h1>
+            Events (Ongoing)
+          </h1>
+          <section >
+            <center>
+              <div className={globalStyles.img2Container}>
+                <img
+                  src="https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/270284517_4685102904906944_9012179791807795734_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=B5qxSXQLkyAAX_bdMnf&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fdel29-1.fna&oh=00_AT90QnwD05NaIJjVgzQsswsFJoZWgkuTbvfe40lG1_A-nw&oe=61D23AED"
+                  alt="Theme Photography Event"
+                />
+              </div>
+            </center>
+          </section>
+
         </section>
       </div>
     </Layout>

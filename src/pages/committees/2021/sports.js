@@ -186,9 +186,23 @@ export default function Sports() {
 
         <section>
           <h1>Upcoming Events</h1>
+          <center>
+            <div className={globalStyles.img2Container}>
+              <img
+                src="https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/270112024_2932398896982591_1427679772579114810_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=1y-2gJ_uQOwAX_73qpa&_nc_ht=scontent.fdel29-1.fna&oh=00_AT9aArtiUkaxJrI0-yEXzTWnkMYvM7uox_lZTUof_uGQSA&oe=61D215D8"
+                alt="Cycling event"
+              />
+            </div></center>
         </section>
         <section>
           <h1>Recent Events</h1>
+          <center>
+            <div className={globalStyles.img2Container}>
+              <img
+                src="https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/267304215_2923186704570477_8170419043409191411_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=YdgScENbi6sAX8o5yiV&_nc_ht=scontent.fdel29-1.fna&oh=00_AT9OPvtwaVUVkEcl_K6l0ViAhkVmrzpCGrwaVZonB0L7hg&oe=61D2BAE0"
+                alt="Chess club event"
+              />
+            </div></center>
         </section>
       </div>
     </Layout>
