@@ -3,6 +3,7 @@ import Styles from "../../styles/pages/past.module.css";
 import senateData from "./../senateData.json";
 import { useState } from "react";
 import ContactCard from "../../components/ContactCard";
+import primg from "./../Contacts/Images/prf.png"
 
 
 const years = ["2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16"];
@@ -61,7 +62,7 @@ export default function PastBearers() {
                     (winner) => (
                       <ContactCard
                         name={winner.Name}
-                        imgSrc={""}
+                        imgSrc={primg}
                         designation={winner.Post}
                       />
                     )
@@ -69,14 +70,13 @@ export default function PastBearers() {
                   : senateData[currentYear][currentTab].map((winner) => (
                     <ContactCard
                       name={winner.Name}
-                      imgSrc={""}
+                      imgSrc={"primg"}
                       designation={winner.Post}
                     />
                   ))}
               </div>
             </>
           )}
-
         {currentTab !== "specialRecog" && (
           <>
 
@@ -86,7 +86,6 @@ export default function PastBearers() {
                   <tr>
                     <th>Post</th>
                     <th>Name</th>
-                 
                   </tr>
                 </thead> */}
 
