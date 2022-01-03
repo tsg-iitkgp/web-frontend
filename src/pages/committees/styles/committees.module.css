@@ -38,10 +38,11 @@ section .description {
   margin: 0rem auto 2rem;
 }
 .imgContainer img {
-  max-height: 100vh;
+  /* max-height: 100vh; */
   border-radius: 1.25rem;
   object-fit: cover;
   object-position: top;
+  width: 700px;
 }
 .img2Container img {
   max-height: auto;

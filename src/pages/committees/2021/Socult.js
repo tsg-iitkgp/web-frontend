@@ -5,6 +5,7 @@ import globalStyles from "../styles/committees.module.css";
 import ContactStyles from "../../../styles/pages/contacts.module.css";
 import events from "../../../components/Events/UpcomingEvents";
 import ContactCard from "../../../components/ContactCard";
+import img1 from "./images/tech/photogr.jpg";
 
 export default function Socult() {
   const techComTeam = [
@@ -139,7 +140,7 @@ export default function Socult() {
             <center>
               <div className={globalStyles.img2Container}>
                 <img
-                  src="https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/270284517_4685102904906944_9012179791807795734_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=B5qxSXQLkyAAX_bdMnf&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fdel29-1.fna&oh=00_AT90QnwD05NaIJjVgzQsswsFJoZWgkuTbvfe40lG1_A-nw&oe=61D23AED"
+                  src={img1}
                   alt="Theme Photography Event"
                 />
               </div>

@@ -3,94 +3,100 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import './Gallery.css'
 import Layout from '../Layout';
+import img1 from "./images/Picture1.png"
+import img2 from "./images/Picture2.jpg"
+import img3 from "./images/Picture3.jpg"
+import img4 from "./images/Picture4.jpg"
+import img5 from "./images/Picture5.jpg"
+import img6 from "./images/Picture6.jpg"
 
 function Gallery() {
     return (
         <Layout >
-        <div className="maindiv_gallery" >
-    <div >
-    <h2
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "#fff",
-            fontSize: "36px"
-          }}
-        >
-          GALLERY
-        </h2>
-        <Container>
-            <Row style={{marginTop: "5%"}}>
-                
-                <Col className="main_col1" md={4}>
-                    <Row className="img-grid_row" xs={12}>
-                        <Row className="row1" >
-                            <Col style={{width: 400}}>
-                                <div className="grid_imgs" style={{width: 400, height: 400}}>
-                                <img src="https://source.unsplash.com/2ShvY8Lf6l0/800x599" alt="..." className="myimg" />
-                                <div class="layer">
-                                    <h3>Some text describing the image</h3>
-                                    </div>
-                                </div>
-                            </Col>                       
-                            <Col style={{width: 400}}>
-                                <div className="grid_imgs"style={{width: 400, height: 400}}>
-                                <img src="https://source.unsplash.com/Dm-qxdynoEc/800x799" alt="..." className="myimg" />
-                                </div>
-                            </Col> 
-                            
-                            <Col >
-                                <div className="grid_imgs"style={{width: 400, height: 400}}>
-                                <img src="https://source.unsplash.com/qDkso9nvCg0/600x799" alt="..." className="myimg" />
-                                </div>
+            <div className="maindiv_gallery" >
+                <div >
+                    <h2
+                        style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            color: "#fff",
+                            fontSize: "36px"
+                        }}
+                    >
+                        GALLERY
+                    </h2>
+                    <Container>
+                        <Row style={{ marginTop: "5%" }}>
+
+                            <Col className="main_col1" md={4}>
+                                <Row className="img-grid_row" xs={12}>
+                                    <Row className="row1" >
+                                        <Col style={{ width: 400 }}>
+                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                                <img src={img1} alt="..." className="myimg" />
+                                                <div class="layer">
+                                                    <h3>Illumination</h3>
+                                                </div>
+                                            </div>
+                                        </Col>
+                                        <Col style={{ width: 400 }}>
+                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                                <img src={img2} alt="..." className="myimg" />
+                                            </div>
+                                        </Col>
+
+                                        <Col >
+                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                                <img src={img3} alt="..." className="myimg" />
+                                            </div>
+                                        </Col>
+                                    </Row >
+                                    <Row className="row1" >
+                                        <Col style={{ width: 400 }}>
+                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                                <img src={img4} alt="..." className="myimg" />
+                                            </div>
+                                        </Col>
+                                        <Col >
+                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                                <img src={img5} alt="..." className="myimg" />
+                                            </div>
+                                        </Col>
+
+                                        <Col >
+                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                                <img src={img6} alt="..." className="myimg" />
+                                            </div>
+                                        </Col>
+                                    </Row >
+                                    <Row className="row1" >
+                                        <Col style={{ width: 400 }}>
+                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                                <img src={img3} alt="..." className="myimg" />
+                                            </div>
+                                        </Col>
+                                        <Col >
+                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                                <img src={img2} alt="..." className="myimg" />
+                                            </div>
+                                        </Col>
+
+                                        <Col >
+                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                                <img src={img1} alt="..." className="myimg" />
+                                            </div>
+                                        </Col>
+                                    </Row >
+                                </Row>
                             </Col>
-                        </Row >
-                        <Row className="row1" >
-                            <Col style={{width: 400}}>
-                                <div className="grid_imgs" style={{width: 400, height: 400}}>
-                                <img src="https://source.unsplash.com/2ShvY8Lf6l0/800x599" alt="..." className="myimg" />
-                                </div>
-                            </Col>                       
-                            <Col >
-                                <div className="grid_imgs"style={{width: 400, height: 400}}>
-                                <img src="https://source.unsplash.com/Dm-qxdynoEc/800x799" alt="..." className="myimg" />
-                                </div>
-                            </Col> 
-                            
-                            <Col >
-                                <div className="grid_imgs"style={{width: 400, height: 400}}>
-                                <img src="https://source.unsplash.com/qDkso9nvCg0/600x799" alt="..." className="myimg" />
-                                </div>
-                            </Col>
-                        </Row >
-                        <Row className="row1" >
-                            <Col style={{width: 400}}>
-                                <div className="grid_imgs" style={{width: 400, height: 400}}>
-                                <img src="https://source.unsplash.com/2ShvY8Lf6l0/800x599" alt="..." className="myimg" />
-                                </div>
-                            </Col>                       
-                            <Col >
-                                <div className="grid_imgs"style={{width: 400, height: 400}}>
-                                <img src="https://source.unsplash.com/Dm-qxdynoEc/800x799" alt="..." className="myimg" />
-                                </div>
-                            </Col> 
-                            
-                            <Col >
-                                <div className="grid_imgs"style={{width: 400, height: 400}}>
-                                <img src="https://source.unsplash.com/qDkso9nvCg0/600x799" alt="..." className="myimg" />
-                                </div>
-                            </Col>
-                        </Row >
-                    </Row>
-                </Col>
-            </Row>
-        </Container>
-    </div>
-</div>
-</Layout>
+                        </Row>
+                    </Container>
+                </div>
+            </div>
+        </Layout>
     );
-  }
-  
+}
+
 export default Gallery;

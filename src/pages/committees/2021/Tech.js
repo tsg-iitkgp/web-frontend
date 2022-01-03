@@ -5,6 +5,9 @@ import globalStyles from "../styles/committees.module.css";
 import ContactStyles from "../../../styles/pages/contacts.module.css";
 // import events from "../../../components/Events/UpcomingEvents";
 import ContactCard from "../../../components/ContactCard";
+import img1 from "./images/tech/websiteHackathon.jpeg";
+import img2 from "./images/tech/saminn.jpg";
+import img3 from "./images/tech/techvis.jpg";
 
 export default function Tech() {
   const techComTeam = [
@@ -149,12 +152,13 @@ export default function Tech() {
         {/*  Website Hackathon*/}
         <section>
           <h2>Website Hackathon(Ongoing)</h2>
-          <div className={globalStyles.imgContainer}>
-            <img
-              src="https://scontent.fidr5-1.fna.fbcdn.net/v/t39.30808-6/p180x540/253681335_5141120845902909_6735602843781157004_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=WhRca1ApWzkAX-4kA38&_nc_ht=scontent.fidr5-1.fna&oh=00_AT_L-89fV4auxSZsX2Rg88oIXW0yMQFFhiX7ZdiURMu3UA&oe=61CC09D9"
-              alt="Website Hackathon Poster"
-            />
-          </div>
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img
+                src={img1}
+                alt="Website Hackathon Poster"
+              />
+            </div></center>
 
           <p className={globalStyles.description}>
             In this event, the students were expected to develop a website that
@@ -177,12 +181,13 @@ export default function Tech() {
         {/* Samsung Innovation Award : IIT Kharagpur Chapter */}
         <section>
           <h2>Samsung Innovation Award : IIT Kharagpur Chapter</h2>
-          <div className={globalStyles.imgContainer}>
-            <img
-              src="https://scontent.fidr5-1.fna.fbcdn.net/v/t39.30808-6/237751029_4294286557284893_8613534195140749203_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=37veDESCR1QAX9D1mwg&tn=i2xYXWM7CFprovg_&_nc_ht=scontent.fidr5-1.fna&oh=00_AT_M62f1XREPmTiTtmIEtbX8cqjD34LeWKgHwdm8A7iTBQ&oe=61CB99AD"
-              alt="Website Hackathon Poster"
-            />
-          </div>
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img
+                src={img2}
+                alt="Website Hackathon Poster"
+              />
+            </div></center>
 
           <p className={globalStyles.description}>
             Samsung Innovation Award-IIT Kharagpur Chapter was organised by
@@ -200,12 +205,13 @@ export default function Tech() {
         {/* TechVistara */}
         <section>
           <h2>TechVistara</h2>
-          <div className={globalStyles.imgContainer}>
-            <img
-              src="https://scontent.fidr5-1.fna.fbcdn.net/v/t39.30808-6/p526x296/254608509_4557772204269659_4166367022365891309_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=puq3Bqo42wgAX846-42&_nc_ht=scontent.fidr5-1.fna&oh=00_AT_jOavBxpNwGt1TQ5KAAvnksJ4Q2pmgWYB8Za67DBP_qg&oe=61CA7E8E"
-              alt="Website Hackathon Poster"
-            />
-          </div>
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img
+                src={img3}
+                alt="Website Hackathon Poster"
+              />
+            </div></center>
 
           <p className={globalStyles.description}>
             TechVistara is a series of interactive sessions aimed to unravel the
