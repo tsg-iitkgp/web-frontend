@@ -89,6 +89,13 @@ section .description {
     object-position: top;
     width: 450px;
   }
+  .imgContainer img {
+    /* max-height: 100vh; */
+    border-radius: 1.25rem;
+    object-fit: cover;
+    object-position: top;
+    width: 450px;
+  }
 }
 @media screen and (max-width: 464px) {
 .img2Container img {
@@ -98,4 +105,12 @@ section .description {
   object-position: top;
   width: 280px;
 }
+.imgContainer img {
+  /* max-height: 100vh; */
+  border-radius: 1.25rem;
+  object-fit: cover;
+  object-position: top;
+  width: 280px;
+}
+
 }
