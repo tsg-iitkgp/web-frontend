@@ -33,58 +33,60 @@ function Gallery() {
                             <Col className="main_col1" md={4}>
                                 <Row className="img-grid_row" xs={12}>
                                     <Row className="row1" >
-                                        <Col style={{ width: 400 }}>
-                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                        <Col style={{ width: 350 }}>
+                                            <div className="grid_imgs" style={{ width: 350, height: 350 }}>
                                                 <img src={img1} alt="..." className="myimg" />
                                                 <div class="layer">
                                                     <h3>Illumination</h3>
                                                 </div>
                                             </div>
                                         </Col>
-                                        <Col style={{ width: 400 }}>
-                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                        <Col style={{ width: 350 }}>
+                                            <div className="grid_imgs" style={{ width: 350, height: 350 }}>
                                                 <img src={img2} alt="..." className="myimg" />
                                             </div>
                                         </Col>
 
                                         <Col >
-                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                            <div className="grid_imgs" style={{ width: 350, height: 350 }}>
                                                 <img src={img3} alt="..." className="myimg" />
+                                            </div>
+                                        </Col>
+                                        <Col style={{ width: 350 }}>
+                                            <div className="grid_imgs" style={{ width: 350, height: 350 }}>
+                                                <img src={img4} alt="..." className="myimg" />
                                             </div>
                                         </Col>
                                     </Row >
                                     <Row className="row1" >
-                                        <Col style={{ width: 400 }}>
-                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
-                                                <img src={img4} alt="..." className="myimg" />
-                                            </div>
-                                        </Col>
+                                        
                                         <Col >
-                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                            <div className="grid_imgs" style={{ width: 350, height: 350 }}>
                                                 <img src={img5} alt="..." className="myimg" />
                                             </div>
                                         </Col>
 
                                         <Col >
-                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                            <div className="grid_imgs" style={{ width: 350, height: 350 }}>
                                                 <img src={img6} alt="..." className="myimg" />
                                             </div>
                                         </Col>
-                                    </Row >
-                                    <Row className="row1" >
-                                        <Col style={{ width: 400 }}>
-                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                        <Col style={{ width: 350 }}>
+                                            <div className="grid_imgs" style={{ width: 350, height: 350 }}>
                                                 <img src={img3} alt="..." className="myimg" />
                                             </div>
                                         </Col>
                                         <Col >
-                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                            <div className="grid_imgs" style={{ width: 350, height: 350 }}>
                                                 <img src={img2} alt="..." className="myimg" />
                                             </div>
                                         </Col>
+                                    </Row >
+                                    <Row className="row1" >
+                                        
 
                                         <Col >
-                                            <div className="grid_imgs" style={{ width: 400, height: 400 }}>
+                                            <div className="grid_imgs" style={{ width: 350, height: 350 }}>
                                                 <img src={img1} alt="..." className="myimg" />
                                             </div>
                                         </Col>

@@ -86,7 +86,7 @@
     opacity: 1;
   }
   .grid_imgs:hover .myimg {
-    transform: rotateZ(20deg);
+    transform: rotateZ(10deg);
     transition: 0.5s;
   }
   .myimg {
