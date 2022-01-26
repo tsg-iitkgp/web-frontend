@@ -21,13 +21,13 @@ export default function Sidebar({ itemsList }) {
         {itemsList.map((item, index) => {
           return (
             <li key={index}>
-              <NavLink
-                to={item.route}
+              <a
+                href={item.route}
                 className={Styles.sidebarItem}
                 activeClassName={Styles.active}
               >
                 {item.title}
-              </NavLink>
+              </a>
             </li>
           );
         })}
