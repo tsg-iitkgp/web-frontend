@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  z-index: 10000;
 }
 .arrowButton.right {
   transition: 0.3s;
@@ -23,6 +24,7 @@
   transition: 0.3s;
   right: -8%;
 }
+
 .arrowButton i {
   transition: 0.3s;
   color: black;
@@ -40,6 +42,7 @@
   align-items: center;
   transition: 0.3s ease-in-out;
   padding: 2rem 0rem;
+  max-height: 90vh;
 }
 .sidebar li {
   transition: 0.2s;
@@ -48,6 +51,7 @@
 .sidebar.active {
   min-width: 20%;
   max-width: 25%;
+  overflow-y: scroll;
 }
 .sidebar.active li {
   transition: 0.2s;
@@ -60,6 +64,9 @@
   justify-content: center;
   align-items: center;
   margin: 0.5rem;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 a.sidebarItem {
   width: 100%;

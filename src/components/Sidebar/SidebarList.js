@@ -1,3 +1,5 @@
+import { data } from "../FAQ/FaqData";
+
 export const contactsSidebarList = [
   {
     title: "Current Office Bearers",
@@ -22,3 +24,10 @@ export const resultsSidebarList = [
     route: "/results/inter_iit",
   },
 ];
+export const faqSidebarList = data.map((element, index) => {
+  return {
+    title: element.title,
+    route: "#" + element.title,
+  };
+});
+console.log(faqSidebarList);
