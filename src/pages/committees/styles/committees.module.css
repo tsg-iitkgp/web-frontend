@@ -42,6 +42,13 @@ section .description {
   border-radius: 1.25rem;
   object-fit: cover;
   object-position: top;
+  width: 500px;
+}
+.imgContainer3 img {
+  /* max-height: 100vh; */
+  border-radius: 1.25rem;
+  object-fit: cover;
+  object-position: top;
   width: 700px;
 }
 .img2Container img {
@@ -112,5 +119,11 @@ section .description {
   object-position: top;
   width: 280px;
 }
-
+.imgContainer3 img {
+  /* max-height: 100vh; */
+  border-radius: 1.25rem;
+  object-fit: cover;
+  object-position: top;
+  width: 390px;
+}
 }

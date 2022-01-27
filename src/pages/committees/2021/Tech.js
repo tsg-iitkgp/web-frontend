@@ -8,6 +8,10 @@ import ContactCard from "../../../components/ContactCard";
 import img1 from "./images/tech/websiteHackathon.jpeg";
 import img2 from "./images/tech/saminn.jpg";
 import img3 from "./images/tech/techvis.jpg";
+import tradex from "./images/tech/tradex.jpg";
+import techvistara from "./images/tech/techvistar.png";
+import techmeet from "./images/tech/techmeet.png";
+import openiit from "./images/tech/openiitintro.jpg";
 
 export default function Tech() {
   const techComTeam = [
@@ -142,16 +146,141 @@ export default function Tech() {
               src="https://www.youtube.com/embed/yZTGtIHYQpU?rel=0"
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title="Illumination 2021"
+              title="Tech Movie"
               className={Styles.techMovieVideo}
             />
           </div>
         </section>
-        <h1>Events</h1>
+        <h1>
+          Events (Ongoing)
+        </h1>
+        <br />
+        <center>
+          <h2 style={{ color: 'lightBlue', letterSpacing: '2px' }} ><b>Introductory Seminar<br />
+            Open IIT and Technology General Championship events</b></h2>
+        </center>
+        <section>
+
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img
+                src={openiit}
+                alt="open iit tech intro"
+              />
+            </div></center>
+
+          <p className={globalStyles.description}>
+            Hello Freshers,<br />
+            We hope that you are enjoying a ravishing start to a momentous journey at IIT Kharagpur. As you have known by now, IIT Kharagpur offers myriads opportunities to explore with a healthy learning process, intense competition and lots of insights.<br />
+            Owing to the current situation the beneficial bond and interaction between seniors – juniors is barred. But don’t you worry, as we cover this for you. To get you acquainted with the coveted General Championships and Open IIT events, we have organised an extremely insightful session with your much-experienced seniors.<br /> Accumulating their memories, fundaes, suggestions, experiences and strategies, this session will provide productive understandings of mastering in these competitions. <br />
+            <br />
+            Link to join MS Teams Channel : <a href="https://bit.ly/techvistara">Click here</a><br />
+            Make sure to join in on 26th December 2021, 5:00 PM<br />
+            Looking forward to seeing you there!!<br />
+
+
+          </p>
+          <br /><br /><br />
+
+        </section>
+        <center>
+          <h2 style={{ color: 'lightBlue', letterSpacing: '2px' }} >Tradex</h2>
+        </center>
+        <section>
+
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img
+                src={tradex}
+                alt="Tradex"
+              />
+            </div></center>
+
+          <p className={globalStyles.description}>
+            Hello KGPians,<br />
+            The stock market is a no-called strike game. You don’t have to swing at everything – you can wait for your pitch.”<br /> – Warren Buffet<br />
+            Want to implement your knowledge of investing in a risk-free environment or acquire first-hand experience of the stock market and its vagaries?<br />
+            Technology, IIT Kharagpur brings an excellent opportunity to grill and test your skills with an online simulation trading competition- Open IIT Tradex.  Understand the trends in the market, invest accordingly and build a strong portfolio that stands out.<br />
+            The competition is completely risk- free conducted on the Dalal Street Investment Journal Trading platform. You will trade with virtual money in a real-time trading simulation, the way it happens in the real world.
+            Acquire your seats as the bid starts soon.<br /> It will be exciting, nerve-wracking, gruelling and most of all fun!!<br />
+            <br />
+            Registration Link:<a href=" https://forms.gle/esCWFdW5MLMRq6L98">Click here</a><br />
+            Registration Deadline: 16th January 2022, 6:00 PM <br />
+            Document for reference:<a href="https://bit.ly/tradexkgp ">Click here</a><br />
+            <br />
+            Further information will be mailed to the registered participants.
+
+
+          </p>
+          <br /><br /><br />
+
+        </section>
+        <center>
+          <h2 style={{ color: 'lightBlue', letterSpacing: '2px' }} >10th Inter IIT Tech Meet</h2>
+        </center>
+        <section>
+
+          <center>
+            <div className={globalStyles.imgContainer3}>
+              <img
+                src={techmeet}
+                alt="Tech meet"
+              />
+            </div></center>
+
+          <p className={globalStyles.description}>
+            Hello Kgpians,<br />
+            10th Inter IIT Tech Meet is around the corner and this year IIT Kharagpur is the proud host of this enormous technological fiesta. Every edition our team has performed stupendously well and this time too we are prepared with our dedicated, innovative and imaginative team for a successful venture. Introducing you to, “Mann Goel”, the team Contingent Captain.<br /><br />
+            Combining his technical and leadership skills, Mann is keen to master all the aspects of problems with thorough discussion and solutions. He has been consistently performing well and is determined to give his best to secure Gold.<br />
+            Mann's message to all the KGPians: "With the other two inter IIT trophies already at kgp, now is the time to set the records straight and make kgp the defending champion in all the 3 inter iits at the same time. To realise this kgp dream, I call out each and every kgpian to put in their cent per cent in the upcoming tech meet."<br />
+            <br />
+
+
+
+          </p><br />
+
+        </section>
+
+
+        <h1>
+          Events (Past)
+        </h1>
+        <center>
+          <h2 style={{ color: 'lightBlue', letterSpacing: '2px' }} >Tech Vistara (Blockchain Workshop)</h2>
+        </center>
+        <section>
+
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img
+                src={techvistara}
+                alt="Tradex"
+              />
+            </div></center>
+
+          <p className={globalStyles.description}>
+            Hello KGPians,<br />
+            The stock market is a no-called strike game. You don’t have to swing at everything – you can wait for your pitch.”<br /> – Warren Buffet<br />
+            Want to implement your knowledge of investing in a risk-free environment or acquire first-hand experience of the stock market and its vagaries?<br />
+            Technology, IIT Kharagpur brings an excellent opportunity to grill and test your skills with an online simulation trading competition- Open IIT Tradex.  Understand the trends in the market, invest accordingly and build a strong portfolio that stands out.<br />
+            The competition is completely risk- free conducted on the Dalal Street Investment Journal Trading platform. You will trade with virtual money in a real-time trading simulation, the way it happens in the real world.
+            Acquire your seats as the bid starts soon.<br /> It will be exciting, nerve-wracking, gruelling and most of all fun!!<br />
+            <br />
+            Registration Link:<a href=" https://forms.gle/esCWFdW5MLMRq6L98">Click here</a><br />
+            Registration Deadline: 16th January 2022, 6:00 PM <br />
+            Document for reference:<a href="https://bit.ly/tradexkgp ">Click here</a><br />
+            <br />
+            Further information will be mailed to the registered participants.
+
+
+          </p>
+        </section>
+
+
 
         {/*  Website Hackathon*/}
         <section>
-          <h2>Website Hackathon(Ongoing)</h2>
+          <h2 style={{ color: 'lightBlue', letterSpacing: '2px' }} >Website Hackathon</h2><br />
           <center>
             <div className={globalStyles.imgContainer}>
               <img
@@ -180,7 +309,8 @@ export default function Tech() {
         </section>
         {/* Samsung Innovation Award : IIT Kharagpur Chapter */}
         <section>
-          <h2>Samsung Innovation Award : IIT Kharagpur Chapter</h2>
+          <h2 style={{ color: 'lightBlue', letterSpacing: '2px' }} >Samsung Innovation Award : IIT Kharagpur Chapter</h2><br />
+
           <center>
             <div className={globalStyles.imgContainer}>
               <img
@@ -204,7 +334,8 @@ export default function Tech() {
         </section>
         {/* TechVistara */}
         <section>
-          <h2>TechVistara</h2>
+          <h2 style={{ color: 'lightBlue', letterSpacing: '2px' }} >TechVistara</h2><br />
+
           <center>
             <div className={globalStyles.imgContainer}>
               <img
