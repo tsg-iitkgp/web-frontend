@@ -1,7 +1,7 @@
 // React imports
 import React, { useEffect } from "react";
 // Third-party imports
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // fs imports
 import Login from "./pages/admin/Login";
@@ -34,7 +34,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop>
-        <Routes>
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/results" component={Results} />
@@ -46,11 +46,7 @@ function App() {
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/inter_iit" component={Results} />
           <Route exact path="/contacts/secretaries" component={Contacts} />
-          <Route
-            exact
-            path="/contacts/current-office-bearers"
-            component={Contacts}
-          />
+          <Route exact path="/contacts/current-office-bearers" component={Contacts} />
           <Route exact path="/contacts/pastBearers" component={Contacts} />
           <Route exact path="/societies" component={Societies} />
           <Route exact path="/committees/2021/tech" component={Tech} />
@@ -62,7 +58,7 @@ function App() {
           <Route exact path="/faq" component={faq} />
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
           <Route component={NotFound} />
-        </Routes>
+        </Switch>
       </ScrollToTop>
     </Router>
   );
