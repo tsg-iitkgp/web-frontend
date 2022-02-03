@@ -3,7 +3,7 @@ import Layout from "../../../components/Layout";
 import Styles from "../styles/socult.module.css";
 import globalStyles from "../styles/committees.module.css";
 import ContactStyles from "../../../styles/pages/contacts.module.css";
-import events from "../../../components/Events/UpcomingEvents";
+import events from "../../../components/Events/eventsData";
 import ContactCard from "../../../components/ContactCard";
 import img1 from "./images/tech/cycling.jpg";
 import img2 from "./images/tech/chess.jpg";
