@@ -1,44 +1,49 @@
-import React from 'react';
-import Styles from '../../styles/components/Events/highlights.module.css';
+import React from "react";
+import Styles from "../../styles/components/Events/highlights.module.css";
 
-function Highlight() {
-    return (
-        <div className={Styles.highlight}>
+function Highlight({ events }) {
+  return (
+    <div>
+      {events.map((event, index) => {
+        return (
+          <div className={Styles.highlight}>
             <div className={Styles.highlightHeadingContainer}>
-                <h1>
-                    Hackathon 2021
-                </h1>
+              <h1>{event.title}</h1>
             </div>
+
             <div className={Styles.highlightBody}>
-                <p>
-                    Technology Students' Gymkhana is organising a hackathon of developing a web application for gymkhana.
-                    The main purpose of this web application is to bring all the gymkhana related information and services under a single umbrella.
-                    This application would serve as a non-academic ERP for all the students of the Indian Institute of Technology Kharagpur.
-                </p>
-                <p>
-                    Link to the Problem Statement: <a href='/'>PDF</a>
-                </p>
+              <p>{event.description}</p>
+
+              {/* Links */}
+
+              {event.links.map((link, index) => {
+                return (
+                  <p>
+                    {link.description}{" "}
+                    <a href={link.href} target="blank">
+                      Click Here
+                    </a>
+                  </p>
+                );
+              })}
             </div>
+
             <div className={Styles.highlightFooter}>
-                <div className={Styles.highlightFooterContactCard}>
-                    <div>
-                        Name
-                    </div>
-                    <div>
-                        +91 7013160459
-                    </div>
-                </div>
-                <div className={Styles.highlightFooterContactCard}>
-                    <div>
-                        Name
-                    </div>
-                    <div>
-                        +91 7013160459
-                    </div>
-                </div>
+              <div className={Styles.highlightFooterContactCard}>
+                <div>Name</div>
+                <div>+91 7013160459</div>
+              </div>
+
+              <div className={Styles.highlightFooterContactCard}>
+                <div>Name</div>
+                <div>+91 7013160459</div>
+              </div>
             </div>
-        </div>
-    )
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Highlight;
