@@ -3,7 +3,7 @@ import Layout from "../../../components/Layout";
 import Styles from "../styles/tech.module.css";
 import globalStyles from "../styles/committees.module.css";
 import ContactStyles from "../../../styles/pages/contacts.module.css";
-import events from "../../../components/Events/UpcomingEvents";
+import events from "../../../components/Events/eventsData";
 import ContactCard from "../../../components/ContactCard";
 import img1 from "./images/tech/mentalwork.jpg";
 import img2 from "./images/tech/anxious.jpg";
