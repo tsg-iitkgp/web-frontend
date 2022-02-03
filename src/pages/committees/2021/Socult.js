@@ -2,9 +2,7 @@ import React from "react";
 import Layout from "../../../components/Layout";
 import Styles from "../styles/socult.module.css";
 import globalStyles from "../styles/committees.module.css";
-import ContactStyles from "../../../styles/pages/contacts.module.css";
-import events from "../../../components/Events/UpcomingEvents";
-import ContactCard from "../../../components/ContactCard";
+
 import img1 from "./images/tech/photogr.jpg";
 import elocu from "./images/socult/elocution.png";
 import kgplex from "./images/socult/kgplex.jpg";
@@ -93,7 +91,6 @@ export default function Socult() {
       Phone: 8800179257,
       Hall: "LBS",
     },
-
   ];
   return (
     <Layout>
@@ -103,7 +100,9 @@ export default function Socult() {
         <div className={globalStyles.welcomeSection}>
           <div className={globalStyles.backgroundImage}></div>
           <div className={globalStyles.welcomeContent}>
-            <h1 className={globalStyles.committeeHeading}>Social and Cultural Committee</h1>
+            <h1 className={globalStyles.committeeHeading}>
+              Social and Cultural Committee
+            </h1>
           </div>
         </div>
 
@@ -129,101 +128,135 @@ export default function Socult() {
         </section>
 
         <section>
-          <h1>
-            Illumination 2021
-          </h1>
+          <h1>Illumination 2021</h1>
           <section className={`${Styles.illuVideoSection}`}>
             <iframe
               src="https://www.youtube.com/embed/kstN-Adi7r8?rel=0"
-              allow='autoplay; encrypted-media'
+              allow="autoplay; encrypted-media"
               allowFullScreen
-              title='Illumination 2021'
+              title="Illumination 2021"
               className={Styles.illuVideo}
             />
           </section>
-          <h1>
-            January Timeline
-          </h1>
+          <h1>January Timeline</h1>
           <section>
-
             <center>
               <div className={globalStyles.imgContainer}>
-                <img
-                  src={jantimeline}
-                  alt="timeline"
-                />
-              </div></center>
+                <img src={jantimeline} alt="timeline" />
+              </div>
+            </center>
 
             <p className={globalStyles.description}>
-              This year began with lots of opportunities, fun and enthusiasm. To keep the excitement going we packed up the first month with quite a few creative and competitive events. We highly appreciate your ebullient participation until now.<br /><br />
-              Needless to say, there are other extremely exhilarating activities coming up for you all. So keep up the high spirit.We hope you enjoy all the upcoming activities vivaciously. <br />
-              Do have a look on the event's timeline below.<br />
-              So stay tuned to stay thrilled!!!!<br />
+              This year began with lots of opportunities, fun and enthusiasm. To
+              keep the excitement going we packed up the first month with quite
+              a few creative and competitive events. We highly appreciate your
+              ebullient participation until now.
               <br />
-
-
+              <br />
+              Needless to say, there are other extremely exhilarating activities
+              coming up for you all. So keep up the high spirit.We hope you
+              enjoy all the upcoming activities vivaciously. <br />
+              Do have a look on the event's timeline below.
+              <br />
+              So stay tuned to stay thrilled!!!!
+              <br />
+              <br />
             </p>
           </section>
 
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2} >Digital Music Making Result</h2>
+            <h2 className={globalStyles.head2}>Digital Music Making Result</h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
-
-              <img className={globalStyles.cardImg}
+              <img
+                className={globalStyles.cardImg}
                 src={resultmusic}
                 alt="Music result"
               />
-
             </div>
             <div className={globalStyles.rightCard}>
               <p>
                 <br />
                 <br />
                 <br />
-                Technology Students' Gymkhana ,Social and Cultural Committee heartily congratulates  the top 3 winners of the Digital Music Making Competition. <br /><br />
-                Winner: Abhinav Viju Pilai (21ME10004)<br />
-                1st Runner-up: Matta Varun(19CS30028)<br />
-                2nd Runner-up: Ayush Sharma(19BT10009)<br /><br />
-                We are extremely grateful to everyone who participated and delivered terrific performances.<br />
+                Technology Students' Gymkhana ,Social and Cultural Committee
+                heartily congratulates the top 3 winners of the Digital Music
+                Making Competition. <br />
+                <br />
+                Winner: Abhinav Viju Pilai (21ME10004)
+                <br />
+                1st Runner-up: Matta Varun(19CS30028)
+                <br />
+                2nd Runner-up: Ayush Sharma(19BT10009)
+                <br />
+                <br />
+                We are extremely grateful to everyone who participated and
+                delivered terrific performances.
+                <br />
                 <br />
               </p>
             </div>
           </section>
 
-
-
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2} >Open IIT Hindi and English Elocution</h2>
+            <h2 className={globalStyles.head2}>
+              Open IIT Hindi and English Elocution
+            </h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
-
-              <img className={globalStyles.cardImg3}
+              <img
+                className={globalStyles.cardImg3}
                 src={elocu}
                 alt="Elocution"
               />
-
             </div>
             <div className={globalStyles.rightCard}>
               <p>
                 Speech is power: Speech is to persuade,to compel, to inspire"
-                Technology Student’s Gymkhana welcomes you all to enjoy the freedom of speech and let your thoughts splurge, with Open IIT Elocution Event.
-                Grab this opportunity to let your confidence speak for your eloquence and abilities with an unparalleled learning experience. So let your words express a lot.
+                Technology Student’s Gymkhana welcomes you all to enjoy the
+                freedom of speech and let your thoughts splurge, with Open IIT
+                Elocution Event. Grab this opportunity to let your confidence
+                speak for your eloquence and abilities with an unparalleled
+                learning experience. So let your words express a lot.
                 <br />
-                Rules:<br />
-                English:<button className={globalStyles.btn} ><a href="https://docs.google.com/document/d/1SfwNeKQknrynpBWCl7CRlrdVNwa9Z180nj0S-T9j3FU/edit?fbclid=IwAR2FrcM5geO-xN5SYpCU1hg1RlW9Ny0R4kplVOfCxZWcng_RzzLKX0DngpQ">Click here</a></button><br />
-                Hindi:<button className={globalStyles.btn} ><a href="https://docs.google.com/document/d/1YQcPfEg2hbbt6jd6I5reLa5tV_X3Oe1wlYYVQiIcUtU/edit?fbclid=IwAR33-xj7562A9duEKV6gj9wOIt9-jKqRoLSByIpJteWxPKAyXp4N8zlFWcw">Click here</a></button><br />
-
-                Deadline for registration:28th January 2022
-                Deadline for submissions of performances:5th February 2022
+                Rules:
                 <br />
-                Register below:
-                English:<button className={globalStyles.btn} > <a href="https://forms.gle/2snVJTyaPMWRCxAH6">Click here to register</a></button><br />
-                Hindi:<button className={globalStyles.btn} ><a href="https://forms.gle/VL2xixYYxtfYxiEm9">Click here to register</a></button><br />
+                English:
+                <button className={globalStyles.btn}>
+                  <a href="https://docs.google.com/document/d/1SfwNeKQknrynpBWCl7CRlrdVNwa9Z180nj0S-T9j3FU/edit?fbclid=IwAR2FrcM5geO-xN5SYpCU1hg1RlW9Ny0R4kplVOfCxZWcng_RzzLKX0DngpQ">
+                    Click here
+                  </a>
+                </button>
+                <br />
+                Hindi:
+                <button className={globalStyles.btn}>
+                  <a href="https://docs.google.com/document/d/1YQcPfEg2hbbt6jd6I5reLa5tV_X3Oe1wlYYVQiIcUtU/edit?fbclid=IwAR33-xj7562A9duEKV6gj9wOIt9-jKqRoLSByIpJteWxPKAyXp4N8zlFWcw">
+                    Click here
+                  </a>
+                </button>
+                <br />
+                Deadline for registration:28th January 2022 Deadline for
+                submissions of performances:5th February 2022
+                <br />
+                Register below: English:
+                <button className={globalStyles.btn}>
+                  {" "}
+                  <a href="https://forms.gle/2snVJTyaPMWRCxAH6">
+                    Click here to register
+                  </a>
+                </button>
+                <br />
+                Hindi:
+                <button className={globalStyles.btn}>
+                  <a href="https://forms.gle/VL2xixYYxtfYxiEm9">
+                    Click here to register
+                  </a>
+                </button>
+                <br />
                 Make sure you go through the rules.
                 <br />
               </p>
@@ -232,7 +265,7 @@ export default function Socult() {
 
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2} >Logo Making Competition</h2>
+            <h2 className={globalStyles.head2}>Logo Making Competition</h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
@@ -240,7 +273,8 @@ export default function Socult() {
                 <br />
                 <br />
                 <br />
-                <img className={globalStyles.cardImg}
+                <img
+                  className={globalStyles.cardImg}
                   src={logomaking}
                   alt="logo making"
                 />
@@ -249,64 +283,93 @@ export default function Socult() {
 
             <div className={globalStyles.rightCard}>
               <p>
-                “Logos are visual representations of what one stands for”<br />
-                Hello Everyone. Technology Students’ Gymkhana is proud to organize a Logo-making competition to decide the official logo for the Social and Cultural Committee, Technology Students’ Gymkhana. Channel your inner artist to create a logo that represents the Social and Cultural Committee in the best possible form. We highly encourage you to scroll through our Facebook page Cultural, IIT Kharagpur to get a better understanding of what we do and how we contribute to the culture of the Indian Institute of Technology, Kharagpur.
+                “Logos are visual representations of what one stands for”
                 <br />
-                Rules:<button className={globalStyles.btn} > <a href="https://docs.google.com/document/d/12AIW1l83Dv8IgaEfCCfbveXrFDDHShTwQC6S5MTX7mw/edit?fbclid=IwAR3Ftok6rugzm4x0UaY1csoR-3dnIBRWHYUPYJdAlgtfeYC5zyd5ju3KNZI">Click here</a></button><br />
-                Submission Google form:<button className={globalStyles.btn} ><a href="https://forms.gle/bd6AMwUY3HSp9hEZ8">Click here</a></button><br />
+                Hello Everyone. Technology Students’ Gymkhana is proud to
+                organize a Logo-making competition to decide the official logo
+                for the Social and Cultural Committee, Technology Students’
+                Gymkhana. Channel your inner artist to create a logo that
+                represents the Social and Cultural Committee in the best
+                possible form. We highly encourage you to scroll through our
+                Facebook page Cultural, IIT Kharagpur to get a better
+                understanding of what we do and how we contribute to the culture
+                of the Indian Institute of Technology, Kharagpur.
                 <br />
-                Last date of submission: 28-01-2022, 11:59 PM<br />
-                The best logo will become the official logo for the Social and Cultural Committee, Technology Students’ Gymkhana. The top 3 logos will be displayed on our Facebook page.<br />
-                Prizes worth Rs 4,500/-<br />
-
+                Rules:
+                <button className={globalStyles.btn}>
+                  {" "}
+                  <a href="https://docs.google.com/document/d/12AIW1l83Dv8IgaEfCCfbveXrFDDHShTwQC6S5MTX7mw/edit?fbclid=IwAR3Ftok6rugzm4x0UaY1csoR-3dnIBRWHYUPYJdAlgtfeYC5zyd5ju3KNZI">
+                    Click here
+                  </a>
+                </button>
+                <br />
+                Submission Google form:
+                <button className={globalStyles.btn}>
+                  <a href="https://forms.gle/bd6AMwUY3HSp9hEZ8">Click here</a>
+                </button>
+                <br />
+                <br />
+                Last date of submission: 28-01-2022, 11:59 PM
+                <br />
+                The best logo will become the official logo for the Social and
+                Cultural Committee, Technology Students’ Gymkhana. The top 3
+                logos will be displayed on our Facebook page.
+                <br />
+                Prizes worth Rs 4,500/-
+                <br />
               </p>
             </div>
           </section>
 
           <center>
-
             <hr className={globalStyles.hrLine} />
-            <br /><br />
-            <h1>
-              Archieves
-            </h1></center>
+            <br />
+            <br />
+            <h1>Archieves</h1>
+          </center>
 
           <center>
-
-            <h2 className={globalStyles.head2} >Comedy Night</h2>
+            <h2 className={globalStyles.head2}>Comedy Night</h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
-
-              <img className={globalStyles.cardImg}
+              <img
+                className={globalStyles.cardImg}
                 src={comedynight}
                 alt="comedy night"
               />
-
             </div>
             <div className={globalStyles.rightCard}>
               <p>
                 <br />
                 <br />
                 <br />
-                Hello Everyone!<br />
-                Technology Students' Gymkhana, Social and Cultural Committee Presents “Comedy Night”
-                Laughter is the best medicine to cure all the stress and mundanity of our daily lives.<br /> On this note, we are thrilled to announce a stand-up comedy session presented by the Comedy Club, IIT Kharagpur, as a part of the initiative ‘Samyog - Connect IIT Kharagpur’. You are invited to join us for a fun-filled evening replete with laughter and amusement.<br />
+                Hello Everyone!
+                <br />
+                Technology Students' Gymkhana, Social and Cultural Committee
+                Presents “Comedy Night” Laughter is the best medicine to cure
+                all the stress and mundanity of our daily lives.
+                <br /> On this note, we are thrilled to announce a stand-up
+                comedy session presented by the Comedy Club, IIT Kharagpur, as a
+                part of the initiative ‘Samyog - Connect IIT Kharagpur’. You are
+                invited to join us for a fun-filled evening replete with
+                laughter and amusement.
+                <br />
                 Date and Time: 6 PM on 30th January (Sunday).
                 <br />
               </p>
             </div>
           </section>
 
-
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2} >Mime Competition Result</h2>
+            <h2 className={globalStyles.head2}>Mime Competition Result</h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
               <center>
-                <img className={globalStyles.cardImg}
+                <img
+                  className={globalStyles.cardImg}
                   src={mime}
                   alt="mime result"
                 />
@@ -315,57 +378,84 @@ export default function Socult() {
 
             <div className={globalStyles.rightCard}>
               <p>
-                Technology Students' Gymkhana ,Social and Cultural Committee heartily congratulates  the top 3 winners of Mime Competition. <br />
-                <b>Winners:</b><br /> Harsh Singh (21EE30012)<br />
-                1st Runner-up: Aishwary Patel(21IM30003)<br />
-                2nd Runner-up: Janhavi Soni(21IM30009)<br />
-                We are extremely grateful to everyone who participated and delivered terrific performances.
+                Technology Students' Gymkhana ,Social and Cultural Committee
+                heartily congratulates the top 3 winners of Mime Competition.{" "}
+                <br />
+                <b>Winners:</b>
+                <br /> Harsh Singh (21EE30012)
+                <br />
+                1st Runner-up: Aishwary Patel(21IM30003)
+                <br />
+                2nd Runner-up: Janhavi Soni(21IM30009)
+                <br />
+                We are extremely grateful to everyone who participated and
+                delivered terrific performances.
               </p>
             </div>
           </section>
 
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2} >KGPLEX</h2>
+            <h2 className={globalStyles.head2}>KGPLEX</h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
               <center>
-                <img className={globalStyles.cardImg}
+                <img
+                  className={globalStyles.cardImg}
                   src={kgplex}
-                  alt="kgplex" />
+                  alt="kgplex"
+                />
               </center>
             </div>
 
             <div className={globalStyles.rightCard}>
               <p>
-                Are you missing hanging out with friends during a movie night, stuffing yourself with popcorns, and jamming in the fun? Though we are all apart don't worry, as the fun is never meant to be ceased.
-                Technology Students' Gymkhana, Social and Cultural Committee invites you to a fun-filled virtual Movie Night. We have planned a perfect party for you all as movies are the best means to bond, talk, laugh, cry and most importantly create wonderful memories together.
-                So what are you waiting for?. Get ready to save the date, set your snacks, and enjoy the night like never before!!
+                Are you missing hanging out with friends during a movie night,
+                stuffing yourself with popcorns, and jamming in the fun? Though
+                we are all apart don't worry, as the fun is never meant to be
+                ceased. Technology Students' Gymkhana, Social and Cultural
+                Committee invites you to a fun-filled virtual Movie Night. We
+                have planned a perfect party for you all as movies are the best
+                means to bond, talk, laugh, cry and most importantly create
+                wonderful memories together. So what are you waiting for?. Get
+                ready to save the date, set your snacks, and enjoy the night
+                like never before!!
                 <br />
-                Dates: January 22nd and 23rd, 2022<br />
-                Timing 10 p.m onwards.<br />
-                Join the Microsoft Team Using code:  1i02be0<br />
-                Movies to be Screened:-<br />
-                On Saturday:-<br />
-                Hindi - Atrangi Re<br />
-                Telugu - Sham Singha Roy<br />
+                Dates: January 22nd and 23rd, 2022
+                <br />
+                Timing 10 p.m onwards.
+                <br />
+                Join the Microsoft Team Using code: 1i02be0
+                <br />
+                Movies to be Screened:-
+                <br />
+                On Saturday:-
+                <br />
+                Hindi - Atrangi Re
+                <br />
+                Telugu - Sham Singha Roy
+                <br />
                 On Sunday:- <br />
-                Tamil- Bachelor<br />
-                Marathi- Duniyadari<br />
-                English- Now You See Me<br />
+                Tamil- Bachelor
+                <br />
+                Marathi- Duniyadari
+                <br />
+                English- Now You See Me
+                <br />
               </p>
             </div>
           </section>
 
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2} >NCA Workshop Flute</h2>
+            <h2 className={globalStyles.head2}>NCA Workshop Flute</h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
               <center>
-                <img className={globalStyles.cardImg}
+                <img
+                  className={globalStyles.cardImg}
                   src={flute}
                   alt="flute workshop"
                 />
@@ -374,13 +464,27 @@ export default function Socult() {
 
             <div className={globalStyles.rightCard}>
               <p>
-                Playing flute is like writing a melodious book of music. We bring to you an opportunity to dive into flute repertoire.<br />
-                Technology Students' Gymkhana brings to you an exciting NCA Flute Workshop  in coordination and support of Academy of Folk Arts IIT Kharagpur, under the guidance of Prof. Pallab Dasgupta and Professor Parmananda Roy.  The Academy of Classical and Folk Arts acknowledges the partial support of distinguished alumnus Mukund Padmanabhan through the GKF foundation for this workshop.
-                <br /><br />
-                Schedule-<br />
-                Day 1 - 22nd Jan 2022 ,6 pm<br />
-                Day 2- 23 rd Jan 2022,11 am<br /><br />
-                All the participants were provided with a  participation certificate.<br />
+                Playing flute is like writing a melodious book of music. We
+                bring to you an opportunity to dive into flute repertoire.
+                <br />
+                Technology Students' Gymkhana brings to you an exciting NCA
+                Flute Workshop in coordination and support of Academy of Folk
+                Arts IIT Kharagpur, under the guidance of Prof. Pallab Dasgupta
+                and Professor Parmananda Roy. The Academy of Classical and Folk
+                Arts acknowledges the partial support of distinguished alumnus
+                Mukund Padmanabhan through the GKF foundation for this workshop.
+                <br />
+                <br />
+                Schedule-
+                <br />
+                Day 1 - 22nd Jan 2022 ,6 pm
+                <br />
+                Day 2- 23 rd Jan 2022,11 am
+                <br />
+                <br />
+                All the participants were provided with a participation
+                certificate.
+                <br />
               </p>
             </div>
           </section>
@@ -392,7 +496,8 @@ export default function Socult() {
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
               <center>
-                <img className={globalStyles.cardImg}
+                <img
+                  className={globalStyles.cardImg}
                   src={img1}
                   alt="Theme Photography Event"
                 />
@@ -401,30 +506,41 @@ export default function Socult() {
 
             <div className={globalStyles.rightCard}>
               <p>
-                Photography is a way of feeling, of touching, of loving. What you have caught on film is captured foreve. It remembers little things, long after you have forgotten everything.”<br />
-                – Aaron Siskind<br />
-                Pictures encapsulate moments in a click which is documented for eternity. Every photographed snapshot entails a story of what goes on – in front and behind the lens.<br />
-                As it is said taking pictures is savoring life, so bring out cameras to capture the subtle presence around you.<br />
-                Explore around the themes:<br />
-                1. Back to Campus<br />
-                2. Night Photography<br />
+                Photography is a way of feeling, of touching, of loving. What
+                you have caught on film is captured foreve. It remembers little
+                things, long after you have forgotten everything.”
                 <br />
-                <h3 style={{ color: 'white' }}>Results:</h3>
-
+                – Aaron Siskind
+                <br />
+                Pictures encapsulate moments in a click which is documented for
+                eternity. Every photographed snapshot entails a story of what
+                goes on – in front and behind the lens.
+                <br />
+                As it is said taking pictures is savoring life, so bring out
+                cameras to capture the subtle presence around you.
+                <br />
+                Explore around the themes:
+                <br />
+                1. Back to Campus
+                <br />
+                2. Night Photography
+                <br />
+                <br />
+                <h3 style={{ color: "white" }}>Results:</h3>
                 1st - Devansh Srivastava <br />
                 2nd - Salahuddin Akhtar <br />
-                3rd - Ratnesh Kr Gautam<br />
-                Heartiest Congratulations on a wonderful creation.<br />
-
+                3rd - Ratnesh Kr Gautam
+                <br />
+                Heartiest Congratulations on a wonderful creation.
+                <br />
               </p>
             </div>
           </section>
-
 
           <br />
           <br />
         </section>
       </div>
-    </Layout >
+    </Layout>
   );
 }

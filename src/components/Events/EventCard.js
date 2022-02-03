@@ -8,7 +8,7 @@ export default function EventCard({
   index,
   bodyContent,
   eventCategory: category,
-  imgName,
+  imgSrc,
 }) {
   let blogCardClass;
   if (index % 2 !== 0) {
@@ -16,14 +16,17 @@ export default function EventCard({
   } else {
     blogCardClass = `${Styles.blogCard}`;
   }
+  const url = "url(" + imgSrc + ")";
+  console.log(url);
   return (
     <div className={blogCardClass}>
       <div className={Styles.meta}>
         <div
           className={Styles.photo}
           style={{
-            backgroundImage:
-              "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)",
+            backgroundImage: url,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat	",
           }}
         ></div>
         <ul className={Styles.details}>

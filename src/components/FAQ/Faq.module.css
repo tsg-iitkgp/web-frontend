@@ -9,4 +9,6 @@
   margin-right: 0.05 rem;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  flex: 1;
+  margin-bottom: 4rem;
 }
