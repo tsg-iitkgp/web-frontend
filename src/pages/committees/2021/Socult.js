@@ -10,6 +10,8 @@ import logomaking from "./images/socult/logomaking.jpg";
 import flute from "./images/socult/workshopflute.jpg";
 import jantimeline from "./images/socult/jan-timeline.jpg";
 import mime from "./images/socult/mime.jpg";
+import resultmusic from "./images/socult/result-music.jpg";
+import comedynight from "./images/socult/comedynight.png";
 
 export default function Socult() {
   const techComTeam = [
@@ -162,247 +164,379 @@ export default function Socult() {
             </p>
           </section>
 
-          <h1>Events (Ongoing)</h1>
-          <br />
-          <h2 style={{ color: "lightBlue", letterSpacing: "2px" }}>
-            Open IIT Hindi and English Elocution
-          </h2>
-          <section>
-            <center>
-              <div className={globalStyles.imgContainer}>
-                <img src={elocu} alt="Elocution" />
-              </div>
-            </center>
-
-            <p className={globalStyles.description}>
-              Speech is power: Speech is to persuade,to compel, to inspire"
-              Technology Student’s Gymkhana welcomes you all to enjoy the
-              freedom of speech and let your thoughts splurge, with Open IIT
-              Elocution Event. Grab this opportunity to let your confidence
-              speak for your eloquence and abilities with an unparalleled
-              learning experience. So let your words express a lot.
-              <br />
-              Rules:
-              <br />
-              English:
-              <a href="https://docs.google.com/document/d/1SfwNeKQknrynpBWCl7CRlrdVNwa9Z180nj0S-T9j3FU/edit?fbclid=IwAR2FrcM5geO-xN5SYpCU1hg1RlW9Ny0R4kplVOfCxZWcng_RzzLKX0DngpQ">
-                Click here
-              </a>
-              <br />
-              Hindi:
-              <a href="https://docs.google.com/document/d/1YQcPfEg2hbbt6jd6I5reLa5tV_X3Oe1wlYYVQiIcUtU/edit?fbclid=IwAR33-xj7562A9duEKV6gj9wOIt9-jKqRoLSByIpJteWxPKAyXp4N8zlFWcw">
-                Click here
-              </a>
-              <br />
-              <br />
-              Deadline for registration:28th January 2022 Deadline for
-              submissions of performances:5th February 2022
-              <br />
-              Register below: English:{" "}
-              <a href="https://forms.gle/2snVJTyaPMWRCxAH6">
-                Click here to register
-              </a>
-              <br />
-              Hindi:
-              <a href="https://forms.gle/VL2xixYYxtfYxiEm9">
-                Click here to register
-              </a>
-              <br />
-              Make sure you go through the rules. We are eagerly waiting to hear
-              you out!!
-              <br />
-            </p>
-          </section>
-          <br />
-          <h2 style={{ color: "lightBlue", letterSpacing: "2px" }}>
-            Logo Making Competition
-          </h2>
-          <section>
-            <center>
-              <div className={globalStyles.imgContainer}>
-                <img src={logomaking} alt="logo making" />
-              </div>
-            </center>
-
-            <p className={globalStyles.description}>
-              “Logos are visual representations of what one stands for”
-              <br />
-              Hello Everyone. Technology Students’ Gymkhana is proud to organize
-              a Logo-making competition to decide the official logo for the
-              Social and Cultural Committee, Technology Students’ Gymkhana.
-              Channel your inner artist to create a logo that represents the
-              Social and Cultural Committee in the best possible form. We highly
-              encourage you to scroll through our Facebook page Cultural, IIT
-              Kharagpur to get a better understanding of what we do and how we
-              contribute to the culture of the Indian Institute of Technology,
-              Kharagpur.
-              <br />
-              Rules:
-              <a href="https://docs.google.com/document/d/12AIW1l83Dv8IgaEfCCfbveXrFDDHShTwQC6S5MTX7mw/edit?fbclid=IwAR3Ftok6rugzm4x0UaY1csoR-3dnIBRWHYUPYJdAlgtfeYC5zyd5ju3KNZI">
-                Click here
-              </a>
-              <br />
-              Submission Google form:
-              <a href="https://forms.gle/bd6AMwUY3HSp9hEZ8">Click here</a>
-              <br />
-              <br />
-              Last date of submission: 28-01-2022, 11:59 PM
-              <br />
-              The best logo will become the official logo for the Social and
-              Cultural Committee, Technology Students’ Gymkhana. The top 3 logos
-              will be displayed on our Facebook page.
-              <br />
-              Prizes worth Rs 4,500/-
-              <br />
-              <br />
-            </p>
-          </section>
-          <h1>Events (Past)</h1>
-          <h2 style={{ color: "lightBlue", letterSpacing: "2px" }}>
-            Mime Competition Result
-          </h2>
-          <section>
-            <center>
-              <div className={globalStyles.imgContainer}>
-                <img src={mime} alt="mime result" />
-              </div>
-            </center>
-
-            <p className={globalStyles.description}>
-              Technology Students' Gymkhana ,Social and Cultural Committee
-              heartily congratulates the top 3 winners of Mime Competition.{" "}
-              <br />
-              <b>Winners:</b>
-              <br /> Harsh Singh (21EE30012)
-              <br />
-              1st Runner-up: Aishwary Patel(21IM30003)
-              <br />
-              2nd Runner-up: Janhavi Soni(21IM30009)
-              <br />
-              We are extremely grateful to everyone who participated and
-              delivered terrific performances.
-            </p>
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Digital Music Making Result</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src={resultmusic}
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+                <br />
+                <br />
+                <br />
+                Technology Students' Gymkhana ,Social and Cultural Committee
+                heartily congratulates the top 3 winners of the Digital Music
+                Making Competition. <br />
+                <br />
+                Winner: Abhinav Viju Pilai (21ME10004)
+                <br />
+                1st Runner-up: Matta Varun(19CS30028)
+                <br />
+                2nd Runner-up: Ayush Sharma(19BT10009)
+                <br />
+                <br />
+                We are extremely grateful to everyone who participated and
+                delivered terrific performances.
+                <br />
+                <br />
+              </p>
+            </div>
           </section>
 
-          <h2 style={{ color: "lightBlue", letterSpacing: "2px" }}>KGPLEX</h2>
-          <section>
-            <center>
-              <div className={globalStyles.imgContainer}>
-                <img src={kgplex} alt="kgplex" />
-              </div>
-            </center>
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>
+              Open IIT Hindi and English Elocution
+            </h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg3}
+                src={elocu}
+                alt="Elocution"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+                Speech is power: Speech is to persuade,to compel, to inspire"
+                Technology Student’s Gymkhana welcomes you all to enjoy the
+                freedom of speech and let your thoughts splurge, with Open IIT
+                Elocution Event. Grab this opportunity to let your confidence
+                speak for your eloquence and abilities with an unparalleled
+                learning experience. So let your words express a lot.
+                <br />
+                Rules:
+                <br />
+                English:
+                <button className={globalStyles.btn}>
+                  <a href="https://docs.google.com/document/d/1SfwNeKQknrynpBWCl7CRlrdVNwa9Z180nj0S-T9j3FU/edit?fbclid=IwAR2FrcM5geO-xN5SYpCU1hg1RlW9Ny0R4kplVOfCxZWcng_RzzLKX0DngpQ">
+                    Click here
+                  </a>
+                </button>
+                <br />
+                Hindi:
+                <button className={globalStyles.btn}>
+                  <a href="https://docs.google.com/document/d/1YQcPfEg2hbbt6jd6I5reLa5tV_X3Oe1wlYYVQiIcUtU/edit?fbclid=IwAR33-xj7562A9duEKV6gj9wOIt9-jKqRoLSByIpJteWxPKAyXp4N8zlFWcw">
+                    Click here
+                  </a>
+                </button>
+                <br />
+                Deadline for registration:28th January 2022 Deadline for
+                submissions of performances:5th February 2022
+                <br />
+                Register below: English:
+                <button className={globalStyles.btn}>
+                  {" "}
+                  <a href="https://forms.gle/2snVJTyaPMWRCxAH6">
+                    Click here to register
+                  </a>
+                </button>
+                <br />
+                Hindi:
+                <button className={globalStyles.btn}>
+                  <a href="https://forms.gle/VL2xixYYxtfYxiEm9">
+                    Click here to register
+                  </a>
+                </button>
+                <br />
+                Make sure you go through the rules.
+                <br />
+              </p>
+            </div>
+          </section>
 
-            <p className={globalStyles.description}>
-              Are you missing hanging out with friends during a movie night,
-              stuffing yourself with popcorns, and jamming in the fun? Though we
-              are all apart don't worry, as the fun is never meant to be ceased.
-              <br />
-              Technology Students' Gymkhana, Social and Cultural Committee
-              invites you to a fun-filled virtual Movie Night. We have planned a
-              perfect party for you all as movies are the best means to bond,
-              talk, laugh, cry and most importantly create wonderful memories
-              together. So what are you waiting for?. Get ready to save the
-              date, set your snacks, and enjoy the night like never before!!
-              <br />
-              <br />
-              Dates: January 22nd and 23rd, 2022
-              <br />
-              Timing 10 p.m onwards.
-              <br />
-              Join the Microsoft Team Using code: 1i02be0
-              <br />
-              Movies to be Screened:-
-              <br />
-              On Saturday:-
-              <br />
-              Hindi - Atrangi Re
-              <br />
-              Telugu - Sham Singha Roy
-              <br />
-              On Sunday:- <br />
-              Tamil- Bachelor
-              <br />
-              Marathi- Duniyadari
-              <br />
-              English- Now You See Me
-              <br />
-            </p>
-          </section>
-          <h2 style={{ color: "lightBlue", letterSpacing: "2px" }}>
-            NCA Workshop Flute
-          </h2>
-          <section>
-            <center>
-              <div className={globalStyles.imgContainer}>
-                <img src={flute} alt="flute workshop" />
-              </div>
-            </center>
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Logo Making Competition</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <center>
+                <br />
+                <br />
+                <br />
+                <img
+                  className={globalStyles.cardImg}
+                  src={logomaking}
+                  alt="logo making"
+                />
+              </center>
+            </div>
 
-            <p className={globalStyles.description}>
-              " The symbol of art can be seen in the magic of flute"
-              <br />
-              Playing flute is like writing a melodious book of music. We bring
-              to you an opportunity to dive into flute repertoire.
-              <br />
-              Technology Students' Gymkhana brings to you an exciting NCA Flute
-              Workshop in coordination and support of Academy of Folk Arts IIT
-              Kharagpur, under the guidance of Prof. Pallab Dasgupta and
-              Professor Parmananda Roy. The Academy of Classical and Folk Arts
-              acknowledges the partial support of distinguished alumnus Mukund
-              Padmanabhan through the GKF foundation for this workshop.
-              <br />
-              <br />
-              Schedule-
-              <br />
-              Day 1 - 22nd Jan 2022 ,6 pm
-              <br />
-              Day 2- 23 rd Jan 2022,11 am
-              <br />
-              <br />
-              All the participants were provided with a participation
-              certificate.
-              <br />
-            </p>
+            <div className={globalStyles.rightCard}>
+              <p>
+                “Logos are visual representations of what one stands for”
+                <br />
+                Hello Everyone. Technology Students’ Gymkhana is proud to
+                organize a Logo-making competition to decide the official logo
+                for the Social and Cultural Committee, Technology Students’
+                Gymkhana. Channel your inner artist to create a logo that
+                represents the Social and Cultural Committee in the best
+                possible form. We highly encourage you to scroll through our
+                Facebook page Cultural, IIT Kharagpur to get a better
+                understanding of what we do and how we contribute to the culture
+                of the Indian Institute of Technology, Kharagpur.
+                <br />
+                Rules:
+                <button className={globalStyles.btn}>
+                  {" "}
+                  <a href="https://docs.google.com/document/d/12AIW1l83Dv8IgaEfCCfbveXrFDDHShTwQC6S5MTX7mw/edit?fbclid=IwAR3Ftok6rugzm4x0UaY1csoR-3dnIBRWHYUPYJdAlgtfeYC5zyd5ju3KNZI">
+                    Click here
+                  </a>
+                </button>
+                <br />
+                Submission Google form:
+                <button className={globalStyles.btn}>
+                  <a href="https://forms.gle/bd6AMwUY3HSp9hEZ8">Click here</a>
+                </button>
+                <br />
+                <br />
+                Last date of submission: 28-01-2022, 11:59 PM
+                <br />
+                The best logo will become the official logo for the Social and
+                Cultural Committee, Technology Students’ Gymkhana. The top 3
+                logos will be displayed on our Facebook page.
+                <br />
+                Prizes worth Rs 4,500/-
+                <br />
+              </p>
+            </div>
           </section>
-          <h2 style={{ color: "lightBlue", letterSpacing: "2px" }}>
-            Theme photography event
-          </h2>
-          <section>
-            <center>
-              <div className={globalStyles.img2Container}>
-                <img src={img1} alt="Theme Photography Event" />
-              </div>
-            </center>
-            <p className={globalStyles.description}>
-              Photography is a way of feeling, of touching, of loving. What you
-              have caught on film is captured foreve. It remembers little
-              things, long after you have forgotten everything.”
-              <br />
-              – Aaron Siskind
-              <br />
-              Pictures encapsulate moments in a click which is documented for
-              eternity. Every photographed snapshot entails a story of what goes
-              on – in front and behind the lens.
-              <br />
-              As it is said taking pictures is savoring life, so bring out
-              cameras to capture the subtle presence around you.
-              <br />
-              Explore around the themes:
-              <br />
-              1. Back to Campus
-              <br />
-              2. Night Photography
-              <br />
-              <br />
-              <h3 style={{ color: "white" }}>Results:</h3>
-              1st - Devansh Srivastava <br />
-              2nd - Salahuddin Akhtar <br />
-              3rd - Ratnesh Kr Gautam
-              <br />
-              Heartiest Congratulations on a wonderful creation.
-              <br />
-            </p>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <br />
+            <br />
+            <h1>Archieves</h1>
+          </center>
+
+          <center>
+            <h2 className={globalStyles.head2}>Comedy Night</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src={comedynight}
+                alt="comedy night"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+                <br />
+                <br />
+                <br />
+                Hello Everyone!
+                <br />
+                Technology Students' Gymkhana, Social and Cultural Committee
+                Presents “Comedy Night” Laughter is the best medicine to cure
+                all the stress and mundanity of our daily lives.
+                <br /> On this note, we are thrilled to announce a stand-up
+                comedy session presented by the Comedy Club, IIT Kharagpur, as a
+                part of the initiative ‘Samyog - Connect IIT Kharagpur’. You are
+                invited to join us for a fun-filled evening replete with
+                laughter and amusement.
+                <br />
+                Date and Time: 6 PM on 30th January (Sunday).
+                <br />
+              </p>
+            </div>
           </section>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Mime Competition Result</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <center>
+                <img
+                  className={globalStyles.cardImg}
+                  src={mime}
+                  alt="mime result"
+                />
+              </center>
+            </div>
+
+            <div className={globalStyles.rightCard}>
+              <p>
+                Technology Students' Gymkhana ,Social and Cultural Committee
+                heartily congratulates the top 3 winners of Mime Competition.{" "}
+                <br />
+                <b>Winners:</b>
+                <br /> Harsh Singh (21EE30012)
+                <br />
+                1st Runner-up: Aishwary Patel(21IM30003)
+                <br />
+                2nd Runner-up: Janhavi Soni(21IM30009)
+                <br />
+                We are extremely grateful to everyone who participated and
+                delivered terrific performances.
+              </p>
+            </div>
+          </section>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>KGPLEX</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <center>
+                <img
+                  className={globalStyles.cardImg}
+                  src={kgplex}
+                  alt="kgplex"
+                />
+              </center>
+            </div>
+
+            <div className={globalStyles.rightCard}>
+              <p>
+                Are you missing hanging out with friends during a movie night,
+                stuffing yourself with popcorns, and jamming in the fun? Though
+                we are all apart don't worry, as the fun is never meant to be
+                ceased. Technology Students' Gymkhana, Social and Cultural
+                Committee invites you to a fun-filled virtual Movie Night. We
+                have planned a perfect party for you all as movies are the best
+                means to bond, talk, laugh, cry and most importantly create
+                wonderful memories together. So what are you waiting for?. Get
+                ready to save the date, set your snacks, and enjoy the night
+                like never before!!
+                <br />
+                Dates: January 22nd and 23rd, 2022
+                <br />
+                Timing 10 p.m onwards.
+                <br />
+                Join the Microsoft Team Using code: 1i02be0
+                <br />
+                Movies to be Screened:-
+                <br />
+                On Saturday:-
+                <br />
+                Hindi - Atrangi Re
+                <br />
+                Telugu - Sham Singha Roy
+                <br />
+                On Sunday:- <br />
+                Tamil- Bachelor
+                <br />
+                Marathi- Duniyadari
+                <br />
+                English- Now You See Me
+                <br />
+              </p>
+            </div>
+          </section>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>NCA Workshop Flute</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <center>
+                <img
+                  className={globalStyles.cardImg}
+                  src={flute}
+                  alt="flute workshop"
+                />
+              </center>
+            </div>
+
+            <div className={globalStyles.rightCard}>
+              <p>
+                Playing flute is like writing a melodious book of music. We
+                bring to you an opportunity to dive into flute repertoire.
+                <br />
+                Technology Students' Gymkhana brings to you an exciting NCA
+                Flute Workshop in coordination and support of Academy of Folk
+                Arts IIT Kharagpur, under the guidance of Prof. Pallab Dasgupta
+                and Professor Parmananda Roy. The Academy of Classical and Folk
+                Arts acknowledges the partial support of distinguished alumnus
+                Mukund Padmanabhan through the GKF foundation for this workshop.
+                <br />
+                <br />
+                Schedule-
+                <br />
+                Day 1 - 22nd Jan 2022 ,6 pm
+                <br />
+                Day 2- 23 rd Jan 2022,11 am
+                <br />
+                <br />
+                All the participants were provided with a participation
+                certificate.
+                <br />
+              </p>
+            </div>
+          </section>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Theme photography event</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <center>
+                <img
+                  className={globalStyles.cardImg}
+                  src={img1}
+                  alt="Theme Photography Event"
+                />
+              </center>
+            </div>
+
+            <div className={globalStyles.rightCard}>
+              <p>
+                Photography is a way of feeling, of touching, of loving. What
+                you have caught on film is captured foreve. It remembers little
+                things, long after you have forgotten everything.”
+                <br />
+                – Aaron Siskind
+                <br />
+                Pictures encapsulate moments in a click which is documented for
+                eternity. Every photographed snapshot entails a story of what
+                goes on – in front and behind the lens.
+                <br />
+                As it is said taking pictures is savoring life, so bring out
+                cameras to capture the subtle presence around you.
+                <br />
+                Explore around the themes:
+                <br />
+                1. Back to Campus
+                <br />
+                2. Night Photography
+                <br />
+                <br />
+                <h3 style={{ color: "white" }}>Results:</h3>
+                1st - Devansh Srivastava <br />
+                2nd - Salahuddin Akhtar <br />
+                3rd - Ratnesh Kr Gautam
+                <br />
+                Heartiest Congratulations on a wonderful creation.
+                <br />
+              </p>
+            </div>
+          </section>
+
           <br />
           <br />
         </section>

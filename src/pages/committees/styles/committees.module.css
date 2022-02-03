@@ -24,6 +24,72 @@ section h2 {
   letter-spacing: 2px; */
   /* color: #f1c40f; */
 }
+.cmtCard1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.leftCard{
+  width: 50%;
+}
+.leftCard2{
+  width: 50%;
+  color: rgb(194, 194, 194);
+  padding: 5% 5% 5% 5%;
+  /* text-align: justify; */
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+.leftCard .img{
+  width: 430px;
+  padding: 0 2% 0 8%;
+}
+.cardImg{
+  align-content: center;
+  width: 480px;
+  padding: 0 2% 0 8%;
+}
+.cardImg2{
+  align-content: center;
+  width: 600px;
+  padding: 1% 1% 0 2%;
+}
+.cardImg3{
+  align-content: center;
+  width: 580px;
+  height: auto;
+  padding: 1% 4% 0 2%;
+}
+.rightCard{
+  width: 50%;
+  color: rgb(194, 194, 194);
+  padding: 0% 5% 5% 5%;
+  /* text-align: justify; */
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}  
+.btn{
+  background-color: rgb(235, 235, 235);
+  color: black !important;
+  margin: 1px;
+  padding: 6px 5px 5px 5px;
+  border: none;
+  border-radius: 3px;
+}
+.btn:hover {
+ background-color: rgb(255, 46, 46);
+ transition: 30ms;
+ color: white !important;
+ /* transform: scale(1.1); */
+}
+.hrLine{
+  width: 75%;
+  color: grey;
+}
+.head2{
+  color: lightblue;
+  letter-spacing: 2px;
+  margin: 3% 0 -1% 0;
+}
 section .description {
   letter-spacing: 1.5px;
   font-size: 1.5rem;
@@ -103,6 +169,69 @@ section .description {
     object-position: top;
     width: 450px;
   }
+
+  
+.cmtCard1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.leftCard{
+  width: 50%;
+}
+.leftCard2{
+  width: 50%;
+  color: rgb(194, 194, 194);
+  padding: 5% 5% 5% 5%;
+  /* text-align: justify; */
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+.leftCard .img{
+  width: 430px;
+  padding: 0 2% 0 8%;
+}
+.cardImg{
+  align-content: center;
+  width: 350px;
+  padding: 0 2% 0 8%;
+}
+.cardImg2{
+  align-content: center;
+  width: 350px;
+  padding: 1% 1% 0 2%;
+}
+.rightCard{
+  width: 50%;
+  color: rgb(194, 194, 194);
+  padding: 0% 2% 2% 2%;
+  /* text-align: justify; */
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}  
+.btn{
+  background-color: rgb(235, 235, 235);
+  color: black !important;
+  margin: 1px;
+  padding: 6px 5px 5px 5px;
+  border: none;
+  border-radius: 3px;
+}
+.btn:hover {
+ background-color: rgb(255, 46, 46);
+ transition: 30ms;
+ color: white !important;
+ /* transform: scale(1.1); */
+}
+.hrLine{
+  width: 75%;
+  color: grey;
+}
+.head2{
+  color: lightblue;
+  letter-spacing: 2px;
+  margin: 3% 0 -1% 0;
+}
+  
 }
 @media screen and (max-width: 464px) {
 .img2Container img {
@@ -125,5 +254,72 @@ section .description {
   object-fit: cover;
   object-position: top;
   width: 390px;
+}
+
+.cmtCard1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.leftCard{
+  width: 90%;
+}
+.leftCard2{
+  width: 90%;
+  color: rgb(194, 194, 194);
+  padding: 5% 5% 5% 5%;
+  /* text-align: justify; */
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+.leftCard .img{
+  width: 430px;
+  padding: 0 2% 0 8%;
+}
+.cardImg{
+  align-content: center;
+  width: 350px;
+  padding: 0 2% 0 8%;
+}
+.cardImg2{
+  align-content: center;
+  width: 350px;
+  padding: 0 1% 0 2%;
+}
+.cardImg3{
+  align-content: center;
+  width: 330px;
+  height: auto;
+  padding: 1% 4% 0 2%;
+}
+.rightCard{
+  width: 97%;
+  color: rgb(194, 194, 194);
+  padding: 5% 2% 5% 5%;
+  /* text-align: justify; */
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}  
+.btn{
+  background-color: rgb(235, 235, 235);
+  color: black !important;
+  margin: 1px;
+  padding: 6px 5px 5px 5px;
+  border: none;
+  border-radius: 3px;
+}
+.btn:hover {
+ background-color: rgb(255, 46, 46);
+ transition: 30ms;
+ color: white !important;
+ /* transform: scale(1.1); */
+}
+.hrLine{
+  width: 75%;
+  color: grey;
+}
+.head2{
+  color: lightblue;
+  letter-spacing: 2px;
+  margin: 5% 0 -4% 0;
 }
 }
