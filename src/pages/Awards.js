@@ -3,6 +3,7 @@ import ContactCard from "../components/ContactCard";
 import Layout from "../components/Layout";
 import awardsData from "./awardsData.json";
 import "./Awards.css";
+import primg from "./Contacts/Images/prf.png";
 
 const years = ["2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16"];
 function Awards() {
@@ -70,43 +71,43 @@ function Awards() {
 
         {(awardsData[currentYear][currentTab]["awards"] !== undefined ||
           currentTab === "specialRecog") && (
-          <>
-            <h2
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                padding: "3%",
-                alignItems: "center",
-                color: "#fff",
-              }}
-            >
-              {" "}
-              Awards{" "}
-            </h2>
-            <div className="cards" data-aos="zoom-in-up">
-              {currentTab !== "specialRecog"
-                ? awardsData[currentYear][currentTab]["awards"]?.map(
+            <>
+              <h2
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  padding: "3%",
+                  alignItems: "center",
+                  color: "#fff",
+                }}
+              >
+                {" "}
+                Awards{" "}
+              </h2>
+              <div className="cards" data-aos="zoom-in-up">
+                {currentTab !== "specialRecog"
+                  ? awardsData[currentYear][currentTab]["awards"]?.map(
                     (winner, index) => (
                       <ContactCard
                         key={index}
                         name={winner.Name}
-                        imgSrc={""}
+                        imgSrc={primg}
                         designation={winner.Award}
                       />
                     )
                   )
-                : awardsData[currentYear][currentTab].map((winner, index) => (
+                  : awardsData[currentYear][currentTab].map((winner, index) => (
                     <ContactCard
                       key={index}
                       name={winner.Name}
-                      imgSrc={""}
+                      imgSrc={primg}
                       designation={winner.Award}
                     />
                   ))}
-            </div>
-          </>
-        )}
+              </div>
+            </>
+          )}
 
         {currentTab !== "specialRecog" && (
           <>
