@@ -9,6 +9,7 @@ import img1 from "./images/tech/cycling.jpg";
 import img2 from "./images/tech/chess.jpg";
 import sportsquiz from "./images/tech/sportsquiz.jpg";
 import quizwin from "./images/tech/quizwinners.png";
+import khokho from "./images/tech/khokho.jpg";
 
 export default function Sports() {
   const techComTeam = [
@@ -189,6 +190,37 @@ export default function Sports() {
         </section>
 
         <center>
+          <h2 className={globalStyles.head2} >Open IIT Kho Kho</h2>
+        </center>
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg}
+                src={khokho}
+                alt="khokho"
+              />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p>
+              Hola kgpians!!
+              IIT Kgp Sports is here with the first-ever Women’s Open IIT Kho-Kho event. With palpitating thrills and fast-paced action, this is your chance to shine while displaying your stamina, skills, and strength.
+              Brace yourself up to chase, defend, touch and run. Do participate to prove your mettle, show your passion, edge your skills, and experience ecstasy.
+              Though we are inching towards normalcy as the effects of the pandemic wane, we encourage and ascertain safety for all of us.<br /> Details of the event are given in the document:<button className={globalStyles.btn} ><a href="https://docs.google.com/document/d/1P2kUCIrFSivP2U2qbKlobJE-YOMqtJpUPOVBdU6yR6A/edit?fbclid=IwAR0fmDxmHQWkQSR7Pk1PmSraxgro6gHFg-ld4J37xqZeiX-7I34SGFyRTwQ">Click here</a></button><br />
+              Date: 13 February 2022<br />
+              Time: 5 PM<br />
+              Venue: Tata Sports Complex<br />
+              Register here: <button className={globalStyles.btn} ><a href="https://forms.gle/QeKLeb9nCfdx9KqTA">Click here</a></button>
+
+
+            </p>
+          </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
           <h2 className={globalStyles.head2} >Sports' Quiz</h2>
         </center>
         <section className={globalStyles.cmtCard1}>
