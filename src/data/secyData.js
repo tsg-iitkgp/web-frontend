@@ -228,12 +228,12 @@ export const secyData = {
     },
     {
       id: 32,
-      RollNo: "20CS10031",
-      Name: "Kartik Pontula",
+      RollNo: "20MI10004",
+      Name: "Amgoth Jithender Kumar Naik",
       Post: "Secretary Academic Help",
-      Email: "kartikpontula@gmail.com",
-      Phone: 9110344714,
-      Hall: "LBS",
+      Email: "jithendernaik1729@gmail.com",
+      Phone: 9154015089,
+      Hall: "LLR",
     },
     {
       id: 33,
