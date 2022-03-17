@@ -18,7 +18,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4rem 0;
   width: 100%;
 }
 .categoryHeading {
@@ -36,6 +35,7 @@
   color: #f1c40f;
   margin-bottom: -2%;
   margin-top: 0%;
+  text-align: center;
 }
 .cardsWrapper {
   display: flex;
@@ -62,11 +62,9 @@
     font-size: 2rem;
     color: #f1c40f;
     margin-bottom: 2rem;
-    margin-top: -105%;
   }
   .categoryContainer {
     margin: 2rem 0;
-
   }
 }
 
@@ -177,7 +175,6 @@
   transform: rotate(90deg);
 }
 
-
 .details li {
   font-size: 1.5rem;
   display: flex;
@@ -210,18 +207,18 @@
 
 @media (min-width: 700px) {
   .illuVideoSection .illuVideo {
-      min-height: 500px;
+    min-height: 500px;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .inductionIntro .info {
     padding: 20px;
     border-radius: 8px;
     width: 80%;
     margin: 20px 20px;
   }
-  .inductionIntro .info p{
+  .inductionIntro .info p {
     font-size: 20px;
   }
 }
@@ -232,8 +229,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-
 
 .inductionIntro .handbookContainer iframe {
   height: 450px;

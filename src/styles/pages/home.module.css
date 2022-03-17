@@ -34,13 +34,21 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: auto;
+  min-height: 90vh;
   position: relative;
   background-color: black;
 }
+.committeesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 18vh;
+}
+
 .aboutUsSection {
   text-align: center;
-  margin: 18vh auto;
+  margin: auto;
   padding: 4rem 3rem;
   background-color: #2a2b2f;
   backdrop-filter: blur(1.5rem);
@@ -50,6 +58,11 @@ html {
   width: 90%;
   max-width: 1200px;
   z-index: 2;
+}
+.committeesSection {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
 }
 
 .sectionHeading {
@@ -70,8 +83,8 @@ html {
   position: relative;
   width: 90%;
   max-width: 1200px;
-  margin: auto;
-  margin-bottom: 10rem;
+
+  margin-bottom: 5rem;
   display: flex;
 }
 
@@ -210,15 +223,4 @@ html {
   .textOverlay .kgpSvg img {
     object-fit: contain;
   }
-}
-
-.committeesContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 18vh;
 }
