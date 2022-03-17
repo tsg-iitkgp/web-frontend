@@ -3,7 +3,6 @@ import Layout from "../../../components/Layout";
 import Styles from "../styles/socult.module.css";
 import globalStyles from "../styles/committees.module.css";
 import ContactStyles from "../../../styles/pages/contacts.module.css";
-import events from "../../../components/Events/UpcomingEvents";
 import ContactCard from "../../../components/ContactCard";
 import img1 from "./images/tech/cycling.jpg";
 import img2 from "./images/tech/chess.jpg";
@@ -163,8 +162,9 @@ export default function Sports() {
         <div className={globalStyles.welcomeSection}>
           <div className={globalStyles.backgroundImage}></div>
           <div className={globalStyles.welcomeContent}>
-            <h1 className={globalStyles.committeeHeading}>Sports and Games Committee</h1>
-
+            <h1 className={globalStyles.committeeHeading}>
+              Sports and Games Committee
+            </h1>
           </div>
         </div>
 
@@ -190,44 +190,57 @@ export default function Sports() {
         </section>
 
         <center>
-          <h2 className={globalStyles.head2} >Open IIT Kho Kho</h2>
+          <h2 className={globalStyles.head2}>Open IIT Kho Kho</h2>
         </center>
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg}
-                src={khokho}
-                alt="khokho"
-              />
+              <img className={globalStyles.cardImg} src={khokho} alt="khokho" />
             </center>
           </div>
 
           <div className={globalStyles.rightCard}>
             <p>
-              Hola kgpians!!
-              IIT Kgp Sports is here with the first-ever Women’s Open IIT Kho-Kho event. With palpitating thrills and fast-paced action, this is your chance to shine while displaying your stamina, skills, and strength.
-              Brace yourself up to chase, defend, touch and run. Do participate to prove your mettle, show your passion, edge your skills, and experience ecstasy.
-              Though we are inching towards normalcy as the effects of the pandemic wane, we encourage and ascertain safety for all of us.<br /> Details of the event are given in the document:<button className={globalStyles.btn} ><a href="https://docs.google.com/document/d/1P2kUCIrFSivP2U2qbKlobJE-YOMqtJpUPOVBdU6yR6A/edit?fbclid=IwAR0fmDxmHQWkQSR7Pk1PmSraxgro6gHFg-ld4J37xqZeiX-7I34SGFyRTwQ">Click here</a></button><br />
-              Date: 13 February 2022<br />
-              Time: 5 PM<br />
-              Venue: Tata Sports Complex<br />
-              Register here: <button className={globalStyles.btn} ><a href="https://forms.gle/QeKLeb9nCfdx9KqTA">Click here</a></button>
-
-
+              Hola kgpians!! IIT Kgp Sports is here with the first-ever Women’s
+              Open IIT Kho-Kho event. With palpitating thrills and fast-paced
+              action, this is your chance to shine while displaying your
+              stamina, skills, and strength. Brace yourself up to chase, defend,
+              touch and run. Do participate to prove your mettle, show your
+              passion, edge your skills, and experience ecstasy. Though we are
+              inching towards normalcy as the effects of the pandemic wane, we
+              encourage and ascertain safety for all of us.
+              <br /> Details of the event are given in the document:
+              <button className={globalStyles.btn}>
+                <a href="https://docs.google.com/document/d/1P2kUCIrFSivP2U2qbKlobJE-YOMqtJpUPOVBdU6yR6A/edit?fbclid=IwAR0fmDxmHQWkQSR7Pk1PmSraxgro6gHFg-ld4J37xqZeiX-7I34SGFyRTwQ">
+                  Click here
+                </a>
+              </button>
+              <br />
+              Date: 13 February 2022
+              <br />
+              Time: 5 PM
+              <br />
+              Venue: Tata Sports Complex
+              <br />
+              Register here:{" "}
+              <button className={globalStyles.btn}>
+                <a href="https://forms.gle/QeKLeb9nCfdx9KqTA">Click here</a>
+              </button>
             </p>
           </div>
         </section>
 
         <center>
           <hr className={globalStyles.hrLine} />
-          <h2 className={globalStyles.head2} >Sports' Quiz</h2>
+          <h2 className={globalStyles.head2}>Sports' Quiz</h2>
         </center>
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg}
+              <img
+                className={globalStyles.cardImg}
                 src={sportsquiz}
                 alt="sports quiz"
               />
@@ -236,13 +249,20 @@ export default function Sports() {
 
           <div className={globalStyles.rightCard}>
             <p>
-              Sports is filled with facts, fantasies, and fun. If you have a knack for all sports information around the world and related to IIT Kgp, then get ready to put your knowledge to action.
-              IIT KGP Sports challenge all the sports brainiacs to  “come, quiz, and conquer “ some brainstorming questions. If you love sports and have an affinity for quizzing, do give this a try. Not to mention, you will be rewarded with exciting prizes worth fighting for.
-              So, gear up with a team of 3 brainiacs and battle out for the best!!<br />
+              Sports is filled with facts, fantasies, and fun. If you have a
+              knack for all sports information around the world and related to
+              IIT Kgp, then get ready to put your knowledge to action. IIT KGP
+              Sports challenge all the sports brainiacs to “come, quiz, and
+              conquer “ some brainstorming questions. If you love sports and
+              have an affinity for quizzing, do give this a try. Not to mention,
+              you will be rewarded with exciting prizes worth fighting for. So,
+              gear up with a team of 3 brainiacs and battle out for the best!!
+              <br />
               Dates: <br />
               Round 1 - 20th January, Thursday <br />
               Round 2 - 22nd January, Saturday <br />
-              Round 3 - 23rd January, Sunday <br /><br />
+              Round 3 - 23rd January, Sunday <br />
+              <br />
             </p>
           </div>
         </section>
@@ -250,16 +270,17 @@ export default function Sports() {
         <center>
           <hr className={globalStyles.hrLine} />
           <br />
-          <h1>
-            Archieves
-          </h1>
-          <h2 className={globalStyles.head2} >Chess Club Freshers’ Tournament</h2>
+          <h1>Archieves</h1>
+          <h2 className={globalStyles.head2}>
+            Chess Club Freshers’ Tournament
+          </h2>
         </center>
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg}
+              <img
+                className={globalStyles.cardImg}
                 src={img2}
                 alt="Chess club event"
               />
@@ -268,28 +289,39 @@ export default function Sports() {
 
           <div className={globalStyles.rightCard}>
             <p>
-              After an amazing response to the Introductory Seminar, it is now time to move on to some chess action in the form of the Freshers’ Tournament, 2021. Don't miss out on this opportunity since selections into the club will be partly done based on your performance in the tournament.<br /> The tournament is also open to 2nd-year students who wish to join the club. The top performers will also be awarded goodies and certificates, so give your ultimate best!<br />
-              To participate in the tournament, follow the detailed steps given in the rulebook below. All rules and regulations related to the tournament are available in the same document.
-              Freshers' Tournament 2021<br />
-              Participation Criteria: All Freshmen/Sophomores (Both UG and PG)<br />
-              Date: Sunday, 19th Dec 2021, 2 PM.<br />
-
+              After an amazing response to the Introductory Seminar, it is now
+              time to move on to some chess action in the form of the Freshers’
+              Tournament, 2021. Don't miss out on this opportunity since
+              selections into the club will be partly done based on your
+              performance in the tournament.
+              <br /> The tournament is also open to 2nd-year students who wish
+              to join the club. The top performers will also be awarded goodies
+              and certificates, so give your ultimate best!
+              <br />
+              To participate in the tournament, follow the detailed steps given
+              in the rulebook below. All rules and regulations related to the
+              tournament are available in the same document. Freshers'
+              Tournament 2021
+              <br />
+              Participation Criteria: All Freshmen/Sophomores (Both UG and PG)
+              <br />
+              Date: Sunday, 19th Dec 2021, 2 PM.
+              <br />
             </p>
           </div>
         </section>
 
-
         <center>
           <hr className={globalStyles.hrLine} />
-          <h2 className={globalStyles.head2} >The Pan IIT Cycling event</h2>
+          <h2 className={globalStyles.head2}>The Pan IIT Cycling event</h2>
         </center>
-
 
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg}
+              <img
+                className={globalStyles.cardImg}
                 src={img1}
                 alt="Cycling event"
               />
@@ -298,29 +330,42 @@ export default function Sports() {
 
           <div className={globalStyles.rightCard}>
             <p>
-              After an enthralling week filled with fortitude, grit and determination, the Pan IIT Cycling Main Event concluded as a spectacle of hard work and commitment.<br />
-              All the IITs vied for delivering intense competition.The contest was ecstatically embraced by IIT KGP. We fiercely competed for a celebratory closure at the event. We value the exuberant participation from Kgpians.<br />
-              Cheers to the top performers who put on stellar performances and made us proud. <br />
-              Girls:<br />
-              Dhanya Gelli  - Rank 2<br />
-              Sucheta Pradhan – Rank 20<br />
-              Parthvi Gupta – Rank 42<br />
-              Soumya Sharma – Rank 44<br />
-              Meghna Nallamili- Rank 50<br />
-              Boys:<br />
-              Nikhil Mishra – Rank 15<br />
-              Rajvardhan Singh Jadon – Rank 53<br />
-              Utkarsh Gupta- Rank 58<br />
+              After an enthralling week filled with fortitude, grit and
+              determination, the Pan IIT Cycling Main Event concluded as a
+              spectacle of hard work and commitment.
+              <br />
+              All the IITs vied for delivering intense competition.The contest
+              was ecstatically embraced by IIT KGP. We fiercely competed for a
+              celebratory closure at the event. We value the exuberant
+              participation from Kgpians.
+              <br />
+              Cheers to the top performers who put on stellar performances and
+              made us proud. <br />
+              Girls:
+              <br />
+              Dhanya Gelli - Rank 2<br />
+              Sucheta Pradhan – Rank 20
+              <br />
+              Parthvi Gupta – Rank 42
+              <br />
+              Soumya Sharma – Rank 44
+              <br />
+              Meghna Nallamili- Rank 50
+              <br />
+              Boys:
+              <br />
+              Nikhil Mishra – Rank 15
+              <br />
+              Rajvardhan Singh Jadon – Rank 53
+              <br />
+              Utkarsh Gupta- Rank 58
+              <br />
               Heartiest congratulations to all the participants.
-
             </p>
           </div>
         </section>
         <br />
         <br />
-
-
-
       </div>
     </Layout>
   );

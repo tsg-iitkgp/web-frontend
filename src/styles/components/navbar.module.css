@@ -106,7 +106,7 @@ ul li a {
     z-index: 1111;
   }
   .navMenu.active {
-    padding: 5rem 0rem;
+    padding: 10rem 0rem;
     width: 120%;
     background: #242222;
     /* right: -10%; */

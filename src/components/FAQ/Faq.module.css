@@ -5,8 +5,8 @@
   margin-top: 10vh;
 }
 .content {
-  padding: 2rem;
-  margin-right: 0.05 rem;
+  flex: 1;
+  padding-bottom: 4rem;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }

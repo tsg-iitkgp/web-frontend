@@ -143,6 +143,15 @@
   .cardswrapper {
     grid-template-columns: auto;
     width: auto;
+    justify-content: center;
+  }
+  .card {
+    max-width: 600px;
+  }
+}
+@media (max-width: 568px) {
+  .card {
+    max-width: 280px;
   }
 }
 
