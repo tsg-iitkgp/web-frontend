@@ -22,6 +22,7 @@ export default function Events() {
   };
   document.title = "Events | TSG";
   const [events, setEvents] = useState(eventsData);
+  const highlightEvents = events.filter((event) => event.isHighlight);
   const [isHighlightOpen, setIsHighlightOpen] = useState(true);
   const data = [
     {
@@ -44,20 +45,20 @@ export default function Events() {
     setIsHighlightOpen(false);
   };
 
-  const captionStyle = {
-    fontSize: "2em",
-    fontWeight: "bold",
-    textTransform: "uppercase",
-  };
-  const slideNumberStyle = {
-    fontSize: "20px",
-    fontWeight: "bold",
-  };
+  // const captionStyle = {
+  //   fontSize: "2em",
+  //   fontWeight: "bold",
+  //   textTransform: "uppercase",
+  // };
+  // const slideNumberStyle = {
+  //   fontSize: "20px",
+  //   fontWeight: "bold",
+  // };
 
   return (
     <Layout>
       <div className={Styles.bgContainer}>
-        {isHighlightOpen && (
+        {highlightEvents.length && isHighlightOpen && (
           <section className={Styles.mainContainer} data-aos="zoom-in-up">
             <div className={Styles.highlightsContainer}>
               <div className={Styles.highlightsContainerHeader}>
@@ -70,7 +71,7 @@ export default function Events() {
                 </div>
               </div>
               <div className={Styles.highlightsContainerBody}>
-                <Highlight />
+                <Highlight events={highlightEvents} />
               </div>
             </div>
           </section>
@@ -84,31 +85,62 @@ export default function Events() {
           <section className="events-slider">
             <AutoplaySlider play={true} interval={5000}>
               <div
-                data-src="/interiit10tech.png"
+                data-src="/media/images/events/upcomingEvents/pl.jpg"
                 onClick={() =>
                   handlePosterClick(
-                    "https://www.facebook.com/iitkgp.tech/posts/4637820002931545"
+                    "https://www.facebook.com/1375511306004699/posts/2977716442450836"
                   )
                 }
               />
               <div
-                data-src="/web-hack.jpg"
+                data-src="/media/images/events/upcomingEvents/icgc.jpg"
                 onClick={() =>
                   handlePosterClick(
-                    "https://www.facebook.com/TSG.IITKharagpur/posts/5141129255902068"
+                    "https://www.facebook.com/1375511306004699/posts/2975267989362348"
                   )
                 }
               />
               <div
-                data-src="/sia.jpeg"
+                data-src="/media/images/events/upcomingEvents/opensoft.png"
+                onClick={() =>
+                  handlePosterClick(
+                    "https://www.facebook.com/iitkgp.tech/posts/4941772725869603"
+                  )
+                }
+              />
+              <div
+                data-src="/media/images/events/upcomingEvents/openiitchess.jpg"
+                onClick={() =>
+                  handlePosterClick(
+                    "https://www.facebook.com/sports.iitkgp/posts/2973351309554016"
+                  )
+                }
+              />
+              <div
+                data-src="/media/images/events/upcomingEvents/oev.jpg"
+                onClick={() =>
+                  handlePosterClick(
+                    "https://www.facebook.com/CulturalKGP/posts/4859245817492651"
+                  )
+                }
+              />
+              <div
+                data-src="/media/images/events/upcomingEvents/owv.jpg"
+                onClick={() =>
+                  handlePosterClick(
+                    "https://www.facebook.com/CulturalKGP/posts/4859245817492651"
+                  )
+                }
+              />
+              <div
+                data-src="/media/images/events/upcomingEvents/SIH-2022.png"
+                onClick={() =>
+                  handlePosterClick("https://www.sih.gov.in/sih2022PS")
+                }
+              />
+              <div
+                data-src="/media/images/events/upcomingEvents/qs.jpg"
                 onClick={() => handlePosterClick("#")}
-              />
-              <div data-src="/qs.jpg" onClick={() => handlePosterClick("#")} />
-              <div
-                data-src="/wc-trials.jpg"
-                onClick={() =>
-                  handlePosterClick("https://forms.gle/sFA3GswsLgxu4kxq9")
-                }
               />
             </AutoplaySlider>
           </section>

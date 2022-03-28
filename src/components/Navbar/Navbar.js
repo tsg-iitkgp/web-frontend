@@ -1,18 +1,24 @@
 import React, { useState } from "react";
-
+import NotificationsIcon from "@material-ui/icons/Notifications";
 import { NavLink } from "react-router-dom";
-// import ResultsDropdown from "./ResultsDropdown";
-// import AwardsDropdown from "./AwardsDropdown";
+import Badge from "@material-ui/core/Badge";
 import Styles from "../../styles/components/navbar.module.css";
 import useNavbar from "./useNavbar";
+import eventsData from "../Events/eventsData";
+import Notification from "./Notification";
+import { useHistory } from "react-router-dom";
+
 export default function Navbar() {
   //using Custom Hook useNavbar for logic of navbarClass
   const navbarClass = useNavbar();
-  // const [resultsDropdown, setResultsDropdown] = useState(false);
-  // const [awardsDropdown, setAwardsDropdown] = useState(false);
   const [click, setClick] = useState(false);
+  const [notification, setNotification] = useState({
+    badgeContent: 0,
+    click: false,
+  });
   const handleClick = () => setClick(!click);
-
+  const highlightEvents = eventsData.filter((event) => event.isHighlight);
+  console.log(highlightEvents);
   // const handleMouseEnter = (dropdownName) => {
   //   if (window.innerWidth < 960) {
   //     setResultsDropdown(false);
@@ -37,6 +43,17 @@ export default function Navbar() {
   } else {
     listClass = `${Styles.navMenu}`;
   }
+  const handleNotificationClick = () => {
+    if (!notification.click) {
+      setNotification({ badgeContent: 0, click: true });
+    } else {
+      setNotification({ badgeContent: 0, click: false });
+    }
+  };
+  const history = useHistory();
+  const handleNotiClick = () => {
+    history.push("/events");
+  };
   return (
     <div className={navbarClass}>
       <nav className={Styles.navbar}>
@@ -155,6 +172,31 @@ export default function Navbar() {
               FAQ
             </NavLink>
           </li>
+          {window.innerWidth > 768 && (
+            <li
+              className={Styles.navItem}
+              onClick={handleNotificationClick}
+              style={{ position: "relative" }}
+              id="notification"
+            >
+              <Badge badgeContent={notification.badgeContent} color="secondary">
+                <NotificationsIcon
+                  style={{ color: "darkgrey", cursor: "pointer" }}
+                />
+              </Badge>
+              {notification.click && (
+                <div className={Styles.notifications}>
+                  {highlightEvents.map((event, index) => (
+                    <Notification
+                      key={index}
+                      event={event}
+                      handleClick={handleNotiClick}
+                    />
+                  ))}
+                </div>
+              )}
+            </li>
+          )}
         </ul>
       </nav>
     </div>
