@@ -5,6 +5,7 @@ const eventsData = [
     title: "Smart India Hackathon 2022",
     date: "19th February 2022 11:59 PM",
     poster: "/upcomingEvents/smartIndia.jpeg",
+    createdAt: "Today 20:00",
     description: `
 Smart India Hackathon 2022 is a nationwide initiative by the Ministry of Education, Govt of India to provide students with a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem-solving.
           `,
@@ -38,10 +39,11 @@ Smart India Hackathon 2022 is a nationwide initiative by the Ministry of Educati
         poster: "/upcomingEvents/matribhasha.jpg",
       },
     ],
-    isHighlight: false,
+    isHighlight: true,
   },
   {
     title: "SAMYOG - Connect IIT Kharagpur",
+    createdAt: "Today 20:00",
     date: "18th January",
     poster: "/upcomingEvents/samyog-2.png",
     description: `
@@ -69,7 +71,7 @@ Smart India Hackathon 2022 is a nationwide initiative by the Ministry of Educati
         content: "https://forms.gle/rLAnA2Ppwgm6FYM87",
       },
     ],
-    isHighlight: false,
+    isHighlight: true,
   },
   {
     title: "Sociopreneurship",

@@ -1,0 +1,12 @@
+.notification {
+  position: relative;
+  margin: 0.75rem auto;
+  width: 95%;
+  padding: 0.9rem;
+  font-size: 0.75rem;
+  max-height: 7rem;
+  overflow-y: hidden;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
