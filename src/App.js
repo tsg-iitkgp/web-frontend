@@ -19,7 +19,7 @@ import Societies from "./pages/Societies";
 import Events from "./pages/Events";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./components/Gallery/Gallery";
-import faq from "./components/FAQ/faq";
+import FAQ from "./components/FAQ/FAQ";
 import Tech from "./pages/committees/2021/Tech";
 import Sports from "./pages/committees/2021/sports";
 import Welfare from "./pages/committees/2021/welfare";
@@ -46,7 +46,11 @@ function App() {
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/inter_iit" component={Results} />
           <Route exact path="/contacts/secretaries" component={Contacts} />
-          <Route exact path="/contacts/current-office-bearers" component={Contacts} />
+          <Route
+            exact
+            path="/contacts/current-office-bearers"
+            component={Contacts}
+          />
           <Route exact path="/contacts/pastBearers" component={Contacts} />
           <Route exact path="/societies" component={Societies} />
           <Route exact path="/committees/2021/tech" component={Tech} />
@@ -55,7 +59,7 @@ function App() {
           <Route exact path="/committees/2021/Socult" component={Socult} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/ContactUs" component={ContactUs} />
-          <Route exact path="/faq" component={faq} />
+          <Route exact path="/faq" component={FAQ} />
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
           <Route component={NotFound} />
         </Switch>

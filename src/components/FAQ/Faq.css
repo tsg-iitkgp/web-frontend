@@ -1,0 +1,10 @@
+select.selectButton {
+  border: none;
+  background: #eee;
+  color: black;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #ddd;
+  max-width: 60%;
+  margin: auto;
+}
