@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import Styles from "../styles/pages/events.module.css";
+import Styles from "./events.module.css";
 import eventsData from "../components/Events/eventsData";
 import EventCard from "../components/Events/EventCard";
 import Layout from "../components/Layout";
 import { FaBell, FaTimes } from "react-icons/fa";
 import Highlight from "../components/Events/Highlight";
 import Calendar from "../components/Events/Calendar";
-
-import "./events.css";
 
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
