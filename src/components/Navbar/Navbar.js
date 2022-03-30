@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { NavLink } from "react-router-dom";
 import Badge from "@material-ui/core/Badge";
@@ -19,24 +19,6 @@ export default function Navbar() {
   const handleClick = () => setClick(!click);
   const highlightEvents = eventsData.filter((event) => event.isHighlight);
   console.log(highlightEvents);
-  // const handleMouseEnter = (dropdownName) => {
-  //   if (window.innerWidth < 960) {
-  //     setResultsDropdown(false);
-  //     setAwardsDropdown(false);
-  //   } else {
-  //     if (dropdownName === "Results") setResultsDropdown(true);
-  //     else setAwardsDropdown(true);
-  //   }
-  // };
-  // const handleMouseLeave = (dropdownName) => {
-  //   if (window.innerWidth < 960) {
-  //     setResultsDropdown(false);
-  //     setAwardsDropdown(false);
-  //   } else {
-  //     if (dropdownName === "Results") setResultsDropdown(false);
-  //     else setAwardsDropdown(false);
-  //   }
-  // };
   let listClass;
   if (click) {
     listClass = `${Styles.navMenu} ${Styles.active}`;
@@ -54,6 +36,10 @@ export default function Navbar() {
   const handleNotiClick = () => {
     history.push("/events");
   };
+  useEffect(() => {
+    setNotification({ badgeContent: highlightEvents.length, click: false });
+  }, [highlightEvents.length]);
+
   return (
     <div className={navbarClass}>
       <nav className={Styles.navbar}>

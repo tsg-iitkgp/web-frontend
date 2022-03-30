@@ -64,9 +64,9 @@ export default function Events() {
                   <FaBell className={Styles.bellIcon} />
                   <h1>Notifications</h1>
                 </div>
-                <div onClick={closeHighlight}>
+                {/* <div onClick={closeHighlight}>
                   <FaTimes className={Styles.timesIcon} />
-                </div>
+                </div> */}
               </div>
               <div className={Styles.highlightsContainerBody}>
                 <Highlight events={highlightEvents} />
