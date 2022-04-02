@@ -8,7 +8,7 @@ export default function EventCard({
   index,
   bodyContent,
   eventCategory: category,
-  imgName,
+  imgSrc,
 }) {
   let blogCardClass;
   if (index % 2 !== 0) {
@@ -22,16 +22,17 @@ export default function EventCard({
         <div
           className={Styles.photo}
           style={{
-            backgroundImage:
-              "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)",
+            backgroundImage: `url(/media/images/events${imgSrc})`,
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
           }}
         ></div>
         <ul className={Styles.details}>
           <li className={Styles.author}>
-            <a href="www.google.com">Praneeth Reddy Kolanu</a>
+            <a href="www.google.com" alt="secy_responsible"></a>
           </li>
           <li className={Styles.author}>
-            <a href="www.google.com">+91 7013 160 59</a>
+            <a href="www.google.com"></a>
           </li>
         </ul>
       </div>

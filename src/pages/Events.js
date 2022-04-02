@@ -160,7 +160,7 @@ export default function Events() {
                     date={event.date || event.start}
                     description={event.description}
                     // bodyContent={event.bodyContent}
-                    imgName={event.imgName}
+                    imgSrc={event.poster}
                     index={index}
                     eventCategory="upcoming"
                   />

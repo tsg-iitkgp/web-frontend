@@ -35,7 +35,7 @@ const eventsData = [
       {
         description: "Read More:",
         href: "/elections",
-        content: "https://forms.gle/rLAnA2Ppwgm6FYM87",
+        content: "",
       },
     ],
     dates: [
@@ -327,7 +327,7 @@ You all have been waiting in the wings  to bring forth an extraordinary idea tha
   {
     title: "Website Hackathon",
     date: "30th November",
-    poster: "/events/web-hack.jpg",
+    poster: "/web-hack.jpg",
     description: `September is here and some students are coming back to campus. This brings with it the possibility of an outbreak and hence adhering to Covid protocols is of paramount importance. To protect our community, it is required that each one of us is well aware of the rules and regulations set in place. Incoming students will have to quarantine for a minimum duration of one week. Students are advised not to leave their rooms unnecessarily, wear masks and maintain social distancing.`,
     modalContent: "",
     content: [
@@ -369,7 +369,7 @@ You all have been waiting in the wings  to bring forth an extraordinary idea tha
   {
     title: "Pets' Week",
     date: "28th September",
-    poster: "/events/pw.png",
+    poster: "/pw.png",
     description: `This World Animals’ Day, Students’ Welfare Committee, Technology Students’
       Gymkhana, gives you an opportunity to express your gratitude and heartfelt love
       towards them by participating in Pets’ Week, 2021 with prizes and gifts worth INR
@@ -405,7 +405,7 @@ You all have been waiting in the wings  to bring forth an extraordinary idea tha
   {
     title: "Covid-19 Awareness Video making Competition",
     date: "15th September",
-    poster: "/events/covid19.png",
+    poster: "/covid19.png",
     description: `Technology Students' Gymkhana is organizing an online video-making competition to provide a platform for the students of IIT Kharagpur to channel their inner movie-makers to deliver an important message creatively.`,
     modalContent: "",
     content: [
@@ -433,7 +433,7 @@ You all have been waiting in the wings  to bring forth an extraordinary idea tha
   {
     title: "Monthly Art Challenge: PAINT-DEMIC",
     date: "30th September",
-    poster: "/events/paint-demic.jpg",
+    poster: "/paint-demic.jpg",
     description: `September is here and some students are coming back to campus. This brings with it the possibility of an outbreak and hence adhering to Covid protocols is of paramount importance. To protect our community, it is required that each one of us is well aware of the rules and regulations set in place. Incoming students will have to quarantine for a minimum duration of one week. Students are advised not to leave their rooms unnecessarily, wear masks and maintain social distancing.`,
     modalContent: "",
     content: [
