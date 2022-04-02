@@ -15,14 +15,15 @@ const years = [
 ];
 
 export default function PastBearers() {
+  //eslint-disable-next-line
   const [currentTab, setCurrentTab] = useState("senate");
   const [currentYear, setCurrentYear] = useState("2020-21");
 
-  const handleTabChange = (s) => {
-    setCurrentTab(s);
-  };
+  // const handleTabChange = (s) => {
+  //   setCurrentTab(s);
+  // };
 
-  const president = senateData.President;
+  // const president = senateData.President;
   return (
     <div>
       <section className="awards content">

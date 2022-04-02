@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../../../components/Layout";
 import Styles from "../styles/tech.module.css";
 import globalStyles from "../styles/committees.module.css";
-import ContactStyles from "../../../styles/pages/contacts.module.css";
-import ContactCard from "../../../components/ContactCard";
+// import ContactStyles from "../../../styles/pages/contacts.module.css";
+// import ContactCard from "../../../components/ContactCard";
 import img1 from "./images/tech/mentalwork.jpg";
 import img2 from "./images/tech/anxious.jpg";
 import projects from "./images/tech/projects.jpg";
@@ -11,48 +11,48 @@ import english from "./images/tech/english-mentor.jpg";
 import induction from "./images/tech/ug-induction.jpg";
 
 export default function Welfare() {
-  const techComTeam = [
-    {
-      RollNo: "19EE10016",
-      Name: "Bhosale Shivam Pravin",
-      img: "19EE10016.png",
-      Category: "General Secretary",
-      Post: "GSec - Students' Welfare",
-      Contact: 9890359987,
-      Email: "bhosaleshivam3333@gmail.com",
-      "Institue ids": "bhosaleshivam3333@gmail.com",
-      "Institute mail ids": "gsectsg-welfare@hijli.iitkgp.ac.in",
-    },
-    {
-      RollNo: "19AE10014",
-      Name: "Jeripothula Sindhu",
-      Post: "GSec - Students' Welfare",
-      Category: "General Secretary",
-      img: "19AE10014.png",
-      Contact: 9502834599,
-      Email: "sindhujeripothula@gmail.com",
-      "Institue ids": "sindhujeripothula@gmail.com",
-      "Institute mail ids": "",
-    },
-    {
-      id: 32,
-      RollNo: "20MI10004",
-      Name: "Amgoth Jithender Kumar Naik",
-      Post: "Secretary Academic Help",
-      Email: "jithendernaik1729@gmail.com",
-      Phone: 9154015089,
-      Hall: "LLR",
-    },
-    {
-      id: 33,
-      RollNo: "20EX20001",
-      Name: "Aaditri Vaibhav",
-      Post: "Secretary Community And Crisis",
-      Email: "aaditri.vaibhav@gmail.com",
-      Phone: 8789617065,
-      Hall: "SN/IG",
-    },
-  ];
+  // const techComTeam = [
+  //   {
+  //     RollNo: "19EE10016",
+  //     Name: "Bhosale Shivam Pravin",
+  //     img: "19EE10016.png",
+  //     Category: "General Secretary",
+  //     Post: "GSec - Students' Welfare",
+  //     Contact: 9890359987,
+  //     Email: "bhosaleshivam3333@gmail.com",
+  //     "Institue ids": "bhosaleshivam3333@gmail.com",
+  //     "Institute mail ids": "gsectsg-welfare@hijli.iitkgp.ac.in",
+  //   },
+  //   {
+  //     RollNo: "19AE10014",
+  //     Name: "Jeripothula Sindhu",
+  //     Post: "GSec - Students' Welfare",
+  //     Category: "General Secretary",
+  //     img: "19AE10014.png",
+  //     Contact: 9502834599,
+  //     Email: "sindhujeripothula@gmail.com",
+  //     "Institue ids": "sindhujeripothula@gmail.com",
+  //     "Institute mail ids": "",
+  //   },
+  //   {
+  //     id: 32,
+  //     RollNo: "20MI10004",
+  //     Name: "Amgoth Jithender Kumar Naik",
+  //     Post: "Secretary Academic Help",
+  //     Email: "jithendernaik1729@gmail.com",
+  //     Phone: 9154015089,
+  //     Hall: "LLR",
+  //   },
+  //   {
+  //     id: 33,
+  //     RollNo: "20EX20001",
+  //     Name: "Aaditri Vaibhav",
+  //     Post: "Secretary Community And Crisis",
+  //     Email: "aaditri.vaibhav@gmail.com",
+  //     Phone: 8789617065,
+  //     Hall: "SN/IG",
+  //   },
+  // ];
   return (
     <Layout>
       <div className={globalStyles.mainContainer}>
