@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Faq from "react-faq-component";
 import Layout from "../Layout";
-import Sidebar from "../Sidebar/Sidebar";
+// import Sidebar from "../Sidebar/Sidebar";
 import { faqSidebarList } from "../Sidebar/SidebarList";
 import { data } from "./FaqData";
 import "./Faq.css";

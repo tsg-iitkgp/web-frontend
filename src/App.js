@@ -26,6 +26,10 @@ import Welfare from "./pages/committees/2021/welfare";
 import Socult from "./pages/committees/2021/Socult";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Elections from "./pages/Elections/Elections";
+import ElectionCandidates from "./pages/Elections/ElectionCandidates";
+import Opportunities from "./pages/Opportunities/Opportunities";
+import OpportunityPage from "./pages/Opportunities/OpportunityPage";
 
 function App() {
   useEffect(() => {
@@ -51,6 +55,12 @@ function App() {
             path="/contacts/current-office-bearers"
             component={Contacts}
           />
+          <Route exact path="/elections" component={Elections} />
+          <Route
+            exact
+            path="/elections/candidates"
+            component={ElectionCandidates}
+          />
           <Route exact path="/contacts/pastBearers" component={Contacts} />
           <Route exact path="/societies" component={Societies} />
           <Route exact path="/committees/2021/tech" component={Tech} />
@@ -59,6 +69,8 @@ function App() {
           <Route exact path="/committees/2021/Socult" component={Socult} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/ContactUs" component={ContactUs} />
+          <Route exact path="/opportunities" component={Opportunities} />
+          <Route exact path="/opportunities/:id" component={OpportunityPage} />
           <Route exact path="/faq" component={FAQ} />
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
           <Route component={NotFound} />

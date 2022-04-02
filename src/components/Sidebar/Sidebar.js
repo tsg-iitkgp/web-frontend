@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import Styles from "./sidebar.module.css";
 export default function Sidebar({ itemsList }) {
   const [active, setActive] = useState(false);

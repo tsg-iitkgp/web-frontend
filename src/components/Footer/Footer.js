@@ -64,16 +64,32 @@ export default function Footer() {
             </p>
           </div>
           <div className={Styles.iconsContainer}>
-            <a target="_blank" href="https://www.facebook.com/TSG.IITKharagpur">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/TSG.IITKharagpur"
+              rel="noreferrer"
+            >
               <FaFacebook />
             </a>
-            <a target="_blank" href="https://twitter.com/tsg_iitkgp">
+            <a
+              target="_blank"
+              href="https://twitter.com/tsg_iitkgp"
+              rel="noreferrer"
+            >
               <FaTwitter />
             </a>
-            <a target="_blank" href="https://www.youtube.com/channel/UCuTNELMlkNfJxAQ2vGJIe5Q">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCuTNELMlkNfJxAQ2vGJIe5Q"
+              rel="noreferrer"
+            >
               <FaYoutube />
             </a>
-            <a target="_blank" href="https://github.com/tsg-iitkgp">
+            <a
+              target="_blank"
+              href="https://github.com/tsg-iitkgp"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
           </div>
@@ -87,7 +103,9 @@ export default function Footer() {
                   {linkGroup.links.map((link, index) => {
                     return (
                       <li key={index}>
-                        <a target="_blank" href={link.href}>{link.title}</a>
+                        <a target="_blank" href={link.href} rel="noreferrer">
+                          {link.title}
+                        </a>
                       </li>
                     );
                   })}
@@ -99,7 +117,9 @@ export default function Footer() {
         <div className={Styles.contactSection}>
           <span>We're here</span>
           <span>Let's talk</span>
-          <a href="/ContactUs"><button className={Styles.contactButton}>Get in Touch</button></a>
+          <a href="/ContactUs">
+            <button className={Styles.contactButton}>Get in Touch</button>
+          </a>
         </div>
       </div>
     </footer>

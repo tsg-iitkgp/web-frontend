@@ -1,6 +1,51 @@
-let todayStr = new Date().toISOString().replace(/T.*$/, ""); // YYYY-MM-DD of today
+// let todayStr = new Date().toISOString().replace(/T.*$/, ""); // YYYY-MM-DD of today
 
 const eventsData = [
+  {
+    title: "Gymkhana Elections 2022",
+    date: "4th April 2022",
+    poster: "/upcomingEvents/smartIndia.jpeg",
+    createdAt: "26th March 20:00",
+    description:
+      "Each year Technology Students’ Gymkhana (TSG), IIT Kharagpur carriesout election to select office bearers from students for smoothconduction of student related activities.This year election campaign will be carried out in hybrid mode following COVID protocol. However, the nomination, approval and voting will be done using digital platform developed by ERP, IIT Kharagpur",
+    modalContent: "",
+    content: [
+      `
+  Hello everyone
+  `,
+      `
+  Smart India Hackathon 2022 is a nationwide initiative by the Ministry of Education, Govt of India to provide students with a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem-solving. The hackathon comprises various problem statements in both hardware and software domains. `,
+      `
+  For selecting the teams representing IIT Kharagpur, an internal hackathon will be organised by Technology Students' Gymkhana. The top 7 teams will get the opportunity to compete in the national level Smart India Hackathon.  `,
+
+      `
+  Registeration Deadline: 19th Feb 2022,11:59 pm
+                  `,
+      `
+  Find out more at: www.sih.gov.in
+                  `,
+      `
+  For any queries, contact:`,
+      `
+  Vadthya Sanjay Kumar: +91 9121372359`,
+      `
+  Kodipaka Nikitha: +91 9550449545                        `,
+    ],
+    links: [
+      {
+        description: "Read More:",
+        href: "/elections",
+        content: "https://forms.gle/rLAnA2Ppwgm6FYM87",
+      },
+    ],
+    dates: [
+      {
+        title: "Date of Election",
+        date: "4th April 2022 (Monday) From 9 A.M to 6 P.M",
+      },
+    ],
+    isHighlight: true,
+  },
   {
     title: "Smart India Hackathon 2022",
     date: "19th February 2022 11:59 PM",
@@ -39,7 +84,7 @@ Smart India Hackathon 2022 is a nationwide initiative by the Ministry of Educati
         poster: "/upcomingEvents/matribhasha.jpg",
       },
     ],
-    isHighlight: true,
+    isHighlight: false,
   },
   {
     title: "SAMYOG - Connect IIT Kharagpur",
@@ -71,7 +116,7 @@ Smart India Hackathon 2022 is a nationwide initiative by the Ministry of Educati
         content: "https://forms.gle/rLAnA2Ppwgm6FYM87",
       },
     ],
-    isHighlight: true,
+    isHighlight: false,
   },
   {
     title: "Sociopreneurship",

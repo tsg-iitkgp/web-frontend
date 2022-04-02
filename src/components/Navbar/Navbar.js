@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { NavLink } from "react-router-dom";
 import Badge from "@material-ui/core/Badge";
@@ -19,24 +19,6 @@ export default function Navbar() {
   const handleClick = () => setClick(!click);
   const highlightEvents = eventsData.filter((event) => event.isHighlight);
   console.log(highlightEvents);
-  // const handleMouseEnter = (dropdownName) => {
-  //   if (window.innerWidth < 960) {
-  //     setResultsDropdown(false);
-  //     setAwardsDropdown(false);
-  //   } else {
-  //     if (dropdownName === "Results") setResultsDropdown(true);
-  //     else setAwardsDropdown(true);
-  //   }
-  // };
-  // const handleMouseLeave = (dropdownName) => {
-  //   if (window.innerWidth < 960) {
-  //     setResultsDropdown(false);
-  //     setAwardsDropdown(false);
-  //   } else {
-  //     if (dropdownName === "Results") setResultsDropdown(false);
-  //     else setAwardsDropdown(false);
-  //   }
-  // };
   let listClass;
   if (click) {
     listClass = `${Styles.navMenu} ${Styles.active}`;
@@ -54,13 +36,21 @@ export default function Navbar() {
   const handleNotiClick = () => {
     history.push("/events");
   };
+  useEffect(() => {
+    setNotification({ badgeContent: highlightEvents.length, click: false });
+  }, [highlightEvents.length]);
+
   return (
     <div className={navbarClass}>
       <nav className={Styles.navbar}>
         {/* Navbar logo */}
 
         <div className={Styles.navLogo}>
-          <NavLink to="/">GYMKHANA</NavLink>
+          <NavLink to="/" style={{ display: "flex", alignItems: "center" }}>
+            {" "}
+            <img src="/media/images/general/gymkhanaLogo.png" alt="KGP_logo" />
+            <span>&nbsp;TSG</span>
+          </NavLink>
         </div>
 
         {/* Menu icon on smaller devices */}
@@ -156,13 +146,22 @@ export default function Navbar() {
           </li>
           <li className={Styles.navItem}>
             <NavLink
+              to="/opportunities"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Opportunities
+            </NavLink>
+          </li>
+          {/* <li className={Styles.navItem}>
+            <NavLink
               to="/gallery"
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
             >
               Gallery
             </NavLink>
-          </li>
+          </li> */}
           <li className={Styles.navItem}>
             <NavLink
               to="/faq"
@@ -172,6 +171,7 @@ export default function Navbar() {
               FAQ
             </NavLink>
           </li>
+
           {window.innerWidth > 768 && (
             <li
               className={Styles.navItem}
