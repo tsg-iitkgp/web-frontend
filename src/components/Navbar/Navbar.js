@@ -46,7 +46,11 @@ export default function Navbar() {
         {/* Navbar logo */}
 
         <div className={Styles.navLogo}>
-          <NavLink to="/">GYMKHANA</NavLink>
+          <NavLink to="/" style={{ display: "flex", alignItems: "center" }}>
+            {" "}
+            <img src="/media/images/general/gymkhanaLogo.png" alt="KGP_logo" />
+            <span>&nbsp;TSG</span>
+          </NavLink>
         </div>
 
         {/* Menu icon on smaller devices */}
@@ -142,13 +146,22 @@ export default function Navbar() {
           </li>
           <li className={Styles.navItem}>
             <NavLink
+              to="/opportunities"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Opportunities
+            </NavLink>
+          </li>
+          {/* <li className={Styles.navItem}>
+            <NavLink
               to="/gallery"
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
             >
               Gallery
             </NavLink>
-          </li>
+          </li> */}
           <li className={Styles.navItem}>
             <NavLink
               to="/faq"
@@ -158,6 +171,7 @@ export default function Navbar() {
               FAQ
             </NavLink>
           </li>
+
           {window.innerWidth > 768 && (
             <li
               className={Styles.navItem}

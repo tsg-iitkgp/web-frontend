@@ -26,10 +26,14 @@
   align-items: center;
   padding: 1rem;
 }
+.navLogo img {
+  max-width: 2rem;
+  max-height: 2rem;
+}
 .navLogo a {
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .navLinks {
   font-size: 1.1rem;
@@ -103,6 +107,13 @@ ul li a {
   max-width: 30vw;
 }
 @media screen and (max-width: 768px) {
+  .navLogo a {
+    font-size: 2rem;
+  }
+  .navLogo img {
+    max-width: 2.25rem;
+    max-height: 2.25rem;
+  }
   .activeNavbar {
     border: none;
   }
@@ -144,3 +155,15 @@ ul li a {
     transition: all 1s ease-out;
   }
 }
+@media screen and (max-width: 960px) and (min-width: 768px) {
+  .navLinks {
+    font-size: 1rem;
+  }
+  .navLogo a {
+    font-size: 1.25rem;
+  }
+  .navLogo img {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+  }
+} ;

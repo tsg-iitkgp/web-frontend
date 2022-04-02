@@ -86,47 +86,6 @@ export default function Elections() {
             )}
           </Box>
         </Box>
-
-        {/* {currentTab === "Secy" && (
-          <select
-            value={JSON.stringify(currentPost)}
-            onChange={(e) => {
-              setCurrentPost(JSON.parse(e.target.value));
-            }}
-          >
-            {posts.map((post) => (
-              <option key={post.key} value={JSON.stringify(post)}>
-                {post.value}
-              </option>
-            ))}
-          </select>
-        )}
-        <h2>Candidates</h2>
-        <div className="main-content">
-          <div className="society-cards">
-            <div className="cards">
-              {electionsData[
-                currentTab === "Secy"
-                  ? currentTab + "_" + currentPost.key
-                  : currentTab
-              ].map((contact) => {
-                return (
-                  <Card
-                    key={contact.RollNo}
-                    Name={contact.Name}
-                    Hall={contact.Hall}
-                    Description={contact.Description}
-                    RollNo={contact.RollNo}
-                    Email={contact.Email}
-                    Proposal={contact.Proposal}
-                    ProposalLink={contact.ProposalLink}
-                    FacebookLink={contact.FacebookLink}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </div> */}
       </Container>
     </Layout>
   );
