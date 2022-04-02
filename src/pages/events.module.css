@@ -20,6 +20,9 @@
   align-items: center;
   width: 100%;
 }
+.eventSlider div img {
+  object-fit: contain;
+}
 .categoryHeading {
   font-size: 2rem;
   color: #f1c40f;

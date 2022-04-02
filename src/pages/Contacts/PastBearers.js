@@ -3,14 +3,18 @@ import Styles from "../../styles/pages/past.module.css";
 import senateData from "./../senateData.json";
 import { useState } from "react";
 import ContactCard from "../../components/ContactCard";
-import primg from "./../Contacts/Images/prf.png"
+import primg from "./../Contacts/Images/prf.png";
 
-
-const years = ["2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16"];
-
+const years = [
+  "2020-21",
+  "2019-20",
+  "2018-19",
+  "2017-18",
+  "2016-17",
+  "2015-16",
+];
 
 export default function PastBearers() {
-
   const [currentTab, setCurrentTab] = useState("senate");
   const [currentYear, setCurrentYear] = useState("2020-21");
 
@@ -20,20 +24,9 @@ export default function PastBearers() {
 
   const president = senateData.President;
   return (
-
     <div>
-
-
-
-
       <section className="awards content">
-
-
-        <div className="tabs">
-
-
-
-        </div>
+        <div className="tabs"></div>
         <div className="select GC_dropdown">
           <select
             value={currentYear}
@@ -49,16 +42,11 @@ export default function PastBearers() {
 
         {(senateData[currentYear][currentTab]["profs"] !== undefined ||
           currentTab === "specialRecog") && (
-            <>
-              <div
-                className={Styles.shead1}
-              >
-                {" "}
-                Previous   Year  Senate{" "}
-              </div>
-              <div className="cards">
-                {currentTab !== "specialRecog"
-                  ? senateData[currentYear][currentTab]["profs"]?.map(
+          <>
+            <div className={Styles.shead1}> Previous Year Senate </div>
+            <div className="cards">
+              {currentTab !== "specialRecog"
+                ? senateData[currentYear][currentTab]["profs"]?.map(
                     (winner) => (
                       <ContactCard
                         name={winner.Name}
@@ -67,21 +55,19 @@ export default function PastBearers() {
                       />
                     )
                   )
-                  : senateData[currentYear][currentTab].map((winner) => (
+                : senateData[currentYear][currentTab].map((winner) => (
                     <ContactCard
                       name={winner.Name}
                       imgSrc={"primg"}
                       designation={winner.Post}
                     />
                   ))}
-              </div>
-            </>
-          )}
+            </div>
+          </>
+        )}
         {currentTab !== "specialRecog" && (
           <>
-
             <div className={Styles.senateCard}>
-
               {/* <thead>
                   <tr>
                     <th>Post</th>
@@ -89,49 +75,35 @@ export default function PastBearers() {
                   </tr>
                 </thead> */}
 
-              {senateData[currentYear][currentTab]["honours"].map(
-                (winner) => (
+              {senateData[currentYear][currentTab]["honours"].map((winner) => (
+                <card className={Styles.card1}>
+                  <p>
+                    <span style={{ color: "rgb(190, 190, 190)" }}>
+                      {" "}
+                      {winner.Post}
+                    </span>
+                    <br />
 
-                  <card className={Styles.card1}>
-                    <p >
-                      <span style={{ color: "rgb(190, 190, 190)" }}> {winner.Post}</span>
-                      <br />
+                    {winner.Name}
+                  </p>
+                </card>
 
+                // <tr>
+                //   <td>{winner.Post}</td>
+                //   <td>{winner.Name} </td>
 
-                      {winner.Name}
-                    </p>
-
-                  </card>
-
-                  // <tr>
-                  //   <td>{winner.Post}</td>
-                  //   <td>{winner.Name} </td>
-
-
-                  // </tr>
-
-
-                )
-              )}
-
-
+                // </tr>
+              ))}
             </div>
-
-
           </>
         )}
       </section>
 
-
-
-
       <br />
       <br />
 
       <br />
       <br />
-
-
     </div>
   );
 }

@@ -27,6 +27,7 @@ import Socult from "./pages/committees/2021/Socult";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Elections from "./pages/Elections/Elections";
+import ElectionCandidates from "./pages/Elections/ElectionCandidates";
 
 function App() {
   useEffect(() => {
@@ -53,6 +54,11 @@ function App() {
             component={Contacts}
           />
           <Route exact path="/elections" component={Elections} />
+          <Route
+            exact
+            path="/elections/candidates"
+            component={ElectionCandidates}
+          />
           <Route exact path="/contacts/pastBearers" component={Contacts} />
           <Route exact path="/societies" component={Societies} />
           <Route exact path="/committees/2021/tech" component={Tech} />

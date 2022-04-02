@@ -19,6 +19,24 @@
   color: #f1c40f;
   font-weight: 300;
 }
+/* notices */
+.electionBody .notice {
+  border: 1px solid;
+  border-color: #f1c40f;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2rem;
+  width: 90%;
+  margin: 1rem 0rem;
+}
+.notices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .electionBody button {
   font-size: 1rem;
   border: 1px solid;
@@ -41,4 +59,29 @@
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
+}
+/* Elections Candidates*/
+.postSelector {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+select.selectButton {
+  font-size: 1.25rem;
+  border: none;
+  background: #eee;
+  color: black;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #ddd;
+  max-width: 60%;
+  margin: auto;
+}
+.candidateContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

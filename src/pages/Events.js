@@ -3,9 +3,9 @@ import Styles from "./events.module.css";
 import eventsData from "../components/Events/eventsData";
 import EventCard from "../components/Events/EventCard";
 import Layout from "../components/Layout";
-import { FaBell, FaTimes } from "react-icons/fa";
+import { FaBell } from "react-icons/fa";
 import Highlight from "../components/Events/Highlight";
-import Calendar from "../components/Events/Calendar";
+// import Calendar from "../components/Events/Calendar";
 
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
@@ -19,9 +19,12 @@ export default function Events() {
     window.open(videoLink);
   };
   document.title = "Events | TSG";
+  // eslint-disable-next-line
   const [events, setEvents] = useState(eventsData);
   const highlightEvents = events.filter((event) => event.isHighlight);
+  //eslint-disable-next-line
   const [isHighlightOpen, setIsHighlightOpen] = useState(true);
+  //eslint-disable-next-line
   const data = [
     {
       image:
@@ -39,9 +42,9 @@ export default function Events() {
     },
   ];
 
-  const closeHighlight = (e) => {
-    setIsHighlightOpen(false);
-  };
+  // const closeHighlight = (e) => {
+  //   setIsHighlightOpen(false);
+  // };
 
   // const captionStyle = {
   //   fontSize: "2em",
@@ -80,7 +83,7 @@ export default function Events() {
         <h2 className={Styles.categoryHeading1}>Recent Events</h2>
 
         <section className="m-content">
-          <section className="events-slider">
+          <section className={Styles.eventSlider}>
             <AutoplaySlider play={true} interval={5000}>
               <div
                 data-src="/media/images/events/upcomingEvents/pl.jpg"

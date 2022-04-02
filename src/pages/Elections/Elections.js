@@ -3,6 +3,8 @@ import React from "react";
 
 import Layout from "../../components/Layout";
 import Styles from "./elections.module.css";
+import LaunchIcon from "@material-ui/icons/Launch";
+import { Link } from "react-router-dom";
 export default function Elections() {
   document.title = "Elections 2022| TSG";
   return (
@@ -38,6 +40,46 @@ export default function Elections() {
             <br />
             Platform: ERP
           </Typography>
+        </Box>
+        <Box className={Styles.electionBody}>
+          <Typography variant="h5">Notices:</Typography>
+          <Box className={Styles.notices}>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                The date for submission of Revised Proposals the posts of Vice
+                President and General Secretaries is extended upto 10:00 am on
+                March 29, 2022.
+              </div>
+              <Button>
+                <a
+                  href="/media/files/Extension-Final-Proposal_21-22.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Notice &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                SOAP has been scheduled on 1st and 2nd of April 2022.
+              </div>
+              <Button>
+                <a
+                  href="/media/files/SOAP_Schedule_21-22.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Notice &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            <Button>
+              <Link to="/elections/candidates">Candidates And Proposals</Link>
+            </Button>
+          </Box>
         </Box>
         <Box className={Styles.electionBody}>
           <Typography variant="h5">Relevant Documents:</Typography>
