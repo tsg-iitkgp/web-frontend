@@ -7,15 +7,11 @@ export default function CommitteeCard({ data }) {
     <div className={Styles.card}>
       <div className={Styles.box}>
         <div className={Styles.content}>
-          <h2>
-            {data.number}
-          </h2>
-          <h3>
-            {data.heading}
-          </h3>
-          <p>
+          <h2>{data.number}</h2>
+          <h3>{data.heading}</h3>
+          {/* <p>
             {data.description}
-          </p>
+          </p> */}
           <Link className={Styles.readMore} to={data.route}>
             Read More
           </Link>
