@@ -1,4 +1,4 @@
-export default {
+const soc = {
   data: [
     {
       img: "https://github.com/tsg-iitkgp/tsg-site/blob/main/public/societies/swg.png",
@@ -305,3 +305,4 @@ export default {
     },
   ],
 };
+export default soc;

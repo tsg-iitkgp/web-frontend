@@ -29,10 +29,12 @@ export default function EventCard({
         ></div>
         <ul className={Styles.details}>
           <li className={Styles.author}>
-            <a href="www.google.com" alt="secy_responsible"></a>
+            <a href="www.google.com" alt="secy_responsible">
+              {" "}
+            </a>
           </li>
           <li className={Styles.author}>
-            <a href="www.google.com"></a>
+            <a href="www.google.com"> </a>
           </li>
         </ul>
       </div>

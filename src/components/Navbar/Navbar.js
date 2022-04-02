@@ -67,6 +67,7 @@ export default function Navbar() {
               to="/"
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
+              exact
             >
               Home
             </NavLink>

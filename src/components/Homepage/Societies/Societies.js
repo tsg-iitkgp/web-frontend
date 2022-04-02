@@ -18,7 +18,7 @@ export default function Societies() {
       <div className={Styles.societiesSection}>
         <div className={CardsStyles.cardswrapper} style={{ width: "100%" }}>
           {Data.data
-            .filter((data) => data.category === "Socult")
+            .filter((data) => data.category === "Socult") //eslint-disable-next-line
             .map((item, i) => {
               while (i < 5) {
                 return (

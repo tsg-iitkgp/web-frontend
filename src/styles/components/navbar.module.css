@@ -39,6 +39,9 @@
   font-size: 1.1rem;
   color: white;
 }
+.navItem .acitveLink {
+  color: #f1c40f;
+}
 .activeNavbar {
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(2rem);
