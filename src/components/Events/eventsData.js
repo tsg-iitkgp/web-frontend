@@ -4,7 +4,7 @@ const eventsData = [
   {
     title: "Gymkhana Elections 2022",
     date: "4th April 2022",
-    poster: "/upcomingEvents/smartIndia.jpeg",
+    poster: "",
     createdAt: "26th March 20:00",
     description:
       "Each year Technology Students’ Gymkhana (TSG), IIT Kharagpur carriesout election to select office bearers from students for smoothconduction of student related activities.This year election campaign will be carried out in hybrid mode following COVID protocol. However, the nomination, approval and voting will be done using digital platform developed by ERP, IIT Kharagpur",
