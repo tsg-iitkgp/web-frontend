@@ -228,36 +228,28 @@ export default function Socult() {
                 Rules:
                 <br />
                 English:
-                <button className={globalStyles.btn}>
-                  <a href="https://docs.google.com/document/d/1SfwNeKQknrynpBWCl7CRlrdVNwa9Z180nj0S-T9j3FU/edit?fbclid=IwAR2FrcM5geO-xN5SYpCU1hg1RlW9Ny0R4kplVOfCxZWcng_RzzLKX0DngpQ">
-                    Click here
-                  </a>
-                </button>
+                <a className={globalStyles.btn} href="https://docs.google.com/document/d/1SfwNeKQknrynpBWCl7CRlrdVNwa9Z180nj0S-T9j3FU/edit?fbclid=IwAR2FrcM5geO-xN5SYpCU1hg1RlW9Ny0R4kplVOfCxZWcng_RzzLKX0DngpQ">
+                  Click here
+                </a>
                 <br />
                 Hindi:
-                <button className={globalStyles.btn}>
-                  <a href="https://docs.google.com/document/d/1YQcPfEg2hbbt6jd6I5reLa5tV_X3Oe1wlYYVQiIcUtU/edit?fbclid=IwAR33-xj7562A9duEKV6gj9wOIt9-jKqRoLSByIpJteWxPKAyXp4N8zlFWcw">
-                    Click here
-                  </a>
-                </button>
+                <a className={globalStyles.btn} href="https://docs.google.com/document/d/1YQcPfEg2hbbt6jd6I5reLa5tV_X3Oe1wlYYVQiIcUtU/edit?fbclid=IwAR33-xj7562A9duEKV6gj9wOIt9-jKqRoLSByIpJteWxPKAyXp4N8zlFWcw">
+                  Click here
+                </a>
                 <br />
                 Deadline for registration:28th January 2022 Deadline for
                 submissions of performances:5th February 2022
                 <br />
                 Register below: English:
-                <button className={globalStyles.btn}>
-                  {" "}
-                  <a href="https://forms.gle/2snVJTyaPMWRCxAH6">
-                    Click here to register
-                  </a>
-                </button>
+                {" "}
+                <a className={globalStyles.btn} href="https://forms.gle/2snVJTyaPMWRCxAH6">
+                  Click here to register
+                </a>
                 <br />
                 Hindi:
-                <button className={globalStyles.btn}>
-                  <a href="https://forms.gle/VL2xixYYxtfYxiEm9">
-                    Click here to register
-                  </a>
-                </button>
+                <a className={globalStyles.btn} href="https://forms.gle/VL2xixYYxtfYxiEm9">
+                  Click here to register
+                </a>
                 <br />
                 Make sure you go through the rules.
                 <br />
@@ -298,17 +290,12 @@ export default function Socult() {
                 of the Indian Institute of Technology, Kharagpur.
                 <br />
                 Rules:
-                <button className={globalStyles.btn}>
-                  {" "}
-                  <a href="https://docs.google.com/document/d/12AIW1l83Dv8IgaEfCCfbveXrFDDHShTwQC6S5MTX7mw/edit?fbclid=IwAR3Ftok6rugzm4x0UaY1csoR-3dnIBRWHYUPYJdAlgtfeYC5zyd5ju3KNZI">
-                    Click here
-                  </a>
-                </button>
+                <a className={globalStyles.btn} href="https://docs.google.com/document/d/12AIW1l83Dv8IgaEfCCfbveXrFDDHShTwQC6S5MTX7mw/edit?fbclid=IwAR3Ftok6rugzm4x0UaY1csoR-3dnIBRWHYUPYJdAlgtfeYC5zyd5ju3KNZI">
+                  Click here
+                </a>
                 <br />
                 Submission Google form:
-                <button className={globalStyles.btn}>
-                  <a href="https://forms.gle/bd6AMwUY3HSp9hEZ8">Click here</a>
-                </button>
+                <a className={globalStyles.btn} href="https://forms.gle/bd6AMwUY3HSp9hEZ8">Click here</a>
                 <br />
                 <br />
                 Last date of submission: 28-01-2022, 11:59 PM

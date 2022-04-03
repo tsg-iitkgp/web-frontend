@@ -211,11 +211,9 @@ export default function Sports() {
               inching towards normalcy as the effects of the pandemic wane, we
               encourage and ascertain safety for all of us.
               <br /> Details of the event are given in the document:
-              <button className={globalStyles.btn}>
-                <a href="https://docs.google.com/document/d/1P2kUCIrFSivP2U2qbKlobJE-YOMqtJpUPOVBdU6yR6A/edit?fbclid=IwAR0fmDxmHQWkQSR7Pk1PmSraxgro6gHFg-ld4J37xqZeiX-7I34SGFyRTwQ">
-                  Click here
-                </a>
-              </button>
+              <a className={globalStyles.btn} href="https://docs.google.com/document/d/1P2kUCIrFSivP2U2qbKlobJE-YOMqtJpUPOVBdU6yR6A/edit?fbclid=IwAR0fmDxmHQWkQSR7Pk1PmSraxgro6gHFg-ld4J37xqZeiX-7I34SGFyRTwQ">
+                Click here
+              </a>
               <br />
               Date: 13 February 2022
               <br />
@@ -224,9 +222,7 @@ export default function Sports() {
               Venue: Tata Sports Complex
               <br />
               Register here:{" "}
-              <button className={globalStyles.btn}>
-                <a href="https://forms.gle/QeKLeb9nCfdx9KqTA">Click here</a>
-              </button>
+              <a className={globalStyles.btn} href="https://forms.gle/QeKLeb9nCfdx9KqTA">Click here</a>
             </p>
           </div>
         </section>

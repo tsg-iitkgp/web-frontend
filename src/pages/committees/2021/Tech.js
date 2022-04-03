@@ -187,16 +187,12 @@ export default function Tech() {
               provided theme.
               <br />
               To check out the entire details,
-              <button className={globalStyles.btn}>
-                <a href=" https://drive.google.com/file/d/1UM04U_QcyMSWQ-3Bc2SoiIDmUwKnmgc8/view?fbclid=IwAR1hTSrRWq_idVUfpn3JgAmypwCC7XWxftAaescR169GqL1gK1HzUpZVUp4">
-                  Click here
-                </a>
-              </button>
+              <a className={globalStyles.btn} href=" https://drive.google.com/file/d/1UM04U_QcyMSWQ-3Bc2SoiIDmUwKnmgc8/view?fbclid=IwAR1hTSrRWq_idVUfpn3JgAmypwCC7XWxftAaescR169GqL1gK1HzUpZVUp4">
+                Click here
+              </a>
               <br />
               Form Link:{" "}
-              <button className={globalStyles.btn}>
-                <a href="https://forms.gle/LbbfJBCtUo3DqAgc9">Click here</a>
-              </button>
+              <a className={globalStyles.btn} href="https://forms.gle/LbbfJBCtUo3DqAgc9">Click here</a>
               Registration Deadline: 4th February 2022, 8 PM
               <br />
               The winners might also get a chance to get seed-funded by
@@ -246,12 +242,9 @@ export default function Tech() {
               understandings of mastering in these competitions. <br />
               <br />
               Link to join MS Teams Channel :{" "}
-              <button className={globalStyles.btn}>
-                {" "}
-                <a href="https://bit.ly/techvistara" style={{ color: "black" }}>
-                  Click here
-                </a>
-              </button>
+              <a className={globalStyles.btn} href="https://bit.ly/techvistara" style={{ color: "black" }}>
+                Click here
+              </a>
               <br />
               Make sure to join in on 26th December 2021, 5:00 PM
               <br />
@@ -347,7 +340,7 @@ export default function Tech() {
           <br />
           <br />
 
-          <h1>Archieves</h1>
+          <h1>Archives</h1>
 
           <h2 className={globalStyles.head2}>Tradex</h2>
         </center>
@@ -456,16 +449,11 @@ export default function Tech() {
               all fun!!
               <br />
               Registration Link:
-              <button className={globalStyles.btn}>
-                <a href=" https://forms.gle/esCWFdW5MLMRq6L98">Click here</a>
-              </button>{" "}
+              <a className={globalStyles.btn} href=" https://forms.gle/esCWFdW5MLMRq6L98">Click here</a>
               <br />
               Registration Deadline: 16th January 2022, 6:00 PM <br />
               Document for reference:
-              <button className={globalStyles.btn}>
-                {" "}
-                <a href="https://bit.ly/tradexkgp ">Click here</a>
-              </button>
+              <a className={globalStyles.btn} href="https://bit.ly/tradexkgp ">Click here</a>
               <br />
               Further information will be mailed to the registered participants.
             </p>
@@ -495,16 +483,15 @@ export default function Tech() {
               <br />
               <br />
               Link to Problem Statement:{" "}
-              <button className={globalStyles.btn}>
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1Hmfomj7pa0o8AZonzxC0O0GNTPU0PjgW/view?usp=sharing"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  Click Here
-                </a>
-              </button>
+              <a
+                className={globalStyles.btn}
+                target="_blank"
+                href="https://drive.google.com/file/d/1Hmfomj7pa0o8AZonzxC0O0GNTPU0PjgW/view?usp=sharing"
+                rel="noreferrer"
+              >
+                {" "}
+                Click Here
+              </a>
             </p>
           </div>
         </section>

@@ -123,9 +123,7 @@ export default function Welfare() {
               before "10th January 2022, 11:59 PM".
               <br />
               Registration Form:-
-              <button className={globalStyles.btn}>
-                <a href="https://forms.gle/4j92tXSdGT8Lt4Cv6">Click here</a>
-              </button>
+              <a className={globalStyles.btn} href="https://forms.gle/4j92tXSdGT8Lt4Cv6">Click here</a>
               <br />
             </p>
           </div>
@@ -166,9 +164,7 @@ export default function Welfare() {
               us in this incredible opportunity to bring about a social change.
               <br />
               Link to submit Project Details:
-              <button className={globalStyles.btn}>
-                <a href="https://forms.gle/71axBULAaZ9DtiKMA">Click here</a>
-              </button>
+              <a className={globalStyles.btn} href="https://forms.gle/71axBULAaZ9DtiKMA">Click here</a>
               <br />
             </p>
           </div>
@@ -244,60 +240,38 @@ export default function Welfare() {
               <br />
               <br />
               26th November:
-              <button className={globalStyles.btn}>
-                <a href=" https://youtu.be/l-7gLRQlxyQ">Forenoon</a>
-              </button>
+              <a className={globalStyles.btn} href=" https://youtu.be/l-7gLRQlxyQ">Forenoon</a>
               &
-              <button className={globalStyles.btn}>
-                <a href="https://youtu.be/hp6K-bz9WRI">Afternoon</a>
-              </button>
+              <a className={globalStyles.btn} href="https://youtu.be/hp6K-bz9WRI">Afternoon</a>
               <br />
               <br />
               27th November:
-              <button className={globalStyles.btn}>
-                <a href=" https://youtu.be/0h8_JwlgTtk">Forenoon</a>
-              </button>
+              <a className={globalStyles.btn} href=" https://youtu.be/0h8_JwlgTtk">Forenoon</a>
               &
-              <button className={globalStyles.btn}>
-                <a href="https://youtu.be/c328-X9G1l0">Afternoon</a>
-              </button>
+              <a className={globalStyles.btn} href="https://youtu.be/c328-X9G1l0">Afternoon</a>
               <br />
               <br />
               28th November:
-              <button className={globalStyles.btn}>
-                <a href=" https://youtu.be/H1sw7gEcLv4">Forenoon</a>
-              </button>
+              <a className={globalStyles.btn} href=" https://youtu.be/H1sw7gEcLv4">Forenoon</a>
               &
-              <button className={globalStyles.btn}>
-                <a href="https://youtu.be/Fj9Zy-luDDM">Afternoon</a>
-              </button>
+              <a className={globalStyles.btn} href="https://youtu.be/Fj9Zy-luDDM">Afternoon</a>
               <br />
               <br />
               29th November:
-              <button className={globalStyles.btn}>
-                <a href="https://youtu.be/GrAJ1hofC94">Forenoon</a>
-              </button>
+              <a className={globalStyles.btn} href="https://youtu.be/GrAJ1hofC94">Forenoon</a>
               &
-              <button className={globalStyles.btn}>
-                <a href="https://youtu.be/9GCP6_RGMsw">Afternoon</a>
-              </button>
+              <a className={globalStyles.btn} href="https://youtu.be/9GCP6_RGMsw">Afternoon</a>
               <br />
               <br />
               30th November:
-              <button className={globalStyles.btn}>
-                <a href=" https://youtu.be/GrAJ1hofC94">Forenoon</a>
-              </button>
+              <a className={globalStyles.btn} href=" https://youtu.be/GrAJ1hofC94">Forenoon</a>
               &
-              <button className={globalStyles.btn}>
-                <a href="https://youtu.be/aUIjpWC1qEY">Afternoon</a>
-              </button>
+              <a className={globalStyles.btn} href="https://youtu.be/aUIjpWC1qEY">Afternoon</a>
               <br />
               <br />
-              <button className={globalStyles.btn}>
-                <a href="https://gymkhana.iitkgp.ac.in/files/handbook.pdf">
-                  Click here to download Induction program handbook
-                </a>
-              </button>
+              <a className={globalStyles.btn} href="https://gymkhana.iitkgp.ac.in/files/handbook.pdf">
+                Click here to download Induction program handbook
+              </a>
               <br />
             </p>
           </div>
