@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Notification.module.css";
+import Styles from "../../styles/components/Navbar/Notification.module.css";
 
 export default function Notification({ event, handleClick }) {
   return (
