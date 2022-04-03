@@ -27,6 +27,7 @@ export default function Societies() {
                     description={item.description}
                     shortform={item.shortform}
                     facebook_link={item.facebook_link}
+                    key={i}
                   />
                 );
               }

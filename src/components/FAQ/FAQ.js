@@ -65,7 +65,7 @@ export default function FA() {
             ))}
           </select>
           <span
-            class="material-icons"
+            className="material-icons"
             style={{
               color: "#000",
               position: "absolute",

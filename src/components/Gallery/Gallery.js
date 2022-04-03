@@ -38,7 +38,7 @@ function Gallery() {
                         style={{ width: 350, height: 350 }}
                       >
                         <img src={img1} alt="..." className="myimg" />
-                        <div class="layer">
+                        <div className="layer">
                           <h3>Illumination</h3>
                         </div>
                       </div>
