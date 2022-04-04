@@ -5,9 +5,9 @@ export default function CommitteesHome() {
   const data = [
     {
       number: 1,
-      heading: "Technology",
+      heading: "Sports and Games",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "/committees/2021/tech",
+      route: "/committees/2021/sports",
     },
     {
       number: 2,
@@ -17,9 +17,9 @@ export default function CommitteesHome() {
     },
     {
       number: 3,
-      heading: "Sports and Games",
+      heading: "Technology",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "/committees/2021/sports",
+      route: "/committees/2021/tech",
     },
     {
       number: 4,

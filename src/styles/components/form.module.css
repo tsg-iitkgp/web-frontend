@@ -1,0 +1,109 @@
+.formContainer {
+    padding: 30px;
+}
+
+.formContainer .header h1 {
+    margin: 20px 10px;
+    color: #4f9bc7;
+}
+
+.formContainer input {
+
+}
+
+.formContainer .footer {
+    text-align: center;
+    padding: 5px;
+}
+
+
+.form {
+    width : 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.form .formRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form .formRow div {
+    position: relative;
+    height: 50px;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.form .formRow button {
+    padding: 15px 20px;
+    width: 100%;
+    margin: 10px;
+    margin-top: 40px;
+    background-color: #5fa8d3;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form .formRow button:hover {
+    background-color: #4f9bc7;
+    transition: all 0.3s ease;
+}
+
+.form input {
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.form label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-transform: initial;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    color: #5fa8d3;
+    border-bottom: 1px solid black;
+}
+
+.form label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.contentName {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .labelName .contentName,
+.form input:valid + .labelName .contentName {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+
+.form input:focus .labelName::after,
+.form input:valid + .labelName:after {
+    transform: translateX(0%);
+}
