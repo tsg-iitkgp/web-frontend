@@ -16,6 +16,8 @@ import Layout from "../../components/Layout";
 import Styles from "./opportunities.module.css";
 
 export default function Opportunities() {
+  document.title = "Opportunities | TSG";
+
   const [isLoading, setIsLoading] = useState(true);
   const history = useHistory();
   const [internshipsData, setInternshipsData] = useState([]);
@@ -58,7 +60,7 @@ export default function Opportunities() {
           </Typography>
           <TableContainer>
             {isLoading ? (
-              <LinearProgress style={{ backgroundColor: "gold" }} />
+              <LinearProgress colorPrimary='#5fa8d3' backgroundColor='gold' />
             ) : (
               <Table>
                 <TableHead style={{ backgroundColor: "#EEBC1D" }}>
@@ -75,6 +77,7 @@ export default function Opportunities() {
                           color: "black",
                           fontWeight: "700",
                           fontFamily: "Lato",
+                          fontSize: '16px'
                         }}
                         key={head}
                         align="center"
@@ -91,14 +94,7 @@ export default function Opportunities() {
                         <TableRow
                           onClick={() => handleClick(index)}
                           key={index}
-                          style={{
-                            backgroundColor: "rgba(255,255,255,0.6)",
-                            cursor: "pointer",
-                            fontFamily: "Lato",
-                            "&:hover": {
-                              backgroundColor: "#131111",
-                            },
-                          }}
+                          className={Styles.tableRow}
                         >
                           <TableCell align="center">{internship[0]}</TableCell>
                           <TableCell align="right">{internship[2]}</TableCell>

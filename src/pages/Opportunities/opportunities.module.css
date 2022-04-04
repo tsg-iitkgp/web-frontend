@@ -4,10 +4,12 @@
   min-height: 80vh;
   font-family: "Lato";
 }
+
 .contact {
   color: rgba(255, 255, 255, 0.8);
   margin-top: 2rem;
 }
+
 .contact .contactDetails {
   letter-spacing: 1.5px;
   font-size: 1.25rem;
@@ -17,6 +19,7 @@
   margin: 2rem 0rem;
   text-align: center;
 }
+
 .internshipDetails {
   letter-spacing: 1.25px;
   font-size: 1.25rem;
@@ -26,13 +29,16 @@
   padding: 2rem;
   margin: 1rem 0rem;
 }
+
 .internshipDetails p {
   margin-bottom: 1rem;
 }
-.internshipDetails > h5 {
+
+.internshipDetails>h5 {
   color: #f1c40f;
   font-weight: 400;
 }
+
 button.apply {
   font-size: 1rem;
   border: 1px solid;
@@ -44,10 +50,33 @@ button.apply {
   transition: background 200ms ease-in-out;
   margin-left: 2rem;
 }
+
 button.apply a {
   color: inherit;
 }
+
 button.apply:hover {
   color: #000;
   background-position: 0;
+}
+
+.tableRow {
+  background-color: #aad8f3;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tableRow:hover {
+  background-color: #90cff3;
+  transition: all 0.2s ease-in-out;
+}
+
+.opportunitiesContainer a {
+  color: #90c2df;
+  transition: all 0.2s ease-in-out;
+}
+
+.opportunitiesContainer a:hover {
+  color: #63bcf0;
+  transition: all 0.2s ease-in-out;
 }

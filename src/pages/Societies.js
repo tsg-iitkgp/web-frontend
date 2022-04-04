@@ -4,6 +4,8 @@ import Layout from "../components/Layout";
 import RotatingCards from "../components/RotatingCards";
 
 export default function Societies() {
+  document.title = "Societies | TSG";
+
   const committees = [
     { name: "Social And Culture", category: "Socult" },
     { name: "Technology", category: "Tech" },
