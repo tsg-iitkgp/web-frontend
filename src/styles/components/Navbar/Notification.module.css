@@ -1,4 +1,4 @@
-.notification {
+/* .notification {
   position: relative;
   margin: 0.75rem auto;
   width: 95%;
@@ -11,7 +11,7 @@
   cursor: pointer;
   box-sizing: border-box;
   transition: all 0.3s ease;
-}
+} */
 
 .notification:hover {
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
