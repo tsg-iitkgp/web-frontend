@@ -1,7 +1,6 @@
 import React from "react";
 import Styles from "./footer.module.css";
-import { FaFacebook, FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
-import logo from "../../images/IIT_Kharagpur_Logo.png";
+import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   const linksList = [
@@ -53,7 +52,10 @@ export default function Footer() {
       <div className={Styles.footerContainer}>
         <div className={Styles.tsgContainer}>
           <div className={Styles.imgContainer}>
-            <img src={logo} alt="IIT KGP Logo" />
+            <img
+              src="/media/images/general/gymkhanaLogo.png"
+              alt="Gymkhana Logo"
+            />
           </div>
           <div className={Styles.tsgDescription}>
             <h2 className={Styles.tsgHeading}>Technology Students' Gymkhana</h2>
@@ -73,10 +75,10 @@ export default function Footer() {
             </a>
             <a
               target="_blank"
-              href="https://twitter.com/tsg_iitkgp"
+              href="https://github.com/tsg-iitkgp"
               rel="noreferrer"
             >
-              <FaTwitter />
+              <FaGithub />
             </a>
             <a
               target="_blank"
@@ -87,10 +89,10 @@ export default function Footer() {
             </a>
             <a
               target="_blank"
-              href="https://github.com/tsg-iitkgp"
+              href="https://www.instagram.com/tsg.iitkharagpur/?hl=en"
               rel="noreferrer"
             >
-              <FaGithub />
+              <FaInstagram />
             </a>
           </div>
         </div>

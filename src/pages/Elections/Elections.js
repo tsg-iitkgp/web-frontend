@@ -46,6 +46,22 @@ export default function Elections() {
           <Box className={Styles.notices}>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
+                Due to some technical reasons, the schedule for election,
+                counting & results and notification of results is changed.
+              </div>
+              <Button>
+                <a
+                  href="/media/files/Revised_Schedule-03042022.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Schedule &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
                 The date for submission of Revised Proposals the posts of Vice
                 President and General Secretaries is extended upto 10:00 am on
                 March 29, 2022.
