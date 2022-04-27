@@ -1742,7 +1742,15 @@
         },
         {
             "year": "2018-2019",
-            "name": "Dibya Das"
+            "name": "Dibya Prakash Das"
+        },
+        {
+            "year": "2017-2018",
+            "name": "Nishchal Kutarekar"
+        },
+        {
+            "year": "2016-2017",
+            "name": "Amey Muley"
         }
     ],
     "Women Representative": [
@@ -1849,6 +1857,28 @@
                 "Rahul Raj",
                 "Antra Saxena"
             ]
+        }
+    ],
+    "Institute Girl Sports' Nominee": [
+        {
+            "year": "2019-2020",
+            "name": "Shriyadita Roy"
+        },
+        {
+            "year": "2018-2019",
+            "name": "Mahima Karumanchi"
+        },
+        {
+            "year": "2017-2018",
+            "name": "Monash Taneja"
+        },
+        {
+            "year": "2016-2017",
+            "name": "Bharti Kaushal Sharma"
+        },
+        {
+            "year": "2015-2016",
+            "name": "Aishwarya Hakande"
         }
     ]
 }

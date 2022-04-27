@@ -13,7 +13,7 @@ export default function Secretaries() {
               name={member.Name}
               designation={member.Post}
               email={member.Email}
-              imgSrc={`/media/images/secyImages/${member.RollNo}.png`}
+              imgSrc={`/media/images/secyImages/${member.RollNo}.jpg`}
             />
           );
         })}
