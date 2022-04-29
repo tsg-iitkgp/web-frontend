@@ -6,12 +6,17 @@ import ContactCard from "../../components/ContactCard";
 import primg from "./../Contacts/Images/prf.png";
 
 const years = [
+  "2021-22",
   "2020-21",
   "2019-20",
   "2018-19",
   "2017-18",
   "2016-17",
   "2015-16",
+  "2014-15",
+  "2013-14",
+  "2012-13",
+  "2011-12",
 ];
 
 export default function PastBearers() {
@@ -44,7 +49,7 @@ export default function PastBearers() {
         {(senateData[currentYear][currentTab]["profs"] !== undefined ||
           currentTab === "specialRecog") && (
           <>
-            <div className={Styles.shead1}> Previous Year Senate </div>
+            <div className={Styles.shead1}> Past Office Bearers </div>
             <div className="cards">
               {currentTab !== "specialRecog"
                 ? senateData[currentYear][currentTab]["profs"]?.map(

@@ -1,4 +1,184 @@
 {
+  "2011-12": {
+    "senate": {
+      "profs": [
+        {
+          "Post": "President (SEPT 2007 - SEPT 2013)",
+          "Name": "Prof. M Bhattacharya"
+        },
+        {
+          "Post": "Honrary Treasurer (AUG 2011 - AUG 2014)",
+          "Name": "Prof. Somesh Kumar"
+        }
+      ],
+      "honours": [
+        {
+          "Post": "Vice President",
+          "Name": "Prateek Agrawal"
+        },
+        {
+          "Post": "Undergraduate Representative",
+          "Name": "Akshat  Verma"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Shashank Singhal"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Shreyas Mahajan"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Pratyaksh Pathak"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Abhishek  Negi"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Shashi Prakash"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Sayanta Sarkar"
+        },
+        {
+          "Post": "Postgraduate Representative",
+          "Name": "Rahul Raghavan"
+        },
+        {
+          "Post": "Research Scholar Representative",
+          "Name": "Abhimanyu Kar"
+        },
+        {
+          "Post": "Public Relations Chairperson",
+          "Name": "Sagnik Chakraborty"
+        }
+      ]
+    }
+  },
+  "2012-13": {
+    "senate": {
+      "profs": [
+        {
+          "Post": "President (SEPT 2007 - SEPT 2013)",
+          "Name": "Prof. M Bhattacharya"
+        },
+        {
+          "Post": "Honrary Treasurer (AUG 2011 - AUG 2014)",
+          "Name": "Prof. Somesh Kumar"
+        }
+      ],
+      "honours": [
+        {
+          "Post": "Vice President",
+          "Name": "Rinshul Chandra"
+        },
+        {
+          "Post": "Undergraduate Representative",
+          "Name": "Mohammed Janipasha"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Somraj Datta"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Surbhi  Narain"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Indranil Hatai"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Akash Singh"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Raunak Mukherjee"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Abhishek Sharma"
+        },
+        {
+          "Post": "Postgraduate Representative",
+          "Name": "Anshu Bansal"
+        },
+        {
+          "Post": "Research Scholar Representative",
+          "Name": "Jose Gilbert J"
+        },
+        {
+          "Post": "Public Relations Chairperson",
+          "Name": "Sayak Bhattacharya"
+        }
+      ]
+    }
+  },
+  "2013-14": {
+    "senate": {
+      "profs": [
+        {
+          "Post": "President (OCT 2013 - AUG 2014)",
+          "Name": "Prof. Joy Sen"
+        },
+        {
+          "Post": "Honrary Treasurer (AUG 2011 - AUG 2014)",
+          "Name": "Prof. Somesh Kumar"
+        }
+      ],
+      "honours": [
+        {
+          "Post": "Vice President",
+          "Name": "Apoorv Jain"
+        },
+        {
+          "Post": "Undergraduate Representative",
+          "Name": "Ishan Garg"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Darshak Bhagat"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Dhatri Reddy"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Serrinesh Bala"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Abhishek  Maleotra"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Himanshu Hitesh Das"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Ramendra Prasad"
+        },
+        {
+          "Post": "Postgraduate Representative",
+          "Name": "Avinash Kumar Sharma"
+        },
+        {
+          "Post": "Research Scholar Representative",
+          "Name": "Shubhankar Chakraborty"
+        },
+        {
+          "Post": "Public Relations Chairperson",
+          "Name": "Aishwarya Roy"
+        }
+      ]
+    }
+  },
   "2014-15": {
     "senate": {
       "profs": [
@@ -14,71 +194,47 @@
       "honours": [
         {
           "Post": "Vice President",
-          "Name": "Ninaad Lohakare"
+          "Name": "Punj Rajan"
         },
         {
           "Post": "Undergraduate Representative",
-          "Name": "Santosh Tyss"
+          "Name": "Vipul Allawadhi"
         },
         {
           "Post": "G.Sec Social & Cultural",
-          "Name": "Ayushi Thakur"
+          "Name": "Pragya Chandra"
         },
         {
           "Post": "G.Sec Social & Cultural",
-          "Name": "Soumya Patel"
+          "Name": "Samay Jain"
         },
         {
           "Post": "G.Sec Sports & Games",
-          "Name": "Aditya Singhania"
+          "Name": "Ankit Gahlawat"
         },
         {
           "Post": "G.Sec Sports & Games",
-          "Name": "Mayank Manjeara"
-        },
-        {
-          "Post": "G.Sec Students' Welfare",
-          "Name": "Devang Upadhyay"
-        },
-        {
-          "Post": "G.Sec Students' Welfare",
-          "Name": "Tapasya Pratap Singh"
+          "Name": "Sumit  Singh"
         },
         {
           "Post": "G.Sec Technology",
-          "Name": "Yogesh Kanik"
+          "Name": "Abhay Srivastava"
         },
         {
           "Post": "G.Sec Technology",
-          "Name": "Ninad Patil"
+          "Name": "Anupam Pedarla"
         },
         {
           "Post": "Postgraduate Representative",
-          "Name": "Aman Damara"
+          "Name": "Meda Vamshi Krishna"
         },
         {
           "Post": "Research Scholar Representative",
-          "Name": "Sambo Sarkar"
-        },
-        {
-          "Post": "Technology Coordinator",
-          "Name": "Shivam  Jha"
-        },
-        {
-          "Post": "Women Representative",
-          "Name": "-------- --------"
+          "Name": "Sourav Kumar Bagchi"
         },
         {
           "Post": "Public Relations Chairperson",
-          "Name": "Akshat Jain"
-        },
-        {
-          "Post": "TSG Editors",
-          "Name": "Rana Madhvendra"
-        },
-        {
-          "Post": "TSG Editors",
-          "Name": "Shruti Priya"
+          "Name": "Hardik Rajpal"
         }
       ]
     }
@@ -564,6 +720,94 @@
         {
           "Post": "TSG Editors",
           "Name": "Rohit A"
+        }
+      ]
+    }
+  },
+  "2021-22": {
+    "senate": {
+      "profs": [
+        {
+          "Post": "President (AUG 2020 - PRESENT)",
+          "Name": "Prof. A K Singh"
+        },
+        {
+          "Post": "Honrary Treasurer (SEPT 2014 - PRESENT)",
+          "Name": "Prof. Kingshook Bhattacharya"
+        }
+      ],
+      "honours": [
+        {
+          "Post": "Vice President",
+          "Name": "Devaki Nandana Vardhineedi"
+        },
+        {
+          "Post": "Undergraduate Representative",
+          "Name": "Aditi Singhania"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Yashraj Bagaria"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Saggurthi Deenaraju"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Akshay Kumar Singh"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Sri Harsha Reddy"
+        },
+        {
+          "Post": "G.Sec Students' Welfare",
+          "Name": "Bhosale Shivam Pravin"
+        },
+        {
+          "Post": "G.Sec Students' Welfare",
+          "Name": "Jeripothula Sindhu"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Vadthya Sanjay Kumar"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Gaurav Kumar"
+        },
+        {
+          "Post": "Postgraduate Representative",
+          "Name": "Kanukuntla Sathwik"
+        },
+        {
+          "Post": "Research Scholar Representative",
+          "Name": "Amit Kumar Singh"
+        },
+        {
+          "Post": "Technology Coordinator",
+          "Name": "Praneeth Reddy Kolanu"
+        },
+        {
+          "Post": "Women Representative",
+          "Name": "Nesara S R"
+        },
+        {
+          "Post": "Public Relations Chairperson",
+          "Name": "Sarthak Goyal"
+        },
+        {
+          "Post": "TSG Editors",
+          "Name": "Roshni Kar"
+        },
+        {
+          "Post": "TSG Editors",
+          "Name": "Angana Mondal"
+        },
+        {
+          "Post": "Institute Girl Sports' Nominee",
+          "Name": "Kritika Bagaria"
         }
       ]
     }
