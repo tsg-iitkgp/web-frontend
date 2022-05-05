@@ -251,6 +251,15 @@ section .description {
     font-size: 14px;
   }
 
+  .centerCard {
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 125%;
+    padding: 0rem 2rem;
+  }
+
+
   .btn {
     background-color: rgb(235, 235, 235);
     color: black !important;

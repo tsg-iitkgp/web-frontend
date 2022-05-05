@@ -189,7 +189,402 @@ export default function Sports() {
           </div>
         </section>
 
+        {/* Other events */}
+
+
         <center>
+
+          <h1>Inter Hall Gymkhana Championship</h1>
+        </center>
+
+        <section>
+          <center>
+            <div className={globalStyles.img2Container}>
+              <img src='https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/277536571_3002948973260916_2106761205599163956_n.jpg?stp=dst-jpg_p552x414&_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=ZPlnCQT6gqEAX-eaAvS&_nc_ht=scontent.fixr3-2.fna&oh=00_AT984lSTLavsZgS2RIGaZo3qcLlcGz2AJ3kxPmkfYTd8WQ&oe=6278D469' alt="timeline" />
+            </div>
+            <div className={globalStyles.imgContainer}>
+              <img src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/277793525_3002949053260908_5825397438240774853_n.jpg?stp=dst-jpg_p552x414&_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=StkeCFwEUJIAX_p9fn5&_nc_ht=scontent.fpat3-3.fna&oh=00_AT_sRUwRoCFa-scU8ZQ9wtmHHbIXkdWdlcqPr1_zp56vIA&oe=6277ABA9' alt="timeline" />
+            </div>
+          </center>
+
+          <p className={globalStyles.centerCard}>
+            Hello everyone,<br />
+            After almost two years we saw everybody engaging again in the spirits of sports with the ever high Hall Tempo. This time all the halls vied for victory in Inter Hall Gymkhana Championships and we witnessed an amazing display of dedication, hard work, and enthusiasm.<br /><br />
+            IIT KGP Sports congratulates all of you for putting supreme efforts and making this an enormous success that instils the feeling of pride in the sporting culture of IIT Kharagpur.
+            We release the final standings of all sports disciplines. Huge congratulations to all the winners!!
+            <br />
+          </p>
+        </section>
+
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall Chess Gymkhana Championship</h2>
+        </center>
+
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/276999150_2999754163580397_3610574985571543070_n.jpg?stp=dst-jpg_p526x296&_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=cq1fV6aC2j0AX8ir5KR&_nc_oc=AQkWe3MLGFhtCLF_oUL-BJ0WFvz_5DOEjTZRMQb4mlVuHNairlq5kqYvC78L7YrZBsh7RtNXtg61fiE1Ic37u4IG&_nc_ht=scontent.fpat3-3.fna&oh=00_AT8nqos_lQz58qND4sIuKttA_oPBMSOz4Rl8N5t_XuLjCg&oe=6278E45B" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p><br />The battle now starts on 64 squares to outsmart the opponent and demonstrate your wit and intellect with Interhall Chess Gymkhana Championship.<br /><br />
+              Date- 2nd & 3rd April, 2022<br />
+              Time- 10 AM<br />
+              Venue- Multipurpose Hall, Technology Students' Gymkhana. <br />
+              You can follow the updates on<br /><br />
+              For Men:
+              <a className={globalStyles.btn} href="https://chess-results.com/tnr624740.aspx?lan=1">Click here</a><br />
+              For Women:<a className={globalStyles.btn} href="https://chess-results.com/tnr624748.aspx?lan=1">Click here</a>
+              <br />
+              Prepare your pawns, bring the bishops out, row forward with rooks-strategise the best moves for the ultimate checkmate!!
+
+            </p>
+          </div>
+        </section>
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall Basketball Gymkhana Championship</h2>
+        </center>
+
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/277175964_2995684780654002_1417971029852941367_n.jpg?stp=dst-jpg_p180x540&_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=up-lIrm0aB8AX8O9mY7&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fccu20-1.fna&oh=00_AT9Q6rJ5c72Apru2wlacP6QsBCUVlyW941Lnj9PhPeW7AA&oe=6277AE56" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p><br /><br />
+              After fiercely fiery matches, get ready to witness the intense action in InterHall Basketball Gymkhana Championship quarterfinals.<br /><br />
+              27th March 5:00 PM - Nehru vs RP <br />
+              27th March 6:30 PM - MMM vs BRH<br />
+              27th March 8:00 PM - RK vs Azad <br />
+              Venue - TSG Basketball Court <br /><br />
+              Don't miss the ultimate battle to the finals!!<br />
+              All the best teams!!<br />
+
+            </p>
+          </div>
+        </section>
+
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall Weightlifting Gymkhana Championship</h2>
+        </center>
+
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/277109311_2994776897411457_5663520540394839642_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=kQIScmzQsbkAX-bcslf&_nc_ht=scontent.fpat3-2.fna&oh=00_AT82yOmtE12YYD388lDwMOc9aXgvac-RuAMp4uj0w9IiNw&oe=627815FA" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p><br /><br />
+              "Champions aren’t made in the gyms. Champions are made from something they have deep inside them-a desire, a dream, a vision."<br />
+              Muhammad Ali<br /><br />
+              We are glad to begin the Interhall Weightlifting Gymkhana Championship. Join in to get amped for another intense and immense competition.<br /><br />
+              Date- 26th March, 2022<br />
+              Venue- Multipurpose room ,TSG<br />
+              IIT KGP Sports wishes all the participants great luck. Work hard and lift the best.
+
+            </p>
+          </div>
+        </section>
+
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall Basketball Gymkhana Championship</h2>
+        </center>
+
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/276173365_2992138517675295_8424410195534420873_n.jpg?stp=dst-jpg_s720x720&_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=fcLdm_d4pTEAX9kNjwq&_nc_ht=scontent.fpat3-3.fna&oh=00_AT-VdPYF8yT6R6IZ_uk9rp_sIVffOfqqZungbGCy9ppiDg&oe=6278DCE4" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p><br /><br />
+              “Ask me to steal, block out, sacrifice, lead, dominate, anything. But it’s not what you ask of me it’s what I ask of myself.”<br />
+              ― LeBron James.<br /><br />
+              Here is another chance to up the game guys with Interhall Basketball Gymkhana Championship 2022. Push yourself with crazy athleticism, endless stamina, and relentless commitment to shoot victory.<br /><br />
+              22nd March 2022<br />
+              6:00 PM<br />
+              TSG Basketball Court<br />
+              Defend , Dribble ,Dominate!!<br />
+
+            </p>
+          </div>
+        </section>
+
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Women’s Open IIT Cricket</h2>
+        </center>
+
+        <section>
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img src='https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/277107273_2991291117760035_5986030557570545470_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=GqhmhzY23r8AX9HV7RK&_nc_ht=scontent.fixr3-2.fna&oh=00_AT_thMsrhN0A3Q0NKjg7IU4GYRAUohqaPbOzaCqyX3gUDg&oe=6278D7AA' alt="timeline" />
+            </div>
+          </center>
+
+          <p className={globalStyles.centerCard}>
+            We are glad and extremely proud to announce the first-ever Women's Open IIT Cricket.
+            Get ready, girls, to rule the pitch and break the boundaries. This will surely be an experience like no other.
+            Display the best of your skills as glory and incredible exciting prizes are on the line, which includes-<br /><br />
+            Exclusive T-shirts for Winning Team<br />
+            Victory Caps for Runners Up Team<br />
+            Bag for the Best Player<br />
+            So get ready and play!!<br />
+            <br />
+          </p>
+        </section>
+
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall Tennis Gymkhana Championship</h2>
+        </center>
+
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/275772413_2990869897802157_6618755985063896162_n.jpg?stp=dst-jpg_s720x720&_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=UGU7VQArL70AX_d-Zq2&_nc_ht=scontent.fccu20-1.fna&oh=00_AT-1aI9D5D-bI7It5dWZBKcF3E-oDx2JX5pz4LNQ-8K5mg&oe=62788ED5" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p><br /><br />
+              Hello everyone,<br />
+              It is time to channelize your spirit and effort on the tennis court with Interhall Tennis Gymkhana Championship and bag victory for your halls.
+              Tennis, the game that tests a person’s hard work, determination, and grit. A simple game of tennis is enough to inspire us in so many ways.
+              Huge luck to all the players!!<br /><br />
+              Date - 21st March 2022<br />
+              Time - 6:00 pm <br />
+              Venue - TSG Tennis Complex<br />
+              Check out the live scores on the official Gymkhana Website - https://gymkhana.iitkgp.ac.in/
+
+            </p>
+          </div>
+        </section>
+
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall Badminton Gymkhana Championship</h2>
+        </center>
+
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/275537810_2988568551365625_1818375803603006116_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=zONkQmYc2DQAX-g3ME2&_nc_oc=AQmoenlm6cH5ggWBtvy71oV940LXK5duMGhAjcwKG9SNED1rGMZ92fLb_N0yOZj2FqJLgbCBpFUCAyFbqJ25MvJO&_nc_ht=scontent.fccu20-1.fna&oh=00_AT-O4OGGn4p8cs57grsOkudhwP1M4j9HuBcLJSCUlvVdWQ&oe=6279018F" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p>
+              <br />"Your dreams are what define your individuality. They have the power to give you wings and make you fly high."<br />
+              - P. V. Sindhu<br />
+              Now is the time to battle this out on the Badminton Court.<br />
+              IIT KGP Sports invites you all to Inter Hall Badminton Gymkhana Championship 2022.
+              5:45 pm onwards<br /><br />
+              Venue -TSG Badminton courts.<br />
+              The live scores of the Badminton Match can be viewed on the official website of Technology Students' Gymkhana.
+              https://gymkhana.iitkgp.ac.in/sports/ <br /><br />
+              All the best teams!!<br />
+
+            </p>
+          </div>
+        </section>
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall Athletics Gymkhana Championship</h2>
+        </center>
+
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fixr3-1.fna.fbcdn.net/v/t39.30808-6/275995284_2988477521374728_6289223210566221188_n.jpg?stp=dst-jpg_s640x640&_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=Gjo9aH-mPCQAX9bC7oP&_nc_ht=scontent.fixr3-1.fna&oh=00_AT9S-TjLQ0TNGrnVU8KyUn2M8HSvZ_sw7Bi7E10XHuAzcQ&oe=6277C953" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p>
+              <br /><br />"An athlete runs with strength in body, passion in mind, and hope in heart."<br /><br />
+              It is time to flag-off InterHall Athletics Gymkhana Championship. <br />
+              Get ready to witness the ultimate fiery showdown on the track where each second counts.<br />
+              IIT KGP Sports wishes luck to all the players.Give it all guys!!<br /><br />
+              Date- 17 th March 2022<br />
+              Venue- Jnan Ghosh Stadium<br />
+
+            </p>
+          </div>
+        </section>
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall Volleyball Gymkhana Championship</h2>
+        </center>
+
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/275438918_2986926788196468_2150300587335912937_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=W7DxbNlrVRIAX-m5TYi&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fpat3-2.fna&oh=00_AT-4uCAMVbzU8Xvd_E8L8MieANd2jSjeZwDYAR1whoNSHg&oe=62783313" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p>
+              <br /><br /><br />
+              Continuing with the power-packed sports action, now is the time to witness the vying on the Volleyball Court.
+              Steel yourself as we are beginning with Interhall Volleyball Gymkhana Championship 2022.<br /><br />
+              Date -15th March 2022<br />
+              Venue -TSG Volleyball courts.<br />
+              The live scores of the Volleyball Match can be viewed on the official website of Technology Students' Gymkhana.<br />
+
+            </p>
+          </div>
+        </section>
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall Football Gymkhana Championship</h2>
+        </center>
+
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fixr3-1.fna.fbcdn.net/v/t39.30808-6/274988325_2979862545569559_7547335046947845789_n.jpg?stp=dst-jpg_s720x720&_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=J5ZO0okLalcAX-KtbZM&_nc_ht=scontent.fixr3-1.fna&oh=00_AT8RS12hy2QW_w4yWnzD6qWF3k9krsuA0Qn-HXomv0TiHw&oe=62776289" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p>
+              <br /><br /><br />
+              As the pandemic is shredding way, the vivacious campus life is surfacing again and so is the excitement and fierce competitions of Inter Hall.
+              And now is the time to battle this out on the football ground.<br />
+              We invites you all to Inter Hall Football Gymkhana Championship 2022.<br />
+              Prepare your teams, practice with purpose and play with passion as there is no greater glory than the victory of your halls!!!<br />
+              Date- 5th March 2022<br />
+              Venue- TATA Steel Sports Complex<br />
+              The live scores of the football match can be viewed on the official website of Technology Students Gymkhana <br />
+
+            </p>
+          </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Workshop on Power Lifting</h2>
+        </center>
+
+        <section>
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img src='https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/275107368_2977716405784173_6667737225264189414_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=4BAMxfKBeXYAX93mca4&_nc_ht=scontent.fccu20-1.fna&oh=00_AT_FB92iSMMlCD77i7PmBTFrqygNQ5y2DNVlXOcl7C6s9Q&oe=62777727' alt="timeline" />
+            </div>
+          </center>
+
+          <p className={globalStyles.centerCard}>
+
+            Becoming better, stronger, and more powerful physically and mentally enhance your confidence and has become an indispensable part of a healthy body and mind. IIT KGP Sports invite all of you to the Powerlifting Workshop. Here is the opportunity for all the aspirers to experience the joy of strength.<br />
+            The session will be guided by professional trainers and you can learn fundamental techniques of strength training.<br />
+            Date-6th March 2022<br />
+            Venue- Technology Students' Gymkhana<br />
+            Note that the workshop is open for both boys and girls.
+            <br />
+          </p>
+        </section>
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Interhall cricket Gymkhana Championship</h2>
+        </center>
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fixr3-1.fna.fbcdn.net/v/t39.30808-6/274586446_2975268009362346_4025335993063334488_n.jpg?stp=dst-jpg_p526x296&_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=BqKHHVdnDGQAX90Oy-e&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fixr3-1.fna&oh=00_AT_4QwOWfvqV0Mj0Omfskt4VH0MwzRhNv_nXrdaZEnE-mQ&oe=6278AE48" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p>
+              <br />
+              "A bat is not a toy, it is the weapon"- Virat Kohli<br />
+              Brace up people as we are commencing the Inter Hall Cricket Gymkhana Championship. This will be your pitch to score fours and sixes, showcase your skills, bowl out your competitions and make your halls the cricket champion.<br />
+              Get ready to behold who bat, bowl, and field their way to the top of the table in this fast and exciting action.<br /><br />
+              Date- 27th February 2022<br />
+              Venue- Tata Sports Complex<br />
+              The live scores of the cricket match can be viewed on the official website of Technology Students Gymkhana
+              https://gymkhana.iitkgp.ac.in/<br />
+              IIT KGP Sports wishes all the best to all the teams!
+
+            </p>
+          </div>
+        </section>
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Open IIT Chess Tournament</h2>
+        </center>
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <center>
+              <br />
+              <img className={globalStyles.cardImg} src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/274464776_2973351276220686_6049045102898904609_n.jpg?stp=dst-jpg_p526x296&_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=s1O62xg6OW0AX87toMW&_nc_ht=scontent.fpat3-3.fna&oh=00_AT99iENDD_ilfnwj43XSPqTufoQC5swCSGSZxUk5k-rMww&oe=62785380" alt="khokho" />
+            </center>
+          </div>
+
+          <div className={globalStyles.rightCard}>
+            <p>
+              <br />
+              Brace up one and all, Technology Students' Gymkhana, IIT Kharagpur, brings to you the Open IIT Chess Tournament on Sunday, 27th February. All current students of IIT Kharagpur are eligible to participate in the tournament.<br />
+              Battle it out on those 64 squares to become one of KGP's best, and also win some exciting prizes! Exceptional players will also be considered for selection into the Chess Club.<br /><br />
+              Tournament details:<br />
+              27th February, 2 PM<br />
+              Format: Arena Tournament, Blitz | 3 min + 0 sec <br />
+              Duration: 90 minutes<br />
+
+            </p>
+          </div>
+        </section>
+
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
           <h2 className={globalStyles.head2}>Open IIT Kho Kho</h2>
         </center>
         <section className={globalStyles.cmtCard1}>
