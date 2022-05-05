@@ -129,6 +129,7 @@ export default function Socult() {
           </div>
         </section>
 
+
         <section>
           <h1>Illumination 2021</h1>
           <section className={`${Styles.illuVideoSection}`}>
@@ -140,6 +141,397 @@ export default function Socult() {
               className={Styles.illuVideo}
             />
           </section>
+
+          {/* other events */}
+
+
+          <center>
+
+            <h1>Inter Hall Gymkhana Championship</h1>
+          </center>
+
+          <section>
+            <center>
+              <div className={globalStyles.imgContainer}>
+                <img src='https://scontent.fpat3-1.fna.fbcdn.net/v/t39.30808-6/278474248_5023076021109629_2278707443583791271_n.jpg?stp=dst-jpg_s720x720&_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=kz7n9GTCaDoAX9gWPxT&_nc_ht=scontent.fpat3-1.fna&oh=00_AT_qYVd9LbBBvV0jKWE8bxBtQXWJ9b8Wf37peLB09Gb08g&oe=6277AC69' alt="timeline" />
+              </div>
+            </center>
+
+            <p className={globalStyles.centerCard}>
+              Hello everyone,<br />
+              After almost two years we saw everybody engaging again in the spirits of Social and Cultural with the ever high Hall Tempo. This time all the halls vied for victory in Gymkhana Championships and we witnessed an amazing display of dedication and enthusiasm.<br />
+              We release the final standings of all Social and Cultural events . Huge congratulations to all the winners!!<br />
+              <br />
+            </p>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Gymkhana Championship General Quiz</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src="https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/277681201_4983568178393747_7378865887091063011_n.jpg?stp=dst-jpg_p526x296&_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=E1F4cVHRoX8AX-A7lpH&_nc_ht=scontent.fpat3-2.fna&oh=00_AT-zi5w4TzSP6QSeu16H40GOj_HiT3IWf42JR31h2D2gCA&oe=62782F78"
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+                Are you facts geek to consume all the latest updates around the world starting from economic and technology to movies and music?<br />
+                Then brace up ,as this is your chance to exhibit the profound general knowledge you have accumulated and lead your Halls to a glorious feat at Gymkhana General Quiz Championship.<br /><br />
+                Date: 3rd April, 2022<br />
+                Venue:V-3<br />
+                Time:10 A.M<br />
+              </p>
+            </div>
+          </section>
+
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>What's the Good Word</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src="https://scontent.fixr3-1.fna.fbcdn.net/v/t39.30808-6/277661096_4973065519444013_7690716440317981623_n.jpg?stp=dst-jpg_p526x296&_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=fcK3rEFzUZYAX9Lh0gJ&_nc_ht=scontent.fixr3-1.fna&oh=00_AT_ln-tRREl34Z2kuypow4RfX-YeoSRVXIomFWIjzaQDqA&oe=6278A5B3"
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+                Hello everyone,<br />
+                " Hot,Red,Rash,Extinguish, Water...." . Can you guess a relatable word these words?<br />
+                Brainstorm junta,you can do it? For those who could not crack it - it is fire. This is amusing ,right?<br />
+                We are here to escalate the thrill by testing how well- versed you are with words with this entertaining event of guessing- *What is the good word* .<br />
+                Think creatively,think fast,think deeply too but be cautious to not spill out the key word directly.<br /><br />
+
+                Date- 30th March, 2022<br />
+                Event-Venue: F-244<br />
+                Time:6PM<br />
+                It is time to win with your words and not action!!
+              </p>
+            </div>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Gymkhana Championship Sketching</h2>
+          </center>
+
+          <section>
+            <center>
+              <div className={globalStyles.imgContainer}>
+                <img src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/277533893_4969656569784908_8914178276429089647_n.jpg?stp=dst-jpg_p526x296&_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=x1QTcT4K-l8AX_hKsJ5&_nc_ht=scontent.fpat3-3.fna&oh=00_AT-iNYa0AAr8YB_jJnovp2UGFid3ITRZTGUQ-sY0hE4hhA&oe=6277D6EE' alt="timeline" />
+              </div>
+            </center>
+
+            <p className={globalStyles.centerCard}>
+              Sketch your heart out. Display  your inner artist through Gymkhana Championship Sketching.<br />
+              Date: 29/03/2022<br />
+              Time: 6:30pm - 9:30pm<br />
+              Venue: Room S-301 Main building<br />
+              Think creative and innovate!!<br />
+              <br />
+            </p>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Gymkhana Championship Groups</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src="https://scontent.fpat3-1.fna.fbcdn.net/v/t39.30808-6/277574447_4969592293124669_7925819959598826130_n.jpg?stp=dst-jpg_p526x296&_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=RDADidSo5_0AX9zEXPC&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fpat3-1.fna&oh=00_AT_5jhj8D__Exf-pE_0-MZQOiwT4DlqCDX8OKomqR0nZ9w&oe=6278195F"
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+                We are excited to announce the Gymkhana Championship Groups competition. All the musical minds,get ready to radiate through your rhythm and harmony.<br /><br />
+                Date-28/03/2022<br />
+                Venue-Tagore Open Air Theatre<br />
+                Time-6:30PM<br />
+                Please go through the link for rules pertaining to the event<br />
+              </p>
+            </div>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Gymkhana Championship Cartooning</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src="https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/277165183_4955168351233730_2417056281184433224_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=EtWym28wNVoAX-IKmC5&_nc_ht=scontent.fpat3-2.fna&oh=00_AT86QLTiN2DlBFDuHNXBkyL_xrOv_M09pOouyy9lqQHLjw&oe=6277E1CC"
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+                Art is not what you see but what you make others see. Bring out your inner artist through Gymkhana Championship Cartooning.<br /><br />
+                Date: 23/03/2022<br />
+                Time: 6pm - 9pm<br />
+                Venue: Room S-301 Main building<br />
+              </p>
+            </div>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />.
+          </center>
+          <h1>Gymkhana Championship Choreography</h1>
+          <section>
+            <center>
+              <div className={globalStyles.imgContainer}>
+                <img src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/275782044_4947866231963942_8580216254396779810_n.jpg?stp=dst-jpg_p526x296&_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=c9CBQx4y7xsAX9QjrB2&_nc_ht=scontent.fpat3-3.fna&oh=00_AT8V_QgO96ZXwdTA8wkPscqg48O0C9wTlqJ4qbAxLXENsw&oe=62785A08' alt="timeline" />
+              </div>
+            </center>
+
+            <p className={globalStyles.centerCard}>
+              Dance is like dreaming with your movements, it is like the poetry of foot and it paves the way for an incredible form of expression. <br />
+              Get ready people as you have the opportunity  to open your heart and pour out creativity with Gymkhana Championship Choreography.Be powerful, be larger than life, be passionate and most of all enjoy each step along the way.<br /><br />
+              Date: 20th and 21st March 2022<br />
+              Venue: Netaji Auditorium<br />
+              Time: 8:00 PM<br />
+              <br />
+            </p>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Gymkhana Championship Eastern Instrumentals</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/277461971_4973129532770945_5360935134475237405_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=_GsvtRT6FWQAX_Agpgu&_nc_ht=scontent.fpat3-3.fna&oh=00_AT_LS8LkD8Aln2xK48COtVvuTOhG7VHK2sKZIzTvhsxf7g&oe=62777DC8"
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+                We are excited to announce the Inter Hall Eastern Instrumental competition. All the musical minds, get ready to radiate through your rhythm and harmony.<br /><br />
+                Date-16/03/2022<br />
+                Venue-Raman Auditorium<br />
+                Time-7:00PM<br />
+                Judges: Pratik Sarkar , Devyani Pareek Sarkar<br />
+              </p>
+            </div>
+          </section>
+
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Gymkhana Championship Debate</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src="https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/275500237_4918858311531401_8665073752275165107_n.jpg?stp=dst-jpg_s720x720&_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=T6nAKeVwDsgAX_pA2kr&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fixr3-2.fna&oh=00_AT99utaVY0KLKDAeYfZezgVhp8nwBTXk5oPkKXvMoqVPhA&oe=627740CC"
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+
+                " For good ideas and true innovation, you need human interaction, conflict, argument, debate."<br /><br />
+                Are you a great speaker and spontaneous thinker? Can you make your opinions turn the table? Then, come on people, as it is the time to showcase your debating skills and take them aside for your halls. Cultural, IIT Kharagpur invites you all to speak your mind with Gymkhana Championship Debate. Only with words as your weapons, facts as your shield, and logic as your force can you win this battle.<br />
+                𝗗𝗮𝘁𝗲-𝟵𝘁𝗵 𝗠𝗮𝗿𝗰𝗵 𝟮𝟬𝟮𝟮<br />
+                𝗩𝗲𝗻𝘂𝗲- 𝗠𝗮𝗶𝗻 𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴, 𝗙𝟮𝟰𝟰<br />
+                𝗧𝗶𝗺𝗲: 𝟳𝗽𝗺<br />
+                𝗧𝗼𝗽𝗶𝗰: 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗶𝘀 𝗮 𝗳𝗶𝗻𝗲 𝗱𝗿𝗲𝗮𝗺 𝘁𝗵𝗮𝘁 𝗺𝗮𝘆 𝘁𝘂𝗿𝗻 𝗶𝗻𝘁𝗼 𝗱𝗮𝗻𝗴𝗲𝗿𝗼𝘂𝘀 𝗿𝗲𝗮𝗹𝗶𝘁𝗶𝗲𝘀.
+              </p>
+            </div>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Thermocol and Clay Modelling</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/275232719_4909678275782738_4413752924008605117_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=XROD5UEz61kAX8MwO0z&_nc_ht=scontent.fpat3-3.fna&oh=00_AT9BL2yae_eDN7ZBMl0T-wJ1_To0sxLiX6lU3qMCRndpZQ&oe=627840F2"
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+
+                If you are an artist -driven by passion,delighted by creation,enthralled with expression,fueled by compulsion and blindsided by inspiration-
+                then get ready to bring fruition of your creativity and inner artist with Inter Hall Thermocol and Clay Modelling. It's time  bestow your imagination a shape,a structure,a story ,a spectacle like no other  and paint success for your halls.
+                Date-06/03/2022<br />
+                Time: 12:00PM - 6:00PM<br />
+                Venue: S-301 Main building<br /><br />
+                Think creatively and innovatively to .This is because motivation creates excitement and enthusiasm to make good models!!<br />
+
+              </p>
+            </div>
+          </section>
+
+
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Short Film Making</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/275526473_4918859071531325_6447600835687438706_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=G4aU3t_k42oAX8Zw0hL&_nc_ht=scontent.fpat3-2.fna&oh=00_AT_SudyUALYUuBU5MYX1MW9LLPb2PH5mgr2fpMgg0UMBvg&oe=62781E5B'
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+
+                “ Film is a great tool to portray emotions, thoughts, stories, tragedies, happiness, sadness....it is a chance to live many lifetimes”<br /><br />
+                We bring to you an adrenaline-filled competition to tell  tales in your creative style.  Giving a medium to all the geniuses who believe in showing the world unseen with Inter Hall Short film making Gymkhana Championship.<br />
+                Theme release: 02nd March<br />
+                Submission Deadline: 02nd April<br />
+              </p>
+            </div>
+          </section>
+
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />.
+          </center>
+          <h1>February Timeline</h1>
+          <section>
+            <center>
+              <div className={globalStyles.imgContainer}>
+                <img src='https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/274993816_4895030937247472_7992800219849746948_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=wzNc2A4z90AAX84BmiC&_nc_ht=scontent.fixr3-2.fna&oh=00_AT84RfGNKA8bvm4p1xUFoV_XOexzDBFO6dF8KFfTD-qcmA&oe=627935D8' alt="timeline" />
+              </div>
+            </center>
+
+            <p className={globalStyles.description}>
+              This year began with lots of opportunities, fun and enthusiasm. To keep the excitement going we packed up the first month with quite a few creative and competitive events. We highly appreciate your ebullient participation until now.<br /><br />
+              Needless to say, there are other extremely exhilarating activities coming up for you all. So keep up the high spirit.We hope you enjoy all the upcoming activities vivaciously.
+              Do have a look on the event's timeline below.<br /><br />
+              So stay tuned to stay thrilled!!!!<br />
+              <br />
+            </p>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Open IIT Painting</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/273928579_4851923144891585_3077319650817363625_n.jpg?stp=dst-jpg_s720x720&_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=LvSK93g3fugAX_nxQSP&_nc_ht=scontent.fpat3-2.fna&oh=00_AT9i_btzTwkMmWKMzl_KwiD2EVkMJDNszt6Af9WrOKFfhg&oe=6278B1F3'
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+
+                There is something beautiful about a blank canvas, the nothingness of the beginning that is so simple and breathtakingly pure. It’s the paint that changes its meaning and the hand that creates the story.<br />
+                Painting is a line around the thought.  It is your expression, your imagination, your perception ,your creation that channels the inner emotions through beautiful colors on a blank canvas. <br /><br />
+                Technology Students' Gymkhana brings you an opportunity to unleash your inner artist and paint to reveal your love for art through OPEN IIT PAINTING.<br />
+                So, all the artists out there get registered by: 24/02/2022 <br />
+                Date of the event: 26/02/2022 <br />
+                Get ready to paint the magic!!!
+              </p>
+            </div>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Solo Dance</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/273414376_4845745065509393_427254912326302376_n.jpg?stp=dst-jpg_s720x720&_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=SZn_Ak4rEYoAX_mjPgQ&_nc_ht=scontent.fpat3-3.fna&oh=00_AT9t8N0-tO9vYUb4fvc9iHA9K3Rc5hBGeP0wQhaYPVKx6A&oe=62785668'
+
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+
+                “Dance is the Joy of Moment and the Heart of Life”<br /><br />
+                Technology Students’ Gymkhana, IIT Kharagpur summon all the dance enthusiasts to draw in a breath, kick off your shoes, and dance. Reveal your passion for dance and surrender to the music as you channel your grace, swag, or style.<br /><br />
+                Tune in and Twirl !!
+              </p>
+            </div>
+          </section>
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Matribhasa Diwas</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/273770277_4839487479468485_8290566790941818447_n.jpg?stp=dst-jpg_p526x296&_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=KvFkfJoJJR0AX-3xV0A&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fpat3-2.fna&oh=00_AT9epgOWyXNrkO9unQi2t-n9J-hsfHoKEwF6i7PrDFkCSg&oe=62778CFA'
+                alt="Music result"
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+
+                <br />
+                Language is the dress of thought. Language is culture, the tradition of living societies. The kaleidoscope of languages is unseen threads that link the massive- colorful fabric of the past to the beautiful couture of the present. <br /><br />
+                Matri Bhasha Diwas, observed on 21st February, promotes the dissemination of the mother tongue to inspire solidarity based on understanding, tolerance, and dialogue. On the occasion of this momentous celebration of our lineage and pride, Social and Cultural, Technology Students’ Gymkhana invites you all to reflect on our cultural and linguistic identity to celebrate the essence and magic of unity in diversity.
+                We are organizing a host of activities to depict diverse forms of literature and arts which include: <br /><br />
+                • Elocution <br />
+                • Debating <br />
+                • Essay Writing <br />
+                • Painting <br />
+                • Music <br />
+                • Dramatics <br />
+              </p>
+            </div>
+          </section>
+
+
+
+
+          <center>
+            <hr className={globalStyles.hrLine} />.
+          </center>
           <h1>January Timeline</h1>
           <section>
             <center>
