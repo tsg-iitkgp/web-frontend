@@ -88,6 +88,68 @@ export default function Welfare() {
           </div>
         </section>
 
+        {/* other events */}
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Rubik's Cube Solving</h2>
+        </center>
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <img
+              className={globalStyles.cardImg3}
+              src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/273528584_312562670837148_4008439577527420_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=eqCYlWwfJiMAX-jVzYh&_nc_ht=scontent.fpat3-2.fna&oh=00_AT_-8hEwqdcVIcHAbP4f87j7yyWjhUF6Y8z0HGqSDc4wSA&oe=62780522'
+
+              alt="Music result"
+            />
+          </div>
+          <div className={globalStyles.rightCard}>
+            <p>
+              <br />
+              Hola, kgpians!<br /><br />
+              In continuance of the power-packed week of SAMYOG: CONNECT IIT KHARAGPUR, the Students’ Welfare Committee proudly brings to you yet another exciting and helpful beginner-friendly workshop on RUBIK’S CUBE SOLVING. If you’re that person who always wanted to solve it but could not proceed beyond a row or a face, went through a bunch of online formulas that did not make much sense, this is your opportunity to be able to directly interact with a couple of pros and learn how to solve it the simplified way!<br /><br />
+              The session will take place this Thursday, 10th February, starting at 6 PM. The speakers for the session are two of our very own kgpians, KARAN UPPAL and SAI KALYAN. Post-workshop, we will also have a FAST-SOLVING CHALLENGE to provide a platform to all the pros out there!<br />
+              So what are you waiting for? Grab your Rubik's cube and get ready to finally be able to solve it, and call your pro-friends to register and show off their skills! Videos of the top 3 performers will be posted on our Facebook page.<br /><br />
+              Looking forward to an informative and interactive session!
+
+            </p>
+          </div>
+        </section>
+
+
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Jamming Session</h2>
+        </center>
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <img
+              className={globalStyles.cardImg}
+              src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/273411637_311136570979758_2649224926605286327_n.jpg?stp=dst-jpg_s720x720&_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=HvkvaaYFSl4AX-O1-vo&_nc_ht=scontent.fpat3-3.fna&oh=00_AT_vAq4253QhdIHG-33hLVkmt521jkXKWxkhu6ZnlWBpZQ&oe=627952AA'
+
+              alt="Music result"
+            />
+          </div>
+          <div className={globalStyles.rightCard}>
+            <p>
+              <br />
+              Greetings, fellow kgpians!<br /><br />
+              To start off the last week of SAMYOG: <br />Connect IIT Kharagpur on an energetic note, theStudents’ Welfare Committee, Technology Students’ Gymkhana brings to you aJAMMING SESSION aimed at giving all the talented musicians out there an opportunity to
+              express themselves.<br /><br />
+              The stage is open to anyone whose talent is looking for an audience, andfree tickets are available for anyone who is ready to hype the performers up!
+              The session will take place this Monday, <br />7th of February, starting at 6 PM.<br /><br />
+              The songs that have been requested will be updated in this sheet<br />
+              https://tinyurl.com/song-requests-sheet accessible to everyone. The performers can go throughit and the ones who perform one of the requested songs will be given priority over other
+              performers.<br /><br />
+              Looking forward to a memorable evening filled with music and joy!
+            </p>
+          </div>
+        </section>
+
+
+
+
         <center>
           <hr className={globalStyles.hrLine} />
           <h2 className={globalStyles.head2}>English Mentorship Program</h2>
