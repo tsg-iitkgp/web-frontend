@@ -48,7 +48,7 @@ export default function Chart(props) {
       }}
       labelSkipWidth={12}
       labelSkipHeight={12}
-      labelTextColor={{ from: "color", modifiers: [["darker", 0]] }}
+      labelTextColor={{ from: "color", modifiers: [["brighter", 5]] }}
       legends={[
         {
           dataFrom: "keys",
