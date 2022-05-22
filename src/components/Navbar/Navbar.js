@@ -187,13 +187,17 @@ export default function Navbar() {
               </Badge>
               {notification.click && (
                 <div className={Styles.notifications}>
-                  {highlightEvents.map((event, index) => (
-                    <Notification
-                      key={index}
-                      event={event}
-                      handleClick={handleNotiClick}
-                    />
-                  ))}
+                  {highlightEvents.length ? (
+                    highlightEvents.map((event, index) => (
+                      <Notification
+                        key={index}
+                        event={event}
+                        handleClick={handleNotiClick}
+                      />
+                    ))
+                  ) : (
+                    <p style={{ padding: "1rem" }}>No Notifications</p>
+                  )}
                 </div>
               )}
             </li>

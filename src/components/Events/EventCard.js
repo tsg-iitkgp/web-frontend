@@ -18,37 +18,35 @@ export default function EventCard({
   }
   return (
     <div className={blogCardClass}>
-      {
-        imgSrc && (
-          <div className={Styles.meta}>
-            <div
-              className={Styles.photo}
-              style={{
-                backgroundImage: `url(/media/images/events${imgSrc})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            ></div>
-            <ul className={Styles.details}>
-              <li className={Styles.author}>
-                <a href="www.google.com" alt="secy_responsible">
-                  {" "}
-                </a>
-              </li>
-              <li className={Styles.author}>
-                <a href="www.google.com"> </a>
-              </li>
-            </ul>
-          </div>
-        )
-      }
+      {imgSrc && (
+        <div className={Styles.meta}>
+          <div
+            className={Styles.photo}
+            style={{
+              backgroundImage: `url(/media/images/events${imgSrc})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+          <ul className={Styles.details}>
+            <li className={Styles.author}>
+              <a href="www.google.com" alt="secy_responsible">
+                {" "}
+              </a>
+            </li>
+            <li className={Styles.author}>
+              <a href="www.google.com"> </a>
+            </li>
+          </ul>
+        </div>
+      )}
       <div className={Styles.description}>
         <h1>{title}</h1>
         <h2>{date}</h2>
         <p> {description}</p>
-        <p className={Styles.readMore}>
+        {/* <p className={Styles.readMore}>
           <a href="www.google.com">Read More</a>
-        </p>
+        </p> */}
       </div>
     </div>
   );
