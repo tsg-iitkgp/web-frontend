@@ -13,6 +13,10 @@ export const contactsSidebarList = [
     title: "Past Office Bearers",
     route: "/contacts/pastBearers",
   },
+  {
+    title: "Staff",
+    route: "/contacts/staff",
+  },
 ];
 export const resultsSidebarList = [
   {

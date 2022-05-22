@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import Secretaries from "./Contacts/Secretaries";
 import PastBearers from "./Contacts/PastBearers";
 import { contactsSidebarList } from "../components/Sidebar/SidebarList";
+import Staff from "./Contacts/Staff";
 
 function Contacts() {
   document.title = "Contacts | TSG";
@@ -14,6 +15,7 @@ function Contacts() {
   const [currentOffceBearers, setCurrentOffceBearers] = useState(true);
   const [secretaries, setSecretaries] = useState(false);
   const [pastBearers, setPastBearers] = useState(false);
+  const [staff, setStaff] = useState(false);
 
   const location = useLocation();
 
@@ -23,17 +25,26 @@ function Contacts() {
       setCurrentOffceBearers(true);
       setPastBearers(false);
       setSecretaries(false);
+      setStaff(false);
     } else if (location.pathname === "/contacts/current-office-bearers") {
       setCurrentOffceBearers(true);
       setPastBearers(false);
       setSecretaries(false);
+      setStaff(false);
     } else if (location.pathname === "/contacts/secretaries") {
       setCurrentOffceBearers(false);
       setPastBearers(false);
+      setStaff(false);
       setSecretaries(true);
     } else if (location.pathname === "/contacts/pastBearers") {
       setCurrentOffceBearers(false);
+      setStaff(false);
       setPastBearers(true);
+      setSecretaries(false);
+    } else if (location.pathname === "/contacts/staff") {
+      setCurrentOffceBearers(false);
+      setStaff(true);
+      setPastBearers(false);
       setSecretaries(false);
     }
   }, [location.pathname]);
@@ -48,6 +59,7 @@ function Contacts() {
           {currentOffceBearers && <CurrentOffceBearers />}
           {secretaries && <Secretaries />}
           {pastBearers && <PastBearers />}
+          {staff && <Staff />}
         </div>
       </div>
     </Layout>

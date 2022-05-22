@@ -62,6 +62,7 @@ function App() {
             component={ElectionCandidates}
           />
           <Route exact path="/contacts/pastBearers" component={Contacts} />
+          <Route exact path="/contacts/staff" component={Contacts} />
           <Route exact path="/societies" component={Societies} />
           <Route exact path="/committees/2021/tech" component={Tech} />
           <Route exact path="/committees/2021/sports" component={Sports} />
