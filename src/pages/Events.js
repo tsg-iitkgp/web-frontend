@@ -86,61 +86,19 @@ export default function Events() {
           <section className={Styles.eventSlider}>
             <AutoplaySlider play={true} interval={5000}>
               <div
-                data-src="/media/images/events/upcomingEvents/pl.jpg"
+                data-src="media/images/events/upcomingEvents/yoga-banner.png"
                 onClick={() =>
-                  handlePosterClick(
-                    "https://www.facebook.com/1375511306004699/posts/2977716442450836"
-                  )
+                  handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
                 }
               />
               <div
-                data-src="/media/images/events/upcomingEvents/icgc.jpg"
+                data-src="media/images/events/upcomingEvents/yoga_mahotsav_banner.png"
                 onClick={() =>
-                  handlePosterClick(
-                    "https://www.facebook.com/1375511306004699/posts/2975267989362348"
-                  )
+                  handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
                 }
               />
               <div
-                data-src="/media/images/events/upcomingEvents/opensoft.png"
-                onClick={() =>
-                  handlePosterClick(
-                    "https://www.facebook.com/iitkgp.tech/posts/4941772725869603"
-                  )
-                }
-              />
-              <div
-                data-src="/media/images/events/upcomingEvents/openiitchess.jpg"
-                onClick={() =>
-                  handlePosterClick(
-                    "https://www.facebook.com/sports.iitkgp/posts/2973351309554016"
-                  )
-                }
-              />
-              <div
-                data-src="/media/images/events/upcomingEvents/oev.jpg"
-                onClick={() =>
-                  handlePosterClick(
-                    "https://www.facebook.com/CulturalKGP/posts/4859245817492651"
-                  )
-                }
-              />
-              <div
-                data-src="/media/images/events/upcomingEvents/owv.jpg"
-                onClick={() =>
-                  handlePosterClick(
-                    "https://www.facebook.com/CulturalKGP/posts/4859245817492651"
-                  )
-                }
-              />
-              <div
-                data-src="/media/images/events/upcomingEvents/SIH-2022.png"
-                onClick={() =>
-                  handlePosterClick("https://www.sih.gov.in/sih2022PS")
-                }
-              />
-              <div
-                data-src="/media/images/events/upcomingEvents/qs.jpg"
+                data-src="media/images/events/upcomingEvents/qs.jpg"
                 onClick={() => handlePosterClick("#")}
               />
             </AutoplaySlider>
