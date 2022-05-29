@@ -9,6 +9,22 @@ import img2 from "./images/tech/chess.jpg";
 import sportsquiz from "./images/tech/sportsquiz.jpg";
 // import quizwin from "./images/tech/quizwinners.png";
 import khokho from "./images/tech/khokho.jpg";
+import spt1 from "./images/sports/spt1.png";
+import spt2 from "./images/sports/spt2.png";
+import spt3 from "./images/sports/spt3.png";
+import spt4 from "./images/sports/spt4.png";
+import spt5 from "./images/sports/spt5.png";
+import spt6 from "./images/sports/spt6.png";
+import spt7 from "./images/sports/spt7.png";
+import spt8 from "./images/sports/spt8.png";
+import spt9 from "./images/sports/spt9.png";
+import spt10 from "./images/sports/spt10.png";
+import spt11 from "./images/sports/spt11.png";
+import spt12 from "./images/sports/spt12.png";
+import spt13 from "./images/sports/spt13.png";
+import spt14 from "./images/sports/spt14.png";
+import spt15 from "./images/sports/spt15.png";
+
 
 export default function Sports() {
   // const techComTeam = [
@@ -200,10 +216,10 @@ export default function Sports() {
         <section>
           <center>
             <div className={globalStyles.img2Container}>
-              <img src='https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/277536571_3002948973260916_2106761205599163956_n.jpg?stp=dst-jpg_p552x414&_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=ZPlnCQT6gqEAX-eaAvS&_nc_ht=scontent.fixr3-2.fna&oh=00_AT984lSTLavsZgS2RIGaZo3qcLlcGz2AJ3kxPmkfYTd8WQ&oe=6278D469' alt="timeline" />
+              <img src={spt1} alt="timeline" />
             </div>
             <div className={globalStyles.imgContainer}>
-              <img src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/277793525_3002949053260908_5825397438240774853_n.jpg?stp=dst-jpg_p552x414&_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=StkeCFwEUJIAX_p9fn5&_nc_ht=scontent.fpat3-3.fna&oh=00_AT_sRUwRoCFa-scU8ZQ9wtmHHbIXkdWdlcqPr1_zp56vIA&oe=6277ABA9' alt="timeline" />
+              <img src={spt2} alt="timeline" />
             </div>
           </center>
 
@@ -227,7 +243,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/276999150_2999754163580397_3610574985571543070_n.jpg?stp=dst-jpg_p526x296&_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=cq1fV6aC2j0AX8ir5KR&_nc_oc=AQkWe3MLGFhtCLF_oUL-BJ0WFvz_5DOEjTZRMQb4mlVuHNairlq5kqYvC78L7YrZBsh7RtNXtg61fiE1Ic37u4IG&_nc_ht=scontent.fpat3-3.fna&oh=00_AT8nqos_lQz58qND4sIuKttA_oPBMSOz4Rl8N5t_XuLjCg&oe=6278E45B" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt3} alt="khokho" />
             </center>
           </div>
 
@@ -248,7 +264,7 @@ export default function Sports() {
         </section>
 
 
-        <center>
+        {/* <center>
           <hr className={globalStyles.hrLine} />
           <h2 className={globalStyles.head2}>Interhall Basketball Gymkhana Championship</h2>
         </center>
@@ -257,7 +273,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/277175964_2995684780654002_1417971029852941367_n.jpg?stp=dst-jpg_p180x540&_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=up-lIrm0aB8AX8O9mY7&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fccu20-1.fna&oh=00_AT9Q6rJ5c72Apru2wlacP6QsBCUVlyW941Lnj9PhPeW7AA&oe=6277AE56" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt4} alt="khokho" />
             </center>
           </div>
 
@@ -273,7 +289,7 @@ export default function Sports() {
 
             </p>
           </div>
-        </section>
+        </section> */}
 
 
 
@@ -286,7 +302,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/277109311_2994776897411457_5663520540394839642_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=kQIScmzQsbkAX-bcslf&_nc_ht=scontent.fpat3-2.fna&oh=00_AT82yOmtE12YYD388lDwMOc9aXgvac-RuAMp4uj0w9IiNw&oe=627815FA" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt5} alt="khokho" />
             </center>
           </div>
 
@@ -314,7 +330,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/276173365_2992138517675295_8424410195534420873_n.jpg?stp=dst-jpg_s720x720&_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=fcLdm_d4pTEAX9kNjwq&_nc_ht=scontent.fpat3-3.fna&oh=00_AT-VdPYF8yT6R6IZ_uk9rp_sIVffOfqqZungbGCy9ppiDg&oe=6278DCE4" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt6} alt="khokho" />
             </center>
           </div>
 
@@ -342,7 +358,7 @@ export default function Sports() {
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-              <img src='https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/277107273_2991291117760035_5986030557570545470_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=GqhmhzY23r8AX9HV7RK&_nc_ht=scontent.fixr3-2.fna&oh=00_AT_thMsrhN0A3Q0NKjg7IU4GYRAUohqaPbOzaCqyX3gUDg&oe=6278D7AA' alt="timeline" />
+              <img src={spt7} alt="timeline" />
             </div>
           </center>
 
@@ -369,7 +385,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/275772413_2990869897802157_6618755985063896162_n.jpg?stp=dst-jpg_s720x720&_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=UGU7VQArL70AX_d-Zq2&_nc_ht=scontent.fccu20-1.fna&oh=00_AT-1aI9D5D-bI7It5dWZBKcF3E-oDx2JX5pz4LNQ-8K5mg&oe=62788ED5" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt8} alt="khokho" />
             </center>
           </div>
 
@@ -399,7 +415,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/275537810_2988568551365625_1818375803603006116_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=zONkQmYc2DQAX-g3ME2&_nc_oc=AQmoenlm6cH5ggWBtvy71oV940LXK5duMGhAjcwKG9SNED1rGMZ92fLb_N0yOZj2FqJLgbCBpFUCAyFbqJ25MvJO&_nc_ht=scontent.fccu20-1.fna&oh=00_AT-O4OGGn4p8cs57grsOkudhwP1M4j9HuBcLJSCUlvVdWQ&oe=6279018F" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt9} alt="khokho" />
             </center>
           </div>
 
@@ -429,7 +445,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fixr3-1.fna.fbcdn.net/v/t39.30808-6/275995284_2988477521374728_6289223210566221188_n.jpg?stp=dst-jpg_s640x640&_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=Gjo9aH-mPCQAX9bC7oP&_nc_ht=scontent.fixr3-1.fna&oh=00_AT9S-TjLQ0TNGrnVU8KyUn2M8HSvZ_sw7Bi7E10XHuAzcQ&oe=6277C953" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt10} alt="khokho" />
             </center>
           </div>
 
@@ -456,7 +472,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/275438918_2986926788196468_2150300587335912937_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=W7DxbNlrVRIAX-m5TYi&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fpat3-2.fna&oh=00_AT-4uCAMVbzU8Xvd_E8L8MieANd2jSjeZwDYAR1whoNSHg&oe=62783313" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt11} alt="khokho" />
             </center>
           </div>
 
@@ -483,7 +499,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fixr3-1.fna.fbcdn.net/v/t39.30808-6/274988325_2979862545569559_7547335046947845789_n.jpg?stp=dst-jpg_s720x720&_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=J5ZO0okLalcAX-KtbZM&_nc_ht=scontent.fixr3-1.fna&oh=00_AT8RS12hy2QW_w4yWnzD6qWF3k9krsuA0Qn-HXomv0TiHw&oe=62776289" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt12} alt="khokho" />
             </center>
           </div>
 
@@ -510,7 +526,7 @@ export default function Sports() {
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-              <img src='https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/275107368_2977716405784173_6667737225264189414_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=4BAMxfKBeXYAX93mca4&_nc_ht=scontent.fccu20-1.fna&oh=00_AT_FB92iSMMlCD77i7PmBTFrqygNQ5y2DNVlXOcl7C6s9Q&oe=62777727' alt="timeline" />
+              <img src={spt13} alt="timeline" />
             </div>
           </center>
 
@@ -534,7 +550,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fixr3-1.fna.fbcdn.net/v/t39.30808-6/274586446_2975268009362346_4025335993063334488_n.jpg?stp=dst-jpg_p526x296&_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=BqKHHVdnDGQAX90Oy-e&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fixr3-1.fna&oh=00_AT_4QwOWfvqV0Mj0Omfskt4VH0MwzRhNv_nXrdaZEnE-mQ&oe=6278AE48" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt14} alt="khokho" />
             </center>
           </div>
 
@@ -563,7 +579,7 @@ export default function Sports() {
           <div className={globalStyles.leftCard}>
             <center>
               <br />
-              <img className={globalStyles.cardImg} src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/274464776_2973351276220686_6049045102898904609_n.jpg?stp=dst-jpg_p526x296&_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=s1O62xg6OW0AX87toMW&_nc_ht=scontent.fpat3-3.fna&oh=00_AT99iENDD_ilfnwj43XSPqTufoQC5swCSGSZxUk5k-rMww&oe=62785380" alt="khokho" />
+              <img className={globalStyles.cardImg} src={spt15} alt="khokho" />
             </center>
           </div>
 
