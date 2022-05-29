@@ -14,6 +14,21 @@ import jantimeline from "./images/socult/jan-timeline.jpg";
 import mime from "./images/socult/mime.jpg";
 import resultmusic from "./images/socult/result-music.jpg";
 import comedynight from "./images/socult/comedynight.png";
+import sc1 from './images/socult/sc1.png';
+import sc2 from './images/socult/sc2.png';
+import sc3 from './images/socult/sc3.png';
+import sc4 from './images/socult/sc4.png';
+import sc5 from './images/socult/sc5.png';
+import sc6 from './images/socult/sc6.png';
+import sc7 from './images/socult/sc7.png';
+import sc8 from './images/socult/sc8.png';
+import sc9 from './images/socult/sc9.png';
+import sc10 from './images/socult/sc10.png';
+import sc11 from './images/socult/sc11.png';
+import sc12 from './images/socult/sc12.png';
+import sc13 from './images/socult/sc13.png';
+import sc14 from './images/socult/sc14.png';
+import sc15 from './images/socult/sc15.png';
 
 export default function Socult() {
   // const techComTeam = [
@@ -153,7 +168,7 @@ export default function Socult() {
           <section>
             <center>
               <div className={globalStyles.imgContainer}>
-                <img src='https://scontent.fpat3-1.fna.fbcdn.net/v/t39.30808-6/278474248_5023076021109629_2278707443583791271_n.jpg?stp=dst-jpg_s720x720&_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=kz7n9GTCaDoAX9gWPxT&_nc_ht=scontent.fpat3-1.fna&oh=00_AT_qYVd9LbBBvV0jKWE8bxBtQXWJ9b8Wf37peLB09Gb08g&oe=6277AC69' alt="timeline" />
+                <img src={sc1} alt="timeline" />
               </div>
             </center>
 
@@ -174,7 +189,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src="https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/277681201_4983568178393747_7378865887091063011_n.jpg?stp=dst-jpg_p526x296&_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=E1F4cVHRoX8AX-A7lpH&_nc_ht=scontent.fpat3-2.fna&oh=00_AT-zi5w4TzSP6QSeu16H40GOj_HiT3IWf42JR31h2D2gCA&oe=62782F78"
+                src={sc2}
 
                 alt="Music result"
               />
@@ -200,7 +215,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src="https://scontent.fixr3-1.fna.fbcdn.net/v/t39.30808-6/277661096_4973065519444013_7690716440317981623_n.jpg?stp=dst-jpg_p526x296&_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=fcK3rEFzUZYAX9Lh0gJ&_nc_ht=scontent.fixr3-1.fna&oh=00_AT_ln-tRREl34Z2kuypow4RfX-YeoSRVXIomFWIjzaQDqA&oe=6278A5B3"
+                src={sc3}
 
                 alt="Music result"
               />
@@ -230,7 +245,7 @@ export default function Socult() {
           <section>
             <center>
               <div className={globalStyles.imgContainer}>
-                <img src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/277533893_4969656569784908_8914178276429089647_n.jpg?stp=dst-jpg_p526x296&_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=x1QTcT4K-l8AX_hKsJ5&_nc_ht=scontent.fpat3-3.fna&oh=00_AT-iNYa0AAr8YB_jJnovp2UGFid3ITRZTGUQ-sY0hE4hhA&oe=6277D6EE' alt="timeline" />
+                <img src={sc4} alt="timeline" />
               </div>
             </center>
 
@@ -253,7 +268,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src="https://scontent.fpat3-1.fna.fbcdn.net/v/t39.30808-6/277574447_4969592293124669_7925819959598826130_n.jpg?stp=dst-jpg_p526x296&_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=RDADidSo5_0AX9zEXPC&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fpat3-1.fna&oh=00_AT_5jhj8D__Exf-pE_0-MZQOiwT4DlqCDX8OKomqR0nZ9w&oe=6278195F"
+                src={sc5}
 
                 alt="Music result"
               />
@@ -278,7 +293,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src="https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/277165183_4955168351233730_2417056281184433224_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=EtWym28wNVoAX-IKmC5&_nc_ht=scontent.fpat3-2.fna&oh=00_AT86QLTiN2DlBFDuHNXBkyL_xrOv_M09pOouyy9lqQHLjw&oe=6277E1CC"
+                src={sc6}
 
                 alt="Music result"
               />
@@ -301,7 +316,7 @@ export default function Socult() {
           <section>
             <center>
               <div className={globalStyles.imgContainer}>
-                <img src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/275782044_4947866231963942_8580216254396779810_n.jpg?stp=dst-jpg_p526x296&_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=c9CBQx4y7xsAX9QjrB2&_nc_ht=scontent.fpat3-3.fna&oh=00_AT8V_QgO96ZXwdTA8wkPscqg48O0C9wTlqJ4qbAxLXENsw&oe=62785A08' alt="timeline" />
+                <img src={sc7} alt="timeline" />
               </div>
             </center>
 
@@ -324,7 +339,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/277461971_4973129532770945_5360935134475237405_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=_GsvtRT6FWQAX_Agpgu&_nc_ht=scontent.fpat3-3.fna&oh=00_AT_LS8LkD8Aln2xK48COtVvuTOhG7VHK2sKZIzTvhsxf7g&oe=62777DC8"
+                src={sc8}
 
                 alt="Music result"
               />
@@ -350,7 +365,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src="https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/275500237_4918858311531401_8665073752275165107_n.jpg?stp=dst-jpg_s720x720&_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=T6nAKeVwDsgAX_pA2kr&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fixr3-2.fna&oh=00_AT99utaVY0KLKDAeYfZezgVhp8nwBTXk5oPkKXvMoqVPhA&oe=627740CC"
+                src={sc9}
 
                 alt="Music result"
               />
@@ -377,7 +392,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/275232719_4909678275782738_4413752924008605117_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=XROD5UEz61kAX8MwO0z&_nc_ht=scontent.fpat3-3.fna&oh=00_AT9BL2yae_eDN7ZBMl0T-wJ1_To0sxLiX6lU3qMCRndpZQ&oe=627840F2"
+                src={sc10}
 
                 alt="Music result"
               />
@@ -407,7 +422,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/275526473_4918859071531325_6447600835687438706_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=G4aU3t_k42oAX8Zw0hL&_nc_ht=scontent.fpat3-2.fna&oh=00_AT_SudyUALYUuBU5MYX1MW9LLPb2PH5mgr2fpMgg0UMBvg&oe=62781E5B'
+                src={sc11}
 
                 alt="Music result"
               />
@@ -432,7 +447,7 @@ export default function Socult() {
           <section>
             <center>
               <div className={globalStyles.imgContainer}>
-                <img src='https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/274993816_4895030937247472_7992800219849746948_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=wzNc2A4z90AAX84BmiC&_nc_ht=scontent.fixr3-2.fna&oh=00_AT84RfGNKA8bvm4p1xUFoV_XOexzDBFO6dF8KFfTD-qcmA&oe=627935D8' alt="timeline" />
+                <img src={sc12} alt="timeline" />
               </div>
             </center>
 
@@ -454,7 +469,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/273928579_4851923144891585_3077319650817363625_n.jpg?stp=dst-jpg_s720x720&_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=LvSK93g3fugAX_nxQSP&_nc_ht=scontent.fpat3-2.fna&oh=00_AT9i_btzTwkMmWKMzl_KwiD2EVkMJDNszt6Af9WrOKFfhg&oe=6278B1F3'
+                src={sc13}
 
                 alt="Music result"
               />
@@ -481,7 +496,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/273414376_4845745065509393_427254912326302376_n.jpg?stp=dst-jpg_s720x720&_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=SZn_Ak4rEYoAX_mjPgQ&_nc_ht=scontent.fpat3-3.fna&oh=00_AT9t8N0-tO9vYUb4fvc9iHA9K3Rc5hBGeP0wQhaYPVKx6A&oe=62785668'
+                src={sc14}
 
                 alt="Music result"
               />
@@ -505,7 +520,7 @@ export default function Socult() {
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
-                src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/273770277_4839487479468485_8290566790941818447_n.jpg?stp=dst-jpg_p526x296&_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=KvFkfJoJJR0AX-3xV0A&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fpat3-2.fna&oh=00_AT9epgOWyXNrkO9unQi2t-n9J-hsfHoKEwF6i7PrDFkCSg&oe=62778CFA'
+                src={sc15}
                 alt="Music result"
               />
             </div>

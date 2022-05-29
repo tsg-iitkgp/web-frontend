@@ -14,6 +14,19 @@ import techmeet from "./images/tech/techmeet.png";
 import openiit from "./images/tech/openiitintro.jpg";
 import result_t from "./images/tech/res-tradex.jpg";
 import sociop from "./images/tech/sociopren.jpg";
+import tc1 from "./images/tech/tc1.png";
+import tc2 from "./images/tech/tc2.png";
+import tc3 from "./images/tech/tc3.png";
+import tc4 from "./images/tech/tc4.png";
+import tc5 from "./images/tech/tc5.png";
+import tc6 from "./images/tech/tc6.png";
+import tc7 from "./images/tech/tc7.png";
+import tc8 from "./images/tech/tc8.png";
+import tc9 from "./images/tech/tc9.png";
+import tc10 from "./images/tech/tc10.png";
+import tc11 from "./images/tech/tc11.png";
+import tc12 from "./images/tech/tc12.png";
+import tc13 from "./images/tech/tc13.png";
 
 export default function Tech() {
   // const techComTeam = [
@@ -168,7 +181,7 @@ export default function Tech() {
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-              <img src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/278801174_5102487986464742_5711698648381348352_n.jpg?stp=dst-jpg_p526x395&_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=_1Hd6swIasMAX_iQzD7&_nc_ht=scontent.fpat3-2.fna&oh=00_AT98IhTZ9U7_tak6-0l0gP8LrEYYbG675AGvJwFtmytdqA&oe=6277DFA2' alt="timeline" />
+              <img src={tc1} alt="timeline" />
             </div>
           </center>
 
@@ -215,7 +228,7 @@ export default function Tech() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src="https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/278548744_5078533885526819_6832873962830825117_n.png?stp=dst-png_p526x296&_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=s4Gva98gsjgAX_s-Udw&_nc_ht=scontent.fixr3-2.fna&oh=00_AT9ubRq-5IpvNdKLmtERUyW-do17CFgiDTXArnKDDdcV2w&oe=62782DB9"
+              src={tc2}
 
               alt="Music result"
             />
@@ -240,7 +253,7 @@ export default function Tech() {
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-              <img src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/278341618_5066513146728893_4697748208564679438_n.png?stp=dst-png_p526x296&_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=xXA_393kQwIAX_0k92y&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fpat3-3.fna&oh=00_AT8l8q_p0UcbxSiL8PWD2ixeaQzdia3jWCTGQdi-eprWGA&oe=6279519C' alt="timeline" />
+              <img src={tc3} />
             </div>
           </center>
 
@@ -263,7 +276,7 @@ export default function Tech() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/277534411_5052960754750799_4265464416091231892_n.jpg?stp=dst-jpg_p180x540&_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=YeKTCOfbnmMAX_LCBpX&_nc_ht=scontent.fpat3-3.fna&oh=00_AT9tLkFMzt8jCMQ8u_oZ6TQp7IRaHR92YdsbsWIAB0IDvw&oe=6277C7F5"
+              src={tc4}
 
               alt="Music result"
             />
@@ -296,7 +309,7 @@ export default function Tech() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src="https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/277669966_5031851130195095_3139690692800558954_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=BcAEs0sqOz8AX-dIo7y&_nc_ht=scontent.fixr3-2.fna&oh=00_AT_lV2mCeyJa9gxnmSoRbU9ARVRDUv4XAJ8R_8hsscur-A&oe=62789476"
+              src={tc5}
 
               alt="Music result"
             />
@@ -321,7 +334,7 @@ export default function Tech() {
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-              <img src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/275407831_4974541349259407_8846329648915979342_n.jpg?stp=dst-jpg_p526x296&_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=4iSnRMuuipEAX-l-9nq&_nc_ht=scontent.fpat3-3.fna&oh=00_AT877LRg03OqYbhqoDzAY4bjpBvGCIEGOFDqeNNV07qbSA&oe=6278B6D8' alt="timeline" />
+              <img src={tc6} alt="timeline" />
             </div>
           </center>
 
@@ -342,7 +355,7 @@ export default function Tech() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src="https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/275379673_4972031659510376_8699040008524610774_n.png?stp=dst-png_p526x296&_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=SC5zDDSnd3MAX8I1ntp&_nc_ht=scontent.fccu20-1.fna&oh=00_AT9_dqhUl8bxop_5WLZ4792xu3ky9HwzZC7mDEYa3JNIYg&oe=6277E9A2"
+              src={tc7}
 
               alt="Music result"
             />
@@ -373,7 +386,7 @@ export default function Tech() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src="https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/275010797_4953493314697544_3545779477688683849_n.png?stp=dst-png_p526x296&_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=38OFvaZHGbkAX9gY35S&_nc_ht=scontent.fccu20-1.fna&oh=00_AT9UQAjQ1QEb8sDbK1v4cijzJtpB99oarSIp41B9qoAEdg&oe=627921DD"
+              src={tc8}
 
               alt="Music result"
             />
@@ -401,7 +414,7 @@ export default function Tech() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src="https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/274342735_4950828254964050_5231263106144950587_n.png?stp=dst-png_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=vpI3qzLAulgAX_5h_dB&_nc_ht=scontent.fpat3-2.fna&oh=00_AT9atnD5NODN2vyzd5Luy_PT-r87aonZS8zdQnl84Hx8DA&oe=62791220"
+              src={tc9}
 
               alt="Music result"
             />
@@ -429,7 +442,7 @@ export default function Tech() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/274712763_4941769979203211_4300554250646074044_n.png?stp=dst-png_p526x296&_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=uFP98mR3u80AX9zzpqD&tn=mb-8rgCezMIQRZbO&_nc_ht=scontent.fpat3-2.fna&oh=00_AT_ODdRZL734PVx4Icgx6eVwiDKPePgzg-NrkwKWNpM32w&oe=6278E44F'
+              src={tc10}
 
               alt="Music result"
             />
@@ -454,7 +467,7 @@ export default function Tech() {
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-              <img src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/274359024_4929658513747691_5016765409090952835_n.png?stp=dst-png_p526x296&_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=Ufyc9YvjxGUAX946t5A&_nc_ht=scontent.fpat3-3.fna&oh=00_AT9NWMartV-KKiO_S_KwA7fOlyNapuMYEOmrtzVQNHdBdg&oe=62780571' alt="timeline" />
+              <img src={tc11} alt="timeline" />
             </div>
           </center>
 
@@ -486,7 +499,7 @@ export default function Tech() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src='https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/274176346_4926610670719142_838808073076661443_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=gEq1FmAquX8AX8RJv0Z&_nc_ht=scontent.fccu20-1.fna&oh=00_AT-gNozH1tWV_cSQIGV1KybwONrZZ5CozLugRnq1P_LK6A&oe=6277DF7B'
+              src={tc12}
 
               alt="Music result"
             />
@@ -517,7 +530,7 @@ export default function Tech() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src='https://scontent.fccu20-1.fna.fbcdn.net/v/t39.30808-6/272951158_4880055862041290_369356293387735972_n.jpg?stp=dst-jpg_p526x296&_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=tWG8u7R4zDkAX832Mg0&_nc_ht=scontent.fccu20-1.fna&oh=00_AT9qV0jMlFLDpj59M79Iqq9fZKnJ5uV7Tzvw0beXS6vqDg&oe=6277CD8B'
+              src={tc13}
 
               alt="Music result"
             />
