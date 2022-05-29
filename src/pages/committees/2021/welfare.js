@@ -9,6 +9,8 @@ import img2 from "./images/tech/anxious.jpg";
 import projects from "./images/tech/projects.jpg";
 import english from "./images/tech/english-mentor.jpg";
 import induction from "./images/tech/ug-induction.jpg";
+import sw1 from "./images/tech/sw1.png";
+import sw2 from "./images/tech/sw2.png";
 
 export default function Welfare() {
   // const techComTeam = [
@@ -98,7 +100,7 @@ export default function Welfare() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg3}
-              src='https://scontent.fpat3-2.fna.fbcdn.net/v/t39.30808-6/273528584_312562670837148_4008439577527420_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=eqCYlWwfJiMAX-jVzYh&_nc_ht=scontent.fpat3-2.fna&oh=00_AT_-8hEwqdcVIcHAbP4f87j7yyWjhUF6Y8z0HGqSDc4wSA&oe=62780522'
+              src={sw1}
 
               alt="Music result"
             />
@@ -126,7 +128,7 @@ export default function Welfare() {
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
-              src='https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/273411637_311136570979758_2649224926605286327_n.jpg?stp=dst-jpg_s720x720&_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=HvkvaaYFSl4AX-O1-vo&_nc_ht=scontent.fpat3-3.fna&oh=00_AT_vAq4253QhdIHG-33hLVkmt521jkXKWxkhu6ZnlWBpZQ&oe=627952AA'
+              src={sw2}
 
               alt="Music result"
             />
