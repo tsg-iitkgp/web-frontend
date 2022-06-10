@@ -39,4 +39,4 @@ jobs:
         git config --local user.name "GitHub Action"
         git add -f .
         git commit -m "Deploy the static build to 'build' branch"
-        git push --force origin build
+        git push --force origin HEAD:build
