@@ -26,6 +26,8 @@ jobs:
     - name: Install project dependencies
       run: yarn install --frozen-lockfile --silent
     - name: Build the site
+      env:
+        CI: false
       run: yarn build --if-present
     - name: Export to `build` branch
       env:
