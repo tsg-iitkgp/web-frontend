@@ -2,7 +2,7 @@ import { useState } from "react";
 // import Head from "next/head";
 import pointsData from "./pointsData";
 import Chart from "./chart";
-import "./interiit.css";
+// import "./interiit.css";
 
 const years = ["2018-19"];
 

@@ -228,14 +228,13 @@ export default function Socult() {
                 We are here to escalate the thrill by testing how well- versed you are with words with this entertaining event of guessing- *What is the good word* .<br />
                 Think creatively,think fast,think deeply too but be cautious to not spill out the key word directly.<br /><br />
 
-                Date- 30th March, 2022<br />
-                Event-Venue: F-244<br />
-                Time:6PM<br />
+                Date- 30th March, 2022 <br />
+                Event-Venue: F-244 <br />
+                Time:6PM <br />
                 It is time to win with your words and not action!!
               </p>
             </div>
           </section>
-
 
           <center>
             <hr className={globalStyles.hrLine} />
