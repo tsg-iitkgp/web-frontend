@@ -1,27 +1,43 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: React Build Export
-
+name: Build and Export the static build to the `build` branch
 on:
   push:
     branches: [ "main" ]
 
 jobs:
-  build:
+  build-and-export:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v3
+    - name: checkout
+      uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm i
-    - run: npm run build --if-present
+    - name: Install yarn
+      run: npm install -g yarn
+    - name: Install project dependencies
+      run: yarn install --frozen-lockfile --silent
+    - name: Build the site
+      run: yarn build --if-present
+    - name: Export to `build` branch
+      env:
+        SOURCE_FOLDER: 'build'
+        TARGET_BRANCH: 'build'
+      run: |
+        cd $SOURCE_FOLDER
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Deploy the static build to 'build' branch"
+        git push --force origin build
+      with:
+          github_token: ${{ secrets.TOKEN }}
+          force: true
