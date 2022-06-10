@@ -37,6 +37,6 @@ jobs:
         cd $SOURCE_FOLDER
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add .
+        git -f add .
         git commit -m "Deploy the static build to 'build' branch"
         git push --force origin build
