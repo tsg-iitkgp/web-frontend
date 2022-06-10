@@ -38,6 +38,3 @@ jobs:
         git add .
         git commit -m "Deploy the static build to 'build' branch"
         git push --force origin build
-      with:
-          github_token: ${{ secrets.TOKEN }}
-          force: true
