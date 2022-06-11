@@ -1,44 +1,19 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Build and Export the static build to the `build` branch
+# Trigger the workflow on push or pull request
+name: Build and Export the static build to the 'build' branch
 on:
   push:
     branches: [ "main" ]
 
 jobs:
   build-and-export:
+    name: Build and export the react application to the `build` branch
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
-    - name: checkout
-      uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Install yarn
-      run: npm install -g yarn
-    - name: Install project dependencies
-      run: yarn install --frozen-lockfile --silent
-    - name: Build the site
-      env:
-        CI: false
-      run: yarn build --if-present
-    - name: Export to `build` branch
-      env:
-        SOURCE_FOLDER: 'build'
-        REPO: 'https://${{ secrets.ACTIONS_TOKEN }}@github.com/${{ github.repository }}.git'
-        TARGET_BRANCH: 'build'
-      run: |
-        cd $SOURCE_FOLDER
-        git init
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add -f .
-        git commit -m "Deploy the static build to 'build' branch"
-        git push --force ${REPO} HEAD:build
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Build and export with the latest action rev
+        uses: praneeth-rdy/react-build-export-action@main
+        env:
+          PROJECT_DIR: .
+          BUILD_BRANCH: build
+          TOKEN: ${{ secrets.TOKEN }}
