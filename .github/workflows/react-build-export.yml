@@ -42,4 +42,4 @@ jobs:
         # git add -f .
         # git commit -m "Deploy the static build to 'build' branch"
         # git push --force ${REPO} HEAD:build
-        echo "${github.repository}"
+        echo "${{ github.repository }}"
