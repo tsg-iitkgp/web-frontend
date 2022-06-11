@@ -32,7 +32,7 @@ jobs:
     - name: Export to `build` branch
       env:
         SOURCE_FOLDER: 'build'
-        REPO: 'https://${{ secrets.TOKEN }}@github.com/${GITHUB_REPOSITORY}.git'
+        REPO: 'https://${{ secrets.TOKEN }}@github.com/tsg-iitkgp/web-frontend.git'
         TARGET_BRANCH: 'build'
       run: |
         cd $SOURCE_FOLDER
