@@ -23,7 +23,7 @@ export default function EventCard({
           <div
             className={Styles.photo}
             style={{
-              backgroundImage: `url(/media/images/events${imgSrc})`,
+              backgroundImage: `url(/data/media/images/events${imgSrc})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
             }}

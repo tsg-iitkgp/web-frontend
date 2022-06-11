@@ -51,7 +51,7 @@ export default function Elections() {
               </div>
               <Button>
                 <a
-                  href="/media/files/Revised_Schedule-03042022.pdf"
+                  href="/data/media/files/Revised_Schedule-03042022.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -68,7 +68,7 @@ export default function Elections() {
               </div>
               <Button>
                 <a
-                  href="/media/files/Extension-Final-Proposal_21-22.pdf"
+                  href="/data/media/files/Extension-Final-Proposal_21-22.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -83,7 +83,7 @@ export default function Elections() {
               </div>
               <Button>
                 <a
-                  href="/media/files/SOAP_Schedule_21-22.pdf"
+                  href="/data/media/files/SOAP_Schedule_21-22.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -103,7 +103,7 @@ export default function Elections() {
             {" "}
             <Button>
               <a
-                href="/media/files/Elections-Notification.pdf"
+                href="/data/media/files/Elections-Notification.pdf"
                 alt="notification"
                 target="_blank"
               >
@@ -113,7 +113,7 @@ export default function Elections() {
             <Button>
               {" "}
               <a
-                href="/media/files/Election-Rules.pdf"
+                href="/data/media/files/Election-Rules.pdf"
                 alt="notification"
                 target="_blank"
               >
@@ -123,7 +123,7 @@ export default function Elections() {
             <Button>
               {" "}
               <a
-                href="/media/files/final-list_21-22.pdf"
+                href="/data/media/files/final-list_21-22.pdf"
                 alt="notification"
                 target="_blank"
               >

@@ -13,7 +13,7 @@ export default function Staff() {
               name={member.Name}
               designation={member.Post}
               email={member.Email}
-              imgSrc={`/media/images/staff/${member.RollNo}.png`}
+              imgSrc={`/data/media/images/staff/${member.RollNo}.png`}
             />
           );
         })}

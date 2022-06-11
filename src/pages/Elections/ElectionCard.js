@@ -22,7 +22,7 @@ function ElectionCard({
           <li></li>
           <li>
             <a
-              href={`/media/files/proposals/${proposalLink}.pdf`}
+              href={`/data/media/files/proposals/${proposalLink}.pdf`}
               target="_blank"
               rel="noreferrer"
               alt={`Proposal_of_${proposalLink}`}

@@ -11,7 +11,7 @@ export default function RotatingCard({
       <div className={Styles.cardfront}>
         <img
           className={Styles.img1}
-          src={`/media/images/societies/${shortform}.png`}
+          src={`/data/media/images/societies/${shortform}.png`}
           loading="lazy"
           alt="image01"
           width={600}

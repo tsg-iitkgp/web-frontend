@@ -12,7 +12,7 @@ export default function Home() {
       <div className={Styles.backgroundImage}>
         <div className={Styles.textOverlay}>
           <div className={Styles.kgpSvg}>
-            <img src="/media/images/general/gymkhanaLogo.png" alt="KGP_logo" />
+            <img src="/data/media/images/general/gymkhanaLogo.png" alt="KGP_logo" />
           </div>
           <div className={Styles.greetMessage}>
             <Greet />

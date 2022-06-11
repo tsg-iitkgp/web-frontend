@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className={Styles.navLogo}>
           <NavLink to="/" style={{ display: "flex", alignItems: "center" }}>
             {" "}
-            <img src="/media/images/general/gymkhanaLogo.png" alt="KGP_logo" />
+            <img src="/data/media/images/general/gymkhanaLogo.png" alt="KGP_logo" />
             <span>&nbsp;TSG</span>
           </NavLink>
         </div>
