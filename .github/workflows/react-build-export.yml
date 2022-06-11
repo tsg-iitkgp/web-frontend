@@ -32,11 +32,13 @@ jobs:
     - name: Export to `build` branch
       env:
         SOURCE_FOLDER: 'build'
+        REPO: 'https://${{ secrets.TOKEN }}@${GITHUB_HOSTNAME}/${GITHUB_REPOSITORY}.git'
         TARGET_BRANCH: 'build'
       run: |
         cd $SOURCE_FOLDER
-        git config --local user.email "action@github.com"
+        git config user.email "github-actions-bot@users.noreply.${GITHUB_HOSTNAME}"
         git config --local user.name "GitHub Action"
+        git init
         git add -f .
         git commit -m "Deploy the static build to 'build' branch"
-        git push --force origin HEAD:build
+        git push --force ${REPO} HEAD:build
