@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/tsg-iitkgp/tsg-backend">
+  <a href="https://github.com/tsg-iitkgp/web-frontend">
     <img src="rm-img/gymkhana-logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -22,18 +22,18 @@
   <p align="center">
     A backend which caters all the client applications of TSG
     <br />
-    <!-- <a href="https://github.com/tsg-iitkgp/tsg-backend"><strong>Explore the docs »</strong></a> -->
+    <!-- <a href="https://github.com/tsg-iitkgp/web-frontend"><strong>Explore the docs »</strong></a> -->
     <!-- <br /> -->
     <br />
-    <!-- <a href="https://github.com/tsg-iitkgp/tsg-backend">
+    <!-- <a href="https://github.com/tsg-iitkgp/web-frontend">
     View Demo
     </a>
     · -->
-    <a href="https://github.com/tsg-iitkgp/tsg-backend/issues">
+    <a href="https://github.com/tsg-iitkgp/web-frontend/issues">
     Report Bug
     </a>
     ·
-    <a href="https://github.com/tsg-iitkgp/tsg-backend/issues">Request Feature</a>
+    <a href="https://github.com/tsg-iitkgp/web-frontend/issues">Request Feature</a>
   </p>
 </p>
 
@@ -102,13 +102,13 @@ This section contains the prerequisites you need, to use the software and how to
   ```sh
   npm install npm@latest -g
   ```
-* [TSG backend](https://github.com/tsg-iitkgp/tsg-backend)
+* [TSG backend](https://github.com/tsg-iitkgp/web-frontend)
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/tsg-iitkgp/tsg-backend.git
+   git clone https://github.com/tsg-iitkgp/web-frontend.git
    ```
 2. Install NPM packages
    ```sh
@@ -133,7 +133,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/tsg-iitkgp/tsg-backend/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/tsg-iitkgp/web-frontend/issues) for a list of proposed features (and known issues).
 
 
 
@@ -162,7 +162,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Praneeth Reddy - [@praneethrdy](https://www.linkedin.com/in/praneethrdy/) - tech.tsgiitkgp@gmail.com
 
-Project Link: [https://github.com/tsg-iitkgp/tsg-backend](https://github.com/tsg-iitkgp/tsg-backend)
+Project Link: [https://github.com/tsg-iitkgp/web-frontend](https://github.com/tsg-iitkgp/web-frontend)
 
 
 
@@ -186,16 +186,16 @@ Project Link: [https://github.com/tsg-iitkgp/tsg-backend](https://github.com/tsg
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/tsg-iitkgp/tsg-backend.svg?style=for-the-badge
-[contributors-url]: https://github.com/tsg-iitkgp/tsg-backend/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/tsg-iitkgp/tsg-backend.svg?style=for-the-badge
-[forks-url]: https://github.com/tsg-iitkgp/tsg-backend/network/members
-[stars-shield]: https://img.shields.io/github/stars/tsg-iitkgp/tsg-backend.svg?style=for-the-badge
-[stars-url]: https://github.com/tsg-iitkgp/tsg-backend/stargazers
-[issues-shield]: https://img.shields.io/github/issues/tsg-iitkgp/tsg-backend.svg?style=for-the-badge
-[issues-url]: https://github.com/tsg-iitkgp/tsg-backend/issues
-[license-shield]: https://img.shields.io/github/license/tsg-iitkgp/tsg-backend.svg?style=for-the-badge
-[license-url]: https://github.com/tsg-iitkgp/tsg-backend/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/tsg-iitkgp/web-frontend.svg?style=for-the-badge
+[contributors-url]: https://github.com/tsg-iitkgp/web-frontend/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/tsg-iitkgp/web-frontend.svg?style=for-the-badge
+[forks-url]: https://github.com/tsg-iitkgp/web-frontend/network/members
+[stars-shield]: https://img.shields.io/github/stars/tsg-iitkgp/web-frontend.svg?style=for-the-badge
+[stars-url]: https://github.com/tsg-iitkgp/web-frontend/stargazers
+[issues-shield]: https://img.shields.io/github/issues/tsg-iitkgp/web-frontend.svg?style=for-the-badge
+[issues-url]: https://github.com/tsg-iitkgp/web-frontend/issues
+[license-shield]: https://img.shields.io/github/license/tsg-iitkgp/web-frontend.svg?style=for-the-badge
+[license-url]: https://github.com/tsg-iitkgp/web-frontend/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/praneeth-
 [is-screenshot]: rm-img/ss-collage.png
