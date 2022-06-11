@@ -36,9 +36,9 @@ jobs:
         TARGET_BRANCH: 'build'
       run: |
         cd $SOURCE_FOLDER
-        git config user.email "github-actions-bot@users.noreply.${GITHUB_HOSTNAME}"
-        git config --local user.name "GitHub Action"
         git init
+        git config --local user.email "github-actions-bot@users.noreply.${GITHUB_HOSTNAME}"
+        git config --local user.name "GitHub Action"
         git add -f .
         git commit -m "Deploy the static build to 'build' branch"
         git push --force ${REPO} HEAD:build
