@@ -16,4 +16,4 @@ jobs:
         env:
           PROJECT_DIR: .
           BUILD_BRANCH: build
-          TOKEN: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.ACTIONS_TOKEN }}
