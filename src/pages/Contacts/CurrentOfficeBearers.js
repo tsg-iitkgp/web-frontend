@@ -24,7 +24,7 @@ export default function CurrentOffceBearers() {
             name={President.Name}
             designation={President.Post}
             email={President.Email}
-            imgSrc={`/media/images/contacts/${President.img}`}
+            imgSrc={`/data/media/images/contacts/${President.img}`}
           />
         </div>
         <div>
@@ -33,7 +33,7 @@ export default function CurrentOffceBearers() {
             name={VicePresident.Name}
             designation={VicePresident.Post}
             email={VicePresident.Email}
-            imgSrc={`/media/images/contacts/${VicePresident.img}`}
+            imgSrc={`/data/media/images/contacts/${VicePresident.img}`}
           />
         </div>
         <div>
@@ -45,7 +45,7 @@ export default function CurrentOffceBearers() {
                   name={member.Name}
                   designation={member.Post}
                   email={member.Email}
-                  imgSrc={`/media/images/contacts/${member.img}`}
+                  imgSrc={`/data/media/images/contacts/${member.img}`}
                 />
               );
             })}
@@ -60,7 +60,7 @@ export default function CurrentOffceBearers() {
                   name={member.Name}
                   designation={member.Post}
                   email={member.Email}
-                  imgSrc={`/media/images/contacts/${member.img}`}
+                  imgSrc={`/data/media/images/contacts/${member.img}`}
                 />
               );
             })}

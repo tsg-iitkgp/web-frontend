@@ -86,19 +86,19 @@ export default function Events() {
           <section className={Styles.eventSlider}>
             <AutoplaySlider play={true} interval={5000}>
               <div
-                data-src="media/images/events/upcomingEvents/yoga-banner.png"
+                data-src="/data/media/images/events/upcomingEvents/yoga-banner.png"
                 onClick={() =>
                   handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
                 }
               />
               <div
-                data-src="media/images/events/upcomingEvents/yoga_mahotsav_banner.png"
+                data-src="/data/media/images/events/upcomingEvents/yoga_mahotsav_banner.png"
                 onClick={() =>
                   handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
                 }
               />
               <div
-                data-src="media/images/events/upcomingEvents/qs.jpg"
+                data-src="/data/media/images/events/upcomingEvents/qs.jpg"
                 onClick={() => handlePosterClick("#")}
               />
             </AutoplaySlider>

@@ -52,7 +52,7 @@ export default function Footer() {
       <div className={Styles.footerContainer}>
         <div className={Styles.tsgContainer}>
           <div className={Styles.imgContainer}>
-            <img src="/media/images/general/gymkhanaLogo.png" alt="TSG Logo" />
+            <img src="/data/media/images/general/gymkhanaLogo.png" alt="TSG Logo" />
           </div>
           <div className={Styles.tsgDescription}>
             <h2 className={Styles.tsgHeading}>Technology Students' Gymkhana</h2>
