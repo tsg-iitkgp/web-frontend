@@ -7,6 +7,11 @@
     color: #4f9bc7;
 }
 
+.formContainer .header p {
+    text-align: center;
+    padding: 10px 0;
+}
+
 .formContainer input {
 
 }
