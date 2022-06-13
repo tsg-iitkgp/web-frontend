@@ -2,6 +2,42 @@
 
 const eventsData = [
   {
+    title: "World Blood Donor Day",
+    date: "14th June 2022",
+    poster: "",
+    createdAt: "14th June 2022",
+    highlightText:
+      `
+       "Donating bloog is an act of solidarity. Join the efforts and save lives."
+      `,
+    description:
+      `
+       The day marks an opportunity to thank blood donors for their act of saving lives through voluntary blood donation.
+       The day is celebrated to increase awareness about need of regular non-renumerated voluntary blood donations.
+      `,
+    modalContent: "",
+    content: [
+      `
+      The day marks an opportunity to thank blood donors for their act of saving lives through voluntary blood donation.
+      The day is celebrated to increase awareness about need of regular non-renumerated voluntary blood donations.
+      `
+    ],
+    links: [
+      // {
+      //   description: "Read More:",
+      //   href: "/elections",
+      //   content: "",
+      // },
+    ],
+    dates: [
+      {
+        title: "Observed every year on",
+        date: "14th June",
+      },
+    ],
+    isHighlight: true,
+  },
+  {
     title: "Gymkhana Elections 2022",
     date: "4th April 2022",
     poster: "",

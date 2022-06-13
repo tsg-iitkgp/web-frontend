@@ -1,6 +1,7 @@
 .highlight {
     display: flex;
     flex-direction: column;
+    padding: 0.3rem 0;
 }
 
 .highlightHeadingContainer {
@@ -8,6 +9,7 @@
 }
 
 .highlightHeadingContainer h1 {
+    margin: 0rem;
 }
 
 .highlightBody {
@@ -16,6 +18,12 @@
 
 .highlightBody p {
     margin: 10px 0;
+}
+
+.highlightBody .highlightDescription {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem 0;
 }
 
 .highlightFooter {

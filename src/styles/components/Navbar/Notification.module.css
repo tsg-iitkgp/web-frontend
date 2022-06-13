@@ -1,12 +1,5 @@
 /* .notification {
-  position: relative;
-  margin: 0.75rem auto;
-  width: 95%;
   padding: 1rem;
-  font-size: 0.75rem;
-  max-height: 7rem;
-  overflow-y: hidden;
-  border-radius: 0.25rem;
   background-color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   box-sizing: border-box;
@@ -14,13 +7,11 @@
 } */
 
 .notification:hover {
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
-  transition: all 0.3s ease;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
 }
 
 .notification .title {
-  color: rgba(0, 0, 0, 0.5);
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -35,14 +26,15 @@
 }
 
 .notification .createdTime {
-  position: absolute;
-  right: 2%;
-  bottom: 2%;
   font-size: 0.75rem;
+  text-align: right;
   color: rgba(0, 0, 0, 0.4);
 }
 
 .notification .description {
-  padding-top: 0.4rem;
+  color: rgb(43, 43, 43);
+  padding: 0.4rem 0;
   font-size: 0.8rem;
+  text-overflow: ellipsis;
+  line-height: 1.2rem;
 }

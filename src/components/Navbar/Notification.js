@@ -5,14 +5,11 @@ export default function Notification({ event, handleClick }) {
 
   const notifStyle = {
     position: 'relative',
+    padding: '1rem',
     margin: '0.75rem auto',
     width: '95%',
-    padding: '1rem',
-    fontSize: '0.75rem',
-    maxHeight: '7rem',
-    overflowY: 'hidden',
     borderRadius: '0.25rem',
-    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
     cursor: 'pointer',
     boxSizing: 'border-box',
     transition: 'all 0.3s ease',
@@ -30,7 +27,7 @@ export default function Notification({ event, handleClick }) {
         </span>
       </div>
       <div className={Styles.description}>
-        {event.description.slice(0, 150) + ". . . . "}
+        {event.description}
       </div>
       <div
         className={Styles.createdTime}
