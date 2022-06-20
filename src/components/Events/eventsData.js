@@ -2,6 +2,51 @@
 
 const eventsData = [
   {
+    title: "Celebration of the 8th International Day of Yoga 2022",
+    date: "21st June 2022",
+    poster: "",
+    createdAt: "21st June 2022",
+    highlightText:
+      ``,
+    description:
+      `
+      In commemoration of the ‘Azadi ka Amrit Mahotsav’, 
+      IIT Kharagpur is going to celebrate the 8th International Day of Yoga 2022 on 21st June at 6 AM in the Tata Steel Sports ground. 
+      The live telecast of the event will be through the YouTube channel of Technology Students' Gymkhana.
+      `,
+    modalContent: "",
+    content: [
+      `
+      In commemoration of the ‘Azadi ka Amrit Mahotsav’, 
+      IIT Kharagpur is going to celebrate the 8th International Day of Yoga 2022 on 21st June at 6 AM in the Tata Steel Sports ground. 
+      The live telecast of the event will be through the YouTube channel of Technology Students' Gymkhana.
+      `
+    ],
+    links: [
+      {
+        description: "Live Stream at:",
+        href: "https://youtu.be/ieOqwpFbBMg",
+        content: "https://youtu.be/ieOqwpFbBMg",
+      },
+      {
+        description: "Event Schedule:",
+        href: "/data/media/files/IDY_schedule.pdf",
+        content: "Click Here",
+      },
+    ],
+    dates: [
+      {
+        title: "Date",
+        date: "6:00 am - 8:00 am, 21st June 2022",
+      },
+      {
+        title: "Venue",
+        date: "Tata Steel Sports Complex",
+      },
+    ],
+    isHighlight: true,
+  },
+  {
     title: "World Blood Donor Day",
     date: "14th June 2022",
     poster: "",

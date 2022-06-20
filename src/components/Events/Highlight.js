@@ -41,7 +41,7 @@ function Highlight({ events }) {
                   <p>
                     {link.description} &nbsp;
                     <a href={link.href} target="blank">
-                      Click Here
+                      {link.content}
                     </a>
                   </p>
                 );
