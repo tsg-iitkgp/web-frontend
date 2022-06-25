@@ -6,6 +6,7 @@ import "./Awards.css";
 import primg from "./Contacts/Images/prf.png";
 
 const years = [
+  "2021-22",
   "2020-21",
   "2019-20",
   "2018-19",
@@ -14,8 +15,8 @@ const years = [
   "2015-16",
 ];
 function Awards() {
-  const [currentTab, setCurrentTab] = useState("socult");
-  const [currentYear, setCurrentYear] = useState("2020-21");
+  const [currentTab, setCurrentTab] = useState("tech");
+  const [currentYear, setCurrentYear] = useState("2021-22");
 
   const handleTabChange = (s) => {
     setCurrentTab(s);
