@@ -99,6 +99,7 @@ ul li a {
 }
 .navbar .notifications {
   position: absolute;
+  padding: 0.15rem;
   top: 8vh;
   right: 0;
   border-radius: 0.25rem;
@@ -106,8 +107,7 @@ ul li a {
   backdrop-filter: blur(2rem);
   box-shadow: 0 0rem 1rem 0 rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(2rem);
-  width: 25vw;
-  max-width: 30vw;
+  width: 30vw;
 }
 @media screen and (max-width: 768px) {
   .navLogo a {

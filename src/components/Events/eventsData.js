@@ -2,6 +2,87 @@
 
 const eventsData = [
   {
+    title: "Celebration of the 8th International Day of Yoga 2022",
+    date: "21st June 2022",
+    poster: "",
+    createdAt: "21st June 2022",
+    highlightText:
+      ``,
+    description:
+      `
+      In commemoration of the ‘Azadi ka Amrit Mahotsav’, 
+      IIT Kharagpur is going to celebrate the 8th International Day of Yoga 2022 on 21st June at 6 AM in the Tata Steel Sports ground. 
+      The live telecast of the event will be through the YouTube channel of Technology Students' Gymkhana.
+      `,
+    modalContent: "",
+    content: [
+      `
+      In commemoration of the ‘Azadi ka Amrit Mahotsav’, 
+      IIT Kharagpur is going to celebrate the 8th International Day of Yoga 2022 on 21st June at 6 AM in the Tata Steel Sports ground. 
+      The live telecast of the event will be through the YouTube channel of Technology Students' Gymkhana.
+      `
+    ],
+    links: [
+      {
+        description: "Live Stream at:",
+        href: "https://youtu.be/ieOqwpFbBMg",
+        content: "https://youtu.be/ieOqwpFbBMg",
+      },
+      {
+        description: "Event Schedule:",
+        href: "/data/media/files/IDY_schedule.pdf",
+        content: "Click Here",
+      },
+    ],
+    dates: [
+      {
+        title: "Date",
+        date: "6:00 am - 8:00 am, 21st June 2022",
+      },
+      {
+        title: "Venue",
+        date: "Tata Steel Sports Complex",
+      },
+    ],
+    isHighlight: true,
+  },
+  {
+    title: "World Blood Donor Day",
+    date: "14th June 2022",
+    poster: "",
+    createdAt: "14th June 2022",
+    highlightText:
+      `
+       "Donating bloog is an act of solidarity. Join the efforts and save lives."
+      `,
+    description:
+      `
+       The day marks an opportunity to thank blood donors for their act of saving lives through voluntary blood donation.
+       The day is celebrated to increase awareness about need of regular non-renumerated voluntary blood donations.
+      `,
+    modalContent: "",
+    content: [
+      `
+      The day marks an opportunity to thank blood donors for their act of saving lives through voluntary blood donation.
+      The day is celebrated to increase awareness about need of regular non-renumerated voluntary blood donations.
+      `
+    ],
+    links: [
+      // {
+      //   description: "Read More:",
+      //   href: "/elections",
+      //   content: "",
+      // },
+    ],
+    dates: [
+      {
+        title: "Observed every year on",
+        date: "14th June",
+      },
+    ],
+    isHighlight: true,
+  },
+  {
     title: "Gymkhana Elections 2022",
     date: "4th April 2022",
     poster: "",

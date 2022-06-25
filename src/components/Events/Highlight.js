@@ -12,8 +12,14 @@ function Highlight({ events }) {
             </div>
 
             <div className={Styles.highlightBody}>
-              <p>{event.description}</p>
-
+              <p className={Styles.highlightDescription}>
+                {event.highlightText}
+              </p>
+              {
+                event.content && event.content.map((content, index) => (
+                  <p key={index}>{content}</p>
+                ))
+              }
               <div className={Styles.highlightDate}>
                 {event.dates &&
                   event.dates.map((date, index) => {
@@ -35,7 +41,7 @@ function Highlight({ events }) {
                   <p>
                     {link.description} &nbsp;
                     <a href={link.href} target="blank">
-                      Click Here
+                      {link.content}
                     </a>
                   </p>
                 );
