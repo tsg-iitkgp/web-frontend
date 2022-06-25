@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
-import CurrentOffceBearers from "./Contacts/CurrentOfficeBearers";
+import CurrentOfficeBearers from "./Contacts/CurrentOfficeBearers";
 import Styles from "../styles/pages/contacts.module.css";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { useLocation } from "react-router-dom";
@@ -12,7 +12,7 @@ import Staff from "./Contacts/Staff";
 function Contacts() {
   document.title = "Contacts | TSG";
   // state variable for rendering content on the basis of sidebar click
-  const [currentOffceBearers, setCurrentOffceBearers] = useState(true);
+  const [currentOfficeBearers, setCurrentOfficeBearers] = useState(true);
   const [secretaries, setSecretaries] = useState(false);
   const [pastBearers, setPastBearers] = useState(false);
   const [staff, setStaff] = useState(false);
@@ -22,27 +22,27 @@ function Contacts() {
   useEffect(() => {
     //changing state variable values on the basis of path
     if (location.pathname === "/contacts") {
-      setCurrentOffceBearers(true);
+      setCurrentOfficeBearers(true);
       setPastBearers(false);
       setSecretaries(false);
       setStaff(false);
     } else if (location.pathname === "/contacts/current-office-bearers") {
-      setCurrentOffceBearers(true);
+      setCurrentOfficeBearers(true);
       setPastBearers(false);
       setSecretaries(false);
       setStaff(false);
     } else if (location.pathname === "/contacts/secretaries") {
-      setCurrentOffceBearers(false);
+      setCurrentOfficeBearers(false);
       setPastBearers(false);
       setStaff(false);
       setSecretaries(true);
     } else if (location.pathname === "/contacts/pastBearers") {
-      setCurrentOffceBearers(false);
+      setCurrentOfficeBearers(false);
       setStaff(false);
       setPastBearers(true);
       setSecretaries(false);
     } else if (location.pathname === "/contacts/staff") {
-      setCurrentOffceBearers(false);
+      setCurrentOfficeBearers(false);
       setStaff(true);
       setPastBearers(false);
       setSecretaries(false);
@@ -56,7 +56,7 @@ function Contacts() {
 
         <div className={Styles.content}>
           {/* Contacts of the page on basis of route */}
-          {currentOffceBearers && <CurrentOffceBearers />}
+          {currentOfficeBearers && <CurrentOfficeBearers />}
           {secretaries && <Secretaries />}
           {pastBearers && <PastBearers />}
           {staff && <Staff />}
