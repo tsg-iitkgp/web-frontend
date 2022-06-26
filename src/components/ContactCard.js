@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "../styles/components/contact-card.module.css";
-
+import CopyToClipboard from "react-copy-to-clipboard";
 function ContactCard({
   name,
   designation,
@@ -23,9 +23,11 @@ function ContactCard({
           </a>
         </li>
         <li>
-          <a href={`${email}`} target="_blank" rel="noreferrer">
-            <i className="fas fa-envelope"></i>
-          </a>
+          <CopyToClipboard text={`${email}`}>
+            <button title="Copy Email Address">
+              <i className="fas fa-envelope" ></i>
+            </button>
+          </CopyToClipboard>
         </li>
         <li>
           <a href={`${linkedin}`} target="_blank" rel="noreferrer">
