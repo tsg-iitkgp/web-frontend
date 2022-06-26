@@ -24,6 +24,8 @@ export default function CurrentOfficeBearers() {
             name={President.Name}
             designation={President.Post}
             email={President.Email}
+            facebook={President.Facebook}
+            linkedin={President.LinkedIn}
             imgSrc={`/data/media/images/contacts/${President.img}`}
           />
         </div>
@@ -32,6 +34,8 @@ export default function CurrentOfficeBearers() {
           <ContactCard
             name={VicePresident.Name}
             designation={VicePresident.Post}
+            facebook={VicePresident.Facebook}
+            linkedin={VicePresident.LinkedIn}
             email={VicePresident.Email}
             imgSrc={`/data/media/images/contacts/${VicePresident.img}`}
           />
@@ -45,6 +49,8 @@ export default function CurrentOfficeBearers() {
                   name={member.Name}
                   designation={member.Post}
                   email={member.Email}
+                  facebook={member.Facebook}
+                  linkedin={member.LinkedIn}
                   imgSrc={`/data/media/images/contacts/${member.img}`}
                 />
               );
@@ -59,6 +65,8 @@ export default function CurrentOfficeBearers() {
                 <ContactCard
                   name={member.Name}
                   designation={member.Post}
+                  facebook={member.Facebook}
+                  linkedin={member.LinkedIn}
                   email={member.Email}
                   imgSrc={`/data/media/images/contacts/${member.img}`}
                 />
