@@ -5,7 +5,6 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-
 .container {
   background-color: black;
   width: 300px;
@@ -28,12 +27,12 @@ img,
   transition: all 0.5s;
   object-fit: cover;
 }
-
 .container:hover .imgbox img,
 .container:hover .imgbox .svgContainer {
   opacity: 0.4;
   transform: scale(1.1);
 }
+
 .sociallinks {
   height: auto;
   position: absolute;
@@ -45,7 +44,8 @@ img,
 .sociallinks li {
   list-style: none;
 }
-.sociallinks li a {
+.sociallinks li a,
+.sociallinks li button {
   color: black;
   display: block;
   background-color: #fff;
@@ -58,21 +58,23 @@ img,
   transition: 0.4s ease;
   opacity: 0;
 }
-.container:hover .sociallinks li a {
+.container:hover .sociallinks li a,
+.container:hover .sociallinks li button {
   transform: translateY(25%);
   opacity: 1;
   pointer-events: auto;
   cursor: pointer;
 }
-.container .sociallinks li a:hover i {
+.container .sociallinks li a:hover i,
+.container .sociallinks li button:hover i {
   transition: 0.5s ease-in-out;
-  color: rgb(86, 38, 139);
-  /* transform: rotateY(360deg); */
+  color: rgb(0, 156, 246);
+  transform: rotateY(360deg);
 }
 .container:hover .sociallinks li:nth-child(1) a {
   transition-delay: 0s;
 }
-.container:hover .sociallinks li:nth-child(2) a {
+.container:hover .sociallinks li:nth-child(2) button {
   transition-delay: 0.2s;
 }
 .container:hover .sociallinks li:nth-child(3) a {
@@ -102,14 +104,12 @@ img,
   font-size: 1rem;
   font-weight: 600;
 }
-
 @media screen and (max-width: 552px) {
   .container {
     width: 250px;
     height: 300px;
   }
 }
-
 .svgContainer {
   padding: 10px;
 }
