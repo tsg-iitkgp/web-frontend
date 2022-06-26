@@ -6,6 +6,7 @@ function ContactCard({
   designation,
   email,
   facebook,
+  linkedin,
   whatsapp,
   web,
   imgSrc,
@@ -17,17 +18,17 @@ function ContactCard({
       </div>
       <ul className={Styles.sociallinks}>
         <li>
-          <a href="www.facebook.com">
+          <a href={`${facebook}`} target="_blank" rel="noreferrer">
             <i className="fab fa-facebook-f"></i>
           </a>
         </li>
         <li>
-          <a href="mail.google.com">
+          <a href={`${email}`} target="_blank" rel="noreferrer">
             <i className="fas fa-envelope"></i>
           </a>
         </li>
         <li>
-          <a href="www.linkedin.com">
+          <a href={`${linkedin}`} target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin-in"></i>
           </a>
         </li>
