@@ -1,6 +1,10 @@
 import React from "react";
 import Styles from "../styles/components/contact-card.module.css";
 import CopyToClipboard from "react-copy-to-clipboard";
+import Snackbar from '@material-ui/core/Snackbar';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
+
 function ContactCard({
   name,
   designation,
@@ -10,7 +14,23 @@ function ContactCard({
   whatsapp,
   web,
   imgSrc,
+
 }) {
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    console.log("handleclick")
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
   return (
     <div className={Styles.container}>
       <div className={Styles.imgbox}>
@@ -24,7 +44,7 @@ function ContactCard({
         </li>
         <li>
           <CopyToClipboard text={`${email}`}>
-            <button title="Copy Email Address">
+            <button onClick={handleClick} title="Copy Email Address">
               <i className="fas fa-envelope" ></i>
             </button>
           </CopyToClipboard>
@@ -35,6 +55,25 @@ function ContactCard({
           </a>
         </li>
       </ul>
+      <div>
+        <Snackbar
+          anchorOrigin={{
+            vertical: 'center',
+            horizontal: 'center',
+          }}
+          open={open}
+          autoHideDuration={2000}
+          onClose={handleClose}
+          message="Email address copied"
+          action={
+            <React.Fragment>
+              <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+                <CloseIcon fontSize="small" />
+              </IconButton>
+            </React.Fragment>
+          }
+        />
+      </div>
       <div className={Styles.details}>
         <h2>{name}</h2>
         <span>{designation}</span>
