@@ -54,27 +54,27 @@ function ContactCard({
             <i className="fab fa-linkedin-in"></i>
           </a>
         </li>
-      </ul>
-      <div>
-        <Snackbar
-          anchorOrigin={{
-            vertical: 'center',
-            horizontal: 'center',
-          }}
-          open={open}
-          autoHideDuration={2000}
-          onClose={handleClose}
-          message="Email address copied"
-          action={
-            <React.Fragment>
-              <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
-                <CloseIcon fontSize="small" />
-              </IconButton>
-            </React.Fragment>
-          }
-        />
-      </div>
+      </ul >
       <div className={Styles.details}>
+        <div>
+          <Snackbar
+            anchorOrigin={{
+              vertical: 'center',
+              horizontal: 'center',
+            }}
+            open={open}
+            autoHideDuration={2000}
+            onClose={handleClose}
+            message="Email address copied"
+            action={
+              <React.Fragment>
+                <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+                  <CloseIcon fontSize="small" />
+                </IconButton>
+              </React.Fragment>
+            }
+          />
+        </div>
         <h2>{name}</h2>
         <span>{designation}</span>
       </div>
