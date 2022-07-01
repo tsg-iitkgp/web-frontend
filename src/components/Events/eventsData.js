@@ -2,6 +2,54 @@
 
 const eventsData = [
   {
+    title: "World Blood Donor Day - Blood Donation Camp ",
+    date: "5th July 2022",
+    poster: "",
+    createdAt: "1st July 2022",
+    highlightText:
+      ``,
+    description:
+      `
+      Technology Students’ Gymkhana, Indian Institute of Technology Kharagpur is organising a voluntary blood 
+      donation camp in TSG premises on 5th July 2022, 10 AM Onwards.
+      The whole campus community is requested to come forward and donate blood for the noble cause. 
+      `,
+    modalContent: "",
+    content: [
+      `
+      Technology Students’ Gymkhana, Indian Institute of Technology Kharagpur is organising a voluntary blood donation camp in TSG premises with the vision
+      “Donating Blood is an Act of Solidarity, Join the efforts and save lives”.  
+      Kharagpur Voluntary Blood doners association is going to help us during the event.
+      Students available on campus and the whole campus community is requested to come forward and donate blood for the noble cause. 
+      Please register  through  the given link for the purpose of record.
+      A notice published on Apna KGP site is attached.
+      `
+    ],
+    links: [
+      {
+        description: "Notice: ",
+        href: "/data/media/files/BLOOD DONATION CAMP EVENT.pdf",
+        content: "Click Here",
+      },
+      {
+        description: "Registration Link: ",
+        href: "https://docs.google.com/forms/d/1pR3atKFL2igFR6mpJaS8yVWNJP2IxcgSrz2-U3pPSfY/edit?ts=62ac7342",
+        content: "Click Here",
+      },
+    ],
+    dates: [
+      {
+        title: "Date",
+        date: "5th July 2022, 10 AM Onwards ",
+      },
+      {
+        title: "Venue",
+        date: "Technology Students' Gymkhana",
+      },
+    ],
+    isHighlight: true,
+  },
+  {
     title: "Celebration of the 8th International Day of Yoga 2022",
     date: "21st June 2022",
     poster: "",
