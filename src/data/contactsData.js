@@ -150,7 +150,7 @@ export default {
       Post: "Technology Coordinator",
       img: "20CH30014.jpg",
       Contact: 9354817605,
-      Facebook: "https//www.facebook.com/kunalvrm555",
+      Facebook: "https://www.facebook.com/kunalvrm555",
       LinkedIn: "https://www.LinkedIn.com/in/kunalvrm555/",
       Email: "kunalvrm.iitkgp@gmail.com",
       "Institue ids": "kunalvrm@kgpian.iitkgp.ac.in",
