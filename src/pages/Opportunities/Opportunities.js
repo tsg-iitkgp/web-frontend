@@ -55,8 +55,8 @@ export default function Opportunities() {
         <Box className={Styles.contact}>
           <Typography variant="body2" className={Styles.contactDetails}>
             For any queries contact: &nbsp;{" "}
-            <a href="mailto:iitkgp.pr@gmail.com">Sarthak Goyal</a> &nbsp;{" "}
-            <a href="tel:+917584837111">(7584837111)</a>
+            <a href="mailto:iitkgp.pr@gmail.com">Awanish Kumar</a> &nbsp;{" "}
+            <a href="tel:+919351114364">(9351114364)</a>
           </Typography>
           <TableContainer>
             {isLoading ? (
