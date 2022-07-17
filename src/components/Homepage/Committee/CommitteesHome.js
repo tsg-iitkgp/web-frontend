@@ -11,7 +11,7 @@ export default function CommitteesHome() {
     },
     {
       number: 2,
-      heading: "Social and Culture",
+      heading: "Social and Cultural",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
       route: "/committees/2021/socult",
     },

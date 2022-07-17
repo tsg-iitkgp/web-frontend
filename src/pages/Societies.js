@@ -7,7 +7,7 @@ export default function Societies() {
   document.title = "Societies | TSG";
 
   const committees = [
-    { name: "Social And Culture", category: "Socult" },
+    { name: "Social And Cultural", category: "Socult" },
     { name: "Technology", category: "Tech" },
     { name: "Sports & Games", category: "Sports & Games" },
     { name: "Welfare", category: "Welfare" },
