@@ -14,6 +14,8 @@ export default function Secretaries() {
               designation={member.Post}
               email={member.Email}
               imgSrc={`/data/media/images/secyImages/${member.RollNo}.jpg`}
+              facebook={member.Facebook}
+              linkedin={member.LinkedIn}
             />
           );
         })}
