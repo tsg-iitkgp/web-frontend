@@ -30,6 +30,7 @@ import Elections from "./pages/Elections/Elections";
 import ElectionCandidates from "./pages/Elections/ElectionCandidates";
 import Opportunities from "./pages/Opportunities/Opportunities";
 import OpportunityPage from "./pages/Opportunities/OpportunityPage";
+import CertifGen from "./pages/CertificateGenerator/CertifGen";
 
 function App() {
   useEffect(() => {
@@ -39,6 +40,7 @@ function App() {
     <Router>
       <ScrollToTop>
         <Switch>
+          <PrivateRoute exact path="/certificate" component={CertifGen} />
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/results" component={Results} />
