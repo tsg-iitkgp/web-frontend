@@ -1,0 +1,10 @@
+.logout-container {
+    display: flex;
+    width: 90%;
+    justify-content: right;
+    margin-bottom: 2rem;
+}
+
+.logout-container button:hover {
+    color: white;
+}

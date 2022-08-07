@@ -4,6 +4,9 @@ import "./LoginScreen.css";
 import Layout from "../../components/Layout";
 
 const LoginScreen = ({ history }) => {
+
+  document.title = "Login | TSG"
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");

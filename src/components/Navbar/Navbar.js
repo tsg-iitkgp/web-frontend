@@ -18,7 +18,7 @@ export default function Navbar() {
   });
   const handleClick = () => setClick(!click);
   const highlightEvents = eventsData.filter((event) => event.isHighlight);
-  console.log(highlightEvents);
+  // console.log(highlightEvents);
   let listClass;
   if (click) {
     listClass = `${Styles.navMenu} ${Styles.active}`;

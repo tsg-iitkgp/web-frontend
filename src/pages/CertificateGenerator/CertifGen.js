@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import "./CertifGen.css";
 import Layout from "../../components/Layout";
 
+import Logout from '../admin/Logout';
 import FileUpload from '../../components/CertificateGenerator/FileUpload';
 import ControlledCarousel from "../../components/CertificateGenerator/ControlledCarousel";
 
@@ -15,7 +16,7 @@ const CertifGen = () => {
           (
         <Layout>
             <div className='certif-container'>
-                {/* Logout Button */}
+                <Logout />
                 <div style={{ display: 'flex', justifyContent: "center" }}>
                     <div className='admin-title'>CERTIFICATE GENERATOR</div>
                 </div>

@@ -34,4 +34,4 @@ export const faqSidebarList = data.map((element, index) => {
     route: "#" + element.title,
   };
 });
-console.log(faqSidebarList);
+// console.log(faqSidebarList);
