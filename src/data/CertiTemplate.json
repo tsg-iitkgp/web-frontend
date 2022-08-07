@@ -1,0 +1,40 @@
+{
+    "Templates": [
+        {
+            "id": 0,
+            "src": "/data/media/certif-templates/template-00.png",
+            "alt": "Certificate 1",
+            "preview": "/data/media/certif-templates/excel-preview/preview-00.png"
+        },
+        {
+            "id": 1,
+            "src": "/data/media/certif-templates/template-01.png",
+            "alt": "Certificate 2",
+            "preview": "/data/media/certif-templates/excel-preview/preview-01.png"
+        },
+        {
+            "id": 2,
+            "src":"https://picsum.photos/id/10/400/300",
+            "alt": "Certificate 3",
+            "preview":"https://picsum.photos/id/10/400/300"
+        },
+        {
+            "id": 3,
+            "src": "https://picsum.photos/id/100/400/300",
+            "alt": "Certificate 4",
+            "preview": "https://picsum.photos/id/100/400/300"
+        },
+        {
+            "id": 4,
+            "src": "https://picsum.photos/id/1002/400/300",
+            "alt": "Certificate 5",
+            "preview": "https://picsum.photos/id/1002/400/300"
+        },
+        {
+            "id": 5,
+            "src":"https://picsum.photos/id/1003/400/300",
+            "alt": "Certificate 6",
+            "preview":"https://picsum.photos/id/1003/400/300"
+        }
+    ]
+}
