@@ -38,18 +38,20 @@ function ControlledCarousel(props) {
             <Carousel activeIndex={index} onSelect={handleSelect} interval={null} fade= {true} touch={true}>
                 {CertiTemplate.Templates.map(template => (
                     <Carousel.Item key={template.id}>
-                        <img
-                            className="d-block w-200"
-                            src={template.src}
-                            alt={template.alt}
-                            style={{ borderRadius:'1rem'}}
-                        />
-                        <Carousel.Caption>
-                            <h3>{template.alt}</h3>
-                            <button className={`btn btn-${buttonColor}`} 
-                            id={template.id} 
-                            onClick={handleTemplate} >{button}</button>
-                        </Carousel.Caption>
+                        <div className='div-shrink m-auto'>
+                            <img
+                                className="d-block w-200"
+                                src={template.src}
+                                alt={template.alt}
+                                style={{ borderRadius:'1rem'}}
+                            />
+                            <Carousel.Caption>
+                                <h3>{template.alt}</h3>
+                                <button className={`btn btn-${buttonColor}`} 
+                                id={template.id} 
+                                onClick={handleTemplate} >{button}</button>
+                            </Carousel.Caption>
+                        </div>
                     </Carousel.Item>
                 ))}
             </Carousel>
