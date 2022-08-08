@@ -3,23 +3,21 @@ import Message from './Message';
 import Progress from './Progress';
 import axios from 'axios';
 
-const FileUpload = () => {
+const FileUpload = (props) => {
   const [file, setFile] = useState('');
-  const [filename, setFilename] = useState('Choose File');
   const [uploadedFile, setUploadedFile] = useState({});
   const [message, setMessage] = useState('');
   const [uploadPercentage, setUploadPercentage] = useState(0);
   
   const onChange = e => {
     setFile(e.target.files[0]);
-    setFilename(e.target.files[0].name);
   };
 
   const onSubmit = async e => {
-    console.log('submit');
     e.preventDefault();
     const formData = new FormData();
     formData.append('file', file);
+    formData.append('templateId', props.id);
     try {
       const res = await axios.post('http://localhost:4000/certificate/upload', formData, {
         headers: {
@@ -62,11 +60,12 @@ const FileUpload = () => {
         <Progress percentage={uploadPercentage} />
 
         <div className='fileuploadbutton'>
-            <input
+            <button
                 type="submit"
                 value="Generate"
                 className="btn btn-primary btn-block mt-4 col-lg-7"
-            />
+                disabled={!(props.status)}
+            >Generate</button>
         </div>
       </form>
       {uploadedFile ? <div className="row mt-5">

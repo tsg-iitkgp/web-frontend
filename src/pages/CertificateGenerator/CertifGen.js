@@ -5,10 +5,19 @@ import Layout from "../../components/Layout";
 import Logout from '../admin/Logout';
 import FileUpload from '../../components/CertificateGenerator/FileUpload';
 import ControlledCarousel from "../../components/CertificateGenerator/ControlledCarousel";
+import { useState, useEffect } from 'react';
 
 const CertifGen = () => {
 
     document.title = "Certificate Generator | TSG"
+    const [id, setId] = useState(null);
+    const [status, setStatus] = useState(false);
+
+    useEffect(() => {
+        if (id !== null) {
+            setStatus(true);
+        }
+    }, [id])
 
     return (
 
@@ -20,8 +29,8 @@ const CertifGen = () => {
                 <div style={{ display: 'flex', justifyContent: "center" }}>
                     <div className='admin-title'>CERTIFICATE GENERATOR</div>
                 </div>
-                <ControlledCarousel />
-                <FileUpload />
+                <ControlledCarousel setId={setId} />
+                <FileUpload id={id} status={status} />
             </div>
         </Layout>
           ) : (
