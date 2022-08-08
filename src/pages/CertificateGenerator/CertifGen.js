@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Redirect } from 'react-router';
 import "./CertifGen.css";
 import Layout from "../../components/Layout";
 
@@ -6,18 +6,24 @@ import Logout from '../admin/Logout';
 import FileUpload from '../../components/CertificateGenerator/FileUpload';
 import ControlledCarousel from "../../components/CertificateGenerator/ControlledCarousel";
 import { useState, useEffect } from 'react';
-
+const jwt = require('jsonwebtoken');
 const CertifGen = () => {
 
-    document.title = "Certificate Generator | TSG"
-    const [id, setId] = useState(null);
-    const [status, setStatus] = useState(false);
-
-    useEffect(() => {
-        if (id !== null) {
-            setStatus(true);
-        }
-    }, [id])
+  document.title = "Certificate Generator | TSG"
+  const [id, setId] = useState(null);
+  const [status, setStatus] = useState(false);
+  useEffect(() => {
+      if (id !== null) {
+          setStatus(true);
+      }
+  }, [id])
+    const token = localStorage.getItem("authToken");
+    const decodedToken = jwt.decode(token, { complete: true });
+    const token_exp = decodedToken.payload.exp;
+    if (token_exp * 1000 < Date.now()) {
+      localStorage.clear();
+      return (<Redirect to="/login" />);
+    }
 
     return (
 
@@ -36,7 +42,7 @@ const CertifGen = () => {
           ) : (
         <div className="login-screen">
            <h3 className="login-screen__title">Login</h3>
-           <Link to="/login">Login</Link>
+           <Redirect to="/login">Login</Redirect>
          </div>
           )
     );
