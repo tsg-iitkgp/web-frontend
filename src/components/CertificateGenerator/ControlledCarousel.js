@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ControlledCarousel.css';
@@ -7,9 +7,11 @@ import './ControlledCarousel.css';
 import CertiTemplate from '../../data/CertiTemplate.json'
 import ExcelPreview from './ExcelPreview';
 
-function ControlledCarousel() {
+function ControlledCarousel(props) {
     const [index, setIndex] = useState(0);
     const [selectedTemplate, setSelectedTemplate] = useState(null);
+    const [button, setButton] = useState('Select');
+    const [buttonColor, setButtonColor] = useState('warning');
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
@@ -17,14 +19,25 @@ function ControlledCarousel() {
 
     const handleTemplate = (selectedTemplate, e) => {
         setSelectedTemplate(selectedTemplate.target.id);
+        props.setId(selectedTemplate.target.id);
     };
+
+    useEffect(() => {
+        if (index === parseInt(selectedTemplate)) {
+            setButton('Selected');
+            setButtonColor('primary');
+        } else {
+            setButton('Select');
+            setButtonColor('warning');
+        }
+    }, [index, selectedTemplate])
 
     return (
         <>
             <div style={{height: 'auto', width: '40vw'}}>
             <Carousel activeIndex={index} onSelect={handleSelect} interval={null} fade= {true} touch={true}>
                 {CertiTemplate.Templates.map(template => (
-                    <Carousel.Item key={template.key}>
+                    <Carousel.Item key={template.id}>
                         <img
                             className="d-block w-200"
                             src={template.src}
@@ -33,9 +46,9 @@ function ControlledCarousel() {
                         />
                         <Carousel.Caption>
                             <h3>{template.alt}</h3>
-                            <button className='btn btn-warning' 
+                            <button className={`btn btn-${buttonColor}`} 
                             id={template.id} 
-                            onClick={handleTemplate} >Select</button>
+                            onClick={handleTemplate} >{button}</button>
                         </Carousel.Caption>
                     </Carousel.Item>
                 ))}
