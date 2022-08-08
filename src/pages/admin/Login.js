@@ -38,9 +38,12 @@ const LoginScreen = ({ history }) => {
       history.push("/certificate");
     } catch (error) {
       console.log(error);
-      setTimeout(() => {
-        setError("");
-      }, 5000);
+      if(error.message==='Request failed with status code 403'){
+        setError('* incorrect password');
+      }
+      else if(error.message==='Request failed with status code 401'){
+        setError('* incorrect E-mail id');
+      }
     }
   };
 
@@ -49,7 +52,6 @@ const LoginScreen = ({ history }) => {
       <div className="login-screen">
         <form onSubmit={loginHandler} className="login-screen__form">
           <h3 className="login-screen__title">Login</h3>
-          {error && <span className="error-message">{error}</span>}
           <div className="form-group">
             <input
               type="email"
@@ -73,6 +75,7 @@ const LoginScreen = ({ history }) => {
               tabIndex={2}
             />
           </div>
+          {error && <span className="error-message">{error}</span>}
           <div className="form-button">
             <button type="submit" className="btn btn-primary">
               Login
