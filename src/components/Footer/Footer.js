@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./footer.module.css";
 import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const linksList = [
@@ -10,18 +11,22 @@ export default function Footer() {
         {
           title: "Counselling Centre",
           href: "http://www.counsellingcentre.iitkgp.ac.in/",
+          target: "_blank",
         },
         {
           title: "IIT KGP Website",
           href: "http://www.iitkgp.ac.in/",
+          target: "_blank",
         },
         {
           title: "Yellow Pages",
           href: "https://wiki.metakgp.org/w/Yellow_pages",
+          target: "_blank",
         },
         {
           title: "Hall Management Centre",
           href: "http://www.hmc.iitkgp.ac.in/web/",
+          target: "_blank",
         },
       ],
     },
@@ -31,19 +36,24 @@ export default function Footer() {
         {
           title: "ERP",
           href: "https://erp.iitkgp.ac.in/SSOAdministration/login.htm?sessionToken=F90F79C925A0FE0DC48AE7CBFDE3D20A.worker1&requestedUrl=https://erp.iitkgp.ac.in/IIT_ERP3/",
-        },
-        {
-          title: "Zimbra Webmail",
-          href: "https://iitkgpmail.iitkgp.ac.in/",
+          target: "_blank",
+          
         },
         {
           title: "Your Dost",
           href: "https://wiki.metakgp.org/w/Yellow_pages/",
+          target: "_blank",
         },
         {
           title: "Grievance Form",
           href: "https://docs.google.com/forms/d/e/1FAIpQLSft9FXZYvLiNt3oy0K3Iu4d6HoE830RhNWFHMXx1R4IjlhHKA/viewform",
+          target: "_blank",
         },
+        {
+          title: "Admin Login",
+          href: "https://gymkhana.iitkgp.ac.in/login",
+          target: "_self",
+        }
       ],
     },
   ];
@@ -102,7 +112,7 @@ export default function Footer() {
                   {linkGroup.links.map((link, index) => {
                     return (
                       <li key={index}>
-                        <a target="_blank" href={link.href} rel="noreferrer">
+                        <a target={link.target} href={link.href} rel="noreferrer">
                           {link.title}
                         </a>
                       </li>
