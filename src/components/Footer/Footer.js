@@ -51,7 +51,7 @@ export default function Footer() {
         },
         {
           title: "Admin Login",
-          href: "https://gymkhana.iitkgp.ac.in/login",
+          href: "/login",
           target: "_self",
         }
       ],
