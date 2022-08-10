@@ -12,7 +12,6 @@ import khokho from "./images/tech/khokho.jpg";
 import spt1 from "./images/sports/spt1.png";
 import spt2 from "./images/sports/spt2.png";
 import spt3 from "./images/sports/spt3.png";
-import spt4 from "./images/sports/spt4.png";
 import spt5 from "./images/sports/spt5.png";
 import spt6 from "./images/sports/spt6.png";
 import spt7 from "./images/sports/spt7.png";

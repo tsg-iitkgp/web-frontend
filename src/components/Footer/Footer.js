@@ -1,7 +1,6 @@
 import React from "react";
 import Styles from "./footer.module.css";
 import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export default function Footer() {
   const linksList = [

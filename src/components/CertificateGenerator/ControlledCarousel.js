@@ -34,7 +34,7 @@ function ControlledCarousel(props) {
 
     return (
         <>
-            <div style={{height: 'auto', width: '40vw'}}>
+            <div style={{height: 'auto', width: '50vw'}}>
             <Carousel activeIndex={index} onSelect={handleSelect} interval={null} fade= {true} touch={true}>
                 {CertiTemplate.Templates.map(template => (
                     <Carousel.Item key={template.id}>
