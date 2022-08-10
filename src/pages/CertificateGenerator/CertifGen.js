@@ -1,6 +1,7 @@
 import "./CertifGen.css";
 import Layout from "../../components/Layout";
 
+import Login from "../admin/Login";
 import Logout from '../admin/Logout';
 import FileUpload from '../../components/CertificateGenerator/FileUpload';
 import ControlledCarousel from "../../components/CertificateGenerator/ControlledCarousel";
@@ -22,9 +23,7 @@ const CertifGen = () => {
   if (token_exp * 1000 < Date.now()) {
     localStorage.clear();
     window.location.href = "/login"
-
   }
-
   return (
 
     localStorage.getItem("authToken") ?
@@ -39,7 +38,11 @@ const CertifGen = () => {
             <FileUpload id={id} status={status} />
           </div>
         </Layout>
-      ) : window.location.href = "/login"
+      ) : (
+        <Layout>
+          <Login/>
+        </Layout>
+      )
   );
 }
 
