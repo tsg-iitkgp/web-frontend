@@ -4,8 +4,8 @@ import './Logout.css'
 const Logout = () => {
 
     const logout = () => {
-        localStorage.removeItem('authToken');
-        window.location.reload();
+        localStorage.clear();
+        window.location.href="/login";
     }
 
     return (
