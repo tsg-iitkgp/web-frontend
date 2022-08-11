@@ -23,12 +23,14 @@ const LoginScreen = ({ history }) => {
     const config = {
       header: {
         "Content-Type": "application/json",
+        'Access-Control-Allow-Origin': 'https://gymkhana.iitkgp.ac.in',
+        'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept, Authorization',
       },
     };
 
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/login",
+        "/login",
         { email, password },
         config
       );

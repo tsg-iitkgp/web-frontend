@@ -19,10 +19,10 @@ const FileUpload = (props) => {
     formData.append('file', file);
     formData.append('templateId', props.id);
     try {
-      const res = await axios.post('http://localhost:4000/certificate/upload', formData, {
+      const res = await axios.post('/certificate/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
-          'Access-Control-Allow-Origin': 'http://localhost:3000',
+          'Access-Control-Allow-Origin': 'https://gymkhana.iitkgp.ac.in',
           'Access-Control-Allow-Methods': 'POST',
           'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept, Authorization',
         },
