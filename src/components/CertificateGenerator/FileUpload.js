@@ -8,7 +8,7 @@ const FileUpload = (props) => {
   const [uploadedFile, setUploadedFile] = useState({});
   const [message, setMessage] = useState('');
   const [uploadPercentage, setUploadPercentage] = useState(0);
-  
+
   const onChange = e => {
     setFile(e.target.files[0]);
   };
@@ -17,30 +17,31 @@ const FileUpload = (props) => {
     e.preventDefault();
     const formData = new FormData();
     formData.append('file', file);
-    formData.append('templateId', props.id);
+    formData.append('certificateId', props.id);
+    const config = {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+        'Access-Control-Allow-Origin': 'https://gymkhana.iitkgp.ac.in',
+        'Access-Control-Allow-Methods': 'POST',
+        'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept, Authorization',
+      },
+      onUploadProgress: progressEvent => {
+        setUploadPercentage(parseInt(Math.round((progressEvent.loaded * 100) / progressEvent.total)));
+        setTimeout(() => setUploadPercentage(0), 10000);
+      }
+    }
     try {
-      const res = await axios.post('/certificate/upload', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-          'Access-Control-Allow-Origin': 'https://gymkhana.iitkgp.ac.in',
-          'Access-Control-Allow-Methods': 'POST',
-          'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept, Authorization',
-        },
-        onUploadProgress: progressEvent => {
-          setUploadPercentage(parseInt(Math.round((progressEvent.loaded * 100) / progressEvent.total)));
-          setTimeout(() => setUploadPercentage(0), 10000);
-        }
-      });
-
+      const res = await axios.post('/certificate/upload', formData, config);
       const { fileName, filePath } = res.data;
       setUploadedFile({ fileName, filePath });
       setMessage('File uploaded');
-      console.log(setMessage);
-    } catch (err) {
-      console.log(err);
+      
     }
+    catch (err) {
+      console.log(err); 
+    }
+    console.log(formData);
   }
-
   return (
     <Fragment>
       {message ? <Message msg={message} /> : null}
@@ -60,12 +61,12 @@ const FileUpload = (props) => {
         <Progress percentage={uploadPercentage} />
 
         <div className='fileuploadbutton'>
-            <button
-                type="submit"
-                value="Generate"
-                className="btn btn-primary btn-block mt-4 col-lg-7"
-                disabled={!(props.status)}
-            >Generate</button>
+          <button
+            type="submit"
+            value="Generate"
+            className="btn btn-primary btn-block mt-4 col-lg-7"
+            disabled={!(props.status)}
+          >Generate</button>
         </div>
       </form>
       {uploadedFile ? <div className="row mt-5">
