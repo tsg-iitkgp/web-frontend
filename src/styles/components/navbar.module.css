@@ -38,6 +38,7 @@
 .navLinks {
   font-size: 1.1rem;
   color: white;
+  text-align: center;
 }
 .navItem .acitveLink {
   color: #f1c40f;
