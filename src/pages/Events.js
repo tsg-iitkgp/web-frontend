@@ -101,6 +101,12 @@ export default function Events() {
                 data-src="/data/media/images/events/upcomingEvents/qs.jpg"
                 onClick={() => handlePosterClick("#")}
               />
+              <div
+                data-src="/data/media/images/events/upcomingEvents/tt_tournament.png"
+                onClick={() =>
+                    handlePosterClick("https://www.facebook.com/111989874951868/posts/112201191597403")
+                }
+              />
             </AutoplaySlider>
           </section>
         </section>

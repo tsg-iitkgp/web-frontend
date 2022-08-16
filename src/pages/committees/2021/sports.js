@@ -23,6 +23,7 @@ import spt12 from "./images/sports/spt12.png";
 import spt13 from "./images/sports/spt13.png";
 import spt14 from "./images/sports/spt14.png";
 import spt15 from "./images/sports/spt15.png";
+import spt16 from "./images/sports/spt16.png";
 
 
 export default function Sports() {
@@ -208,6 +209,65 @@ export default function Sports() {
 
 
         <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>First Gymkhana Table Tennis Tournament</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt16} alt="TT Tournament Poster" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+                "Take the initiative and make a difference; that is how we improve."<br />
+                <br />
+                For the first time, the Indoor Games Subcommittee, Technology Students' Gymkhana, Indian Institute of Technology 
+                Kharagpur is hosting a Table Tennis event accessible to all IIT Kharagpur students and staff members: The First Gymkhana 
+                Table Tennis Tournament!!<br />
+                <br />
+                It's going to be an entertaining competition with a lot of sports spirit, passion, and enjoyment.<br />
+                The top 30 students (24 boys and 6 girls) will be considered for Inter-IIT selections.<br />
+                Don't pass up this opportunity.<br />
+                <br />
+                Register here:<br />
+                Men's and Women's Double Fixtures- 
+                <a className={globalStyles.btn} href="https://forms.gle/srp99vEVBfxLAWxd7" target="_blank">Click Here</a><br />
+                Mixed Double Fixtures- 
+                <a className={globalStyles.btn} href="https://forms.gle/tGBJDtgdL6FL7VfT9" target="_blank">Click Here</a><br />
+                Singles Fixtures- 
+                <a className={globalStyles.btn} href="https://forms.gle/z1vfaSB84vouvZFy9" target="_blank">Click Here</a><br />
+                <br />
+                Registration Deadline: 20th August before 11:59 p.m.<br />
+                Tournament Dates: 23rd - 29th August.<br />
+                Time: 6pm to 9pm<br />
+                Venue: TSG Table Tennis Court<br />
+                Categories:
+                <ul>
+                    <li>
+                        ❖ Men's singles
+                    </li>
+                    <li>
+                        ❖ Women's singles
+                    </li>
+                    <li>
+                        ❖ Men's doubles
+                    </li>
+                    <li>
+                        ❖ Women's doubles
+                    </li>
+                    <li>
+                        ❖ Mixed doubles
+                    </li>
+                </ul>
+                PLEASE NOTE: Players should use Non-marking shoes and proper sports attire for the  tournament.
+            </p>
+        </div>
+        </section>
+
+        <center>
 
           <h1>Inter Hall Gymkhana Championship</h1>
         </center>
@@ -318,7 +378,7 @@ export default function Sports() {
           </div>
         </section>
 
-
+        
 
         <center>
           <hr className={globalStyles.hrLine} />
