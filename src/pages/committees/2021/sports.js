@@ -234,11 +234,11 @@ export default function Sports() {
                 <br />
                 Register here:<br />
                 Men's and Women's Double Fixtures- 
-                <a className={globalStyles.btn} href="https://forms.gle/srp99vEVBfxLAWxd7" target="_blank">Click Here</a><br />
+                <a className={globalStyles.btn} href="https://forms.gle/srp99vEVBfxLAWxd7" target="_blank" rel="noreferrer">Click Here</a><br />
                 Mixed Double Fixtures- 
-                <a className={globalStyles.btn} href="https://forms.gle/tGBJDtgdL6FL7VfT9" target="_blank">Click Here</a><br />
+                <a className={globalStyles.btn} href="https://forms.gle/tGBJDtgdL6FL7VfT9" target="_blank" rel="noreferrer">Click Here</a><br />
                 Singles Fixtures- 
-                <a className={globalStyles.btn} href="https://forms.gle/z1vfaSB84vouvZFy9" target="_blank">Click Here</a><br />
+                <a className={globalStyles.btn} href="https://forms.gle/z1vfaSB84vouvZFy9" target="_blank" rel="noreferrer">Click Here</a><br />
                 <br />
                 Registration Deadline: 20th August before 11:59 p.m.<br />
                 Tournament Dates: 23rd - 29th August.<br />
@@ -268,7 +268,7 @@ export default function Sports() {
         </section>
 
         <center>
-
+          <hr className={globalStyles.hrLine} />
           <h1>Inter Hall Gymkhana Championship</h1>
         </center>
 
