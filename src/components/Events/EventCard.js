@@ -44,6 +44,9 @@ export default function EventCard({
         <h1>{title}</h1>
         <h2>{date}</h2>
         <p> {description}</p>
+        <p>
+            
+        </p>
         {/* <p className={Styles.readMore}>
           <a href="www.google.com">Read More</a>
         </p> */}
