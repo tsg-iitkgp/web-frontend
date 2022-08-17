@@ -1,15 +1,28 @@
 import React from 'react'
+import Styles from "../../styles/components/contact-card.module.css";
+import data from '../../data/CertiTemplate.json'
 
-import data from '../../data/CertiTemplate.json' 
-
-function ExcelPreview(id) {
-    if (id.id !== null) {
+function ExcelPreview(props) {
+    
+    if (props.id !== null) {
         return (
             <>
-                <figure>
-                    <img src={data.Templates[id.id].preview} alt={data.Templates[id.id].alt} className='d-block m-auto' />
-                    <figcaption className='text-center'>{data.Templates[id.id].alt}</figcaption>
-                </figure>
+                <div className={Styles.container} style={{width: '100%', margin: 'auto', backgroundColor: '#ffffffc7'}}>
+                    <div className={Styles.imgbox} style={{width: '100%', margin: 'auto'}}>
+                        <img src={data.Templates[props.id].preview} alt={data.Templates[props.id].alt} style={{objectFit: 'contain'}}/>
+                    </div>
+                    <ul className={Styles.sociallinks}>
+                        <li>
+                            <a href={`${data.Templates[props.id].download_link}`} download rel="noreferrer">
+                                <i className="fa fa-download"></i>
+                            </a>
+                        </li>
+                    </ul >
+                    <div className={Styles.details}>
+                        <h2>Excel Sheet Template</h2>
+                        <span>Certificate {parseInt(props.id) +1}</span>
+                    </div>
+                </div>
             </>
         )
     } else {

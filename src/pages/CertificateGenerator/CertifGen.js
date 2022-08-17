@@ -30,7 +30,16 @@ const CertifGen = () => {
       (
         <Layout>
           <div className='certif-container'>
-            <Logout />
+            <div style={{width: '95%'}}>
+              <div style={{float: 'left'}}>
+              <a href="https://drive.google.com/file/d/1PljTpttt7XvHOBRdMH4cn07FBvwZggvz/view" target="_blank" rel="noreferrer" style={{fontSize: '1.2rem'}}>
+                <button className="btn btn-primary">User Manual</button>
+              </a>
+              </div>
+              <div style={{float:'right'}}>
+              <Logout />
+              </div>
+            </div>
             <div style={{ display: 'flex', justifyContent: "center" }}>
               <div className='admin-title'>CERTIFICATE GENERATOR</div>
             </div>
