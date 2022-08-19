@@ -29,7 +29,7 @@ export default function Opportunities() {
       .then((response) => response.json())
       .then((responseData) => {
         setInternshipsData(responseData.data.data);
-        console.log(responseData.data.data);
+        // console.log(responseData.data.data);
         setIsLoading(false);
       });
   }, []);

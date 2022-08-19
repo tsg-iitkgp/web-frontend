@@ -27,7 +27,7 @@ function Highlight({ sheetName = 'Highlight1' }) {
 
     const openModal = (index) => {
         setIsModalOpen(true);
-        console.log(isModalOpen)
+        // console.log(isModalOpen)
     }
 
     return (

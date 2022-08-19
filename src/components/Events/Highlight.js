@@ -23,7 +23,7 @@ function Highlight({ events }) {
               <div className={Styles.highlightDate}>
                 {event.dates &&
                   event.dates.map((date, index) => {
-                    console.log(date);
+                    // console.log(date);
                     return (
                       <div style={{ display: "flex" }}>
                         <p style={{ color: "#f1c40f" }}>

@@ -24,7 +24,7 @@ function PointsTable() {
           (item) => item.group === pointsGroup
         );
         setPointsData(filteredData);
-        console.log(filteredData);
+        // console.log(filteredData);
         setIsLoading(false);
       })
       .catch((err) => setIsLoading(false));
@@ -32,7 +32,7 @@ function PointsTable() {
 
   const openModal = (index) => {
     setIsModalOpen(true);
-    console.log(isModalOpen);
+    // console.log(isModalOpen);
   };
 
   const changeGroup = (newGroup) => {

@@ -21,7 +21,7 @@ export default function OpportunityPage() {
       .then((response) => response.json())
       .then((responseData) => {
         setInternshipsData(responseData.data.data);
-        console.log(responseData.data.data);
+        // console.log(responseData.data.data);
         setIsLoading(false);
       });
   }, []);
