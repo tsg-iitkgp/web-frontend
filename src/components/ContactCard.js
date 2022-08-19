@@ -20,7 +20,7 @@ function ContactCard({
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
-    console.log("handleclick")
+    // console.log("handleclick")
     setOpen(true);
   };
 

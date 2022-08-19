@@ -19,7 +19,7 @@ function Calendar({ events }) {
 
   const handleDateClick = (arg) => {
     // bind with an arrow function
-    console.log(arg);
+    // console.log(arg);
   };
 
   const handleEventClick = (arg) => {

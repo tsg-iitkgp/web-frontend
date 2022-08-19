@@ -32,33 +32,40 @@ function ControlledCarousel(props) {
         }
     }, [index, selectedTemplate])
 
+    useEffect(() => {
+        setSelectedTemplate(null);
+        props.setMessage('');
+        props.setGenerate('Generate');
+        props.setGenerateStatus('primary');
+    }, [index]);
+
     return (
         <>
-            <div style={{height: 'auto', width: '50vw'}}>
-            <Carousel activeIndex={index} onSelect={handleSelect} interval={null} fade= {true} touch={true}>
-                {CertiTemplate.Templates.map(template => (
-                    <Carousel.Item key={template.id}>
-                        <div className='div-shrink m-auto'>
-                            <img
-                                className="d-block w-200"
-                                src={template.src}
-                                alt={template.alt}
-                                style={{ borderRadius:'1rem'}}
-                            />
-                            <Carousel.Caption>
-                                <h3>{template.alt}</h3>
-                                <button className={`btn btn-${buttonColor}`} 
-                                id={template.id} 
-                                onClick={handleTemplate} >{button}</button>
-                            </Carousel.Caption>
-                        </div>
-                    </Carousel.Item>
-                ))}
-            </Carousel>
+            <div style={{ height: 'auto', width: '50vw' }}>
+                <Carousel activeIndex={index} onSelect={handleSelect} interval={null} fade={true} touch={true}>
+                    {CertiTemplate.Templates.map(template => (
+                        <Carousel.Item key={template.id}>
+                            <div className='div-shrink m-auto'>
+                                <img
+                                    className="d-block w-200"
+                                    src={template.src}
+                                    alt={template.alt}
+                                    style={{ borderRadius: '1rem' }}
+                                />
+                                <Carousel.Caption>
+                                    <h3>{template.alt}</h3>
+                                    <button className={`btn btn-${buttonColor}`}
+                                        id={template.id}
+                                        onClick={handleTemplate} >{button}</button>
+                                </Carousel.Caption>
+                            </div>
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
             </div>
             <p className='text-center d-block btn btn-success m-auto'
-            style={{background:'transparent', color:'yellow' ,border:'none'}}>Certificate {parseInt(selectedTemplate) + 1} selected!</p>
-            <div style={{height: 'auto', width: '40vw'}}><ExcelPreview id={selectedTemplate} /></div> 
+                style={{ background: 'transparent', color: 'yellow', border: 'none' }}>Certificate {parseInt(selectedTemplate) + 1} selected!</p>
+            <div style={{ height: 'auto', width: '40vw' }}><ExcelPreview id={selectedTemplate} /></div>
 
         </>
     );

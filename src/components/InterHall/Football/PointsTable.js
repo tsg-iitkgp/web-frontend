@@ -21,14 +21,14 @@ function PointsTable() {
             .then((response) => (response.json())).then((responseData) => {
                 const filteredData = responseData.data.filter((item) => (item.group === pointsGroup));
                 setPointsData(filteredData);
-                console.log(filteredData)
+                // console.log(filteredData)
                 setIsLoading(false);
             }).catch((err) => setIsLoading(false));
     }, [pointsGroup])
 
     const openModal = (index) => {
         setIsModalOpen(true);
-        console.log(isModalOpen)
+        // console.log(isModalOpen)
     }
 
     const changeGroup = (newGroup) => {

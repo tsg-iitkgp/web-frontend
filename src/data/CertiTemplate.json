@@ -4,37 +4,43 @@
             "id": 0,
             "src": "/data/media/certif-templates/template-00.png",
             "alt": "Certificate 1",
-            "preview": "/data/media/certif-templates/excel-preview/preview-00.png"
+            "preview": "/data/media/certif-templates/excel-preview/preview-00.png",
+            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template00.xlsx"
         },
         {
             "id": 1,
             "src": "/data/media/certif-templates/template-01.png",
             "alt": "Certificate 2",
-            "preview": "/data/media/certif-templates/excel-preview/preview-01.png"
+            "preview": "/data/media/certif-templates/excel-preview/preview-01.png",
+            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template01.xlsx"
         },
         {
             "id": 2,
             "src":"https://picsum.photos/id/10/400/300",
             "alt": "Certificate 3",
-            "preview":"https://picsum.photos/id/10/400/300"
+            "preview":"https://picsum.photos/id/10/400/300",
+            "download_link": "https://picsum.photos/id/10/400/300"
         },
         {
             "id": 3,
             "src": "https://picsum.photos/id/100/400/300",
             "alt": "Certificate 4",
-            "preview": "https://picsum.photos/id/100/400/300"
+            "preview": "https://picsum.photos/id/100/400/300",
+            "download_link": "https://picsum.photos/id/100/400/300"
         },
         {
             "id": 4,
             "src": "https://picsum.photos/id/1002/400/300",
             "alt": "Certificate 5",
-            "preview": "https://picsum.photos/id/1002/400/300"
+            "preview": "https://picsum.photos/id/1002/400/300",
+            "download_link": "https://picsum.photos/id/1002/400/300"
         },
         {
             "id": 5,
             "src":"https://picsum.photos/id/1003/400/300",
             "alt": "Certificate 6",
-            "preview":"https://picsum.photos/id/1003/400/300"
+            "preview":"https://picsum.photos/id/1003/400/300",
+            "download_link": "https://picsum.photos/id/1003/400/300"
         }
     ]
 }

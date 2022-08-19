@@ -14,7 +14,7 @@ export default function Dropdown() {
         }
       >
         {AwardsDropdown.map((item, index) => {
-          console.log("map");
+        //   console.log("map");
           return (
             <li
               key={index}

@@ -30,7 +30,7 @@ export default function FA() {
       (topic) => topic.title === event.target.value
     );
     setTopicData(matchingTopic);
-    console.log(matchingTopic);
+    // console.log(matchingTopic);
   };
   return (
     <Layout>
