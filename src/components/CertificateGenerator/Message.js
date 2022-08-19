@@ -1,12 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Message = ({ msg }) => {
+const Message = (props) => {
+
+  const closeMsg = () => {
+    props.setMessage('');
+  }
+
   return (
-    <div className="alert alert-info alert-dismissible fade show" role="alert">
-      { msg }
-      <button type="button" className="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+    <div className={`alert alert-${props.generateStatus} fade show mt-4 mb-0" role="alert`}>
+      { props.msg }
+      <button type="button" onClick={closeMsg} className="btn-close" data-dismiss="alert" aria-label="Close">
+        {/* <span aria-hidden="true">&times;</span> */}
       </button>
     </div>
   )

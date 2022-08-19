@@ -6,8 +6,8 @@ import axios from 'axios';
 const FileUpload = (props) => {
   const [file, setFile] = useState('');
   const [uploadedFile, setUploadedFile] = useState({});
-  const [message, setMessage] = useState('');
   const [uploadPercentage, setUploadPercentage] = useState(0);
+  
 
   const onChange = e => {
     setFile(e.target.files[0]);
@@ -27,24 +27,64 @@ const FileUpload = (props) => {
       },
       onUploadProgress: progressEvent => {
         setUploadPercentage(parseInt(Math.round((progressEvent.loaded * 100) / progressEvent.total)));
-        setTimeout(() => setUploadPercentage(0), 10000);
-      }
+        props.setStatus(false);
+        props.setGenerate('Generating...');
+        props.setGenerateStatus('warning');
+      }   
     }
     try {
-      const res = await axios.post('/certificate/upload', formData, config);
-      const { fileName, filePath } = res.data;
-      setUploadedFile({ fileName, filePath });
-      setMessage('File uploaded');
-      
+        const res = await axios.post('/certificate/upload', formData, config);
+        const { fileName, filePath } = res.data;
+        setUploadedFile({ fileName, filePath });
+        // console.log(res.status);
+        props.setMessage('Certificates generated and sent successfully!');
+        setUploadPercentage(0);
+        props.setGenerate('Generated');
+        props.setGenerateStatus('success');
+        props.setStatus(false);
+        
+        if (res.status === 204) {
+            props.setMessage('Please attach a file!');
+            setUploadPercentage(0);
+            props.setGenerate('Generation Failed');
+            props.setGenerateStatus('danger');
+            props.setStatus(false);
+            setTimeout(() => {
+                props.setMessage('');
+                setUploadPercentage(0);
+                props.setGenerate('Generate');
+                props.setGenerateStatus('primary');
+                props.setStatus(true);
+            }, 5000);
+        }
     }
     catch (err) {
-      console.log(err); 
+        if (err.message === "Request failed with status code 422") {
+            props.setMessage('The file format is invalid!');
+            setUploadPercentage(0);
+            props.setGenerate('Generation Failed');
+            props.setGenerateStatus('danger');
+            props.setStatus(false);      
+            setTimeout(() => {
+                props.setMessage('');
+                setUploadPercentage(0);
+                props.setGenerate('Generate');
+                props.setGenerateStatus('primary');
+                props.setStatus(true);
+            }, 5000);
+        } else {
+            props.setMessage('Failed to generate certificates! Please try again later!');
+            setUploadPercentage(0);
+            props.setGenerate('Generation Failed');
+            props.setGenerateStatus('danger');
+            props.setStatus(false);
+        }
     }
-    console.log(formData);
+    // console.log(formData);
   }
   return (
     <Fragment>
-      {message ? <Message msg={message} /> : null}
+      {props.message ? <Message msg={props.message} setMessage={props.setMessage} generateStatus={props.generateStatus} /> : null}
       <form onSubmit={onSubmit}>
         <div className="custom-file">
           <input
@@ -53,9 +93,6 @@ const FileUpload = (props) => {
             id="customFile"
             onChange={onChange}
           />
-          {/* <label className='custom-file-label' htmlFor='customFile'>
-            {filename}
-          </label> */}
         </div>
         <br />
         <Progress percentage={uploadPercentage} />
@@ -64,9 +101,9 @@ const FileUpload = (props) => {
           <button
             type="submit"
             value="Generate"
-            className="btn btn-primary btn-block mt-4 col-lg-7"
+            className={`btn btn-${props.generateStatus} btn-block mt-4 col-lg-7`}
             disabled={!(props.status)}
-          >Generate</button>
+          >{props.generate}</button>
         </div>
       </form>
       {uploadedFile ? <div className="row mt-5">

@@ -12,6 +12,10 @@ const CertifGen = () => {
   document.title = "Certificate Generator | TSG"
   const [id, setId] = useState(null);
   const [status, setStatus] = useState(false);
+  const [message, setMessage] = useState('');
+  const [generate, setGenerate] = useState('Generate');
+  const [generateStatus, setGenerateStatus] = useState('primary');
+
   useEffect(() => {
     if (id !== null) {
       setStatus(true);
@@ -31,11 +35,6 @@ const CertifGen = () => {
         <Layout>
           <div className='certif-container'>
             <div style={{width: '95%'}}>
-              <div style={{float: 'left'}}>
-              <a href="https://drive.google.com/file/d/1PljTpttt7XvHOBRdMH4cn07FBvwZggvz/view" target="_blank" rel="noreferrer" style={{fontSize: '1.2rem'}}>
-                <button className="btn btn-primary">User Manual</button>
-              </a>
-              </div>
               <div style={{float:'right'}}>
               <Logout />
               </div>
@@ -43,15 +42,20 @@ const CertifGen = () => {
             <div style={{ display: 'flex', justifyContent: "center" }}>
               <div className='admin-title'>CERTIFICATE GENERATOR</div>
             </div>
-            <ControlledCarousel setId={setId} />
-            <FileUpload id={id} status={status} />
+            <div className="mb-5">
+              <a href="https://drive.google.com/file/d/1PljTpttt7XvHOBRdMH4cn07FBvwZggvz/view" target="_blank" rel="noreferrer" style={{fontSize: '1.2rem'}}>
+                <button className="btn btn-primary">User Manual</button>
+              </a>
+            </div>
+            <ControlledCarousel setId={setId} setMessage={setMessage} setGenerate={setGenerate} setGenerateStatus={setGenerateStatus} />
+            <FileUpload id={id} status={status} setStatus={setStatus} message={message} setMessage={setMessage} generate={generate} setGenerate={setGenerate} generateStatus={generateStatus} setGenerateStatus={setGenerateStatus} />
           </div>
         </Layout>
       ) : (
         <Layout>
-          <Login/>
+            <Login/>
         </Layout>
-      )
+    )
   );
 }
 
