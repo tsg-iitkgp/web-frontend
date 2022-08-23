@@ -164,6 +164,9 @@ export default function Navbar() {
             </NavLink>
           </li> */}
           <li className={Styles.navItem}>
+            {false ? <NavLink>TSG Blog</NavLink> : <a href="https://tsgblog.iitkgp.ac.in/" target="_blank" rel="noreferrer" >TSG Blog</a>}
+          </li>
+          <li className={Styles.navItem}>
             <NavLink
               to="/faq"
               className={Styles.navLinks}
