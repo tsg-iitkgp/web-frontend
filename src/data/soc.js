@@ -97,7 +97,7 @@ const soc = {
       name: "Pravah",
       description:
         "Pravah, previously known as Hindi Technology Dramatics Society (H.T.D.S.) ,as the name suggests, is the official Hindi dramatics society of I.I.T. Kharagpur. It performs various plays and nukkad (street plays) on and off campus. It is under the Technology Students' Gymkhana and is a part of the Dramatics Subcommittee under the Social and Cultural Committee.",
-      facebook_link: "https://www.facebook.com/Pravaah/",
+      facebook_link: "https://www.facebook.com/Pravah.iitkgp/",
       wiki_link: "https://wiki.metakgp.org/w/Pravah",
       shortform: "pravah",
       category: "Socult",
@@ -303,6 +303,25 @@ const soc = {
         { name: "Piyush Dangare", email: "dangare.piyush98@gmail.com" },
       ],
     },
+    {
+        name: "Ambar",
+        description:
+          "Ambar is the gender and sexual diversity resource group for the Lesbian, Gay, Bisexual, Transgender, Queer and Questioning (LGBTQ+) community residing in IIT Kharagpur Campus and/or officially associated with IIT Kharagpur. It comprises mainly of, but not limited to, current students, alumni, staff, and family of staff. The group also welcomes straight allies to join and support it.",
+        facebook_link: "https://www.facebook.com/ambar.iitkgp",
+        wiki_link: "https://wiki.metakgp.org/w/Ambar",
+        shortform: "ambar",
+        category: "Welfare",
+        Heads: [],
+      },
+      {
+        name: "Technology Comedy Club",
+        description: "Technology Comedy Club: TCC is the official club of IIT Kharagpur for students interested in standup comedy, improv comedy or just anybody who enjoys making people laugh. It gives them a chance to share their stories publicly on stage. Established in 2019 by a group of students with the goal of creating a prosperous culture for comic artists on campus and a place for campus community to unwind and relax while keeping IIT Kharagpur at the forefront of improv comedy and standup comedy.",
+        facebook_link: "https://www.facebook.com/comedyclubiitkgp",
+        wiki_link: "",
+        shortform: "tcc",
+        category: "Socult",
+        Heads: [],
+      },
   ],
 };
 export default soc;
