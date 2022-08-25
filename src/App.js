@@ -41,6 +41,7 @@ function App() {
       <ScrollToTop>
         <Switch>
           <PrivateRoute exact path="/certificate" component={CertifGen} />
+          <PrivateRoute exact path="/admin/dashboard" component={Dashboard} />
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/results" component={Results} />
@@ -75,7 +76,6 @@ function App() {
           <Route exact path="/opportunities" component={Opportunities} />
           <Route exact path="/opportunities/:id" component={OpportunityPage} />
           <Route exact path="/faq" component={FAQ} />
-          <PrivateRoute exact path="/dashboard" component={Dashboard} />
           <Route component={NotFound} />
         </Switch>
       </ScrollToTop>

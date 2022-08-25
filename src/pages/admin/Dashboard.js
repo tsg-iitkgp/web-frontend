@@ -1,10 +1,24 @@
 import React from 'react';
-import DashboardLayout from '../../components/DashboardLayout';
+import Layout from "../../components/Layout";
+
 
 export default function Dashboard({ history }) {
+    // console.log(history);
     return (
-        <DashboardLayout>
-            Yo
-        </DashboardLayout>
+        <Layout>
+            <div
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100vh',
+                }}
+            >
+
+                <div className="admin-title">Dashboard</div>
+            </div>
+        </Layout>
+
+
     );
 }
