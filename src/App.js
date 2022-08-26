@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // fs imports
 import Login from "./pages/admin/Login";
-import Dashboard from "./pages/admin/Dashboard";
+import Dashboard from "./pages/admin/Dashboard/Dashboard";
 import ContactUs from "./components/ContactForm/ContactForm";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
@@ -30,7 +30,8 @@ import Elections from "./pages/Elections/Elections";
 import ElectionCandidates from "./pages/Elections/ElectionCandidates";
 import Opportunities from "./pages/Opportunities/Opportunities";
 import OpportunityPage from "./pages/Opportunities/OpportunityPage";
-import CertifGen from "./pages/CertificateGenerator/CertifGen";
+import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
+import DataUpdatePage from "./pages/admin/DataUpdate/DataUpdatePage";
 
 function App() {
   useEffect(() => {
@@ -40,8 +41,9 @@ function App() {
     <Router>
       <ScrollToTop>
         <Switch>
-          <PrivateRoute exact path="/certificate" component={CertifGen} />
-          <PrivateRoute exact path="/admin/dashboard" component={Dashboard} />
+          <PrivateRoute exact path="/admin/" component={Dashboard} />
+          <PrivateRoute exact path="/admin/certificate" component={CertifGen} />
+          <PrivateRoute exact path="/admin/dataupdate" component={DataUpdatePage} />
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/results" component={Results} />

@@ -13,7 +13,7 @@ const EventsListRow = (props) => {
             <td>
                 {props.description}
             </td>
-            <td style={{'text-align': 'center'}}>
+            <td style={{'textAlign': 'center'}}>
                 <Button variant="danger" className='m-auto' style={{'padding': '1px 10px', 'margin': 'auto'}} onClick={() => props.handleEventRemove(props.id, props.title)} >Delete</Button>
             </td>
         </tr>

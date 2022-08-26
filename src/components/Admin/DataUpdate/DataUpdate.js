@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import EventsList from './EventsList'
-import host from '../../apiService'
+import host from '../../../apiService'
 
 const DataUpdate = () => {
 
@@ -15,7 +15,7 @@ const DataUpdate = () => {
 
     useEffect(() => {
         fetchEvents();
-    }, []);
+    }, [events]);
 
     const fetchEvents = async () => {
         axios
@@ -42,7 +42,7 @@ const DataUpdate = () => {
                 description: description
             })
             .then(res => {
-                console.log(res.data);
+                // console.log(res.data);
 
                 fetchEvents();
             })
@@ -53,15 +53,15 @@ const DataUpdate = () => {
         if (title.length > 0 && dates.length > 0 && description.length > 0) {
             handleAddEvent()
             handleInputsReset()
-            console.info(`Event: ${title} was added!`);
+            // console.info(`Event: ${title} was added!`);
         }
     }
 
     const handleEventRemove = (id, title) => {
         axios
-            .put(`${host}/admin/event/delete`, {id: id})
+            .put(`${host}/admin/event/delete`, { id: id, title: title })
             .then(() => {
-                console.log(`Event: ${title} removed.`);
+                // console.log(`Event: ${title} removed.`);
 
                 fetchEvents();
             })
@@ -70,7 +70,7 @@ const DataUpdate = () => {
 
     return (
         <>
-            <section className='w-50'>
+            <section className='w-50' style={{marginTop: "5em"}}>
                 <Form className='text-white'>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Event Title</Form.Label>
@@ -79,7 +79,7 @@ const DataUpdate = () => {
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Event Dates</Form.Label>
-                        <Form.Control type="text" placeholder="Event Dates" value={dates} onChange={(e) => setDates(e.currentTarget.value)} />
+                        <Form.Control type="text" placeholder="YYYY-MM-DD" value={dates} onChange={(e) => setDates(e.currentTarget.value)} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">

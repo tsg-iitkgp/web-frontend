@@ -1,7 +1,8 @@
 .logout-container {
     display: flex;
     justify-content: right;
-    margin-bottom: 2rem;
+    /* margin-bottom: -5rem; */
+    /* margin-top: 5rem; */
 }
 
 .logout-container button:hover {

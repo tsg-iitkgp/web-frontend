@@ -1,6 +1,6 @@
 import React from 'react'
-import Styles from "../../styles/components/contact-card.module.css";
-import data from '../../data/CertiTemplate.json'
+import Styles from "../../../styles/components/contact-card.module.css";
+import data from '../../../data/CertiTemplate.json'
 
 function ExcelPreview(props) {
     

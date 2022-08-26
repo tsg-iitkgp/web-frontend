@@ -12,7 +12,7 @@ const EventsList = (props) => {
                     <th>Title</th>
                     <th>Dates</th>
                     <th>Description</th>
-                    <th style={{'text-align': 'center'}}>Action</th>
+                    <th style={{'textAlign': 'center'}}>Action</th>
                 </tr>
             </thead>
             
@@ -21,6 +21,7 @@ const EventsList = (props) => {
                     props.events.map(item => (
                         <EventsListRow 
                             key={item.id}
+                            id={item.id}
                             title={item.title}
                             dates={item.dates}
                             description={item.description.substring(0, 20) + '...'}
@@ -29,7 +30,7 @@ const EventsList = (props) => {
                     ))
                 ) : (
                     <tr>
-                        <td colSpan={3}>There are no Events!</td>
+                        <td colSpan={4}>There are no Events!</td>
                     </tr>
                 )}
             </tbody>
