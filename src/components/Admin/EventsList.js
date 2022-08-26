@@ -12,6 +12,7 @@ const EventsList = (props) => {
                     <th>Title</th>
                     <th>Dates</th>
                     <th>Description</th>
+                    <th style={{'text-align': 'center'}}>Action</th>
                 </tr>
             </thead>
             
@@ -23,6 +24,7 @@ const EventsList = (props) => {
                             title={item.title}
                             dates={item.dates}
                             description={item.description.substring(0, 20) + '...'}
+                            handleEventRemove={props.handleEventRemove}
                         />
                     ))
                 ) : (
