@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import EventsList from './EventsList'
 import host from '../../../apiService'
-
-const DataUpdate = () => {
+const EventsUpdate = () => {
 
     const [title, setTitle] = useState('');
     const [dates, setDates] = useState('');
     const [description, setDescription] = useState('');
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(true);
-
+    const [file, setFile] = useState();
     useEffect(() => {
         fetchEvents();
-    }, [events]);
+    }, []);
+    const inputRef = useRef(null);
 
     const fetchEvents = async () => {
         axios
@@ -27,23 +27,26 @@ const DataUpdate = () => {
             })
             .catch(err => console.error(`There was an error in retrieving the events data: ${err}`));
     }
-
     const handleInputsReset = () => {
         setTitle('');
         setDates('');
         setDescription('');
-    }
+        inputRef.current.value = null;
 
+    }
     const handleAddEvent = () => {
+        let formData = new FormData();
+        formData.append('title', title);
+        formData.append('dates', dates);
+        formData.append('description', description);
+        formData.append('file', file);
         axios
-            .post(`${host}/admin/event/create`, {
-                title: title,
-                dates: dates,
-                description: description
+            .post(`${host}/admin/event/create`, formData, {
+                headers: {
+                    "Content-Type": "multipart/form-data",
+                }
             })
             .then(res => {
-                // console.log(res.data);
-
                 fetchEvents();
             })
             .catch(err => console.log(`There was this ${err} error in adding the event: ${title}`));
@@ -70,7 +73,7 @@ const DataUpdate = () => {
 
     return (
         <>
-            <section className='w-50' style={{marginTop: "5em"}}>
+            <section className='w-50' style={{ marginTop: "5em" }}>
                 <Form className='text-white'>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Event Title</Form.Label>
@@ -86,7 +89,10 @@ const DataUpdate = () => {
                         <Form.Label>Event Description</Form.Label>
                         <Form.Control as="textarea" rows={5} type="text" placeholder="Event Description" value={description} onChange={(e) => setDescription(e.currentTarget.value)} />
                     </Form.Group>
-
+                    <Form.Group controlId="formFileSm" className="mb-3">
+                        <Form.Label>Event Poster (optional)</Form.Label>
+                        <Form.Control type="file" size="sm" ref={inputRef} onChange={(e) => setFile(e.currentTarget.files[0])} />
+                    </Form.Group>
                     <Button variant="warning" onClick={handleEventSubmit}>
                         Submit
                     </Button>
@@ -103,4 +109,4 @@ const DataUpdate = () => {
     );
 }
 
-export default DataUpdate;
+export default EventsUpdate;

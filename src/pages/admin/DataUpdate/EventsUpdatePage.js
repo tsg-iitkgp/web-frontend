@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../../../components/Layout';
 import Logout from '../Logout';
 import Login from '../Login';
-import DataUpdate from '../../../components/Admin/DataUpdate/EventsUpdate';
+import EventsUpdate from '../../../components/Admin/DataUpdate/EventsUpdate';
 const jwt = require('jsonwebtoken');
 
 const EventsUpdatePage = () => {
@@ -24,7 +24,7 @@ const EventsUpdatePage = () => {
                             <Logout />
                         </div>
                     </div>
-                    <DataUpdate />
+                    <EventsUpdate />
                 </Layout>
             ) : (
                 <Layout>
