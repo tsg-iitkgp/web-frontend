@@ -14,7 +14,7 @@ const LoginScreen = ({ history }) => {
 
   useEffect(() => {
     if (localStorage.getItem("authToken")) {
-      history.push("/admin/");
+      history.push("/admin");
     }
   }, [history]);
 
@@ -37,8 +37,11 @@ const LoginScreen = ({ history }) => {
       );
 
       localStorage.setItem("authToken", data.token);
-
-      history.push("/admin/");
+      localStorage.setItem("username",data.username)
+      localStorage.setItem("post",data.post)
+      localStorage.setItem("role",data.role)
+        
+      history.push("/admin");
     } catch (error) {
       console.log(error);
       if(error.message==='Request failed with status code 403'){

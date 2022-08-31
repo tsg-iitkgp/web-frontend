@@ -31,7 +31,7 @@ import ElectionCandidates from "./pages/Elections/ElectionCandidates";
 import Opportunities from "./pages/Opportunities/Opportunities";
 import OpportunityPage from "./pages/Opportunities/OpportunityPage";
 import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
-import DataUpdatePage from "./pages/admin/DataUpdate/DataUpdatePage";
+import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 
 function App() {
   useEffect(() => {
@@ -41,9 +41,9 @@ function App() {
     <Router>
       <ScrollToTop>
         <Switch>
-          <PrivateRoute exact path="/admin/" component={Dashboard} />
+          <PrivateRoute exact path="/admin" component={Dashboard} />
           <PrivateRoute exact path="/admin/certificate" component={CertifGen} />
-          <PrivateRoute exact path="/admin/dataupdate" component={DataUpdatePage} />
+          <PrivateRoute exact path="/admin/events" component={EventsUpdatePage} />
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/results" component={Results} />

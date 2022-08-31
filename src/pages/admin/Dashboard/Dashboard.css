@@ -6,62 +6,52 @@
     align-items: center;
     flex-direction: column;
 }
-
 .profile-pic {
-    position: relative;
+    position:relative;
     top: 1rem;
     text-align: center;
 }
-
 .admin-pic {
     height: 100px;
     width: 100px;
     border-radius: 50px;
 }
-
 .admin-info {
-    background: rgba(197, 190, 159, .23137254901960785);
+    background: rgba(197,190,159,.23137254901960785);
     padding: 1.5rem;
     color: #ffffff;
     border-radius: 20px;
 }
-
 .adm-name-conti {
     text-align: center;
 }
-
 .admin-name {
-
+    
     color: #f1c40f;
 }
-
 .admin-desc {
     display: flex;
     flex-direction: row;
 
 }
-
-.admin-post {
+.admin-post  {
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem ;
     margin-bottom: -0.5rem;
     font-size: 20px;
     /* border: 2px solid #f1c40f ;     */
 }
-
 .router-btns {
-    background: rgba(197, 190, 159, .23137254901960785);
+    background: rgba(197,190,159,.23137254901960785);
     padding: 2rem;
     color: #ffffff;
     border-radius: 20px;
     margin: 2rem;
 }
-
 .routing-conti {
     text-align: center;
     padding: 1rem 5rem;
 }
-
 .btn-route {
     /* color: #f1c40f; */
     /* color: #ffffff; */

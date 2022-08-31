@@ -2,10 +2,10 @@ import React from 'react';
 import Layout from '../../../components/Layout';
 import Logout from '../Logout';
 import Login from '../Login';
-import DataUpdate from '../../../components/Admin/DataUpdate/DataUpdate';
+import DataUpdate from '../../../components/Admin/DataUpdate/EventsUpdate';
 const jwt = require('jsonwebtoken');
 
-const DataUpdatePage = () => {
+const EventsUpdatePage = () => {
     document.title = 'Data Update | TSG';
 
     const token = localStorage.getItem("authToken");
@@ -34,4 +34,4 @@ const DataUpdatePage = () => {
     )
 }
 
-export default DataUpdatePage;
+export default EventsUpdatePage;
