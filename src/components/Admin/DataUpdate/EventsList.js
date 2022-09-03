@@ -12,20 +12,18 @@ const EventsList = (props) => {
                     <th>Title</th>
                     <th>Dates</th>
                     <th>Description</th>
-                    <th style={{'textAlign': 'center'}}>Action</th>
+                    <th style={{ 'textAlign': 'center' }}>Action</th>
                 </tr>
             </thead>
-            
+
             <tbody>
                 {props.events.length > 0 ? (
                     props.events.map(item => (
-                        <EventsListRow 
+                        <EventsListRow
                             key={item.id}
-                            id={item.id}
-                            title={item.title}
-                            dates={item.dates}
-                            description={item.description.substring(0, 20) + '...'}
+                            eventData={item}
                             handleEventRemove={props.handleEventRemove}
+                            setModalStatus={props.setModalStatus}
                         />
                     ))
                 ) : (

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import ViewEvent from './ViewEvent';
 import axios from 'axios';
 import EventsList from './EventsList'
 import host from '../../../apiService'
@@ -11,7 +12,12 @@ const EventsUpdate = () => {
     const [description, setDescription] = useState('');
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [file, setFile] = useState();
+    const [file, setFile] = useState('');
+    const [modalStatus, setModalStatus] = useState({
+        status: false,
+        eventData: {}
+    });
+
     useEffect(() => {
         fetchEvents();
     }, []);
@@ -31,6 +37,7 @@ const EventsUpdate = () => {
         setTitle('');
         setDates('');
         setDescription('');
+        setFile('');
         inputRef.current.value = null;
 
     }
@@ -103,7 +110,11 @@ const EventsUpdate = () => {
                     loading={loading}
                     events={events}
                     handleEventRemove={handleEventRemove}
+                    setModalStatus={setModalStatus}
                 />
+            </section>
+            <section>
+                <ViewEvent modalStatus={modalStatus} setModalStatus={setModalStatus} />
             </section>
         </>
     );
