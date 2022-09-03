@@ -6,8 +6,6 @@ export default function EventCard({
   date,
   description,
   index,
-  bodyContent,
-  eventCategory: category,
   imgSrc,
 }) {
   let blogCardClass;
@@ -23,7 +21,7 @@ export default function EventCard({
           <div
             className={Styles.photo}
             style={{
-              backgroundImage: `url(/data/media/images/events${imgSrc})`,
+              backgroundImage: `url(${imgSrc})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
             }}
@@ -45,11 +43,8 @@ export default function EventCard({
         <h2>{date}</h2>
         <p> {description}</p>
         <p>
-            
+
         </p>
-        {/* <p className={Styles.readMore}>
-          <a href="www.google.com">Read More</a>
-        </p> */}
       </div>
     </div>
   );
