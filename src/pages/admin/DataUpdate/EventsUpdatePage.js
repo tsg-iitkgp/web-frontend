@@ -19,11 +19,11 @@ const EventsUpdatePage = () => {
         localStorage.getItem("authToken") ?
             (
                 <Layout>
-                    <div style={{ width: '95%' }}>
+                    {/* <div style={{ width: '95%' }}>
                         <div style={{ float: 'right', 'margin-top': '5rem', 'margin-bottom': '-5rem' }}>
                             <Logout />
                         </div>
-                    </div>
+                    </div> */}
                     <EventsUpdate />
                 </Layout>
             ) : (

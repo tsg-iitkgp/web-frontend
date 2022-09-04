@@ -1,10 +1,24 @@
 .logout-container {
     display: flex;
     justify-content: right;
+    margin-left: auto;
+    /* margin-top: 7rem; */
     /* margin-bottom: -5rem; */
-    /* margin-top: 5rem; */
+    margin-top: 5rem;
+}
+.top-bar {
+    /* background-color: blue; */
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
 }
 
 .logout-container button:hover {
     color: white;
+}
+.back-container {
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
 }

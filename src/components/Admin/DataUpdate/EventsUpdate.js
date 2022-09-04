@@ -5,6 +5,8 @@ import ViewEvent from './ViewEvent';
 import axios from 'axios';
 import EventsList from './EventsList'
 import host from '../../../apiService'
+import DbAndLogout from '../../../pages/admin/DbAndLogout';
+import "./EventsUpdate.css"
 const EventsUpdate = () => {
 
     const [title, setTitle] = useState('');
@@ -80,6 +82,11 @@ const EventsUpdate = () => {
 
     return (
         <>
+            <div className='update-div'>
+                <DbAndLogout />
+                <div>
+                    <h1>Events Update</h1>
+                </div>
             <section className='w-50' style={{ marginTop: "5em" }}>
                 <Form className='text-white'>
                     <Form.Group className="mb-3" controlId="formBasicEmail">

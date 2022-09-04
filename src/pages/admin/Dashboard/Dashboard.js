@@ -23,6 +23,9 @@ export default function Dashboard() {
                         <Logout />
                     </div>
                 </div>
+                <div>
+                    <h1 className='mb-4'>Admin Dashboard</h1>
+                </div>
                 <div className="admin-profile">
                     <div className="profile-pic">
                         <img className="admin-pic" src = "/data/media/images/general/gymkhanaLogo.png" alt="profile-pic" />
