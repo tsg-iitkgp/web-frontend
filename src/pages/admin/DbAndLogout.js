@@ -14,8 +14,12 @@ const DbAndLogout = () => {
 
     return (
         <div className='top-bar d-flex flex-row m-auto '>
-            <div className="back-container">
+            {/* <div className="back-container">
                 <button onClick={dashboard} className='btn btn-secondary'>Dashboard</button>
+            </div> */}
+            
+            <div className="back-container">
+                <button className="btn btn-secondary" onClick={dashboard}> Dashboard </button>
             </div>
             <div className='logout-container'>
                 <button onClick={logout} className='btn btn-danger'>Logout</button>

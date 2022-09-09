@@ -1,27 +1,22 @@
 import React from "react";
 import Styles from "../../styles/components/Events/eventcard.module.css";
 
-export default function EventCard({
-  title,
-  date,
-  description,
-  index,
-  imgSrc,
-}) {
+export default function EventCard(props) {
+  
   let blogCardClass;
-  if (index % 2 !== 0) {
+  if (props.index % 2 !== 0) {
     blogCardClass = `${Styles.blogCard} ${Styles.alt}`;
   } else {
     blogCardClass = `${Styles.blogCard}`;
   }
   return (
     <div className={blogCardClass}>
-      {imgSrc && (
+      {props.imgSrc && (
         <div className={Styles.meta}>
           <div
             className={Styles.photo}
             style={{
-              backgroundImage: `url(${imgSrc})`,
+              backgroundImage: `url(${props.imgSrc})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
             }}
@@ -39,13 +34,17 @@ export default function EventCard({
         </div>
       )}
       <div className={Styles.description}>
-        <h1>{title}</h1>
-        <h2>{date}</h2>
-        <p> {description}</p>
+        <h1>{props.title}</h1>
+        <h2>{props.date}</h2>
+        <p> {props.description.toString().substring(0, 150) + '...'}</p>
         <p>
-
+          <p className={Styles.readMore}>
+            <button onClick={props.displayTrue}>
+              Read More
+            </button>
+          </p>
         </p>
       </div>
-    </div>
+    </div >
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../../../components/Layout';
-import Logout from '../Logout';
 import Login from '../Login';
 import EventsUpdate from '../../../components/Admin/DataUpdate/EventsUpdate';
 const jwt = require('jsonwebtoken');

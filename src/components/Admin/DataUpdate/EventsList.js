@@ -23,7 +23,7 @@ const EventsList = (props) => {
                             key={item.id}
                             eventData={item}
                             handleEventRemove={props.handleEventRemove}
-                            setModalStatus={props.setModalStatus}
+                            setEventViewStatus={props.setEventViewStatus}
                         />
                     ))
                 ) : (

@@ -35,17 +35,21 @@ export default function Dashboard() {
                             <h3 className="admin-name" placeholder="User Name">{username}</h3>
                         </div>
                         <div className="admin-desc">
-                            <p className="admin-post" placeholder="User Post">{post}</p>
+                            <p className="admin-post post-refine" placeholder="User Post">{post}</p>
                             <p className="admin-post" placeholder="User Role">{role}</p>
                         </div>
                     </div>
                 </div>
                 <div className="router-btns">
                     <div className="routing-conti">
-                        <Link to="/admin/certificate"><button className="btn-route btn btn-primary" >Certificate Generator</button></Link>
+                        <Link to="/admin/certificate" className="btn-route btn btn-primary">
+                            Certificate Generator
+                        </Link>
                     </div>
                     <div className="routing-conti">
-                        <Link to="/admin/events"><button className="btn-route btn btn-primary" >Update Events</button></Link>
+                        <Link to="/admin/events" className="btn-route btn btn-primary">
+                            Update Events
+                        </Link>
                     </div>
                 </div>
             </div>

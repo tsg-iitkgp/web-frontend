@@ -9,9 +9,13 @@ import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/open-animation.css";
+import Popup from "../components/Popup";
 
 export default function Events() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
+  const [show, setShow]= useState(false);
+  const [content, setContent]= useState(null);
+  const [image,setImage]= useState(null);
 
   const handlePosterClick = (videoLink) => {
     window.open(videoLink);
@@ -59,6 +63,7 @@ export default function Events() {
 
   return (
     <Layout>
+      <Popup show={show} content={content} disable={()=>{setShow(false)}} imgSrc={image}/>
       <div className={Styles.bgContainer}>
         {/* {highlightEvents.length && isHighlightOpen && (
           <section className={Styles.mainContainer} data-aos="zoom-in-up">
@@ -127,6 +132,11 @@ export default function Events() {
                     description={event.description}
                     imgSrc={imgSrc}
                     index={event.id}
+                    displayTrue={()=>{
+                      setShow(true);
+                      setContent(event);
+                      setImage(imgSrc);
+                    }}
                   />
                 );
               })}

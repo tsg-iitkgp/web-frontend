@@ -2,11 +2,13 @@ import React, { useState, useRef, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import ViewEvent from './ViewEvent';
+import EventCardModal from '../../Events/EventCardModal';
 import axios from 'axios';
 import EventsList from './EventsList'
 import host from '../../../apiService'
 import DbAndLogout from '../../../pages/admin/DbAndLogout';
 import "./EventsUpdate.css"
+
 const EventsUpdate = () => {
 
     const [title, setTitle] = useState('');
@@ -15,8 +17,9 @@ const EventsUpdate = () => {
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(true);
     const [file, setFile] = useState('');
-    const [modalStatus, setModalStatus] = useState({
+    const [eventViewStatus, setEventViewStatus] = useState({
         status: false,
+        modalStatus: false,
         eventData: {}
     });
 
@@ -117,12 +120,18 @@ const EventsUpdate = () => {
                     loading={loading}
                     events={events}
                     handleEventRemove={handleEventRemove}
-                    setModalStatus={setModalStatus}
+                    setEventViewStatus={setEventViewStatus}
                 />
             </section>
             <section>
-                <ViewEvent modalStatus={modalStatus} setModalStatus={setModalStatus} />
+                <EventCardModal onClose={() => setEventViewStatus({
+                    status: true,
+                    modalStatus: false,
+                    eventData: eventViewStatus.eventData
+                })} eventViewStatus={eventViewStatus} />
+                <ViewEvent eventViewStatus={eventViewStatus} setEventViewStatus={setEventViewStatus} />
             </section>
+            </div>
         </>
     );
 }

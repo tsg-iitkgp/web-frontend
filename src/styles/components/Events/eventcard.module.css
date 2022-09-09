@@ -117,7 +117,7 @@ body {
 .blogCard .description .readMore {
   text-align: right;
 }
-.blogCard .description .readMore a {
+.blogCard .description .readMore button{
   color: #e4b601;
   position: relative;
   top: 1vw;
@@ -126,7 +126,7 @@ body {
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
 }
-.blogCard .description .readMore a:after {
+.blogCard .description .readMore button:after {
   content: "\f061";
   font-family: FontAwesome;
   margin-left: -10px;
@@ -134,7 +134,7 @@ body {
   vertical-align: middle;
   transition: margin 0.3s, opacity 0.3s;
 }
-.blogCard .description .readMore a:hover:after {
+.blogCard .description .readMore button:hover:after {
   margin-left: 5px;
   opacity: 1;
 }
@@ -145,6 +145,7 @@ body {
 }
 .blogCard p:first-of-type {
   margin-top: 1.25rem;
+  white-space: pre-wrap;
 }
 .blogCard p:first-of-type:before {
   content: "";
@@ -158,6 +159,7 @@ body {
 .blogCard:hover .details {
   left: 0%;
 }
+
 @media (min-width: 768px) {
   .blogCard {
     flex-direction: row;

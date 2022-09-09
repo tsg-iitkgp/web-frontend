@@ -6,7 +6,9 @@
     align-items: center;
     flex-direction: column;
     margin-top: 2rem;
+    margin-top: 2rem;
 }
+
 
 .profile-pic {
     position:relative;
@@ -28,22 +30,29 @@
     text-align: center;
 }
 .admin-name {
-    margin-top: 1rem;
+    margin-top: 1rem;margin-top: 1rem;
     color: #f1c40f;
+    width: 300px;
+    height: auto;
+    
     width: 300px;
     height: auto;
     
 }
 .admin-desc {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 .admin-post  {
     padding: 1rem;
-    margin: 1rem ;
+    /* margin: 1rem ; */
     margin-bottom: -0.5rem;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,12 +60,13 @@
     /* border: 2px solid #f1c40f ;     */
 }
 .post-refine {
-    width: 120px;
+    /* width: 120px; */
     height: auto;
-    margin: 1rem 2rem;
+    /* margin: 1rem 2rem; */
     display: flex;
     justify-content: center;
     margin-bottom: -0.5rem;
+    text-align: center;
     
 }
 .router-btns {
