@@ -2,10 +2,15 @@ import React from 'react';
 import { useState } from 'react';
 import Popup from '../../Popup';
 import EventCard from '../../Events/EventCard';
+import ResultsPreview from './ResultsPreview';
 
 const ViewEvent = (props) => {
     const eventData = props.eventViewStatus.eventData;
     const [show, setShow] = useState(false);
+    const [showRes, setShowRes] = useState(false);
+    const [eventResults, setEventResults]= useState(null);
+    const [title, setTitle]= useState(null);
+    const [index, setIndex] = useState(null);
     const [content, setContent] = useState(null);
     const [image, setImage] = useState(null);
     let imgSrc = null;
@@ -17,6 +22,7 @@ const ViewEvent = (props) => {
     if (props.eventViewStatus.status) {
         return (
             <>
+            <ResultsPreview eventTitle={title} eventResults={eventResults} showRes={showRes} index={index} disable={() => { setShowRes(false) }} />
                 <Popup show={show} content={content} disable={()=>{setShow(false)}} imgSrc={image}/>
                 <div>
                     <div>
@@ -32,6 +38,7 @@ const ViewEvent = (props) => {
                     title={eventData.title}
                     date={eventData.dates}
                     description={eventData.description}
+                    resultExists={eventData.resultExists}
                     imgSrc={imgSrc}
                     index={eventData.id}
                     displayTrue={()=>{
@@ -39,6 +46,13 @@ const ViewEvent = (props) => {
                       setContent(eventData);
                       setImage(imgSrc);
                     }}
+                    displayResults={() => {
+                        setShowRes(true);
+                        setTitle(eventData.title);
+                        setIndex(eventData.id);
+                        // console.log(`The title is ${title} id = ${event.id}`);
+                    }}
+                    setEventResults= {setEventResults}
                   />
                 </div>
             </>

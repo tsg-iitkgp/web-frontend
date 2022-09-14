@@ -118,13 +118,14 @@ body {
   text-align: right;
 }
 .blogCard .description .readMore button{
-  color: #e4b601;
+  /* color: #e4b601; */
   position: relative;
   top: 1vw;
   text-decoration: none;
-  border: 2px solid #e4b601;
+  /* border: 2px solid #e4b601; */
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
+  margin: 0 0.5rem;
 }
 .blogCard .description .readMore button:after {
   content: "\f061";
@@ -158,6 +159,15 @@ body {
 }
 .blogCard:hover .details {
   left: 0%;
+}
+
+.btnsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.disable{
+  display: none;
 }
 
 @media (min-width: 768px) {

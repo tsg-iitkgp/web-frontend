@@ -99,7 +99,7 @@ const EventsUpdate = () => {
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Event Dates</Form.Label>
-                        <Form.Control type="text" placeholder="YYYY-MM-DD" value={dates} onChange={(e) => setDates(e.currentTarget.value)} />
+                        <Form.Control type="text" placeholder="Event Dates" value={dates} onChange={(e) => setDates(e.currentTarget.value)} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">

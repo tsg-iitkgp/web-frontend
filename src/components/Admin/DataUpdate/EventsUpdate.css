@@ -1,3 +1,11 @@
 .update-div {
     margin-top: 5rem;
 }
+.list-row-btn{
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+}
+.btns-conti{
+    text-align: center;
+    margin: 0 -2rem;
+}
