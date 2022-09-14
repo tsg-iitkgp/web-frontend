@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./LoginScreen.css";
 import Layout from "../../components/Layout";
+import host from '../../apiService';
 
 const LoginScreen = ({ history }) => {
 
@@ -13,7 +14,7 @@ const LoginScreen = ({ history }) => {
 
   useEffect(() => {
     if (localStorage.getItem("authToken")) {
-      history.push("/certificate");
+      history.push("/admin");
     }
   }, [history]);
 
@@ -30,14 +31,17 @@ const LoginScreen = ({ history }) => {
 
     try {
       const { data } = await axios.post(
-        "/login",
+        `${host}/login`,
         { email, password },
         config
       );
 
       localStorage.setItem("authToken", data.token);
-
-      history.push("/certificate");
+      localStorage.setItem("username",data.username)
+      localStorage.setItem("post",data.post)
+      localStorage.setItem("role",data.role)
+        
+      history.push("/admin");
     } catch (error) {
       console.log(error);
       if(error.message==='Request failed with status code 403'){

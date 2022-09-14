@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './ControlledCarousel.css';
 // import './certif.css';
 
-import CertiTemplate from '../../data/CertiTemplate.json'
+import CertiTemplate from '../../../data/CertiTemplate.json'
 import ExcelPreview from './ExcelPreview';
 
 function ControlledCarousel(props) {

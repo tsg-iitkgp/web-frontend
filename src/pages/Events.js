@@ -1,139 +1,131 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Styles from "./events.module.css";
-import eventsData from "../components/Events/eventsData";
+// import eventsData from "../components/Events/eventsData";
 import EventCard from "../components/Events/EventCard";
 import Layout from "../components/Layout";
-import { FaBell } from "react-icons/fa";
-import Highlight from "../components/Events/Highlight";
-// import Calendar from "../components/Events/Calendar";
-
+// import Highlight from "../components/Events/Highlight";
+import host from '../apiService'
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/open-animation.css";
+import Popup from "../components/Popup";
+import ResultsPreview from "../components/Admin/DataUpdate/ResultsPreview";
 
 export default function Events() {
-  const AutoplaySlider = withAutoplay(AwesomeSlider);
+    const AutoplaySlider = withAutoplay(AwesomeSlider);
+    const [show, setShow] = useState(false);
+    const [showRes, setShowRes] = useState(false);
+    const [content, setContent] = useState(null);
+    const [title, setTitle]= useState(null);
+    const [eventResults, setEventResults]= useState(null);
+    // const [resContent, setResContent] = useState(null);
+    const [image, setImage] = useState(null);
+    const [index, setIndex] = useState(null);
 
-  const handlePosterClick = (videoLink) => {
-    window.open(videoLink);
-  };
-  document.title = "Events | TSG";
-  // eslint-disable-next-line
-  const [events, setEvents] = useState(eventsData);
-  const highlightEvents = events.filter((event) => event.isHighlight);
-  //eslint-disable-next-line
-  const [isHighlightOpen, setIsHighlightOpen] = useState(true);
-  //eslint-disable-next-line
-  const data = [
-    {
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/c/c2/Cyclothon.jpg",
-      caption: "Cyclothon",
-    },
-    {
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/a/ab/CaseStudy.jpg",
-      caption: "Case Study",
-    },
-    {
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/84/Iitkgp.jpg",
-      caption: "IITKGP",
-    },
-  ];
+    const handlePosterClick = (videoLink) => {
+        window.open(videoLink);
+    };
+    document.title = "Events | TSG";
+    // eslint-disable-next-line
+    const [events, setEvents] = useState([]);
+    // const highlightEvents = events.filter((event) => event.isHighlight);
+    //eslint-disable-next-line
+    // const [isHighlightOpen, setIsHighlightOpen] = useState(true);
+    //eslint-disable-next-line
+    useEffect(() => {
+        fetch(
+            `${host}/admin/events/all`
+        )
+            .then((response) => response.json())
+            .then((responseData) => {
+                setEvents(responseData.events);
+                // console.log(responseData.events);
+            })
+            .catch((err) => {
+                console.log('the error is', err);
+            }
+            );
+    }, []);
 
-  // const closeHighlight = (e) => {
-  //   setIsHighlightOpen(false);
-  // };
+    return (
+        <Layout>
+            <Popup show={show} content={content} disable={() => { setShow(false) }} imgSrc={image} />
+            <ResultsPreview eventTitle={title} eventResults={eventResults} showRes={showRes} index={index} disable={() => { setShowRes(false) }} />
+            
+            <div className={Styles.bgContainer}>
 
-  // const captionStyle = {
-  //   fontSize: "2em",
-  //   fontWeight: "bold",
-  //   textTransform: "uppercase",
-  // };
-  // const slideNumberStyle = {
-  //   fontSize: "20px",
-  //   fontWeight: "bold",
-  // };
+                {/* Recents Events */}
 
-  return (
-    <Layout>
-      <div className={Styles.bgContainer}>
-        {highlightEvents.length && isHighlightOpen && (
-          <section className={Styles.mainContainer} data-aos="zoom-in-up">
-            <div className={Styles.highlightsContainer}>
-              <div className={Styles.highlightsContainerHeader}>
-                <div className={Styles.highlightsContainerMainHeading}>
-                  <FaBell className={Styles.bellIcon} />
-                  <h1>Notifications</h1>
+                <h2 className={Styles.categoryHeading1}>Recent Events</h2>
+
+                <section className="m-content">
+                    <section className={Styles.eventSlider}>
+                        <AutoplaySlider play={true} interval={5000}>
+                            <div
+                                data-src="/data/media/images/events/upcomingEvents/yoga-banner.png"
+                                onClick={() =>
+                                    handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
+                                }
+                            />
+                            <div
+                                data-src="/data/media/images/events/upcomingEvents/yoga_mahotsav_banner.png"
+                                onClick={() =>
+                                    handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
+                                }
+                            />
+                            <div
+                                data-src="/data/media/images/events/upcomingEvents/qs.jpg"
+                                onClick={() => handlePosterClick("#")}
+                            />
+                            <div
+                                data-src="/data/media/images/events/upcomingEvents/tt_tournament.png"
+                                onClick={() =>
+                                    handlePosterClick("https://www.facebook.com/111989874951868/posts/112201191597403")
+                                }
+                            />
+                        </AutoplaySlider>
+                    </section>
+                </section>
+
+                <div className={Styles.mainContainer}>
+                    {/* Upcoming Events Container */}
+
+                    <div className={Styles.categoryContainer} data-aos="zoom-in-up">
+                        <h2 className={Styles.categoryHeading2}>Events</h2>
+                        <div className={Styles.cardsWrapper}>
+                            {events.map((event) => {
+                                let imgSrc = null;
+                                if (event.image) {
+                                    imgSrc = `data:${event.imageMimeType};base64,${Buffer.from(event.image).toString('base64')}`;
+                                }
+                                return (
+                                    <EventCard
+                                        title={event.title}
+                                        date={event.dates}
+                                        description={event.description}
+                                        resultExists={event.resultExists}
+                                        imgSrc={imgSrc}
+                                        index={event.id}
+                                        displayTrue={() => {
+                                            setShow(true);
+                                            setContent(event);
+                                            setImage(imgSrc);
+                                        }}
+                                        displayResults={() => {
+                                            setShowRes(true);
+                                            setTitle(event.title);
+                                            setIndex(event.id);
+                                            console.log(`The title is ${title} id = ${event.id}`);
+                                        }}
+                                        setEventResults= {setEventResults}
+                                    />
+                                );
+                            })}
+                        </div>
+                    </div>
                 </div>
-                {/* <div onClick={closeHighlight}>
-                  <FaTimes className={Styles.timesIcon} />
-                </div> */}
-              </div>
-              <div className={Styles.highlightsContainerBody}>
-                <Highlight events={highlightEvents} />
-              </div>
             </div>
-          </section>
-        )}
-
-        {/* Recents Events */}
-
-        <h2 className={Styles.categoryHeading1}>Recent Events</h2>
-
-        <section className="m-content">
-          <section className={Styles.eventSlider}>
-            <AutoplaySlider play={true} interval={5000}>
-              <div
-                data-src="/data/media/images/events/upcomingEvents/yoga-banner.png"
-                onClick={() =>
-                  handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
-                }
-              />
-              <div
-                data-src="/data/media/images/events/upcomingEvents/yoga_mahotsav_banner.png"
-                onClick={() =>
-                  handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
-                }
-              />
-              <div
-                data-src="/data/media/images/events/upcomingEvents/qs.jpg"
-                onClick={() => handlePosterClick("#")}
-              />
-              <div
-                data-src="/data/media/images/events/upcomingEvents/tt_tournament.png"
-                onClick={() =>
-                    handlePosterClick("https://www.facebook.com/111989874951868/posts/112201191597403")
-                }
-              />
-            </AutoplaySlider>
-          </section>
-        </section>
-
-        <div className={Styles.mainContainer}>
-          {/* Upcoming Events Container */}
-
-          <div className={Styles.categoryContainer} data-aos="zoom-in-up">
-            <h2 className={Styles.categoryHeading2}>Events</h2>
-            <div className={Styles.cardsWrapper}>
-              {events.map((event, index) => {
-                return (
-                  <EventCard
-                    title={event.title}
-                    date={event.date || event.start}
-                    description={event.description}
-                    // bodyContent={event.bodyContent}
-                    imgSrc={event.poster}
-                    index={index}
-                    eventCategory="upcoming"
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
-    </Layout>
-  );
+        </Layout>
+    );
 }

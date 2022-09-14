@@ -1,11 +1,13 @@
 import "./CertifGen.css";
-import Layout from "../../components/Layout";
+import Layout from "../../../components/Layout";
 
-import Login from "../admin/Login";
-import Logout from '../admin/Logout';
-import FileUpload from '../../components/CertificateGenerator/FileUpload';
-import ControlledCarousel from "../../components/CertificateGenerator/ControlledCarousel";
+import Login from "../../admin/Login";
+import Logout from '../../admin/Logout';
+import FileUpload from '../../../components/Admin/CertificateGenerator/FileUpload';
+import ControlledCarousel from "../../../components/Admin/CertificateGenerator/ControlledCarousel";
 import { useState, useEffect } from 'react';
+import DbAndLogout from "../DbAndLogout";
+
 const jwt = require('jsonwebtoken');
 const CertifGen = () => {
 
@@ -36,7 +38,7 @@ const CertifGen = () => {
           <div className='certif-container'>
             <div style={{width: '95%'}}>
               <div style={{float:'right'}}>
-              <Logout />
+              <DbAndLogout />
               </div>
             </div>
             <div style={{ display: 'flex', justifyContent: "center" }}>
