@@ -1,25 +1,23 @@
 import { useState } from "react";
-// import Head from "next/head";
-import pointsData from "./pointsData";
-import Chart from "./chart";
-// import "./interiit.css";
+import "./interiit.css";
+import GCdata from "./GCdata";
 
-const years = ["2018-19"];
+const years = ["2016-17","2017-18","2018-19","2019-20","2020-21","2021-22"];
 
-export default function Sports() {
-  // const [currentTab, setCurrentTab] = useState("sports");
-  const [currentYear, setCurrentYear] = useState("2018-19");
+export default function InterIIT() {
+  const [currentTab, setCurrentTab] = useState("Sports");
+  const [currentYear, setCurrentYear] = useState("2021-22");
 
-  // const handleTabChange = (s) => {
-  //   setCurrentTab(s);
-  // };
+  const handleTabChange = (s) => {
+    setCurrentTab(s);
+  };
 
   return (
     <>
-      <h2>
-        <title>GC results</title>
-      </h2>
-      <section className="points" style={{ width: "100%", padding: "0" }}>
+      <h1>
+        <title>Points Tally General Championship</title>
+      </h1>
+      <section className="awards">
         <h2
           style={{
             display: "flex",
@@ -29,9 +27,32 @@ export default function Sports() {
             alignItems: "center",
           }}
         >
-          {" "}
-          Points Tally General Championship {currentYear}{" "}
+          Points Tally General Championship {currentYear}
         </h2>
+        <div className="tabs">
+          <div
+            className={`tab ${currentTab === "Sports" ? "active" : ""}`}
+            onClick={() => handleTabChange("Sports")}
+            style={{display: "flex", justifyContent: "center"}}
+          >
+            <button className="btn_interiit">Sports &amp; Games</button>
+          </div>
+
+          <div
+            className={`tab ${currentTab === "Technology" ? "active" : ""}`}
+            onClick={() => handleTabChange("Technology")}
+            style={{display: "flex", justifyContent: "center"}}
+          >
+            <button className="btn_interiit">Technology</button>
+          </div>
+          <div
+            className={`tab ${currentTab === "Socult" ? "active" : ""}`}
+            onClick={() => handleTabChange("Socult")}
+            style={{display: "flex", justifyContent: "center"}}
+          >
+            <button className="btn_interiit">Socult</button>
+          </div>
+        </div>
         <div className="select GC_dropdown">
           <select
             value={currentYear}
@@ -44,78 +65,134 @@ export default function Sports() {
             ))}
           </select>
         </div>
-        <div className="tabs">
-          <div
-            className={`tab`}
-            // onClick={() => handleTabChange("sports")}
-            style={{ display: "flex", justifyContent: "center" }}
-          >
-            <button className="btn_interiit">Sports &amp; Games</button>
-          </div>
-          {/* <div className={`tab ${currentTab == "tech" ? "active" : ""}`} onClick={() => handleTabChange("tech")}>
-            Technology
-          </div> */}
-        </div>
 
-        <div className="chart">
-          <Chart
-            data={pointsData.sports}
-            keys={[
-              "Athletics",
-              "Badminton",
-              "Basketball",
-              "Bridge",
-              "Chess",
-              "Cricket",
-              "Football",
-              "Hockey",
-              "Squash",
-              "Table Tennis",
-              "Tennis",
-              "Volleyball",
-              "Weightlifting",
-              "Swimming",
-              "Waterpolo",
-            ]}
-            layout={"vertical"}
-          />
-          <div
-            className={`tab`}
-            // onClick={() => handleTabChange("socult")}
-            style={{ display: "flex", justifyContent: "center" }}
-          >
-            <button className="btn_interiit"> Socult</button>
-          </div>
-          <Chart
-            data={pointsData.socult}
-            keys={[
-              "Eastern Vocals",
-              "Western Vocals",
-              "Eastern Instrumentals",
-              "Groups",
-              "Western Instrumentals",
-              "Sketching",
-              "Cartooning",
-              "Painting",
-              "Thermocol and Clay Modelling",
-              "Bengali Elocution",
-              "Debate",
-              "English Elocution",
-              "Hindi Elocution",
-              "WTGW",
-              "Quiz",
-              "Stage Play",
-              "Choreography",
-              "Street Play",
-              "Short Film Making",
-              "Dramatics Cup",
-              "Entertainment Cup",
-              "Fine Arts Cup",
-              "Literary Cup",
-            ]}
-            layout={"vertical"}
-          />
-        </div>
+        {currentTab === "Sports" && (
+          <>
+            <h2 style={{ padding: "1%" }}> Men's Standings</h2>
+            <div className="table-container">
+              <table>
+                <thead style={{ border: "10px solid #fff" }}>
+                  <tr>
+                    <th>Sport</th>
+                    <th>
+                      <span className="medal gold"></span> Gold
+                    </th>
+                    <th>
+                      <span className="medal silver"></span> Silver
+                    </th>
+                    <th>
+                      <span className="medal bronze"></span> Bronze
+                    </th>
+                  </tr>
+                </thead>
+                <tbody style={{ border: "10px solid #fff" }}>
+                  {GCdata[String(currentYear)].Sports.Male.map((item) => (
+                    <tr id="overall">
+                      <td>{item.Sport}</td>
+                      <td>{item.Gold} </td>
+                      <td>{item.Silver} </td>
+                      <td>{item.Bronze} </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <h2 style={{ padding: "1%" }}> Women's Standings</h2>
+            <div className="table-container">
+              <table>
+                <thead style={{ border: "10px solid #fff" }}>
+                  <tr>
+                    <th>Sport</th>
+                    <th>
+                      <span className="medal gold"></span> Gold
+                    </th>
+                    <th>
+                      <span className="medal silver"></span> Silver
+                    </th>
+                    <th>
+                      <span className="medal bronze"></span> Bronze
+                    </th>
+                  </tr>
+                </thead>
+                <tbody style={{ border: "10px solid #fff" }}>
+                  {GCdata[String(currentYear)].Sports.Female.map((item) => (
+                    <tr id="overall">
+                      <td>{item.Sport}</td>
+                      <td>{item.Gold} </td>
+                      <td>{item.Silver} </td>
+                      <td>{item.Bronze} </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
+        {currentTab === "Socult" && (
+          <>
+            <div className="table-container" style={{ paddingTop: "3%" }}>
+              <table>
+                <thead style={{ border: "10px solid #fff" }}>
+                  <tr>
+                    <th>Event Genre</th>
+                    <th>
+                      <span className="medal gold"></span> Gold
+                    </th>
+                    <th>
+                      <span className="medal silver"></span> Silver
+                    </th>
+                    <th>
+                      <span className="medal bronze"></span> Bronze
+                    </th>
+                  </tr>
+                </thead>
+                <tbody style={{ border: "10px solid #fff" }}>
+                  {GCdata[String(currentYear)].Socult.map((item) => (
+                    <tr id="overall">
+                      <td>{item.Event}</td>
+                      <td>{item.Gold} </td>
+                      <td>{item.Silver} </td>
+                      <td>{item.Bronze} </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
+        {currentTab === "Technology" && (
+          <>
+            <div className="table-container" style={{ paddingTop: "3%" }}>
+              <table>
+                <thead style={{ border: "10px solid #fff" }}>
+                  <tr>
+                    <th>Event Genre</th>
+                    <th>
+                      <span className="medal gold"></span> Gold
+                    </th>
+                    <th>
+                      <span className="medal silver"></span> Silver
+                    </th>
+                    <th>
+                      <span className="medal bronze"></span> Bronze
+                    </th>
+                  </tr>
+                </thead>
+                <tbody style={{ border: "10px solid #fff" }}>
+                  {GCdata[String(currentYear)].Technology.map((item) => (
+                    <tr id="overall">
+                      <td>{item.Event}</td>
+                      <td>{item.Gold} </td>
+                      <td>{item.Silver} </td>
+                      <td>{item.Bronze} </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
       </section>
     </>
   );

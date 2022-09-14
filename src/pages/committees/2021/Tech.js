@@ -27,6 +27,8 @@ import tc10 from "./images/tech/tc10.png";
 import tc11 from "./images/tech/tc11.png";
 import tc12 from "./images/tech/tc12.png";
 import tc13 from "./images/tech/tc13.png";
+import tc14 from  "./images/tech/tc14.jpg";
+import tc15 from "./images/tech/tc15.jpg";
 
 export default function Tech() {
   // const techComTeam = [
@@ -174,6 +176,67 @@ export default function Tech() {
         {/* Other events */}
 
         <center>
+          <br /><br />
+          <hr />
+          <h1>Biz-Tech Quiz 2022-23</h1>
+        </center>
+
+        <section>
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img src={tc15} alt="Biz_Tech_Quiz_2022_23" />
+            </div>
+          </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+                “Make one step at a time in the right direction, and you will reach the right destination.”<br />
+                <br />
+                Hello everyone!<br />
+                <br />
+                Gear yourself up with your interest and passion you have in technology and business aspects as the Technology Committee, TSG, came up with the 2022-23 version of the ‘Biz-Tech Quiz’.<br />
+                <br />
+                Teams of 1-4 members can participate in the quiz.<br />
+                <br />
+                Do read all the rules of the quiz here: <a href="http://surl.li/cxfjk" target="_blank" rel="noreferrer">Link</a><br />
+                <br />
+                The information you know, the knowledge you have can give rise to a whole new era.<br />
+                <br />
+                Don’t miss out on brainstorming and competing in the two rounds of ‘Prelims’ and ‘Finals’.<br />
+                <br />
+                Register here: <a href="http://surl.li/cxfkg" target="_blank" rel="noreferrer">Link</a><br />
+                <br />
+                Note:<br />
+                Last date of registration: 8 September 2022, 11:59 pm<br />
+                The Prelims round will be held on: 11 September 2022<br />
+                Finals will be conducted on: 11 September 2022<br />
+                <br />
+                Further updates will be conveyed to the participants through emails, after registration.<br />
+            </p>
+          </div>
+        </section>
+
+        <center>
+          <br /><br />
+          <hr />
+          <h1>Smart India Hackathon 2022</h1>
+        </center>
+
+        <section>
+          <center>
+            <div className={globalStyles.imgContainer}>
+              <img src={tc14} alt="SIH_Poster" />
+            </div>
+          </center>
+
+          <p className={globalStyles.centerCard}>
+            <br /><br />
+          Technology Students' Gymkhana, IIT Kharagpur is proud to announce that four teams representing our Indian Institute of Technology, Kharagpur have been declared as winners of Smart India Hackathon 2022. <br /><br /> Smart India Hackathon is a nationwide initiative that invites students to solve some of the pressing problems we face in our daily lives with the help of technology. The teams went through multiple rounds before bagging laurels for the institute. <br /><br /> We extend our heartiest congratulations to them and wish them all the best for the future! A special thanks to the entire Gymkhana staff and the President TSG, Prof. Ajay Kumar Singh for their constant support and encouragement. 
+            <br /> <br /><br /> <hr />
+          </p>
+        </section>
+
+        <center>
 
           <h1>Inter IIT Tech Meet 10.0 <br /> IIT Kharagpur’s Event Wise Results</h1>
         </center>
@@ -189,32 +252,32 @@ export default function Tech() {
             Inter-IIT Tech Meet 10.0 was hosted by IIT Kharagpur, scheduled on 25 - 27th March 2022. Out of 12 Evaluating Events, KGP bagged Gold in 7, Silver in 1, and Bronze in 3 of them with a total number of 2748.41 GC points.<br /><br />
             Contingent Captain - Mann Goel<br />
             Contingent Vice-Captain - Kshitiz Khandelwal<br /><br />
-            𝗚𝗢𝗟𝗗 𝗪𝗶𝗻𝗻𝗶𝗻𝗴 𝗘𝘃𝗲𝗻𝘁𝘀<br />
-            1) DIGITAL ALPHA’S SEC FILING ANALYZER FOR SaaS COMPANIES<br />
+            GOLD Winning Events<br />
+            1) DIGITAL ALPHA'S SEC FILING ANALYZER FOR SaaS COMPANIES<br />
             Score - 400<br />
             2) SILICON LABS' SOCIAL ENTREPRENEURSHIP CHALLENGE<br />
             Score - 400<br />
-            3) BOSCH’S MODEL EXTRACTION ATTACK FOR VIDEO CLASSIFICATION<br />
+            3) BOSCH'S MODEL EXTRACTION ATTACK FOR VIDEO CLASSIFICATION<br />
             Score - 400<br />
             4) DRDO's UAV- GUIDED UGV NAVIGATION CHALLENGE<br />
             Score - 250<br />
-            5) BOSCH’s AGE AND GENDER DETECTION<br />
+            5) BOSCH's AGE AND GENDER DETECTION<br />
             Score - 250<br />
-            6) MERCARI’S LARGE SCALE SYSTEM DESIGN HACKATHON<br />
+            6) MERCARI'S LARGE SCALE SYSTEM DESIGN HACKATHON<br />
             Score - 136.36<br />
             7) POWERED BONNET FOR ELECTRIC VEHICLE<br />
             Score - 144.45<br /><br />
-            𝗦𝗜𝗟𝗩𝗘𝗥 𝗪𝗶𝗻𝗻𝗶𝗻𝗴 𝗘𝘃𝗲𝗻𝘁<br />
-            1) GMETRI’S GROWTH STRATEGY FOR METAVERSE
+            SILVER Winning Events<br />
+            1) GMETRI'S GROWTH STRATEGY FOR METAVERSE
             Score - 115.10<br /><br />
-            𝗕𝗥𝗢𝗡𝗭𝗘 𝗪𝗶𝗻𝗻𝗶𝗻𝗴 𝗘𝘃𝗲𝗻𝘁𝘀<br />
+            BRONZE Winning Events<br />
             1) BLUE YONDER'S SUSTAINABLE SUPPLY- CHAIN<br />
             Score - 318.87<br />
-            2) ISRO’s WEB-BASED AUTOMATIC IDENTIFICATION OF SOLAR BURSTS IN X-RAY LIGHT CURVES<br />
+            2) ISRO's WEB-BASED AUTOMATIC IDENTIFICATION OF SOLAR BURSTS IN X-RAY LIGHT CURVES<br />
             Score -  159.60<br />
-            3) MUDREX’S ALPHA TRADING QUEST<br />
+            3) MUDREX'S ALPHA TRADING QUEST<br />
             Score - 159.02<br /><br />
-            And finally, Gold it is!  Technology Students’ Gymkhana heartily congratulates all the contingent members and captains for their restless efforts and hardwork put in to make us proud.
+            And finally, Gold it is!  Technology Students' Gymkhana heartily congratulates all the contingent members and captains for their restless efforts and hardwork put in to make us proud.
             <br />
           </p>
         </section>
@@ -253,7 +316,7 @@ export default function Tech() {
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-              <img src={tc3} />
+              <img src={tc3} alt="Open_Soft_Poster"/>
             </div>
           </center>
 

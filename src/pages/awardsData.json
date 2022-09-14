@@ -6,19 +6,23 @@
           "Name": "SAKET THAVANANI",
           "Roll": "13MT10030",
           "Game": "BADMINTON",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
+          
         },
         {
           "Name": "SIRAJ MODIWALA",
           "Roll": "13ME10054",
           "Game": "SWIMMING",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         },
         {
           "Name": "UDIT NARAYAN",
           "Roll": "12GG20039",
           "Game": "WEIGHTLIFTING",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -341,12 +345,14 @@
         {
           "Name": "ABHISHEK SULTANIA",
           "Roll": "111M30023",
-          "Award": "SRIMATI Chandramani CUP"
+          "Award": "SRIMATI Chandramani CUP",
+          "Image": "ABHISHEK SULTANIA.jpg"
         },
         {
           "Name": "RACHIT MADHUKAR",
           "Roll": "13AG3FP05",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "RACHIT MADHUKAR.jpg"
         }
       ],
       "honours": [
@@ -477,7 +483,8 @@
         {
           "Name": "ASHISH DAGA",
           "Roll": "11ME32006",
-          "Award": "G.S. SANYAL CUP"
+          "Award": "G.S. SANYAL CUP",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -571,17 +578,20 @@
         {
           "Name": "SIRAJ MODIWALA",
           "Roll": "13ME10054",
-          "Award": "BHANDARKAR CUP"
+          "Award": "BHANDARKAR CUP",
+          "Image": "template.png"
         },
         {
           "Name": "KUNAL AVINASH DEOSKAR",
           "Roll": "12PH20014",
-          "Award": "ANKIK DHAR TROPHY"
+          "Award": "ANKIK DHAR TROPHY",
+          "Image": "template.png"
         },
         {
           "Name": "LOKESWARA RAO REDDI",
           "Roll": "14AG10022",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -910,12 +920,14 @@
         {
           "Name": "GOYAL ANUBHAV VIJAY",
           "Roll": "12IM30007",
-          "Award": "G.S. SANYAL CUP"
+          "Award": "G.S. SANYAL CUP",
+          "Image": "template.png"
         },
         {
           "Name": "RAJA AMBRISH",
           "Roll": "12HS20034",
-          "Award": "G.S. SANYAL CUP"
+          "Award": "G.S. SANYAL CUP",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -1016,17 +1028,21 @@
         {
           "Name": "Mr. BRAHMARSHI KAR",
           "Roll": "13IE10008",
-          "Award": "SRIMATI Chandramani CUP"
+          "Award": "SRIMATI Chandramani CUP",
+          "Image": "Mr. BRAHMARSHI KAR.jpg"
+
         },
         {
           "Name": "AYUDH DATTA",
           "Roll": "13CH30003",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         },
         {
           "Name": "RACHIT MADHUKAR",
           "Roll": "13AG3FP05",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -1186,25 +1202,29 @@
           "Name": "Rahul Sehrawat",
           "Game": "Basketball",
           "Roll": "13AE30012",
-          "Award": "Bhandarkar Cup"
+          "Award": "Bhandarkar Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Abin Devassia",
           "Game": "Athletics",
           "Roll": "14NA30029",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Yugal Kishore Patanwar",
           "Game": "Football",
           "Roll": "13MI92P02",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Lokesh Singh",
           "Game": "Weightlifting",
           "Roll": "14AG10017",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -1505,19 +1525,22 @@
         {
           "Name": "Rachit Madhukar",
           "Roll": "13AG3FPO5",
-          "Award": "Srimati Chandaramani Cup"
+          "Award": "Srimati Chandaramani Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Arkapravo Saha",
           "Roll": "14ME33029",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "Arkapravo Saha.jpg"
         }
       ],
       "honours": [
         {
           "Name": "Ayudh Datta",
           "Roll": "13CH30003",
-          "Award": "Order of merit"
+          "Award": "Order of merit",
+          "Image": "AYUDH DATTA.jpg"
         },
         {
           "Name": "Subham Mohapatra",
@@ -1696,12 +1719,14 @@
         {
           "Name": "K. Pareen Jain",
           "Roll": "14ME10029",
-          "Award": "G.S. Sanyal Cup"
+          "Award": "G.S. Sanyal Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Rishabh Kumar Shrivastava",
           "Roll": "13EE35012",
-          "Award": "G.S. Sanyal Cup"
+          "Award": "G.S. Sanyal Cup",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -1819,11 +1844,13 @@
       {
         "Name": "Ksheera Sagar KN",
         "Roll": "13MA20050",
-        "Award": "Ashok Mukherjee Cup"
+        "Award": "Ashok Mukherjee Cup",
+        "Image": "Ksheera Sagar K N.jpg"
       },
       {
-        "Name": "Mayank Srivastav",
-        "Award": "Amrit Barman Memorial Award"
+        "Name": "Mayank Srivastava",
+        "Award": "Amrit Barman Memorial Award",
+        "Image": "Mayank Srivastava.jpg"
       }
     ]
   },
@@ -1833,12 +1860,14 @@
         {
           "Name": "Harsh Agarwal",
           "Roll": "15NA10010",
-          "Award": "Prof. G. S. Sanyal Cup"
+          "Award": "Prof. G. S. Sanyal Cup",
+          "Image": "template.png"
         },
         {
           "Name": "TYSS Santosh",
           "Roll": "15CS30037",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "tyss santosh.jpg"
         }
       ],
       "honours": [
@@ -1939,12 +1968,14 @@
         {
           "Name": "Arkapravo Saha",
           "Roll": "14ME33029",
-          "Award": "Srimati Chandramani Cup"
+          "Award": "Srimati Chandramani Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Utkarsh Sinha",
           "Roll": "15EC35025",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -2106,25 +2137,29 @@
           "Name": "Abin Devassia Poovathottathil",
           "Game": "Athletics",
           "Roll": "14NA30029",
-          "Award": "Bhandarkar Cup"
+          "Award": "Bhandarkar Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Eslavath Jagadeesh",
           "Game": "Athletics",
           "Roll": "16CS10017",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Devanuj Deka",
           "Game": "Badminton",
           "Roll": "17EC30013",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Shashwat Gangwal",
           "Game": "",
           "Roll": "14HS20035",
-          "Award": "Ankik Dhar Trophy"
+          "Award": "Ankik Dhar Trophy",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -2440,7 +2475,8 @@
       {
         "Name": "Vishal Kumar Singh",
         "Roll": "15MI3FP21",
-        "Award": "Amrit Barman Memorial Award"
+        "Award": "Amrit Barman Memorial Award",
+        "Image": "Vishal Kumar Singh.jpg"
       }
     ]
   },
@@ -2450,12 +2486,14 @@
         {
           "Name": "Tyss Santosh",
           "Roll": "15CS30037",
-          "Award": "Prof. G.S Sanyal Cup"
+          "Award": "Prof. G.S Sanyal Cup",
+          "Image": "tyss santosh.jpg"
         },
         {
           "Name": "Krishnam Kapoor",
           "Roll": "17EC10026",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "Krishnam Kapoor.jpg"
         }
       ],
       "honours": [
@@ -2541,12 +2579,14 @@
         {
           "Name": "Baibhab Pattnaik",
           "Roll": "15PH20008",
-          "Award": "Srimati Chandramani Cup"
+          "Award": "Srimati Chandramani Cup",
+          "Image": "Baibhab Pattaik.jpg"
         },
         {
           "Name": "Jawalikar Paritosh Naresh",
           "Roll": "16EC32002",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -2653,31 +2693,36 @@
           "Name": "Eslavath Jagadeesh",
           "Game": "Athletics",
           "Roll": "16CS10017",
-          "Award": "Bhandarkar Cup"
+          "Award": "Bhandarkar Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Hima Swetha N",
           "Game": "Athletics",
           "Roll": "16EC10025",
-          "Award": "Bhandarkar Cup"
+          "Award": "Bhandarkar Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Soham Chandorkar",
           "Game": "Water Polo",
           "Roll": "15HS20013",
-          "Award": "Ankik Dhar Trophy"
+          "Award": "Ankik Dhar Trophy",
+          "Image": "template.png"
         },
         {
           "Name": "Chhaya Kori",
           "Game": "Athletics",
           "Roll": "15NA10007",
-          "Award": "Ankik Dhar Trophy"
+          "Award": "Ankik Dhar Trophy",
+          "Image": "template.png"
         },
         {
           "Name": "Shivam Singh",
           "Game": "Athletics",
           "Roll": "17IM30030",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -2939,12 +2984,14 @@
       {
         "Name": "Ninaad Lohakare",
         "Roll": "16ME31003",
-        "Award": "Amrit Barman Memorial Award"
+        "Award": "Amrit Barman Memorial Award",
+        "Image": "Ninaad Lohakare.jpg"
       },
       {
         "Name": "Vishal Kumar Singh",
         "Roll": "15MI3FP21",
-        "Award": "Prof. Ashoke Mukherjee Cup"
+        "Award": "Prof. Ashoke Mukherjee Cup",
+        "Image": "Vishal Kumar Singh.jpg"
       }
     ]
   },
@@ -2954,7 +3001,8 @@
         {
           "Name": "Harsh Maheshwari",
           "Roll": "16EE35008",
-          "Award": "Prof. G.S Sanyal Cup"
+          "Award": "Prof. G.S Sanyal Cup",
+          "Image": "harsh maheshwari.jpg"
         }
       ],
       "honours": [
@@ -3055,7 +3103,8 @@
         {
           "Name": "Piyush Kedia",
           "Roll": "16MT30022",
-          "Award": "Srimati Chandramani Cup"
+          "Award": "Srimati Chandramani Cup",
+          "Image": "piyush kedia.jpg"
         }
       ],
       "honours": [
@@ -3142,13 +3191,15 @@
           "Name": "Pushpak Roy",
           "Game": "WP & Swimming",
           "Roll": "16IM30015",
-          "Award": "Bhandarkar Cup"
+          "Award": "Bhandarkar Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Abhinav Gupta",
           "Game": "Table Tennis",
           "Roll": "17ME10001",
-          "Award": "Ankik Dhar Trophy"
+          "Award": "Ankik Dhar Trophy",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -3302,12 +3353,14 @@
       {
         "Name": "Shivam Singh",
         "Roll": "17IM30030",
-        "Award": "Amrit Barman Memorial Award"
+        "Award": "Amrit Barman Memorial Award",
+        "Image": "Shivam Singh.jpg"
       },
       {
         "Name": "Arpit Raj",
         "Roll": "16CE36002",
-        "Award": "Prof. Ashoke Mukherjee Cup"
+        "Award": "Prof. Ashoke Mukherjee Cup",
+        "Image": "Arpit Raj.jpg"
       }
     ]
   },
@@ -3317,12 +3370,14 @@
         {
           "Name": "Mann Rakesh Goel",
           "Roll": "17CH30035",
-          "Award": "PROF. G.S SANYAL CUP"
+          "Award": "PROF. G.S SANYAL CUP",
+          "Image": "Mann Goel.jpg"
         },
         {
           "Name": "Divyanth Lg",
           "Roll": "19AG10014",
-          "Award": "ALUMNI CUP"
+          "Award": "ALUMNI CUP",
+          "Image": "Divyanth L G.jpg"
         }
       ],
       "honours": [
@@ -3413,7 +3468,9 @@
         {
           "Name": "Rupam Kumar Dubey",
           "Roll": "17GG20028",
-          "Award": "SRIMATI CHANDRAMANI CUP"
+          "Award": "SRIMATI CHANDRAMANI CUP",
+          "Image": "Rupam Kumar Dubey.jpg"
+
         }
       ],
       "honours": [
@@ -3470,19 +3527,22 @@
           "Name": "Shivam Singh",
           "Roll": "17IM30030",
           "Game": "Athletics",
-          "Award": "Bhandarkar Cup"
+          "Award": "Bhandarkar Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Rajshree Sharma",
           "Roll": "20NA30022",
           "Game": "Athletics",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         },
         {
           "Name": "Tumbalam Gooty Mythri",
           "Roll": "18CE91RI3",
           "Game": "Athletics",
-          "Award": "Alumni Cup"
+          "Award": "Alumni Cup",
+          "Image": "template.png"
         }
       ],
       "honours": [
@@ -3690,12 +3750,14 @@
       {
         "Name": "Vardhineedi Devaki Nandana Varalakshmi",
         "Roll": "18GG20036",
-        "Award": "Amrit Barman Memorial Award"
+        "Award": "Amrit Barman Memorial Award",
+        "Image": "devaki nandana.png"
       },
       {
         "Name": "Aditi Singhania",
         "Roll": "18EE10004",
-        "Award": "Prof. Ashoke Mukherjee Cup"
+        "Award": "Prof. Ashoke Mukherjee Cup",
+        "Image": "aditi singhania.jpg"
       }
     ]
   }

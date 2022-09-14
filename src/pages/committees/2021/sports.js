@@ -24,6 +24,15 @@ import spt13 from "./images/sports/spt13.png";
 import spt14 from "./images/sports/spt14.png";
 import spt15 from "./images/sports/spt15.png";
 import spt16 from "./images/sports/spt16.png";
+import spt17 from "./images/sports/spt17.jpg";
+import spt18 from "./images/sports/spt18.jpeg";
+import spt19 from "./images/sports/spt19.jpeg";
+import spt20 from "./images/sports/spt20.jpeg";
+import spt21 from "./images/sports/spt21.jpg"
+import spt22 from "./images/sports/spt22.jpg"
+import spt23 from "./images/sports/spt23.jpg"
+import spt24 from "./images/sports/spt24.jpg"
+import spt25 from "./images/sports/spt25.jpg"
 
 
 export default function Sports() {
@@ -207,6 +216,341 @@ export default function Sports() {
 
         {/* Other events */}
 
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Open IIT Volleyball 2022</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt25} alt="Open_IIT_Volleyball_Poster" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+                “Serve strong, dig fiercely, and Spike hard.”<br />
+                <br />
+                Hola KGP!<br />
+                The Volleyball Subcommittee, Technology Students' Gymkhana, is back on the courts with the 'Open IIT Volleyball Tournament 2022', which is to be held on the 10th and 11th of September 2022.
+                <br />
+                <br />
+                Register your team if you already have one, else register yourself for the Tournament before 10:00 a.m., 9th September.<br />
+                The tournament is open for all!!<br />
+                So, what are you waiting for!<br />
+                Get ready to test your sporting spirit and volleyball skills.<br />
+                <br />
+                Register here: <a href="https://forms.gle/vkxU1NFHyWE5u7VbA" target="_blank" rel="noreferrer">Link</a>
+            </p>
+        </div>
+        </section>
+        
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Open IIT Hockey Tournament 2022</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt24} alt="Open_IIT_Hockey_Tournament" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+                Hello KGPians!<br />
+                <br />
+                We are here with one of the most exciting times for the Hockey lovers of IIT Kharagpur, the ‘IITKGP Hockey Premier League 2022' (Open IIT) , which is to be organised from 10th September.<br />
+                <br />
+                The tournament is open to all the students of IIT Kharagpur.<br />
+                <br />
+                Register yourself for the tournament before 11:59 p.m., 7th September, at this <a href="https://forms.gle/YQzNBhjbn5fvuAfN8" target="_blank" rel="noreferrer">Link</a> <br />
+                <br />
+                Note:<br />
+                Teams will be made after the registration deadline.<br />
+                <br />
+                “You miss 100% of the shots you don’t take.”<br />
+                Don’t miss out on the opportunities to compete, learn and improve.<br />
+
+            </p>
+        </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Open IIT Basketball Tournament 2022</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt23} alt="Open_IIT_Basketball_Tournament_2022" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+                Hola junta!<br />
+                <br />
+                Gear up and get ready to dribble the ball with your team in the ‘Open IIT Basketball Tournament 2022’, which is going to start on the 9th of September.<br />
+                <br />
+                The tournament is open to all the students of IIT Kharagpur.<br />
+                <br />
+                The deadline for registration is 11:59 a.m., 8th September.<br />
+                <br />
+                Participants with a team can register the team, and those without a team can register themselves and report at the Basketball courts at 6 pm, on Thursday, 8th September, for the formation of teams.<br />
+                <br />
+                Note: A minimum of 6 and a maximum of 10 players are allowed in a team.<br />
+                <br />
+                Register here: <a href="https://forms.gle/8cwnsyYArZVpiZru9" target="_blank" rel="noreferrer">Link</a><br />
+                <br />
+                We are eager to see your best on the court. 
+
+            </p>
+        </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Hockey Workshop for Girls</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt22} alt="Hockey_Workshop_for_Girls" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+                “When you are interested, go grab the opportunity.”<br />
+                <br />
+                Hello girls!<br />
+                A Hockey workshop for girls is being organised by the Hockey subcommittee, TSG, to train girls of IIT Kharagpur in the sport, from scratch.<br />
+                <br />
+                Put in some time, with a desire to learn, and you will reach your better self. Your participation is welcomed.<br />
+                <br />
+                Date - 7th SEPT Onwards<br />
+                Time - 6PM-9PM<br />
+                <br />
+                Do Register - <a href="https://forms.gle/LP2GszohUXRTo72n8" target="_blank" rel="noreferrer">Link</a>
+
+            </p>
+        </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Athletics Championship 2022</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt21} alt="Athletics_Championship_2022" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+            “A trophy carries dust. Memories last forever.” - Mary Lou Retton.<br />
+            <br />
+            We feel so glad to inform you that the ‘First Athletics Championship 2022’ is being organized by us on the 10th and 11th of September, 2022.<br />
+            This 2-day event will witness athletes participating in 18 athletic events, with a tremendous competitive spirit, in 4 different categories.<br />
+            <br />
+            The championship will be held at Jnan Ghosh Stadium from 8:00 a.m. to 5:00 p.m. on the two days.<br />
+            <br />
+            We invite you to witness the occasion, encourage the brilliant athletes, and appreciate their hard work.
+
+            </p>
+        </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Open IIT Tennis Tournament 2022</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt20} alt="Tennis_Tournament_Poster" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+            Tennis Subcommittee, Technology Students' Gymkhana, Indian Institute of Technology Kharagpur is organising an Open IIT Tennis Tournament 2022-2023 for students. <br /><br />It is an amazing opportunity to know where you stand and improve your skills
+                <br />
+                <br />
+                
+                Tournament date: 5th September onwards<br />
+                Time: 6:00 pm to 10:00 pm <br />
+                Venue: Gymkhana Tennis Courts<br /> <br />
+                The last date to register is 4th September 2022. <br />
+                Players should use Non-marking shoes and proper sports attire for the  tournament. <br /><br />
+                Link to Register: <a href="https://forms.gle/Z6EKJA47QRFS7kMH7" target="_blank" rel="noreferrer">Link</a>
+                
+            </p>
+        </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Open IIT Badminton Tournament 2022</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt19} alt="Badminton_Tournament_Poster" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+            The open IIT Tournament of Badminton is being conducted for all UG PG and PhD students.
+                <br />
+                <br />
+                
+                Tournament date: 2nd to 4th September 2022<br />
+                Venue: Gymkhana Badminton Courts<br /> <br />
+                The last date to register is 29th August 2022. <br />
+                Non-marking shoes are mandatory. <br /><br />
+                Link to Register: <a href="https://forms.gle/LpdzHMWjkkNXCR3c6" target="_blank" rel="noreferrer">Link</a>
+                
+            </p>
+        </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Results of Gymkhana Table Tennis Tournament</h2>
+        </center>
+
+        <section>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+                For the first time, the Indoor Games Subcommittee, Technology Students' Gymkhana, Indian Institute of Technology 
+                Kharagpur successfully hosted a Table Tennis event accessible to all IIT Kharagpur students and staff members: The First Gymkhana 
+                Table Tennis Tournament!!<br />
+                <br />
+                The results of the first Gymkhana Table Tennis Tournament are as follows.<br />
+                <br />
+                Categories:
+                <ul>
+                    <li>
+                        <strong>❖ Men's singles :</strong>
+                        <ul>
+                          <li>○ Winner : Seemant Achari</li>
+                          <li>○ 1st Runner Up : Harshit Baranwal</li>
+                          <li>○ 2nd Runner Up: Vedant Agarwal and Karan Punjabi</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>❖ Women's singles :</strong>
+                        <ul>
+                          <li>○ Winner : Suparna Rooj</li>
+                          <li>○ 1st Runner Up : Monika Sharma</li>
+                          <li>○ 2nd Runner Up: Sneh Lata Singh and Prachari Patankar </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>❖ Men's doubles :</strong>
+                        <ul>
+                          <li>○ Winner : Sundar Kumar Roy and Akhilesh Kumar Singh</li>
+                          <li>○ 1st Runner Up : Hitesh Sharma and Arun K. Samantaray</li>
+                          <li>○ 2nd Runner Up: Satvik Ch. N. V. and Vedant Agarwal</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>❖ Women's doubles :</strong>
+                        <ul>
+                          <li>○ Winner : Sneh Lata Singh and Monika Sharma</li>
+                          <li>○ 1st Runner Up :  K. Gayatri Meghana and Suparna Rooj</li>
+                          <li>○ 2nd Runner Up: Nina Singh and Hasi Chakraborty</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>❖ Mixed doubles :</strong>
+                        <ul>
+                          <li>○ Winner : Biplav Patra and Suparna Rooj</li>
+                          <li>○ 1st Runner Up :  Sneh Lata Singh and Harshit Baranwal</li>
+                          <li>○ 2nd Runner Up: S. Dutta Sai Pawan and Monika Sharma</li>
+                        </ul>
+                    </li>
+                </ul>
+                Trophies for the tournament were sponsored by Sports Corner, Technology Market, with support from Mr Sundar Kumar Roy, Mr. Akhilesh Kumar Singh and staff members. <br /><br />
+ 
+                Refreshments for the referees and organising team members were arranged during the tournament by Mr Tanay Jagnani and Mr Sath Prakash Chimnari, and the dinner was organised by Prof, Arun K. Samantaray.
+
+            </p>
+        </div>
+        </section>
+        {/* // */}
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Powerlifting Workshop</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt17} alt="Weightlifting_Workshop_Poster" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+            The wait is finally over as Gymnasium and Weightlifting subcommittee,  Technology Students' Gymkhana is going to organize Powerlifting Workshop for all the students. <br />
+            Do participate as you'll get to learn a lot about Powerlifting and Weightlifting as well. <br />Fill out the Google form to register yourself and get all the notifications related to this event. 
+                <br />
+                <br />
+                link to form: <a href="https://forms.gle/8DduXvwJ9exXa3jP6" target="_blank" rel="noreferrer">Link</a> <br />
+                
+                Dates: 27th August(Girls) , 28th August(Boys)<br />
+                Time: 6pm onwards<br />
+                Venue: Gymkhana Weightlifting Room<br />
+                
+            </p>
+        </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Volleyball Workshop for Girls</h2>
+        </center>
+
+        <section>
+            <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={spt18} alt="Volleyball_Workshop_Poster" />
+                </div>
+            </center>
+
+          <div className={globalStyles.centerCard}>
+            <p>
+            Hello Girls!! <br />
+            If you are the one who is keen on learning a sport, feel relaxed and refreshed in the grounds..but wondering where and how to start with!!! <br /><br />
+            Here is the opportunity waiting for you. <br />
+            Technology Students' Gymkhana is going to organise "VOLLEYBALL WORKSHOP" for all girls of UG, PG, PhD where you will be taught from the scratch. <br />
+
+                <br />
+                Registration Link : <a href=" https://forms.gle/yDou6jkbfvYyc84PA" target="_blank">Link</a>
+                <br />
+                
+                Dates: 16th to 27th August<br />
+                Time: 6:30pm to 9:30pm<br />
+                Venue: PAN Loop Courts<br />
+                
+            </p>
+        </div>
+        </section>
 
         <center>
           <hr className={globalStyles.hrLine} />

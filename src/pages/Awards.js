@@ -3,7 +3,6 @@ import ContactCard from "../components/ContactCard";
 import Layout from "../components/Layout";
 import awardsData from "./awardsData.json";
 import "./Awards.css";
-import primg from "./Contacts/Images/prf.png";
 
 const years = [
   "2021-22",
@@ -100,7 +99,7 @@ function Awards() {
                       <ContactCard
                         key={index}
                         name={winner.Name}
-                        imgSrc={primg}
+                        imgSrc={`data/media/images/awards/${winner.Image}`}
                         designation={winner.Award}
                       />
                     )
@@ -109,7 +108,7 @@ function Awards() {
                     <ContactCard
                       key={index}
                       name={winner.Name}
-                      imgSrc={primg}
+                      imgSrc={`data/media/images/awards/${winner.Image}`}
                       designation={winner.Award}
                     />
                   ))}

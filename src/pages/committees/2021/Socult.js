@@ -29,6 +29,12 @@ import sc12 from './images/socult/sc12.png';
 import sc13 from './images/socult/sc13.png';
 import sc14 from './images/socult/sc14.png';
 import sc15 from './images/socult/sc15.png';
+import sc16 from './images/socult/sc16.png';
+import sc17 from './images/socult/sc17.jpg';
+import sc18 from './images/socult/sc18.jpg';
+import sc19 from './images/socult/sc19.jpg';
+import sc20 from './images/socult/sc20.jpg';
+
 
 export default function Socult() {
   // const techComTeam = [
@@ -144,6 +150,7 @@ export default function Socult() {
           </div>
         </section>
 
+        
 
         <section>
           <h1>Illumination 2021</h1>
@@ -159,7 +166,183 @@ export default function Socult() {
 
           {/* other events */}
 
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Open IIT Solo Dance</h2>
+          </center>
+          
+          <section>
+          <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={sc20} alt="Open_IIT_Solo_Dance" />
+                </div>
+            </center>
+            <div className={globalStyles.centerCard}>
+              <p>
+                "Dance Is a Language Beyond Words, Expressing That for Which We Have No Words. " - Suja Dinkar<br />
+                <br />
+                Technology Students' Gymkhana, IIT Kharagpur presents OPEN IIT Solo Dance Competition.<br />
+                <br />
+                Date: 11th September 2022<br />
+                Time: 5:00 P.M. onwards<br />
+                Venue: Bhatnagar Auditorium<br />
+                <br />
+                Rules: <a href="https://docs.google.com/document/d/1-meQOMBGP3RItdILMK-AAJ1hPpJrQivdMHpVpcDQnyQ/edit?fbclid=IwAR2OID09xenAA-1HFo2ZXjoNz9uWOO7Rh8EOEsW66Y8N2M_rsPwrBNvq7dg" target="_blank" rel="noreferrer">Link</a><br />
+                <br />
+                Registration Form: <a href="https://forms.gle/Rb5Pm3oMhee2p63p7" target="_blank" rel="noreferrer">Link</a><br />
 
+              </p>
+            </div>
+          </section>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Open IIT Sketching</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src={sc19}
+
+                alt="Open_IIT_Sketching"
+                style={{borderRadius: '1.25rem', objectFit: 'contain', width: '35vw', height:'80vh',}}
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+                <br />
+                Greeting Junta!<br />
+                <br />
+                “An artist cannot fail; it is a success to be one.” – Charles Horton Cooley<br />
+                <br />
+                Technology Students' Gymkhana brings to you the first of the OPEN-IIT for this Academic year, OPEN-IIT Sketching<br />
+                <br />
+                Date: 10/09/2022<br />
+                Time: 2:30pm - 5:30pm<br />
+                Venue: Room S-301 Main building<br />
+                <br />
+                Register: <a href="https://forms.gle/P6eNuCYyRRmsyK9aA" target="_blank" rel="noreferrer">Link</a><br />
+                <br />
+                Rules: <a href="https://docs.google.com/document/d/1CvLAR_FAgjx-qzZup94UZClmoZCNyfMGWuGZorwsdmM/edit?fbclid=IwAR0UUiR1ggoCPccA5-jPaIowyZDeOkcftZBVvbJhVNVcraC5KDZXl_KDbF4" target="_blank" rel="noreferrer">Link</a><br />
+                <br />
+                Think creatively and innovate!!
+              </p>
+            </div>
+          </section>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>Open IIT Vocals</h2>
+          </center>
+
+          <section>
+          <center>
+                <div className={globalStyles.imgContainer}>
+                    <img src={sc18} alt="Open_IIT_Vocals" />
+                </div>
+            </center>
+            <div className={globalStyles.centerCard}>
+              <p>
+                “Music is a language that doesn’t speak in particular words. It speaks in emotions, and if it’s in the bones, it’s in the bones.” ― Keith Richards<br />
+                <br />
+                Technology Students' Gymkhana, IIT Kharagpur presents OPEN IIT VOCALS.<br />
+                <br />
+                Date: 9th September 2022<br />
+                Time: 6:00 P.M. onwards<br />
+                Venue: Raman Auditorium<br />
+                <br />
+                Rules: <a href="https://bit.ly/Vocals_Rules" target="_blank" rel="noreferrer">Link</a><br />
+                <br />
+                Registration form: <a href="https://bit.ly/Open_IIT_VOCALS" target="_blank" rel="noreferrer">Link</a>
+              </p>
+            </div>
+          </section>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>COMIC  कौन? Results</h2>
+          </center>
+
+          <section>
+            <div className={globalStyles.centerCard}>
+              <p>
+                The first ever Talent Cafe: Stand-up Competition was a massive success!<br />
+                Students commanded the stage with their jokes and funny insights, to the applause and amusement of the crowd.<br />
+                Although every performance was commendable, here are the final results:<br />
+                <br />
+                <br />
+                1st place: Pratiksha Bhadani<br />
+                <br />
+                2nd place: Manav Sharma<br />
+                <br />
+                3rd place: Utkarsh Singh<br />
+              </p>
+            </div>
+          </section>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>COMIC  कौन?</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src={sc16}
+
+                alt="Comic_Kaun_Poster"
+                style={{borderRadius: '1.25rem', objectFit: 'contain', width: '35vw', height:'80vh',}}
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+              Technology Students' Gymkhana presents Talent Cafe. Talent Cafe will be a series of events aiming to attract the KGP Community to indulge in Social and Cultural Activities. <br /> <br />
+              "Comedy is an escape, not from truth but from despair; a narrow escape into faith." <br />
+              - Christopher Fry <br /><br />
+              We bring to you the first of this series, COMIC कौन? - STAND-UP COMPETITION. So let's break the monotony of a full week of offline class and join us for the first-ever Talent Cafe.
+              <br /><br />
+                Register here: <a href="https://docs.google.com/forms/d/e/1FAIpQLSetbCAHTcgKFODlM2VDVT0-jTr0lP-FtT9zb8DuVq_i7nXxRw/viewform?usp=pp_url&fbclid=IwAR1yaLFiObmhwJn4M0Cpogfv9RLMeIXwpssNP2zA362E0iCfj6FZwOH01NI" target='_blank' rel="noreferrer">Link</a><br />
+                Rules : <a href="https://docs.google.com/document/d/16hlwp1a_q3fzwsf8bWRUuS4T-Kn1_H0ZuEY1LikXO6s/edit?usp=sharing&fbclid=IwAR0gZKjpOevfOLDz6OwvZiNQdnvodx3XiQsNxG1Zy-0S4AyHYlXWgNCvCWY" target='_blank' rel="noreferrer">Link</a><br />
+                Time:10 A.M<br />
+                Date: 4th September <br />
+                Time: 6PM onwards <br />
+                Venue: F-224, Main Building
+              </p>
+            </div>
+          </section>
+
+          <center>
+            <hr className={globalStyles.hrLine} />
+            <h2 className={globalStyles.head2}>PAN IIT Cooking Competition</h2>
+          </center>
+          <section className={globalStyles.cmtCard1}>
+            <div className={globalStyles.leftCard}>
+              <img
+                className={globalStyles.cardImg}
+                src={sc17}
+
+                alt="PAN_IIT_Cooking_Ppster"
+                style={{borderRadius: '1.25rem', objectFit: 'contain', width: '35vw', height:'100vh',}}
+              />
+            </div>
+            <div className={globalStyles.rightCard}>
+              <p>
+              As we witness the pandemic fade away and things go back to normal, it’s time for us to get our minds out of this world to craft yet another celebration of the one thing that drives us all, great food! <br /><br /> We present to you the PAN IIT Cooking Competition, sponsored by Metvy. <br /><br /> With a renowned panel of international chefs judging the event, the bar is going to be high as ever. 
+              <br /><br />
+              This year PAN IIT introduces to you three themes!
+              <br />
+              1) Vegan Ventures <br />
+              2) Fusion BoX <br />
+              3) Snacker Hacker <br /><br />
+              You can send in entries for any or all themes!! <br /><br />
+              <strong>Submission Date: </strong>Anytime between 15th and 22nd July 2022 <br /><br />
+              <strong>Prizes: </strong> ₹3,000/- to all the winners and ALL participants get benefits worth ₹750/- !!
+              </p>
+            </div>
+          </section>
+
+          {/* // */}
           <center>
 
             <h1>Inter Hall Gymkhana Championship</h1>

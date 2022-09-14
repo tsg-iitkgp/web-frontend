@@ -4,13 +4,18 @@ import Styles from "../styles/tech.module.css";
 import globalStyles from "../styles/committees.module.css";
 // import ContactStyles from "../../../styles/pages/contacts.module.css";
 // import ContactCard from "../../../components/ContactCard";
-import img1 from "./images/tech/mentalwork.jpg";
-import img2 from "./images/tech/anxious.jpg";
-import projects from "./images/tech/projects.jpg";
-import english from "./images/tech/english-mentor.jpg";
-import induction from "./images/tech/ug-induction.jpg";
-import sw1 from "./images/tech/sw1.png";
-import sw2 from "./images/tech/sw2.png";
+import img1 from "./images/welfare/mentalwork.jpg";
+import img2 from "./images/welfare/anxious.jpg";
+import projects from "./images/welfare/projects.jpg";
+import english from "./images/welfare/english-mentor.jpg";
+import induction from "./images/welfare/ug-induction.jpg";
+import sw2 from "./images/welfare/sw2.png";
+import sw3 from "./images/welfare/sw3.jpg";
+import sw4 from "./images/welfare/sw4.png";
+import sw5 from "./images/welfare/sw5.jpg";
+import sw6 from "./images/welfare/sw6.jpg";
+import sw7 from "./images/welfare/sw7.jpg";
+import sw8 from "./images/welfare/sw8.jpg";
 
 export default function Welfare() {
   // const techComTeam = [
@@ -94,25 +99,142 @@ export default function Welfare() {
 
         <center>
           <hr className={globalStyles.hrLine} />
-          <h2 className={globalStyles.head2}>Rubik's Cube Solving</h2>
+          <h2 className={globalStyles.head2}>Pride March</h2>
+        </center>
+        <section>
+          <center>
+            <div className={globalStyles.imgContainer}>
+                <img src={sw8} alt="pride_march" />
+            </div>
+          </center>
+          <div className={globalStyles.centerCard}>
+            <p>
+            The fifth edition of the annual Pride March was held offline after two years of online celebration.<br />
+            <br />
+            Date: 7 PM on Tuesday, September 6, 2022<br />
+            Starting point: Technology Students' Gymkhana<br />
+            Route: 2.2<br />
+
+            </p>
+          </div>
+        </section>
+        
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Talk with Dr Bittu Kaveri Rajaraman<br />
+                                             about<br />
+                                             Impact of the Transgender Persons on Access to Resources</h2>
+        </center>
+        <section>
+          <center>
+            <div className={globalStyles.imgContainer}>
+                <img src={sw7} alt="talk_with_dr_Bittu" />
+            </div>
+          </center>
+          <div className={globalStyles.centerCard}>
+            <p>
+                An online talk was organised with Dr Bittu Kaveri Rajaraman who is HOD of Psychology at Ashoka University. The topic of discussion was ‘Impact of the Transgender Persons (Protection of Rights Act 2019) on Access to Resources’.<br />
+                <br />
+                Time and Venue: 7 PM on September 4, 2022, on Google Meet<br />
+
+            </p>
+          </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Storytelling Session</h2>
+        </center>
+        <section>
+          <center>
+            <div className={globalStyles.imgContainer}>
+                <img src={sw6} alt="storytelling_session" />
+            </div>
+          </center>
+          <div className={globalStyles.centerCard}>
+            <p>
+                An online storytelling session was conducted with Rituparna.<br />
+                <br />
+                Time and Venue: 7 PM on September 2, 2022, on Google Meet.<br />
+            
+            </p>
+          </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Words of Pride: A Queer-Themed Open Mic By Ambar in association with TLS</h2>
         </center>
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg3}
-              src={sw1}
+              src={sw5}
+              alt="Words_Of_Pride"
+              // style={{borderRadius: '1.25rem', objectFit: 'contain', width: '40vw', height:'80vh',}}
+            />
+          </div>
+          <div className={globalStyles.rightCard}>
+            <p>
+            Words of Pride is a celebration of queer literature and a celebration of how far the queer movement has come in India in terms of societal acceptance and recognition of rights, and to also acknowledge that we have a long way to go in eliminating bullying, harassment, isolation, conversion therapy, and other such activities directed at the queer community.<br />
+            <br />
+            Time and Venue: V3 Classroom on September 1, 2022 from 8 PM.<br />
 
-              alt="Music result"
+            </p>
+          </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Anubhuti by Nirmaan and IWG</h2>
+        </center>
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <img
+              className={globalStyles.cardImg3}
+              src={sw3}
+
+              alt="Anubhuti_Poster"
+              // style={{borderRadius: '1.25rem', objectFit: 'contain', width: '40vw', height:'80vh',}}
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
               <br />
-              Hola, kgpians!<br /><br />
-              In continuance of the power-packed week of SAMYOG: CONNECT IIT KHARAGPUR, the Students’ Welfare Committee proudly brings to you yet another exciting and helpful beginner-friendly workshop on RUBIK’S CUBE SOLVING. If you’re that person who always wanted to solve it but could not proceed beyond a row or a face, went through a bunch of online formulas that did not make much sense, this is your opportunity to be able to directly interact with a couple of pros and learn how to solve it the simplified way!<br /><br />
-              The session will take place this Thursday, 10th February, starting at 6 PM. The speakers for the session are two of our very own kgpians, KARAN UPPAL and SAI KALYAN. Post-workshop, we will also have a FAST-SOLVING CHALLENGE to provide a platform to all the pros out there!<br />
-              So what are you waiting for? Grab your Rubik's cube and get ready to finally be able to solve it, and call your pro-friends to register and show off their skills! Videos of the top 3 performers will be posted on our Facebook page.<br /><br />
-              Looking forward to an informative and interactive session!
+              Are you someone who believes there is more to your life than simply aiming for a better lifestyle for you and your family? Do you want to understand and solve the burning social problems around us? Are you someone who is trying to figure out the true purpose of your life? Or someone who is trying to find peace in your life?
+              If this is the case, you have come to the right place. <br /><br /> IWG is organizing a webinar ANUBHUTI with Mr. 𝗔𝗺𝗿𝘂𝘁 Bang, 𝗣𝗿𝗼𝗴𝗿𝗮𝗺 Director of NIRMAN. NIRMAN is a social service organization that believes that only by understanding and solving societal problems can a person understand the world outside and can find peace within.
+              Mr. Amrut is himself an extraordinary individual. He is also an RTI activist, and under his leadership, NIRMAN reached several new heights. <br />
+              In this webinar, we will interact with Mr. Amrut to understand why this generation of youth should participate in social service and how it helps us in our personal growth and finding peace and purpose in our life. <br /> <br />
+              Time and Date: 5:00 PM, 20th August 2022.
+
+            </p>
+          </div>
+        </section>
+
+        <center>
+          <hr className={globalStyles.hrLine} />
+          <h2 className={globalStyles.head2}>Khat</h2>
+        </center>
+        <section className={globalStyles.cmtCard1}>
+          <div className={globalStyles.leftCard}>
+            <img
+              className={globalStyles.cardImg3}
+              src={sw4}
+
+              alt="Khat_Poster"
+              // style={{borderRadius: '1.25rem', objectFit: 'contain', width: '40vw', height:'80vh',}}
+            />
+          </div>
+          <div className={globalStyles.rightCard}>
+            <p>
+              <br />
+              "Every new friend is a new adventure...the start of more memories." <br /><br />
+              Texting is the new normal; it's been Online for a couple of years. Let's go back in time, recalling those old communication
+              means. Let's grab some Envelopes and send end-to-end encrypted messages to your lovely friends.
+              <br /><br /> This FRIENDSHIP DAY, INSTITUTE WELLNESS GROUP is frenzied to announce KHAT, pin up your calendars, KGPIANS.
+              We invite you to come and open up and jot down your feelings and messages for your special friends. <br /><br />
+              Date: 4th and 5th August 2022. <br /><br />
+              Venue: Technology Students' Gymkhana.
 
             </p>
           </div>

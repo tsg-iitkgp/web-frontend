@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./interiit.css";
-import pointsData from "./pointsData";
+import InterIITdata from "./InterIITdata";
 
-const years = ["2019-20"];
+const years = ["2016-17","2017-18","2018-19","2019-20","2020-21","2021-22"];
 
 export default function InterIIT() {
   const [currentTab, setCurrentTab] = useState("Sports");
-  const [currentYear, setCurrentYear] = useState("2019");
+  const [currentYear, setCurrentYear] = useState("2021-22");
 
   const handleTabChange = (s) => {
     setCurrentTab(s);
@@ -27,7 +27,7 @@ export default function InterIIT() {
             alignItems: "center",
           }}
         >
-          InterIIT {currentYear} {currentTab} Standings
+          Inter-IIT {currentYear} {currentTab} Standings
         </h2>
         <div className="tabs">
           <div
@@ -86,7 +86,7 @@ export default function InterIIT() {
                   </tr>
                 </thead>
                 <tbody style={{ border: "10px solid #fff" }}>
-                  {pointsData.interIIT[0].map((item) => (
+                  {InterIITdata[String(currentYear)].Sports.Male.map((item) => (
                     <tr id="overall">
                       <td>{item.Sport}</td>
                       <td>{item.Gold} </td>
@@ -101,7 +101,7 @@ export default function InterIIT() {
             <h2 style={{ padding: "1%" }}> Women's Standings</h2>
             <div className="table-container">
               <table>
-                <thead>
+                <thead style={{ border: "10px solid #fff" }}>
                   <tr>
                     <th>Sport</th>
                     <th>
@@ -115,8 +115,8 @@ export default function InterIIT() {
                     </th>
                   </tr>
                 </thead>
-                <tbody>
-                  {pointsData.interIIT[1].map((item) => (
+                <tbody style={{ border: "10px solid #fff" }}>
+                  {InterIITdata[String(currentYear)].Sports.Female.map((item) => (
                     <tr id="overall">
                       <td>{item.Sport}</td>
                       <td>{item.Gold} </td>
@@ -133,7 +133,7 @@ export default function InterIIT() {
           <>
             <div className="table-container" style={{ paddingTop: "3%" }}>
               <table>
-                <thead>
+                <thead style={{ border: "10px solid #fff" }}>
                   <tr>
                     <th>Event Genre</th>
                     <th>
@@ -147,8 +147,40 @@ export default function InterIIT() {
                     </th>
                   </tr>
                 </thead>
-                <tbody>
-                  {pointsData.interIIT[2].map((item) => (
+                <tbody style={{ border: "10px solid #fff" }}>
+                  {InterIITdata[String(currentYear)].Socult.map((item) => (
+                    <tr id="overall">
+                      <td>{item.Event}</td>
+                      <td>{item.Gold} </td>
+                      <td>{item.Silver} </td>
+                      <td>{item.Bronze} </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
+        {currentTab === "Technology" && (
+          <>
+            <div className="table-container" style={{ paddingTop: "3%" }}>
+              <table>
+                <thead style={{ border: "10px solid #fff" }}>
+                  <tr>
+                    <th>Event Genre</th>
+                    <th>
+                      <span className="medal gold"></span> Gold
+                    </th>
+                    <th>
+                      <span className="medal silver"></span> Silver
+                    </th>
+                    <th>
+                      <span className="medal bronze"></span> Bronze
+                    </th>
+                  </tr>
+                </thead>
+                <tbody style={{ border: "10px solid #fff" }}>
+                  {InterIITdata[String(currentYear)].Technology.map((item) => (
                     <tr id="overall">
                       <td>{item.Event}</td>
                       <td>{item.Gold} </td>
