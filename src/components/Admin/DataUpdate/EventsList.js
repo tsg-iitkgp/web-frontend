@@ -9,6 +9,7 @@ const EventsList = (props) => {
         <Table bordered size='sm' className='text-light'>
             <thead className='text-warning'>
                 <tr>
+                    <th>Announcement Date</th>
                     <th>Title</th>
                     <th>Dates</th>
                     <th>Description</th>

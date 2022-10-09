@@ -11,6 +11,7 @@ import "./EventsUpdate.css"
 
 const EventsUpdate = () => {
 
+    const [announcementDate, setAnnouncementDate] = useState('');
     const [title, setTitle] = useState('');
     const [dates, setDates] = useState('');
     const [description, setDescription] = useState('');
@@ -28,8 +29,25 @@ const EventsUpdate = () => {
 
     useEffect(() => {
         fetchEvents();
+        getDefaultDate();
     }, []);
+
     const inputRef = useRef(null);
+
+    const getDefaultDate = () => {
+        var d = new Date(),
+            mm = '' + (d.getMonth() + 1),
+            dd = '' + d.getDate(),
+            yy = d.getFullYear();
+
+        if (mm.length < 2)
+            mm = '0' + mm;
+        if (dd.length < 2)
+            dd = '0' + dd;
+        var dateString = [yy, mm, dd].join('-');
+
+        setAnnouncementDate(dateString);
+    }
 
     const fetchEvents = async () => {
         axios
@@ -42,6 +60,7 @@ const EventsUpdate = () => {
             .catch(err => console.error(`There was an error in retrieving the events data: ${err}`));
     }
     const handleInputsReset = () => {
+        getDefaultDate();
         setTitle('');
         setDates('');
         setDescription('');
@@ -54,6 +73,7 @@ const EventsUpdate = () => {
     }
     const handleAddEvent = () => {
         let formData = new FormData();
+        formData.append('announcementDate', announcementDate);
         formData.append('title', title);
         formData.append('dates', dates);
         formData.append('description', description);
@@ -69,6 +89,7 @@ const EventsUpdate = () => {
             })
             .then(res => {
                 fetchEvents();
+                handleInputsReset()
             })
             .catch(err => console.log(`There was this ${err} error in adding the event: ${title}`));
     }
@@ -76,7 +97,6 @@ const EventsUpdate = () => {
     const handleEventSubmit = () => {
         if (title.length > 0 && dates.length > 0 && description.length > 0) {
             handleAddEvent()
-            handleInputsReset()
             // console.info(`Event: ${title} was added!`);
         }
     }
@@ -101,6 +121,11 @@ const EventsUpdate = () => {
                 </div>
                 <section className='w-50' style={{ marginTop: "5em" }}>
                     <Form className='text-white'>
+                        <Form.Group className="mb-3" controlId="formBasicEmail" style={{ "width": "30%", "marginRight": "0", "marginLeft": "auto" }}>
+                            <Form.Label>Event Announcement Date</Form.Label>
+                            <Form.Control type="date" value={announcementDate} onChange={(e) => setAnnouncementDate(e.currentTarget.value)} />
+                        </Form.Group>
+
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Event Title</Form.Label>
                             <Form.Control type="text" placeholder="Event Title" value={title} onChange={(e) => setTitle(e.currentTarget.value)} />

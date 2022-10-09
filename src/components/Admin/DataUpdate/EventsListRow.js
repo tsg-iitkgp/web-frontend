@@ -15,6 +15,9 @@ const EventsListRow = (props) => {
             }} />
             <tr>
                 <td>
+                    {eventData.announcementDate}
+                </td>
+                <td>
                     {eventData.title}
                 </td>
                 <td>
