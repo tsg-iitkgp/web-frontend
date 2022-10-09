@@ -17,6 +17,9 @@ const EventsUpdate = () => {
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(true);
     const [file, setFile] = useState('');
+    const [link1, setLink1] = useState(null);
+    const [link2, setLink2] = useState(null);
+    const [link3, setLink3] = useState(null);
     const [eventViewStatus, setEventViewStatus] = useState({
         status: false,
         modalStatus: false,
@@ -42,6 +45,9 @@ const EventsUpdate = () => {
         setTitle('');
         setDates('');
         setDescription('');
+        setLink1(null);
+        setLink2(null);
+        setLink3(null);
         setFile('');
         inputRef.current.value = null;
 
@@ -51,6 +57,9 @@ const EventsUpdate = () => {
         formData.append('title', title);
         formData.append('dates', dates);
         formData.append('description', description);
+        formData.append('link1', link1);
+        formData.append('link2', link2);
+        formData.append('link3', link3);
         formData.append('file', file);
         axios
             .post(`${host}/admin/event/create`, formData, {
@@ -90,47 +99,58 @@ const EventsUpdate = () => {
                 <div>
                     <h1>Events Update</h1>
                 </div>
-            <section className='w-50' style={{ marginTop: "5em" }}>
-                <Form className='text-white'>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Event Title</Form.Label>
-                        <Form.Control type="text" placeholder="Event Title" value={title} onChange={(e) => setTitle(e.currentTarget.value)} />
-                    </Form.Group>
+                <section className='w-50' style={{ marginTop: "5em" }}>
+                    <Form className='text-white'>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Event Title</Form.Label>
+                            <Form.Control type="text" placeholder="Event Title" value={title} onChange={(e) => setTitle(e.currentTarget.value)} />
+                        </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Event Dates</Form.Label>
-                        <Form.Control type="text" placeholder="Event Dates" value={dates} onChange={(e) => setDates(e.currentTarget.value)} />
-                    </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Event Dates</Form.Label>
+                            <Form.Control type="text" placeholder="Event Dates" value={dates} onChange={(e) => setDates(e.currentTarget.value)} />
+                        </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Event Description</Form.Label>
-                        <Form.Control as="textarea" rows={5} type="text" placeholder="Event Description" value={description} onChange={(e) => setDescription(e.currentTarget.value)} />
-                    </Form.Group>
-                    <Form.Group controlId="formFileSm" className="mb-3">
-                        <Form.Label>Event Poster (optional)</Form.Label>
-                        <Form.Control type="file" size="sm" ref={inputRef} onChange={(e) => setFile(e.currentTarget.files[0])} />
-                    </Form.Group>
-                    <Button variant="warning" onClick={handleEventSubmit}>
-                        Submit
-                    </Button>
-                </Form>
-            </section>
-            <section className='w-75'>
-                <EventsList
-                    loading={loading}
-                    events={events}
-                    handleEventRemove={handleEventRemove}
-                    setEventViewStatus={setEventViewStatus}
-                />
-            </section>
-            <section>
-                <EventCardModal onClose={() => setEventViewStatus({
-                    status: true,
-                    modalStatus: false,
-                    eventData: eventViewStatus.eventData
-                })} eventViewStatus={eventViewStatus} />
-                <ViewEvent eventViewStatus={eventViewStatus} setEventViewStatus={setEventViewStatus} />
-            </section>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Event Description</Form.Label>
+                            <Form.Control as="textarea" rows={5} type="text" placeholder="Event Description" value={description} onChange={(e) => setDescription(e.currentTarget.value)} />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Registration Link (optional)</Form.Label>
+                            <Form.Control type="text" placeholder="ex. https://www.google.com" onChange={(e) => setLink1(e.currentTarget.value)} />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Facebook Link (optional)</Form.Label>
+                            <Form.Control type="text" placeholder="ex. https://www.google.com" onChange={(e) => setLink2(e.currentTarget.value)} />
+                        </Form.Group><Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Rules and Regulations (optional)</Form.Label>
+                            <Form.Control type="text" placeholder="ex. https://www.google.com" onChange={(e) => setLink3(e.currentTarget.value)} />
+                        </Form.Group>
+                        <Form.Group controlId="formFileSm" className="mb-3">
+                            <Form.Label>Event Poster (optional)</Form.Label>
+                            <Form.Control type="file" size="sm" ref={inputRef} onChange={(e) => setFile(e.currentTarget.files[0])} />
+                        </Form.Group>
+                        <Button variant="warning" onClick={handleEventSubmit}>
+                            Submit
+                        </Button>
+                    </Form>
+                </section>
+                <section className='w-75'>
+                    <EventsList
+                        loading={loading}
+                        events={events}
+                        handleEventRemove={handleEventRemove}
+                        setEventViewStatus={setEventViewStatus}
+                    />
+                </section>
+                <section>
+                    <EventCardModal onClose={() => setEventViewStatus({
+                        status: true,
+                        modalStatus: false,
+                        eventData: eventViewStatus.eventData
+                    })} eventViewStatus={eventViewStatus} />
+                    <ViewEvent eventViewStatus={eventViewStatus} setEventViewStatus={setEventViewStatus} />
+                </section>
             </div>
         </>
     );

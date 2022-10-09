@@ -4,7 +4,7 @@ const ResultsPreview = (props) => {
     let imgSrc = null;
     let resDescription = '';
     let hideImageDiv = 'd-none';
-    console.log(props);
+    // console.log(props);
     if (props.eventResults) {
 
         if (props.eventResults.data) {
@@ -67,7 +67,7 @@ const ResultsPreview = (props) => {
                             }}>
                                 <img src={imgSrc} alt="Result Poster" style={{
                                     width: "auto"
-                                }}/>
+                                }} />
                             </div>
                             <div className="popup-content text">
                                 {/* <div className='content-date'>{props.content.dates}</div> */}

@@ -6,14 +6,14 @@ import host from '../../apiService';
 
 export default function EventCard(props) {
 
-    console.log(props);
-    let blogCardClass;    
+    // console.log(props);
+    let blogCardClass;
     // const [index, setIndex] = useState(null);
     const [showRes, setShowRes] = useState(false);
     // const [eventResults, setEventResults] = useState({});
     let displayResultsButtonClass = `d-none`;
-    if(props.resultExists===1){
-        displayResultsButtonClass="btn btn-outline-success";
+    if (props.resultExists === 1) {
+        displayResultsButtonClass = "btn btn-outline-success";
     }
 
     if (props.index % 2 !== 0) {
@@ -52,31 +52,31 @@ export default function EventCard(props) {
                     <h1>{props.title}</h1>
                     <h2>{props.date}</h2>
                     <p> {props.description.toString().substring(0, 150) + '...'}</p>
-                    <p>
-                        <p className={Styles.readMore} >
+                    <div>
+                        <div className={Styles.readMore} >
                             <div className={Styles.btnsContainer}>
                                 <button className="btn btn-outline-warning" onClick={props.displayTrue}>
                                     Read More
                                 </button>
-                                <button variant="outline-success" className={displayResultsButtonClass} onClick={()=>{
+                                <button variant="outline-success" className={displayResultsButtonClass} onClick={() => {
                                     axios.get(`${host}/admin/event/${props.index}/results`)
-                                    .then((response) => {
-                                        console.log(response);
-                                        props.displayResults();
-                                        props.setEventResults(response);
-                                        // console.log(response.data.eventResults[0]);
-                                    })
-                                    .then((response) => {
-                                        // setShowRes(true);
-                                        // setIndex(props.index);
-                                        // console.log(eventResults);
-                                    })
+                                        .then((response) => {
+                                            console.log(response);
+                                            props.displayResults();
+                                            props.setEventResults(response);
+                                            // console.log(response.data.eventResults[0]);
+                                        })
+                                        .then((response) => {
+                                            // setShowRes(true);
+                                            // setIndex(props.index);
+                                            // console.log(eventResults);
+                                        })
                                 }}>
                                     Results
                                 </button>
                             </div>
-                        </p>
-                    </p>
+                        </div>
+                    </div>
                 </div>
             </div >
         </>

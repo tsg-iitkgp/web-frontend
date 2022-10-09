@@ -3,6 +3,14 @@ import './PopupStyles.css';
 
 const Popup = (props) => {
     if (props.show === true) {
+        // console.log(props.content);
+        let showLink1 = 'noDisplay';
+        let showLink2 = 'noDisplay';
+        let showLink3 = 'noDisplay';
+        (props.content.link1 !== 'null') ? showLink1 = 'linkDisplay' : showLink1 = 'noDisplay';
+        (props.content.link2 !== 'null') ? showLink2 = 'linkDisplay' : showLink2 = 'noDisplay';
+        (props.content.link3 !== 'null') ? showLink3 = 'linkDisplay' : showLink3 = 'noDisplay';
+        // console.log(showLink1, showLink2 , showLink3);
         return (
             <>
                 <div className="popup" >
@@ -12,7 +20,7 @@ const Popup = (props) => {
                                 {props.content.title}
                             </div>
                             <div className="popup-closeButton" onClick={props.disable} >
-                                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                                <i className="fa fa-times fa-2x" aria-hidden="true"></i>
                             </div>
                         </div>
                         <hr />
@@ -29,8 +37,11 @@ const Popup = (props) => {
                                 </div>
                             </div>
                             <div className="popup-content text">
-                                <div className='content-date'>{props.content.dates}</div>
-                                <div className='content-description'>{props.content.description}</div>
+                                <div className='content-date'>{props.content.dates}</div> <br />
+                                <div className='content-description'>{props.content.description}</div> <br />
+                                <div className={showLink1}><span style={{ color: '#f1c40f' }}>Registration Link :</span> <a href={props.content.link1} target="_blank" rel='noreferrer'> Link </a></div>
+                                <div className={showLink2}><span style={{ color: '#f1c40f' }}>Facebook Post Link :</span> <a href={props.content.link2} target="_blank" rel='noreferrer'> Link </a></div>
+                                <div className={showLink3}><span style={{ color: '#f1c40f' }}>Rules and Regulations :</span> <a href={props.content.link3} target="_blank" rel='noreferrer'> Link </a></div>
                             </div>
                         </div>
                     </div>
