@@ -61,7 +61,7 @@ export default function EventCard(props) {
                                 <button variant="outline-success" className={displayResultsButtonClass} onClick={() => {
                                     axios.get(`${host}/admin/event/${props.index}/results`)
                                         .then((response) => {
-                                            console.log(response);
+                                            // console.log(response);
                                             props.displayResults();
                                             props.setEventResults(response);
                                             // console.log(response.data.eventResults[0]);

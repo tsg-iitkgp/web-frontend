@@ -26,11 +26,21 @@ const EventsUpdate = () => {
         modalStatus: false,
         eventData: {}
     });
+    const paginationNumber = 4;
+    const [eventIndex, setEventIndex] = useState({
+        startIndex: 1,
+        stopIndex: paginationNumber
+    });
+    const [noMoreEvents, setNoMoreEvents] = useState(false);
+
+    useEffect(() => {
+        getDefaultDate();
+    }, []);
 
     useEffect(() => {
         fetchEvents();
-        getDefaultDate();
-    }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [eventIndex]);
 
     const inputRef = useRef(null);
 
@@ -51,10 +61,12 @@ const EventsUpdate = () => {
 
     const fetchEvents = async () => {
         axios
-            .get(`${host}/admin/events/all`)
+            .get(`${host}/admin/events/some/${eventIndex.startIndex}/${eventIndex.stopIndex}`)
             .then(res => {
-                setEvents(res.data.events);
-
+                setEvents(events.concat(res.data.events));
+                if (res.data.events.length === 0) {
+                    setNoMoreEvents(true);
+                }
                 setLoading(false);
             })
             .catch(err => console.error(`There was an error in retrieving the events data: ${err}`));
@@ -166,6 +178,10 @@ const EventsUpdate = () => {
                         events={events}
                         handleEventRemove={handleEventRemove}
                         setEventViewStatus={setEventViewStatus}
+                        paginationNumber={paginationNumber}
+                        eventIndex={eventIndex}
+                        setEventIndex={setEventIndex}
+                        noMoreEvents={noMoreEvents}
                     />
                 </section>
                 <section>

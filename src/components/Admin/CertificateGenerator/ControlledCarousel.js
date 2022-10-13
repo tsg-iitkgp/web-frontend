@@ -37,6 +37,7 @@ function ControlledCarousel(props) {
         props.setMessage('');
         props.setGenerate('Generate');
         props.setGenerateStatus('primary');
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [index]);
 
     return (

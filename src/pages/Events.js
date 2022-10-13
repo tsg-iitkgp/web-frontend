@@ -17,42 +17,59 @@ export default function Events() {
     const [show, setShow] = useState(false);
     const [showRes, setShowRes] = useState(false);
     const [content, setContent] = useState(null);
-    const [title, setTitle]= useState(null);
-    const [eventResults, setEventResults]= useState(null);
+    const [title, setTitle] = useState(null);
+    const [eventResults, setEventResults] = useState(null);
     // const [resContent, setResContent] = useState(null);
     const [image, setImage] = useState(null);
     const [index, setIndex] = useState(null);
+    const paginationNumber = 4;
+    const [eventIndex, setEventIndex] = useState({
+        startIndex: 1,
+        stopIndex: paginationNumber
+    });
+    const [events, setEvents] = useState([]);
+    const [btnStyles, setBtnStyles] = useState('btn-warning');
+    const [noMoreEvents, setNoMoreEvents] = useState(false);
 
     const handlePosterClick = (videoLink) => {
         window.open(videoLink);
     };
     document.title = "Events | TSG";
     // eslint-disable-next-line
-    const [events, setEvents] = useState([]);
     // const highlightEvents = events.filter((event) => event.isHighlight);
     //eslint-disable-next-line
     // const [isHighlightOpen, setIsHighlightOpen] = useState(true);
     //eslint-disable-next-line
     useEffect(() => {
         fetch(
-            `${host}/admin/events/all`
+            `${host}/admin/events/some/${eventIndex.startIndex}/${eventIndex.stopIndex}`
         )
             .then((response) => response.json())
             .then((responseData) => {
-                setEvents(responseData.events);
+                setEvents(events.concat(responseData.events));
+                if (responseData.events.length === 0) {
+                    setNoMoreEvents(true);
+                }
                 // console.log(responseData.events);
             })
             .catch((err) => {
                 console.log('the error is', err);
             }
             );
-    }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [eventIndex]);
+
+    useEffect(() => {
+        if (noMoreEvents) {
+            setBtnStyles('btn-secondary');
+        }
+    }, [noMoreEvents]);
 
     return (
         <Layout>
             <Popup show={show} content={content} disable={() => { setShow(false) }} imgSrc={image} />
             <ResultsPreview eventTitle={title} eventResults={eventResults} showRes={showRes} index={index} disable={() => { setShowRes(false) }} />
-            
+
             <div className={Styles.bgContainer}>
 
                 {/* Recents Events */}
@@ -101,6 +118,7 @@ export default function Events() {
                                 }
                                 return (
                                     <EventCard
+                                        key={event.id}
                                         title={event.title}
                                         date={event.dates}
                                         description={event.description}
@@ -116,12 +134,18 @@ export default function Events() {
                                             setShowRes(true);
                                             setTitle(event.title);
                                             setIndex(event.id);
-                                            console.log(`The title is ${title} id = ${event.id}`);
+                                            // console.log(`The title is ${title} id = ${event.id}`);
                                         }}
-                                        setEventResults= {setEventResults}
+                                        setEventResults={setEventResults}
                                     />
                                 );
                             })}
+                            <button style={{ "width": "30%" }} className={`m-auto btn ${btnStyles} text-white`} disabled={noMoreEvents} onClick={() => {
+                                setEventIndex({
+                                    startIndex: eventIndex.startIndex + paginationNumber,
+                                    stopIndex: eventIndex.stopIndex + paginationNumber
+                                })
+                            }}>See More Events</button>
                         </div>
                     </div>
                 </div>
