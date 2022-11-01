@@ -11,6 +11,7 @@ import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/open-animation.css";
 import Popup from "../components/Popup";
 import ResultsPreview from "../components/Admin/DataUpdate/ResultsPreview";
+import SkeletonElement from "../components/Skeleton/SkeletonElement";
 
 export default function Events() {
     const AutoplaySlider = withAutoplay(AwesomeSlider);
@@ -30,6 +31,7 @@ export default function Events() {
     const [events, setEvents] = useState([]);
     const [btnStyles, setBtnStyles] = useState('btn-warning');
     const [noMoreEvents, setNoMoreEvents] = useState(false);
+    // const [displayEvents] = useState(null);
 
     const handlePosterClick = (videoLink) => {
         window.open(videoLink);
@@ -41,21 +43,24 @@ export default function Events() {
     // const [isHighlightOpen, setIsHighlightOpen] = useState(true);
     //eslint-disable-next-line
     useEffect(() => {
-        fetch(
-            `${host}/admin/events/some/${eventIndex.startIndex}/${eventIndex.stopIndex}`
-        )
-            .then((response) => response.json())
-            .then((responseData) => {
-                setEvents(events.concat(responseData.events));
-                if (responseData.events.length === 0) {
-                    setNoMoreEvents(true);
+        setTimeout( async() => {
+            fetch(
+                `${host}/admin/events/some/${eventIndex.startIndex}/${eventIndex.stopIndex}`
+            )
+                .then((response) => response.json())
+                .then((responseData) => {
+                    setEvents(events.concat(responseData.events));
+                    if (responseData.events.length === 0) {
+                        setNoMoreEvents(true);
+                    }
+                    // console.log(responseData.events);
+                })
+                .catch((err) => {
+                    console.log('the error is', err);
                 }
-                // console.log(responseData.events);
-            })
-            .catch((err) => {
-                console.log('the error is', err);
-            }
-            );
+                );
+        });
+        
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [eventIndex]);
 
@@ -64,6 +69,12 @@ export default function Events() {
             setBtnStyles('btn-secondary');
         }
     }, [noMoreEvents]);
+
+    useEffect(() => {
+        setTimeout( async() => {
+
+        })
+    })
 
     return (
         <Layout>
@@ -111,7 +122,7 @@ export default function Events() {
                     <div className={Styles.categoryContainer} data-aos="zoom-in-up">
                         <h2 className={Styles.categoryHeading2}>Events</h2>
                         <div className={Styles.cardsWrapper}>
-                            {events.map((event) => {
+                            {events && events.map((event => {
                                 let imgSrc = null;
                                 if (event.image) {
                                     imgSrc = `data:${event.imageMimeType};base64,${Buffer.from(event.image).toString('base64')}`;
@@ -139,7 +150,15 @@ export default function Events() {
                                         setEventResults={setEventResults}
                                     />
                                 );
-                            })}
+                            }))}
+                            {!events.length && 
+                            <div>
+                                <SkeletonElement type="thumbnail" />
+                                <SkeletonElement type="thumbnail" />
+                                <SkeletonElement type="thumbnail" />
+                                <SkeletonElement type="thumbnail" />
+                            </div> }
+                            
                             <button style={{ "width": "30%" }} className={`m-auto btn ${btnStyles} text-white`} disabled={noMoreEvents} onClick={() => {
                                 setEventIndex({
                                     startIndex: eventIndex.startIndex + paginationNumber,
