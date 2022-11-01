@@ -11,7 +11,6 @@ import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/open-animation.css";
 import Popup from "../components/Popup";
 import ResultsPreview from "../components/Admin/DataUpdate/ResultsPreview";
-import Skeleton from "react-loading-skeleton";
 import SkeletonElement from "../components/Skeleton/SkeletonElement";
 
 export default function Events() {
