@@ -1,0 +1,141 @@
+.popup {
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* color: white; */
+    height: 100%;
+    width: 100%;
+    /* border: 3px solid white; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: #2a2b2f; */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.popup-body {
+    border: 0.2rem solid #9a988f;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    background-color: #2a2b2f !important;
+    margin: 3% auto;
+    height: auto;
+    width: 70%;
+}
+
+.popup-body hr {
+    color: #f1c40f;
+}
+
+.popup-heading {
+    color: #f1c40f;
+    display: flex;
+    padding: auto auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.props-title {
+    margin: auto auto;
+    /* font-size: 1.5rem; */
+    font-size: 2rem;
+}
+
+.popup-closeButton {
+    margin: 1% 2% 0 0;
+    color: #d11a2a;
+    padding: 0 0.5rem;
+}
+
+.popup-closeButton:hover {
+    /* border: 1px solid #f1c40f; */
+    color: #fa061a;
+    cursor: pointer;
+}
+
+.popup-content {
+    display: flex;
+    /* align-items: center; */
+    overflow-y: scroll;
+    height: 85%;
+    width: 100%;
+    color: #eeeeee;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.popup-content>table th{
+    text-transform: capitalize;
+    background-color: #f1c40f;
+    font-size: 1rem;
+    text-align: center;
+    border: 2.5px solid #d9dadb;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+.popup-content>table td{
+    background-color: #2a2b2f;
+    font-size: 0.9rem;
+    text-align: center;
+    border: 0.8px solid #d9dadb;
+    color: #fff;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-date {
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.content-description {
+    white-space: pre-wrap;
+
+}
+
+#resultsForm {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 85%;
+    width: 100%;
+    color: #eeeeee;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+#formConti {
+    padding: 0 5rem;
+    margin: 2rem 0;
+}
+
+.save-btn {
+    margin: 1rem 0;
+}
+
+#subHeading {
+    text-align: center;
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.linkDisplay {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.noDisplay {
+    display: none;
+}

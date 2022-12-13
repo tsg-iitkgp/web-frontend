@@ -90,26 +90,26 @@ export default function Events() {
                 <section className="m-content">
                     <section className={Styles.eventSlider}>
                         <AutoplaySlider play={true} interval={5000}>
-                            <div
-                                data-src="/data/media/images/events/upcomingEvents/yoga-banner.png"
-                                onClick={() =>
-                                    handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
-                                }
-                            />
-                            <div
-                                data-src="/data/media/images/events/upcomingEvents/yoga_mahotsav_banner.png"
-                                onClick={() =>
-                                    handlePosterClick("https://tinyurl.com/YogaMahotsav2022")
-                                }
-                            />
-                            <div
+                        <div
                                 data-src="/data/media/images/events/upcomingEvents/qs.jpg"
                                 onClick={() => handlePosterClick("#")}
                             />
                             <div
-                                data-src="/data/media/images/events/upcomingEvents/tt_tournament.png"
+                                data-src="/data/media/images/events/ongoing/Feedback_Form.jpg"
                                 onClick={() =>
-                                    handlePosterClick("https://www.facebook.com/111989874951868/posts/112201191597403")
+                                    handlePosterClick("https://www.facebook.com/100068477642783/posts/pfbid02ya4fpTr1CMo31BFamDe4zdCeQSWi1HekFrUg3pNVcR73r5kes5V5U7uQJhC4AiJ7l/?mibextid=Nif5oz")
+                                }
+                            />
+                            <div
+                                data-src="/data/media/images/events/ongoing/Inter_IIT.jpg"
+                                onClick={() =>
+                                    handlePosterClick("https://www.facebook.com/100064570724530/posts/pfbid025gTAVLrqBr5NYeMRTHhHDePwXC88HWafUdE221YraCibcafMQ7wgtF7iodqSBhYfl/?mibextid=Nif5oz")
+                                }
+                            />
+                            <div
+                                data-src="/data/media/images/events/Freshers.jpg"
+                                onClick={() =>
+                                    handlePosterClick("https://www.facebook.com/100064570724530/posts/pfbid031xm5yrMnEBDWsLeVrr9SeJrVsA9WP8fpYNDbo3CjWgp8r56yhRNPF6MTTFpcMp7bl/?mibextid=Nif5oz")
                                 }
                             />
                         </AutoplaySlider>
