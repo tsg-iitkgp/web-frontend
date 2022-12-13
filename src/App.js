@@ -54,6 +54,7 @@ function App() {
           <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/inter_iit" component={Results} />
+          <Route exact path="/results/livescore" component={Results} />
           <Route exact path="/contacts/secretaries" component={Contacts} />
           <Route
             exact
