@@ -25,8 +25,12 @@ export const resultsSidebarList = [
   },
   {
     title: "Inter IIT",
-    route: "/results/inter_iit",
+    route: "/results/interiit",
   },
+  {
+    title: "Live Scoreboard",
+    route: "/results/livescore",
+  }
 ];
 export const faqSidebarList = data.map((element, index) => {
   return {

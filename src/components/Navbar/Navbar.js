@@ -7,9 +7,11 @@ import useNavbar from "./useNavbar";
 import eventsData from "../Events/eventsData";
 import Notification from "./Notification";
 import { useHistory } from "react-router-dom";
+import Dropdown from "./Dropdown.js";
 
 export default function Navbar() {
   //using Custom Hook useNavbar for logic of navbarClass
+  const [dropdown, setDropdown] = useState(false);
   const navbarClass = useNavbar();
   const [click, setClick] = useState(false);
   const [notification, setNotification] = useState({
@@ -72,43 +74,7 @@ export default function Navbar() {
               Home
             </NavLink>
           </li>
-          {/* <li className={Styles.navItem}>
-            <NavLink
-              to="/blog"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
-              Blog
-            </NavLink>
-          </li> */}
-          {/* <li
-            className={Styles.navItem}
-            onMouseEnter={() => handleMouseEnter("Results")}
-            onMouseLeave={() => handleMouseLeave("Results")}
-          >
-            <NavLink
-              to="/results"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
-              Results <i class="fas fa-caret-down"></i>
-              {resultsDropdown && <ResultsDropdown />}
-            </NavLink>
-          </li>
-          <li
-            className={Styles.navItem}
-            onMouseEnter={() => handleMouseEnter("Awards")}
-            onMouseLeave={() => handleMouseLeave("Awards")}
-          >
-            <NavLink
-              to="/awards"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
-              Awards <i class="fas fa-caret-down"></i>
-              {awardsDropdown && <AwardsDropdown />}
-            </NavLink>
-          </li> */}
+          
           <li className={Styles.navItem}>
             <NavLink
               to="/events"
@@ -118,15 +84,24 @@ export default function Navbar() {
               Events
             </NavLink>
           </li>
-          <li className={Styles.navItem}>
-            <NavLink
-              to="/results"
+
+          <li
+                  className={Styles.navItem}
+                  onMouseEnter={() => setDropdown(true)}
+                  onMouseLeave={() => setDropdown(false)}
+                >
+                  <NavLink
+              to={NaN}
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
             >
               Results
             </NavLink>
-          </li>
+                  {dropdown && <Dropdown />}
+                </li>
+
+
+
           <li className={Styles.navItem}>
             <NavLink
               to="/awards"

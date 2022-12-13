@@ -6,9 +6,14 @@ export const ResultsDropdown = [
   },
   {
     title: "Inter IIT",
-    path: "/results/inter_iit",
+    path: "/results/interiit",
     cName: "dropdownLink",
   },
+  {
+    title: "Live Scoreboard",
+    path: "/results/livescore",
+    cName: "dropdownLink",
+  }
 ];
 export const AwardsDropdown = [
   {
