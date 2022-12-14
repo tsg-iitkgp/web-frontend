@@ -3,14 +3,17 @@ import { serviceDropdown } from "./NavItems";
 import { Link } from "react-router-dom";
 import "../../styles/components/Navbar/Dropdown.css";
 
-function Dropdown() {
+function Dropdown(props) {
   const [dropdown, setDropdown] = useState(false);
 
   return (
     <>
       <ul
         className={dropdown ? "services-submenu clicked" : "services-submenu"}
-        onClick={() => setDropdown(!dropdown)}
+        onClick={() => {
+          setDropdown(!dropdown);
+          props.handleClick();
+        }}
       >
         {serviceDropdown.map((item) => {
           return (

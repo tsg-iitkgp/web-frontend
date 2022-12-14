@@ -97,7 +97,7 @@ export default function Navbar() {
             >
               Results
             </NavLink>
-                  {dropdown && <Dropdown />}
+                  {dropdown && <Dropdown handleClick = {()=>{handleClick()}}/>}
                 </li>
 
 

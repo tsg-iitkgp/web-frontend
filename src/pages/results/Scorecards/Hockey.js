@@ -45,11 +45,7 @@ export default function Hockey(props) {
                     <div className="popup-content">
                         <div className="popup-content text">
                             <table>
-                                <tr>
-                                    {props.data.header.map((val, key) => {
-                                        return <th>{val}</th>
-                                    })}
-                                </tr>
+                                <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th colSpan="2">Half Time Score</th><th colSpan="2">Full Time Score</th></tr>
                                 <tbody>
                                     {
                                         props.data.data.map((val, key) => {
@@ -90,11 +86,7 @@ else if (props.show === true && data !== null) {
                     <div className="popup-content">
                         <div className="popup-content text">
                             <table>
-                                <tr>
-                                    {data.header.map((val, key) => {
-                                        return <th>{val}</th>
-                                    })}
-                                </tr>
+                                <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th colSpan="2">Half Time Score</th><th colSpan="2">Full Time Score</th></tr>
                                 <tbody>
                                     {
                                         data.data.map((val, key) => {

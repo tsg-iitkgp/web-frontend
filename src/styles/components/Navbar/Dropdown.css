@@ -1,29 +1,37 @@
-  .services-submenu {
-    width: 15rem;
-    position: absolute;
-    top: 50px;
-    list-style: none;
-    text-align: start;
-  }
-  
-  .services-submenu li {
-    background: black;
-    cursor: pointer;
-  }
-  
-  .services-submenu li a:hover {
-    background: black;
-  }
-  
-  .services-submenu.clicked {
-    display: none;
-  }
+.services-submenu {
+  width: 15rem;
+  position: absolute;
+  top: 50px;
+  list-style: none;
+  text-align: start;
+}
 
-  .submenu-item {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: white;
-    padding: 16px;
+.services-submenu li {
+  background: black;
+  cursor: pointer;
+}
+
+.services-submenu li a:hover {
+  background: black;
+}
+
+.services-submenu.clicked {
+  display: none;
+}
+
+.submenu-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+}
+
+@media (max-width: 540px) {
+  .services-submenu {
+    right: 4rem;
+    top: 35%;
+    
   }
+}

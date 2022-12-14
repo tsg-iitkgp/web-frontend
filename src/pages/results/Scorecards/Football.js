@@ -55,7 +55,12 @@ export default function Football(props) {
                                         props.data.data.map((val, key) => {
                                             return <tr>
                                                 {val.map((value, index) => {
-                                                    return <td>{value}</td>
+                                                    if(index===0){
+                                                        return <th>{value}</th>
+                                                    }
+                                                    else{
+                                                        return <td>{value}</td>
+                                                    }
                                                 })}
                                             </tr>
                                         })
