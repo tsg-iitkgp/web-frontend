@@ -23,6 +23,8 @@ export default function InterIIT() {
   const [show, setShow] = useState(false);
   const [heading, setHeading] = useState(null);
   const [url, setUrl] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [number, setNumber] = useState(0);
 
   const handleTabChange = (s) => {
     setCurrentTab(s);
@@ -40,6 +42,7 @@ export default function InterIIT() {
     .then((response) => {
       setHeading(item.name);
       setShow(true);
+      setNumber(0);
     })
   }
 
@@ -145,18 +148,18 @@ export default function InterIIT() {
   return (
     <>
       <h1>Live Scoreboard</h1>
-      {heading==='Athletics' && <Athletics show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Badminton' && <Badminton show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Basketball' && <Basketball show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Chess' && <Chess show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Cricket' && <Cricket show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Football' && <Football show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Hockey' && <Hockey show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Squash' && <Squash show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Table Tennis' && <Tabletennis show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Tennis' && <Tennis show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Volleyball' && <Volleyball show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
-      {heading==='Weight Lifting' && <Weightlifting show={show} data={data} heading={heading} disable={() => setShow(false)} url={url} />}
+      {heading==='Athletics' && <Athletics show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Badminton' && <Badminton show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Basketball' && <Basketball show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Chess' && <Chess show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Cricket' && <Cricket show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Football' && <Football show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Hockey' && <Hockey show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Squash' && <Squash show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Table Tennis' && <Tabletennis show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Tennis' && <Tennis show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Volleyball' && <Volleyball show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
+      {heading==='Weight Lifting' && <Weightlifting show={show} data={data} heading={heading} disable={() => {setShow(false); setLoading(false)}} url={url} />}
 
       <div className="tabs">
         <div
@@ -230,9 +233,11 @@ export default function InterIIT() {
             <div className="each-sport">
               <div className="sports-container" >
                 {sportsData.map((item, index) => (
-                  <SportsCard key={index} data={item} show={() => {
+                  <SportsCard key={index} data={item} number={number} loading={loading} show={() => {
                     fetchData(item);
                     setUrl(item.url);
+                    setNumber(index+1);
+                    setLoading(true);
                   }} />
                 ))}
               </div>

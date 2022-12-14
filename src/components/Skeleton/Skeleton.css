@@ -41,3 +41,11 @@
     height: 17rem;
     margin: 2rem 0;
 }
+
+@media screen and (max-width: 768px){
+       .skeleton.thumbnail {
+        width: 100%;
+        height: 17rem;
+        margin: 2rem 0;
+    }
+     }
