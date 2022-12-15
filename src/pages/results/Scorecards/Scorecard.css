@@ -82,10 +82,14 @@
     background-color: #2a2b2f;
     font-size: 0.9rem;
     text-align: center;
+    align-items: center;
     border: 0.8px solid #d9dadb;
     color: #fff;
 }
-
+iframe {
+    display: block;
+    margin: 1rem auto;
+}
 .text {
     display: flex;
     flex-direction: column;
@@ -138,4 +142,20 @@
 
 .noDisplay {
     display: none;
+    align-items: center;
+}
+
+@media (max-width: 540px) {
+    .popup-content>Table th{ 
+        /* width: 5rem; */
+    } 
+    tr {
+        width: 9rem;
+    }   
+    th {
+        width: 9rem;
+    }
+    .popup-body {
+        width: 90%;
+    }
 }

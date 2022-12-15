@@ -171,7 +171,7 @@ export default function Basketball(props) {
     );
   }
   else if (props.show === true && data !== null) {
-    return(
+    return (
       <>
         <div className="popup" >
           <div className="popup-body" data-aos="flip-up" data-aos-duration="1000">
@@ -190,9 +190,9 @@ export default function Basketball(props) {
             <div className="popup-content">
               <div className="popup-content text">
                 <table>
-                <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>Quarter1</th><th>Quarter2</th><th>Quarter 3</th><th>Quarter 4</th><th>Final Score</th></tr>
+                  <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>Quarter1</th><th>Quarter2</th><th>Quarter 3</th><th>Quarter 4</th><th>Final Score</th></tr>
                   {data.data.map((val, key) => {
-                    if (key >= 0 && key < 8) {
+                    if (key >= 0 && key < 16) {
                       // console.log(val);
                       if (val[0] === "17th Dec") {
                         rowspan = 3;
@@ -214,13 +214,70 @@ export default function Basketball(props) {
                           </tr>
                         )
                       }
-                      else if (val[0] === "19th Dec") {
+                      else if (val[0] === "18th Dec") {
                         rowspan = 3;
                         return (
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
                               if (key !== 3) {
+                                return (
+                                  <td>
+                                    {cell}
+                                  </td>
+                                )
+                              }
+                              else {
+                                return null;
+                              }
+                            })}
+                          </tr>
+                        )
+                      } else if (val[0] === "19th Dec") {
+                        rowspan = 3;
+                        return (
+                          <tr>
+                            <th rowSpan={rowspan}>{val[0]}</th>
+                            {val.map((cell, index) => {
+                              if (key !== 6) {
+                                return (
+                                  <td>
+                                    {cell}
+                                  </td>
+                                )
+                              }
+                              else {
+                                return null;
+                              }
+                            })}
+                          </tr>
+                        )
+                      } else if (val[0] === "20th Dec") {
+                        rowspan = 3;
+                        return (
+                          <tr>
+                            <th rowSpan={rowspan}>{val[0]}</th>
+                            {val.map((cell, index) => {
+                              if (key !== 9) {
+                                return (
+                                  <td>
+                                    {cell}
+                                  </td>
+                                )
+                              }
+                              else {
+                                return null;
+                              }
+                            })}
+                          </tr>
+                        )
+                      } else if (val[0] === "21st Dec") {
+                        rowspan = 3;
+                        return (
+                          <tr>
+                            <th rowSpan={rowspan}>{val[0]}</th>
+                            {val.map((cell, index) => {
+                              if (key !== 12) {
                                 return (
                                   <td>
                                     {cell}

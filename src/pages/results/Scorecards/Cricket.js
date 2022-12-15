@@ -53,15 +53,26 @@ export default function Cricket(props) {
                                 <tbody>
                                     {
                                         props.data.data.map((val, key) => {
+                                            if(key<8){
                                             return <tr>
                                                 {val.map((value, index) => {
                                                     return <td>{value}</td>
                                                 })}
                                             </tr>
+                                            }
+                                            else{
+                                                return null;
+                                            }
                                         })
                                     }
                                 </tbody>
                             </table>
+                            <div>
+                                <br />
+                                <h6 style={{"color": "#f1c40f"}}>LIVE BROADCAST : &emsp;
+                                    <a href={props.data.data[11][1]} target="_blank" rel="noreferrer">Watch live match on MyySports</a>
+                                </h6>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,15 +109,25 @@ else if (props.show === true && data !== null) {
                                 <tbody>
                                     {
                                         data.data.map((val, key) => {
-                                            return <tr>
-                                                {val.map((value, index) => {
-                                                    return <td>{value}</td>
-                                                })}
-                                            </tr>
-                                        })
-                                    }
+                                            if(key<8){
+                                                return <tr>
+                                                    {val.map((value, index) => {
+                                                        return <td>{value}</td>
+                                                    })}
+                                                </tr>
+                                                }
+                                                else{
+                                                    return null;
+                                                }
+                                    })}
                                 </tbody>
                             </table>
+                            <div>
+                                <br />
+                                <h6 style={{"color": "#f1c40f"}}>LIVE BROADCAST : &emsp;
+                                    <a href={data.data[11][1]} target="_blank" rel="noreferrer">Watch live match on MyySports</a>
+                                </h6>
+                            </div>
                         </div>
                     </div>
                 </div>

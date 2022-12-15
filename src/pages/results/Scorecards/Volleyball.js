@@ -51,7 +51,7 @@ export default function Tennis(props) {
                   {props.data.data.map((val, key) => {
                     if (key >= 0 && key < 21) {
                       // console.log(val);
-                      if (val[0] === "14th Dec") {
+                      if (val[0] === "15th Dec") {
                         rowspan = 3;
                         return (
                           <tr>
@@ -232,7 +232,7 @@ export default function Tennis(props) {
                   {data.data.map((val, key) => {
                     if (key >= 0 && key < 21) {
                       // console.log(val);
-                      if (val[0] === "14th Dec") {
+                      if (val[0] === "15th Dec") {
                         rowspan = 3;
                         return (
                           <tr>
@@ -253,7 +253,7 @@ export default function Tennis(props) {
                         )
                       }
                       else if (val[0] === "16th Dec") {
-                        rowspan = 2;
+                        rowspan = 3;
                         return (
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>

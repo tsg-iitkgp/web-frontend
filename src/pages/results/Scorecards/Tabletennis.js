@@ -47,7 +47,7 @@ export default function Tabletennis(props) {
             <div className="popup-content">
               <div className="popup-content text">
                 <table>
-                  <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>T1 Score</th><th>T2 Score</th><th>Set 1</th><th>Set 2</th><th>Set 3</th></tr>
+                  <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>T1 Score</th><th>T2 Score</th><th>Set 1</th><th>Set 2</th><th>Set 3</th><th>Final Result</th></tr>
                   {props.data.data.map((val, key) => {
                     if (key >= 0 && key < 22) {
                       // console.log(val);
@@ -250,7 +250,7 @@ export default function Tabletennis(props) {
               <div className="popup-content">
                 <div className="popup-content text">
                   <table>
-                    <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>T1 Score</th><th>T2 Score</th><th>Set 1</th><th>Set 2</th><th>Set 3</th></tr>
+                    <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>T1 Score</th><th>T2 Score</th><th>Set 1</th><th>Set 2</th><th>Set 3</th><th>Final Result</th></tr>
                     {data.data.map((val, key) => {
                       if (key >= 0 && key < 22) {
                         // console.log(val);
