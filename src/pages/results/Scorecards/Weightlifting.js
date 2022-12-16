@@ -47,12 +47,12 @@ export default function Weightlifting(props) {
             <div className="popup-content">
               <div className="popup-content text">
                 <table>
-                  <tr><th>Date</th><th>Event</th><th>Player Name</th><th>Snatch Lift 1</th><th>Snatch Lift 2</th><th>Snatch Lift 3</th><th>CJ Lift 1</th><th>CJ Lift 2</th><th>CJ Lift 3</th></tr>
+                  <tr><th>Date</th><th>Event</th><th>Player Name</th><th>Snatch Lift 1</th><th>Snatch Lift 2</th><th>Snatch Lift 3</th><th>CJ Lift 1</th><th>CJ Lift 2</th><th>CJ Lift 3</th><th>Final Position</th></tr>
                   {props.data.data.map((val, key) => {
                     if (key >= 0 && key < 16) {
                       // console.log(val);
                       if (val[0] === "16th Dec") {
-                        rowspan = 4;
+                        rowspan = 6;
                         return (
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
@@ -133,12 +133,12 @@ export default function Weightlifting(props) {
               <div className="popup-content">
                 <div className="popup-content text">
                   <table>
-                    <tr><th>Date</th><th>Event</th><th>Player Name</th><th>Snatch Lift 1</th><th>Snatch Lift 2</th><th>Snatch Lift 3</th><th>CJ Lift 1</th><th>CJ Lift 2</th><th>CJ Lift 3</th></tr>
+                    <tr><th>Date</th><th>Event</th><th>Player Name</th><th>Snatch Lift 1</th><th>Snatch Lift 2</th><th>Snatch Lift 3</th><th>CJ Lift 1</th><th>CJ Lift 2</th><th>CJ Lift 3</th><th>Final Position</th></tr>
                     {data.data.map((val, key) => {
                       if (key >= 0 && key < 16) {
                         // console.log(val);
                         if (val[0] === "16th Dec") {
-                          rowspan = 4;
+                          rowspan = 6;
                           return (
                             <tr>
                               <th rowSpan={rowspan}>{val[0]}</th>
