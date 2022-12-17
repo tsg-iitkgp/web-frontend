@@ -77,7 +77,7 @@ export default function Weightlifting(props) {
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
-                              if (key !== 4) {
+                              if (key !== 6) {
                                 return (
                                   <td>
                                     {cell}
@@ -163,7 +163,7 @@ export default function Weightlifting(props) {
                             <tr>
                               <th rowSpan={rowspan}>{val[0]}</th>
                               {val.map((cell, index) => {
-                                if (key !== 4) {
+                                if (key !== 6) {
                                   return (
                                     <td>
                                       {cell}
