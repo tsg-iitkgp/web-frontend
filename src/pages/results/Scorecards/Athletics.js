@@ -47,8 +47,8 @@ export default function Athletics(props) {
                     <div className="popup-content">
                         <div className="popup-content text">
                         <table>
-                                        <tr><th colSpan="5">RUNNING</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">RUNNING</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {props.data.data.map((val, key)=>{
                                                 if(key>0 && key <31){
                                                     // console.log(val);
@@ -187,8 +187,8 @@ export default function Athletics(props) {
                                         
                                     </table>
                                     <table>
-                                        <tr><th colSpan="5">HUDDLES</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">HUDDLES</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {props.data.data.map((val, key)=>{
                                                 if(key>32 && key <41){
                                                     // console.log(val);
@@ -289,8 +289,8 @@ export default function Athletics(props) {
                                         
                                     </table>
                                     <table>
-                                        <tr><th colSpan="5">LONG/HIGH/TRIPLE JUMP</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">LONG/HIGH/TRIPLE JUMP</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {props.data.data.map((val, key)=>{
                                                 if(key>42 && key <52){
                                                     // console.log(val);
@@ -390,10 +390,10 @@ export default function Athletics(props) {
                                             })}
                                     </table>
                                     <table>
-                                        <tr><th colSpan="5">POLE VAULT/SHOTPUT/DISCUS THROW/JAVELIN THROW/HAMMER THROW</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">POLE VAULT/ SHOTPUT/ DISCUS THROW/ JAVELIN THROW/ HAMMER THROW</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {props.data.data.map((val, key)=>{
-                                                if(key>53 && key <66){
+                                                if(key>53 && key <68){
                                                     // console.log(val);
                                                     if(val[0]==="15th Dec"){
                                                         rowspan = 3;
@@ -435,7 +435,7 @@ export default function Athletics(props) {
                                                             </tr>
                                                         )
                                                     }
-                                                    else if(val[0]==="18th Dec"){
+                                                    else if(val[0]==="17th Dec"){
                                                         rowspan = 2;
                                                         return(
                                                             <tr>
@@ -455,7 +455,7 @@ export default function Athletics(props) {
                                                             </tr>
                                                         )
                                                     }
-                                                    else if(val[0]==="19th Dec"){
+                                                    else if(val[0]==="18th Dec"){
                                                         rowspan = 2;
                                                         return(
                                                             <tr>
@@ -475,13 +475,33 @@ export default function Athletics(props) {
                                                             </tr>
                                                         )
                                                     }
-                                                    else if(val[0]==="21st Dec"){
+                                                    else if(val[0]==="19th Dec"){
                                                         rowspan = 2;
                                                         return(
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
                                                                         if(key!==64){
+                                                                            return(
+                                                                                <td>
+                                                                                    {cell}
+                                                                                </td>
+                                                                            )
+                                                                        }
+                                                                        else{
+                                                                            return null;
+                                                                        }
+                                                                    })}
+                                                            </tr>
+                                                        )
+                                                    }
+                                                    else if(val[0]==="21st Dec"){
+                                                        rowspan = 2;
+                                                        return(
+                                                            <tr>
+                                                                <th rowSpan={rowspan}>{val[0]}</th>
+                                                                    {val.map((cell, index)=>{
+                                                                        if(key!==66){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}
@@ -511,10 +531,10 @@ export default function Athletics(props) {
                                             })}
                                     </table>
                                     <table>
-                                        <tr><th colSpan="5">RELAY RACE</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">RELAY RACE</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {props.data.data.map((val, key)=>{
-                                                if(key>67 && key <80){
+                                                if(key>69 && key <82){
                                                     // console.log(val);
                                                     if(val[0]==="18th Dec"){
                                                         rowspan = 3;
@@ -522,7 +542,7 @@ export default function Athletics(props) {
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
-                                                                        if(key!==68){
+                                                                        if(key!==70){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}
@@ -542,7 +562,7 @@ export default function Athletics(props) {
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
-                                                                        if(key!==71){
+                                                                        if(key!==73){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}
@@ -562,7 +582,7 @@ export default function Athletics(props) {
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
-                                                                        if(key!==74){
+                                                                        if(key!==76){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}
@@ -582,7 +602,7 @@ export default function Athletics(props) {
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
-                                                                        if(key!==77){
+                                                                        if(key!==79){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}
@@ -639,8 +659,8 @@ else if (props.show === true && data !== null) {
                     <div className="popup-content">
                         <div className="popup-content text">
                         <table>
-                                        <tr><th colSpan="5">RUNNING</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">RUNNING</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {data.data.map((val, key)=>{
                                                 if(key>0 && key <31){
                                                     // console.log(val);
@@ -779,8 +799,8 @@ else if (props.show === true && data !== null) {
                                         
                                     </table>
                                     <table>
-                                        <tr><th colSpan="5">HUDDLES</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">HUDDLES</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {data.data.map((val, key)=>{
                                                 if(key>32 && key <41){
                                                     // console.log(val);
@@ -881,8 +901,8 @@ else if (props.show === true && data !== null) {
                                         
                                     </table>
                                     <table>
-                                        <tr><th colSpan="5">LONG/HIGH/TRIPLE JUMP</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">LONG/HIGH/TRIPLE JUMP</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {data.data.map((val, key)=>{
                                                 if(key>42 && key <52){
                                                     // console.log(val);
@@ -982,10 +1002,10 @@ else if (props.show === true && data !== null) {
                                             })}
                                     </table>
                                     <table>
-                                        <tr><th colSpan="5">POLE VAULT/SHOTPUT/DISCUS THROW/JAVELIN THROW/HAMMER THROW</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">POLE VAULT/ SHOTPUT/ DISCUS THROW/ JAVELIN THROW/ HAMMER THROW</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {data.data.map((val, key)=>{
-                                                if(key>53 && key <66){
+                                                if(key>53 && key <68){
                                                     // console.log(val);
                                                     if(val[0]==="15th Dec"){
                                                         rowspan = 3;
@@ -1027,7 +1047,7 @@ else if (props.show === true && data !== null) {
                                                             </tr>
                                                         )
                                                     }
-                                                    else if(val[0]==="18th Dec"){
+                                                    else if(val[0]==="17th Dec"){
                                                         rowspan = 2;
                                                         return(
                                                             <tr>
@@ -1047,7 +1067,7 @@ else if (props.show === true && data !== null) {
                                                             </tr>
                                                         )
                                                     }
-                                                    else if(val[0]==="19th Dec"){
+                                                    else if(val[0]==="18th Dec"){
                                                         rowspan = 2;
                                                         return(
                                                             <tr>
@@ -1067,13 +1087,33 @@ else if (props.show === true && data !== null) {
                                                             </tr>
                                                         )
                                                     }
-                                                    else if(val[0]==="21st Dec"){
+                                                    else if(val[0]==="19th Dec"){
                                                         rowspan = 2;
                                                         return(
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
                                                                         if(key!==64){
+                                                                            return(
+                                                                                <td>
+                                                                                    {cell}
+                                                                                </td>
+                                                                            )
+                                                                        }
+                                                                        else{
+                                                                            return null;
+                                                                        }
+                                                                    })}
+                                                            </tr>
+                                                        )
+                                                    }
+                                                    else if(val[0]==="21st Dec"){
+                                                        rowspan = 2;
+                                                        return(
+                                                            <tr>
+                                                                <th rowSpan={rowspan}>{val[0]}</th>
+                                                                    {val.map((cell, index)=>{
+                                                                        if(key!==66){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}
@@ -1103,10 +1143,10 @@ else if (props.show === true && data !== null) {
                                             })}
                                     </table>
                                     <table>
-                                        <tr><th colSpan="5">RELAY RACE</th></tr>
-                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th></tr>
+                                        <tr><th colSpan="6">RELAY RACE</th></tr>
+                                        <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {data.data.map((val, key)=>{
-                                                if(key>67 && key <80){
+                                                if(key>69 && key <82){
                                                     // console.log(val);
                                                     if(val[0]==="18th Dec"){
                                                         rowspan = 3;
@@ -1114,7 +1154,7 @@ else if (props.show === true && data !== null) {
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
-                                                                        if(key!==68){
+                                                                        if(key!==70){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}
@@ -1134,7 +1174,7 @@ else if (props.show === true && data !== null) {
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
-                                                                        if(key!==71){
+                                                                        if(key!==73){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}
@@ -1154,7 +1194,7 @@ else if (props.show === true && data !== null) {
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
-                                                                        if(key!==74){
+                                                                        if(key!==76){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}
@@ -1174,7 +1214,7 @@ else if (props.show === true && data !== null) {
                                                             <tr>
                                                                 <th rowSpan={rowspan}>{val[0]}</th>
                                                                     {val.map((cell, index)=>{
-                                                                        if(key!==77){
+                                                                        if(key!==79){
                                                                             return(
                                                                                 <td>
                                                                                     {cell}

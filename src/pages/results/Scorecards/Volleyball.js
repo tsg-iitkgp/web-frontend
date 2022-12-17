@@ -47,7 +47,7 @@ export default function Tennis(props) {
             <div className="popup-content">
               <div className="popup-content text">
                 <table>
-                  <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>T1 Score</th><th>T2 Score</th><th>Set 1</th><th>Set 2</th><th>Set 3</th></tr>
+                  <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>T1 Score</th><th>T2 Score</th><th>Set 1</th><th>Set 2</th><th>Set 3</th><th>Set 4</th><th>Set 5</th></tr>
                   {props.data.data.map((val, key) => {
                     if (key >= 0 && key < 21) {
                       // console.log(val);
@@ -71,7 +71,7 @@ export default function Tennis(props) {
                           </tr>
                         )
                       }
-                      else if (val[0] === "16th Dec") {
+                      else if (val[0] === "17th Dec") {
                         rowspan = 3;
                         return (
                           <tr>
@@ -91,7 +91,7 @@ export default function Tennis(props) {
                           </tr>
                         )
                       } else if (val[0] === "18th Dec") {
-                        rowspan = 3;
+                        rowspan = 2;
                         return (
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
@@ -115,7 +115,7 @@ export default function Tennis(props) {
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
-                              if (key !== 9) {
+                              if (key !== 8) {
                                 return (
                                   <td>
                                     {cell}
@@ -134,7 +134,7 @@ export default function Tennis(props) {
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
-                              if (key !==11) {
+                              if (key !==10) {
                                 return (
                                   <td>
                                     {cell}
@@ -153,7 +153,7 @@ export default function Tennis(props) {
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
-                              if (key !== 14) {
+                              if (key !== 13) {
                                 return (
                                   <td>
                                     {cell}
@@ -167,12 +167,12 @@ export default function Tennis(props) {
                           </tr>
                         )
                       } else if (val[0] === "22nd Dec") {
-                        rowspan = 2;
+                        rowspan = 3;
                         return (
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
-                              if (key !== 17) {
+                              if (key !== 16) {
                                 return (
                                   <td>
                                     {cell}
@@ -228,7 +228,7 @@ export default function Tennis(props) {
             <div className="popup-content">
               <div className="popup-content text">
                 <table>
-                  <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>T1 Score</th><th>T2 Score</th><th>Set 1</th><th>Set 2</th><th>Set 3</th></tr>
+                  <tr><th>Date</th><th>Event</th><th>Match (T1 v/s T2)</th><th>T1 Score</th><th>T2 Score</th><th>Set 1</th><th>Set 2</th><th>Set 3</th><th>Set 4</th><th>Set 5</th></tr>
                   {data.data.map((val, key) => {
                     if (key >= 0 && key < 21) {
                       // console.log(val);
@@ -252,7 +252,7 @@ export default function Tennis(props) {
                           </tr>
                         )
                       }
-                      else if (val[0] === "16th Dec") {
+                      else if (val[0] === "17th Dec") {
                         rowspan = 3;
                         return (
                           <tr>
@@ -272,7 +272,7 @@ export default function Tennis(props) {
                           </tr>
                         )
                       } else if (val[0] === "18th Dec") {
-                        rowspan = 3;
+                        rowspan = 2;
                         return (
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
@@ -296,7 +296,7 @@ export default function Tennis(props) {
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
-                              if (key !== 9) {
+                              if (key !== 8) {
                                 return (
                                   <td>
                                     {cell}
@@ -315,7 +315,7 @@ export default function Tennis(props) {
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
-                              if (key !==11) {
+                              if (key !==10) {
                                 return (
                                   <td>
                                     {cell}
@@ -334,7 +334,7 @@ export default function Tennis(props) {
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
-                              if (key !== 14) {
+                              if (key !== 13) {
                                 return (
                                   <td>
                                     {cell}
@@ -348,12 +348,12 @@ export default function Tennis(props) {
                           </tr>
                         )
                       } else if (val[0] === "22nd Dec") {
-                        rowspan = 2;
+                        rowspan = 3;
                         return (
                           <tr>
                             <th rowSpan={rowspan}>{val[0]}</th>
                             {val.map((cell, index) => {
-                              if (key !== 17) {
+                              if (key !== 16) {
                                 return (
                                   <td>
                                     {cell}
