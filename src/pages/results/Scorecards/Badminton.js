@@ -51,9 +51,9 @@ export default function Badminton(props) {
                   {props.data.data.map((val, key) => {
                     if (key >= 0 && key < 79) {
                       // console.log(val);
-                      if (val[0] === "15th Dec" || val[0]=== "KGP vs Kanpur (Male)") {
-                        if(val[0]==="15th Dec"){rowspan=7}
-                        else if(val[0]==="KGP vs Kanpur (Male)"){rowspan=6};
+                      if (key===0 || key===1) {
+                        if(key===0){rowspan=7}
+                        else if(key===1){rowspan=6};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
@@ -72,10 +72,10 @@ export default function Badminton(props) {
                           </tr>
                         )
                       }
-                      else if (val[0] === "17th Dec" || val[0]=== "KGP vs Indore (Male)" || val[0]==="KGP vs Kanpur (Female)") {
-                        if(val[0]==="17th Dec"){rowspan=13}
-                        else if(val[0]==="KGP vs Indore (Male)"){rowspan=6}
-                        else if(val[0]==="KGP vs Kanpur (Female)"){rowspan=6};
+                      else if (key===7 || key===8 || key===14) {
+                        if(key===7){rowspan=11}
+                        else if(key===8){rowspan=6}
+                        else if(key===14){rowspan=4};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
@@ -93,15 +93,15 @@ export default function Badminton(props) {
                             })}
                           </tr>
                         )
-                      }else if (val[0] === "18th Dec" || val[0]=== "Pre Quarter Final (x vs Y) (Male)" || val[0]==="Pre Quarter Final (x vs Y) (Female)") {
-                        if(val[0]==="18th Dec"){rowspan=13}
-                        else if(val[0]==="Pre Quarter Final (x vs Y) (Male)"){rowspan=6}
-                        else if(val[0]==="Pre Quarter Final (x vs Y) (Female)"){rowspan=6};
+                      }else if (key===18 || key===19 || key===25) {
+                        if(key===18){rowspan=11}
+                        else if(key===19){rowspan=6}
+                        else if(key===25){rowspan=4};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
                             {val.map((cell, index) => {
-                              if (key !== 20 && key!==21 && key!==27) {
+                              if (key !== 18 && key!==19 && key!==25) {
                                 return (
                                   <td>
                                     {cell}
@@ -115,15 +115,15 @@ export default function Badminton(props) {
                           </tr>
                         )
                       }
-                       else if (val[0] === "19th Dec" || val[0]=== "Quarter Final (x vs Y) (Male)" || val[0]==="Quarter Final (x vs Y) (Female)") {
-                        if(val[0]==="19th Dec"){rowspan=13}
-                        else if(val[0]==="Quarter Final (x vs Y) (Male)"){rowspan=6}
-                        else if(val[0]==="Quarter Final (x vs Y) (Female)"){rowspan=6};
+                       else if (key===29 || key===30 || key===36) {
+                        if(key===29){rowspan=11}
+                        else if(key===30){rowspan=6}
+                        else if(key===36){rowspan=4};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
                             {val.map((cell, index) => {
-                              if (key !== 33 && key!==34 && key!==40) {
+                              if (key !== 29 && key!==30 && key!==36) {
                                 return (
                                   <td>
                                     {cell}
@@ -136,15 +136,15 @@ export default function Badminton(props) {
                             })}
                           </tr>
                         )
-                      } else if (val[0] === "20th Dec" || val[0]=== "Semi Final (x vs Y) (Male)" || val[0]==="Semi Final (x vs Y) (Female)") {
-                        if(val[0]==="20th Dec"){rowspan=13}
-                        else if(val[0]==="Semi Final (x vs Y) (Male)"){rowspan=6}
-                        else if(val[0]==="Semi Final (x vs Y) (Female)"){rowspan=6};
+                      } else if (key===40 || key===41 || key===47) {
+                        if(key===40){rowspan=11}
+                        else if(key===41){rowspan=6}
+                        else if(key===47){rowspan=4};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
                             {val.map((cell, index) => {
-                              if (key !== 46 && key!==47 && key!==53) {
+                              if (key !== 40 && key!==47 && key!==41) {
                                 return (
                                   <td>
                                     {cell}
@@ -157,15 +157,15 @@ export default function Badminton(props) {
                             })}
                           </tr>
                         )
-                      } else if (val[0] === "21st Dec" || val[0]=== "Final (x vs Y) (Male)" || val[0]==="Final (x vs Y) (Female)") {
-                        if(val[0]==="21st Dec"){rowspan=13}
-                        else if(val[0]==="Final (x vs Y) (Male)"){rowspan=6}
-                        else if(val[0]==="Final (x vs Y) (Female)"){rowspan=6};
+                      } else if (key===51 || key===52 || key===58) {
+                        if(key===51){rowspan=13}
+                        else if(key===52){rowspan=6}
+                        else if(key===58){rowspan=6};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
                             {val.map((cell, index) => {
-                              if (key !== 59 && key!==60 && key!==66) {
+                              if (key !== 51 && key!==52 && key!==58) {
                                 return (
                                   <td>
                                     {cell}
@@ -225,9 +225,9 @@ export default function Badminton(props) {
                   {data.data.map((val, key) => {
                     if (key >= 0 && key < 79) {
                       // console.log(val);
-                      if (val[0] === "15th Dec" || val[0]=== "KGP vs Kanpur (Male)") {
-                        if(val[0]==="15th Dec"){rowspan=7}
-                        else if(val[0]==="KGP vs Kanpur (Male)"){rowspan=6};
+                      if (key===0 || key===1) {
+                        if(key===0){rowspan=7}
+                        else if(key===1){rowspan=6};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
@@ -246,10 +246,10 @@ export default function Badminton(props) {
                           </tr>
                         )
                       }
-                      else if (val[0] === "17th Dec" || val[0]=== "KGP vs Indore (Male)" || val[0]==="KGP vs Kanpur (Female)") {
-                        if(val[0]==="17th Dec"){rowspan=13}
-                        else if(val[0]==="KGP vs Indore (Male)"){rowspan=6}
-                        else if(val[0]==="KGP vs Kanpur (Female)"){rowspan=6};
+                      else if (key===7 || key===8 || key===14) {
+                        if(key===7){rowspan=11}
+                        else if(key===8){rowspan=6}
+                        else if(key===14){rowspan=4};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
@@ -267,15 +267,15 @@ export default function Badminton(props) {
                             })}
                           </tr>
                         )
-                      }else if (val[0] === "18th Dec" || val[0]=== "Pre Quarter Final (x vs Y) (Male)" || val[0]==="Pre Quarter Final (x vs Y) (Female)") {
-                        if(val[0]==="18th Dec"){rowspan=13}
-                        else if(val[0]==="Pre Quarter Final (x vs Y) (Male)"){rowspan=6}
-                        else if(val[0]==="Pre Quarter Final (x vs Y) (Female)"){rowspan=6};
+                      }else if (key===18 || key===19 || key===25) {
+                        if(key===18){rowspan=11}
+                        else if(key===19){rowspan=6}
+                        else if(key===25){rowspan=4};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
                             {val.map((cell, index) => {
-                              if (key !== 20 && key!==21 && key!==27) {
+                              if (key !== 18 && key!==19 && key!==25) {
                                 return (
                                   <td>
                                     {cell}
@@ -289,15 +289,15 @@ export default function Badminton(props) {
                           </tr>
                         )
                       }
-                       else if (val[0] === "19th Dec" || val[0]=== "Quarter Final (x vs Y) (Male)" || val[0]==="Quarter Final (x vs Y) (Female)") {
-                        if(val[0]==="19th Dec"){rowspan=13}
-                        else if(val[0]==="Quarter Final (x vs Y) (Male)"){rowspan=6}
-                        else if(val[0]==="Quarter Final (x vs Y) (Female)"){rowspan=6};
+                       else if (key===29 || key===30 || key===36) {
+                        if(key===29){rowspan=11}
+                        else if(key===30){rowspan=6}
+                        else if(key===36){rowspan=4};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
                             {val.map((cell, index) => {
-                              if (key !== 33 && key!==34 && key!==40) {
+                              if (key !== 29 && key!==30 && key!==36) {
                                 return (
                                   <td>
                                     {cell}
@@ -310,15 +310,15 @@ export default function Badminton(props) {
                             })}
                           </tr>
                         )
-                      } else if (val[0] === "20th Dec" || val[0]=== "Semi Final (x vs Y) (Male)" || val[0]==="Semi Final (x vs Y) (Female)") {
-                        if(val[0]==="20th Dec"){rowspan=13}
-                        else if(val[0]==="Semi Final (x vs Y) (Male)"){rowspan=6}
-                        else if(val[0]==="Semi Final (x vs Y) (Female)"){rowspan=6};
+                      } else if (key===40 || key===41 || key===47) {
+                        if(key===40){rowspan=11}
+                        else if(key===41){rowspan=6}
+                        else if(key===47){rowspan=4};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
                             {val.map((cell, index) => {
-                              if (key !== 46 && key!==47 && key!==53) {
+                              if (key !== 40 && key!==47 && key!==41) {
                                 return (
                                   <td>
                                     {cell}
@@ -331,15 +331,15 @@ export default function Badminton(props) {
                             })}
                           </tr>
                         )
-                      } else if (val[0] === "21st Dec" || val[0]=== "Final (x vs Y) (Male)" || val[0]==="Final (x vs Y) (Female)") {
-                        if(val[0]==="21st Dec"){rowspan=13}
-                        else if(val[0]==="Final (x vs Y) (Male)"){rowspan=6}
-                        else if(val[0]==="Final (x vs Y) (Female)"){rowspan=6};
+                      } else if (key===51 || key===52 || key===58) {
+                        if(key===51){rowspan=13}
+                        else if(key===52){rowspan=6}
+                        else if(key===58){rowspan=6};
                         return (
                           <tr>
                             <td rowSpan={rowspan}>{val[0]}</td>
                             {val.map((cell, index) => {
-                              if (key !== 59 && key!==60 && key!==66) {
+                              if (key !== 51 && key!==52 && key!==58) {
                                 return (
                                   <td>
                                     {cell}
