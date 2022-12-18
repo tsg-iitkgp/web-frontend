@@ -46,6 +46,7 @@ export default function Weightlifting(props) {
             <hr />
             <div className="popup-content">
               <div className="popup-content text">
+              <h3 style={{"color": "#f1c40f", "textAlign": "center"}}>Overall : Silver</h3><br />
                 <table>
                   <tr><th>Date</th><th>Event</th><th>Player Name</th><th>Snatch Lift 1</th><th>Snatch Lift 2</th><th>Snatch Lift 3</th><th>CJ Lift 1</th><th>CJ Lift 2</th><th>CJ Lift 3</th><th>Final Position</th></tr>
                   {props.data.data.map((val, key) => {
@@ -132,6 +133,7 @@ export default function Weightlifting(props) {
               <hr />
               <div className="popup-content">
                 <div className="popup-content text">
+                  <h3 style={{"color": "#f1c40f", "textAlign": "center"}}>Overall : Silver</h3><br />
                   <table>
                     <tr><th>Date</th><th>Event</th><th>Player Name</th><th>Snatch Lift 1</th><th>Snatch Lift 2</th><th>Snatch Lift 3</th><th>CJ Lift 1</th><th>CJ Lift 2</th><th>CJ Lift 3</th><th>Final Position</th></tr>
                     {data.data.map((val, key) => {
