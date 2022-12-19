@@ -187,7 +187,7 @@ export default function Athletics(props) {
                                         
                                     </table>
                                     <table>
-                                        <tr><th colSpan="6">HUDDLES</th></tr>
+                                        <tr><th colSpan="6">HURDLES</th></tr>
                                         <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {props.data.data.map((val, key)=>{
                                                 if(key>32 && key <41){
@@ -799,7 +799,7 @@ else if (props.show === true && data !== null) {
                                         
                                     </table>
                                     <table>
-                                        <tr><th colSpan="6">HUDDLES</th></tr>
+                                        <tr><th colSpan="6">HURDLES</th></tr>
                                         <tr><th>Date</th><th>Event</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr>
                                             {data.data.map((val, key)=>{
                                                 if(key>32 && key <41){
