@@ -16,10 +16,10 @@
         },
         {
             "id": 2,
-            "src":"https://picsum.photos/id/10/400/300",
+            "src":"/data/media/certif-templates/template-02.png",
             "alt": "Certificate 3",
-            "preview":"https://picsum.photos/id/10/400/300",
-            "download_link": "https://picsum.photos/id/10/400/300"
+            "preview":"/data/media/certif-templates/excel-preview/preview-02.png",
+            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template02.xlsx"
         },
         {
             "id": 3,
