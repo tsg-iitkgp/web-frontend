@@ -2982,10 +2982,10 @@
     },
     "specialRecog": [
       {
-        "Name": "Ninaad Lohakare",
-        "Roll": "16ME31003",
+        "Name": "-",
+        "Roll": "",
         "Award": "Amrit Barman Memorial Award",
-        "Image": "Ninaad Lohakare.jpg"
+        "Image": "template.png"
       },
       {
         "Name": "Vishal Kumar Singh",
@@ -3466,10 +3466,10 @@
     "socult": {
       "awards": [
         {
-          "Name": "Rupam Kumar Dubey",
-          "Roll": "17GG20028",
+          "Name": "-",
+          "Roll": " ",
           "Award": "SRIMATI CHANDRAMANI CUP",
-          "Image": "Rupam Kumar Dubey.jpg"
+          "Image": "template.png"
 
         }
       ],
