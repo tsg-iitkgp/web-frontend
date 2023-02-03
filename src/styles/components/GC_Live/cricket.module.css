@@ -1,0 +1,36 @@
+.matchesSection {
+    align-self: stretch;
+}
+
+.matchesSection h1 {
+    text-align: center;
+}
+
+.matchesNavMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.matchesNavMenu .navItem {
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px;
+    transition: all 0.3s ease;
+}
+
+.matchesNavMenu .navItem.active,
+.matchesNavMenu .navItem:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 1000px) {
+    .matchesSection h1 {
+        text-align: left;
+    }
+}

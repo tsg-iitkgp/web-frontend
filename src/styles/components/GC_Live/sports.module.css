@@ -1,0 +1,23 @@
+.sportGridsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sportGridsContainer a {
+    width: 90%;
+    max-width: 300px;
+    background-color: #d9e2c8;
+    color: #899178;
+    padding: 30px 50px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sportGridsContainer a:hover {
+    background-color: #c7ceb8;
+    transition: all 0.3s ease;
+}
+

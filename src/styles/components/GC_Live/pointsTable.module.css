@@ -1,0 +1,52 @@
+.container {
+    width: 80%;
+    margin: 10px auto;
+    max-width: 800px;
+    overflow-x: auto;
+}
+
+.container select {
+    margin: 5px 0;
+    color: #899178;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #d9e2c8;
+}
+
+.container table {
+    width: 100%;
+}
+
+
+.container table {
+    width: 100%;
+}
+
+.container table thead tr {
+    color: #899178;
+    background-color: #d9e2c8;
+    border-bottom: 0;
+}
+
+.container table tr {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #98a77b;
+}
+
+.container table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    min-width: 40px;
+}
+
+.container table .team {
+    flex-grow: 1;
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

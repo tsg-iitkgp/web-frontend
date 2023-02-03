@@ -1,0 +1,120 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 90%;
+    margin: 30px auto;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.cardContainer .timer {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.cardContainer .header {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.cardContainer .body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cardContainer .body .vs {
+    margin: 10px auto;
+}
+
+.cardContainer .body .eachTeamContainer {
+    text-align: center;
+}
+
+.cardContainer .body .eachTeamContainer .eachTeam {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cardContainer .body .eachTeamContainer .teamScore {
+}
+
+.cardContainer .body .eachTeamContainer .scorers {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.cardContainer .body .eachTeamContainer .scorers img {
+    height: 15px;
+    margin: 5px;
+}
+
+.cardContainer .footer {
+    text-align: center;
+    font-size: 18px;
+}
+
+.cardContainer .footer .formationBtnContainer {
+    padding: 12px;
+}
+
+.cardContainer .footer .formationBtn {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    background-color: aquamarine;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cardContainer .footer .formationBtn:hover {
+    background-color: rgb(82, 204, 163);
+    transition: all 0.2s ease;
+}
+
+
+.cardContainer .footer .bestPlayer {
+    border: 1px solid gold;
+    padding: 20px;
+    margin: 10px;
+}
+
+.cardContainer .footer .bestPlayer .iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cardContainer .footer .bestPlayer .bestPlayerName {
+    font-size: 16px;
+}
+
+.cardContainer .footer .bestPlayer .awardIcon {
+    color: gold;
+    margin: 0 5px;
+}
+
+.cardContainer .quarterContainer .headingContainer {
+    text-align: center;
+    margin: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cardContainer .quarterContainer .quarterScoreContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
