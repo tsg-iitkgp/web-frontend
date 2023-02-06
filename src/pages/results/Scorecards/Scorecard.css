@@ -23,7 +23,7 @@
     background-color: #2a2b2f !important;
     margin: 3% auto;
     height: auto;
-    width: 70%;
+    width: 100%;
 }
 
 .popup-body hr {
@@ -150,7 +150,7 @@ iframe {
         /* width: 5rem; */
     } 
     tr {
-        width: 9rem;
+        width: 100%;
     }   
     th {
         width: 9rem;

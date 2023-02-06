@@ -1,12 +1,10 @@
 import "../Scorecard.css";
-import Styles from "../../../../styles/components/GC_Live/football.module.css";
+import Styles from "../../../../styles/components/GC_Live/badminton.module.css";
 import React from 'react'
 import axios from 'axios';
-import * as Icon from "react-feather";
 import { useState } from 'react';
-import PointsTable from "./PointsTable";
 
-export default function FootballMatch(props) {
+export default function SquashMatch(props) {
 
     var temp = null;
     const [data, setData] = useState(null);
@@ -16,11 +14,14 @@ export default function FootballMatch(props) {
         axios.get(url)
             .then((response) => {
                 let score = response.data;
+                // // // console.log(`This is score ${score.data}`);
                 temp = score.data;
             })
             .then((responseData) => {
+                // // console.log("fetched again");
                 setData(temp);
                 setStyle('fa fa-refresh fa-2x');
+                // console.log(style);
                 temp = null;
             })
     }
@@ -44,18 +45,9 @@ export default function FootballMatch(props) {
                         <hr />
                         <div className="popup-content">
                             <div className="popup-content text">
-                                <h4 style={{ "textAlign": "center" }}>
-                                    Points Table
-                                </h4>
-                                <div>
-                                    <PointsTable sport="Football" url="https://script.google.com/macros/s/AKfycbwxaNPrASYpBstAdenTWx5H3sGV9nRL2NURPiMBpQbJrYspa7HnbukLeXvANR6rcjc1/exec?sheetName=FootballPoints" />
-                                </div>
                                 {props.data.map((val, index) => {
                                     return (<>
                                         <div className={Styles.cardContainer}>
-                                            <div className={Styles.timer}>
-                                                {val.timer}
-                                            </div>
                                             <div className={Styles.header}>
                                                 {val.time}, {val.location}
                                             </div>
@@ -65,11 +57,13 @@ export default function FootballMatch(props) {
                                                         {val.team1}
                                                     </div>
                                                     <div className={Styles.teamScore}>
-                                                        {val.team1_score}
+                                                        1st Set - {val.team1_1s_score}
                                                     </div>
-                                                    <div className={Styles.scorers}>
-                                                        <img src='https://github.com/tsg-iitkgp/tsg-site/blob/main/public/images/soccer-ball.png?raw=true' alt="Error"/>
-                                                        {val.team1_goalscorers}
+                                                    <div className={Styles.teamScore}>
+                                                        2nd Set - {val.team1_1d_score}
+                                                    </div>
+                                                    <div className={Styles.teamScore}>
+                                                        3rd Set - {val.team1_2s_score}
                                                     </div>
                                                 </div>
                                                 <div className={Styles.vs}>
@@ -80,31 +74,19 @@ export default function FootballMatch(props) {
                                                         {val.team2}
                                                     </div>
                                                     <div className={Styles.teamScore}>
-                                                        {val.team2_score}
+                                                        1st Set - {val.team2_1s_score}
                                                     </div>
-                                                    <div className={Styles.scorers}>
-                                                        <img src='https://github.com/tsg-iitkgp/tsg-site/blob/main/public/images/soccer-ball.png?raw=true' alt="Error"/>
-                                                        {val.team2_goalscorers}
+                                                    <div className={Styles.teamScore}>
+                                                        2nd Set - {val.team2_1d_score}
+                                                    </div>
+                                                    <div className={Styles.teamScore}>
+                                                        3rd Set - {val.team2_2s_score}
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className={Styles.footer}>
                                                 <div>
                                                     {val.highlight_line}
-                                                </div>
-                                                <div className={Styles.bestPlayer}>
-                                                    <div className={Styles.iconContainer}>
-                                                        <Icon.Award size={32} className={Styles.awardIcon} />
-                                                        Best Player of the Match
-                                                    </div>
-                                                    <div className={Styles.bestPlayerName}>
-                                                        {val.best_player}
-                                                    </div>
-                                                </div>
-                                                <div className={Styles.formationBtnContainer}>
-                                                    <a className={Styles.formationBtn} href={val.formation_link} target='_blank' rel="noreferrer">
-                                                        Formation
-                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -118,6 +100,7 @@ export default function FootballMatch(props) {
         );
     }
     else if (props.show === true && data !== null) {
+        // console.log(data);
         return (
             <>
                 <div className="popup" >
@@ -136,16 +119,9 @@ export default function FootballMatch(props) {
                         <hr />
                         <div className="popup-content">
                             <div className="popup-content text">
-                                <h1>
-                                    Points Table
-                                </h1>
-                                <PointsTable />
                                 {data.map((val, index) => {
                                     return (<>
                                         <div className={Styles.cardContainer}>
-                                            <div className={Styles.timer}>
-                                                {val.timer}
-                                            </div>
                                             <div className={Styles.header}>
                                                 {val.time}, {val.location}
                                             </div>
@@ -155,11 +131,13 @@ export default function FootballMatch(props) {
                                                         {val.team1}
                                                     </div>
                                                     <div className={Styles.teamScore}>
-                                                        {val.team1_score}
+                                                        1st Set - {val.team1_1s_score}
                                                     </div>
-                                                    <div className={Styles.scorers}>
-                                                        <img src='https://github.com/tsg-iitkgp/tsg-site/blob/main/public/images/soccer-ball.png?raw=true' alt="Error"/>
-                                                        {val.team1_goalscorers}
+                                                    <div className={Styles.teamScore}>
+                                                        2nd Set - {val.team1_1d_score}
+                                                    </div>
+                                                    <div className={Styles.teamScore}>
+                                                        3rd Set - {val.team1_2s_score}
                                                     </div>
                                                 </div>
                                                 <div className={Styles.vs}>
@@ -170,31 +148,19 @@ export default function FootballMatch(props) {
                                                         {val.team2}
                                                     </div>
                                                     <div className={Styles.teamScore}>
-                                                        {val.team2_score}
+                                                        1st Set - {val.team2_1s_score}
                                                     </div>
-                                                    <div className={Styles.scorers}>
-                                                        <img src='https://github.com/tsg-iitkgp/tsg-site/blob/main/public/images/soccer-ball.png?raw=true' alt="Error"/>
-                                                        {val.team2_goalscorers}
+                                                    <div className={Styles.teamScore}>
+                                                        2nd Set - {val.team2_1d_score}
+                                                    </div>
+                                                    <div className={Styles.teamScore}>
+                                                        3rd Set - {val.team2_2s_score}
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className={Styles.footer}>
                                                 <div>
                                                     {val.highlight_line}
-                                                </div>
-                                                <div className={Styles.bestPlayer}>
-                                                    <div className={Styles.iconContainer}>
-                                                        <Icon.Award size={32} className={Styles.awardIcon} />
-                                                        Best Player of the Match
-                                                    </div>
-                                                    <div className={Styles.bestPlayerName}>
-                                                        {val.best_player}
-                                                    </div>
-                                                </div>
-                                                <div className={Styles.formationBtnContainer}>
-                                                    <a className={Styles.formationBtn} href={val.formation_link} target='_blank' rel="noreferrer">
-                                                        Formation
-                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

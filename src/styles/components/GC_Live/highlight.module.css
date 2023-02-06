@@ -17,7 +17,7 @@
     flex-wrap: nowrap;
 }
 
-.scoreContainer .upcomingTeamContainer{
+.scoreContainer .upcomingTeamContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,8 @@
     padding: 30px;
 }
 
-.bottomContainer .description, .topContainer .description {
+.bottomContainer .description,
+.topContainer .description {
     font-size: 16px;
 }
 
@@ -78,8 +79,42 @@
     transition: all 0.2s ease;
 }
 
-.loader{
+.loader {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media (max-width: 540px) {
+    .highlightCard {
+        padding: 2rem;
+    }
+
+    .scoreContainer {
+        font-size: 3rem;
+    }
+
+    * .teamContainer {
+        font-size: 3rem;
+    }
+
+    .teamName {
+        font-size: 3rem;
+    }
+
+    .bestPlayerName {
+        font-size: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .bottomContainer .bestPlayer {
+        border: 1px solid gold;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .scorecardBtn {
+        margin: 1rem;
+    }
 }

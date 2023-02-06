@@ -14,6 +14,7 @@ import BasketballMatch from "./Scorecards/GC_Cards/BasketballMatch";
 import CricketMatch from "./Scorecards/GC_Cards/CricketMatch";
 import FootballMatch from "./Scorecards/GC_Cards/FootballMatch";
 import HockeyMatch from "./Scorecards/GC_Cards/HockeyMatch";
+import SquashMatch from "./Scorecards/GC_Cards/SquashMatch";
 import TabletennisMatch from "./Scorecards/GC_Cards/TabletennisMatch";
 import TennisMatch from "./Scorecards/GC_Cards/TennisMatch";
 import VolleyballMatch from "./Scorecards/GC_Cards/VolleyballMatch";
@@ -133,6 +134,7 @@ export default function InterIIT() {
       id: 8,
       image: "https://github.com/tsg-iitkgp/web-frontend/blob/main/public/data/media/images/sportsIcons/squash.png?raw=true",
       url: "https://script.google.com/macros/s/AKfycbxPQ304HXVJVqZ0qYYKQl1_0gDXfS3z8lPqWY7QC94NcbqFMHZTcFvgo5gEdbhTSh9k/exec",
+      gc_url: "https://script.google.com/macros/s/AKfycbwxaNPrASYpBstAdenTWx5H3sGV9nRL2NURPiMBpQbJrYspa7HnbukLeXvANR6rcjc1/exec?sheetName=Squash",
       name: "Squash",
       imgName: "Squash",
       status: ""
@@ -198,6 +200,7 @@ export default function InterIIT() {
       {heading === 'Volleyball' && currentTab==="GC" && <VolleyballMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Football' && currentTab==="GC" && <FootballMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Cricket' && currentTab==="GC" && <CricketMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Squash' && currentTab==="GC" && <SquashMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
 
 
       <div className="tabs">
