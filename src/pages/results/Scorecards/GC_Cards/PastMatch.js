@@ -9,10 +9,10 @@ function PastMatch({ match }) {
 
     const openModal = (index) => {
         setIsModalOpen(true);
-        console.log(isModalOpen)
+        // console.log(isModalOpen)
     }
 
-    console.log(match);
+    // console.log(match);
 
     return (
         <>
