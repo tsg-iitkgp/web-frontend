@@ -1,0 +1,111 @@
+.modal {
+    z-index: 1000;
+    width: 90%;
+    max-width: 700px;
+    margin: 10vh auto;
+    height: 80vh;
+    max-height: 80vh;
+    overflow: hidden;
+    background-color: white;
+    display: flex!important;
+}
+
+.modal .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.modal .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #98a77b;
+    font-size: 28px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.modal .header .liIcon {
+    cursor: pointer;
+}
+
+.modal .body {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.modal .footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .button {
+    padding: 10px;
+    text-align: center;
+    background-color: #b2c58c;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.modal .button:hover {
+    background-color: rgb(149, 170, 103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resultLine {
+    font-size: 16px;
+}
+
+.scoreCard {
+    margin: 20px auto;
+}
+
+.scoreCard .heading {
+    background-color: rgb(247, 28, 28);
+    color: #fff;
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.scoreCard table {
+    width: 100%;
+}
+
+.scoreCard table thead tr {
+    color: #899178;
+    background-color: #d9e2c8;
+    border-bottom: 0;
+}
+
+.scoreCard table tr {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #98a77b;
+}
+
+.scoreCard table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    min-width: 40px;
+}
+
+.scoreCard table .batsman {
+    flex-grow: 1;
+}
+
+.scoreCard table .batsman span {
+    color: #a1a19c;
+    font-size: 14px;
+}
