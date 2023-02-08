@@ -1,10 +1,10 @@
 import "../Scorecard.css";
-import Styles from "../../../../styles/components/GC_Live/football.module.css";
+import Styles from "../../../../styles/components/GC_Live/badminton.module.css";
 import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
 
-export default function VolleyballMatch(props) {
+export default function SquashMatch(props) {
 
     var temp = null;
     const [data, setData] = useState(null);
@@ -57,7 +57,13 @@ export default function VolleyballMatch(props) {
                                                             {val.team1}
                                                         </div>
                                                         <div className={Styles.teamScore}>
-                                                            {val.team1_score}
+                                                            1st Set - {val.team1_1s_score}
+                                                        </div>
+                                                        <div className={Styles.teamScore}>
+                                                            2nd Set - {val.team1_1d_score}
+                                                        </div>
+                                                        <div className={Styles.teamScore}>
+                                                            3rd Set - {val.team1_2s_score}
                                                         </div>
                                                     </div>
                                                     <div className={Styles.vs}>
@@ -68,7 +74,13 @@ export default function VolleyballMatch(props) {
                                                             {val.team2}
                                                         </div>
                                                         <div className={Styles.teamScore}>
-                                                            {val.team2_score}
+                                                            1st Set - {val.team2_1s_score}
+                                                        </div>
+                                                        <div className={Styles.teamScore}>
+                                                            2nd Set - {val.team2_1d_score}
+                                                        </div>
+                                                        <div className={Styles.teamScore}>
+                                                            3rd Set - {val.team2_2s_score}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -119,7 +131,13 @@ export default function VolleyballMatch(props) {
                                                             {val.team1}
                                                         </div>
                                                         <div className={Styles.teamScore}>
-                                                            {val.team1_score}
+                                                            1st Set - {val.team1_1s_score}
+                                                        </div>
+                                                        <div className={Styles.teamScore}>
+                                                            2nd Set - {val.team1_1d_score}
+                                                        </div>
+                                                        <div className={Styles.teamScore}>
+                                                            3rd Set - {val.team1_2s_score}
                                                         </div>
                                                     </div>
                                                     <div className={Styles.vs}>
@@ -130,7 +148,13 @@ export default function VolleyballMatch(props) {
                                                             {val.team2}
                                                         </div>
                                                         <div className={Styles.teamScore}>
-                                                            {val.team2_score}
+                                                            1st Set - {val.team2_1s_score}
+                                                        </div>
+                                                        <div className={Styles.teamScore}>
+                                                            2nd Set - {val.team2_1d_score}
+                                                        </div>
+                                                        <div className={Styles.teamScore}>
+                                                            3rd Set - {val.team2_2s_score}
                                                         </div>
                                                     </div>
                                                 </div>

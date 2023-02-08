@@ -29,8 +29,11 @@
     transition: all 0.3s ease;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 540px) {
     .matchesSection h1 {
         text-align: left;
+    }
+    .matchesSection>div>h4{
+        font-size: 2rem;
     }
 }

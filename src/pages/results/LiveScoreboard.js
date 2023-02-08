@@ -14,6 +14,7 @@ import BasketballMatch from "./Scorecards/GC_Cards/BasketballMatch";
 import CricketMatch from "./Scorecards/GC_Cards/CricketMatch";
 import FootballMatch from "./Scorecards/GC_Cards/FootballMatch";
 import HockeyMatch from "./Scorecards/GC_Cards/HockeyMatch";
+import SquashMatch from "./Scorecards/GC_Cards/SquashMatch";
 import TabletennisMatch from "./Scorecards/GC_Cards/TabletennisMatch";
 import TennisMatch from "./Scorecards/GC_Cards/TennisMatch";
 import VolleyballMatch from "./Scorecards/GC_Cards/VolleyballMatch";
@@ -82,15 +83,19 @@ export default function InterIIT() {
       {heading === 'Tennis' && currentTab==="InterIIT" && <Tennis show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Volleyball' && currentTab==="InterIIT" && <Volleyball show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Weight Lifting' && currentTab==="InterIIT" && <Weightlifting show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Hockey' && currentTab==="GC" && <HockeyMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Athletics' && currentTab==="GC" && <AthleticsMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Badminton' && currentTab==="GC" && <BadmintonMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Basketball' && currentTab==="GC" && <BasketballMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Tennis' && currentTab==="GC" && <TennisMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Table Tennis' && currentTab==="GC" && <TabletennisMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Volleyball' && currentTab==="GC" && <VolleyballMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Football' && currentTab==="GC" && <FootballMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Cricket' && currentTab==="GC" && <CricketMatch show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Athletics' && currentTab==="GC" && <AthleticsMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Badminton' && currentTab==="GC" && <BadmintonMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Basketball' && currentTab==="GC" && <BasketballMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Chess' && currentTab==="GC" && <BasketballMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Cricket' && currentTab==="GC" && <CricketMatch hasBegin= {true} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Football' && currentTab==="GC" && <FootballMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Hockey' && currentTab==="GC" && <HockeyMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Squash' && currentTab==="GC" && <SquashMatch hasBegin= {true} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Table Tennis' && currentTab==="GC" && <TabletennisMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Tennis' && currentTab==="GC" && <TennisMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Volleyball' && currentTab==="GC" && <VolleyballMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Weight Lifting' && currentTab==="GC" && <VolleyballMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+
 
 
       <div className="tabs">

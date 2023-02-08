@@ -127,3 +127,20 @@
 .noDisplay {
     display: none;
 }
+
+
+@media (max-width: 540px) {
+    .popup-body{
+        width: 100%;
+    }
+    .popup-content{
+        height: 90%;
+        padding: 0.5rem;
+    }
+    .props-title {
+        font-size: 3rem;
+    }
+    .popup-content>h4{
+        font-size: 2rem;
+    }
+}
