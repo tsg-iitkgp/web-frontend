@@ -4,7 +4,9 @@ import * as Icon from "react-feather";
 import CricketScoreCardModal from './CricketScoreCardModal';
 
 
-function Highlight({ sheetName = 'Highlight1', variable }) {
+function Highlight(props) {
+
+    const [sheetName, setSheetName] = useState(props.sheetName);
     const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [matchData, setMatchData] = useState();
@@ -15,7 +17,7 @@ function Highlight({ sheetName = 'Highlight1', variable }) {
                 setMatchData(responseData.data);
                 setIsLoading(false);
             }).catch((err) => setIsLoading(false));
-    }, [variable])
+    }, [props.variable]);
 
     const openModal = (index) => {
         setIsModalOpen(true);   

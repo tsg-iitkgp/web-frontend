@@ -12,9 +12,9 @@ export default function CricketMatch(props) {
 
     var temp = null;
     const [data, setData] = useState(null);
-    const [variable, setVariable] = useState(true);
     const [style, setStyle] = useState('fa fa-refresh fa-2x');
     const [matchesCategory, setMatchesCategory] = useState('upcoming');
+    const [refresh, setRefresh] = useState(false);
 
     const fetchdata = (url) => {
         axios.get(url)
@@ -35,7 +35,7 @@ export default function CricketMatch(props) {
                     <div className="popup" >
                         <div className="popup-body" data-aos="flip-up" data-aos-duration="1000">
                             <div className="popup-heading">
-                                <div className='popup-closeButton popup-refresh' style={{ color: "#f1c40f" }} onClick={() => { fetchdata(props.url); setStyle('fa fa-refresh fa-spin fa-2x'); setVariable(!variable) }}>
+                                <div className='popup-closeButton popup-refresh' style={{ color: "#f1c40f" }} onClick={() => { fetchdata(props.url); setStyle('fa fa-refresh fa-spin fa-2x'); setRefresh(!refresh) }}>
                                     <i className={style} aria-hidden="true"></i>
                                 </div>
                                 <div className="props-title">
@@ -52,11 +52,11 @@ export default function CricketMatch(props) {
                                         Live Score
                                     </h4>
                                     <div>
-                                        <Highlight sheetName="Highlight1" variable={variable}/>
-                                        <Highlight sheetName="Highlight2" variable={variable}/>
-                                        <Highlight sheetName="Highlight3" variable={variable}/>
-                                        <Highlight sheetName="Highlight4" variable={variable}/>
-                                        <Highlight sheetName="Highlight5" variable={variable}/>
+                                        <Highlight sheetName="Highlight1" refresh={refresh}/>
+                                        <Highlight sheetName="Highlight2" refresh={refresh}/>
+                                        <Highlight sheetName="Highlight3" refresh={refresh}/>
+                                        <Highlight sheetName="Highlight4" refresh={refresh}/>
+                                        <Highlight sheetName="Highlight5" refresh={refresh}/>
                                     </div>
                                     <h4 style={{ "textAlign": "center" }}>
                                         Points Table
@@ -111,7 +111,7 @@ export default function CricketMatch(props) {
                     <div className="popup" >
                         <div className="popup-body" data-aos="flip-up" data-aos-duration="1000">
                             <div className="popup-heading">
-                                <div className='popup-closeButton popup-refresh' style={{ color: "#f1c40f" }} onClick={() => { fetchdata(props.url); setStyle('fa fa-refresh fa-spin fa-2x'); setVariable(!variable) }}>
+                                <div className='popup-closeButton popup-refresh' style={{ color: "#f1c40f" }} onClick={() => { fetchdata(props.url); setStyle('fa fa-refresh fa-spin fa-2x'); setRefresh(!refresh) }}>
                                     <i className={style} aria-hidden="true"></i>
                                 </div>
                                 <div className="props-title">
@@ -128,11 +128,11 @@ export default function CricketMatch(props) {
                                         Live Score
                                     </h4>
                                     <div>
-                                        <Highlight sheetName="Highlight1" variable={variable}/>
-                                        <Highlight sheetName="Highlight2" variable={variable}/>
-                                        <Highlight sheetName="Highlight3" variable={variable}/>
-                                        <Highlight sheetName="Highlight4" variable={variable}/>
-                                        <Highlight sheetName="Highlight5" variable={variable}/>
+                                        <Highlight sheetName="Highlight1" refresh={refresh}/>
+                                        <Highlight sheetName="Highlight2" refresh={refresh}/>
+                                        <Highlight sheetName="Highlight3" refresh={refresh}/>
+                                        <Highlight sheetName="Highlight4" refresh={refresh}/>
+                                        <Highlight sheetName="Highlight5" refresh={refresh}/>
                                     </div>
                                     <h4 style={{ "textAlign": "center" }}>
                                         Points Table
