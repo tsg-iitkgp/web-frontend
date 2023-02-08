@@ -1,6 +1,17 @@
 .top-heading {
     text-align: center;
 }
+
+.tab .activeTab {
+    background-color: #F1C40F;
+}
+
+.btn_interiit #activeTab {
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-color: #f1c40f !important;
+}
+
 .sport-cards {
     display: flex;
     flex-direction: column;

@@ -14,6 +14,7 @@ export default function CricketMatch(props) {
     const [data, setData] = useState(null);
     const [style, setStyle] = useState('fa fa-refresh fa-2x');
     const [matchesCategory, setMatchesCategory] = useState('upcoming');
+    const [refresh, setRefresh] = useState(false);
 
     const fetchdata = (url) => {
         axios.get(url)
@@ -34,7 +35,7 @@ export default function CricketMatch(props) {
                 <div className="popup" >
                     <div className="popup-body" data-aos="flip-up" data-aos-duration="1000">
                         <div className="popup-heading">
-                            <div className='popup-closeButton popup-refresh' style={{ color: "#f1c40f" }} onClick={() => { fetchdata(props.url); setStyle('fa fa-refresh fa-spin fa-2x') }}>
+                            <div className='popup-closeButton popup-refresh' style={{ color: "#f1c40f" }} onClick={() => { setRefresh(true); fetchdata(props.url); setStyle('fa fa-refresh fa-spin fa-2x') }}>
                                 <i className={style} aria-hidden="true"></i>
                             </div>
                             <div className="props-title">
@@ -51,11 +52,11 @@ export default function CricketMatch(props) {
                                     Live Score
                                 </h4>
                                 <div>
-                                    <Highlight sheetName="Highlight1" />
-                                    <Highlight sheetName="Highlight2" />
-                                    <Highlight sheetName="Highlight3" />
-                                    <Highlight sheetName="Highlight4" />
-                                    <Highlight sheetName="Highlight5" />
+                                    <Highlight refresh={refresh} setRefresh={setRefresh} sheetName="Highlight1" />
+                                    <Highlight refresh={refresh} setRefresh={setRefresh} sheetName="Highlight2" />
+                                    <Highlight refresh={refresh} setRefresh={setRefresh} sheetName="Highlight3" />
+                                    <Highlight refresh={refresh} setRefresh={setRefresh} sheetName="Highlight4" />
+                                    <Highlight refresh={refresh} setRefresh={setRefresh} sheetName="Highlight5" />
                                 </div>
                                 <h4 style={{ "textAlign": "center" }}>
                                     Points Table
