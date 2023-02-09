@@ -17,7 +17,7 @@ function Highlight(props) {
                 setMatchData(responseData.data);
                 setIsLoading(false);
             }).catch((err) => setIsLoading(false));
-    }, [props.variable]);
+    }, [props.refresh]);
 
     const openModal = (index) => {
         setIsModalOpen(true);   

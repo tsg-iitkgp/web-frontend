@@ -35,7 +35,7 @@ export default function CricketMatch(props) {
                     <div className="popup" >
                         <div className="popup-body" data-aos="flip-up" data-aos-duration="1000">
                             <div className="popup-heading">
-                                <div className='popup-closeButton popup-refresh' style={{ color: "#f1c40f" }} onClick={() => { fetchdata(props.url); setStyle('fa fa-refresh fa-spin fa-2x'); setRefresh(!refresh) }}>
+                                <div className='popup-closeButton popup-refresh' style={{ color: "#f1c40f" }} onClick={() => { fetchdata(props.url); setStyle('fa fa-refresh fa-spin fa-2x'); setRefresh(!refresh); }}>
                                     <i className={style} aria-hidden="true"></i>
                                 </div>
                                 <div className="props-title">
