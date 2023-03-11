@@ -93,7 +93,7 @@ export default function InterIIT() {
       {heading === 'Squash' && currentTab==="GC" && <SquashMatch hasBegin= {true} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Table Tennis' && currentTab==="GC" && <TabletennisMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Tennis' && currentTab==="GC" && <TennisMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Volleyball' && currentTab==="GC" && <VolleyballMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Volleyball' && currentTab==="GC" && <VolleyballMatch hasBegin= {true} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Weight Lifting' && currentTab==="GC" && <VolleyballMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
 
 
