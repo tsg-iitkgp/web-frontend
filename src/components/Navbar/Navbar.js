@@ -122,13 +122,22 @@ export default function Navbar() {
           </li>
           <li className={Styles.navItem}>
             <NavLink
+              to="/elections"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Elections
+            </NavLink>
+          </li>
+          {/* <li className={Styles.navItem}>
+            <NavLink
               to="/opportunities"
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
             >
               Opportunities
             </NavLink>
-          </li>
+          </li> */}
           {/* <li className={Styles.navItem}>
             <NavLink
               to="/gallery"

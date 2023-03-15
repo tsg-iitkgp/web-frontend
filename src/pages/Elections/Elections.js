@@ -20,7 +20,7 @@ export default function Elections() {
           align="center"
         >
           {" "}
-          Gymkhana Elections 2022
+          Gymkhana Elections 2023
         </Typography>
         <Box className={Styles.electionBody}>
           <Typography variant="body2">
@@ -29,13 +29,12 @@ export default function Elections() {
             conduction of student related activities.
           </Typography>
           <Typography variant="body2">
-            This year election campaign will be carried out in hybrid mode
-            following COVID protocol. However, the nomination, approval and
+            The nomination, approval and
             voting will be done using digital platform developed by ERP, IIT
             Kharagpur. The date for Gymkhana Election is as follows:
           </Typography>
           <Typography variant="body2">
-            Date of Election: 4th April 2022 (Monday) <br />
+            Date of Election: 4th April 2023 (Tuesday) <br />
             Time of Election: 9:00 am to 6:00 pm
             <br />
             Platform: ERP
@@ -46,21 +45,20 @@ export default function Elections() {
           <Box className={Styles.notices}>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                Due to some technical reasons, the schedule for election,
-                counting & results and notification of results is changed.
+                TSG Election (2023-24) Notification
               </div>
               <Button>
                 <a
-                  href="/data/media/files/Revised_Schedule-03042022.pdf"
+                  href="/data/media/files/Election_2023-24.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
                 >
-                  View Schedule &nbsp; <LaunchIcon />
+                  View Schedule and Rules &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>
-            <Typography className={Styles.notice}>
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 The date for submission of Revised Proposals the posts of Vice
                 President and General Secretaries is extended upto 10:00 am on
@@ -76,8 +74,8 @@ export default function Elections() {
                   View Notice &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
-            <Typography className={Styles.notice}>
+            </Typography> */}
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 SOAP has been scheduled on 1st and 2nd of April 2022.
               </div>
@@ -91,10 +89,10 @@ export default function Elections() {
                   View Notice &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
-            <Button>
+            </Typography> */}
+            {/* <Button>
               <Link to="/elections/candidates">Candidates And Proposals</Link>
-            </Button>
+            </Button> */}
           </Box>
         </Box>
         <Box className={Styles.electionBody}>
@@ -120,7 +118,7 @@ export default function Elections() {
                 Rules
               </a>
             </Button>
-            <Button>
+            {/* <Button>
               {" "}
               <a
                 href="/data/media/files/final-list_21-22.pdf"
@@ -129,7 +127,7 @@ export default function Elections() {
               >
                 Final List of Nominations
               </a>
-            </Button>
+            </Button> */}
           </Box>
         </Box>
       </Container>
