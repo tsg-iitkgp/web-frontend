@@ -13,8 +13,8 @@ export default function AboutUs() {
           participation of the faculty and staff members.
         </p>
         <p className={Styles.description}>
-          The moto of Technology Students' Gymkhana is YOGAH KARMASU KAUSALAM
-          which in English means "Perfection in action is Yoga". Our goal is to
+          The moto of Technology Students' Gymkhana is <strong>YOGAH KARMASU KAUSALAM</strong>&nbsp;
+          which in English means <strong>"Excellence in action is Yoga"</strong>. Our goal is to
           bring overall development in IITians through cultivating and nurturing
           their extra-curricular talents.
         </p>

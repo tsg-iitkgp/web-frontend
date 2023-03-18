@@ -6,7 +6,7 @@ import Styles from "./elections.module.css";
 import LaunchIcon from "@material-ui/icons/Launch";
 import { Link } from "react-router-dom";
 export default function Elections() {
-  document.title = "Elections 2022| TSG";
+  document.title = "Elections 2023 | TSG";
   return (
     <Layout>
       <Container className={Styles.electionsContainer}>
