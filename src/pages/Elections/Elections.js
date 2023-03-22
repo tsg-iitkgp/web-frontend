@@ -58,6 +58,21 @@ export default function Elections() {
                 </a>
               </Button>
             </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                List of Candidates for TSG Election (2023-24) 
+              </div>
+              <Button>
+                <a
+                  href ="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View List &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 The date for submission of Revised Proposals the posts of Vice
@@ -118,16 +133,18 @@ export default function Elections() {
                 Rules
               </a>
             </Button>
-            {/* <Button>
+            <Button>
               {" "}
               <a
-                href="/data/media/files/final-list_21-22.pdf"
+                href ="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
+                // href="/data/media/files/final-list_21-22.pdf"
                 alt="notification"
                 target="_blank"
               >
-                Final List of Nominations
+                {/* Final  */}
+                List of Nominations
               </a>
-            </Button> */}
+            </Button>
           </Box>
         </Box>
       </Container>
