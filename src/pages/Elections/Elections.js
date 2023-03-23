@@ -45,18 +45,18 @@ export default function Elections() {
           <Box className={Styles.notices}>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                TSG Election (2023-24) Notification
+                <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong> 
               </div>
-              <Button>
+              {/* <Button>
                 <a
-                  href="/data/media/files/Election_2023-24.pdf"
+                  href ="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
                 >
-                  View Schedule and Rules &nbsp; <LaunchIcon />
+                  View List &nbsp; <LaunchIcon />
                 </a>
-              </Button>
+              </Button> */}
             </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
@@ -70,6 +70,21 @@ export default function Elections() {
                   rel="noopener"
                 >
                   View List &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                TSG Election (2023-24) Notification
+              </div>
+              <Button>
+                <a
+                  href="/data/media/files/Election_2023-24.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Schedule and Rules &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>

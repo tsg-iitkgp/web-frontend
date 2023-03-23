@@ -18,7 +18,8 @@ export default function Notification({ event, handleClick }) {
     <div className={Styles.notification} style={notifStyle} onClick={() => handleClick()}>
       <div>
         <span className={Styles.title}>
-          {event.title}
+          {/* {event.title} */}
+          TSG Elections 2023-2024
           <span
             className={`material-icons ${Styles.closeIcon}`}
           >
@@ -27,12 +28,14 @@ export default function Notification({ event, handleClick }) {
         </span>
       </div>
       <div className={Styles.description}>
-        {event.description}
+        {/* {event.description} */}
+        The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM
       </div>
       <div
         className={Styles.createdTime}
       >
-        {event.createdAt}
+        {/* {event.createdAt} */}
+        23rd March 2023
       </div>
     </div>
   );
