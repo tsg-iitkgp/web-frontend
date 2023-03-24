@@ -89,7 +89,7 @@ export default function InterIIT() {
       {heading === 'Chess' && currentTab==="GC" && <BasketballMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Cricket' && currentTab==="GC" && <CricketMatch hasBegin= {true} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Football' && currentTab==="GC" && <FootballMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
-      {heading === 'Hockey' && currentTab==="GC" && <HockeyMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
+      {heading === 'Hockey' && currentTab==="GC" && <HockeyMatch hasBegin= {true} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Squash' && currentTab==="GC" && <SquashMatch hasBegin= {true} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Table Tennis' && currentTab==="GC" && <TabletennisMatch hasBegin= {true} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Tennis' && currentTab==="GC" && <TennisMatch hasBegin= {false} show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
