@@ -45,26 +45,31 @@ export default function Elections() {
           <Box className={Styles.notices}>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong> 
+                Second Provisional List of Candidates for TSG Election (2023-24)
               </div>
-              {/* <Button>
+              <Button>
                 <a
-                  href ="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
+                  href="/data/media/files/Second Provisional List of Candidates for Election of Office Bearers of Technology Students.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
                 >
                   View List &nbsp; <LaunchIcon />
                 </a>
-              </Button> */}
+              </Button>
             </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                List of Candidates for TSG Election (2023-24) 
+                <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong>
+              </div>
+            </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                Provisional List of Candidates for TSG Election (2023-24)
               </div>
               <Button>
                 <a
-                  href ="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
+                  href="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -151,7 +156,7 @@ export default function Elections() {
             <Button>
               {" "}
               <a
-                href ="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
+                href="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
                 // href="/data/media/files/final-list_21-22.pdf"
                 alt="notification"
                 target="_blank"
