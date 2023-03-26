@@ -27,7 +27,7 @@ export default function Elections() {
           align="center"
         >
           {" "}
-          Gymkhana Elections 2022
+          Gymkhana Elections 2023
         </Typography>
         <Box className={Styles.postSelector}>
           <select

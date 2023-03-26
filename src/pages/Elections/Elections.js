@@ -35,17 +35,17 @@ export default function Elections() {
           </Typography>
           <Typography variant="body2">
             Date of Election: 4th April 2023 (Tuesday) <br />
-            Time of Election: 9:00 am to 6:00 pm
-            <br />
-            Venue: CIC
+            Time of Election: 9:00 am to 6:00 pm <br />
+            Venue: CIC <br />
+            Platform: ERP
           </Typography>
         </Box>
         <Box className={Styles.electionBody}>
           <Typography variant="h5">Notices:</Typography>
           <Box className={Styles.notices}>
-            {/* <Button>
+            <Button>
               <Link to="/elections/candidates">Candidates And Proposals</Link>
-            </Button> */}
+            </Button>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 Final List of Candidates for TSG Election (2023-24)
@@ -63,10 +63,15 @@ export default function Elections() {
             </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong>
+                The Venue for the TSG Election (2023 - 2024) is CIC 
               </div>
             </Typography>
             <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong>
+              </div>
+            </Typography>
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 Provisional List of Candidates for TSG Election (2023-24)
               </div>
@@ -80,7 +85,7 @@ export default function Elections() {
                   View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
+            </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 TSG Election (2023-24) Notification
