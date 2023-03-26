@@ -37,19 +37,22 @@ export default function Elections() {
             Date of Election: 4th April 2023 (Tuesday) <br />
             Time of Election: 9:00 am to 6:00 pm
             <br />
-            Platform: ERP
+            Venue: CIC
           </Typography>
         </Box>
         <Box className={Styles.electionBody}>
           <Typography variant="h5">Notices:</Typography>
           <Box className={Styles.notices}>
+            {/* <Button>
+              <Link to="/elections/candidates">Candidates And Proposals</Link>
+            </Button> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                Second Provisional List of Candidates for TSG Election (2023-24)
+                Final List of Candidates for TSG Election (2023-24)
               </div>
               <Button>
                 <a
-                  href="/data/media/files/Second Provisional List of Candidates for Election of Office Bearers of Technology Students.pdf"
+                  href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -125,9 +128,7 @@ export default function Elections() {
                 </a>
               </Button>
             </Typography> */}
-            {/* <Button>
-              <Link to="/elections/candidates">Candidates And Proposals</Link>
-            </Button> */}
+            
           </Box>
         </Box>
         <Box className={Styles.electionBody}>
@@ -156,12 +157,11 @@ export default function Elections() {
             <Button>
               {" "}
               <a
-                href="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
-                // href="/data/media/files/final-list_21-22.pdf"
+                href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
                 alt="notification"
                 target="_blank"
               >
-                {/* Final  */}
+                Final 
                 List of Nominations
               </a>
             </Button>
