@@ -247,7 +247,7 @@ export const candidates = {
   ],
   Gsec_WF: [
     {
-      RollNo: " 21CE10059",
+      RollNo: "21CE10059",
       Description: "CE '25",
       Name: "Sapharu Veena Nikhita",
       Contact: "XXX XXX XXX",
