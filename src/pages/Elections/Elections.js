@@ -48,6 +48,21 @@ export default function Elections() {
             </Button>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
+                SOAPBOX SCHEDULE 2023
+              </div>
+              <Button>
+                <a
+                  href="/data/media/files/SOAPBOX_Schedule_22-23.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Schedule <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
                 Final List of Candidates for TSG Election (2023-24)
               </div>
               <Button>
@@ -63,14 +78,14 @@ export default function Elections() {
             </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                The Venue for the TSG Election (2023 - 2024) is CIC 
+                The Venue for the TSG Election (2023 - 2024) will be Computer & Informatics Center (CIC), Takshashila, Srinivasa Ramanujan Complex, IIT Kharagpur
               </div>
             </Typography>
-            <Typography className={Styles.notice}>
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong>
               </div>
-            </Typography>
+            </Typography> */}
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 Provisional List of Candidates for TSG Election (2023-24)

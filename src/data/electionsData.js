@@ -124,7 +124,7 @@ export const candidates = {
       Description: "AE '26",
       Name: "Ruturaj Acharya",
       Contact: "XXX XXX XXX",
-      Hall: "HJB",
+      Hall: "JCB",
       Email: "",
       Proposal: "",
       ProposalLink: "21AE30029.pdf",
@@ -254,7 +254,7 @@ export const candidates = {
       Hall: "SNVH",
       Email: "",
       Proposal: "",
-      ProposalLink: " 21CE10059.pdf",
+      ProposalLink: "21CE10059.pdf",
       FacebookLink: "",
     },
     {
