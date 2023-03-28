@@ -166,17 +166,6 @@ export const candidates = {
   ],
   Gsec_Tech: [
     {
-      RollNo: "21AG10025",
-      Description: "AG '25",
-      Name: "Prakhar Lohumi",
-      Contact: "XXX XXX XXX",
-      Hall: "MS",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "21AG10025.pdf",
-      FacebookLink: "",
-    },
-    {
       RollNo: "21AG30013",
       Description: "AG '26",
       Name: "Digvijay Singh",
