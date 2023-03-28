@@ -76,7 +76,7 @@ export default function Elections() {
                   <ElectionCard
                     key={index}
                     name={candidate.Name}
-                    imgSrc="/data/media/images/elections/dummyImage.png"
+                    imgSrc={`/data/media/images/elections/${candidate.img}`}
                     designation={designation}
                     proposalLink={candidate.RollNo}
                     post={post}

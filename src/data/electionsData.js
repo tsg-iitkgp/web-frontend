@@ -42,7 +42,7 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "MMM",
       Email: "",
-      img: "",
+      img: "Vibhanshu.jpg",
       Proposal: "",
       ProposalLink: "20EE30030.pdf",
       FacebookLink: "",
@@ -54,7 +54,7 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "RP",
       Email: "",
-      img: "",
+      img: "Samarth.jpg",
       Proposal: "",
       ProposalLink: "20MF3FP34.pdf",
       FacebookLink: "",
@@ -66,10 +66,10 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "RK",
       Email: "",
-      img: "",
+      img: "Shreyansh.jpg",
       Proposal: "",
       ProposalLink: "20MI10051.pdf",
-      FacebookLink: "",
+      FacebookLink: "Shreyansh.jpg",
     },
   ],
   Gsec_Sports: [
@@ -83,6 +83,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21BT30028.pdf",
       FacebookLink: "",
+      img: "Soujanya.jpg"
     },
     {
       RollNo: "21CE30029",
@@ -90,7 +91,7 @@ export const candidates = {
       Name: "Shobhit Rajpoot",
       Contact: "XXX XXX XXX",
       Hall: "MS",
-      Email: "",
+      img: "Shobhit.jpg",
       Proposal: "",
       ProposalLink: "21CE30029.pdf",
       FacebookLink: "",
@@ -105,6 +106,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21EC10058.pdf",
       FacebookLink: "",
+      img: "Jyothiradtiya.jpg"
     },
     {
       RollNo: "21ME10124",
@@ -116,6 +118,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21ME10124.pdf",
       FacebookLink: "",
+      img: "PriyanshuS.jpg"
     },
   ],
   Gsec_Socult: [
@@ -129,6 +132,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21AE30029.pdf",
       FacebookLink: "",
+      img: "Ruturaj.jpg"
     },
     {
       RollNo: "21CE30026",
@@ -140,6 +144,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21CE30026.pdf",
       FacebookLink: "",
+      img: "Sachin.jpg"
     },
     {
       RollNo: "21EC10040",
@@ -151,6 +156,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21EC10040.pdf",
       FacebookLink: "",
+      img: "Varsha.jpg"
     },
     {
       RollNo: "21IM10046",
@@ -162,6 +168,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21IM10046.pdf",
       FacebookLink: "",
+      img: "dummyImage.png"
     },
   ],
   Gsec_Tech: [
@@ -175,6 +182,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21AG30013.pdf",
       FacebookLink: "",
+      img: "Digvijay.jpg"
     },
     {
       RollNo: "21EC10008",
@@ -186,6 +194,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21EC10008.pdf",
       FacebookLink: "",
+      img: "Ayush.jpg"
     },
     {
       RollNo: "21MA10065",
@@ -197,6 +206,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21MA10065.pdf",
       FacebookLink: "",
+      img: "Vinayak.jpg"
     },
     {
       RollNo: "21ME10107",
@@ -208,6 +218,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21ME10107.pdf",
       FacebookLink: "",
+      img: "Yuvraj.jpg"
     },
   ],
   Gsec_WM: [
@@ -221,6 +232,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21CY10013.pdf",
       FacebookLink: "",
+      img: "Veer.jpg"
     },
     {
       RollNo: "21IM30008",
@@ -232,6 +244,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21IM30008.pdf",
       FacebookLink: "",
+      img: "dummyImage.png"
     },
   ],
   Gsec_WF: [
@@ -245,6 +258,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21CE10059.pdf",
       FacebookLink: "",
+      img: "Veena.jpg"
     },
     {
       RollNo: "21MA10018",
@@ -256,6 +270,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21MA10018.pdf",
       FacebookLink: "",
+      img: "Sahithi.jpg"
     },
   ],
   // Secy_Aquatics: [
