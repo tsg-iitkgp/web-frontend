@@ -83,7 +83,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21BT30028.pdf",
       FacebookLink: "",
-      img: "Soujanya.jpg"
+      img: "Soujanya.png"
     },
     {
       RollNo: "21CE30029",
@@ -168,7 +168,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21IM10046.pdf",
       FacebookLink: "",
-      img: "dummyImage.png"
+      img: "Pratyush.jpg"
     },
   ],
   Gsec_Tech: [
@@ -244,7 +244,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "21IM30008.pdf",
       FacebookLink: "",
-      img: "dummyImage.png"
+      img: "Sujit.jpg"
     },
   ],
   Gsec_WF: [
