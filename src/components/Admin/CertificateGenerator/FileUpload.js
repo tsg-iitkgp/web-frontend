@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import Message from './Message';
 import Progress from './Progress';
 import axios from 'axios';
+import apiService from '../../../apiService';
 
 const FileUpload = (props) => {
   const [file, setFile] = useState('');
@@ -33,7 +34,7 @@ const FileUpload = (props) => {
       }   
     }
     try {
-        const res = await axios.post('/certificate/upload', formData, config);
+        const res = await axios.post(apiService + '/certificate/upload', formData, config);
         const { fileName, filePath } = res.data;
         setUploadedFile({ fileName, filePath });
         // console.log(res.status);
@@ -73,6 +74,7 @@ const FileUpload = (props) => {
                 props.setStatus(true);
             }, 5000);
         } else {
+          console.log(err)
             props.setMessage('Failed to generate certificates! Please try again later!');
             setUploadPercentage(0);
             props.setGenerate('Generation Failed');

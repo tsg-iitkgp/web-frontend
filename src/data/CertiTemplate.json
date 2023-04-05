@@ -23,17 +23,17 @@
         },
         {
             "id": 3,
-            "src": "https://picsum.photos/id/100/400/300",
+            "src": "/data/media/certif-templates/template-03.png",
             "alt": "Certificate 4",
-            "preview": "https://picsum.photos/id/100/400/300",
-            "download_link": "https://picsum.photos/id/100/400/300"
+            "preview": "/data/media/certif-templates/excel-preview/preview-02.png",
+            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template02.xlsx"
         },
         {
             "id": 4,
-            "src": "https://picsum.photos/id/1002/400/300",
+            "src": "/data/media/certif-templates/template-04.png",
             "alt": "Certificate 5",
-            "preview": "https://picsum.photos/id/1002/400/300",
-            "download_link": "https://picsum.photos/id/1002/400/300"
+            "preview": "/data/media/certif-templates/excel-preview/preview-03.png",
+            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template02.xlsx"
         },
         {
             "id": 5,
