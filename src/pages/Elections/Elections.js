@@ -43,6 +43,36 @@ export default function Elections() {
         <Box className={Styles.electionBody}>
           <Typography variant="h5">Notices:</Typography>
           <Box className={Styles.notices}>
+          <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                Elections 2023 Results
+              </div>
+              <Button>
+                <a
+                  href="/data/media/files/Results_2023.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Result <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                View Votes of Candidates
+              </div>
+              <Button>
+                <a
+                  href="/data/media/files/Votes_2023.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Votes <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
             <Button>
               <Link to="/elections/candidates">Candidates And Proposals</Link>
             </Button>
@@ -157,11 +187,11 @@ export default function Elections() {
             {" "}
             <Button>
               <a
-                href="/data/media/files/Elections-Notification.pdf"
-                alt="notification"
+                href="/data/media/files/Results_2023.pdf"
+                alt="result"
                 target="_blank"
               >
-                Notification
+                Result
               </a>
             </Button>
             <Button>
