@@ -32,6 +32,7 @@ import Opportunities from "./pages/Opportunities/Opportunities";
 import OpportunityPage from "./pages/Opportunities/OpportunityPage";
 import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
 import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
+import Nominations from "./pages/Nominations/Nominations";
 
 function App() {
   useEffect(() => {
@@ -62,6 +63,7 @@ function App() {
             component={Contacts}
           />
           <Route exact path="/elections" component={Elections} />
+          <Route exact path="/nominations" component={Nominations} />
           <Route
             exact
             path="/elections/candidates"

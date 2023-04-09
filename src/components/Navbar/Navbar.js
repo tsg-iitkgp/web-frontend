@@ -122,11 +122,11 @@ export default function Navbar() {
           </li>
           <li className={Styles.navItem}>
             <NavLink
-              to="/elections"
+              to="/nominations"
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
             >
-              Elections
+              nominations
             </NavLink>
           </li>
           {/* <li className={Styles.navItem}>
