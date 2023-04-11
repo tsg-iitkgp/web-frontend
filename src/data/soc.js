@@ -156,14 +156,14 @@ const soc = {
     {
       name: "Technology Robotix Society",
       description:
-        "Technology Robotix Society (abbrv. TRS) is an official society under the Technology Students' Gymkhana, IIT Kharagpur and is a focal point for activities and projects related to robotics in the campus. With its reach expanding steadily each year, it has also cemented its position as one of the nerve centres of amateur robotics in India.",
+      "Technology Robotix Society (abbrv. TRS) is an official society under the Technology Students' Gymkhana, IIT Kharagpur and is a focal point for activities and projects related to robotics in the campus. With its reach expanding steadily each year, it has also cemented its position as one of the nerve centres of amateur robotics in India.",
       facebook_link: "https://www.facebook.com/robotixiitkgp/",
       wiki_link: "https://wiki.metakgp.org/w/Technology_Robotix_Society",
       shortform: "trs",
       category: "Tech",
       Heads: [],
     },
-
+    
     {
       name: "Communique",
       description:
@@ -320,6 +320,16 @@ const soc = {
         wiki_link: "",
         shortform: "tcc",
         category: "Socult",
+        Heads: [],
+      },
+      {
+        name: "Developers' Society",
+        description:
+          "Developers’ Society is an initiative by the Tech Team, Technology Students’ Gymkhana, Indian Institute of Technology Kharagpur,  to foster and encourage the software development culture in IIT Kharagpur. Ideated as a group of developers of the institute, the society is responsible for developing and maintaining applications valuable to the student community as well as  fostering the software development culture of the institute.",
+        facebook_link: "https://www.facebook.com/devsoc.iitkgp/",
+        wiki_link: "",
+        shortform: "devsoc",
+        category: "Tech",
         Heads: [],
       },
   ],
