@@ -16,24 +16,17 @@
         },
         {
             "id": 2,
-            "src":"/data/media/certif-templates/template-02.png",
+            "src": "/data/media/certif-templates/template-02.png",
             "alt": "Certificate 3",
-            "preview":"/data/media/certif-templates/excel-preview/preview-02.png",
+            "preview": "/data/media/certif-templates/excel-preview/preview-02.png",
             "download_link": "/data/media/certif-templates/excel-preview/sample-files/template02.xlsx"
         },
         {
             "id": 3,
             "src": "/data/media/certif-templates/template-03.png",
             "alt": "Certificate 4",
-            "preview": "/data/media/certif-templates/excel-preview/preview-02.png",
-            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template02.xlsx"
-        },
-        {
-            "id": 4,
-            "src": "/data/media/certif-templates/template-04.png",
-            "alt": "Certificate 5",
             "preview": "/data/media/certif-templates/excel-preview/preview-03.png",
-            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template02.xlsx"
+            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template03.xlsx"
         }
     ]
 }
