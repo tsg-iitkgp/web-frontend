@@ -6,6 +6,7 @@ import CricketScoreCardModal from './CricketScoreCardModal';
 
 function Highlight(props) {
 
+    // eslint-disable-next-line
     const [sheetName, setSheetName] = useState(props.sheetName);
     const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,7 +18,7 @@ function Highlight(props) {
                 setMatchData(responseData.data);
                 setIsLoading(false);
             }).catch((err) => setIsLoading(false));
-    }, [props.refresh]);
+    }, [props.refresh, sheetName]);
 
     const openModal = (index) => {
         setIsModalOpen(true);   

@@ -2934,5 +2934,93 @@
         }
       ]
     }
+  },
+  "2022-2023": {
+    "senate": {
+      "profs": [
+        {
+          "Post": "President (AUG 2020 - PRESENT)",
+          "Name": "Prof. A K Singh"
+        },
+        {
+          "Post": "Honrary Treasurer (SEPT 2014 - PRESENT)",
+          "Name": "Prof. Kingshook Bhattacharya"
+        }
+      ],
+      "honours": [
+        {
+          "Post": "Vice President",
+          "Name": "Brahmjot Singh"
+        },
+        {
+          "Post": "Undergraduate Representative",
+          "Name": "Tushan Kumar Singh"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "KR Rahul"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Rachit Kumar"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Kaushal"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Saurabh Nagarkoti"
+        },
+        {
+          "Post": "G.Sec Students' Welfare",
+          "Name": "Abhishek"
+        },
+        {
+          "Post": "G.Sec Students' Welfare",
+          "Name": "Himadri Pandya"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Neelmani"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Harshit Shukla"
+        },
+        {
+          "Post": "Postgraduate Representative",
+          "Name": "Purushottam"
+        },
+        {
+          "Post": "Research Scholar Representative",
+          "Name": "Emel V Kurian"
+        },
+        {
+          "Post": "Technology Coordinator",
+          "Name": "Kunal Verma"
+        },
+        {
+          "Post": "Women Representative",
+          "Name": "Sruthi Mahalakshmi"
+        },
+        {
+          "Post": "Public Relations Chairperson",
+          "Name": "Awanish Kumar"
+        },
+        {
+          "Post": "TSG Editors",
+          "Name": "Akansha Agarwal"
+        },
+        {
+          "Post": "TSG Editors",
+          "Name": "Nidam Kumar Jha"
+        },
+        {
+          "Post": "Institute Girl Sports' Nominee",
+          "Name": "Minal Moon"
+        }
+      ]
+    }
   }
 }

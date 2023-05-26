@@ -11,7 +11,7 @@ export default function CricketScoreCardModal({ matchData, onRequestClose, ...pr
                 setModalData(responseData.data);
                 setIsLoading(false);
             }).catch((err) => console.log(err));
-    }, []);
+    }, [matchData.result_sheet]);
 
     const filterData = (team, role, item) => {
         return (team === item.team && (role === item.role || 'all_rounder' === item.role))

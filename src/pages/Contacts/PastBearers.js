@@ -6,6 +6,7 @@ import ContactCard from "../../components/ContactCard";
 import primg from "./../Contacts/Images/prf.png";
 
 const years = [
+  "2022-2023",
   "2021-2022",
   "2020-2021",
   "2019-2020",
@@ -81,7 +82,7 @@ const years = [
 export default function PastBearers() {
   //eslint-disable-next-line
   const [currentTab, setCurrentTab] = useState("senate");
-  const [currentYear, setCurrentYear] = useState("2021-2022");
+  const [currentYear, setCurrentYear] = useState("2022-2023");
 
   // const handleTabChange = (s) => {
   //   setCurrentTab(s);

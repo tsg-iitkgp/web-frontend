@@ -1,4 +1,4 @@
-import { Typography, Container, Box, Button } from "@material-ui/core";
+import { Typography, Container } from "@material-ui/core";
 import React, { useState } from "react";
 import Styles from "./nominations.module.css";
 import Layout from "../../components/Layout";
@@ -45,7 +45,7 @@ export default function Nominations() {
         </div>
 
         <div>
-          <iframe src={tabFormUrls[currentTab]} width="1200" height="1717" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe title={currentTab} src={tabFormUrls[currentTab]} width="1200" height="1717" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
       </Container>
     </Layout >

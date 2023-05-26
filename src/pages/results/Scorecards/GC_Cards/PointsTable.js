@@ -13,7 +13,7 @@ function PointsTable(props) {
                 setPointsData(filteredData);
                 setIsLoading(false);
             }).catch((err) => setIsLoading(false));
-    }, [pointsGroup])
+    }, [pointsGroup, props.url])
 
     const changeGroup = (newGroup) => {
         setIsLoading(true);

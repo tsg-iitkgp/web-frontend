@@ -13,7 +13,7 @@ export default function Secretaries() {
               name={member.Name}
               designation={member.Post}
               email={member.Email}
-              imgSrc={`/data/media/images/secyImages/${member.RollNo}.jpg`}
+              imgSrc={`/data/media/images/secyImages/${member.img}`}
               facebook={member.Facebook}
               linkedin={member.LinkedIn}
             />

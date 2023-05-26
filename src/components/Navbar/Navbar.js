@@ -120,7 +120,7 @@ export default function Navbar() {
               Contacts
             </NavLink>
           </li>
-          <li className={Styles.navItem}>
+          {/* <li className={Styles.navItem}>
             <NavLink
               to="/nominations"
               className={Styles.navLinks}
@@ -128,8 +128,8 @@ export default function Navbar() {
             >
               nominations
             </NavLink>
-          </li>
-          {/* <li className={Styles.navItem}>
+          </li> */}
+          <li className={Styles.navItem}>
             <NavLink
               to="/opportunities"
               className={Styles.navLinks}
@@ -137,7 +137,7 @@ export default function Navbar() {
             >
               Opportunities
             </NavLink>
-          </li> */}
+          </li>
           {/* <li className={Styles.navItem}>
             <NavLink
               to="/gallery"

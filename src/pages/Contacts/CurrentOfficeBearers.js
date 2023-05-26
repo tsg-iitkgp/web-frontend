@@ -7,14 +7,14 @@ export default function CurrentOfficeBearers() {
     (contact) => contact.Post === "President"
   );
   const VicePresident = contactsData.data.find(
-    (contact) => contact.Post === "Vice-President"
+    (contact) => contact.Post === "Vice President"
   );
   const generalSecretaries = contactsData.data.filter(
     (element) => element.Category === "General Secretary"
   );
-  const nominatedPost = contactsData.data.filter(
-    (element) => element.Category === "Nominated Posts"
-  );
+//   const nominatedPost = contactsData.data.filter(
+//     (element) => element.Category === "Nominated Posts"
+//   );
   return (
     <>
       <div className={Styles.contactsContainer} data-aos="zoom-in-up">
@@ -30,7 +30,7 @@ export default function CurrentOfficeBearers() {
           />
         </div>
         <div>
-          <h2 className={Styles.postHeading}>Vice-President</h2>
+          <h2 className={Styles.postHeading}>Vice President</h2>
           <ContactCard
             name={VicePresident.Name}
             designation={VicePresident.Post}
@@ -57,7 +57,7 @@ export default function CurrentOfficeBearers() {
             })}
           </div>
         </div>
-        <div>
+        {/* <div>
           <h2 className={Styles.postHeading}>Nominated Posts</h2>
           <div className={Styles.multipleCards}>
             {nominatedPost.map((member, index) => {
@@ -73,7 +73,7 @@ export default function CurrentOfficeBearers() {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
