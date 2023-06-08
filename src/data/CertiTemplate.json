@@ -48,6 +48,20 @@
             "alt": "Certificate 7",
             "preview": "/data/media/certif-templates/excel-preview/preview-06.png",
             "download_link": "/data/media/certif-templates/excel-preview/sample-files/template06.xlsx"
+        },
+        {
+            "id": 7,
+            "src": "/data/media/certif-templates/template-07.png",
+            "alt": "Certificate 8",
+            "preview": "/data/media/certif-templates/excel-preview/preview-07.png",
+            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template07.xlsx"
+        },
+        {
+            "id": 8,
+            "src": "/data/media/certif-templates/template-08.png",
+            "alt": "Certificate 9",
+            "preview": "/data/media/certif-templates/excel-preview/preview-08.png",
+            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template08.xlsx"
         }
     ]
 }
