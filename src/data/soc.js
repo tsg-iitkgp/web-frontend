@@ -332,6 +332,16 @@ const soc = {
         category: "Tech",
         Heads: [],
       },
+      {
+        name: "Technology Environment Society",
+        description:
+          "Technology Environment Society (TES) was founded in November 2021 as the official society of IIT Kharagpur for raising environmental awareness and promoting sustainability. The idea and actions of &quot;Vision Prabaho&quot;, a green activist social group started by IIT Kharagpur students, have sowed the seeds of TES in 2018 in order to promote environmental justice inside and outside the Campus. The goal of TES is to protect, preserve, nurture, document as well as research the indigenous biodiversity and natural resources.",
+        facebook_link: "https://www.facebook.com/TESIITKGP/",
+        wiki_link: "",
+        shortform: "tes",
+        category: "Welfare",
+        Heads: [],
+      },
   ],
 };
 export default soc;

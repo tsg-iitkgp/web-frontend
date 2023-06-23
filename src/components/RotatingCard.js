@@ -26,6 +26,7 @@ export default function RotatingCard({
             className={`${Styles.button} ${Styles.a1}`}
             title="Lorem Ipsum"
             href={facebook_link}
+            target="_blank"
           >
             Learn More
           </a>
