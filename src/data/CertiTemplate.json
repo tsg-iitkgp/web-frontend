@@ -62,6 +62,13 @@
             "alt": "Certificate 9",
             "preview": "/data/media/certif-templates/excel-preview/preview-08.png",
             "download_link": "/data/media/certif-templates/excel-preview/sample-files/template08.xlsx"
+        },
+        {
+            "id": 9,
+            "src": "/data/media/certif-templates/template-09.png",
+            "alt": "Certificate 10",
+            "preview": "/data/media/certif-templates/excel-preview/preview-09.png",
+            "download_link": "/data/media/certif-templates/excel-preview/sample-files/template09.xlsx"
         }
     ]
 }
