@@ -120,6 +120,83 @@ export default {
             "Insti Email": "vinayak@kgpian.iitkgp.ac.in",
             "Facebook": "https://www.facebook.com/411vinayak?mibextid=ZbWKwL",
             "LinkedIn": "https://www.linkedin.com/in/vinayak-agarwal-11759222a"
+        },
+        {
+            "RollNo": "21MA10012 ",
+            "Name": "Anushka Aashvi",
+            "Category": "Nominated Posts",
+            "Post": "Editor",
+            "img": "21MA10012.png",
+            "Contact": "7070007766",
+            "Email": "iamanushkaaashvi@gmail.com",
+            "Insti Email": "anushkaaashvi@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/anushka.aashvi?mibextid=ZbWKwL",
+            "LinkedIn": "https://www.linkedin.com/in/anushka-aashvi-a976a6223",
+            "": ""
+        },
+        {
+            "RollNo": "21ME10092",
+            "Name": "Vanshul Shikkewal ",
+            "Category": "Nominated Posts",
+            "Post": "Editor",
+            "img": "21ME10092.png",
+            "Contact": "9479764751",
+            "Email": "vanshul.sikkewal@outlook.com",
+            "Insti Email": "vanshul.shikkewal@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/vanshul.2723",
+            "LinkedIn": "https://www.linkedin.com/in/vanshul2723/",
+            "": ""
+        },
+        {
+            "RollNo": "21EC30025",
+            "Name": "Irsh Vijayvargia",
+            "Category": "Nominated Posts",
+            "Post": "Public Relations Chairman",
+            "img": "21EC30025.png",
+            "Contact": "9116515740",
+            "Email": "irsh.iitkgp@gmail.com",
+            "Insti Email": "irsh@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/profile.php?id=100075290924188&mibextid=LQQJ4d",
+            "LinkedIn": "https://www.linkedin.com/in/irsh",
+            "": ""
+        },
+        {
+            "RollNo": "21CH30031 ",
+            "Name": "Shreya Mishra ",
+            "Category": "Nominated Posts",
+            "Post": "Institute Girl Sports' Nominee ",
+            "img": "21CH30031.png",
+            "Contact": "9475621028",
+            "Email": "mshreya1210@gmail.com",
+            "Insti Email": "shreyamishra@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/profile.php?id=100074610314302&mibextid=ZbWKwL",
+            "LinkedIn": "https://www.linkedin.com/in/shreya-mishra-b057ba239",
+            "": ""
+        },
+        {
+            "RollNo": "21IM10009",
+            "Name": "Arpit Bhardwaj",
+            "Category": "Nominated Posts",
+            "Post": "Technology Coordinator",
+            "img": "21IM10009.png",
+            "Contact": "9761667733",
+            "Email": "arpitbhardwaj.iitkgp@gmail.com",
+            "Insti Email": "proffapt@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/profile.php?id=100092350315439",
+            "LinkedIn": "https://linkedin.com/in/proffapt",
+            "": ""
+        },
+        {
+            "RollNo": "21BT30018",
+            "Name": "Parth Gupta",
+            "Category": "Nominated Posts",
+            "Post": "Technology Coordinator",
+            "img": "21BT30018.png",
+            "Contact": "7620821543",
+            "Email": "guptaparth.iitkgp@gmail.com",
+            "Insti Email": "parthgupta@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/parth.gupta.1422409/",
+            "LinkedIn": "https://www.linkedin.com/in/parthgupta2510/"
         }
     ]
 };

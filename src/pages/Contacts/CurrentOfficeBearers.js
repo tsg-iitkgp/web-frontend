@@ -12,9 +12,9 @@ export default function CurrentOfficeBearers() {
   const generalSecretaries = contactsData.data.filter(
     (element) => element.Category === "General Secretary"
   );
-//   const nominatedPost = contactsData.data.filter(
-//     (element) => element.Category === "Nominated Posts"
-//   );
+  const nominatedPost = contactsData.data.filter(
+    (element) => element.Category === "Nominated Posts"
+  );
   return (
     <>
       <div className={Styles.contactsContainer} data-aos="zoom-in-up">
@@ -57,7 +57,7 @@ export default function CurrentOfficeBearers() {
             })}
           </div>
         </div>
-        {/* <div>
+        <div>
           <h2 className={Styles.postHeading}>Nominated Posts</h2>
           <div className={Styles.multipleCards}>
             {nominatedPost.map((member, index) => {
@@ -73,7 +73,7 @@ export default function CurrentOfficeBearers() {
               );
             })}
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
