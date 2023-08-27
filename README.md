@@ -153,6 +153,6 @@ _Phone:_ **+91-7620821543**
 [issues-shield]: https://img.shields.io/github/issues/tsg-iitkgp/web-frontend.svg?style=for-the-badge
 [issues-url]: https://github.com/tsg-iitkgp/web-frontend/issues
 [license-shield]: https://img.shields.io/github/license/tsg-iitkgp/web-frontend.svg?style=for-the-badge
-[license-url]: https://github.com/tsg-iitkgp/web-frontend/blob/master/LICENSE.txt
+[license-url]: https://github.com/tsg-iitkgp/web-frontend/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/technology-students-gymkhana-iit-kharagpur/
