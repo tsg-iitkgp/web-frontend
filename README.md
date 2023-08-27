@@ -78,7 +78,6 @@
   - `pages`: Contains all pages.
   - `routes`: Contains custom routes.
   - `styles`: Contains all stylesheets (CSS).
-  - `utils`: Contains commonly used util functions.
   - `App.js`: Contains the top-level `App` component.
 
 ### Libraries/Frameworks Used
