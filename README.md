@@ -20,11 +20,8 @@
   </h3>
 
   <p align="center">
-    A backend which caters all the client applications of TSG
-    <br />
     <!-- <a href="https://github.com/tsg-iitkgp/web-frontend"><strong>Explore the docs »</strong></a> -->
     <!-- <br /> -->
-    <br />
     <!-- <a href="https://github.com/tsg-iitkgp/web-frontend">
     View Demo
     </a>
@@ -40,102 +37,70 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+## Table of Contents
+- [Development](#development)
+  - [Setting Up Locally](#setting-up-locally)
+- [Project Structure](#project-structure)
+  - [File Structure](#file-structure)
+  - [Libraries/Frameworks Used](#librariesframeworks-used)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- Development -->
+## Development
 
+### Setting Up Locally
+- Install [NodeJS](https://nodejs.org/en).
+- Install or enable [Yarn](https://yarnpkg.com/getting-started/install).
+- Clone this repository.
+- Run `yarn install` in the cloned repository to download all dependencies.
+- Run `yarn start` to start a local development server.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## Project Structure
+### File Structure
+```
+.
+├── public
+└── src
+   ├── components
+   ├── data
+   ├── images
+   ├── pages
+   ├── routes
+   ├── styles
+   └── App.js
+```
+- `public`: Contains public files such as `index.html`.
+- `src`: Contains source files (JS, CSS, assets, etc.)
+  - `components`: Contains reusable react components.
+  - `data`: Contains raw data.
+  - `images`: Contains images and icons.
+  - `pages`: Contains all pages.
+  - `routes`: Contains custom routes.
+  - `styles`: Contains all stylesheets (CSS).
+  - `utils`: Contains commonly used util functions.
+  - `App.js`: Contains the top-level `App` component.
 
-[![Inventory System Screen Shot][is-screenshot]](https://example.com)
-
-This is an api-based backend started by the Tech Team of gymkhana during 2021 - 2022. 
-
-This backend caters to the following applications:
-* TSG Website
-* Inventory Management System
-* ApnaInsti Website
-* ApnaInsti Application
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
-### Built With
+### Libraries/Frameworks Used
 
 This project has been built with the following technologies.
-* [Expressjs](https://expressjs.com/)
-* [Sequelize](https://sequelize.org/)
+* [React](https://reactjs.dev)
+* [Bootstrap](https://getbootstrap.com/)
+* [React Router](https://github.com/remix-run/react-router)
 
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This section contains the prerequisites you need, to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-* [TSG backend](https://github.com/tsg-iitkgp/web-frontend)
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/tsg-iitkgp/web-frontend.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. Start the application
-   ```
-   npm run electron:serve
-   ``` 
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/tsg-iitkgp/web-frontend/issues) for a list of proposed features (and known issues).
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -148,37 +113,30 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
+For any ideas, suggestions or queries, please mail us at tech.coordi@iitkgp.ac.in
 
-Praneeth Reddy - [@praneethrdy](https://www.linkedin.com/in/praneethrdy/) - tech.tsgiitkgp@gmail.com
+#### Present Technology Coordinator(s)
 
-Project Link: [https://github.com/tsg-iitkgp/web-frontend](https://github.com/tsg-iitkgp/web-frontend)
+_Name:_ **Arpit Bhardwaj**<br>
+_Email:_ **arpitbhardwaj.iitkgp@gmail.com**<br>
+_Phone:_ **+91-9761667733**
 
+_Name:_ **Parth Gupta**<br>
+_Email:_ **guptaparth.iitkgp@gmail.com**<br>
+_Phone:_ **+91-7620821543**
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -195,7 +153,6 @@ Project Link: [https://github.com/tsg-iitkgp/web-frontend](https://github.com/ts
 [issues-shield]: https://img.shields.io/github/issues/tsg-iitkgp/web-frontend.svg?style=for-the-badge
 [issues-url]: https://github.com/tsg-iitkgp/web-frontend/issues
 [license-shield]: https://img.shields.io/github/license/tsg-iitkgp/web-frontend.svg?style=for-the-badge
-[license-url]: https://github.com/tsg-iitkgp/web-frontend/blob/master/LICENSE.txt
+[license-url]: https://github.com/tsg-iitkgp/web-frontend/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/praneeth-
-[is-screenshot]: rm-img/ss-collage.png
+[linkedin-url]: https://www.linkedin.com/company/technology-students-gymkhana-iit-kharagpur/
