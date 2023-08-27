@@ -43,6 +43,10 @@
 - [Project Structure](#project-structure)
   - [File Structure](#file-structure)
   - [Libraries/Frameworks Used](#librariesframeworks-used)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Development -->
@@ -78,6 +82,7 @@
   - `pages`: Contains all pages.
   - `routes`: Contains custom routes.
   - `styles`: Contains all stylesheets (CSS).
+  - `utils`: Contains commonly used util functions.
   - `App.js`: Contains the top-level `App` component.
 
 ### Libraries/Frameworks Used
@@ -109,10 +114,6 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- LICENSE -->
-<!-- ## License -->
-<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- CONTACT -->
 ## Contact
@@ -154,5 +155,4 @@ _Phone:_ **+91-7620821543**
 [license-shield]: https://img.shields.io/github/license/tsg-iitkgp/web-frontend.svg?style=for-the-badge
 [license-url]: https://github.com/tsg-iitkgp/web-frontend/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/praneeth-
-[is-screenshot]: rm-img/ss-collage.png
+[linkedin-url]: https://www.linkedin.com/company/technology-students-gymkhana-iit-kharagpur/
