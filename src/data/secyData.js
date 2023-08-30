@@ -323,6 +323,18 @@ export const secyData = {
             "Insti Email": "yogansh@kgpian.iitkgp.ac.in",
             "Facebook": "https://www.facebook.com/profile.php?id=100087555068602",
             "LinkedIn": "https://www.linkedin.com/in/yogansh-sharma-3ba506259"
+        },
+        {
+            "id": 28,
+            "RollNo": "22GG10045",
+            "Name": "Shivam",
+            "Post": "Secretary Web",
+            "img": "22GG10045.jpg",
+            "Email": "shivamshibu2003@gmail.com",
+            "Contact": 6206430346,
+            "Insti Email": "shivam07@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/shivam.shibu.73/",
+            "LinkedIn": "https://www.linkedin.com/in/shivam-10894b203/"
         }
     ]
 };
