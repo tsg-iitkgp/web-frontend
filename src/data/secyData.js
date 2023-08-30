@@ -300,5 +300,17 @@ export const secyData = {
             "Facebook": "https://www.facebook.com/udish.jangid?mibextid=ZbWKwL",
             "LinkedIn": "https://www.linkedin.com/in/udish-jangid-45902611b"
         }
+        {
+            "id": 26,
+            "RollNo": "22CH10003",
+            "Name": "Aditya Deep",
+            "Post": "Secretary Web",
+            "img": "22CH10003.png",
+            "Email": "adityadeep3007@gmail.com",
+            "Contact": 8603847976,
+            "Insti Email": "adityadeep@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/profile.php?id=100094091247173",
+            "LinkedIn": "www.linkedin.com/in/deepaditya"
+        }
     ]
 };
