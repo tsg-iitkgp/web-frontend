@@ -299,7 +299,7 @@ export const secyData = {
             "Insti Email": "udishjangid@kgpian.iitkgp.ac.in",
             "Facebook": "https://www.facebook.com/udish.jangid?mibextid=ZbWKwL",
             "LinkedIn": "https://www.linkedin.com/in/udish-jangid-45902611b"
-        }
+        },
         {
             "id": 26,
             "RollNo": "22CH10003",
@@ -310,7 +310,19 @@ export const secyData = {
             "Contact": 8603847976,
             "Insti Email": "adityadeep@kgpian.iitkgp.ac.in",
             "Facebook": "https://www.facebook.com/profile.php?id=100094091247173",
-            "LinkedIn": "www.linkedin.com/in/deepaditya"
+            "LinkedIn": "https://www.linkedin.com/in/deepaditya"
+        },
+        {
+            "id": 27,
+            "RollNo": "22EX10050",
+            "Name": "Yogansh Sharma",
+            "Post": "Secretary Web",
+            "img": "22EX10050.jpg",
+            "Email": "yoganshsharma65@gmail.com",
+            "Contact": 8742004884,
+            "Insti Email": "yogansh@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/profile.php?id=100087555068602",
+            "LinkedIn": "https://www.linkedin.com/in/yogansh-sharma-3ba506259"
         }
     ]
 };
