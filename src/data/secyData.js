@@ -335,6 +335,18 @@ export const secyData = {
             "Insti Email": "shivam07@kgpian.iitkgp.ac.in",
             "Facebook": "https://www.facebook.com/shivam.shibu.73/",
             "LinkedIn": "https://www.linkedin.com/in/shivam-10894b203/"
+        },
+        {
+            "id": 29,
+            "RollNo": "22MI10009",
+            "Name": "Akash Manna",
+            "Post": "Secretary Web",
+            "img": "22MI10009.jpg",
+            "Email": "Akash.Manna2003@gmail.com",
+            "Contact": 8282901570,
+            "Insti Email": "iamakashmanna@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/akash.manna.3591",
+            "LinkedIn": "https://www.linkedin.com/in/akash-manna-825278258/"
         }
     ]
 };
