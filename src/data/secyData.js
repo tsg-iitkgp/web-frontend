@@ -347,6 +347,18 @@ export const secyData = {
             "Insti Email": "iamakashmanna@kgpian.iitkgp.ac.in",
             "Facebook": "https://www.facebook.com/akash.manna.3591",
             "LinkedIn": "https://www.linkedin.com/in/akash-manna-825278258/"
+        },
+        {
+            "id": 30,
+            "RollNo": "22EE10074",
+            "Name": "Adarsh Tadiparthi",
+            "Post": "Secretary Web",
+            "img": "22EE10074.jpg",
+            "Email": "adarshtadiparthi30@gmail.com",
+            "Contact": 9390004880,
+            "Insti Email": "adarshtadiparthi30@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/profile.php?id=100087676355082",
+            "LinkedIn": "https://www.linkedin.com/in/adarsh-tadiparthi-1b9962268/"
         }
     ]
 };
