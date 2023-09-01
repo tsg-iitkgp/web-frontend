@@ -299,6 +299,66 @@ export const secyData = {
             "Insti Email": "udishjangid@kgpian.iitkgp.ac.in",
             "Facebook": "https://www.facebook.com/udish.jangid?mibextid=ZbWKwL",
             "LinkedIn": "https://www.linkedin.com/in/udish-jangid-45902611b"
+        },
+        {
+            "id": 26,
+            "RollNo": "22CH10003",
+            "Name": "Aditya Deep",
+            "Post": "Secretary Web",
+            "img": "22CH10003.png",
+            "Email": "adityadeep3007@gmail.com",
+            "Contact": 8603847976,
+            "Insti Email": "adityadeep@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/profile.php?id=100094091247173",
+            "LinkedIn": "https://www.linkedin.com/in/deepaditya"
+        },
+        {
+            "id": 27,
+            "RollNo": "22EX10050",
+            "Name": "Yogansh Sharma",
+            "Post": "Secretary Web",
+            "img": "22EX10050.jpg",
+            "Email": "yoganshsharma65@gmail.com",
+            "Contact": 8742004884,
+            "Insti Email": "yogansh@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/profile.php?id=100087555068602",
+            "LinkedIn": "https://www.linkedin.com/in/yogansh-sharma-3ba506259"
+        },
+        {
+            "id": 28,
+            "RollNo": "22GG10045",
+            "Name": "Shivam",
+            "Post": "Secretary Web",
+            "img": "22GG10045.jpg",
+            "Email": "shivamshibu2003@gmail.com",
+            "Contact": 6206430346,
+            "Insti Email": "shivam07@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/shivam.shibu.73/",
+            "LinkedIn": "https://www.linkedin.com/in/shivam-10894b203/"
+        },
+        {
+            "id": 29,
+            "RollNo": "22MI10009",
+            "Name": "Akash Manna",
+            "Post": "Secretary Web",
+            "img": "22MI10009.jpg",
+            "Email": "Akash.Manna2003@gmail.com",
+            "Contact": 8282901570,
+            "Insti Email": "iamakashmanna@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/akash.manna.3591",
+            "LinkedIn": "https://www.linkedin.com/in/akash-manna-825278258/"
+        },
+        {
+            "id": 30,
+            "RollNo": "22EE10074",
+            "Name": "Adarsh Tadiparthi",
+            "Post": "Secretary Web",
+            "img": "22EE10074.jpg",
+            "Email": "adarshtadiparthi30@gmail.com",
+            "Contact": 9390004880,
+            "Insti Email": "adarshtadiparthi30@kgpian.iitkgp.ac.in",
+            "Facebook": "https://www.facebook.com/profile.php?id=100087676355082",
+            "LinkedIn": "https://www.linkedin.com/in/adarsh-tadiparthi-1b9962268/"
         }
     ]
 };
