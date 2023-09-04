@@ -305,7 +305,7 @@ export const secyData = {
             "RollNo": "22CH10003",
             "Name": "Aditya Deep",
             "Post": "Secretary Web",
-            "img": "22CH10003.png",
+            "img": "22CH10003.jpg",
             "Email": "adityadeep3007@gmail.com",
             "Contact": 8603847976,
             "Insti Email": "adityadeep@kgpian.iitkgp.ac.in",
