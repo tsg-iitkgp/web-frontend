@@ -342,6 +342,16 @@ const soc = {
         category: "Welfare",
         Heads: [],
       },
+      {
+        name: "Think India IIT KHARAGPUR",
+        description:
+          "Think India IIT Kharagpur aims to promote social welfare and student welfare by creating a platform for students to engage in intellectual discussions and exchange ideas. Think India encourages students to participate in various programs and activities that promote science & innovation, leadership, and social responsibility. The vision of Think India is to encourage technology-driven societal solutions that impact society directly.",
+        facebook_link: "https://www.facebook.com/profile.php?id=100088255020039",
+        wiki_link: "",
+        shortform: "thinkindia",
+        category: "Welfare",
+        Heads: [],
+      },
   ],
 };
 export default soc;
