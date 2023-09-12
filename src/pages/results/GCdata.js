@@ -1202,9 +1202,9 @@ const GCdata = {
     Socult: [
       {
         Event: "Overall",
-        Gold: "RP",
-        Silver: "RK",
-        Bronze: "Azad",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
       },
       {
         Event: "Eastern Vocals",
