@@ -1045,9 +1045,9 @@ const InterIITdata = {
         Technology: [
             {
                 Event: "Overall",
-                Gold: " ",
-                Silver: " ",
-                Bronze: " ",
+                Gold: "Kanpur",
+                Silver: "Bombay",
+                Bronze: "Kharagpur",
             }
         ],
         Socult: [
@@ -1079,9 +1079,9 @@ const InterIITdata = {
         Technology: [
             {
                 Event: "Overall",
-                Gold: "Kanpur",
-                Silver: "Bombay",
-                Bronze: "Kharagpur",
+                Gold: "Kharagpur",
+                Silver: "Roorkee",
+                Bronze: "Kanpur",
             }
         ],
         Socult: [
