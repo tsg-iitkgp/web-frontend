@@ -702,67 +702,84 @@ const GCdata = {
     "2021-22": {
         Sports: {
             Male: [
-
                 {
-                    Event: "Athletics(Jr)",
+                    Sport: "Overall",
+                    Gold: "-",
+                    Silver: "-",
+                    Bronze: "-",
+                },
+                {
+                    Sport: "Athletics(Jr)",
                     Gold: "MMM",
-                    Silver: "",
-                    Bronze: "",
+                    Silver: "Azad",
+                    Bronze: "VS",
                 },
 
                 {
-                    Event: "Athletics(Sr)",
+                    Sport: "Athletics(Sr)",
                     Gold: "VS",
-                    Silver: "",
-                    Bronze: "",
+                    Silver: "RK",
+                    Bronze: "RP",
                 },
                 {
-                    Event: "Badminton",
+                    Sport: "Badminton",
                     Gold: "VS",
                     Silver: "MMM",
                     Bronze: "RP",
                 },
                 {
-                    Event: "Basketball",
+                    Sport: "Basketball",
                     Gold: "BRH",
                     Silver: "RK",
                     Bronze: "LLR",
                 },
                 {
-                    Event: "Cricket",
+                    Sport: "Cricket",
                     Gold: "Patel",
                     Silver: "Azad",
                     Bronze: "MMM",
                 },
                 {
-                    Event: "Football",
+                    Sport: "Football",
                     Gold: "LBS",
                     Silver: "RK",
                     Bronze: "MMM",
                 },
                 {
-                    Event: "Weightlifting ",
+                    Sport: "Table Tennis",
+                    Gold: "LBS",
+                    Silver: "RK",
+                    Bronze: "Patel",
+                },
+                {
+                    Sport: "Weightlifting",
                     Gold: "Azad",
                     Silver: "RK",
                     Bronze: "RP",
                 },
                 {
-                    Event: "Hockey",
+                    Sport: "Hockey",
                     Gold: "RP",
                     Silver: "MS",
                     Bronze: "Azad",
                 },
                 {
-                    Event: "Lawn Tennis",
+                    Sport: "Lawn Tennis",
                     Gold: "RP",
                     Silver: "RK",
                     Bronze: "Nehru",
                 },
                 {
-                    Event: "Volleyball",
+                    Sport: "Volleyball",
                     Gold: "RK",
                     Silver: "BRH",
                     Bronze: "RP",
+                },
+                {
+                    Sport: "Chess",
+                    Gold: "Azad",
+                    Silver: "RK",
+                    Bronze: "MMM",
                 },
             ],
             Female: [
@@ -779,16 +796,22 @@ const GCdata = {
                 //   Bronze: " ",
                 // },
                 {
-                    Sport: "Athletics(Jr)",
-                    Gold: "SN/IG",
+                    Sport: "Overall",
+                    Gold: "-",
                     Silver: "-",
                     Bronze: "-",
                 },
                 {
+                    Sport: "Athletics(Jr)",
+                    Gold: "SN/IG",
+                    Silver: "MT",
+                    Bronze: "SNVH",
+                },
+                {
                     Sport: "Athletics(Sr)",
                     Gold: "SN/IG",
-                    Silver: "-",
-                    Bronze: "-",
+                    Silver: "SNVH",
+                    Bronze: "MT",
                 },
                 {
                     Sport: "Badminton",
@@ -796,20 +819,32 @@ const GCdata = {
                     Silver: "MT",
                     Bronze: "SNVH",
                 },
-                // {
-                //   Sport: "Basketball",
-                //   Gold: " ",
-                //   Silver: " ",
-                //   Bronze: " ",
-                // },
-                // {
-                //   Sport: "Table Tennis",
-                //   Gold: " ",
-                //   Silver: " ",
-                //   Bronze: " ",
-                // },
+                {
+                    Sport: "Basketball",
+                    Gold: "SN/IG",
+                    Silver: "MT",
+                    Bronze: "SNVH",
+                },
+                {
+                    Sport: "Table Tennis",
+                    Gold: "SN/IG",
+                    Silver: "MT",
+                    Bronze: "SNVH",
+                },
+                {
+                    Sport: "Badminton",
+                    Gold: "SN/IG",
+                    Silver: "MT",
+                    Bronze: "SNVH",
+                },
                 {
                     Sport: "Lawn Tennis",
+                    Gold: "MT",
+                    Silver: "SNVH",
+                    Bronze: "SN/IG",
+                },
+                {
+                    Sport: "Chess",
                     Gold: "MT",
                     Silver: "SNVH",
                     Bronze: "SN/IG",
@@ -818,7 +853,7 @@ const GCdata = {
                     Sport: "Volleyball",
                     Gold: "SNVH",
                     Silver: "SN/IG",
-                    Bronze: "-",
+                    Bronze: "MT",
                 }
             ]
         },
@@ -958,17 +993,16 @@ const GCdata = {
         Sports: {
             Male: [
                 {
-                    Sport: "Athletics(Jr)",
-                    Gold: "MMM",
-                    Silver: "LBS(runnerup)",
-                    Bronze: "",
+                    Sport: "Overall",
+                    Gold: "RP",
+                    Silver: "RK",
+                    Bronze: "VS",
                 },
                 {
-                    Sport: "Athletics(Sr)",
+                    Sport: "Athletics",
                     Gold: "RP",
-                    Silver: "Vs",
-                    Bronze: "",
-
+                    Silver: "VS",
+                    Bronze: "RK",
                 },
                 {
                     Sport: "Swimming",
@@ -1001,7 +1035,7 @@ const GCdata = {
                     Bronze: "VSH",
                 },
                 {
-                    Sport: "Weightlifting ",
+                    Sport: "Weightlifting",
                     Gold: "RP",
                     Silver: "RK",
                     Bronze: "BRH",
@@ -1013,19 +1047,25 @@ const GCdata = {
                     Bronze: "RK",
                 },
                 {
+                    Sport: "Table Tennis",
+                    Gold: "VS",
+                    Silver: "RK",
+                    Bronze: "Gokhale",
+                },
+                {
                     Sport: "Volleyball",
                     Gold: "BRH",
                     Silver: "MS",
-                    Bronze: "",
+                    Bronze: "RP",
                 },
                 {
                     Sport: "Squash",
                     Gold: "RP",
                     Silver: "RK",
-                    Bronze: "",
+                    Bronze: "Gokhale",
                 },
                 {
-                    Sport: "Water polo",
+                    Sport: "Waterpolo",
                     Gold: "MS-JCB",
                     Silver: "RK",
                     Bronze: "RP",
@@ -1034,22 +1074,29 @@ const GCdata = {
                     Sport: "Chess",
                     Gold: "RK",
                     Silver: "BRH",
-                    Bronze: "",
+                    Bronze: "MS",
                 },
+                {
+                    Sport: "Bridge",
+                    Gold: "RP",
+                    Silver: "VS",
+                    Bronze: "RK",
+                },
+
             ],
 
             Female: [
                 {
-                    Sport: "Athletics(Jr)",
-                    Gold: "SNVH",
-                    Silver: "MT",
-                    Bronze: "",
+                    Sport: "Overall",
+                    Gold: "-",
+                    Silver: "-",
+                    Bronze: "-",
                 },
                 {
-                    Sport: "Athletics(Sr)",
+                    Sport: "Athletics",
                     Gold: "MT",
                     Silver: "SNVH",
-                    Bronze: "",
+                    Bronze: "SN/IG",
                 },
                 {
                     Sport: "Swimming",
@@ -1065,7 +1112,7 @@ const GCdata = {
                 },
                 {
                     Sport: "Basketball",
-                    Gold: "SNIG ",
+                    Gold: "SN/IG",
                     Silver: "SNVH",
                     Bronze: "MT",
                 },
@@ -1073,7 +1120,19 @@ const GCdata = {
                     Sport: "Football",
                     Gold: "MT",
                     Silver: "SNVH",
-                    Bronze: "SNIG",
+                    Bronze: "SN/IG",
+                },
+                {
+                    Sport: "Table Tennis",
+                    Gold: "SN/IG",
+                    Silver: "SNVH",
+                    Bronze: "MT",
+                },
+                {
+                    Sport: "Bridge",
+                    Gold: "SN/IG",
+                    Silver: "SNVH",
+                    Bronze: "MT",
                 },
                 {
                     Sport: "Squash",
@@ -1084,6 +1143,12 @@ const GCdata = {
                 {
                     Sport: "Chess",
                     Gold: "RLB",
+                    Silver: "SNVH",
+                    Bronze: "MT",
+                },
+                {
+                    Sport: "Volleyball",
+                    Gold: "SN/IG",
                     Silver: "SNVH",
                     Bronze: "MT",
                 },
