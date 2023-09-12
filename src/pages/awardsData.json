@@ -7,7 +7,10 @@
           "Roll": "13MT10030",
           "Game": "BADMINTON",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "saketh-thavanani.jpeg",
+          "email":"saketthavananilindan@gmail.com",
+          "facebook":"https://www.facebook.com/saket.thavanani",
+          "linkedin":"https://www.linkedin.com/in/saket-thavanani-b1a149a0/"
           
         },
         {
@@ -15,14 +18,20 @@
           "Roll": "13ME10054",
           "Game": "SWIMMING",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "siraj-modiwala.jpg",
+          "email":"cj.siraj07@gmail.com",
+          "facebook":"https://www.facebook.com/siraj.modiwala/",
+          "linkedin":"https://www.linkedin.com/in/siraj-modiwala-b8229a37/"
         },
         {
           "Name": "UDIT NARAYAN",
           "Roll": "12GG20039",
           "Game": "WEIGHTLIFTING",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "template.png",
+          "email":"-",
+          "facebook":"https://www.facebook.com/ud6910/?locale=de_DE",
+          "linkedin":"https://www.linkedin.com/in/udit-narayan-choukarya-6b8228244/?originalSubdomain=in"
         }
       ],
       "honours": [
@@ -346,13 +355,19 @@
           "Name": "ABHISHEK SULTANIA",
           "Roll": "111M30023",
           "Award": "SRIMATI Chandramani CUP",
-          "Image": "ABHISHEK SULTANIA.jpg"
+          "Image": "ABHISHEK SULTANIA.jpg",
+          "email":"abhishekkgp100@gmail.com",
+          "facebook":"https://www.facebook.com/abhishek.sultania.75?mibextid=9R9pXO",
+          "linkedin":"https://www.linkedin.com/in/abhishek-sultania-6b645844/"
         },
         {
           "Name": "RACHIT MADHUKAR",
           "Roll": "13AG3FP05",
           "Award": "Alumni Cup",
-          "Image": "RACHIT MADHUKAR.jpg"
+          "Image": "RACHIT MADHUKAR.jpg",
+          "email":"-",
+          "facebook":"https://www.facebook.com/rachitmadhukar/",
+          "linkedin":"https://www.linkedin.com/in/rachitmadhukar/"
         }
       ],
       "honours": [
@@ -484,7 +499,10 @@
           "Name": "ASHISH DAGA",
           "Roll": "11ME32006",
           "Award": "G.S. SANYAL CUP",
-          "Image": "template.png"
+          "Image": "ashish-daga.jpg",
+          "email":"ashish.x.daga@gmail.com",
+          "facebook":"https://www.facebook.com/ChocoAsh/",
+          "linkedin":"https://www.linkedin.com/in/ashishxdaga/"
         }
       ],
       "honours": [
@@ -579,19 +597,28 @@
           "Name": "SIRAJ MODIWALA",
           "Roll": "13ME10054",
           "Award": "BHANDARKAR CUP",
-          "Image": "template.png"
+          "Image": "siraj-modiwala.jpg",
+          "email":"cj.siraj07@gmail.com",
+          "facebook":"https://www.facebook.com/siraj.modiwala/",
+          "linkedin":"https://www.linkedin.com/in/siraj-modiwala-b8229a37/"
         },
         {
           "Name": "KUNAL AVINASH DEOSKAR",
           "Roll": "12PH20014",
           "Award": "ANKIK DHAR TROPHY",
-          "Image": "template.png"
+          "Image": "kunal-deoskar.jpg",
+          "email":"deoskarkunal@gmail.com",
+          "facebook":"https://www.facebook.com/kunal.deoskar/",
+          "linkedin":"https://www.linkedin.com/in/deoskarkunal/"
         },
         {
           "Name": "LOKESWARA RAO REDDI",
           "Roll": "14AG10022",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "template.png",
+          "email":"-",
+          "facebook":"-",
+          "linkedin":"-"
         }
       ],
       "honours": [
@@ -918,16 +945,22 @@
     "tech": {
       "awards": [
         {
-          "Name": "GOYAL ANUBHAV VIJAY",
+          "Name": "Anubhav Vijay Goyal",
           "Roll": "12IM30007",
           "Award": "G.S. SANYAL CUP",
-          "Image": "template.png"
+          "Image": "anubhav-goyal.jpeg",
+          "email":"anubhavg94@gmail.com",
+          "facebook":"https://www.facebook.com/Anubhavg94",
+          "linkedin":"https://www.linkedin.com/in/anubhavgo/"
         },
         {
           "Name": "RAJA AMBRISH",
           "Roll": "12HS20034",
           "Award": "G.S. SANYAL CUP",
-          "Image": "template.png"
+          "Image": "raja-ambrish.jpg",
+          "email":"raja.ambrishiitkgp@gmail.com",
+          "facebook":"https://www.facebook.com/raja.ambrish/",
+          "linkedin":"https://www.linkedin.com/in/raja-ambrish-633ab459/"
         }
       ],
       "honours": [
@@ -1029,20 +1062,28 @@
           "Name": "Mr. BRAHMARSHI KAR",
           "Roll": "13IE10008",
           "Award": "SRIMATI Chandramani CUP",
-          "Image": "Mr. BRAHMARSHI KAR.jpg"
-
+          "Image": "Mr. BRAHMARSHI KAR.jpg",
+          "email":"Brahmarshi.kar@sap.com",
+          "facebook":"https://www.facebook.com/brahmarshi.kar/",
+          "linkedin":"https://www.linkedin.com/in/brahmarshi-kar/"
         },
         {
           "Name": "AYUDH DATTA",
           "Roll": "13CH30003",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "AYUDH DATTA.jpg",
+          "facebook":"https://www.facebook.com/ayudh.datta/",
+          "linkedin":"https://www.linkedin.com/in/ayudhdatta/",
+          "email":"-"
         },
         {
           "Name": "RACHIT MADHUKAR",
           "Roll": "13AG3FP05",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "RACHIT MADHUKAR.jpg",
+          "email":"-",
+          "facebook":"https://www.facebook.com/rachitmadhukar/",
+          "linkedin":"https://www.linkedin.com/in/rachitmadhukar/"
         }
       ],
       "honours": [
@@ -1203,14 +1244,20 @@
           "Game": "Basketball",
           "Roll": "13AE30012",
           "Award": "Bhandarkar Cup",
-          "Image": "template.png"
+          "Image": "rahul-sehrawat.jpg",
+          "email":"",
+          "facebook":"https://www.facebook.com/nowitzian?comment_id=Y29tbWVudDoxNjEzMjYyMzgyMDI3NDQ0XzE2MTQ0MDc0MDE5MTI5NDI%3D",
+          "linkedin":"https://www.linkedin.com/in/rahul-sehrawat-91093879/"
         },
         {
           "Name": "Abin Devassia",
           "Game": "Athletics",
           "Roll": "14NA30029",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "abin-devassia.jpg",
+          "email":"abin.devassia.2024@anderson.ucla.edu",
+          "facebook":"https://www.facebook.com/profile.php?id=100004673325424",
+          "linkedin":"linkedin.com/in/abin-devassia-816725a0"
         },
         {
           "Name": "Yugal Kishore Patanwar",
@@ -1526,13 +1573,19 @@
           "Name": "Rachit Madhukar",
           "Roll": "13AG3FPO5",
           "Award": "Srimati Chandaramani Cup",
-          "Image": "template.png"
+          "Image": "RACHIT MADHUKAR.jpg",
+          "email":"-",
+          "facebook":"https://www.facebook.com/rachitmadhukar/",
+          "linkedin":"https://www.linkedin.com/in/rachitmadhukar/"
         },
         {
           "Name": "Arkapravo Saha",
           "Roll": "14ME33029",
           "Award": "Alumni Cup",
-          "Image": "Arkapravo Saha.jpg"
+          "Image": "Arkapravo Saha.jpg",
+          "email":"arka1995saha@gmail.com",
+          "facebook":"https://www.facebook.com/Arkapravo14",
+          "linkedin":"https://www.linkedin.com/in/arkapravo-saha-0b9bb9118/"
         }
       ],
       "honours": [
@@ -1720,13 +1773,19 @@
           "Name": "K. Pareen Jain",
           "Roll": "14ME10029",
           "Award": "G.S. Sanyal Cup",
-          "Image": "template.png"
+          "Image": "pareen-jain.jpg",
+          "email":"djparis678@gmail.com",
+          "facebook":"https://www.facebook.com/pareenj",
+          "linkedin":"https://www.linkedin.com/in/pareenj/"
         },
         {
           "Name": "Rishabh Kumar Shrivastava",
           "Roll": "13EE35012",
           "Award": "G.S. Sanyal Cup",
-          "Image": "template.png"
+          "Image": "rishabh-srivastava.jpg",
+          "email":"rishabhsrivastava0108@gmail.com",
+          "facebook":"https://www.facebook.com/rishabh.iitkgp/",
+          "linkedin":"https://www.linkedin.com/in/rishabh-srivastava-899535172/"
         }
       ],
       "honours": [
@@ -1845,12 +1904,18 @@
         "Name": "Ksheera Sagar KN",
         "Roll": "13MA20050",
         "Award": "Ashok Mukherjee Cup",
-        "Image": "Ksheera Sagar K N.jpg"
+        "Image": "Ksheera Sagar K N.jpg",
+        "email":"ksheerasagar18@gmail.com",
+        "facebook":"https://www.facebook.com/ksheerasagar.keralapura/",
+        "linkedin":"https://www.linkedin.com/in/sagarknk/"
       },
       {
         "Name": "Mayank Srivastava",
         "Award": "Amrit Barman Memorial Award",
-        "Image": "Mayank Srivastava.jpg"
+        "Image": "Mayank Srivastava.jpg",
+        "email":"-",
+        "facebook":"https://www.facebook.com/themayanksri",
+        "linkedin":"https://www.linkedin.com/in/mayank-srivastava-kgp/"
       }
     ]
   },
@@ -1861,13 +1926,19 @@
           "Name": "Harsh Agarwal",
           "Roll": "15NA10010",
           "Award": "Prof. G. S. Sanyal Cup",
-          "Image": "template.png"
+          "Image": "harsh-agarwal.jpg",
+          "email":"-",
+          "facebook":"https://www.facebook.com/harsh.agarwal28",
+          "linkedin":"https://www.linkedin.com/in/agarwal-harsh/"
         },
         {
           "Name": "TYSS Santosh",
           "Roll": "15CS30037",
           "Award": "Alumni Cup",
-          "Image": "tyss santosh.jpg"
+          "Image": "tyss santosh.jpg",
+          "email":"santoshtyss@gmail.com",
+          "facebook":"https://www.facebook.com/tyss.santosh/ ",
+          "linkedin":"https://www.linkedin.com/in/santosh-t-y-s-s-39227b116/"
         }
       ],
       "honours": [
@@ -1969,13 +2040,19 @@
           "Name": "Arkapravo Saha",
           "Roll": "14ME33029",
           "Award": "Srimati Chandramani Cup",
-          "Image": "template.png"
+          "Image": "Arkapravo Saha.jpg",
+          "email":"arka1995saha@gmail.com",
+          "facebook":"https://www.facebook.com/Arkapravo14",
+          "linkedin":"https://www.linkedin.com/in/arkapravo-saha-0b9bb9118/"
         },
         {
           "Name": "Utkarsh Sinha",
           "Roll": "15EC35025",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "utkarsh-sinha.jpg",
+          "email":"utksn15@gmail.com",
+          "facebook":"https://www.facebook.com/utkarsh.sinha.186/",
+          "linkedin":"https://www.linkedin.com/in/utksn15/"
         }
       ],
       "honours": [
@@ -2138,28 +2215,39 @@
           "Game": "Athletics",
           "Roll": "14NA30029",
           "Award": "Bhandarkar Cup",
-          "Image": "template.png"
+          "Image": "abin-devassia.jpg",
+          "email":"abin.devassia.2024@anderson.ucla.edu",
+          "facebook":"https://www.facebook.com/profile.php?id=100004673325424",
+          "linkedin":"linkedin.com/in/abin-devassia-816725a0"
         },
         {
           "Name": "Eslavath Jagadeesh",
           "Game": "Athletics",
           "Roll": "16CS10017",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "eslavath-jagadeesh.jpg",
+          "email":"Jagadeesh.steve@gmail.com",
+          "facebook":"https://www.facebook.com/jagadesh.steve",
+          "linkedin":"https://www.linkedin.com/in/jagadeesh-eslavath-959a14184/"
         },
         {
           "Name": "Devanuj Deka",
           "Game": "Badminton",
           "Roll": "17EC30013",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "devanuj-deka.jpg",
+          "facebook":"https://www.facebook.com/devanujd.deka/",
+          "linkedin":"https://www.linkedin.com/in/devanuj-deka-4411a4179/"
         },
         {
           "Name": "Shashwat Gangwal",
           "Game": "",
           "Roll": "14HS20035",
           "Award": "Ankik Dhar Trophy",
-          "Image": "template.png"
+          "Image": "template.png",
+          "email":"",
+          "facebook":"https://www.facebook.com/shashwat.gangwal",
+          "linkedin":"https://www.linkedin.com/in/shashwat-gangwal-infinitybox/?originalSubdomain=in"
         }
       ],
       "honours": [
@@ -2476,7 +2564,10 @@
         "Name": "Vishal Kumar Singh",
         "Roll": "15MI3FP21",
         "Award": "Amrit Barman Memorial Award",
-        "Image": "Vishal Kumar Singh.jpg"
+        "Image": "Vishal Kumar Singh.jpg",
+        "email":"vishalsingh08.iitkgp@gmail.com",
+        "facebook":"https://www.facebook.com/profile.php?id=100010338962799",
+        "linkedin":"https://www.linkedin.com/in/vishal-kumar-singh-284a89125/"
       }
     ]
   },
@@ -2487,13 +2578,19 @@
           "Name": "Tyss Santosh",
           "Roll": "15CS30037",
           "Award": "Prof. G.S Sanyal Cup",
-          "Image": "tyss santosh.jpg"
+          "Image": "tyss santosh.jpg",
+          "email":"santoshtyss@gmail.com",
+          "facebook":"https://www.facebook.com/tyss.santosh/ ",
+          "linkedin":"https://www.linkedin.com/in/santosh-t-y-s-s-39227b116/"
         },
         {
           "Name": "Krishnam Kapoor",
           "Roll": "17EC10026",
           "Award": "Alumni Cup",
-          "Image": "Krishnam Kapoor.jpg"
+          "Image": "Krishnam Kapoor.jpg",
+          "email":"krishnamkapoor@gmail.com",
+          "facebook":"https://www.facebook.com/krishnam.kapoor.5/",
+          "linkedin":"https://www.linkedin.com/in/krishnam-kapoor/"
         }
       ],
       "honours": [
@@ -2694,35 +2791,49 @@
           "Game": "Athletics",
           "Roll": "16CS10017",
           "Award": "Bhandarkar Cup",
-          "Image": "template.png"
+          "Image": "eslavath-jagadeesh.jpg",
+          "email":"Jagadeesh.steve@gmail.com",
+          "facebook":"https://www.facebook.com/jagadesh.steve",
+          "linkedin":"https://www.linkedin.com/in/jagadeesh-eslavath-959a14184/"
         },
         {
           "Name": "Hima Swetha N",
           "Game": "Athletics",
           "Roll": "16EC10025",
           "Award": "Bhandarkar Cup",
-          "Image": "template.png"
+          "Image": "hima-swetha.jpg",
+          "email":"",
+          "facebook":"https://www.facebook.com/himaswetha99",
+          "linkedin":"https://www.linkedin.com/in/hima-swetha/"
         },
         {
           "Name": "Soham Chandorkar",
           "Game": "Water Polo",
           "Roll": "15HS20013",
           "Award": "Ankik Dhar Trophy",
-          "Image": "template.png"
+          "Image": "soham-chandorkar.jpg",
+          "email":"",
+          "facebook":"https://www.facebook.com/soham.chandorkar/",
+          "linkedin":"https://www.linkedin.com/in/soham-chandorkar/"
         },
         {
           "Name": "Chhaya Kori",
           "Game": "Athletics",
           "Roll": "15NA10007",
           "Award": "Ankik Dhar Trophy",
-          "Image": "template.png"
+          "Image": "template.png",
+          "email":"",
+          "facebook":"https://www.facebook.com/chhaya.kori.5",
+          "linkedin":"https://www.linkedin.com/in/chhaya-kori-658472148/"
         },
         {
           "Name": "Shivam Singh",
           "Game": "Athletics",
           "Roll": "17IM30030",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "Shivam Singh.jpg",
+          "email":"shivamsingh.iitkgp@gmail.com",
+          "linkedin":"https://www.linkedin.com/in/shivam-singh08/"
         }
       ],
       "honours": [
@@ -2982,16 +3093,22 @@
     },
     "specialRecog": [
       {
-        "Name": "-",
-        "Roll": "",
+        "Name": "NINAAD LOHAKARE",
+        "Roll": "16ME31003",
         "Award": "Amrit Barman Memorial Award",
-        "Image": "template.png"
+        "Image": "ninaad-lohakare.png",
+        "email":"ninaadlohakare@gmail.com",
+        "facebook":"https://www.facebook.com/ninaad.lohakare",
+        "linkedin":"https://www.linkedin.com/in/ninaad-lohakare-632bb613a/"
       },
       {
         "Name": "Vishal Kumar Singh",
         "Roll": "15MI3FP21",
         "Award": "Prof. Ashoke Mukherjee Cup",
-        "Image": "Vishal Kumar Singh.jpg"
+        "Image": "Vishal Kumar Singh.jpg",
+        "email":"vishalsingh08.iitkgp@gmail.com",
+        "facebook":"https://www.facebook.com/profile.php?id=100010338962799",
+        "linkedin":"https://www.linkedin.com/in/vishal-kumar-singh-284a89125/"
       }
     ]
   },
@@ -3002,7 +3119,10 @@
           "Name": "Harsh Maheshwari",
           "Roll": "16EE35008",
           "Award": "Prof. G.S Sanyal Cup",
-          "Image": "harsh maheshwari.jpg"
+          "Image": "harsh maheshwari.jpg",
+          "email":"harshmaheshwari135@gmail.com",
+          "facebook":"https://www.facebook.com/harsh.maheshwari.3950",
+          "linkedin":"https://www.linkedin.com/in/harsh-99/"
         }
       ],
       "honours": [
@@ -3104,7 +3224,10 @@
           "Name": "Piyush Kedia",
           "Roll": "16MT30022",
           "Award": "Srimati Chandramani Cup",
-          "Image": "piyush kedia.jpg"
+          "Image": "piyush kedia.jpg",
+          "email":"piyushkedia4052@gmail.com",
+          "facebook":"https://www.facebook.com/piyush.kedia.902",
+          "linkedin":"https://www.linkedin.com/in/piyush-kedia-87bbb6127/"
         }
       ],
       "honours": [
@@ -3192,14 +3315,20 @@
           "Game": "WP & Swimming",
           "Roll": "16IM30015",
           "Award": "Bhandarkar Cup",
-          "Image": "template.png"
+          "Image": "pushpak-roy.jpg",
+          "email":"nyn05091998@gmail.com",
+          "facebook": "https://www.facebook.com/PushpakRoy.005/",
+          "linkedin":"https://www.linkedin.com/in/pushpak-roy/"
         },
         {
           "Name": "Abhinav Gupta",
           "Game": "Table Tennis",
           "Roll": "17ME10001",
           "Award": "Ankik Dhar Trophy",
-          "Image": "template.png"
+          "Image": "abhinav-gupta.jpg",
+          "email":"-",
+          "facebook": "https://www.facebook.com/profile.php?id=100005698444155",
+          "linkedin":"https://www.linkedin.com/in/abhinav-gupta-6a0114163/"
         }
       ],
       "honours": [
@@ -3354,13 +3483,18 @@
         "Name": "Shivam Singh",
         "Roll": "17IM30030",
         "Award": "Amrit Barman Memorial Award",
-        "Image": "Shivam Singh.jpg"
+        "Image": "Shivam Singh.jpg",
+        "email": "shivamsingh.iitkgp@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/shivam-singh08/"
       },
       {
         "Name": "Arpit Raj",
         "Roll": "16CE36002",
         "Award": "Prof. Ashoke Mukherjee Cup",
-        "Image": "Arpit Raj.jpg"
+        "Image": "Arpit Raj.jpg",
+        "email":"arpitraj.406@gmail.com",
+        "facebook":"https://www.facebook.com/arpit.raj.167",
+        "linkedin": "https://www.linkedin.com/in/arpit-raj-75995a130/"
       }
     ]
   },
@@ -3371,13 +3505,19 @@
           "Name": "Mann Rakesh Goel",
           "Roll": "17CH30035",
           "Award": "PROF. G.S SANYAL CUP",
-          "Image": "Mann Goel.jpg"
+          "Image": "Mann Goel.jpg",
+          "email": "manngoel99@gmail.com",
+          "facebook":"https://www.facebook.com/mann.goel.3",
+          "linkedin": "https://www.linkedin.com/in/mann-goel-656b45150/"
         },
         {
           "Name": "Divyanth Lg",
           "Roll": "19AG10014",
           "Award": "ALUMNI CUP",
-          "Image": "Divyanth L G.jpg"
+          "Image": "Divyanth L G.jpg",
+          "email": "divyanthlg@gmail.com",
+          "facebook":"https://www.facebook.com/divyanth.g.9",
+          "linkedin": "https://www.linkedin.com/in/divyanthlg/"
         }
       ],
       "honours": [
@@ -3466,11 +3606,13 @@
     "socult": {
       "awards": [
         {
-          "Name": "-",
-          "Roll": " ",
+          "Name": "RUPAM KUMAR DUBEY",
+          "Roll": "17GG20028",
           "Award": "SRIMATI CHANDRAMANI CUP",
-          "Image": "template.png"
-
+          "Image": "rupam-kumar-dubey.jpg",
+          "email": "rupamkumardubey@gmail.com",
+          "facebook": "https://www.facebook.com/rupam.kumardubey.9/",
+          "linkedin": "https://www.linkedin.com/in/rupamkumardubey/?originalSubdomain=in"
         }
       ],
       "honours": [
@@ -3528,21 +3670,29 @@
           "Roll": "17IM30030",
           "Game": "Athletics",
           "Award": "Bhandarkar Cup",
-          "Image": "template.png"
+          "Image": "Shivam Singh.jpg",
+          "email": "shivamsingh.iitkgp@gmail.com",
+          "linkedin": "https://www.linkedin.com/in/shivam-singh08/"
         },
         {
           "Name": "Rajshree Sharma",
           "Roll": "20NA30022",
           "Game": "Athletics",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "Rajshree Sharma.jpg",
+          "email": "rajshree.sh2002@gmail.com ",
+          "facebook":"https://www.facebook.com/rajshree.sharma.965928?mibextid=ZbWKwL",
+          "linkedin": "https://www.linkedin.com/in/rajshree-sharma-484224206/"
         },
         {
           "Name": "Tumbalam Gooty Mythri",
           "Roll": "18CE91RI3",
           "Game": "Athletics",
           "Award": "Alumni Cup",
-          "Image": "template.png"
+          "Image": "thumbalam-mythri.jpg",
+          "email": "-",
+          "facebook":"https://www.facebook.com/tgmythri",
+          "linkedin": "https://www.linkedin.com/in/mythri-tg/"
         }
       ],
       "honours": [
@@ -3751,14 +3901,644 @@
         "Name": "Vardhineedi Devaki Nandana Varalakshmi",
         "Roll": "18GG20036",
         "Award": "Amrit Barman Memorial Award",
-        "Image": "devaki nandana.png"
+        "Image": "devaki nandana.png",
+        "email": "nandanakalam@gmail.com",
+        "facebook": "https://www.facebook.com/devakinandanakalam",
+        "linkedin": "https://www.linkedin.com/in/devakinandanakalam/"
       },
       {
         "Name": "Aditi Singhania",
         "Roll": "18EE10004",
         "Award": "Prof. Ashoke Mukherjee Cup",
-        "Image": "aditi singhania.jpg"
+        "Image": "aditi singhania.jpg",
+        "email": "singhania2603@gmail.com",
+        "facebook": "https://www.facebook.com/aditi.singhania.7165",
+        "linkedin": "https://www.linkedin.com/in/aditi-singhania-436371146/"
       }
     ]
+  },"2022-23": {
+    "tech": {
+      "awards": [
+        {
+          "Name": "DIVYA",
+          "Roll": "20AG10009",
+          "Award": "AlUMNI CUP",
+          "Image": "divya.jpg",
+          "email": "divyarathore787@gmail.com",
+          "facebook":"https://www.facebook.com/profile.php?id=100060859309635",
+          "linkedin": "https://www.linkedin.com/in/divya-rathore-5a94b820b/"
+        },
+        {
+          "Name": "Divyanth Lg",
+          "Roll": "19AG10014",
+          "Award": "PROF. G.S SANYAL CUP",
+          "Image": "Divyanth L G.jpg",
+          "email": "divyanthlg@gmail.com",
+          "facebook":"https://www.facebook.com/divyanth.g.9",
+          "linkedin": "https://www.linkedin.com/in/divyanthlg/"
+        },
+        {
+          "Name": "SHIVAM",
+          "Roll": "19ME31025",
+          "Award": "ALUMNI CUP",
+          "Image": "template.png",
+          "email": "-",
+          "facebook":"-",
+          "linkedin": "-"
+        },
+        {
+          "Name": "JASKARAN SINGH SODHI",
+          "Roll": "19MF10017",
+          "Award": "PROF. G.S SANYAL CUP",
+          "Image": "jaskaran-singh.jpg",
+          "email": "sodhi.jaskaransingh@gmail.com",
+          "facebook":"https://www.facebook.com/jaskaran.sodhi.35",
+          "linkedin": "linkedin.com/in/jaskaran-singh-sodhi"
+        }
+      ],
+      "honours": [
+        {
+          "Name": "DIVYANTH",
+          "Roll": "19AG10014",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "JASKARAN SINGH SODHI",
+          "Roll": "19MF10017",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "ARUSARKAR BOSE",
+          "Roll": "18EC35035",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "ASHISH SUDHIR GOKARNKAR",
+          "Roll": "18IM 30027",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "LAKSHRAJ DOSHI",
+          "Roll": "18EC35014",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "HIMADRI SAHA",
+          "Roll": "18EC32005",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "KSHITIZ KHANDELWAL",
+          "Roll": "18EC35013",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "MOINAK GHOSH",
+          "Roll": "18EE33002",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "SANKALP BOSE",
+          "Roll": "19CH10045",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "DEBRAJ CHATTERJEE",
+          "Roll": "19IM10039",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "NISHITA TRIPATHY",
+          "Roll": "19MF10021",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "SHUBESH",
+          "Roll": "18QE30002",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "ABHINAV",
+          "Roll": "18AE35023",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "SOUVIK BASAK",
+          "Roll": "19ME10095",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "VARUN MADHAVAN",
+          "Roll": "18CH30031",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "NANDINI BAJAJ",
+          "Roll": "18CS20020",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "ANIMESH JHA",
+          "Roll": "19CS10070",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "DEBAJYOTI DAS GUPTA",
+          "Roll": "18CS30051",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "CHINMAY",
+          "Roll": "19CH0066",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "RUTHU",
+          "Roll": "18AE30018",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "RAUSHAN PRABHAKAR",
+          "Roll": "18MF3IM12",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "YASH SONI",
+          "Roll": "18MA20052",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "SAYANTAN DAS",
+          "Roll": "18EC33002",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "PRAVEEN YADAV",
+          "Roll": "19ME10049",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "YASH AGARWAL",
+          "Roll": "19EC10089",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "ASUTOSH",
+          "Roll": "18ME33013",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "ANMOL",
+          "Roll": "18AG36023",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "SOUMYO BHATTACHARYA",
+          "Roll": "19EC10087",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "SHIVAM PANDEY",
+          "Roll": "19IM10029",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "HARSH VARDHAN",
+          "Roll": "18MA20055",
+          "Award": "SPECIAL MENTION"
+        }
+      ]
+    },
+    "socult": {
+      "awards": [
+        {
+          "Name": "SOUMYADEEP NANDI",
+          "Roll": "18CH30023",
+          "Award": "SRIMATI CHANDRAMANI CUP",
+          "Image": "soumyadeep-nandi.jpg",
+          "email": "soumya99nandi@gmail.com",
+          "facebook": "https://www.facebook.com/soumya99nandi/",
+          "linkedin": "https://www.linkedin.com/in/soumyadeep99nandi/"
+        },
+        {
+          "Name": "DIVYANSHU GUPTA",
+          "Roll": "20BT10016",
+          "Award": "ALUMNI CUP",
+          "Image": "divyanshu-gupta.jpg",
+          "email": "dvnshu04gupta@gmail.com",
+          "facebook": "https://www.facebook.com/dvnshu",
+          "linkedin": "https://www.linkedin.com/in/divyanshu04gupta/"
+        },
+        {
+          "Name": "PARTH JAISWAL",
+          "Roll": "19EX20025",
+          "Award": "ALUMNI CUP",
+          "Image": "parth-jaiswal.jpg",
+          "email": "parthjaiswal13@gmail.com",
+          "facebook": "https://www.facebook.com/parth.jaiswal.395?mibextid=LQQJ4d",
+          "linkedin": "https://www.linkedin.com/in/parth-jaiswal-677719199/"
+        }
+      ],
+      "honours": [
+        {
+          "Name": "SOUMYADEEP NANDI",
+          "Roll": "18CH30023",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "BALDAWA SUDHANSHURAJESH",
+          "Roll": "18MT3006",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "DEVIKA NARAYANAN",
+          "Roll": "18MF3IM22",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "MEHUL GUPTA",
+          "Roll": "19IE10020",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "MIHIR SHRIVASTAVA",
+          "Roll": "18PH20013",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "ROHIT A",
+          "Roll": "18PH20013",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "KARAN SINGH",
+          "Roll": "18BT3009",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "DEWANG GOGTE",
+          "Roll": "18BT3AI14",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "ABHYUDAYA NILOSEY",
+          "Roll": "18IM3FP27",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "AYUSH BHUPAL",
+          "Roll": "18PH20006",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "ADARSH PRAKASH VEMALI",
+          "Roll": "18MF3IM19",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "YASHASVI SRIVASTAVA",
+          "Roll": "18ME31030",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "YASHASVI SRIVASTAVA",
+          "Roll": "18ME31030",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "YASHASVI SRIVASTAVA",
+          "Roll": "18ME31030",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "YASHASVI SRIVASTAVA",
+          "Roll": "18ME31030",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "ANURAG MOHANTY",
+          "Roll": "18EC35006",
+          "Award": "INSTITUTE ORDER OF MERIT"
+        },
+        {
+          "Name": "AKASH SRIVASTAVA",
+          "Roll": "18EX2005",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "ATHARVA SHINDE",
+          "Roll": "19MI10014",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "AMANDEEP",
+          "Roll": "19CE10004",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "SUMAN KUMARI",
+          "Roll": "18HS20039",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "VARUN GUPTA",
+          "Roll": "18MA20050",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "GOUTAM KUMAR BEHERA",
+          "Roll": "19MT10019",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "SHIRIN GOEL",
+          "Roll": "18AR10028",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "SHIVAM SHRIVASTAVA",
+          "Roll": "18CH30032",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "GAURI SANGAY KARKHANIS",
+          "Roll": "18AR10012",
+          "Award": "SPECIAL MENTION"
+        }
+      ]
+    },
+    "sports": {
+      "awards": [
+        {
+          "Name": "SIGANGSA BAGLARI",
+          "Roll": "18EC3FP11",
+          "Game": "Athletics",
+          "Award": "Bhandarkar Cup",
+          "Image": "sigangsa-baglari.png",
+          "email": "sigangsab@gmail.com",
+          "facebook":"https://www.facebook.com/sigangsa.baglari.9/",
+          "linkedin": "https://www.linkedin.com/in/sigangsa-baglari-500438190/"
+        },
+        {
+          "Name": "PRAVALIKA DAS",
+          "Roll": "21CH10045",
+          "Game": "Athletics",
+          "Award": "Alumni Cup",
+          "Image": "pravalika-das.jpg",
+          "email": "pravalika.das.wgs@gmail.com",
+          "facebook":"https://www.facebook.com/people/Pravalika-Das/100075394063854/?paipv=0&eav=Afbk5USW6KkWVIPeTQNKTSadqUTYI0pCT2zJhCY4EsZH0oBI6J-DJu0ZLe7HSlueppg&_rdr",
+          "linkedin": "https://www.linkedin.com/in/pravalika-das-95a407234/?originalSubdomain=in"
+        }
+      ],
+      "honours": [
+        {
+          "Name": "SIGANGSA BAGLARI",
+          "Roll": "18EC3FP11",
+          "Game": "-",
+          "Award": "INSTITUTE BLUE"
+        },
+        {
+          "Name": "E. MADHURI",
+          "Roll": "18CH30028",
+          "Game": "-",
+          "Award": "INSTITUTE BLUE"
+        },
+        {
+          "Name": "PRATYAYA MANDAL",
+          "Roll": "18EE36001",
+          "Game": "-",
+          "Award": "INSTITUTE BLUE"
+        },
+        {
+          "Name": "PALAK AGIWAL",
+          "Roll": "19CH10028",
+          "Game": "-",
+          "Award": "INSTITUTE BLUE"
+        },
+        {
+          "Name": "ABHISHEK VINURAJ",
+          "Roll": "18GG20002",
+          "Game": "-",
+          "Award": "INSTITUTE BLUE"
+        },
+        {
+          "Name": "STUTI PARMAR",
+          "Roll": "19IM10032",
+          "Game": "-",
+          "Award": "INSTITUTE BLUE"
+        },
+        {
+          "Name": "UTKARSH GUPTA",
+          "Roll": "18MA20049",
+          "Game": "-",
+          "Award": "INSTITUTE BLUE"
+        },
+        {
+          "Name": "MENDI JEEVAN",
+          "Roll": "16GG20016",
+          "Game": "-",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "AKSHITA SINGH",
+          "Roll": "18EX20006",
+          "Game": "-",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "TABAN SALAM",
+          "Roll": "18CH30047",
+          "Game": "BADMINTON",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "MANAS PATIDAR",
+          "Roll": "18HS20022",
+          "Game": "",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "PRACHI BAJPAI",
+          "Roll": "18AG36009",
+          "Game": "-",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "GURAJALA CHINMAYEE",
+          "Roll": "18CY20014",
+          "Game": "-",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "AVIRAJ SINGH BEVLI",
+          "Roll": "18MA20009",
+          "Game": "-",
+          "Award": "Institute Blue"
+        },
+        {
+          "Name": "MAYUR JIWATODE",
+          "Roll": "18EC32006",
+          "Game": "-",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "RADHIKA GUPTA",
+          "Roll": "18MA20035",
+          "Game": "-",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "KAVITA",
+          "Roll": "19NA10011",
+          "Game": "-",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "PRATHAMESH DHARMARAVI MANKAR",
+          "Roll": "18ME31044",
+          "Game": "-",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "FEBIN MATHEW",
+          "Roll": "18EC32002",
+          "Game": "-",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "DEEPAK CHAUHAN",
+          "Roll": "18HS20012",
+          "Game": "-",
+          "Award": "HONORABLE MENTION"
+        },
+        {
+          "Name": "DHYANI NIRADBHAI RANDERIA",
+          "Roll": "18EC35009",
+          "Game": "-",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "SAHIL KUMAR",
+          "Roll": "18AR10023",
+          "Game": "-",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "KODALI SHIVESH CHOWDARY",
+          "Roll": "19EC10036",
+          "Game": "Water Polo",
+          "Award": "Honourable Mention"
+        },
+        {
+          "Name": "KODALI SHIVESH CHOWDARY",
+          "Roll": "19EC10036",
+          "Game": "Water Polo",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "NANDINI BAJAJ",
+          "Roll": "18CY20020",
+          "Game": "-",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "NANCY AGRAWAL",
+          "Roll": "18EE3AI24",
+          "Game": "-",
+          "Award": "SPECIAL MENTION"
+        },
+        {
+          "Name": "KASHISH SARANG GUPTA",
+          "Roll": "18PH20009",
+          "Game": "",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "KANUKOLANU GAYATRI MEGHANA",
+          "Roll": "18EC35012",
+          "Game": "-",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "HARSHIT KUMAR BARANWAL",
+          "Roll": "18EE35004",
+          "Game": "-",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "DHAVAL SHAILESH PRAJAPATI",
+          "Roll": "18MF3IM27",
+          "Game": "-",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "ANSHUL GUPTA",
+          "Roll": "18AG36002",
+          "Game": "--",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "RISHI RAJ",
+          "Roll": "17GG20025",
+          "Game": "",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "RATAN RAJ TANKALA",
+          "Roll": "18IE30008",
+          "Game": "-",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "DIGAMBER CHAUHAN",
+          "Roll": "18CE36013",
+          "Game": "-",
+          "Award": "Special Mention"
+        },
+        {
+          "Name": "ANANDU N R",
+          "Roll": "20CE30036",
+          "Game": "-",
+          "Award": "Athletics Excelence Alumni Award"
+        },
+        {
+          "Name": "SIGANGSA BAGLARI",
+          "Roll": "18EC3FP11",
+          "Game": "-",
+          "Award": "Athletics Excelence Alumni Award"
+        },
+        {
+          "Name": "AKHIL KUMAR",
+          "Roll": "19CE36012",
+          "Game": "-",
+          "Award": "Athletics Excelence Alumni Award"
+        },
+        {
+          "Name": "MARWAN KUZHIMPATTIL",
+          "Roll": "20MT30015",
+          "Game": "-",
+          "Award": "Atheletics Excellence Alumni Award"
+        },
+        {
+          "Name": "PRATYAYA MANDAL",
+          "Roll": "18EE36001",
+          "Game": "-",
+          "Award": "Atheletics Excellence Alumni Award"
+        },
+        {
+          "Name": "E MADHURI",
+          "Roll": "18CH30028",
+          "Game": "-",
+          "Award": "Atheletics Excellence Alumni Award"
+        },
+        {
+          "Name": "T G MYTHRI",
+          "Roll": "18CE91R13",
+          "Game": "-",
+          "Award": "Atheletics Excellence Alumni Award"
+        }
+      ]
+    },
+    "specialRecog": []
   }
 }

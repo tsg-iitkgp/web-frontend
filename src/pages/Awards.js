@@ -5,6 +5,7 @@ import awardsData from "./awardsData.json";
 import "./Awards.css";
 
 const years = [
+  "2022-23",
   "2021-22",
   "2020-21",
   "2019-20",
@@ -15,7 +16,7 @@ const years = [
 ];
 function Awards() {
   const [currentTab, setCurrentTab] = useState("tech");
-  const [currentYear, setCurrentYear] = useState("2021-22");
+  const [currentYear, setCurrentYear] = useState("2022-23");
 
   const handleTabChange = (s) => {
     setCurrentTab(s);
@@ -101,6 +102,9 @@ function Awards() {
                         name={winner.Name}
                         imgSrc={`data/media/images/awards/${winner.Image}`}
                         designation={winner.Award}
+                        email={winner.email}
+                        facebook={winner.facebook}
+                        linkedin={winner.linkedin}
                       />
                     )
                   )
@@ -110,6 +114,9 @@ function Awards() {
                       name={winner.Name}
                       imgSrc={`data/media/images/awards/${winner.Image}`}
                       designation={winner.Award}
+                      email={winner.email}
+                      facebook={winner.facebook}
+                      linkedin={winner.linkedin}
                     />
                   ))}
             </div>
