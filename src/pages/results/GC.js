@@ -2,11 +2,11 @@ import { useState } from "react";
 import "./interiit.css";
 import GCdata from "./GCdata";
 
-const years = ["2016-17","2017-18","2018-19","2019-20","2020-21","2021-22"];
+const years = ["2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-2023"];
 
 export default function InterIIT() {
   const [currentTab, setCurrentTab] = useState("Sports");
-  const [currentYear, setCurrentYear] = useState("2021-22");
+  const [currentYear, setCurrentYear] = useState("2022-23");
 
   const handleTabChange = (s) => {
     setCurrentTab(s);
