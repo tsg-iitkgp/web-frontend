@@ -24,10 +24,28 @@ const GCdata = {
     Technology: [
       {
         Event: "Overall",
-        Gold: " ",
-        Silver: " ",
-        Bronze: " ",
-      }
+        Gold: "Azad",
+        Silver: "LBS",
+        Bronze: "Nehru",
+      },
+      {
+        Event: "Product Design",
+        Gold: "Azad",
+        Silver: "Nehru",
+        Bronze: "LBS",
+      },
+      {
+        Event: "Maths Olympiad",
+        Gold: "Nehru",
+        Silver: "RK",
+        Bronze: "MS",
+      },
+      {
+        Event: "Ad Design",
+        Gold: "Azad",
+        Silver: "LBS",
+        Bronze: "RP",
+      },
     ],
     Socult: [
       {
@@ -63,9 +81,69 @@ const GCdata = {
     Technology: [
       {
         Event: "Final Standings",
-        Gold: " ",
-        Silver: " ",
-        Bronze: " ",
+        Gold: "LBS",
+        Silver: "Azad",
+        Bronze: "RP",
+      },
+      {
+        Event: "OpenSoft",
+        Gold: "LBS",
+        Silver: "Patel",
+        Bronze: "Azad",
+      },
+      {
+        Event: "Case Study",
+        Gold: "Azad",
+        Silver: "LBS",
+        Bronze: "LLR",
+      },
+      {
+        Event: "Data Analytics",
+        Gold: "Azad",
+        Silver: "RP",
+        Bronze: "SN/IG",
+      },
+      {
+        Event: "Product Design",
+        Gold: "LBS",
+        Silver: "Patel",
+        Bronze: "Azad",
+      },
+      {
+        Event: "Hardware Modelling",
+        Gold: "LBS",
+        Silver: "RP",
+        Bronze: "Nehru",
+      },
+      {
+        Event: "ChemQuest",
+        Gold: "RK",
+        Silver: "RP",
+        Bronze: "Azad",
+      },
+      {
+        Event: "Maths Olympiad",
+        Gold: "RK",
+        Silver: "LBS",
+        Bronze: "Nehru",
+      },
+      {
+        Event: "Tech Quiz",
+        Gold: "RP",
+        Silver: "Patel",
+        Bronze: "LBS",
+      },
+      {
+        Event: "BizQuiz",
+        Gold: "Azad",
+        Silver: "RK",
+        Bronze: "RP",
+      },
+      {
+        Event: "Ad Design",
+        Gold: "RP",
+        Silver: "Nehru",
+        Bronze: "RK",
       },
     ],
     Socult: [
@@ -975,6 +1053,105 @@ const GCdata = {
         Gold: "Nehru",
         Silver: "RK",
         Bronze: "MS",
+      },
+    ]
+  },
+  "2022-23": {
+    Sports:
+    {
+      // MALE STANDINGS
+      Male: [
+        {
+          Sport: "Overall",
+          Gold: " ",
+          Silver: " ",
+          Bronze: " ",
+        }
+      ],
+      // FEMALE STANDINGS
+      Female: [
+        {
+          Sport: "Overall",
+          Gold: " ",
+          Silver: " ",
+          Bronze: " ",
+        }
+      ]
+    },
+    Technology: [
+      // {
+      //   Event: "Overall",
+      //   Gold: " ",
+      //   Silver: " ",
+      //   Bronze: " ",
+      // },
+      {
+        Event: "OpenSoft",
+        Gold: "RP",
+        Silver: "RK",
+        Bronze: "MS",
+      },
+      {
+        Event: "Case Study",
+        Gold: "RK",
+        Silver: "RP",
+        Bronze: "VS",
+      },
+      {
+        Event: "Data Analytics",
+        Gold: "RK",
+        Silver: "RP",
+        Bronze: "VS",
+      },
+      // {
+      //   Event: "Product Design",
+      //   Gold: "LLR",
+      //   Silver: "RP",
+      //   Bronze: "Nehru",
+      // },
+      // {
+      //   Event: "Hardware Modelling",
+      //   Gold: "Azad",
+      //   Silver: "RP",
+      //   Bronze: "SN/IG",
+      // },
+      {
+        Event: "ChemQuest",
+        Gold: "RK",
+        Silver: "RP",
+        Bronze: "SNIG",
+      },
+      // {
+      //   Event: "Maths Olympiad",
+      //   Gold: "RP",
+      //   Silver: "Nehru",
+      //   Bronze: "RK",
+      // },
+      // {
+      //   Event: "Tech Quiz",
+      //   Gold: "RP",
+      //   Silver: "Azad",
+      //   Bronze: "LBS",
+      // },
+      // {
+      //   Event: "BizQuiz",
+      //   Gold: "Nehru",
+      //   Silver: "Azad",
+      //   Bronze: "LBS",
+      // },
+      {
+        Event: "Ad Design",
+        Gold: "RK",
+        Silver: "RP",
+        Bronze: "MS",
+      },
+    ],
+    Socult: [
+      {
+        Event: "Overall",
+        Gold: " ",
+        Silver: " ",
+        Bronze: " ",
       },
     ]
   }
