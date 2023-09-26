@@ -1045,9 +1045,9 @@ const InterIITdata = {
         Technology: [
             {
                 Event: "Overall",
-                Gold: " ",
-                Silver: " ",
-                Bronze: " ",
+                Gold: "Kanpur",
+                Silver: "Bombay",
+                Bronze: "Kharagpur",
             }
         ],
         Socult: [
@@ -1079,9 +1079,9 @@ const InterIITdata = {
         Technology: [
             {
                 Event: "Overall",
-                Gold: "Kanpur",
-                Silver: "Bombay",
-                Bronze: "Kharagpur",
+                Gold: "Kharagpur",
+                Silver: "Roorkee",
+                Bronze: "Kanpur",
             }
         ],
         Socult: [
@@ -1090,6 +1090,93 @@ const InterIITdata = {
                 Gold: " ",
                 Silver: " ",
                 Bronze: " ",
+            }
+        ]
+    },
+    "2022-23": {
+        Sports: 
+        {
+            // MALE STANDINGS
+            Male:[
+                {
+                    Sport: " ",
+                    Gold: " ",
+                    Silver: " ",
+                    Bronze: " ",
+                },
+            ],
+            // FEMALE STANDINGS
+            Female:[
+                {
+                    Sport: " ",
+                    Gold: " ",
+                    Silver: " ",
+                    Bronze: " ",
+                },
+            ]
+    },
+        Technology: [
+            {
+                Event: "Overall",
+                Gold: " ",
+                Silver: " ",
+                Bronze: " ",
+            }
+        ],
+        Socult: [
+            {
+                Event: "Overall",
+                Gold: " ",
+                Silver: " ",
+                Bronze: " ",
+            },
+            {
+                Event: "Literary Arts",
+                Gold: " ",
+                Silver: "Kharagpur",
+                Bronze: " ",
+            },
+            {
+                Event: "Speaking and Comedic Arts",
+                Gold: "Kharagpur",
+                Silver: " ",
+                Bronze: " ",
+            },
+            {
+                Event: "Theatre Arts",
+                Gold: "Kharagpur",
+                Silver: " ",
+                Bronze: " ",
+            },
+            {
+                Event: "Music Arts",
+                Gold: "Kharagpur",
+                Silver: " ",
+                Bronze: " ",
+            },
+            {
+                Event: "Film Making Arts",
+                Gold: "Kharagpur",
+                Silver: " ",
+                Bronze: " ",
+            },
+            {
+                Event: "Fine Arts",
+                Gold: "Kharagpur",
+                Silver: " ",
+                Bronze: " ",
+            },
+            {
+                Event: "Digital Arts",
+                Gold: "Kharagpur",
+                Silver: " ",
+                Bronze: " ",
+            },
+            {
+                Event: "Lifestyle Arts",
+                Gold: " ",
+                Silver: " ",
+                Bronze: "Kharagpur",
             }
         ]
     }
