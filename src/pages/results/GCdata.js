@@ -1270,12 +1270,72 @@ const GCdata = {
       ]
     },
     Technology: [
+      // {
+      //   Event: "Overall",
+      //   Gold: " ",
+      //   Silver: " ",
+      //   Bronze: " ",
+      // },
       {
-        Event: "Overall",
-        Gold: " ",
-        Silver: " ",
-        Bronze: " ",
-      }
+        Event: "OpenSoft",
+        Gold: "RP",
+        Silver: "RK",
+        Bronze: "MS",
+      },
+      {
+        Event: "Case Study",
+        Gold: "RK",
+        Silver: "RP",
+        Bronze: "VS",
+      },
+      {
+        Event: "Data Analytics",
+        Gold: "RK",
+        Silver: "RP",
+        Bronze: "VS",
+      },
+      // {
+      //   Event: "Product Design",
+      //   Gold: "LLR",
+      //   Silver: "RP",
+      //   Bronze: "Nehru",
+      // },
+      // {
+      //   Event: "Hardware Modelling",
+      //   Gold: "Azad",
+      //   Silver: "RP",
+      //   Bronze: "SN/IG",
+      // },
+      {
+        Event: "ChemQuest",
+        Gold: "RK",
+        Silver: "RP",
+        Bronze: "SNIG",
+      },
+      // {
+      //   Event: "Maths Olympiad",
+      //   Gold: "RP",
+      //   Silver: "Nehru",
+      //   Bronze: "RK",
+      // },
+      // {
+      //   Event: "Tech Quiz",
+      //   Gold: "RP",
+      //   Silver: "Azad",
+      //   Bronze: "LBS",
+      // },
+      // {
+      //   Event: "BizQuiz",
+      //   Gold: "Nehru",
+      //   Silver: "Azad",
+      //   Bronze: "LBS",
+      // },
+      {
+        Event: "Ad Design",
+        Gold: "RK",
+        Silver: "RP",
+        Bronze: "MS",
+      },
     ],
     Socult: [
       {
@@ -1405,105 +1465,6 @@ const GCdata = {
         Gold: "RK",
         Silver: "RP",
         Bronze: "SN/IG",
-      },
-    ]
-  },
-  "2022-23": {
-    Sports:
-    {
-      // MALE STANDINGS
-      Male: [
-        {
-          Sport: "Overall",
-          Gold: " ",
-          Silver: " ",
-          Bronze: " ",
-        }
-      ],
-      // FEMALE STANDINGS
-      Female: [
-        {
-          Sport: "Overall",
-          Gold: " ",
-          Silver: " ",
-          Bronze: " ",
-        }
-      ]
-    },
-    Technology: [
-      // {
-      //   Event: "Overall",
-      //   Gold: " ",
-      //   Silver: " ",
-      //   Bronze: " ",
-      // },
-      {
-        Event: "OpenSoft",
-        Gold: "RP",
-        Silver: "RK",
-        Bronze: "MS",
-      },
-      {
-        Event: "Case Study",
-        Gold: "RK",
-        Silver: "RP",
-        Bronze: "VS",
-      },
-      {
-        Event: "Data Analytics",
-        Gold: "RK",
-        Silver: "RP",
-        Bronze: "VS",
-      },
-      // {
-      //   Event: "Product Design",
-      //   Gold: "LLR",
-      //   Silver: "RP",
-      //   Bronze: "Nehru",
-      // },
-      // {
-      //   Event: "Hardware Modelling",
-      //   Gold: "Azad",
-      //   Silver: "RP",
-      //   Bronze: "SN/IG",
-      // },
-      {
-        Event: "ChemQuest",
-        Gold: "RK",
-        Silver: "RP",
-        Bronze: "SNIG",
-      },
-      // {
-      //   Event: "Maths Olympiad",
-      //   Gold: "RP",
-      //   Silver: "Nehru",
-      //   Bronze: "RK",
-      // },
-      // {
-      //   Event: "Tech Quiz",
-      //   Gold: "RP",
-      //   Silver: "Azad",
-      //   Bronze: "LBS",
-      // },
-      // {
-      //   Event: "BizQuiz",
-      //   Gold: "Nehru",
-      //   Silver: "Azad",
-      //   Bronze: "LBS",
-      // },
-      {
-        Event: "Ad Design",
-        Gold: "RK",
-        Silver: "RP",
-        Bronze: "MS",
-      },
-    ],
-    Socult: [
-      {
-        Event: "Overall",
-        Gold: " ",
-        Silver: " ",
-        Bronze: " ",
       },
     ]
   }
