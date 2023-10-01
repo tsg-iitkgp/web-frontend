@@ -1,0 +1,18 @@
+.generatortitle{
+    color: #5EA9FF;
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 1vw;
+}
+
+
+.templatebutton{
+    width: 20vw;
+    font-size: 1.75vw;
+    padding: 0.75vw 0;
+    margin: 2vw auto;
+    background-color: #5EA9FF;
+    color: white;
+    border-radius: 0.75vw;
+    text-align: center;
+}

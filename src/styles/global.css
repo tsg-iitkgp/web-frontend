@@ -22,10 +22,17 @@ body * {
 .thumbnails img {
   width: 10% !important;
 }
-.layout {
+.layout{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
+}
+
+.adminlayout{
+  display: flex;
+  flex-direction: column;
+  background-color: #3C92F4;
   min-height: 100vh;
 }
 .active {

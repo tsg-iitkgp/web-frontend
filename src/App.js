@@ -33,6 +33,8 @@ import OpportunityPage from "./pages/Opportunities/OpportunityPage";
 import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
 import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
+import CertifGen2 from "./pages/newadmin/certifgen2/CertifGen2";
+import CertifGenerate from "./pages/newadmin/certifgen2/CertifGenerate"
 
 function App() {
   useEffect(() => {
@@ -69,6 +71,8 @@ function App() {
             path="/elections/candidates"
             component={ElectionCandidates}
           />
+          <Route exact path ="/newadmin/certifgen2" component = {CertifGen2}/>
+          <Route exact path ="/newadmin/certifgen2/certifgenerate" component = {CertifGenerate}/>
           <Route exact path="/contacts/pastBearers" component={Contacts} />
           <Route exact path="/contacts/staff" component={Contacts} />
           <Route exact path="/societies" component={Societies} />
