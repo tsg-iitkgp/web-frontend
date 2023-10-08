@@ -1,18 +1,119 @@
 .generatortitle{
     color: #5EA9FF;
-    font-size: 3vw;
+    font-size: 34px;
     font-weight: 600;
     margin: 1vw;
 }
 
 
 .templatebutton{
-    width: 20vw;
-    font-size: 1.75vw;
-    padding: 0.75vw 0;
-    margin: 2vw auto;
+    width: 230px;
+    font-size: 20px;
+    padding: 0.5vw 0;
+    margin: 1.5vw auto;
     background-color: #5EA9FF;
     color: white;
     border-radius: 0.75vw;
     text-align: center;
+}
+
+.selectedcertif_image{
+    width: 25vw;
+    margin: 1vw;
+}
+.exceltemplate{
+    width: 45vw;
+    margin: auto;
+    position: relative;
+}
+
+.selectedcertif_excel{
+    margin: 1.5vw 0 0 0;
+    width: 45vw;
+    border-radius: 10px 10px 0 0;
+}
+
+.excel_template{
+    color: white;
+    background-color: #5EA9FF;
+    width: 45vw;
+    padding: 1vw;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0vw auto 1vw;
+    border-radius: 0 0 10px 10px;
+}
+
+.exceltemplate:hover i{
+    opacity: 1;
+    transform: translate(-50%,0%);
+}
+
+.exceltemplate i{
+    font-size: 34px;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    background-color: white;
+    border: 2px solid #5EA9FF;
+    padding: 1vw;
+    border-radius: 50%;
+    transform: translate(-50%,100%);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.upload_btn{
+    width: 45vw;
+    color: #5EA9FF;
+    border: 2px solid #5EA9FF;
+    background-color: white;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 0.25vw;
+    margin: 0.25vw;
+}
+
+.upload_btn i{
+    margin: 0 7px;
+}
+
+.uploaded{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45vw;
+    border: 2px solid #5EA9FF;
+    background-color: #5EA9FF;
+    color:white;
+    font-size: 22px;
+    padding: 0.25vw 0.75vw;
+    margin: 0.25vw auto;
+    border-radius: 10px;
+}
+
+.uploaded_btn{
+    width: 42vw;
+    background-color: #5EA9FF;
+    border: none;
+    color: white;
+    text-align: left;
+}
+
+.delete_btn{
+    color: white;
+    background-color: #5EA9FF;
+    border: none;
+}
+
+.generate_btn{
+    background-color: #5EA9FF;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    width: 15vw;
+    padding: 0.25vw;
+    border: none;
+    margin: 1vw 70% 0vw;
+    border-radius: 10px;
 }

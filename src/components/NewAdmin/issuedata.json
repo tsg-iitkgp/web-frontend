@@ -1,0 +1,30 @@
+{
+    "GSOC": [
+        {
+            "id": 1,
+            "name": "Shivam",
+            "email": "abc@gmail.com",
+            "dateofissue": "03/10/23"
+        },
+        {
+            "id": 1,
+            "name": "Shivam",
+            "email": "abc@gmail.com",
+            "dateofissue": "03/10/23"
+        }
+    ],
+    "KWOC": [
+        {
+            "id": 1,
+            "name": "Rohan",
+            "email": "abc@gmail.com",
+            "dateofissue": "03/10/23"
+        },
+        {
+            "id": 1,
+            "name": "Rohan",
+            "email": "abc@gmail.com",
+            "dateofissue": "03/10/23"
+        }
+    ]
+}

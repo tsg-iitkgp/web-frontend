@@ -35,6 +35,7 @@ body * {
   background-color: #3C92F4;
   min-height: 100vh;
 }
+
 .active {
   background-color: transparent !important;
 }

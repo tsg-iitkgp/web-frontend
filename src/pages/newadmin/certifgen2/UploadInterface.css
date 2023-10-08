@@ -1,0 +1,187 @@
+html {
+    font-size: 20px;
+}
+
+.template-details {
+    margin: 2vw 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+}
+
+.name {
+    font-size: 0.8rem;
+}
+
+.box {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box > input {
+    border: 2px solid #5da9ff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1%;
+    width: 20vw;
+    border-radius: 5px;
+}
+
+.box > label{
+    font-size: 20px;
+}
+.file-upload{
+    width: 80vw;
+    margin: 3vw 0;
+    height: 50vh;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px dashed #5da9ff;
+    color: #5da9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25vw;
+    cursor: pointer;
+}
+.upl{
+    font-size: 10vw;
+    margin-bottom: 30px;
+}
+.upload-btn {
+    /* border: 2px solid wheat; */
+    border: none;
+    background-color: #5da9ff;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 25%;
+    height: 2.3rem;
+    margin-left: auto;
+    color: white;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background-color: #3694ff
+}
+
+.interface {
+    width: 80vw;
+    margin: 1.5em;
+    border-radius: 10px;
+    padding: 1% 1%;
+    /* border: 2px solid pink; */
+    height: auto;
+    min-height: 400px;
+    color: #000000;
+    background-color: rgb(202, 199, 199);
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+/* Back Button */
+
+.top {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 88vw;
+    /* font-size: 1.6em; */
+    font-family: "Poppins-SemiBold", Helvetica;
+    margin: 20px 50px;
+}
+
+/* a {
+    position: fixed;
+    bottom: 2px;
+} */
+
+.backsymbol {
+    margin: 5px;
+}
+
+.write {
+    margin: 5px;
+}
+
+.navbar {
+    margin-left: 50px;
+    border: 2px solid black;
+    width: 86%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .top {
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .top {
+        font-size: 18px;
+        margin: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        font-size: 16px;
+        margin: 13px;
+    }
+
+    .backsymbol {
+        margin-left: 2px;
+    }
+
+    .navb {
+        margin-left: 40px;
+        height: 85%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .top {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .navb {
+        margin-left: 30px;
+        height: 75%;
+    }
+}

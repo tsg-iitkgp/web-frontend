@@ -3,8 +3,6 @@ import React from 'react';
 import AdminLayout from "../../../components/AdminLayout";
 import { Link } from 'react-router-dom';
 
-
-
 const CertifGen2 = () => {
 
   document.title = "Certificate Generator | TSG";

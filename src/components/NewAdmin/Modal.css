@@ -1,0 +1,112 @@
+body.activemodal{
+    overflow: hidden;
+}
+.overlay
+{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(49,49,49,0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.cross{
+    display: flex;
+    color: #3c92f4;
+    z-index: 2;
+    position: absolute;
+    top: 18%;
+    right: 15%;
+    font-size: 2.3rem;
+}
+.cross:hover{
+    color: rgb(190, 36, 36);
+    cursor: pointer;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    min-height: 50vh;
+    border: 2px solid #3c92f4;
+    border-radius: 10px;
+    background-color: #ffffff;
+    z-index: 100;
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+.expandname{
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #3c92f4;
+    width: 100%;
+    height: 35px;
+}
+li{
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expandname ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    /* border: 2px solid red; */
+    height: 100%;
+}
+.expandname ul li{
+    border-right: 2px solid #ffffff;
+
+}
+.expanddetails{
+    font-size: 0.9rem;
+    color: black;
+    background-color: #ffffff;
+    width: 100%;
+}
+.expanddetails ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    height: 35px;
+}
+.expanddetails ul li{
+    border-right: 2px solid #3c92f4;
+    border-bottom: 2px solid #3c92f4;
+    margin: 0px !important;
+}
+.end{
+    border-right: none !important;
+}
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 14px;
+    }
+    .modal{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 12px;
+    }
+}
