@@ -365,7 +365,7 @@ export const secyData = {
             "Name": "Somya Bhadada",
             "RollNo": "22MF3IM24",
             "img": "22MF3IM24.jpg",
-            "Post": "Secretary Media and Public Relations Secretary",
+            "Post": "Secretary Media and Public Relations",
             "Contact": 6375327292,
             "Email": "bhadadasomya@gmail.com",
             "Insti Email": "bhadadasomya7@kgpian.iitkgp.ac.in",
