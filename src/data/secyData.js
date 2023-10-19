@@ -388,7 +388,7 @@ export const secyData = {
             "id": 33,
             "Name": "Bhumika Marmat",
             "RollNo": "22MA10015",
-            "Post": "Media and Content Writing Secretary ",
+            "Post": "Secretary Media and Content Writing ",
             "img": "22MA10015.jpg",
             "Contact": 8827033615,
             "Email": "mikabhu.matmar@gmail.com",
