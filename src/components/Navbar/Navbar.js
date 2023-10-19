@@ -129,15 +129,6 @@ export default function Navbar() {
               nominations
             </NavLink>
           </li> */}
-          <li className={Styles.navItem}>
-            <NavLink
-              to="/opportunities"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
-              Opportunities
-            </NavLink>
-          </li>
           {/* <li className={Styles.navItem}>
             <NavLink
               to="/gallery"
