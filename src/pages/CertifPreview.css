@@ -1,0 +1,17 @@
+.downloadBtn{
+    background-color: #F1C40F;
+    color: white;
+    padding: 0.25vw;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.downloadBtn:hover{
+    background-color: white;
+    color: #F1C40F;
+}
+
+.gymk_logo,.kgp_logo{
+    width: 5%;
+}

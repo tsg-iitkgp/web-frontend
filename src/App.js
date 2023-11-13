@@ -40,6 +40,7 @@ import ExistingTemplates from "./pages/newadmin/certifgen2/ExistingTemplates";
 import UploadTemplates from "./pages/newadmin/certifgen2/UploadInterface";
 import Canvas from "./pages/newadmin/certifgen2/Canvas";
 import ViewLog from "./pages/newadmin/certifgen2/ViewLog";
+import CertifPreview from "./pages/CertifPreview";
 
 function App() {
   useEffect(() => {
@@ -59,6 +60,7 @@ function App() {
           <Route exact path ="/newadmin/certifgen2/uploadtemplate" component = {UploadTemplates}/>
           <Route exact path ="/newadmin/certifgen2/uploadtemplate/canvas" component = {Canvas}/>
           <Route exact path = "/newadmin/certifgen2/viewlogs" component = {ViewLog} />
+          <Route exact path="/certifpreview" component={CertifPreview} />
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/results" component={Results} />
