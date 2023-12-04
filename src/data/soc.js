@@ -352,6 +352,26 @@ const soc = {
         category: "Welfare",
         Heads: [],
       },
+
+    {
+      name: "Kharagpur Robosoccer Students' Group",
+      description: "Kharagpur Robosoccer Students’ Group at IIT Kharagpur pioneers innovation in robotics with primary focus on Robosoccer, working on advanced open problems in robotics such as multi-agent coordination, robotic path planning, reinforcement learning, and more. They have been representing the institute and excelling on the global stage in various prestigious robotics competitions including RoboCup and FIRA RoboWorld Cup. KRSSG also fosters hands-on robotics excellence through robosoccer competitions known as Code-O Soccer.",
+      facebook_link: "https://www.facebook.com/krssg/",
+      wiki_link: "https://wiki.metakgp.org/w/Kharagpur_Robosoccer_Students'_Group",
+      shortform: "krssg",
+      category: "Tech",
+      Heads: [],
+    },
+
+    {
+      name: "Grimoire of Code",
+      description: "Grimoire of Code, IIT Kharagpur, abbreviated as GoC, is IIT Kharagpur's competitive programming club involving a group of passionate competitive programmers. The club conducts global and intra-IIT competitive programming contests to enrich competitive programming among peers. The club also conducts workshops for students on campus, fostering the competitive programming culture within IIT Kharagpur.",
+      facebook_link: "https://www.facebook.com/goc.iitkgp/",
+      wiki_link: "",
+      shortform: "goc",
+      category: "Tech",
+      Heads: [],
+    },
   ],
 };
 export default soc;
