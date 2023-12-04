@@ -372,6 +372,26 @@ const soc = {
       category: "Tech",
       Heads: [],
     },
+
+    {
+      name: "Kharagpur Data Analytics Group",
+      description: "Aimed at bringing Data Analytics and Machine Learning enthusiasts together under the umbrella of a single Society.",
+      facebook_link: "https://www.facebook.com/kgpdag",
+      wiki_link: "",
+      shortform: "kdag",
+      category: "Tech",
+      Heads: [],
+    },
+
+    {
+      name: "Computer Graphics Society",
+      description: "CGS: Computer Graphics Society, IIT Kharagpur. We believe that technology should serve as a tool to enhance creativity, rather than limit it. Our goal is to empower artists and creators with innovative tools and techniques that allow them to bring their visions to life in new and exciting ways. Our work involves innovative projects in Game development, 3D/2D graphics, AR/VR simulations, advanced visualizations through scripting and graphics programming, fostering a dynamic synergy between academia, industry, and creative exploration.",
+      facebook_link: "https://www.facebook.com/cgsiitkgp",
+      wiki_link: "",
+      shortform: "cgs",
+      category: "Tech",
+      Heads: [],
+    },
   ],
 };
 export default soc;
