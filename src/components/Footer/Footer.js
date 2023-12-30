@@ -5,7 +5,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 export default function Footer() {
   const linksList = [
     {
-      heading: "Quick Links",
+      // heading: "Quick Links",
       links: [
         {
           title: "Counselling Centre",
@@ -27,10 +27,15 @@ export default function Footer() {
           href: "http://www.hmc.iitkgp.ac.in/web/",
           target: "_blank",
         },
+        {
+          title:"Apna IIT KGP(Only on campus network)",
+          href: "http://apna.iitkgp.ac.in/",
+          target:"_blank",
+        }
       ],
     },
     {
-      heading: "Quick Links",
+      // heading: "Quick Links",
       links: [
         {
           title: "ERP",
@@ -52,6 +57,16 @@ export default function Footer() {
           title: "Admin Login",
           href: "/login",
           target: "_self",
+        },
+        {
+          title: "CIC",
+          href: "http://www.cic.iitkgp.ac.in/",
+          target: "_blank",  
+        },
+        {
+          title: "Library",
+          href: "https://library.iitkgp.ac.in/",
+          target: "_blank",  
         }
       ],
     },
@@ -106,7 +121,7 @@ export default function Footer() {
           {linksList.map((linkGroup, index) => {
             return (
               <div className={Styles.linkGroup} key={index}>
-                <h2>{linkGroup.heading}</h2>
+                {/* <h2>{linkGroup.heading}</h2> */}
                 <ul className={Styles.links}>
                   {linkGroup.links.map((link, index) => {
                     return (
