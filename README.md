@@ -10,8 +10,9 @@
 <br />
 <p align="center">
   <a href="https://github.com/tsg-iitkgp/web-frontend">
-    <img src="rm-img/gymkhana-logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86282911/293505563-4c4ecabf-bbee-4cc3-86bc-0500f890f867.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA/20231231/us-east-1/s3/aws4_request&X-Amz-Date=20231231T123604Z&X-Amz-Expires=300&X-Amz-Signature=a3645b7ca15972407adbba4131f12f86922a5213688aaacb05db73d6ff60d213&X-Amz-SignedHeaders=host&actor_id=86282911&key_id=0&repo_id=406055266" alt="Logo" width="80" height="80">
   </a>
+
 
   <h3 align="center">
     TSG Site Frontend
