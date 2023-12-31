@@ -43,7 +43,6 @@
 - [Project Structure](#project-structure)
   - [File Structure](#file-structure)
   - [Libraries/Frameworks Used](#librariesframeworks-used)
-- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -95,12 +94,6 @@ This project has been built with the following technologies.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/tsg-iitkgp/web-frontend/issues) for a list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -117,17 +110,16 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- CONTACT -->
 ## Contact
-For any ideas, suggestions or queries, please mail us at tech.coordi@iitkgp.ac.in
+
+> [!Note]
+> For any ideas, suggestions or queries regarding the website, mail us at tech.coordi@iitkgp.ac.in
 
 #### Present Technology Coordinator(s)
 
-_Name:_ **Arpit Bhardwaj**<br>
-_Email:_ **arpitbhardwaj.iitkgp@gmail.com**<br>
-_Phone:_ **+91-9761667733**
-
-_Name:_ **Parth Gupta**<br>
-_Email:_ **guptaparth.iitkgp@gmail.com**<br>
-_Phone:_ **+91-7620821543**
+Name|Email|Phone No.
+-----|-----|---------
+Arpit Bhardwaj | arpitbhardwaj.iitkgp@gmail.com | +91-9761667733
+Parth Gupta | guptaparth.iitkgp@gmail.com | +91-7620821543
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -137,9 +129,6 @@ _Phone:_ **+91-7620821543**
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
