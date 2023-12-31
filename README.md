@@ -6,8 +6,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -34,33 +32,36 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
+<details>
+
+<summary>
+Table of Contents
+</summary>
+
 - [Development](#development)
-  - [Setting Up Locally](#setting-up-locally)
-- [Project Structure](#project-structure)
-  - [File Structure](#file-structure)
   - [Libraries/Frameworks Used](#librariesframeworks-used)
-- [Contributing](#contributing)
+  - [File Structure](#file-structure)
+  - [Setting Up Locally](#setting-up-locally)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
-<p align="right">(<a href="#top">back to top</a>)</p>
+- [Additional Documentation](#additional-documentaiton)
+
+</details>
 
 <!-- Development -->
 ## Development
 
-### Setting Up Locally
-- Install [NodeJS](https://nodejs.org/en).
-- Install or enable [Yarn](https://yarnpkg.com/getting-started/install).
-- Clone this repository.
-- Run `yarn install` in the cloned repository to download all dependencies.
-- Run `yarn start` to start a local development server.
-<p align="right">(<a href="#top">back to top</a>)</p>
+#### Libraries/Frameworks Used
 
-## Project Structure
-### File Structure
+This project has been built with the following technologies.
+
+- [React](https://reactjs.dev)
+- [Bootstrap](https://getbootstrap.com/)
+- [React Router](https://github.com/remix-run/react-router)
+
+#### File Structure
+
 ```
 .
 ├── public
@@ -73,6 +74,7 @@
    ├── styles
    └── App.js
 ```
+
 - `public`: Contains public files such as `index.html`.
 - `src`: Contains source files (JS, CSS, assets, etc.)
   - `components`: Contains reusable react components.
@@ -84,27 +86,13 @@
   - `utils`: Contains commonly used util functions.
   - `App.js`: Contains the top-level `App` component.
 
-### Libraries/Frameworks Used
+#### Setting Up Locally
 
-This project has been built with the following technologies.
-* [React](https://reactjs.dev)
-* [Bootstrap](https://getbootstrap.com/)
-* [React Router](https://github.com/remix-run/react-router)
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Install [NodeJS](https://nodejs.org/en).
+- Install or enable [Yarn](https://yarnpkg.com/getting-started/install).
+- Clone this repository.
+- Run `yarn install` in the cloned repository to download all dependencies.
+- Run `yarn start` to start a local development server.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -112,24 +100,34 @@ Contributions are what make the open source community such an amazing place to b
 ## Contact
 
 > [!Note]
-> For any ideas, suggestions or queries regarding the website, mail us at tech.coordi@iitkgp.ac.in
+> For any ideas, suggestions or queries regarding the website, mail us at <tech.coordi@iitkgp.ac.in>
 
 #### Present Technology Coordinator(s)
 
 Name|Email|Phone No.
 -----|-----|---------
-Arpit Bhardwaj | arpitbhardwaj.iitkgp@gmail.com | +91-9761667733
-Parth Gupta | guptaparth.iitkgp@gmail.com | +91-7620821543
+[Arpit Bhardwaj](https://linktr.ee/proffapt) | <arpitbhardwaj.iitkgp@gmail.com> | +91-9761667733
+[Parth Gupta](https://github.com/ParthGupta2510) | <guptaparth.iitkgp@gmail.com> | +91-7620821543
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
+
+- [Img Shields](https://shields.io)
+- [GitHub Pages](https://pages.github.com)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Additional Documentation
+
+- [Changelogs](/.github/CHANGELOG.md)
+- [License](/LICENSE)
+- [Security Policy](/.github/SECURITY.md)
+- [Code of Conduct](/.github/CODE_OF_CONDUCT.md)
+- [Contribution Guidelines](/.github/CONTRIBUTING.md)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
