@@ -1,3 +1,5 @@
+//Footer.js
+
 import React from "react";
 import Styles from "./footer.module.css";
 import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
@@ -5,7 +7,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 export default function Footer() {
   const linksList = [
     {
-      heading: "Quick Links",
+      // heading: "Quick Links",
       links: [
         {
           title: "Counselling Centre",
@@ -23,14 +25,20 @@ export default function Footer() {
           target: "_blank",
         },
         {
-          title: "Hall Management Centre",
+          title: "HMC",
           href: "http://www.hmc.iitkgp.ac.in/web/",
           target: "_blank",
         },
+        {
+          title: "Library",
+          href: "https://library.iitkgp.ac.in/",
+          target: "_blank",  
+        }
+        
       ],
     },
     {
-      heading: "Quick Links",
+      // heading: "Quick Links",
       links: [
         {
           title: "ERP",
@@ -49,9 +57,16 @@ export default function Footer() {
           target: "_blank",
         },
         {
-          title: "Admin Login",
-          href: "/login",
-          target: "_self",
+          title: "CIC",
+          href: "http://www.cic.iitkgp.ac.in/",
+          target: "_blank",  
+        },
+        {
+          title:"Apna IIT",
+          description:"On campus network",
+          class:"tooltiptext",
+          href: "http://apna.iitkgp.ac.in/",
+          target:"_blank",
         }
       ],
     },
@@ -106,14 +121,15 @@ export default function Footer() {
           {linksList.map((linkGroup, index) => {
             return (
               <div className={Styles.linkGroup} key={index}>
-                <h2>{linkGroup.heading}</h2>
+                {/* <h2>{linkGroup.heading}</h2> */}
                 <ul className={Styles.links}>
                   {linkGroup.links.map((link, index) => {
                     return (
-                      <li key={index}>
+                     <li key={index}>
                         <a target={link.target} href={link.href} rel="noreferrer">
                           {link.title}
                         </a>
+                        {link.description ? <span className={link.class}>{link.description}</span> : <></>}
                       </li>
                     );
                   })}
