@@ -94,6 +94,7 @@ export default function Navbar() {
               to={NaN}
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
+              style={{cursor: 'default'}}
             >
               Results
             </NavLink>
@@ -108,7 +109,7 @@ export default function Navbar() {
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
             >
-              Hall of Fame
+              Awards
             </NavLink>
           </li>
           <li className={Styles.navItem}>
@@ -139,7 +140,7 @@ export default function Navbar() {
             </NavLink>
           </li> */}
           <li className={Styles.navItem}>
-            {false ? <NavLink>TSG Blog</NavLink> : <a href="https://tsgblog.iitkgp.ac.in/" target="_blank" rel="noreferrer" >TSG Blog</a>}
+            {false ? <NavLink>TSG Blog</NavLink> : <a href="https://tsgblog.iitkgp.ac.in/" target="_blank" rel="noreferrer" >Blogs</a>}
           </li>
           <li className={Styles.navItem}>
             <NavLink
@@ -151,7 +152,7 @@ export default function Navbar() {
             </NavLink>
           </li>
 
-          {window.innerWidth > 768 && (
+          {/* {window.innerWidth > 768 && (
             <li
               className={Styles.navItem}
               onClick={handleNotificationClick}
@@ -179,7 +180,7 @@ export default function Navbar() {
                 </div>
               )}
             </li>
-          )}
+          )} */}
         </ul>
       </nav>
     </div>
