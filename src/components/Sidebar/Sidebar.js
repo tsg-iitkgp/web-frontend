@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Styles from "./sidebar.module.css";
+import { NavLink } from "react-router-dom";
 export default function Sidebar({ itemsList }) {
   const [active, setActive] = useState(false);
   function onMouseEnter() {
@@ -19,14 +20,25 @@ export default function Sidebar({ itemsList }) {
       >
         {itemsList.map((item, index) => {
           return (
-            <li key={index}>
-              <a
-                href={item.route}
-                className={Styles.sidebarItem}
-                activeClassName={Styles.active}
-              >
-                {item.title}
-              </a>
+            // <li className={Styles.navItem} key={index}>
+            //   <a
+            //     href={item.route}
+            //     className={Styles.sidebarItem}
+            //     activeClassName={Styles.activeLink}
+            //   >
+            //     {item.title}
+            //   </a>
+            // </li>
+
+
+            <li className={Styles.navItem}>
+              <NavLink
+              to={item.route}
+              className={Styles.sidebarItem}
+              activeClassName={Styles.acitveLink}
+            >
+              {item.title}
+            </NavLink>
             </li>
           );
         })}

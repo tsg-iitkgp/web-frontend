@@ -68,7 +68,7 @@
 .sidebar::-webkit-scrollbar {
   display: none;
 }
-a.sidebarItem {
+.sidebarItem {
   width: 100%;
   margin: auto;
   color: white;
@@ -100,6 +100,12 @@ a.sidebarItem {
 .sidebarItem:hover {
   background-position: 0;
 }
+
+.navItem .acitveLink {
+  background-color: #f1c40f;
+  color: blue;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .sidebar {
