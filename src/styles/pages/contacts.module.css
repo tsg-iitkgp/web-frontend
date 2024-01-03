@@ -13,16 +13,16 @@ body {
   text-align: center;
 }
 .maincontainer {
-  display: flex;
-  max-height: 90vh;
+  /*display: flex;*/
+  /*max-height: 120vh;*/
   width: 100%;
   margin-top: 10vh;
 }
 .content {
   padding: 2rem;
   margin-right: 0.05 rem;
-  max-height: 90vh;
-  overflow-y: scroll;
+  /*max-height: 90vh;
+  overflow-y: scroll;*/
 }
 .postHeading {
   font-size: 2.25rem;
@@ -96,4 +96,17 @@ body {
     margin-top: 11vh;
     min-height: 90vh;
   }
+}
+
+.maincontainer h3{
+  color: white;
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-size: 48px;
+}
+
+.sidebar{
+  padding-left: 100px;
+  padding-right: 100px;
 }

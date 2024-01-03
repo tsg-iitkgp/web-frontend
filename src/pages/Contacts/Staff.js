@@ -5,7 +5,7 @@ import staffData from "../../data/staffData";
 export default function Staff() {
   return (
     <div>
-      <h2 className={Styles.postHeading}>Staff</h2>
+      {/* <h2 className={Styles.postHeading}>Staff</h2> */}
       <div className={Styles.multipleCards}>
         {staffData.data.map((member, index) => {
           return (

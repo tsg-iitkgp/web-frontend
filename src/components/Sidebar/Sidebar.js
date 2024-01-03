@@ -12,11 +12,12 @@ export default function Sidebar({ itemsList }) {
   return (
     <>
       <ul
-        className={
-          active ? `${Styles.sidebar} ${Styles.active}` : `${Styles.sidebar}`
-        }
-        onMouseEnter={() => onMouseEnter()}
-        onMouseLeave={() => onMouseLeave()}
+        // className={
+        //   active ? `${Styles.sidebar} ${Styles.active}` : `${Styles.sidebar}`
+        // }
+        // onMouseEnter={() => onMouseEnter()}
+        // onMouseLeave={() => onMouseLeave()}
+        className="tabs"
       >
         {itemsList.map((item, index) => {
           return (
@@ -30,16 +31,34 @@ export default function Sidebar({ itemsList }) {
             //   </a>
             // </li>
 
+            // ------NEW ONE-----
+            // <li className={Styles.navItem}>
+            //   <NavLink
+            //   to={item.route}
+            //   className={Styles.sidebarItem}
+            //   activeClassName={Styles.acitveLink}
+            // >
+            //   {item.title}
+            // </NavLink>
+            // </li>
 
-            <li className={Styles.navItem}>
+
+
+            <li
+            className={Styles.navItem}>
               <NavLink
-              to={item.route}
-              className={Styles.sidebarItem}
-              activeClassName={Styles.acitveLink}
-            >
+                to={item.route}
+                className={Styles.sidebarItem}
+                activeClassName={Styles.acitveLink}
+              >
               {item.title}
-            </NavLink>
+              </NavLink>
             </li>
+
+
+
+
+
           );
         })}
         <div

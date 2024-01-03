@@ -5,7 +5,7 @@ import { secyData } from "../../data/secyData";
 export default function Secretaries() {
   return (
     <div>
-      <h2 className={Styles.postHeading}>Secretaries</h2>
+      {/* <h2 className={Styles.postHeading}>Secretaries</h2> */}
       <div className={Styles.multipleCards}>
         {secyData.data.map((member, index) => {
           return (

@@ -52,7 +52,10 @@ function Contacts() {
   return (
     <Layout>
       <div className={Styles.maincontainer}>
-        <Sidebar itemsList={contactsSidebarList} />
+        <h3>Contacts</h3>
+        <div className={Styles.sidebar}>
+          <Sidebar itemsList={contactsSidebarList} />
+        </div>
 
         <div className={Styles.content}>
           {/* Contacts of the page on basis of route */}
