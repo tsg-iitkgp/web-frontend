@@ -22,24 +22,24 @@ export default function CurrentOfficeBearers() {
     <>
       <div className={Styles.contactsContainer} data-aos="zoom-in-up">
         <div>
-        <h2 className={Styles.postHeading}>President</h2>
+          <h2 className={Styles.postHeading}>President</h2>
           <ContactCard
             name={President.Name}
             designation={President.Post}
-            email={President.Email}
             facebook={President.Facebook}
             linkedin={President.LinkedIn}
+            email={President.Email}
             imgSrc={`/data/media/images/contacts/${President.img}`}
           />
         </div>
         <div>
-        <h2 className={Styles.postHeading}>Honorary Treasurer</h2>
+          <h2 className={Styles.postHeading}>Honorary Treasurer</h2>
           <ContactCard
             name={HonoraryTreasurer.Name}
             designation={HonoraryTreasurer.Post}
-            email={HonoraryTreasurer.Email}
             facebook={HonoraryTreasurer.Facebook}
             linkedin={HonoraryTreasurer.LinkedIn}
+            email={HonoraryTreasurer.Email}
             imgSrc={`/data/media/images/contacts/${HonoraryTreasurer.img}`}
           />
         </div>
@@ -62,9 +62,9 @@ export default function CurrentOfficeBearers() {
                 <ContactCard
                   name={member.Name}
                   designation={member.Post}
-                  email={member.Email}
                   facebook={member.Facebook}
                   linkedin={member.LinkedIn}
+                  email={member.Email}
                   imgSrc={`/data/media/images/contacts/${member.img}`}
                 />
               );
