@@ -6,8 +6,8 @@ export default function CurrentOfficeBearers() {
   const President = contactsData.data.find(
     (contact) => contact.Post === "President"
   );
-  const HonraryTreasurer = contactsData.data.find(
-    (contact) => contact.Post === "Honrary Treasurer"
+  const HonoraryTreasurer = contactsData.data.find(
+    (contact) => contact.Post === "Honorary Treasurer"
   );
   const VicePresident = contactsData.data.find(
     (contact) => contact.Post === "Vice President"
@@ -33,14 +33,14 @@ export default function CurrentOfficeBearers() {
           />
         </div>
         <div>
-        <h2 className={Styles.postHeading}>Honrary Treasurer</h2>
+        <h2 className={Styles.postHeading}>Honorary Treasurer</h2>
           <ContactCard
-            name={HonraryTreasurer.Name}
-            designation={HonraryTreasurer.Post}
-            email={HonraryTreasurer.Email}
-            facebook={HonraryTreasurer.Facebook}
-            linkedin={HonraryTreasurer.LinkedIn}
-            imgSrc={`/data/media/images/contacts/${HonraryTreasurer.img}`}
+            name={HonoraryTreasurer.Name}
+            designation={HonoraryTreasurer.Post}
+            email={HonoraryTreasurer.Email}
+            facebook={HonoraryTreasurer.Facebook}
+            linkedin={HonoraryTreasurer.LinkedIn}
+            imgSrc={`/data/media/images/contacts/${HonoraryTreasurer.img}`}
           />
         </div>
         <div>

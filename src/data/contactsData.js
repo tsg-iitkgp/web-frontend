@@ -14,10 +14,10 @@ export default {
             "Institute mail ids": "",
         },
         {
-            "RollNo": "Honrary Treasurer",
+            "RollNo": "Honorary Treasurer",
             "Name": "Professor Jayanta Chakraborty",
-            "Post": "Honrary Treasurer",
-            "img": "HonraryTreasurer.png",
+            "Post": "Honorary Treasurer",
+            "img": "HonoraryTreasurer.png",
             "Facebook": "https://www.facebook.com/jayanta.chakraborty.14855",
             "LinkedIn": "https://www.linkedin.com/in/dr-jayanta-chakraborty-3567a913/",
             "Contact": "",
