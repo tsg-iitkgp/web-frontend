@@ -15,7 +15,7 @@ const years = [
   "2015-16",
 ];
 function Awards() {
-  const [currentTab, setCurrentTab] = useState("tech");
+  const [currentTab, setCurrentTab] = useState("socult");
   const [currentYear, setCurrentYear] = useState("2022-23");
 
   const handleTabChange = (s) => {
@@ -30,25 +30,25 @@ function Awards() {
         <title>Hall of Fame</title>
       </h1>
       <section className="awards content" data-aos="zoom-in-up">
-        <h2 className="awards_h2">TSG Awards!</h2>
+        <h2 className="awards_h2">HALL OF FAME</h2>
 
         <div className="tabs">
           <div
-            className={`tab ${currentTab === "socult" ? "active" : ""}`}
+            className={`tab${currentTab === "socult" ? "active" : ""}`}
             onClick={() => handleTabChange("socult")}
             style={{ display: "flex", justifyContent: "center" }}
           >
             <button className="btn_interiit">Social &amp; Cultural</button>
           </div>
           <div
-            className={`tab ${currentTab === "sports" ? "active" : ""}`}
+            className={`tab${currentTab === "sports" ? "active" : ""}`}
             onClick={() => handleTabChange("sports")}
             style={{ display: "flex", justifyContent: "center" }}
           >
             <button className="btn_interiit">Sports &amp; Games</button>
           </div>
           <div
-            className={`tab ${currentTab === "tech" ? "active" : ""}`}
+            className={`tab${currentTab === "tech" ? "active" : ""}`}
             onClick={() => handleTabChange("tech")}
             style={{ display: "flex", justifyContent: "center" }}
           >
@@ -56,7 +56,7 @@ function Awards() {
           </div>
           {Object.keys(awardsData[currentYear]).length === 4 && (
             <div
-              className={`tab ${currentTab === "specialRecog" ? "active" : ""}`}
+              className={`tab${currentTab === "specialRecog" ? "active" : ""}`}
               onClick={() => handleTabChange("specialRecog")}
               style={{ display: "flex", justifyContent: "center" }}
             >

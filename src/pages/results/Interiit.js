@@ -31,7 +31,7 @@ export default function InterIIT() {
         </h2>
         <div className="tabs">
           <div
-            className={`tab ${currentTab === "Sports" ? "active" : ""}`}
+            className={`tab${currentTab === "Sports" ? "active" : ""}`}
             onClick={() => handleTabChange("Sports")}
             style={{display: "flex", justifyContent: "center"}}
           >
@@ -39,14 +39,14 @@ export default function InterIIT() {
           </div>
 
           <div
-            className={`tab ${currentTab === "Technology" ? "active" : ""}`}
+            className={`tab${currentTab === "Technology" ? "active" : ""}`}
             onClick={() => handleTabChange("Technology")}
             style={{display: "flex", justifyContent: "center"}}
           >
             <button className="btn_interiit">Technology</button>
           </div>
           <div
-            className={`tab ${currentTab === "Socult" ? "active" : ""}`}
+            className={`tab${currentTab === "Socult" ? "active" : ""}`}
             onClick={() => handleTabChange("Socult")}
             style={{display: "flex", justifyContent: "center"}}
           >

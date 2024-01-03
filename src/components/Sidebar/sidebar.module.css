@@ -68,7 +68,7 @@
 .sidebar::-webkit-scrollbar {
   display: none;
 }
-a.sidebarItem {
+.sidebarItem {
   width: 100%;
   margin: auto;
   color: white;
@@ -92,14 +92,23 @@ a.sidebarItem {
   font-weight: 700;
   border: 2px solid #f1c40f;
   color: #fff;
-  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  /* background-image: linear-gradient(45deg, #e5c851 50%, transparent 50%); */
+  /* background-color: #e5c851 ; */
   background-position: 100%;
   background-size: 400%;
   transition: background 300ms ease-in-out;
 }
 .sidebarItem:hover {
   background-position: 0;
+  color: white;
+  background-color: #eed2607a ;
 }
+
+.navItem .acitveLink {
+  background-color: #f1c40f;
+  color: blue;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .sidebar {
@@ -145,4 +154,8 @@ a.sidebarItem {
   .arrowButton {
     display: none;
   }
+}
+
+.tabs{
+  display: flex;
 }

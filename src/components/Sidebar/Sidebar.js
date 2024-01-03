@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Styles from "./sidebar.module.css";
+import { NavLink } from "react-router-dom";
 export default function Sidebar({ itemsList }) {
   const [active, setActive] = useState(false);
   function onMouseEnter() {
@@ -11,23 +12,53 @@ export default function Sidebar({ itemsList }) {
   return (
     <>
       <ul
-        className={
-          active ? `${Styles.sidebar} ${Styles.active}` : `${Styles.sidebar}`
-        }
-        onMouseEnter={() => onMouseEnter()}
-        onMouseLeave={() => onMouseLeave()}
+        // className={
+        //   active ? `${Styles.sidebar} ${Styles.active}` : `${Styles.sidebar}`
+        // }
+        // onMouseEnter={() => onMouseEnter()}
+        // onMouseLeave={() => onMouseLeave()}
+        className="tabs"
       >
         {itemsList.map((item, index) => {
           return (
-            <li key={index}>
-              <a
-                href={item.route}
+            // <li className={Styles.navItem} key={index}>
+            //   <a
+            //     href={item.route}
+            //     className={Styles.sidebarItem}
+            //     activeClassName={Styles.activeLink}
+            //   >
+            //     {item.title}
+            //   </a>
+            // </li>
+
+            // ------NEW ONE-----
+            // <li className={Styles.navItem}>
+            //   <NavLink
+            //   to={item.route}
+            //   className={Styles.sidebarItem}
+            //   activeClassName={Styles.acitveLink}
+            // >
+            //   {item.title}
+            // </NavLink>
+            // </li>
+
+
+
+            <li
+            className={Styles.navItem}>
+              <NavLink
+                to={item.route}
                 className={Styles.sidebarItem}
-                activeClassName={Styles.active}
+                activeClassName={Styles.acitveLink}
               >
-                {item.title}
-              </a>
+              {item.title}
+              </NavLink>
             </li>
+
+
+
+
+
           );
         })}
         <div

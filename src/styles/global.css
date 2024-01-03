@@ -31,6 +31,10 @@ body * {
 .active {
   background-color: transparent !important;
 }
+
+.activeSide{
+  background-color: blue;
+}
 .contacts_content__1wT_L {
   padding: 2 rem;
   margin-right: 0.05 rem;

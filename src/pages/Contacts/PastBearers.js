@@ -109,7 +109,7 @@ export default function PastBearers() {
         {(senateData[currentYear][currentTab]["profs"] !== undefined ||
           currentTab === "specialRecog") && (
           <>
-            <div className={Styles.shead1}> Past Office Bearers </div>
+            {/* <div className={Styles.shead1}> Past Office Bearers </div> */}
             <div className="cards">
               {currentTab !== "specialRecog"
                 ? senateData[currentYear][currentTab]["profs"]?.map(
