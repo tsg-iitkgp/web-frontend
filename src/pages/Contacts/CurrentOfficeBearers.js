@@ -6,6 +6,9 @@ export default function CurrentOfficeBearers() {
   const President = contactsData.data.find(
     (contact) => contact.Post === "President"
   );
+  const HonraryTreasurer = contactsData.data.find(
+    (contact) => contact.Post === "Honrary Treasurer"
+  );
   const VicePresident = contactsData.data.find(
     (contact) => contact.Post === "Vice President"
   );
@@ -19,7 +22,7 @@ export default function CurrentOfficeBearers() {
     <>
       <div className={Styles.contactsContainer} data-aos="zoom-in-up">
         <div>
-          <h2 className={Styles.postHeading}>President</h2>
+        <h2 className={Styles.postHeading}>President</h2>
           <ContactCard
             name={President.Name}
             designation={President.Post}
@@ -27,6 +30,17 @@ export default function CurrentOfficeBearers() {
             facebook={President.Facebook}
             linkedin={President.LinkedIn}
             imgSrc={`/data/media/images/contacts/${President.img}`}
+          />
+        </div>
+        <div>
+        <h2 className={Styles.postHeading}>Honrary Treasurer</h2>
+          <ContactCard
+            name={HonraryTreasurer.Name}
+            designation={HonraryTreasurer.Post}
+            email={HonraryTreasurer.Email}
+            facebook={HonraryTreasurer.Facebook}
+            linkedin={HonraryTreasurer.LinkedIn}
+            imgSrc={`/data/media/images/contacts/${HonraryTreasurer.img}`}
           />
         </div>
         <div>
