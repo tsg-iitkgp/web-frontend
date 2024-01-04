@@ -5,6 +5,7 @@ import Styles from '../../styles/components/form.module.css';
 import host from '../../apiService';
 
 function ContactForm() {
+  document.title = "Contact Us | TSG"
   const [name, setName] = useState('');
   const [rollNumber, setRollNumber] = useState('');
   const [email, setEmail] = useState('');
@@ -60,39 +61,6 @@ function ContactForm() {
         <div className="background_overlay">
           <div className="container_cf">
             <div className="frm--create-account">
-              {/* <h1 className="frm__title">REACH OUT TO US!</h1>
-              <form action="" className="frm__create__account">
-                <div className="frm-group">
-                  <label for="email1">Full Name</label>
-                  <input type="text" id="email1" required />
-                </div>
-                <div className="frm-group inline">
-                  <div className="frm-group">
-                    <label for="nick1">Email ID</label>
-                    <input type="text" id="nick1" required />
-                  </div>
-                  <div className="frm-group">
-                    <label for="email1">Mobile Number</label>
-                    <input type="tel" id="email1" required />
-                  </div>
-                  <div className="frm-group">
-                    <label for="email1">Subject</label>
-                    <input type="text" id="email1" required />
-                  </div>
-                  <div className="frm-group">
-                    <label for="email1">Message</label>
-                    <input type="textarea" id="email1" required />
-                  </div>
-                </div>
-                <div className="frm-group">
-                  <input
-                    type="submit"
-                    className="frm__btn-primary"
-                    value="SEND"
-                    onclick="return false;"
-                  />
-                </div>
-              </form> */}
               <div className={Styles.formContainer}>
                 <div className={Styles.header}>
                   <h1>
@@ -162,8 +130,8 @@ function ContactForm() {
                 <div className={Styles.footer}>
                   <p>
                     For any technical queries, please mail at {' '}
-                    <a href="mailto:tech.tsgiitkgp@gmail.com">
-                      tech.tsgiitkgp@gmail.com
+                    <a href="mailto:tech.coordi@iitkgp.ac.in">
+                      tech.coordi@iitkgp.ac.in
                     </a>
                   </p>
                 </div>
