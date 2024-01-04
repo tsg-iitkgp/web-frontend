@@ -24,7 +24,7 @@ export default function Home() {
         {/* Committees Section */}
         <CommitteesHome />
         {/* Socities Section */}
-        <Societies />
+        {/* <Societies /> */}
       </div>
     </Layout>
   );

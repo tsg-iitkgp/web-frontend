@@ -1,12 +1,10 @@
+//Footer.js
 import React from "react";
 import Styles from "./footer.module.css";
 import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   const linksList = [
-    {
-      heading: "Quick Links",
-      links: [
         {
           title: "Counselling Centre",
           href: "http://www.counsellingcentre.iitkgp.ac.in/",
@@ -23,15 +21,16 @@ export default function Footer() {
           target: "_blank",
         },
         {
-          title: "Hall Management Centre",
+          title: "HMC",
+          description : "Hall Management Center",
           href: "http://www.hmc.iitkgp.ac.in/web/",
           target: "_blank",
         },
-      ],
-    },
-    {
-      heading: "Quick Links",
-      links: [
+        {
+          title: "Library",
+          href: "https://library.iitkgp.ac.in/",
+          target: "_blank",  
+        },
         {
           title: "ERP",
           href: "https://erp.iitkgp.ac.in/SSOAdministration/login.htm?sessionToken=F90F79C925A0FE0DC48AE7CBFDE3D20A.worker1&requestedUrl=https://erp.iitkgp.ac.in/IIT_ERP3/",
@@ -49,13 +48,20 @@ export default function Footer() {
           target: "_blank",
         },
         {
-          title: "Admin Login",
-          href: "/login",
-          target: "_self",
-        }
-      ],
-    },
-  ];
+          title: "CIC",
+          href: "http://www.cic.iitkgp.ac.in/",
+          target: "_blank", 
+          description : "Computer & Informatics Center", 
+        },
+        {
+          title:"Apna IIT",
+          description:"Accesible on campus network",
+          class:"tooltiptext",
+          href: "http://apna.iitkgp.ac.in/",
+          target:"_blank",
+        }  
+      ]
+
   return (
     <footer>
       <div className={Styles.footerContainer}>
@@ -103,23 +109,21 @@ export default function Footer() {
           </div>
         </div>
         <div className={Styles.linksContainer}>
-          {linksList.map((linkGroup, index) => {
-            return (
-              <div className={Styles.linkGroup} key={index}>
-                <h2>{linkGroup.heading}</h2>
-                <ul className={Styles.links}>
-                  {linkGroup.links.map((link, index) => {
-                    return (
-                      <li key={index}>
-                        <a target={link.target} href={link.href} rel="noreferrer">
-                          {link.title}
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            );
+          {linksList.map((link , index)=>{
+            return(
+              <p 
+                key={index} 
+              >
+                <a 
+                  target={link.target} 
+                  href={link.href} 
+                  rel="noreferrer" 
+                >
+                  {link.title}
+                </a>
+                {link.description ? <span className={link.class}>{link.description}</span> : <></>} 
+              </p>
+            )
           })}
         </div>
         <div className={Styles.contactSection}>
@@ -130,6 +134,12 @@ export default function Footer() {
           </a>
         </div>
       </div>
+      <div className={Styles.footerLine}></div>
+      <div>
+        <p className={Styles.copyright}>&copy; Technology Students' Gymkhana, IIT Kharagpur &diams; <a href="https://github.com/tsg-iitkgp/web-frontend" target="_blank" >Source Code</a></p>
+      </div>
     </footer>
   );
 }
+
+
