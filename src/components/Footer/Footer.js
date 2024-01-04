@@ -1,5 +1,5 @@
 //Footer.js
-import React , {useState} from "react";
+import React from "react";
 import Styles from "./footer.module.css";
 import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 
