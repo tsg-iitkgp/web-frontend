@@ -10,7 +10,7 @@ import { useHistory } from "react-router-dom";
 import Dropdown from "./Dropdown.js";
 
 export default function Navbar() {
-  //using Custom Hook useNavbar for logic of navbarClass
+  // Custom Hook useNavbar for logic of navbarClass
   const [dropdown, setDropdown] = useState(false);
   const navbarClass = useNavbar();
   const [click, setClick] = useState(false);
@@ -20,13 +20,19 @@ export default function Navbar() {
   });
   const handleClick = () => setClick(!click);
   const highlightEvents = eventsData.filter((event) => event.isHighlight);
-  // console.log(highlightEvents);
   let listClass;
   if (click) {
     listClass = `${Styles.navMenu} ${Styles.active}`;
   } else {
     listClass = `${Styles.navMenu}`;
   }
+  
+  const history = useHistory();
+  useEffect(() => {
+    setNotification({ badgeContent: highlightEvents.length, click: false });
+  }, [highlightEvents.length]);
+
+  // Notifcation Click Handlers
   const handleNotificationClick = () => {
     if (!notification.click) {
       setNotification({ badgeContent: 0, click: true });
@@ -34,36 +40,33 @@ export default function Navbar() {
       setNotification({ badgeContent: 0, click: false });
     }
   };
-  const history = useHistory();
   const handleNotiClick = () => {
     history.push("/events");
   };
-  useEffect(() => {
-    setNotification({ badgeContent: highlightEvents.length, click: false });
-  }, [highlightEvents.length]);
 
   return (
     <div className={navbarClass}>
       <nav className={Styles.navbar}>
         {/* Navbar logo */}
-
         <div className={Styles.navLogo}>
           <NavLink to="/" style={{ display: "flex", alignItems: "center" }}>
             {" "}
-            <img src="/data/media/images/general/gymkhanaLogo.png" alt="KGP_logo" />
+            <img
+              src="/data/media/images/general/gymkhanaLogo.png"
+              alt="KGP_logo"
+            />
             <span>&nbsp;TSG</span>
           </NavLink>
         </div>
 
         {/* Menu icon on smaller devices */}
-
         <div className={Styles.menuIcon} onClick={() => handleClick()}>
           <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
 
         {/* Navlinks */}
-
         <ul className={listClass}>
+          {/* HOME */}
           <li className={Styles.navItem}>
             <NavLink
               to="/"
@@ -74,7 +77,8 @@ export default function Navbar() {
               Home
             </NavLink>
           </li>
-          
+
+          {/* EVENTS */}
           <li className={Styles.navItem}>
             <NavLink
               to="/events"
@@ -85,24 +89,30 @@ export default function Navbar() {
             </NavLink>
           </li>
 
+          {/* RESULTS */}
           <li
-                  className={Styles.navItem}
-                  onMouseEnter={() => setDropdown(true)}
-                  onMouseLeave={() => setDropdown(false)}
-                >
-                  <NavLink
+            className={Styles.navItem}
+            onMouseEnter={() => setDropdown(true)}
+            onMouseLeave={() => setDropdown(false)}
+          >
+            <NavLink
               to={NaN}
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
-              style={{cursor: 'default'}}
+              style={{ cursor: "default" }}
             >
               Results
             </NavLink>
-                  {dropdown && <Dropdown handleClick = {()=>{handleClick()}}/>}
-                </li>
+            {dropdown && (
+              <Dropdown
+                handleClick={() => {
+                  handleClick();
+                }}
+              />
+            )}
+          </li>
 
-
-
+          {/* AWARDS */}
           <li className={Styles.navItem}>
             <NavLink
               to="/awards"
@@ -112,6 +122,8 @@ export default function Navbar() {
               Awards
             </NavLink>
           </li>
+
+          {/* CONTACTS */}
           <li className={Styles.navItem}>
             <NavLink
               to="/contacts/current-office-bearers"
@@ -121,6 +133,8 @@ export default function Navbar() {
               Contacts
             </NavLink>
           </li>
+
+          {/* NOMINATIONS */}
           {/* <li className={Styles.navItem}>
             <NavLink
               to="/nominations"
@@ -130,6 +144,8 @@ export default function Navbar() {
               nominations
             </NavLink>
           </li> */}
+
+          {/* GALLERY */}
           {/* <li className={Styles.navItem}>
             <NavLink
               to="/gallery"
@@ -139,9 +155,21 @@ export default function Navbar() {
               Gallery
             </NavLink>
           </li> */}
+
+          {/* BLOGS */}
           <li className={Styles.navItem}>
-            {false ? <NavLink>TSG Blog</NavLink> : <a href="https://tsgblog.iitkgp.ac.in/" target="_blank" rel="noreferrer" >Blogs</a>}
+            {
+              <a
+                href="https://tsgblog.iitkgp.ac.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Blogs
+              </a>
+            }
           </li>
+
+          {/* FAQs */}
           <li className={Styles.navItem}>
             <NavLink
               to="/faq"
@@ -152,6 +180,7 @@ export default function Navbar() {
             </NavLink>
           </li>
 
+          {/* NOTIFICATIONS */}
           {/* {window.innerWidth > 768 && (
             <li
               className={Styles.navItem}
