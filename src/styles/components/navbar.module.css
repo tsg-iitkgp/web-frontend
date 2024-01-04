@@ -58,8 +58,9 @@ ul.navMenu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-right: 1rem;
-  padding-top: 1.5rem;
+  margin-top: auto;
+  margin-right: 1rem;
+  margin-bottom: auto;
   justify-content: space-between;
 }
 li {
