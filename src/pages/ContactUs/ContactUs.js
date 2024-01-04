@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
-import Layout from "../Layout";
+import Layout from "../../components/Layout";
 import Styles from '../../styles/components/form.module.css';
 import host from '../../apiService';
 
-function ContactForm() {
+function ContactUs() {
   document.title = "Contact Us | TSG"
   const [name, setName] = useState('');
   const [rollNumber, setRollNumber] = useState('');
