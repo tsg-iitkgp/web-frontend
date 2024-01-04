@@ -1,0 +1,24 @@
+.selectButton {
+  border: none;
+  background: #eee;
+  color: black;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #ddd;
+  max-width: 60%;
+  margin: auto;
+}
+
+.dropdownSelector {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.expandMore {
+  color: #000;
+  position: absolute;
+  top: 25%;
+  right: 22%;
+  cursor: pointer;
+}

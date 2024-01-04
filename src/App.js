@@ -64,11 +64,10 @@ function App() {
           {/* Contacts Routes */}
           <Route
             exact
-            path="/contacts/current-office-bearers"
+            path="/contacts/cob"
             component={Contacts}
           />
-          <Route exact path="/contacts/secretaries" component={Contacts} />
-          <Route exact path="/contacts/pastBearers" component={Contacts} />
+          <Route exact path="/contacts/pob" component={Contacts} />
           <Route exact path="/contacts/staff" component={Contacts} />
           {/* ContactUs Route */}
           <Route exact path="/ContactUs" component={ContactUs} />

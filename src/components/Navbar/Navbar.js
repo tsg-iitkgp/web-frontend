@@ -126,7 +126,7 @@ export default function Navbar() {
           {/* CONTACTS */}
           <li className={Styles.navItem}>
             <NavLink
-              to="/contacts/current-office-bearers"
+              to="/contacts/cob"
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
             >

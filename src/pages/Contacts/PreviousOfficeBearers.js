@@ -1,6 +1,6 @@
 import React from "react";
-import Styles from "../../styles/pages/past.module.css";
-import senateData from "./../senateData.json";
+import Styles from "../../styles/pages/previous.module.css";
+import senateData from "../senateData.json";
 import { useState } from "react";
 import ContactCard from "../../components/ContactCard";
 import primg from "./../Contacts/Images/prf.png";
@@ -79,16 +79,10 @@ const years = [
   "1952-1953",
 ];
 
-export default function PastBearers() {
-  //eslint-disable-next-line
+export default function PreviousOfficeBearers() {
   const [currentTab, setCurrentTab] = useState("senate");
   const [currentYear, setCurrentYear] = useState("2022-2023");
 
-  // const handleTabChange = (s) => {
-  //   setCurrentTab(s);
-  // };
-
-  // const president = senateData.President;
   return (
     <div>
       <section className="awards content">
@@ -109,7 +103,6 @@ export default function PastBearers() {
         {(senateData[currentYear][currentTab]["profs"] !== undefined ||
           currentTab === "specialRecog") && (
           <>
-            {/* <div className={Styles.shead1}> Past Office Bearers </div> */}
             <div className="cards">
               {currentTab !== "specialRecog"
                 ? senateData[currentYear][currentTab]["profs"]?.map(
@@ -134,13 +127,6 @@ export default function PastBearers() {
         {currentTab !== "specialRecog" && (
           <>
             <div className={Styles.senateCard}>
-              {/* <thead>
-                  <tr>
-                    <th>Post</th>
-                    <th>Name</th>
-                  </tr>
-                </thead> */}
-
               {senateData[currentYear][currentTab]["honours"].map((winner) => (
                 <card className={Styles.card1}>
                   <p>
@@ -153,23 +139,11 @@ export default function PastBearers() {
                     {winner.Name}
                   </p>
                 </card>
-
-                // <tr>
-                //   <td>{winner.Post}</td>
-                //   <td>{winner.Name} </td>
-
-                // </tr>
               ))}
             </div>
           </>
         )}
       </section>
-
-      <br />
-      <br />
-
-      <br />
-      <br />
     </div>
   );
 }
