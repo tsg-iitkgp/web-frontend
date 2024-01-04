@@ -6,16 +6,12 @@ export const contactsSidebarList = [
     route: "/contacts/current-office-bearers",
   },
   {
-    title: "Secretaries",
-    route: "/contacts/secretaries",
+    title: "Staff",
+    route: "/contacts/staff",
   },
   {
     title: "Past Office Bearers",
     route: "/contacts/pastBearers",
-  },
-  {
-    title: "Staff",
-    route: "/contacts/staff",
   },
 ];
 export const resultsSidebarList = [
@@ -38,4 +34,3 @@ export const faqSidebarList = data.map((element, index) => {
     route: "#" + element.title,
   };
 });
-// console.log(faqSidebarList);

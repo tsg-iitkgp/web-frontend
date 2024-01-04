@@ -2,6 +2,7 @@ import React from "react";
 import ContactCard from "../../components/ContactCard";
 import contactsData from "../../data/contactsData.js";
 import Styles from "../../styles/pages/contacts.module.css";
+
 export default function CurrentOfficeBearers() {
   const President = contactsData.data.find(
     (contact) => contact.Post === "President"
@@ -16,12 +17,17 @@ export default function CurrentOfficeBearers() {
     (element) => element.Category === "General Secretary"
   );
   const nominatedPost = contactsData.data.filter(
-    (element) => element.Category === "Nominated Posts"
+    (element) => element.Category === "Nominated"
   );
+  const secretaries = contactsData.data.filter(
+    (element) => element.Category === "Secretary"
+  );
+
   return (
     <>
       <div className={Styles.contactsContainer} data-aos="zoom-in-up">
         <div>
+
           <h2 className={Styles.postHeading}>President</h2>
           <ContactCard
             name={President.Name}
@@ -32,6 +38,7 @@ export default function CurrentOfficeBearers() {
             imgSrc={`/data/media/images/contacts/${President.img}`}
           />
         </div>
+
         <div>
           <h2 className={Styles.postHeading}>Honorary Treasurer</h2>
           <ContactCard
@@ -43,6 +50,7 @@ export default function CurrentOfficeBearers() {
             imgSrc={`/data/media/images/contacts/${HonoraryTreasurer.img}`}
           />
         </div>
+
         <div>
           <h2 className={Styles.postHeading}>Vice President</h2>
           <ContactCard
@@ -54,6 +62,7 @@ export default function CurrentOfficeBearers() {
             imgSrc={`/data/media/images/contacts/${VicePresident.img}`}
           />
         </div>
+
         <div>
           <h2 className={Styles.postHeading}>General Secretaries</h2>
           <div className={Styles.multipleCards}>
@@ -71,6 +80,7 @@ export default function CurrentOfficeBearers() {
             })}
           </div>
         </div>
+
         <div>
           <h2 className={Styles.postHeading}>Nominated Posts</h2>
           <div className={Styles.multipleCards}>
@@ -88,6 +98,25 @@ export default function CurrentOfficeBearers() {
             })}
           </div>
         </div>
+
+        <div>
+          <h2 className={Styles.postHeading}>Secretaries</h2>
+          <div className={Styles.multipleCards}>
+            {secretaries.map((member, index) => {
+              return (
+                <ContactCard
+                  name={member.Name}
+                  designation={member.Post}
+                  facebook={member.Facebook}
+                  linkedin={member.LinkedIn}
+                  email={member.Email}
+                  imgSrc={`/data/media/images/contacts/${member.img}`}
+                />
+              );
+            })}
+          </div>
+        </div>
+
       </div>
     </>
   );
