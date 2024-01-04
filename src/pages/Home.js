@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Styles from "../styles/pages/home.module.css";
-import AboutUs from "../components/Homepage/AboutUs/AboutUs";
-import CommitteesHome from "../components/Homepage/Committee/CommitteesHome";
-import Societies from "../components/Homepage/Societies/Societies";
-import Greet from "../components/Homepage/Greet";
+import AboutUs from "../pages/Homepage/AboutUs/AboutUs";
+import CommitteesHome from "../pages/Homepage/Committee/CommitteesHome";
+import Societies from "../pages/Homepage/Societies/Societies";
+import Greet from "../pages/Homepage/Greet";
 
 export default function Home() {
   document.title = "Home | TSG";

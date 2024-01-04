@@ -1,4 +1,4 @@
-import { data } from "../FAQ/FaqData";
+import { data } from "../../pages/FAQ/FaqData";
 
 export const resultsSidebarList = [
   {

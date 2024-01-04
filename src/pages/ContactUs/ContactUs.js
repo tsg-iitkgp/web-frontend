@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ContactForm.css";
+import "./ContactUs.css";
 import Layout from "../../components/Layout";
 import Styles from '../../styles/components/form.module.css';
 import host from '../../apiService';
@@ -144,4 +144,4 @@ function ContactUs() {
   );
 }
 
-export default ContactForm;
+export default ContactUs;
