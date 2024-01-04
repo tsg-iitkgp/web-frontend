@@ -7,25 +7,25 @@ export default function CommitteesHome() {
       number: 1,
       heading: "Sports and Games",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "/committees/2021/sports",
+      route: "/committees/sports",
     },
     {
       number: 2,
       heading: "Social and Cultural",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "/committees/2021/socult",
+      route: "/committees/socult",
     },
     {
       number: 3,
       heading: "Technology",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "/committees/2021/tech",
+      route: "/committees/tech",
     },
     {
       number: 4,
       heading: "Students' Welfare",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?`,
-      route: "/committees/2021/welfare",
+      route: "/committees/welfare",
     },
   ];
   return (
