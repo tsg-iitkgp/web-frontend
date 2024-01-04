@@ -40,44 +40,55 @@ function App() {
     <Router>
       <ScrollToTop>
         <Switch>
+          {/* Admin Routes */}
+          <Route exact path="/login" component={Login} />
           <PrivateRoute exact path="/admin" component={Dashboard} />
           <PrivateRoute exact path="/admin/certificate" component={CertifGen} />
           <PrivateRoute exact path="/admin/events" component={EventsUpdatePage} />
+          {/* Homepage Routes */}
           <Route exact path="/" component={Home} />
-          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/committees/tech" component={Tech} />
+          <Route exact path="/committees/sports" component={Sports} />
+          <Route exact path="/committees/welfare" component={Welfare} />
+          <Route exact path="/committees/socult" component={Socult} />
+          <Route exact path="/societies" component={Societies} />
+          {/* Events Route */}
+          <Route exact path="/events" component={Events} />
+          {/* Results Routes */}
           <Route exact path="/results" component={Results} />
-          <Route exact path="/awards" component={Awards} />
-          <Route exact path="/booking" component={Booking} />
-          <Route exact path="/contacts" component={Contacts} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/interiit" component={Results} />
           <Route exact path="/results/livescore" component={Results} />
-          <Route exact path="/contacts/secretaries" component={Contacts} />
+          {/* Awards Route */}
+          <Route exact path="/awards" component={Awards} />
+          {/* Contacts Routes */}
           <Route
             exact
             path="/contacts/current-office-bearers"
             component={Contacts}
           />
+          <Route exact path="/contacts/secretaries" component={Contacts} />
+          <Route exact path="/contacts/pastBearers" component={Contacts} />
+          <Route exact path="/contacts/staff" component={Contacts} />
+          {/* ContactUs Route */}
+          <Route exact path="/ContactUs" component={ContactUs} />
+          {/* Blogs Route */}
+          <Route exact path="/blog" component={Blog} />
+          {/* FAQ Route */}
+          <Route exact path="/faq" component={FAQ} />
+          {/* 404 - Not Found Route */}
+          <Route component={NotFound} />
+          {/* Election Routes */}
+          {/* <Route exact path="/nominations" component={Nominations} />
           <Route exact path="/elections" component={Elections} />
-          <Route exact path="/nominations" component={Nominations} />
           <Route
             exact
             path="/elections/candidates"
             component={ElectionCandidates}
-          />
-          <Route exact path="/contacts/pastBearers" component={Contacts} />
-          <Route exact path="/contacts/staff" component={Contacts} />
-          <Route exact path="/societies" component={Societies} />
-          <Route exact path="/committees/2021/tech" component={Tech} />
-          <Route exact path="/committees/2021/sports" component={Sports} />
-          <Route exact path="/committees/2021/welfare" component={Welfare} />
-          <Route exact path="/committees/2021/Socult" component={Socult} />
-          <Route exact path="/events" component={Events} />
-          <Route exact path="/ContactUs" component={ContactUs} />
-          <Route exact path="/faq" component={FAQ} />
-          <Route component={NotFound} />
+          /> */}
+          {/* Other Routes */}
+          {/* <Route exact path="/booking" component={Booking} />
+          <Route exact path="/gallery" component={Gallery} /> */}
         </Switch>
       </ScrollToTop>
     </Router>
