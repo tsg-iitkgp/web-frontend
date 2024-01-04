@@ -40,7 +40,8 @@ html {
 }
 .committeesContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 18vh;
