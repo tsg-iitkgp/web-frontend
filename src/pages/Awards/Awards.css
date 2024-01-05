@@ -5,6 +5,74 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+.awards {
+  margin: auto;
+  padding: 0;
+}
+.awards .table-container {
+  font-size: 1.2rem;
+}
+.awards .table-container table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(44, 52, 60, 0.6);
+}
+.awards .table-container th,
+.awards .table-container td {
+  padding: 1rem;
+  padding-right: 0.25rem;
+  color: #000;
+}
+.awards .table-container th .medal::before,
+.awards .table-container td .medal::before {
+  content: " \25CF";
+  font-size: 30px;
+}
+.awards .table-container th .gold,
+.awards .table-container td .gold {
+  color: gold;
+}
+.awards .table-container th .silver,
+.awards .table-container td .silver {
+  color: silver;
+}
+.awards .table-container th .bronze,
+.awards .table-container td .bronze {
+  color: #cd7f32;
+}
+.awards .table-container th {
+  text-align: left;
+  color: #fff;
+}
+.awards .table-container thead {
+  position: sticky;
+  top: 1;
+}
+.awards .table-container thead th {
+  background-color: #e7bd12;
+}
+.awards .table-container tbody {
+  margin-top: 2rem;
+}
+.awards .table-container tbody tr {
+  background-color: #fff;
+}
+.awards .table-container tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.awards .table-container tbody tr:last-of-type {
+  border-bottom: 2px solid #04d6ac;
+}
+.awards .table-container tbody #overall:first-of-type {
+  background-color: hsl(168, 76%, 80%);
+}
+.awards .table-container tbody td {
+  position: relative;
+}
+.awards .table-container tbody td ul {
+  list-style-type: none;
+}
 
 .sectionHeading {
   display: flex;

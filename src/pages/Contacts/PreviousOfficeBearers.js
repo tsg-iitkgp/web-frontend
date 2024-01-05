@@ -87,7 +87,7 @@ export default function PreviousOfficeBearers() {
     <div>
       <section className="awards content">
         <div className="tabs"></div>
-        <div className="select GC_dropdown">
+        <div className="select">
           <select
             value={currentYear}
             onChange={(e) => setCurrentYear(e.target.value)}

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Layout from "../../components/Layouts/Layout";
-import "./Results.css";
 import {
   DropdownSelector,
   eventVerticals,
