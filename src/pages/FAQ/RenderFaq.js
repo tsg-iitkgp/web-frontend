@@ -9,10 +9,11 @@ export default function RenderFaqFromDropdown({ option }) {
   const faqStyleConfig = {
     bgColor: "black",
     titleTextColor: "#fff",
-    rowTitleTextSize: "20px",
+    titleTextSize: "1.5rem",
     rowTitleColor: "#f1c40f",
+    rowTitleTextSize: "1.2rem",
     rowContentColor: "grey",
-    rowContentTextSize: "18px",
+    rowContentTextSize: "1.1rem",
     arrowColor: "#f1c40f",
   };
 
