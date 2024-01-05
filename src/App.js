@@ -29,8 +29,7 @@ import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
 import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
-import GC from "./pages/Results/GC/GC";
-import InterIIT from "./pages/Results/InterIIT/InterIIT";
+import Results from "./pages/Results/Results";
 
 function App() {
   useEffect(() => {
@@ -59,8 +58,8 @@ function App() {
           {/* Events Route */}
           <Route exact path="/events" component={Events} />
           {/* Results Routes */}
-          <Route exact path="/results/gc" component={GC} />
-          <Route exact path="/results/interiit" component={InterIIT} />
+          <Route exact path="/results/gc" component={Results} />
+          <Route exact path="/results/interiit" component={Results} />
           {/* Awards Route */}
           <Route exact path="/awards" component={Awards} />
           {/* Contacts Routes */}

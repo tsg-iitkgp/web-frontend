@@ -1,21 +1,35 @@
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Layout from "../../components/Layouts/Layout";
-import Styles from "../../styles/pages/Results/results.module.css";
-import GC from "./GC/GC";
-import InterIIT from "./InterIIT/InterIIT";
+import "./subevents.css";
+import {
+  DropdownSelector,
+  eventVerticals,
+} from "../../components/DropdownSelector";
 
 export default function Results() {
   const location = useLocation();
+
+  const [pageHeading, setPageHeading] = useState("");
+  useEffect(() => {
+    if (location.pathname === "/results/gc") {
+      setPageHeading("GENERAL CHAMPIONSHIP");
+    } else if (location.pathname === "/results/interiit") {
+      setPageHeading("INTER IIT");
+    }
+  }, [location.pathname]);
+
   document.title = "Results | TSG";
 
   return (
     <Layout>
-      <div className={Styles.resultsSection}>
-        <div className={Styles.content}>
-          {location.pathname === "/results/gc" && <GC />}
-          {location.pathname === "/results/interiit" && <InterIIT />}
-        </div>
-      </div>
+      <section className="awards">
+        <p className="pageHeading">{pageHeading}</p> {/* GLOBAL CSS */}
+        <DropdownSelector
+          itemList={eventVerticals}
+          defaultOption={eventVerticals[0]}
+        />
+      </section>
     </Layout>
   );
 }
