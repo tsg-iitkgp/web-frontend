@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
 }
 
 .selector {
@@ -22,8 +24,4 @@
   top: 25%;
   right: 22%;
   cursor: pointer;
-}
-
-.content {
-  padding: 1.5rem;
 }

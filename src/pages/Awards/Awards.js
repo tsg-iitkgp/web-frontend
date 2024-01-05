@@ -11,7 +11,7 @@ function Awards() {
   return (
     <Layout>
       <section className="awards content" >
-        <h2 className="awards_h2">HALL OF FAME</h2>
+        <p className="pageHeading">HALL OF FAME</p> {/* Global CSS */}
         <DropdownSelector
           itemList={awardsDropdownList}
           defaultOption={"SPORTS & GAMES"}

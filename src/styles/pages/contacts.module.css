@@ -8,20 +8,18 @@ body {
   justify-content: center;
   align-items: center;
 }
-.pageHeading {
-  font-size: 2rem;
-  text-align: center;
-}
+
 .maincontainer {
   /*display: flex;*/
   /*max-height: 120vh;*/
   width: 100%;
-  margin-top: 10vh;
+  margin-top: 1.5rem;
 }
+
 .postHeading {
   font-size: 2rem;
   text-align: center;
-  margin: 1.5rem;
+  margin: auto;
   color: #f1c40f;
 }
 .multipleCards {

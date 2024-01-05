@@ -32,7 +32,7 @@ body * {
   background-color: transparent !important;
 }
 
-.activeSide{
+.activeSide {
   background-color: blue;
 }
 .contacts_content__1wT_L {
@@ -51,14 +51,14 @@ body * {
 section {
   max-width: 1500px;
   align-self: center;
-  
 }
 
 .pageHeading {
-  font-size: 42px;
-  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
   text-align: center;
-  margin: 25px 0;
+  color: #fff;
 }
 
 section .section-heading {

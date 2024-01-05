@@ -34,24 +34,11 @@ export default function FA() {
   };
   return (
     <Layout>
-      <div style={{ marginTop: "10vh" }}>
-        <h2
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "#fff",
-            fontSize: "36px",
-          }}
-        >
-          FAQs
-        </h2>
+        <p className="pageHeading">FAQs</p> {/* Global CSS */}
         <div
           style={{
             display: "flex",
             justifyContent: "center",
-            marginTop: "3rem",
             position: "relative",
           }}
         >
@@ -78,7 +65,6 @@ export default function FA() {
           </span>
         </div>
         <Faq data={topicData} styles={styles} config={config} />
-      </div>
     </Layout>
   );
 }

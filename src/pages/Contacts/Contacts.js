@@ -11,7 +11,7 @@ function Contacts() {
   return (
     <Layout>
       <section className={Styles.maincontainer} >
-        <h3>Contacts</h3>
+        <p className="pageHeading">CONTACTS</p> {/* Global CSS */}
         <DropdownSelector
           itemList={contactsDropdownList}
           defaultOption={"CURRENT OFFICE BEARERS"}
