@@ -8,5 +8,6 @@ export const awardsDropdownList = [
   "SPORTS & GAMES",
   "TECHNOLOGY",
   "SOCIAL & CULTURAL",
-  "SPECIAL RECOGNITION",
+  // Uncomment when Special Recognition has some data
+  // "SPECIAL RECOGNITION",
 ];
