@@ -44,7 +44,7 @@ export default function RenderResultsFromDropdown({ option }) {
       {option === "SPORTS & GAMES" && (
         <>
           {/* MEN'S STANDINGS */}
-          <h2 style={{ padding: "1%", color: "white" }}> Men's Standings</h2>
+          <h2 className="sectionHeading"> Men's Standings</h2>
           <div className="table-container" data-aos="zoom-in-up">
             <table>
               <thead style={{ border: "10px solid #fff" }}>
@@ -74,7 +74,7 @@ export default function RenderResultsFromDropdown({ option }) {
             </table>
           </div>
           {/* WOMEN'S STANDINGS */}
-          <h2 style={{ padding: "1%", color: "white" }}> Women's Standings</h2>
+          <h2 className="sectionHeading"> Women's Standings</h2>
           <div className="table-container" data-aos="zoom-in-up">
             <table>
               <thead style={{ border: "10px solid #fff" }}>
@@ -111,7 +111,7 @@ export default function RenderResultsFromDropdown({ option }) {
           <div
             className="table-container"
             data-aos="zoom-in-up"
-            style={{ paddingTop: "3%" }}
+            style={{ paddingTop: "2rem" }}
           >
             <table>
               <thead style={{ border: "10px solid #fff" }}>
@@ -148,7 +148,7 @@ export default function RenderResultsFromDropdown({ option }) {
           <div
             className="table-container"
             data-aos="zoom-in-up"
-            style={{ paddingTop: "3%" }}
+            style={{ paddingTop: "2rem" }}
           >
             <table>
               <thead style={{ border: "10px solid #fff" }}>
