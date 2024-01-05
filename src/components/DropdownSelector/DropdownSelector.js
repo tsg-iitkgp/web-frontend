@@ -6,6 +6,7 @@ import RenderContactsFromDropdown from "../../pages/Contacts/RenderContacts";
 import RenderAwardsFromDropdown from "../../pages/Awards/RenderAwards";
 import RenderFaqFromDropdown from "../../pages/FAQ/RenderFaq";
 import RenderGcFromDropDown from "../../pages/Results/GC/RenderGC"
+import RenderInterIitFromDropdown from "../../pages/Results/InterIIT/RenderInterIIT";
 
 export function DropdownSelector({ itemList, defaultOption }) {
   /**
@@ -56,6 +57,11 @@ export function DropdownSelector({ itemList, defaultOption }) {
         {/* GC RESULTS PAGE */}
         {location.pathname === "/results/gc" && (
           <RenderGcFromDropDown option={option} />
+        )}
+
+        {/* INTER IIT RESULTS PAGE */}
+        {location.pathname === "/results/interiit" && (
+          <RenderInterIitFromDropdown option={option} />
         )}
       </div>
     </>
