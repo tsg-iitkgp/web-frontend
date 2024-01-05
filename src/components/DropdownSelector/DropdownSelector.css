@@ -1,18 +1,19 @@
-.selectButton {
+.dropdownSelector {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.selector {
   border: none;
   background: #eee;
   color: black;
+  font-size: 1.2rem;
   padding: 1rem;
   border-radius: 5px;
   background-color: #ddd;
   max-width: 60%;
   margin: auto;
-}
-
-.dropdownSelector {
-  display: flex;
-  justify-content: center;
-  position: relative;
 }
 
 .expandMore {

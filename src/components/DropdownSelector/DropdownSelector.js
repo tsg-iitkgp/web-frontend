@@ -33,7 +33,7 @@ export function DropdownSelector({ itemList }) {
         <select
           value={option}
           onChange={(e) => setOption(e.target.value)}
-          className="selectButton"
+          className="selector"
         >
           {itemList.map((item) => (
             <option key={item} value={item}>
