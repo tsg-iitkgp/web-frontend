@@ -5,6 +5,7 @@ import {
 } from "../../components/DropdownSelector";
 
 export default function FA() {
+  document.title = "FAQs | TSG"
   return (
     <Layout>
       <p className="pageHeading">FAQs</p> {/* Global CSS */}

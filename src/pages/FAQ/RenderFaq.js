@@ -16,9 +16,16 @@ export default function RenderFaqFromDropdown({ option }) {
     arrowColor: "#f1c40f",
   };
 
+  const config = {
+    animate: true,
+    tabFocus: true,
+  };
+
   return (
     <>
-      <Faq data={data[option]} styles={faqStyleConfig} config={{}} />
+      <div data-aos="zoom-in-up">
+        <Faq data={data[option]} styles={faqStyleConfig} config={config} />
+      </div>
     </>
   );
 }
