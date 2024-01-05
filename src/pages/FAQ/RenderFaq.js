@@ -15,7 +15,6 @@ export default function RenderFaqFromDropdown({ option }) {
     rowContentTextSize: "18px",
     arrowColor: "#f1c40f",
   };
-  // Content Index
 
   return (
     <>
