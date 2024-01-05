@@ -28,7 +28,7 @@ export default function CurrentOfficeBearers() {
       <div className={Styles.contactsContainer}>
         <div>
           <h2 className={Styles.postHeading}>President</h2>
-          <div className="cards" data-aos="zoom-in-up">
+          <div data-aos="zoom-in-up">
             <ContactCard
               name={President.Name}
               designation={President.Post}
@@ -42,7 +42,7 @@ export default function CurrentOfficeBearers() {
 
         <div>
           <h2 className={Styles.postHeading}>Honorary Treasurer</h2>
-          <div className="cards" data-aos="zoom-in-up">
+          <div data-aos="zoom-in-up">
             <ContactCard
               name={HonoraryTreasurer.Name}
               designation={HonoraryTreasurer.Post}
@@ -56,7 +56,7 @@ export default function CurrentOfficeBearers() {
 
         <div>
           <h2 className={Styles.postHeading}>Vice President</h2>
-          <div className="cards" data-aos="zoom-in-up">
+          <div data-aos="zoom-in-up">
             <ContactCard
               name={VicePresident.Name}
               designation={VicePresident.Post}
@@ -73,7 +73,7 @@ export default function CurrentOfficeBearers() {
           <div className={Styles.multipleCards}>
             {generalSecretaries.map((member, index) => {
               return (
-                <div className="cards" data-aos="zoom-in-up">
+                <div data-aos="zoom-in-up">
                   <ContactCard
                     name={member.Name}
                     designation={member.Post}
@@ -93,7 +93,7 @@ export default function CurrentOfficeBearers() {
           <div className={Styles.multipleCards}>
             {nominatedPost.map((member, index) => {
               return (
-                <div className="cards" data-aos="zoom-in-up">
+                <div data-aos="zoom-in-up">
                   <ContactCard
                     name={member.Name}
                     designation={member.Post}
@@ -113,7 +113,7 @@ export default function CurrentOfficeBearers() {
           <div className={Styles.multipleCards}>
             {secretaries.map((member, index) => {
               return (
-                <div className="cards" data-aos="zoom-in-up">
+                <div data-aos="zoom-in-up">
                   <ContactCard
                     name={member.Name}
                     designation={member.Post}

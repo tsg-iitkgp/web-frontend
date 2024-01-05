@@ -86,16 +86,3 @@ body {
     margin: auto;
   }
 }
-
-.maincontainer h3{
-  color: white;
-  text-align: center;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  font-size: 48px;
-}
-
-.sidebar{
-  padding-left: 100px;
-  padding-right: 100px;
-}
