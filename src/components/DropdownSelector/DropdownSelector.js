@@ -2,35 +2,14 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./DropdownSelector.css";
 
-// CONTACTS PAGE
-import CurrentOfficeBearers from "../../pages/Contacts/CurrentOfficeBearers";
-import PreviousOfficeBearers from "../../pages/Contacts/PreviousOfficeBearers";
-import Staff from "../../pages/Contacts/Staff";
-
-// AWARDS PAGE
-import "../../pages/Awards/Awards.css";
-import AwardSection from "../../pages/Awards/AwardSection";
-import HonourSection from "../../pages/Awards/HonourSection";
-
-const years = [
-  "2022-23",
-  "2021-22",
-  "2020-21",
-  "2019-20",
-  "2018-19",
-  "2017-18",
-  "2016-17",
-  "2015-16",
-];
+import RenderContactsFromDropdown from "../../pages/Contacts/RenderContacts";
+import RenderAwardsFromDropdown from "../../pages/Awards/RenderAwards";
 
 export function DropdownSelector({ itemList, defaultOption }) {
   /**
    * States
    */
-  // Option state
   const [option, setOption] = useState(defaultOption);
-  // Awards states
-  const [year, setYear] = useState("2022-23");
 
   /**
    * Constants
@@ -38,7 +17,7 @@ export function DropdownSelector({ itemList, defaultOption }) {
   const location = useLocation();
 
   return (
-    <div>
+    <>
       {/* Render Dropdown Selector */}
       <div className="dropdownSelector">
         <select
@@ -56,39 +35,17 @@ export function DropdownSelector({ itemList, defaultOption }) {
       </div>
 
       {/* Render page content based on Selected option from Dropdown menu */}
+      <div className="content">
+        {/* CONTACTS PAGE */}
+        {location.pathname === "/contacts" && (
+          <RenderContactsFromDropdown option={option} />
+        )}
 
-      {/* CONTACTS PAGE */}
-      {location.pathname === "/contacts" && (
-        <div className="content">
-          {option === "CURRENT OFFICE BEARERS" && <CurrentOfficeBearers />}
-          {option === "PREVIOUS OFFICE BEARERS" && <PreviousOfficeBearers />}
-          {option === "STAFF" && <Staff />}
-        </div>
-      )}
-
-      {/* AWARDS PAGE */}
-      {location.pathname === "/awards" && (
-        <div className="content">
-          {/* Year Dropdown menu selector */}
-          <div className="select GC_dropdown gcSelector">
-            <select value={year} onChange={(e) => setYear(e.target.value)}>
-              {years.map((year) => (
-                <option key={year} value={year}>
-                  {year}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Awards Section */}
-          <AwardSection currentYear={year} currentTab={option} />
-
-          {/* Honour Section */}
-          {option !== "SPECIAL RECOGNITION" && (
-            <HonourSection currentYear={year} currentTab={option} />
-          )}
-        </div>
-      )}
-    </div>
+        {/* AWARDS PAGE */}
+        {location.pathname === "/awards" && (
+          <RenderAwardsFromDropdown option={option} />
+        )}
+      </div>
+    </>
   );
 }
