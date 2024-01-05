@@ -1,5 +1,7 @@
-import { useState } from "react";
-import GCdata from "./GCdata";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import GC from "./GC/GCdata";
+import InterIITdata from "./InterIIT/InterIITdata";
 
 const years = [
   "2022-23",
@@ -11,8 +13,19 @@ const years = [
   "2016-17",
 ];
 
-export default function RenderGcFromDropDown({ option }) {
+export default function RenderResultsFromDropdown({ option }) {
+  const location = useLocation();
+
   const [year, setYear] = useState(years[0]);
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    if (location.pathname === "/results/gc") {
+      setData(GC);
+    } else if (location.pathname === "/results/interiit") {
+      setData(InterIITdata);
+    }
+  }, [location.pathname]);
 
   return (
     <>
@@ -27,10 +40,10 @@ export default function RenderGcFromDropDown({ option }) {
         </select>
       </div>
 
-      {/* SPORTS & GAMES SECTION */}
+      {/* SPORTS & GAMES */}
       {option === "SPORTS & GAMES" && (
         <>
-          {/* MEN'S STANDING */}
+          {/* MEN'S STANDINGS */}
           <h2 style={{ padding: "1%", color: "white" }}> Men's Standings</h2>
           <div className="table-container">
             <table>
@@ -49,7 +62,7 @@ export default function RenderGcFromDropDown({ option }) {
                 </tr>
               </thead>
               <tbody style={{ border: "10px solid #fff" }}>
-                {GCdata[String(year)].Sports.Male.map((item) => (
+                {data[String(year)]?.Sports.Male.map((item) => (
                   <tr id="overall">
                     <td>{item.Sport}</td>
                     <td>{item.Gold} </td>
@@ -60,8 +73,7 @@ export default function RenderGcFromDropDown({ option }) {
               </tbody>
             </table>
           </div>
-
-          {/* WOMEN'S STANDING */}
+          {/* WOMEN'S STANDINGS */}
           <h2 style={{ padding: "1%", color: "white" }}> Women's Standings</h2>
           <div className="table-container">
             <table>
@@ -80,7 +92,7 @@ export default function RenderGcFromDropDown({ option }) {
                 </tr>
               </thead>
               <tbody style={{ border: "10px solid #fff" }}>
-                {GCdata[String(year)].Sports.Female.map((item) => (
+                {data[String(year)]?.Sports.Female.map((item) => (
                   <tr id="overall">
                     <td>{item.Sport}</td>
                     <td>{item.Gold} </td>
@@ -93,7 +105,6 @@ export default function RenderGcFromDropDown({ option }) {
           </div>
         </>
       )}
-
       {/* SOCIAL & CULTURAL */}
       {option === "SOCIAL & CULTURAL" && (
         <>
@@ -114,7 +125,7 @@ export default function RenderGcFromDropDown({ option }) {
                 </tr>
               </thead>
               <tbody style={{ border: "10px solid #fff" }}>
-                {GCdata[String(year)].Socult.map((item) => (
+                {data[String(year)]?.Socult.map((item) => (
                   <tr id="overall">
                     <td>{item.Event}</td>
                     <td>{item.Gold} </td>
@@ -127,7 +138,6 @@ export default function RenderGcFromDropDown({ option }) {
           </div>
         </>
       )}
-
       {/* TECHNOLOGY */}
       {option === "TECHNOLOGY" && (
         <>
@@ -148,7 +158,7 @@ export default function RenderGcFromDropDown({ option }) {
                 </tr>
               </thead>
               <tbody style={{ border: "10px solid #fff" }}>
-                {GCdata[String(year)].Technology.map((item) => (
+                {data[String(year)]?.Technology.map((item) => (
                   <tr id="overall">
                     <td>{item.Event}</td>
                     <td>{item.Gold} </td>

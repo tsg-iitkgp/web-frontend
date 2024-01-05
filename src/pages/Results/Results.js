@@ -11,6 +11,7 @@ export default function Results() {
   const location = useLocation();
 
   const [pageHeading, setPageHeading] = useState("");
+
   useEffect(() => {
     if (location.pathname === "/results/gc") {
       setPageHeading("GENERAL CHAMPIONSHIP");

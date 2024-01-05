@@ -5,8 +5,7 @@ import "./DropdownSelector.css";
 import RenderContactsFromDropdown from "../../pages/Contacts/RenderContacts";
 import RenderAwardsFromDropdown from "../../pages/Awards/RenderAwards";
 import RenderFaqFromDropdown from "../../pages/FAQ/RenderFaq";
-import RenderGcFromDropDown from "../../pages/Results/GC/RenderGC"
-import RenderInterIitFromDropdown from "../../pages/Results/InterIIT/RenderInterIIT";
+import RenderResultsFromDropdown from "../../pages/Results/RenderResults";
 
 export function DropdownSelector({ itemList, defaultOption }) {
   /**
@@ -54,14 +53,10 @@ export function DropdownSelector({ itemList, defaultOption }) {
           <RenderFaqFromDropdown option={option} />
         )}
 
-        {/* GC RESULTS PAGE */}
-        {location.pathname === "/results/gc" && (
-          <RenderGcFromDropDown option={option} />
-        )}
-
-        {/* INTER IIT RESULTS PAGE */}
-        {location.pathname === "/results/interiit" && (
-          <RenderInterIitFromDropdown option={option} />
+        {/* RESULTS PAGE */}
+        {(location.pathname === "/results/interiit" ||
+          location.pathname === "/results/gc") && (
+          <RenderResultsFromDropdown option={option} />
         )}
       </div>
     </>
