@@ -60,7 +60,6 @@ function App() {
           <Route exact path="/results" component={Results} />
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/interiit" component={Results} />
-          <Route exact path="/results/livescore" component={Results} />
           {/* Awards Route */}
           <Route exact path="/awards" component={Awards} />
           {/* Contacts Routes */}
@@ -71,6 +70,10 @@ function App() {
           <Route exact path="/faq" component={FAQ} />
           {/* 404 - Not Found Route */}
           <Route component={NotFound} />
+
+          {/* Livescoreboard Route */}
+          {/* <Route exact path="/livescore" component={Results} /> */}
+
           {/* Election Routes */}
           {/* <Route exact path="/nominations" component={Nominations} />
           <Route exact path="/elections" component={Elections} />
@@ -79,6 +82,7 @@ function App() {
             path="/elections/candidates"
             component={ElectionCandidates}
           /> */}
+
           {/* Other Routes */}
           {/*<Route exact path="/gallery" component={Gallery} /> */}
         </Switch>
