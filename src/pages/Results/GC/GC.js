@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./interiit.css";
+import "../Results.css";
 import GCdata from "./GCdata";
 
 const years = [
