@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ContactCard from "../components/ContactCard";
-import Layout from "../components/Layout";
+import ContactCard from "../../components/ContactCard";
+import Layout from "../../components/Layout";
 import awardsData from "./awardsData.json";
 import "./Awards.css";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Styles from "../styles/components/soc.module.css";
-import Layout from "../components/Layout";
-import RotatingCards from "../components/RotatingCards";
+import Styles from "../../styles/components/soc.module.css";
+import Layout from "../../components/Layout";
+import RotatingCards from "../../components/RotatingCards";
 
 export default function Societies() {
   document.title = "Societies | TSG";

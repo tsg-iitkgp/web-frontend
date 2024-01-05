@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "../../styles/pages/previous.module.css";
-import senateData from "../senateData.json";
+import senateData from "./senateData.json";
 import { useState } from "react";
 import ContactCard from "../../components/ContactCard";
 import primg from "./../Contacts/Images/prf.png";

@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Layout from "../components/Layout";
 import Styles from "../styles/pages/Results/results.module.css";
-import GC from "./results/GC";
-import Interiit from "./results/Interiit";
-import LiveScoreboard from './results/LiveScoreboard';
+import GC from "./Results/GC";
+import Interiit from "./Results/Interiit";
+import LiveScoreboard from './Results/LiveScoreboard';
 
 function Results() {
   document.title = "Results | TSG";
