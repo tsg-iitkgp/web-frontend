@@ -6,7 +6,7 @@ export default function AwardSection({ currentYear, currentTab }) {
     <>
       <h2 className="sectionHeading"> Awards </h2>
       <div className="cards" data-aos="zoom-in-up">
-        {currentTab !== "specialRecog"
+        {currentTab !== "SPECIAL RECOGNITION"
           ? awardsData[currentYear][currentTab]["awards"]?.map(
               (winner, index) => (
                 <ContactCard

@@ -11,7 +11,7 @@ export default function HonourSection({ currentYear, currentTab }) {
               <th>Name</th>
               <th>Roll No.</th>
               <th>Institute Award</th>
-              {currentTab === "sports" && <th>Game</th>}
+              {currentTab === "SPORTS & GAMES" && <th>Game</th>}
             </tr>
           </thead>
           <tbody>
@@ -21,7 +21,7 @@ export default function HonourSection({ currentYear, currentTab }) {
                   <td>{winner.Name}</td>
                   <td>{winner.Roll} </td>
                   <td>{winner.Award}</td>
-                  {currentTab === "sports" && <td>{winner.Game}</td>}
+                  {currentTab === "SPORTS & GAMES" && <td>{winner.Game}</td>}
                 </tr>
               )
             )}
