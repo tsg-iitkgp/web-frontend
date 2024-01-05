@@ -1,15 +1,19 @@
 import { Typography, Container } from "@material-ui/core";
 import React, { useState } from "react";
 import Styles from "./nominations.module.css";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layouts/Layout";
 export default function Nominations() {
   const [currentTab, setCurrentTab] = useState(null);
 
   const tabFormUrls = {
-    "Public Relations' Chairperson": "https://docs.google.com/forms/d/e/1FAIpQLSfvoSEiHuU33zL_d9_wrs1hCk6ol_KjiWa_BkjAaAWYfgut_Q/viewform?embedded=true",
-    "Technology Coordinator": "https://docs.google.com/forms/d/e/1FAIpQLScnLu0Vrb0oPBaSCA6SKf8CcP2O8eZGkKXLsVjMmj6zFJ4Yhg/viewform?embedded=true",
-    "Editor": "https://docs.google.com/forms/d/e/1FAIpQLSc26msaYn79qlLxGRtlHM-xKHGUgmtKtBSBOjY0SHw5bYXZfA/viewform?embedded=true",
-    "Institute Girl Sports' Nominee": "https://docs.google.com/forms/d/e/1FAIpQLSe9fvA24HmVoW3frHQtVg3QiAMQEqLSYOlrUyBAxCk5y7n6GA/viewform?embedded=tru",
+    "Public Relations' Chairperson":
+      "https://docs.google.com/forms/d/e/1FAIpQLSfvoSEiHuU33zL_d9_wrs1hCk6ol_KjiWa_BkjAaAWYfgut_Q/viewform?embedded=true",
+    "Technology Coordinator":
+      "https://docs.google.com/forms/d/e/1FAIpQLScnLu0Vrb0oPBaSCA6SKf8CcP2O8eZGkKXLsVjMmj6zFJ4Yhg/viewform?embedded=true",
+    Editor:
+      "https://docs.google.com/forms/d/e/1FAIpQLSc26msaYn79qlLxGRtlHM-xKHGUgmtKtBSBOjY0SHw5bYXZfA/viewform?embedded=true",
+    "Institute Girl Sports' Nominee":
+      "https://docs.google.com/forms/d/e/1FAIpQLSe9fvA24HmVoW3frHQtVg3QiAMQEqLSYOlrUyBAxCk5y7n6GA/viewform?embedded=tru",
   };
 
   const handleTabChange = (s) => {
@@ -32,7 +36,7 @@ export default function Nominations() {
         </Typography>
 
         <div className="tabs">
-          {Object.keys(tabFormUrls).map(tab => (
+          {Object.keys(tabFormUrls).map((tab) => (
             <div
               key={tab}
               className={`tab ${currentTab === tab ? "active" : ""}`}
@@ -45,9 +49,19 @@ export default function Nominations() {
         </div>
 
         <div>
-          <iframe title={currentTab} src={tabFormUrls[currentTab]} width="1200" height="1717" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe
+            title={currentTab}
+            src={tabFormUrls[currentTab]}
+            width="1200"
+            height="1717"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            Loading…
+          </iframe>
         </div>
       </Container>
-    </Layout >
+    </Layout>
   );
 }

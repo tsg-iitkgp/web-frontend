@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./LoginScreen.css";
-import Layout from "../../components/Layout";
-import host from '../../apiService';
+import Layout from "../../components/Layouts/Layout";
+import host from "../../apiService";
 
 const LoginScreen = ({ history }) => {
-
-  document.title = "Login | TSG"
+  document.title = "Login | TSG";
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -24,8 +23,9 @@ const LoginScreen = ({ history }) => {
     const config = {
       header: {
         "Content-Type": "application/json",
-        'Access-Control-Allow-Origin': 'https://gymkhana.iitkgp.ac.in',
-        'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept, Authorization',
+        "Access-Control-Allow-Origin": "https://gymkhana.iitkgp.ac.in",
+        "Access-Control-Allow-Headers":
+          "Origin, Content-Type, Accept, Authorization",
       },
     };
 
@@ -37,18 +37,17 @@ const LoginScreen = ({ history }) => {
       );
 
       localStorage.setItem("authToken", data.token);
-      localStorage.setItem("username",data.username)
-      localStorage.setItem("post",data.post)
-      localStorage.setItem("role",data.role)
-        
+      localStorage.setItem("username", data.username);
+      localStorage.setItem("post", data.post);
+      localStorage.setItem("role", data.role);
+
       history.push("/admin");
     } catch (error) {
       console.log(error);
-      if(error.message==='Request failed with status code 403'){
-        setError('* incorrect password');
-      }
-      else if(error.message==='Request failed with status code 401'){
-        setError('* incorrect E-mail id');
+      if (error.message === "Request failed with status code 403") {
+        setError("* incorrect password");
+      } else if (error.message === "Request failed with status code 401") {
+        setError("* incorrect E-mail id");
       }
     }
   };
@@ -88,8 +87,7 @@ const LoginScreen = ({ history }) => {
             </button>
           </div>
 
-          <span className="login-screen__subtext">
-          </span>
+          <span className="login-screen__subtext"></span>
         </form>
       </div>
     </Layout>

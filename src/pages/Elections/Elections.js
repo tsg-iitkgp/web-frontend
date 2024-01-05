@@ -1,7 +1,7 @@
 import { Typography, Container, Box, Button } from "@material-ui/core";
 import React from "react";
 
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layouts/Layout";
 import Styles from "./elections.module.css";
 import LaunchIcon from "@material-ui/icons/Launch";
 import { Link } from "react-router-dom";
@@ -29,9 +29,9 @@ export default function Elections() {
             conduction of student related activities.
           </Typography>
           <Typography variant="body2">
-            The nomination, approval and
-            voting will be done using digital platform developed by ERP, IIT
-            Kharagpur. The date for Gymkhana Election is as follows:
+            The nomination, approval and voting will be done using digital
+            platform developed by ERP, IIT Kharagpur. The date for Gymkhana
+            Election is as follows:
           </Typography>
           <Typography variant="body2">
             Date of Election: 4th April 2023 (Tuesday) <br />
@@ -43,7 +43,7 @@ export default function Elections() {
         <Box className={Styles.electionBody}>
           <Typography variant="h5">Notices:</Typography>
           <Box className={Styles.notices}>
-          <Typography className={Styles.notice}>
+            <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 Elections 2023 Results
               </div>
@@ -108,7 +108,9 @@ export default function Elections() {
             </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                The Venue for the TSG Election (2023 - 2024) will be Computer & Informatics Center (CIC), Takshashila, Srinivasa Ramanujan Complex, IIT Kharagpur
+                The Venue for the TSG Election (2023 - 2024) will be Computer &
+                Informatics Center (CIC), Takshashila, Srinivasa Ramanujan
+                Complex, IIT Kharagpur
               </div>
             </Typography>
             {/* <Typography className={Styles.notice}>
@@ -178,7 +180,6 @@ export default function Elections() {
                 </a>
               </Button>
             </Typography> */}
-            
           </Box>
         </Box>
         <Box className={Styles.electionBody}>
@@ -211,8 +212,7 @@ export default function Elections() {
                 alt="notification"
                 target="_blank"
               >
-                Final 
-                List of Nominations
+                Final List of Nominations
               </a>
             </Button>
           </Box>

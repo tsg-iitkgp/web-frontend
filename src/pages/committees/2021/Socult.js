@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../../components/Layout";
+import Layout from "../../../components/Layouts/Layout";
 import Styles from "../styles/socult.module.css";
 import globalStyles from "../styles/committees.module.css";
 // import ContactStyles from "../../../styles/pages/contacts.module.css";
@@ -14,27 +14,26 @@ import jantimeline from "./images/socult/jan-timeline.jpg";
 import mime from "./images/socult/mime.jpg";
 import resultmusic from "./images/socult/result-music.jpg";
 import comedynight from "./images/socult/comedynight.png";
-import sc1 from './images/socult/sc1.png';
-import sc2 from './images/socult/sc2.png';
-import sc3 from './images/socult/sc3.png';
-import sc4 from './images/socult/sc4.png';
-import sc5 from './images/socult/sc5.png';
-import sc6 from './images/socult/sc6.png';
-import sc7 from './images/socult/sc7.png';
-import sc8 from './images/socult/sc8.png';
-import sc9 from './images/socult/sc9.png';
-import sc10 from './images/socult/sc10.png';
-import sc11 from './images/socult/sc11.png';
-import sc12 from './images/socult/sc12.png';
-import sc13 from './images/socult/sc13.png';
-import sc14 from './images/socult/sc14.png';
-import sc15 from './images/socult/sc15.png';
-import sc16 from './images/socult/sc16.png';
-import sc17 from './images/socult/sc17.jpg';
-import sc18 from './images/socult/sc18.jpg';
-import sc19 from './images/socult/sc19.jpg';
-import sc20 from './images/socult/sc20.jpg';
-
+import sc1 from "./images/socult/sc1.png";
+import sc2 from "./images/socult/sc2.png";
+import sc3 from "./images/socult/sc3.png";
+import sc4 from "./images/socult/sc4.png";
+import sc5 from "./images/socult/sc5.png";
+import sc6 from "./images/socult/sc6.png";
+import sc7 from "./images/socult/sc7.png";
+import sc8 from "./images/socult/sc8.png";
+import sc9 from "./images/socult/sc9.png";
+import sc10 from "./images/socult/sc10.png";
+import sc11 from "./images/socult/sc11.png";
+import sc12 from "./images/socult/sc12.png";
+import sc13 from "./images/socult/sc13.png";
+import sc14 from "./images/socult/sc14.png";
+import sc15 from "./images/socult/sc15.png";
+import sc16 from "./images/socult/sc16.png";
+import sc17 from "./images/socult/sc17.jpg";
+import sc18 from "./images/socult/sc18.jpg";
+import sc19 from "./images/socult/sc19.jpg";
+import sc20 from "./images/socult/sc20.jpg";
 
 export default function Socult() {
   // const techComTeam = [
@@ -150,8 +149,6 @@ export default function Socult() {
           </div>
         </section>
 
-        
-
         <section>
           <h1>Illumination 2021</h1>
           <section className={`${Styles.illuVideoSection}`}>
@@ -170,27 +167,49 @@ export default function Socult() {
             <hr className={globalStyles.hrLine} />
             <h2 className={globalStyles.head2}>Open IIT Solo Dance</h2>
           </center>
-          
+
           <section>
-          <center>
-                <div className={globalStyles.imgContainer}>
-                    <img src={sc20} alt="Open_IIT_Solo_Dance" />
-                </div>
+            <center>
+              <div className={globalStyles.imgContainer}>
+                <img src={sc20} alt="Open_IIT_Solo_Dance" />
+              </div>
             </center>
             <div className={globalStyles.centerCard}>
               <p>
-                "Dance Is a Language Beyond Words, Expressing That for Which We Have No Words. " - Suja Dinkar<br />
+                "Dance Is a Language Beyond Words, Expressing That for Which We
+                Have No Words. " - Suja Dinkar
                 <br />
-                Technology Students' Gymkhana, IIT Kharagpur presents OPEN IIT Solo Dance Competition.<br />
                 <br />
-                Date: 11th September 2022<br />
-                Time: 5:00 P.M. onwards<br />
-                Venue: Bhatnagar Auditorium<br />
+                Technology Students' Gymkhana, IIT Kharagpur presents OPEN IIT
+                Solo Dance Competition.
                 <br />
-                Rules: <a href="https://docs.google.com/document/d/1-meQOMBGP3RItdILMK-AAJ1hPpJrQivdMHpVpcDQnyQ/edit?fbclid=IwAR2OID09xenAA-1HFo2ZXjoNz9uWOO7Rh8EOEsW66Y8N2M_rsPwrBNvq7dg" target="_blank" rel="noreferrer">Link</a><br />
                 <br />
-                Registration Form: <a href="https://forms.gle/Rb5Pm3oMhee2p63p7" target="_blank" rel="noreferrer">Link</a><br />
-
+                Date: 11th September 2022
+                <br />
+                Time: 5:00 P.M. onwards
+                <br />
+                Venue: Bhatnagar Auditorium
+                <br />
+                <br />
+                Rules:{" "}
+                <a
+                  href="https://docs.google.com/document/d/1-meQOMBGP3RItdILMK-AAJ1hPpJrQivdMHpVpcDQnyQ/edit?fbclid=IwAR2OID09xenAA-1HFo2ZXjoNz9uWOO7Rh8EOEsW66Y8N2M_rsPwrBNvq7dg"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Link
+                </a>
+                <br />
+                <br />
+                Registration Form:{" "}
+                <a
+                  href="https://forms.gle/Rb5Pm3oMhee2p63p7"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Link
+                </a>
+                <br />
               </p>
             </div>
           </section>
@@ -204,27 +223,55 @@ export default function Socult() {
               <img
                 className={globalStyles.cardImg}
                 src={sc19}
-
                 alt="Open_IIT_Sketching"
-                style={{borderRadius: '1.25rem', objectFit: 'contain', width: '35vw', height:'80vh',}}
+                style={{
+                  borderRadius: "1.25rem",
+                  objectFit: "contain",
+                  width: "35vw",
+                  height: "80vh",
+                }}
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
                 <br />
-                Greeting Junta!<br />
+                Greeting Junta!
                 <br />
-                “An artist cannot fail; it is a success to be one.” – Charles Horton Cooley<br />
                 <br />
-                Technology Students' Gymkhana brings to you the first of the OPEN-IIT for this Academic year, OPEN-IIT Sketching<br />
+                “An artist cannot fail; it is a success to be one.” – Charles
+                Horton Cooley
                 <br />
-                Date: 10/09/2022<br />
-                Time: 2:30pm - 5:30pm<br />
-                Venue: Room S-301 Main building<br />
                 <br />
-                Register: <a href="https://forms.gle/P6eNuCYyRRmsyK9aA" target="_blank" rel="noreferrer">Link</a><br />
+                Technology Students' Gymkhana brings to you the first of the
+                OPEN-IIT for this Academic year, OPEN-IIT Sketching
                 <br />
-                Rules: <a href="https://docs.google.com/document/d/1CvLAR_FAgjx-qzZup94UZClmoZCNyfMGWuGZorwsdmM/edit?fbclid=IwAR0UUiR1ggoCPccA5-jPaIowyZDeOkcftZBVvbJhVNVcraC5KDZXl_KDbF4" target="_blank" rel="noreferrer">Link</a><br />
+                <br />
+                Date: 10/09/2022
+                <br />
+                Time: 2:30pm - 5:30pm
+                <br />
+                Venue: Room S-301 Main building
+                <br />
+                <br />
+                Register:{" "}
+                <a
+                  href="https://forms.gle/P6eNuCYyRRmsyK9aA"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Link
+                </a>
+                <br />
+                <br />
+                Rules:{" "}
+                <a
+                  href="https://docs.google.com/document/d/1CvLAR_FAgjx-qzZup94UZClmoZCNyfMGWuGZorwsdmM/edit?fbclid=IwAR0UUiR1ggoCPccA5-jPaIowyZDeOkcftZBVvbJhVNVcraC5KDZXl_KDbF4"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Link
+                </a>
+                <br />
                 <br />
                 Think creatively and innovate!!
               </p>
@@ -237,74 +284,134 @@ export default function Socult() {
           </center>
 
           <section>
-          <center>
-                <div className={globalStyles.imgContainer}>
-                    <img src={sc18} alt="Open_IIT_Vocals" />
-                </div>
+            <center>
+              <div className={globalStyles.imgContainer}>
+                <img src={sc18} alt="Open_IIT_Vocals" />
+              </div>
             </center>
             <div className={globalStyles.centerCard}>
               <p>
-                “Music is a language that doesn’t speak in particular words. It speaks in emotions, and if it’s in the bones, it’s in the bones.” ― Keith Richards<br />
+                “Music is a language that doesn’t speak in particular words. It
+                speaks in emotions, and if it’s in the bones, it’s in the
+                bones.” ― Keith Richards
                 <br />
-                Technology Students' Gymkhana, IIT Kharagpur presents OPEN IIT VOCALS.<br />
                 <br />
-                Date: 9th September 2022<br />
-                Time: 6:00 P.M. onwards<br />
-                Venue: Raman Auditorium<br />
+                Technology Students' Gymkhana, IIT Kharagpur presents OPEN IIT
+                VOCALS.
                 <br />
-                Rules: <a href="https://bit.ly/Vocals_Rules" target="_blank" rel="noreferrer">Link</a><br />
                 <br />
-                Registration form: <a href="https://bit.ly/Open_IIT_VOCALS" target="_blank" rel="noreferrer">Link</a>
+                Date: 9th September 2022
+                <br />
+                Time: 6:00 P.M. onwards
+                <br />
+                Venue: Raman Auditorium
+                <br />
+                <br />
+                Rules:{" "}
+                <a
+                  href="https://bit.ly/Vocals_Rules"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Link
+                </a>
+                <br />
+                <br />
+                Registration form:{" "}
+                <a
+                  href="https://bit.ly/Open_IIT_VOCALS"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Link
+                </a>
               </p>
             </div>
           </section>
 
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2}>COMIC  कौन? Results</h2>
+            <h2 className={globalStyles.head2}>COMIC कौन? Results</h2>
           </center>
 
           <section>
             <div className={globalStyles.centerCard}>
               <p>
-                The first ever Talent Cafe: Stand-up Competition was a massive success!<br />
-                Students commanded the stage with their jokes and funny insights, to the applause and amusement of the crowd.<br />
-                Although every performance was commendable, here are the final results:<br />
+                The first ever Talent Cafe: Stand-up Competition was a massive
+                success!
+                <br />
+                Students commanded the stage with their jokes and funny
+                insights, to the applause and amusement of the crowd.
+                <br />
+                Although every performance was commendable, here are the final
+                results:
                 <br />
                 <br />
-                1st place: Pratiksha Bhadani<br />
                 <br />
-                2nd place: Manav Sharma<br />
+                1st place: Pratiksha Bhadani
                 <br />
-                3rd place: Utkarsh Singh<br />
+                <br />
+                2nd place: Manav Sharma
+                <br />
+                <br />
+                3rd place: Utkarsh Singh
+                <br />
               </p>
             </div>
           </section>
 
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2}>COMIC  कौन?</h2>
+            <h2 className={globalStyles.head2}>COMIC कौन?</h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
                 src={sc16}
-
                 alt="Comic_Kaun_Poster"
-                style={{borderRadius: '1.25rem', objectFit: 'contain', width: '35vw', height:'80vh',}}
+                style={{
+                  borderRadius: "1.25rem",
+                  objectFit: "contain",
+                  width: "35vw",
+                  height: "80vh",
+                }}
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-              Technology Students' Gymkhana presents Talent Cafe. Talent Cafe will be a series of events aiming to attract the KGP Community to indulge in Social and Cultural Activities. <br /> <br />
-              "Comedy is an escape, not from truth but from despair; a narrow escape into faith." <br />
-              - Christopher Fry <br /><br />
-              We bring to you the first of this series, COMIC कौन? - STAND-UP COMPETITION. So let's break the monotony of a full week of offline class and join us for the first-ever Talent Cafe.
-              <br /><br />
-                Register here: <a href="https://docs.google.com/forms/d/e/1FAIpQLSetbCAHTcgKFODlM2VDVT0-jTr0lP-FtT9zb8DuVq_i7nXxRw/viewform?usp=pp_url&fbclid=IwAR1yaLFiObmhwJn4M0Cpogfv9RLMeIXwpssNP2zA362E0iCfj6FZwOH01NI" target='_blank' rel="noreferrer">Link</a><br />
-                Rules : <a href="https://docs.google.com/document/d/16hlwp1a_q3fzwsf8bWRUuS4T-Kn1_H0ZuEY1LikXO6s/edit?usp=sharing&fbclid=IwAR0gZKjpOevfOLDz6OwvZiNQdnvodx3XiQsNxG1Zy-0S4AyHYlXWgNCvCWY" target='_blank' rel="noreferrer">Link</a><br />
-                Time:10 A.M<br />
+                Technology Students' Gymkhana presents Talent Cafe. Talent Cafe
+                will be a series of events aiming to attract the KGP Community
+                to indulge in Social and Cultural Activities. <br /> <br />
+                "Comedy is an escape, not from truth but from despair; a narrow
+                escape into faith." <br />
+                - Christopher Fry <br />
+                <br />
+                We bring to you the first of this series, COMIC कौन? - STAND-UP
+                COMPETITION. So let's break the monotony of a full week of
+                offline class and join us for the first-ever Talent Cafe.
+                <br />
+                <br />
+                Register here:{" "}
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSetbCAHTcgKFODlM2VDVT0-jTr0lP-FtT9zb8DuVq_i7nXxRw/viewform?usp=pp_url&fbclid=IwAR1yaLFiObmhwJn4M0Cpogfv9RLMeIXwpssNP2zA362E0iCfj6FZwOH01NI"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Link
+                </a>
+                <br />
+                Rules :{" "}
+                <a
+                  href="https://docs.google.com/document/d/16hlwp1a_q3fzwsf8bWRUuS4T-Kn1_H0ZuEY1LikXO6s/edit?usp=sharing&fbclid=IwAR0gZKjpOevfOLDz6OwvZiNQdnvodx3XiQsNxG1Zy-0S4AyHYlXWgNCvCWY"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Link
+                </a>
+                <br />
+                Time:10 A.M
+                <br />
                 Date: 4th September <br />
                 Time: 6PM onwards <br />
                 Venue: F-224, Main Building
@@ -321,30 +428,46 @@ export default function Socult() {
               <img
                 className={globalStyles.cardImg}
                 src={sc17}
-
                 alt="PAN_IIT_Cooking_Ppster"
-                style={{borderRadius: '1.25rem', objectFit: 'contain', width: '35vw', height:'100vh',}}
+                style={{
+                  borderRadius: "1.25rem",
+                  objectFit: "contain",
+                  width: "35vw",
+                  height: "100vh",
+                }}
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-              As we witness the pandemic fade away and things go back to normal, it’s time for us to get our minds out of this world to craft yet another celebration of the one thing that drives us all, great food! <br /><br /> We present to you the PAN IIT Cooking Competition, sponsored by Metvy. <br /><br /> With a renowned panel of international chefs judging the event, the bar is going to be high as ever. 
-              <br /><br />
-              This year PAN IIT introduces to you three themes!
-              <br />
-              1) Vegan Ventures <br />
-              2) Fusion BoX <br />
-              3) Snacker Hacker <br /><br />
-              You can send in entries for any or all themes!! <br /><br />
-              <strong>Submission Date: </strong>Anytime between 15th and 22nd July 2022 <br /><br />
-              <strong>Prizes: </strong> ₹3,000/- to all the winners and ALL participants get benefits worth ₹750/- !!
+                As we witness the pandemic fade away and things go back to
+                normal, it’s time for us to get our minds out of this world to
+                craft yet another celebration of the one thing that drives us
+                all, great food! <br />
+                <br /> We present to you the PAN IIT Cooking Competition,
+                sponsored by Metvy. <br />
+                <br /> With a renowned panel of international chefs judging the
+                event, the bar is going to be high as ever.
+                <br />
+                <br />
+                This year PAN IIT introduces to you three themes!
+                <br />
+                1) Vegan Ventures <br />
+                2) Fusion BoX <br />
+                3) Snacker Hacker <br />
+                <br />
+                You can send in entries for any or all themes!! <br />
+                <br />
+                <strong>Submission Date: </strong>Anytime between 15th and 22nd
+                July 2022 <br />
+                <br />
+                <strong>Prizes: </strong> ₹3,000/- to all the winners and ALL
+                participants get benefits worth ₹750/- !!
               </p>
             </div>
           </section>
 
           {/* // */}
           <center>
-
             <h1>Inter Hall Gymkhana Championship</h1>
           </center>
 
@@ -356,39 +479,53 @@ export default function Socult() {
             </center>
 
             <p className={globalStyles.centerCard}>
-              Hello everyone,<br />
-              After almost two years we saw everybody engaging again in the spirits of Social and Cultural with the ever high Hall Tempo. This time all the halls vied for victory in Gymkhana Championships and we witnessed an amazing display of dedication and enthusiasm.<br />
-              We release the final standings of all Social and Cultural events . Huge congratulations to all the winners!!<br />
+              Hello everyone,
+              <br />
+              After almost two years we saw everybody engaging again in the
+              spirits of Social and Cultural with the ever high Hall Tempo. This
+              time all the halls vied for victory in Gymkhana Championships and
+              we witnessed an amazing display of dedication and enthusiasm.
+              <br />
+              We release the final standings of all Social and Cultural events .
+              Huge congratulations to all the winners!!
+              <br />
               <br />
             </p>
           </section>
 
-
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2}>Gymkhana Championship General Quiz</h2>
+            <h2 className={globalStyles.head2}>
+              Gymkhana Championship General Quiz
+            </h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
                 src={sc2}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-                Are you facts geek to consume all the latest updates around the world starting from economic and technology to movies and music?<br />
-                Then brace up ,as this is your chance to exhibit the profound general knowledge you have accumulated and lead your Halls to a glorious feat at Gymkhana General Quiz Championship.<br /><br />
-                Date: 3rd April, 2022<br />
-                Venue:V-3<br />
-                Time:10 A.M<br />
+                Are you facts geek to consume all the latest updates around the
+                world starting from economic and technology to movies and music?
+                <br />
+                Then brace up ,as this is your chance to exhibit the profound
+                general knowledge you have accumulated and lead your Halls to a
+                glorious feat at Gymkhana General Quiz Championship.
+                <br />
+                <br />
+                Date: 3rd April, 2022
+                <br />
+                Venue:V-3
+                <br />
+                Time:10 A.M
+                <br />
               </p>
             </div>
           </section>
-
-
 
           <center>
             <hr className={globalStyles.hrLine} />
@@ -399,18 +536,26 @@ export default function Socult() {
               <img
                 className={globalStyles.cardImg}
                 src={sc3}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-                Hello everyone,<br />
-                " Hot,Red,Rash,Extinguish, Water...." . Can you guess a relatable word these words?<br />
-                Brainstorm junta,you can do it? For those who could not crack it - it is fire. This is amusing ,right?<br />
-                We are here to escalate the thrill by testing how well- versed you are with words with this entertaining event of guessing- *What is the good word* .<br />
-                Think creatively,think fast,think deeply too but be cautious to not spill out the key word directly.<br /><br />
-
+                Hello everyone,
+                <br />
+                " Hot,Red,Rash,Extinguish, Water...." . Can you guess a
+                relatable word these words?
+                <br />
+                Brainstorm junta,you can do it? For those who could not crack it
+                - it is fire. This is amusing ,right?
+                <br />
+                We are here to escalate the thrill by testing how well- versed
+                you are with words with this entertaining event of guessing-
+                *What is the good word* .<br />
+                Think creatively,think fast,think deeply too but be cautious to
+                not spill out the key word directly.
+                <br />
+                <br />
                 Date- 30th March, 2022 <br />
                 Event-Venue: F-244 <br />
                 Time:6PM <br />
@@ -421,7 +566,9 @@ export default function Socult() {
 
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2}>Gymkhana Championship Sketching</h2>
+            <h2 className={globalStyles.head2}>
+              Gymkhana Championship Sketching
+            </h2>
           </center>
 
           <section>
@@ -432,15 +579,20 @@ export default function Socult() {
             </center>
 
             <p className={globalStyles.centerCard}>
-              Sketch your heart out. Display  your inner artist through Gymkhana Championship Sketching.<br />
-              Date: 29/03/2022<br />
-              Time: 6:30pm - 9:30pm<br />
-              Venue: Room S-301 Main building<br />
-              Think creative and innovate!!<br />
+              Sketch your heart out. Display your inner artist through Gymkhana
+              Championship Sketching.
+              <br />
+              Date: 29/03/2022
+              <br />
+              Time: 6:30pm - 9:30pm
+              <br />
+              Venue: Room S-301 Main building
+              <br />
+              Think creative and innovate!!
+              <br />
               <br />
             </p>
           </section>
-
 
           <center>
             <hr className={globalStyles.hrLine} />
@@ -451,45 +603,57 @@ export default function Socult() {
               <img
                 className={globalStyles.cardImg}
                 src={sc5}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-                We are excited to announce the Gymkhana Championship Groups competition. All the musical minds,get ready to radiate through your rhythm and harmony.<br /><br />
-                Date-28/03/2022<br />
-                Venue-Tagore Open Air Theatre<br />
-                Time-6:30PM<br />
-                Please go through the link for rules pertaining to the event<br />
+                We are excited to announce the Gymkhana Championship Groups
+                competition. All the musical minds,get ready to radiate through
+                your rhythm and harmony.
+                <br />
+                <br />
+                Date-28/03/2022
+                <br />
+                Venue-Tagore Open Air Theatre
+                <br />
+                Time-6:30PM
+                <br />
+                Please go through the link for rules pertaining to the event
+                <br />
               </p>
             </div>
           </section>
 
-
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2}>Gymkhana Championship Cartooning</h2>
+            <h2 className={globalStyles.head2}>
+              Gymkhana Championship Cartooning
+            </h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
                 src={sc6}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-                Art is not what you see but what you make others see. Bring out your inner artist through Gymkhana Championship Cartooning.<br /><br />
-                Date: 23/03/2022<br />
-                Time: 6pm - 9pm<br />
-                Venue: Room S-301 Main building<br />
+                Art is not what you see but what you make others see. Bring out
+                your inner artist through Gymkhana Championship Cartooning.
+                <br />
+                <br />
+                Date: 23/03/2022
+                <br />
+                Time: 6pm - 9pm
+                <br />
+                Venue: Room S-301 Main building
+                <br />
               </p>
             </div>
           </section>
-
 
           <center>
             <hr className={globalStyles.hrLine} />.
@@ -503,41 +667,57 @@ export default function Socult() {
             </center>
 
             <p className={globalStyles.centerCard}>
-              Dance is like dreaming with your movements, it is like the poetry of foot and it paves the way for an incredible form of expression. <br />
-              Get ready people as you have the opportunity  to open your heart and pour out creativity with Gymkhana Championship Choreography.Be powerful, be larger than life, be passionate and most of all enjoy each step along the way.<br /><br />
-              Date: 20th and 21st March 2022<br />
-              Venue: Netaji Auditorium<br />
-              Time: 8:00 PM<br />
+              Dance is like dreaming with your movements, it is like the poetry
+              of foot and it paves the way for an incredible form of expression.{" "}
+              <br />
+              Get ready people as you have the opportunity to open your heart
+              and pour out creativity with Gymkhana Championship Choreography.Be
+              powerful, be larger than life, be passionate and most of all enjoy
+              each step along the way.
+              <br />
+              <br />
+              Date: 20th and 21st March 2022
+              <br />
+              Venue: Netaji Auditorium
+              <br />
+              Time: 8:00 PM
+              <br />
               <br />
             </p>
           </section>
 
-
           <center>
             <hr className={globalStyles.hrLine} />
-            <h2 className={globalStyles.head2}>Gymkhana Championship Eastern Instrumentals</h2>
+            <h2 className={globalStyles.head2}>
+              Gymkhana Championship Eastern Instrumentals
+            </h2>
           </center>
           <section className={globalStyles.cmtCard1}>
             <div className={globalStyles.leftCard}>
               <img
                 className={globalStyles.cardImg}
                 src={sc8}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-                We are excited to announce the Inter Hall Eastern Instrumental competition. All the musical minds, get ready to radiate through your rhythm and harmony.<br /><br />
-                Date-16/03/2022<br />
-                Venue-Raman Auditorium<br />
-                Time-7:00PM<br />
-                Judges: Pratik Sarkar , Devyani Pareek Sarkar<br />
+                We are excited to announce the Inter Hall Eastern Instrumental
+                competition. All the musical minds, get ready to radiate through
+                your rhythm and harmony.
+                <br />
+                <br />
+                Date-16/03/2022
+                <br />
+                Venue-Raman Auditorium
+                <br />
+                Time-7:00PM
+                <br />
+                Judges: Pratik Sarkar , Devyani Pareek Sarkar
+                <br />
               </p>
             </div>
           </section>
-
-
 
           <center>
             <hr className={globalStyles.hrLine} />
@@ -548,23 +728,34 @@ export default function Socult() {
               <img
                 className={globalStyles.cardImg}
                 src={sc9}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-
-                " For good ideas and true innovation, you need human interaction, conflict, argument, debate."<br /><br />
-                Are you a great speaker and spontaneous thinker? Can you make your opinions turn the table? Then, come on people, as it is the time to showcase your debating skills and take them aside for your halls. Cultural, IIT Kharagpur invites you all to speak your mind with Gymkhana Championship Debate. Only with words as your weapons, facts as your shield, and logic as your force can you win this battle.<br />
-                𝗗𝗮𝘁𝗲-𝟵𝘁𝗵 𝗠𝗮𝗿𝗰𝗵 𝟮𝟬𝟮𝟮<br />
-                𝗩𝗲𝗻𝘂𝗲- 𝗠𝗮𝗶𝗻 𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴, 𝗙𝟮𝟰𝟰<br />
-                𝗧𝗶𝗺𝗲: 𝟳𝗽𝗺<br />
-                𝗧𝗼𝗽𝗶𝗰: 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗶𝘀 𝗮 𝗳𝗶𝗻𝗲 𝗱𝗿𝗲𝗮𝗺 𝘁𝗵𝗮𝘁 𝗺𝗮𝘆 𝘁𝘂𝗿𝗻 𝗶𝗻𝘁𝗼 𝗱𝗮𝗻𝗴𝗲𝗿𝗼𝘂𝘀 𝗿𝗲𝗮𝗹𝗶𝘁𝗶𝗲𝘀.
+                " For good ideas and true innovation, you need human
+                interaction, conflict, argument, debate."
+                <br />
+                <br />
+                Are you a great speaker and spontaneous thinker? Can you make
+                your opinions turn the table? Then, come on people, as it is the
+                time to showcase your debating skills and take them aside for
+                your halls. Cultural, IIT Kharagpur invites you all to speak
+                your mind with Gymkhana Championship Debate. Only with words as
+                your weapons, facts as your shield, and logic as your force can
+                you win this battle.
+                <br />
+                𝗗𝗮𝘁𝗲-𝟵𝘁𝗵 𝗠𝗮𝗿𝗰𝗵 𝟮𝟬𝟮𝟮
+                <br />
+                𝗩𝗲𝗻𝘂𝗲- 𝗠𝗮𝗶𝗻 𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴, 𝗙𝟮𝟰𝟰
+                <br />
+                𝗧𝗶𝗺𝗲: 𝟳𝗽𝗺
+                <br />
+                𝗧𝗼𝗽𝗶𝗰: 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗶𝘀 𝗮 𝗳𝗶𝗻𝗲 𝗱𝗿𝗲𝗮𝗺 𝘁𝗵𝗮𝘁 𝗺𝗮𝘆 𝘁𝘂𝗿𝗻
+                𝗶𝗻𝘁𝗼 𝗱𝗮𝗻𝗴𝗲𝗿𝗼𝘂𝘀 𝗿𝗲𝗮𝗹𝗶𝘁𝗶𝗲𝘀.
               </p>
             </div>
           </section>
-
 
           <center>
             <hr className={globalStyles.hrLine} />
@@ -575,26 +766,30 @@ export default function Socult() {
               <img
                 className={globalStyles.cardImg}
                 src={sc10}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-
-                If you are an artist -driven by passion,delighted by creation,enthralled with expression,fueled by compulsion and blindsided by inspiration-
-                then get ready to bring fruition of your creativity and inner artist with Inter Hall Thermocol and Clay Modelling. It's time  bestow your imagination a shape,a structure,a story ,a spectacle like no other  and paint success for your halls.
-                Date-06/03/2022<br />
-                Time: 12:00PM - 6:00PM<br />
-                Venue: S-301 Main building<br /><br />
-                Think creatively and innovatively to .This is because motivation creates excitement and enthusiasm to make good models!!<br />
-
+                If you are an artist -driven by passion,delighted by
+                creation,enthralled with expression,fueled by compulsion and
+                blindsided by inspiration- then get ready to bring fruition of
+                your creativity and inner artist with Inter Hall Thermocol and
+                Clay Modelling. It's time bestow your imagination a shape,a
+                structure,a story ,a spectacle like no other and paint success
+                for your halls. Date-06/03/2022
+                <br />
+                Time: 12:00PM - 6:00PM
+                <br />
+                Venue: S-301 Main building
+                <br />
+                <br />
+                Think creatively and innovatively to .This is because motivation
+                creates excitement and enthusiasm to make good models!!
+                <br />
               </p>
             </div>
           </section>
-
-
-
 
           <center>
             <hr className={globalStyles.hrLine} />
@@ -605,22 +800,28 @@ export default function Socult() {
               <img
                 className={globalStyles.cardImg}
                 src={sc11}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-
-                “ Film is a great tool to portray emotions, thoughts, stories, tragedies, happiness, sadness....it is a chance to live many lifetimes”<br /><br />
-                We bring to you an adrenaline-filled competition to tell  tales in your creative style.  Giving a medium to all the geniuses who believe in showing the world unseen with Inter Hall Short film making Gymkhana Championship.<br />
-                Theme release: 02nd March<br />
-                Submission Deadline: 02nd April<br />
+                “ Film is a great tool to portray emotions, thoughts, stories,
+                tragedies, happiness, sadness....it is a chance to live many
+                lifetimes”
+                <br />
+                <br />
+                We bring to you an adrenaline-filled competition to tell tales
+                in your creative style. Giving a medium to all the geniuses who
+                believe in showing the world unseen with Inter Hall Short film
+                making Gymkhana Championship.
+                <br />
+                Theme release: 02nd March
+                <br />
+                Submission Deadline: 02nd April
+                <br />
               </p>
             </div>
           </section>
-
-
 
           <center>
             <hr className={globalStyles.hrLine} />.
@@ -634,14 +835,23 @@ export default function Socult() {
             </center>
 
             <p className={globalStyles.description}>
-              This year began with lots of opportunities, fun and enthusiasm. To keep the excitement going we packed up the first month with quite a few creative and competitive events. We highly appreciate your ebullient participation until now.<br /><br />
-              Needless to say, there are other extremely exhilarating activities coming up for you all. So keep up the high spirit.We hope you enjoy all the upcoming activities vivaciously.
-              Do have a look on the event's timeline below.<br /><br />
-              So stay tuned to stay thrilled!!!!<br />
+              This year began with lots of opportunities, fun and enthusiasm. To
+              keep the excitement going we packed up the first month with quite
+              a few creative and competitive events. We highly appreciate your
+              ebullient participation until now.
+              <br />
+              <br />
+              Needless to say, there are other extremely exhilarating activities
+              coming up for you all. So keep up the high spirit.We hope you
+              enjoy all the upcoming activities vivaciously. Do have a look on
+              the event's timeline below.
+              <br />
+              <br />
+              So stay tuned to stay thrilled!!!!
+              <br />
               <br />
             </p>
           </section>
-
 
           <center>
             <hr className={globalStyles.hrLine} />
@@ -652,23 +862,32 @@ export default function Socult() {
               <img
                 className={globalStyles.cardImg}
                 src={sc13}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-
-                There is something beautiful about a blank canvas, the nothingness of the beginning that is so simple and breathtakingly pure. It’s the paint that changes its meaning and the hand that creates the story.<br />
-                Painting is a line around the thought.  It is your expression, your imagination, your perception ,your creation that channels the inner emotions through beautiful colors on a blank canvas. <br /><br />
-                Technology Students' Gymkhana brings you an opportunity to unleash your inner artist and paint to reveal your love for art through OPEN IIT PAINTING.<br />
-                So, all the artists out there get registered by: 24/02/2022 <br />
+                There is something beautiful about a blank canvas, the
+                nothingness of the beginning that is so simple and
+                breathtakingly pure. It’s the paint that changes its meaning and
+                the hand that creates the story.
+                <br />
+                Painting is a line around the thought. It is your expression,
+                your imagination, your perception ,your creation that channels
+                the inner emotions through beautiful colors on a blank canvas.{" "}
+                <br />
+                <br />
+                Technology Students' Gymkhana brings you an opportunity to
+                unleash your inner artist and paint to reveal your love for art
+                through OPEN IIT PAINTING.
+                <br />
+                So, all the artists out there get registered by: 24/02/2022{" "}
+                <br />
                 Date of the event: 26/02/2022 <br />
                 Get ready to paint the magic!!!
               </p>
             </div>
           </section>
-
 
           <center>
             <hr className={globalStyles.hrLine} />
@@ -679,20 +898,24 @@ export default function Socult() {
               <img
                 className={globalStyles.cardImg}
                 src={sc14}
-
                 alt="Music result"
               />
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-
-                “Dance is the Joy of Moment and the Heart of Life”<br /><br />
-                Technology Students’ Gymkhana, IIT Kharagpur summon all the dance enthusiasts to draw in a breath, kick off your shoes, and dance. Reveal your passion for dance and surrender to the music as you channel your grace, swag, or style.<br /><br />
+                “Dance is the Joy of Moment and the Heart of Life”
+                <br />
+                <br />
+                Technology Students’ Gymkhana, IIT Kharagpur summon all the
+                dance enthusiasts to draw in a breath, kick off your shoes, and
+                dance. Reveal your passion for dance and surrender to the music
+                as you channel your grace, swag, or style.
+                <br />
+                <br />
                 Tune in and Twirl !!
               </p>
             </div>
           </section>
-
 
           <center>
             <hr className={globalStyles.hrLine} />
@@ -708,11 +931,22 @@ export default function Socult() {
             </div>
             <div className={globalStyles.rightCard}>
               <p>
-
                 <br />
-                Language is the dress of thought. Language is culture, the tradition of living societies. The kaleidoscope of languages is unseen threads that link the massive- colorful fabric of the past to the beautiful couture of the present. <br /><br />
-                Matri Bhasha Diwas, observed on 21st February, promotes the dissemination of the mother tongue to inspire solidarity based on understanding, tolerance, and dialogue. On the occasion of this momentous celebration of our lineage and pride, Social and Cultural, Technology Students’ Gymkhana invites you all to reflect on our cultural and linguistic identity to celebrate the essence and magic of unity in diversity.
-                We are organizing a host of activities to depict diverse forms of literature and arts which include: <br /><br />
+                Language is the dress of thought. Language is culture, the
+                tradition of living societies. The kaleidoscope of languages is
+                unseen threads that link the massive- colorful fabric of the
+                past to the beautiful couture of the present. <br />
+                <br />
+                Matri Bhasha Diwas, observed on 21st February, promotes the
+                dissemination of the mother tongue to inspire solidarity based
+                on understanding, tolerance, and dialogue. On the occasion of
+                this momentous celebration of our lineage and pride, Social and
+                Cultural, Technology Students’ Gymkhana invites you all to
+                reflect on our cultural and linguistic identity to celebrate the
+                essence and magic of unity in diversity. We are organizing a
+                host of activities to depict diverse forms of literature and
+                arts which include: <br />
+                <br />
                 • Elocution <br />
                 • Debating <br />
                 • Essay Writing <br />
@@ -722,9 +956,6 @@ export default function Socult() {
               </p>
             </div>
           </section>
-
-
-
 
           <center>
             <hr className={globalStyles.hrLine} />.
@@ -817,26 +1048,37 @@ export default function Socult() {
                 Rules:
                 <br />
                 English:
-                <a className={globalStyles.btn} href="https://docs.google.com/document/d/1SfwNeKQknrynpBWCl7CRlrdVNwa9Z180nj0S-T9j3FU/edit?fbclid=IwAR2FrcM5geO-xN5SYpCU1hg1RlW9Ny0R4kplVOfCxZWcng_RzzLKX0DngpQ">
+                <a
+                  className={globalStyles.btn}
+                  href="https://docs.google.com/document/d/1SfwNeKQknrynpBWCl7CRlrdVNwa9Z180nj0S-T9j3FU/edit?fbclid=IwAR2FrcM5geO-xN5SYpCU1hg1RlW9Ny0R4kplVOfCxZWcng_RzzLKX0DngpQ"
+                >
                   Click here
                 </a>
                 <br />
                 Hindi:
-                <a className={globalStyles.btn} href="https://docs.google.com/document/d/1YQcPfEg2hbbt6jd6I5reLa5tV_X3Oe1wlYYVQiIcUtU/edit?fbclid=IwAR33-xj7562A9duEKV6gj9wOIt9-jKqRoLSByIpJteWxPKAyXp4N8zlFWcw">
+                <a
+                  className={globalStyles.btn}
+                  href="https://docs.google.com/document/d/1YQcPfEg2hbbt6jd6I5reLa5tV_X3Oe1wlYYVQiIcUtU/edit?fbclid=IwAR33-xj7562A9duEKV6gj9wOIt9-jKqRoLSByIpJteWxPKAyXp4N8zlFWcw"
+                >
                   Click here
                 </a>
                 <br />
                 Deadline for registration:28th January 2022 Deadline for
                 submissions of performances:5th February 2022
                 <br />
-                Register below: English:
-                {" "}
-                <a className={globalStyles.btn} href="https://forms.gle/2snVJTyaPMWRCxAH6">
+                Register below: English:{" "}
+                <a
+                  className={globalStyles.btn}
+                  href="https://forms.gle/2snVJTyaPMWRCxAH6"
+                >
                   Click here to register
                 </a>
                 <br />
                 Hindi:
-                <a className={globalStyles.btn} href="https://forms.gle/VL2xixYYxtfYxiEm9">
+                <a
+                  className={globalStyles.btn}
+                  href="https://forms.gle/VL2xixYYxtfYxiEm9"
+                >
                   Click here to register
                 </a>
                 <br />
@@ -879,12 +1121,20 @@ export default function Socult() {
                 of the Indian Institute of Technology, Kharagpur.
                 <br />
                 Rules:
-                <a className={globalStyles.btn} href="https://docs.google.com/document/d/12AIW1l83Dv8IgaEfCCfbveXrFDDHShTwQC6S5MTX7mw/edit?fbclid=IwAR3Ftok6rugzm4x0UaY1csoR-3dnIBRWHYUPYJdAlgtfeYC5zyd5ju3KNZI">
+                <a
+                  className={globalStyles.btn}
+                  href="https://docs.google.com/document/d/12AIW1l83Dv8IgaEfCCfbveXrFDDHShTwQC6S5MTX7mw/edit?fbclid=IwAR3Ftok6rugzm4x0UaY1csoR-3dnIBRWHYUPYJdAlgtfeYC5zyd5ju3KNZI"
+                >
                   Click here
                 </a>
                 <br />
                 Submission Google form:
-                <a className={globalStyles.btn} href="https://forms.gle/bd6AMwUY3HSp9hEZ8">Click here</a>
+                <a
+                  className={globalStyles.btn}
+                  href="https://forms.gle/bd6AMwUY3HSp9hEZ8"
+                >
+                  Click here
+                </a>
                 <br />
                 <br />
                 Last date of submission: 28-01-2022, 11:59 PM

@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@material-ui/core";
 import { useState } from "react";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layouts/Layout";
 import Styles from "./elections.module.css";
 
 import { candidates, secyPosts, posts } from "../../data/electionsData";

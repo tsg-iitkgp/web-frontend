@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../../components/Layout";
+import Layout from "../../../components/Layouts/Layout";
 import Styles from "../styles/tech.module.css";
 import globalStyles from "../styles/committees.module.css";
 // import ContactStyles from "../../../styles/pages/contacts.module.css";
@@ -174,8 +174,9 @@ export default function Tech() {
         {/* Other events */}
 
         <center>
-
-          <h1>Inter IIT Tech Meet 10.0 <br /> IIT Kharagpur’s Event Wise Results</h1>
+          <h1>
+            Inter IIT Tech Meet 10.0 <br /> IIT Kharagpur’s Event Wise Results
+          </h1>
         </center>
 
         <section>
@@ -186,64 +187,108 @@ export default function Tech() {
           </center>
 
           <p className={globalStyles.centerCard}>
-            Inter-IIT Tech Meet 10.0 was hosted by IIT Kharagpur, scheduled on 25 - 27th March 2022. Out of 12 Evaluating Events, KGP bagged Gold in 7, Silver in 1, and Bronze in 3 of them with a total number of 2748.41 GC points.<br /><br />
-            Contingent Captain - Mann Goel<br />
-            Contingent Vice-Captain - Kshitiz Khandelwal<br /><br />
-            𝗚𝗢𝗟𝗗 𝗪𝗶𝗻𝗻𝗶𝗻𝗴 𝗘𝘃𝗲𝗻𝘁𝘀<br />
-            1) DIGITAL ALPHA’S SEC FILING ANALYZER FOR SaaS COMPANIES<br />
-            Score - 400<br />
-            2) SILICON LABS' SOCIAL ENTREPRENEURSHIP CHALLENGE<br />
-            Score - 400<br />
-            3) BOSCH’S MODEL EXTRACTION ATTACK FOR VIDEO CLASSIFICATION<br />
-            Score - 400<br />
-            4) DRDO's UAV- GUIDED UGV NAVIGATION CHALLENGE<br />
-            Score - 250<br />
-            5) BOSCH’s AGE AND GENDER DETECTION<br />
-            Score - 250<br />
-            6) MERCARI’S LARGE SCALE SYSTEM DESIGN HACKATHON<br />
-            Score - 136.36<br />
-            7) POWERED BONNET FOR ELECTRIC VEHICLE<br />
-            Score - 144.45<br /><br />
-            𝗦𝗜𝗟𝗩𝗘𝗥 𝗪𝗶𝗻𝗻𝗶𝗻𝗴 𝗘𝘃𝗲𝗻𝘁<br />
-            1) GMETRI’S GROWTH STRATEGY FOR METAVERSE
-            Score - 115.10<br /><br />
-            𝗕𝗥𝗢𝗡𝗭𝗘 𝗪𝗶𝗻𝗻𝗶𝗻𝗴 𝗘𝘃𝗲𝗻𝘁𝘀<br />
-            1) BLUE YONDER'S SUSTAINABLE SUPPLY- CHAIN<br />
-            Score - 318.87<br />
-            2) ISRO’s WEB-BASED AUTOMATIC IDENTIFICATION OF SOLAR BURSTS IN X-RAY LIGHT CURVES<br />
-            Score -  159.60<br />
-            3) MUDREX’S ALPHA TRADING QUEST<br />
-            Score - 159.02<br /><br />
-            And finally, Gold it is!  Technology Students’ Gymkhana heartily congratulates all the contingent members and captains for their restless efforts and hardwork put in to make us proud.
+            Inter-IIT Tech Meet 10.0 was hosted by IIT Kharagpur, scheduled on
+            25 - 27th March 2022. Out of 12 Evaluating Events, KGP bagged Gold
+            in 7, Silver in 1, and Bronze in 3 of them with a total number of
+            2748.41 GC points.
+            <br />
+            <br />
+            Contingent Captain - Mann Goel
+            <br />
+            Contingent Vice-Captain - Kshitiz Khandelwal
+            <br />
+            <br />
+            𝗚𝗢𝗟𝗗 𝗪𝗶𝗻𝗻𝗶𝗻𝗴 𝗘𝘃𝗲𝗻𝘁𝘀
+            <br />
+            1) DIGITAL ALPHA’S SEC FILING ANALYZER FOR SaaS COMPANIES
+            <br />
+            Score - 400
+            <br />
+            2) SILICON LABS' SOCIAL ENTREPRENEURSHIP CHALLENGE
+            <br />
+            Score - 400
+            <br />
+            3) BOSCH’S MODEL EXTRACTION ATTACK FOR VIDEO CLASSIFICATION
+            <br />
+            Score - 400
+            <br />
+            4) DRDO's UAV- GUIDED UGV NAVIGATION CHALLENGE
+            <br />
+            Score - 250
+            <br />
+            5) BOSCH’s AGE AND GENDER DETECTION
+            <br />
+            Score - 250
+            <br />
+            6) MERCARI’S LARGE SCALE SYSTEM DESIGN HACKATHON
+            <br />
+            Score - 136.36
+            <br />
+            7) POWERED BONNET FOR ELECTRIC VEHICLE
+            <br />
+            Score - 144.45
+            <br />
+            <br />
+            𝗦𝗜𝗟𝗩𝗘𝗥 𝗪𝗶𝗻𝗻𝗶𝗻𝗴 𝗘𝘃𝗲𝗻𝘁
+            <br />
+            1) GMETRI’S GROWTH STRATEGY FOR METAVERSE Score - 115.10
+            <br />
+            <br />
+            𝗕𝗥𝗢𝗡𝗭𝗘 𝗪𝗶𝗻𝗻𝗶𝗻𝗴 𝗘𝘃𝗲𝗻𝘁𝘀
+            <br />
+            1) BLUE YONDER'S SUSTAINABLE SUPPLY- CHAIN
+            <br />
+            Score - 318.87
+            <br />
+            2) ISRO’s WEB-BASED AUTOMATIC IDENTIFICATION OF SOLAR BURSTS IN
+            X-RAY LIGHT CURVES
+            <br />
+            Score - 159.60
+            <br />
+            3) MUDREX’S ALPHA TRADING QUEST
+            <br />
+            Score - 159.02
+            <br />
+            <br />
+            And finally, Gold it is! Technology Students’ Gymkhana heartily
+            congratulates all the contingent members and captains for their
+            restless efforts and hardwork put in to make us proud.
             <br />
           </p>
         </section>
 
-
         <center>
           <hr className={globalStyles.hrLine} />
-          <h2 className={globalStyles.head2}> Results of Interhall Case Study</h2>
+          <h2 className={globalStyles.head2}>
+            {" "}
+            Results of Interhall Case Study
+          </h2>
         </center>
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
               src={tc2}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
-              We are delighted to announce the results of Interhall Case Study 2021-22. <br /><br />
-              Gold - Madan Mohan Malviya Hall of Residence<br />
-              Silver - Radha Krishnan Hall of Residence<br />
-              Bronze - Azad Hall of Residence<br /><br />
-              We extend our heartiest congratulations to all the winning teams. And kudos to all the teams who participated!
+              We are delighted to announce the results of Interhall Case Study
+              2021-22. <br />
+              <br />
+              Gold - Madan Mohan Malviya Hall of Residence
+              <br />
+              Silver - Radha Krishnan Hall of Residence
+              <br />
+              Bronze - Azad Hall of Residence
+              <br />
+              <br />
+              We extend our heartiest congratulations to all the winning teams.
+              And kudos to all the teams who participated!
             </p>
           </div>
         </section>
-
 
         <center>
           <hr className={globalStyles.hrLine} />
@@ -258,77 +303,89 @@ export default function Tech() {
           </center>
 
           <p className={globalStyles.centerCard}>
-            We are extremely thrilled to announce the results of Interhall Open Soft 2021-22. <br /> <br />
+            We are extremely thrilled to announce the results of Interhall Open
+            Soft 2021-22. <br /> <br />
             Gold - Lal Bahadur Shastri Hall of Residence <br />
             Silver - Rajendra Prasad Hall of Residence <br />
             Bronze - Lala Lajpat Rai Hall of Residence <br /> <br />
-            We extend our congratulations to all the winning teams. And kudos to all the teams who participated! <br />
+            We extend our congratulations to all the winning teams. And kudos to
+            all the teams who participated! <br />
             <br />
           </p>
         </section>
 
-
         <center>
           <hr className={globalStyles.hrLine} />
-          <h2 className={globalStyles.head2}>Results of Open IIT Math Olympiad</h2>
+          <h2 className={globalStyles.head2}>
+            Results of Open IIT Math Olympiad
+          </h2>
         </center>
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
               src={tc4}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
-              RESULTS | Open IIT Math Olympiad 2021-22<br /><br />
-              Gold:<br />
-              Team Name -  4th dimension
-              <br /><br />
-
+              RESULTS | Open IIT Math Olympiad 2021-22
+              <br />
+              <br />
+              Gold:
+              <br />
+              Team Name - 4th dimension
+              <br />
+              <br />
               Silver: <br />
-              Team Name -  Mathematica
-
-              <br /><br />
+              Team Name - Mathematica
+              <br />
+              <br />
               Bronze: <br />
-              Team Name - Machamps<br />
+              Team Name - Machamps
+              <br />
               <br />
               Technology Students’ Gymkhana congratulates all the winners!
             </p>
           </div>
         </section>
 
-
         <center>
           <hr className={globalStyles.hrLine} />
-          <h2 className={globalStyles.head2}>Results of Inter Hall Data Analytics</h2>
+          <h2 className={globalStyles.head2}>
+            Results of Inter Hall Data Analytics
+          </h2>
         </center>
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
               src={tc5}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
-              We are proud to release the results of Inter Hall Data Analytics 2021-22. The teams who stood out on all the metrics of analysis and secured the winning positions are-<br /><br />
-              Gold - Patel Hall of Residence<br />
-              Silver - Nehru Hall of Residence<br />
-              Bronze - Lala Lajpat Rai Hall of Residence<br />
-              Congratulations all!<br />
+              We are proud to release the results of Inter Hall Data Analytics
+              2021-22. The teams who stood out on all the metrics of analysis
+              and secured the winning positions are-
+              <br />
+              <br />
+              Gold - Patel Hall of Residence
+              <br />
+              Silver - Nehru Hall of Residence
+              <br />
+              Bronze - Lala Lajpat Rai Hall of Residence
+              <br />
+              Congratulations all!
+              <br />
             </p>
           </div>
         </section>
 
-
         <center>
           <hr className={globalStyles.hrLine} />.
-
           <h2 className={globalStyles.head2}>Inter Hall Case Study</h2>
         </center>
         <section>
@@ -339,13 +396,17 @@ export default function Tech() {
           </center>
 
           <p className={globalStyles.centerCard}>
-            Hello KGPians,<br />
-            Inter Hall Case Study 2021-22 Problem Statement released<br /><br />
-            Interested Students can contact General Secretaries, Technology, of their respective hall.<br />
+            Hello KGPians,
+            <br />
+            Inter Hall Case Study 2021-22 Problem Statement released
+            <br />
+            <br />
+            Interested Students can contact General Secretaries, Technology, of
+            their respective hall.
+            <br />
             <br />
           </p>
         </section>
-
 
         <center>
           <hr className={globalStyles.hrLine} />
@@ -356,27 +417,39 @@ export default function Tech() {
             <img
               className={globalStyles.cardImg}
               src={tc7}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
-              Technology Students' Gymkhana invites you all to the Open IIT Math Olympiad 2021-22. We summon all the math minds to participate in Maths Olympiad and compete with their brilliant problem-solving skills.<br />
+              Technology Students' Gymkhana invites you all to the Open IIT Math
+              Olympiad 2021-22. We summon all the math minds to participate in
+              Maths Olympiad and compete with their brilliant problem-solving
+              skills.
+              <br />
               Date - 8th March 2022 , ( 8 PM to 11PM )<br />
-              Venue- Raman Auditorium<br /><br />
-              Note-<br />
-              1. The maximum number of members in a team is 4.<br />
-              2. Calculator/mobile phone/ programmable gadget/ Food are not allowed<br />
-              3. No one is allowed to enter the exam hall after 7.30 pm IST, i.e., 30 minutes before the commencement of the exam<br />
-              4. Participants should not bring any rough sheets with them in the exam hall.<br />
-              5. Participants should bring their own pens.<br />
+              Venue- Raman Auditorium
+              <br />
+              <br />
+              Note-
+              <br />
+              1. The maximum number of members in a team is 4.
+              <br />
+              2. Calculator/mobile phone/ programmable gadget/ Food are not
+              allowed
+              <br />
+              3. No one is allowed to enter the exam hall after 7.30 pm IST,
+              i.e., 30 minutes before the commencement of the exam
+              <br />
+              4. Participants should not bring any rough sheets with them in the
+              exam hall.
+              <br />
+              5. Participants should bring their own pens.
+              <br />
               6. The covid protocols are to be followed.
             </p>
           </div>
         </section>
-
-
 
         <center>
           <hr className={globalStyles.hrLine} />
@@ -387,24 +460,28 @@ export default function Tech() {
             <img
               className={globalStyles.cardImg}
               src={tc8}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
-
-              Fond of taking up challenging problems and moulding them into reality? Eager to present your innovative ideas and designs? Technology Students' Gymkhana gladly announces the Open IIT Product Design 2021-2022 for all the creative minds out there. <br />
-              So, get ready to put your imaginative thoughts into action and compete with your original creative product ideas that transcend real-life issues. <br /><br />
+              Fond of taking up challenging problems and moulding them into
+              reality? Eager to present your innovative ideas and designs?
+              Technology Students' Gymkhana gladly announces the Open IIT
+              Product Design 2021-2022 for all the creative minds out there.{" "}
+              <br />
+              So, get ready to put your imaginative thoughts into action and
+              compete with your original creative product ideas that transcend
+              real-life issues. <br />
+              <br />
               The entire schedule for the event is listed below: <br />
               Last Date of Registration: 15th March, 2022 <br />
               Report Submission Deadline – 30th March, 2022 <br />
-              PPT Submission Deadline – 1st  April, 2022 <br />
-              Final Presentation – 2nd and 3rd April, 2022  <br />
+              PPT Submission Deadline – 1st April, 2022 <br />
+              Final Presentation – 2nd and 3rd April, 2022 <br />
             </p>
           </div>
         </section>
-
 
         <center>
           <hr className={globalStyles.hrLine} />
@@ -415,24 +492,26 @@ export default function Tech() {
             <img
               className={globalStyles.cardImg}
               src={tc9}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
-              <br /><br />
-              Hello KGPians,<br />
-              Inter Hall Data Analytics 2021-2022 Problem Statement released<br />
-              Team Registration Deadline: 6th March 2022, 11:59 PM<br /><br />
-              Interested Students can contact General Secretaries, Technology, of their respective hall.<br />
-
+              <br />
+              <br />
+              Hello KGPians,
+              <br />
+              Inter Hall Data Analytics 2021-2022 Problem Statement released
+              <br />
+              Team Registration Deadline: 6th March 2022, 11:59 PM
+              <br />
+              <br />
+              Interested Students can contact General Secretaries, Technology,
+              of their respective hall.
+              <br />
             </p>
           </div>
         </section>
-
-
-
 
         <center>
           <hr className={globalStyles.hrLine} />
@@ -443,26 +522,28 @@ export default function Tech() {
             <img
               className={globalStyles.cardImg}
               src={tc10}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
               <br />
-              Hello KGPians,<br />
-              Inter Hall Open Soft 2021-22 Problem Statement released<br /><br />
-              Interested Students can contact General Secretaries, Technology, of their respective hall.
+              Hello KGPians,
+              <br />
+              Inter Hall Open Soft 2021-22 Problem Statement released
+              <br />
+              <br />
+              Interested Students can contact General Secretaries, Technology,
+              of their respective hall.
             </p>
           </div>
         </section>
 
-
-
         <center>
           <hr className={globalStyles.hrLine} />.
-
-          <h2 className={globalStyles.head2}>Inter IIT Teach Meet Contingent team</h2>
+          <h2 className={globalStyles.head2}>
+            Inter IIT Teach Meet Contingent team
+          </h2>
         </center>
         <section>
           <center>
@@ -472,24 +553,39 @@ export default function Tech() {
           </center>
 
           <p className={globalStyles.centerCard}>
-
-            Hello everyone,<br />
-            It is time to flag off with one of the most awaited technological carnivals, where you are set to tackle real-life issues with your brilliance, innovation, and capabilities.
-            Amidst these challenging times let us redefine, resurrect and recreate solutions with our imagination. This year IIT KHARAGPUR is hosting the 10th Inter IIT Tech Meet in an online mode from 25th March 2022 to 27th March 2022.<br /><br />
-            Problem Statement 1:
-            BOSCH’S MODEL EXTRACTION ATTACK FOR VIDEO CLASSIFICATION- Develop an efficient common strategy and relevant implementation to extract video-based models.<br />
-            Problem Statement 2:
-            DIGITAL ALPHA’S SEC FILING ANALYZER FOR SaaS COMPANIES- create an interactive dashboard with information, state statistics, etc. for SaaS companies.<br /><br />
-            Note:<br />
+            Hello everyone,
+            <br />
+            It is time to flag off with one of the most awaited technological
+            carnivals, where you are set to tackle real-life issues with your
+            brilliance, innovation, and capabilities. Amidst these challenging
+            times let us redefine, resurrect and recreate solutions with our
+            imagination. This year IIT KHARAGPUR is hosting the 10th Inter IIT
+            Tech Meet in an online mode from 25th March 2022 to 27th March 2022.
+            <br />
+            <br />
+            Problem Statement 1: BOSCH’S MODEL EXTRACTION ATTACK FOR VIDEO
+            CLASSIFICATION- Develop an efficient common strategy and relevant
+            implementation to extract video-based models.
+            <br />
+            Problem Statement 2: DIGITAL ALPHA’S SEC FILING ANALYZER FOR SaaS
+            COMPANIES- create an interactive dashboard with information, state
+            statistics, etc. for SaaS companies.
+            <br />
+            <br />
+            Note:
+            <br />
             - The events will be hosted virtually <br />
-            - Students from all courses are encouraged to apply (UG, MS, Ph.D.).<br />
-            - We encourage students present in initial years like 1st and 2nd year UG, 1st year MS to apply.<br />
-            - One can apply for multiple events.<br />
+            - Students from all courses are encouraged to apply (UG, MS, Ph.D.).
+            <br />
+            - We encourage students present in initial years like 1st and 2nd
+            year UG, 1st year MS to apply.
+            <br />
+            - One can apply for multiple events.
+            <br />
             Gear up guys !!
             <br />
           </p>
         </section>
-
 
         <center>
           <hr className={globalStyles.hrLine} />
@@ -500,58 +596,81 @@ export default function Tech() {
             <img
               className={globalStyles.cardImg}
               src={tc12}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
-
-              Technology Students’ Gymkhana conducted the Website Hackathon on 6th Feb 2022 with the Presentation Round. Well, we are extremely overwhelmed by the excellence of submissions we received in the Website Hackathon. All the teams have performed fantastically well in encompassing all their designing and developing skills, to bring out the best with their brilliance, creativity and innovation. After neck to neck competition followed by much discussion and debate, we announce the crowned winners of the Website Hackathon:<br /><br />
-              Gold<br />
-              Team Name - it_works_on_local<br />
-              Team Leader - Vaibhav Mohite (20ME10092)<br />
-              Silver<br />
-              Team Name - npm install victory<br />
-              Team Leader - Ronak Agarwal (19CH10067)<br />
-              Bronze<br />
-              Team Name - Incognito<br />
-              Team Leader - Nishakar Kumar (20IE10019)<br />
+              Technology Students’ Gymkhana conducted the Website Hackathon on
+              6th Feb 2022 with the Presentation Round. Well, we are extremely
+              overwhelmed by the excellence of submissions we received in the
+              Website Hackathon. All the teams have performed fantastically well
+              in encompassing all their designing and developing skills, to
+              bring out the best with their brilliance, creativity and
+              innovation. After neck to neck competition followed by much
+              discussion and debate, we announce the crowned winners of the
+              Website Hackathon:
+              <br />
+              <br />
+              Gold
+              <br />
+              Team Name - it_works_on_local
+              <br />
+              Team Leader - Vaibhav Mohite (20ME10092)
+              <br />
+              Silver
+              <br />
+              Team Name - npm install victory
+              <br />
+              Team Leader - Ronak Agarwal (19CH10067)
+              <br />
+              Bronze
+              <br />
+              Team Name - Incognito
+              <br />
+              Team Leader - Nishakar Kumar (20IE10019)
+              <br />
             </p>
           </div>
         </section>
 
-
         <center>
           <hr className={globalStyles.hrLine} />
-          <h2 className={globalStyles.head2}>Introductory Seminar Inter IIT Tech Meet</h2>
+          <h2 className={globalStyles.head2}>
+            Introductory Seminar Inter IIT Tech Meet
+          </h2>
         </center>
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
             <img
               className={globalStyles.cardImg}
               src={tc13}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
-
-              Hello everyone!<br />
-              The Inter IIT Tech Meet is the nexus of great ideas to unravel new niches in innovation and Technology. It is the annual technological competition where students from all IITs participate to illuminate talks on real-life problems in a collaborative, competitive environment.<br />
-              We are organizing an edifying session to get you informed about all aspects of the event. <br /><br />
-              We present to you the speaker of the session- Mr. Harsh Maheshwari, Contingent Captain- Inter IIT Tech Meet 9.0. <br />
-              The session will cover all you need to know about this grand technological fiesta.<br />
-              Don't miss out on this opportunity guys.<br />
+              Hello everyone!
+              <br />
+              The Inter IIT Tech Meet is the nexus of great ideas to unravel new
+              niches in innovation and Technology. It is the annual
+              technological competition where students from all IITs participate
+              to illuminate talks on real-life problems in a collaborative,
+              competitive environment.
+              <br />
+              We are organizing an edifying session to get you informed about
+              all aspects of the event. <br />
+              <br />
+              We present to you the speaker of the session- Mr. Harsh
+              Maheshwari, Contingent Captain- Inter IIT Tech Meet 9.0. <br />
+              The session will cover all you need to know about this grand
+              technological fiesta.
+              <br />
+              Don't miss out on this opportunity guys.
+              <br />
             </p>
           </div>
         </section>
-
-
-
-
-
 
         <center>
           <hr className={globalStyles.hrLine} />
@@ -583,12 +702,20 @@ export default function Tech() {
               provided theme.
               <br />
               To check out the entire details,
-              <a className={globalStyles.btn} href=" https://drive.google.com/file/d/1UM04U_QcyMSWQ-3Bc2SoiIDmUwKnmgc8/view?fbclid=IwAR1hTSrRWq_idVUfpn3JgAmypwCC7XWxftAaescR169GqL1gK1HzUpZVUp4">
+              <a
+                className={globalStyles.btn}
+                href=" https://drive.google.com/file/d/1UM04U_QcyMSWQ-3Bc2SoiIDmUwKnmgc8/view?fbclid=IwAR1hTSrRWq_idVUfpn3JgAmypwCC7XWxftAaescR169GqL1gK1HzUpZVUp4"
+              >
                 Click here
               </a>
               <br />
               Form Link:{" "}
-              <a className={globalStyles.btn} href="https://forms.gle/LbbfJBCtUo3DqAgc9">Click here</a>
+              <a
+                className={globalStyles.btn}
+                href="https://forms.gle/LbbfJBCtUo3DqAgc9"
+              >
+                Click here
+              </a>
               Registration Deadline: 4th February 2022, 8 PM
               <br />
               The winners might also get a chance to get seed-funded by
@@ -638,7 +765,11 @@ export default function Tech() {
               understandings of mastering in these competitions. <br />
               <br />
               Link to join MS Teams Channel :{" "}
-              <a className={globalStyles.btn} href="https://bit.ly/techvistara" style={{ color: "black" }}>
+              <a
+                className={globalStyles.btn}
+                href="https://bit.ly/techvistara"
+                style={{ color: "black" }}
+              >
                 Click here
               </a>
               <br />
@@ -845,11 +976,18 @@ export default function Tech() {
               all fun!!
               <br />
               Registration Link:
-              <a className={globalStyles.btn} href=" https://forms.gle/esCWFdW5MLMRq6L98">Click here</a>
+              <a
+                className={globalStyles.btn}
+                href=" https://forms.gle/esCWFdW5MLMRq6L98"
+              >
+                Click here
+              </a>
               <br />
               Registration Deadline: 16th January 2022, 6:00 PM <br />
               Document for reference:
-              <a className={globalStyles.btn} href="https://bit.ly/tradexkgp ">Click here</a>
+              <a className={globalStyles.btn} href="https://bit.ly/tradexkgp ">
+                Click here
+              </a>
               <br />
               Further information will be mailed to the registered participants.
             </p>

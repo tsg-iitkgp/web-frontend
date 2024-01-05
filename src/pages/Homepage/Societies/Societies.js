@@ -1,5 +1,5 @@
 import React from "react";
-import RotatingCard from "../../../components/RotatingCard";
+import RotatingCard from "../../../components/RotatingCards/RotatingCard";
 import Styles from "../../../styles/pages/home.module.css";
 import CardsStyles from "../../../styles/components/soc.module.css";
 import Data from "../../../data/soc";

@@ -1,6 +1,6 @@
 import React from "react";
-import Styles from "../styles/components/soc.module.css";
-import Data from "../data/soc";
+import Styles from "../../styles/components/soc.module.css";
+import Data from "../../data/soc";
 import RotatingCard from "./RotatingCard";
 export default function RotatingCards({ name, category }) {
   const committeeName = name;

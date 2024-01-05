@@ -1,12 +1,8 @@
-import React from 'react'
-import Layout from '../components/Layout';
+import React from "react";
+import Layout from "../components/Layouts/Layout";
 
 function Blog() {
-    return (
-        <Layout>
-            
-        </Layout>
-    )
+  return <Layout></Layout>;
 }
 
 export default Blog;

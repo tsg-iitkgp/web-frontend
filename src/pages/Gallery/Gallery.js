@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Gallery.css";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layouts/Layout";
 import img1 from "./images/Picture1.png";
 import img2 from "./images/Picture2.jpg";
 import img3 from "./images/Picture3.jpg";

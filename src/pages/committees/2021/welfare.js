@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../../components/Layout";
+import Layout from "../../../components/Layouts/Layout";
 import Styles from "../styles/tech.module.css";
 import globalStyles from "../styles/committees.module.css";
 // import ContactStyles from "../../../styles/pages/contacts.module.css";
@@ -104,39 +104,51 @@ export default function Welfare() {
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-                <img src={sw8} alt="pride_march" />
+              <img src={sw8} alt="pride_march" />
             </div>
           </center>
           <div className={globalStyles.centerCard}>
             <p>
-            The fifth edition of the annual Pride March was held offline after two years of online celebration.<br />
-            <br />
-            Date: 7 PM on Tuesday, September 6, 2022<br />
-            Starting point: Technology Students' Gymkhana<br />
-            Route: 2.2<br />
-
+              The fifth edition of the annual Pride March was held offline after
+              two years of online celebration.
+              <br />
+              <br />
+              Date: 7 PM on Tuesday, September 6, 2022
+              <br />
+              Starting point: Technology Students' Gymkhana
+              <br />
+              Route: 2.2
+              <br />
             </p>
           </div>
         </section>
-        
+
         <center>
           <hr className={globalStyles.hrLine} />
-          <h2 className={globalStyles.head2}>Talk with Dr Bittu Kaveri Rajaraman<br />
-                                             about<br />
-                                             Impact of the Transgender Persons on Access to Resources</h2>
+          <h2 className={globalStyles.head2}>
+            Talk with Dr Bittu Kaveri Rajaraman
+            <br />
+            about
+            <br />
+            Impact of the Transgender Persons on Access to Resources
+          </h2>
         </center>
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-                <img src={sw7} alt="talk_with_dr_Bittu" />
+              <img src={sw7} alt="talk_with_dr_Bittu" />
             </div>
           </center>
           <div className={globalStyles.centerCard}>
             <p>
-                An online talk was organised with Dr Bittu Kaveri Rajaraman who is HOD of Psychology at Ashoka University. The topic of discussion was ‘Impact of the Transgender Persons (Protection of Rights Act 2019) on Access to Resources’.<br />
-                <br />
-                Time and Venue: 7 PM on September 4, 2022, on Google Meet<br />
-
+              An online talk was organised with Dr Bittu Kaveri Rajaraman who is
+              HOD of Psychology at Ashoka University. The topic of discussion
+              was ‘Impact of the Transgender Persons (Protection of Rights Act
+              2019) on Access to Resources’.
+              <br />
+              <br />
+              Time and Venue: 7 PM on September 4, 2022, on Google Meet
+              <br />
             </p>
           </div>
         </section>
@@ -148,22 +160,26 @@ export default function Welfare() {
         <section>
           <center>
             <div className={globalStyles.imgContainer}>
-                <img src={sw6} alt="storytelling_session" />
+              <img src={sw6} alt="storytelling_session" />
             </div>
           </center>
           <div className={globalStyles.centerCard}>
             <p>
-                An online storytelling session was conducted with Rituparna.<br />
-                <br />
-                Time and Venue: 7 PM on September 2, 2022, on Google Meet.<br />
-            
+              An online storytelling session was conducted with Rituparna.
+              <br />
+              <br />
+              Time and Venue: 7 PM on September 2, 2022, on Google Meet.
+              <br />
             </p>
           </div>
         </section>
 
         <center>
           <hr className={globalStyles.hrLine} />
-          <h2 className={globalStyles.head2}>Words of Pride: A Queer-Themed Open Mic By Ambar in association with TLS</h2>
+          <h2 className={globalStyles.head2}>
+            Words of Pride: A Queer-Themed Open Mic By Ambar in association with
+            TLS
+          </h2>
         </center>
         <section className={globalStyles.cmtCard1}>
           <div className={globalStyles.leftCard}>
@@ -176,10 +192,16 @@ export default function Welfare() {
           </div>
           <div className={globalStyles.rightCard}>
             <p>
-            Words of Pride is a celebration of queer literature and a celebration of how far the queer movement has come in India in terms of societal acceptance and recognition of rights, and to also acknowledge that we have a long way to go in eliminating bullying, harassment, isolation, conversion therapy, and other such activities directed at the queer community.<br />
-            <br />
-            Time and Venue: V3 Classroom on September 1, 2022 from 8 PM.<br />
-
+              Words of Pride is a celebration of queer literature and a
+              celebration of how far the queer movement has come in India in
+              terms of societal acceptance and recognition of rights, and to
+              also acknowledge that we have a long way to go in eliminating
+              bullying, harassment, isolation, conversion therapy, and other
+              such activities directed at the queer community.
+              <br />
+              <br />
+              Time and Venue: V3 Classroom on September 1, 2022 from 8 PM.
+              <br />
             </p>
           </div>
         </section>
@@ -193,7 +215,6 @@ export default function Welfare() {
             <img
               className={globalStyles.cardImg3}
               src={sw3}
-
               alt="Anubhuti_Poster"
               // style={{borderRadius: '1.25rem', objectFit: 'contain', width: '40vw', height:'80vh',}}
             />
@@ -201,12 +222,25 @@ export default function Welfare() {
           <div className={globalStyles.rightCard}>
             <p>
               <br />
-              Are you someone who believes there is more to your life than simply aiming for a better lifestyle for you and your family? Do you want to understand and solve the burning social problems around us? Are you someone who is trying to figure out the true purpose of your life? Or someone who is trying to find peace in your life?
-              If this is the case, you have come to the right place. <br /><br /> IWG is organizing a webinar ANUBHUTI with Mr. 𝗔𝗺𝗿𝘂𝘁 Bang, 𝗣𝗿𝗼𝗴𝗿𝗮𝗺 Director of NIRMAN. NIRMAN is a social service organization that believes that only by understanding and solving societal problems can a person understand the world outside and can find peace within.
-              Mr. Amrut is himself an extraordinary individual. He is also an RTI activist, and under his leadership, NIRMAN reached several new heights. <br />
-              In this webinar, we will interact with Mr. Amrut to understand why this generation of youth should participate in social service and how it helps us in our personal growth and finding peace and purpose in our life. <br /> <br />
+              Are you someone who believes there is more to your life than
+              simply aiming for a better lifestyle for you and your family? Do
+              you want to understand and solve the burning social problems
+              around us? Are you someone who is trying to figure out the true
+              purpose of your life? Or someone who is trying to find peace in
+              your life? If this is the case, you have come to the right place.{" "}
+              <br />
+              <br /> IWG is organizing a webinar ANUBHUTI with Mr. 𝗔𝗺𝗿𝘂𝘁 Bang,
+              𝗣𝗿𝗼𝗴𝗿𝗮𝗺 Director of NIRMAN. NIRMAN is a social service
+              organization that believes that only by understanding and solving
+              societal problems can a person understand the world outside and
+              can find peace within. Mr. Amrut is himself an extraordinary
+              individual. He is also an RTI activist, and under his leadership,
+              NIRMAN reached several new heights. <br />
+              In this webinar, we will interact with Mr. Amrut to understand why
+              this generation of youth should participate in social service and
+              how it helps us in our personal growth and finding peace and
+              purpose in our life. <br /> <br />
               Time and Date: 5:00 PM, 20th August 2022.
-
             </p>
           </div>
         </section>
@@ -220,7 +254,6 @@ export default function Welfare() {
             <img
               className={globalStyles.cardImg3}
               src={sw4}
-
               alt="Khat_Poster"
               // style={{borderRadius: '1.25rem', objectFit: 'contain', width: '40vw', height:'80vh',}}
             />
@@ -228,19 +261,25 @@ export default function Welfare() {
           <div className={globalStyles.rightCard}>
             <p>
               <br />
-              "Every new friend is a new adventure...the start of more memories." <br /><br />
-              Texting is the new normal; it's been Online for a couple of years. Let's go back in time, recalling those old communication
-              means. Let's grab some Envelopes and send end-to-end encrypted messages to your lovely friends.
-              <br /><br /> This FRIENDSHIP DAY, INSTITUTE WELLNESS GROUP is frenzied to announce KHAT, pin up your calendars, KGPIANS.
-              We invite you to come and open up and jot down your feelings and messages for your special friends. <br /><br />
-              Date: 4th and 5th August 2022. <br /><br />
+              "Every new friend is a new adventure...the start of more
+              memories." <br />
+              <br />
+              Texting is the new normal; it's been Online for a couple of years.
+              Let's go back in time, recalling those old communication means.
+              Let's grab some Envelopes and send end-to-end encrypted messages
+              to your lovely friends.
+              <br />
+              <br /> This FRIENDSHIP DAY, INSTITUTE WELLNESS GROUP is frenzied
+              to announce KHAT, pin up your calendars, KGPIANS. We invite you to
+              come and open up and jot down your feelings and messages for your
+              special friends. <br />
+              <br />
+              Date: 4th and 5th August 2022. <br />
+              <br />
               Venue: Technology Students' Gymkhana.
-
             </p>
           </div>
         </section>
-
-
 
         <center>
           <hr className={globalStyles.hrLine} />
@@ -251,28 +290,40 @@ export default function Welfare() {
             <img
               className={globalStyles.cardImg}
               src={sw2}
-
               alt="Music result"
             />
           </div>
           <div className={globalStyles.rightCard}>
             <p>
               <br />
-              Greetings, fellow kgpians!<br /><br />
-              To start off the last week of SAMYOG: <br />Connect IIT Kharagpur on an energetic note, theStudents’ Welfare Committee, Technology Students’ Gymkhana brings to you aJAMMING SESSION aimed at giving all the talented musicians out there an opportunity to
-              express themselves.<br /><br />
-              The stage is open to anyone whose talent is looking for an audience, andfree tickets are available for anyone who is ready to hype the performers up!
-              The session will take place this Monday, <br />7th of February, starting at 6 PM.<br /><br />
-              The songs that have been requested will be updated in this sheet<br />
-              https://tinyurl.com/song-requests-sheet accessible to everyone. The performers can go throughit and the ones who perform one of the requested songs will be given priority over other
-              performers.<br /><br />
+              Greetings, fellow kgpians!
+              <br />
+              <br />
+              To start off the last week of SAMYOG: <br />
+              Connect IIT Kharagpur on an energetic note, theStudents’ Welfare
+              Committee, Technology Students’ Gymkhana brings to you aJAMMING
+              SESSION aimed at giving all the talented musicians out there an
+              opportunity to express themselves.
+              <br />
+              <br />
+              The stage is open to anyone whose talent is looking for an
+              audience, andfree tickets are available for anyone who is ready to
+              hype the performers up! The session will take place this Monday,{" "}
+              <br />
+              7th of February, starting at 6 PM.
+              <br />
+              <br />
+              The songs that have been requested will be updated in this sheet
+              <br />
+              https://tinyurl.com/song-requests-sheet accessible to everyone.
+              The performers can go throughit and the ones who perform one of
+              the requested songs will be given priority over other performers.
+              <br />
+              <br />
               Looking forward to a memorable evening filled with music and joy!
             </p>
           </div>
         </section>
-
-
-
 
         <center>
           <hr className={globalStyles.hrLine} />
@@ -309,7 +360,12 @@ export default function Welfare() {
               before "10th January 2022, 11:59 PM".
               <br />
               Registration Form:-
-              <a className={globalStyles.btn} href="https://forms.gle/4j92tXSdGT8Lt4Cv6">Click here</a>
+              <a
+                className={globalStyles.btn}
+                href="https://forms.gle/4j92tXSdGT8Lt4Cv6"
+              >
+                Click here
+              </a>
               <br />
             </p>
           </div>
@@ -350,7 +406,12 @@ export default function Welfare() {
               us in this incredible opportunity to bring about a social change.
               <br />
               Link to submit Project Details:
-              <a className={globalStyles.btn} href="https://forms.gle/71axBULAaZ9DtiKMA">Click here</a>
+              <a
+                className={globalStyles.btn}
+                href="https://forms.gle/71axBULAaZ9DtiKMA"
+              >
+                Click here
+              </a>
               <br />
             </p>
           </div>
@@ -426,36 +487,89 @@ export default function Welfare() {
               <br />
               <br />
               26th November:
-              <a className={globalStyles.btn} href=" https://youtu.be/l-7gLRQlxyQ">Forenoon</a>
+              <a
+                className={globalStyles.btn}
+                href=" https://youtu.be/l-7gLRQlxyQ"
+              >
+                Forenoon
+              </a>
               &
-              <a className={globalStyles.btn} href="https://youtu.be/hp6K-bz9WRI">Afternoon</a>
+              <a
+                className={globalStyles.btn}
+                href="https://youtu.be/hp6K-bz9WRI"
+              >
+                Afternoon
+              </a>
               <br />
               <br />
               27th November:
-              <a className={globalStyles.btn} href=" https://youtu.be/0h8_JwlgTtk">Forenoon</a>
+              <a
+                className={globalStyles.btn}
+                href=" https://youtu.be/0h8_JwlgTtk"
+              >
+                Forenoon
+              </a>
               &
-              <a className={globalStyles.btn} href="https://youtu.be/c328-X9G1l0">Afternoon</a>
+              <a
+                className={globalStyles.btn}
+                href="https://youtu.be/c328-X9G1l0"
+              >
+                Afternoon
+              </a>
               <br />
               <br />
               28th November:
-              <a className={globalStyles.btn} href=" https://youtu.be/H1sw7gEcLv4">Forenoon</a>
+              <a
+                className={globalStyles.btn}
+                href=" https://youtu.be/H1sw7gEcLv4"
+              >
+                Forenoon
+              </a>
               &
-              <a className={globalStyles.btn} href="https://youtu.be/Fj9Zy-luDDM">Afternoon</a>
+              <a
+                className={globalStyles.btn}
+                href="https://youtu.be/Fj9Zy-luDDM"
+              >
+                Afternoon
+              </a>
               <br />
               <br />
               29th November:
-              <a className={globalStyles.btn} href="https://youtu.be/GrAJ1hofC94">Forenoon</a>
+              <a
+                className={globalStyles.btn}
+                href="https://youtu.be/GrAJ1hofC94"
+              >
+                Forenoon
+              </a>
               &
-              <a className={globalStyles.btn} href="https://youtu.be/9GCP6_RGMsw">Afternoon</a>
+              <a
+                className={globalStyles.btn}
+                href="https://youtu.be/9GCP6_RGMsw"
+              >
+                Afternoon
+              </a>
               <br />
               <br />
               30th November:
-              <a className={globalStyles.btn} href=" https://youtu.be/GrAJ1hofC94">Forenoon</a>
+              <a
+                className={globalStyles.btn}
+                href=" https://youtu.be/GrAJ1hofC94"
+              >
+                Forenoon
+              </a>
               &
-              <a className={globalStyles.btn} href="https://youtu.be/aUIjpWC1qEY">Afternoon</a>
+              <a
+                className={globalStyles.btn}
+                href="https://youtu.be/aUIjpWC1qEY"
+              >
+                Afternoon
+              </a>
               <br />
               <br />
-              <a className={globalStyles.btn} href="https://gymkhana.iitkgp.ac.in/files/handbook.pdf">
+              <a
+                className={globalStyles.btn}
+                href="https://gymkhana.iitkgp.ac.in/files/handbook.pdf"
+              >
                 Click here to download Induction program handbook
               </a>
               <br />

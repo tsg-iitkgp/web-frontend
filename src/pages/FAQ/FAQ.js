@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Faq from "react-faq-component";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layouts/Layout";
 // import Sidebar from "../Sidebar/Sidebar";
 import { faqSidebarList } from "../../components/Sidebar/SidebarList";
 import { data } from "./FaqData";

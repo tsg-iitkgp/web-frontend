@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layouts/Layout";
 import Styles from "../../styles/pages/home.module.css";
 import AboutUs from "./AboutUs/AboutUs";
 import CommitteesHome from "./Committee/CommitteesHome";
