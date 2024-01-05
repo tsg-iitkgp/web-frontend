@@ -44,7 +44,11 @@ function App() {
           <Route exact path="/login" component={Login} />
           <PrivateRoute exact path="/admin" component={Dashboard} />
           <PrivateRoute exact path="/admin/certificate" component={CertifGen} />
-          <PrivateRoute exact path="/admin/events" component={EventsUpdatePage} />
+          <PrivateRoute
+            exact
+            path="/admin/events"
+            component={EventsUpdatePage}
+          />
           {/* Homepage Routes */}
           <Route exact path="/" component={Home} />
           <Route exact path="/committees/tech" component={Tech} />
@@ -62,13 +66,7 @@ function App() {
           {/* Awards Route */}
           <Route exact path="/awards" component={Awards} />
           {/* Contacts Routes */}
-          <Route
-            exact
-            path="/contacts/cob"
-            component={Contacts}
-          />
-          <Route exact path="/contacts/pob" component={Contacts} />
-          <Route exact path="/contacts/staff" component={Contacts} />
+          <Route exact path="/contacts" component={Contacts} />
           {/* ContactUs Route */}
           <Route exact path="/ContactUs" component={ContactUs} />
           {/* Blogs Route */}

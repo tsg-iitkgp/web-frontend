@@ -26,7 +26,7 @@ export default function Navbar() {
   } else {
     listClass = `${Styles.navMenu}`;
   }
-  
+
   const history = useHistory();
   useEffect(() => {
     setNotification({ badgeContent: highlightEvents.length, click: false });
@@ -126,7 +126,7 @@ export default function Navbar() {
           {/* CONTACTS */}
           <li className={Styles.navItem}>
             <NavLink
-              to="/contacts/cob"
+              to="/contacts"
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
             >
