@@ -30,7 +30,7 @@ export default function RenderResultsFromDropdown({ option }) {
   return (
     <>
       {/* Year Dropdown menu selector */}
-      <div className="select GC_dropdown">
+      <div className="select">
         <select value={year} onChange={(e) => setYear(e.target.value)}>
           {years.map((year) => (
             <option key={year} value={year}>
