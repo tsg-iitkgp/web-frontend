@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Layout from "../components/Layouts/Layout";
+import Layout from "./Layouts/Layout";
 import Styles from "../styles/pages/Results/results.module.css";
-import GC from "./Results/GC";
-import Interiit from "./Results/Interiit";
-import LiveScoreboard from "./Results/LiveScoreboard";
+import GC from "../pages/Results/GC";
+import Interiit from "../pages/Results/Interiit";
+import LiveScoreboard from "../pages/Results/LiveScoreboard";
 
 function Results() {
   document.title = "Results | TSG";

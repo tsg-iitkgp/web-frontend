@@ -11,7 +11,7 @@ import Home from "./pages/Homepage/Home";
 import NotFound from "./components/NotFound";
 import PrivateRoute from "./routes/PrivateRoute";
 import Contacts from "./pages/Contacts/Contacts";
-import Results from "./pages/Results";
+import Results from "./components/ResultsDropdown";
 import Awards from "./pages/Awards/Awards";
 import Societies from "./pages/Societies/Societies";
 import Events from "./pages/Events/Events";
