@@ -18,12 +18,6 @@ body {
   width: 100%;
   margin-top: 10vh;
 }
-.content {
-  padding: 2rem;
-  margin-right: 0.05 rem;
-  /*max-height: 90vh;
-  overflow-y: scroll;*/
-}
 .postHeading {
   font-size: 2rem;
   text-align: center;

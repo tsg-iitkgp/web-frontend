@@ -1,6 +1,6 @@
 {
   "2015-16": {
-    "sports": {
+    "SPORTS & GAMES": {
       "awards": [
         {
           "Name": "SAKET THAVANANI",
@@ -349,7 +349,7 @@
         }
       ]
     },
-    "socult": {
+    "SOCIAL & CULTURAL": {
       "awards": [
         {
           "Name": "ABHISHEK SULTANIA",
@@ -493,7 +493,7 @@
         }
       ]
     },
-    "tech": {
+    "TECHNOLOGY": {
       "awards": [
         {
           "Name": "ASHISH DAGA",
@@ -588,10 +588,10 @@
         }
       ]
     },
-    "specialRecog": []
+    "SPECIAL RECOGNITION": []
   },
   "2016-17": {
-    "sports": {
+    "SPORTS & GAMES": {
       "awards": [
         {
           "Name": "SIRAJ MODIWALA",
@@ -942,7 +942,7 @@
         }
       ]
     },
-    "tech": {
+    "TECHNOLOGY": {
       "awards": [
         {
           "Name": "Anubhav Vijay Goyal",
@@ -1056,7 +1056,7 @@
         }
       ]
     },
-    "socult": {
+    "SOCIAL & CULTURAL": {
       "awards": [
         {
           "Name": "Mr. BRAHMARSHI KAR",
@@ -1234,10 +1234,10 @@
         }
       ]
     },
-    "specialRecog": []
+    "SPECIAL RECOGNITION": []
   },
   "2017-18": {
-    "sports": {
+    "SPORTS & GAMES": {
       "awards": [
         {
           "Name": "Rahul Sehrawat",
@@ -1567,7 +1567,7 @@
         }
       ]
     },
-    "socult": {
+    "SOCIAL & CULTURAL": {
       "awards": [
         {
           "Name": "Rachit Madhukar",
@@ -1767,7 +1767,7 @@
         }
       ]
     },
-    "tech": {
+    "TECHNOLOGY": {
       "awards": [
         {
           "Name": "K. Pareen Jain",
@@ -1899,7 +1899,7 @@
         }
       ]
     },
-    "specialRecog": [
+    "SPECIAL RECOGNITION": [
       {
         "Name": "Ksheera Sagar KN",
         "Roll": "13MA20050",
@@ -1920,7 +1920,7 @@
     ]
   },
   "2018-19": {
-    "tech": {
+    "TECHNOLOGY": {
       "awards": [
         {
           "Name": "Harsh Agarwal",
@@ -2034,7 +2034,7 @@
         }
       ]
     },
-    "socult": {
+    "SOCIAL & CULTURAL": {
       "awards": [
         {
           "Name": "Arkapravo Saha",
@@ -2208,7 +2208,7 @@
         }
       ]
     },
-    "sports": {
+    "SPORTS & GAMES": {
       "awards": [
         {
           "Name": "Abin Devassia Poovathottathil",
@@ -2559,7 +2559,7 @@
         }
       ]
     },
-    "specialRecog": [
+    "SPECIAL RECOGNITION": [
       {
         "Name": "Vishal Kumar Singh",
         "Roll": "15MI3FP21",
@@ -2572,7 +2572,7 @@
     ]
   },
   "2019-20": {
-    "tech": {
+    "TECHNOLOGY": {
       "awards": [
         {
           "Name": "Tyss Santosh",
@@ -2671,7 +2671,7 @@
         }
       ]
     },
-    "socult": {
+    "SOCIAL & CULTURAL": {
       "awards": [
         {
           "Name": "Baibhab Pattnaik",
@@ -2784,7 +2784,7 @@
         }
       ]
     },
-    "sports": {
+    "SPORTS & GAMES": {
       "awards": [
         {
           "Name": "Eslavath Jagadeesh",
@@ -3091,7 +3091,7 @@
         }
       ]
     },
-    "specialRecog": [
+    "SPECIAL RECOGNITION": [
       {
         "Name": "NINAAD LOHAKARE",
         "Roll": "16ME31003",
@@ -3113,7 +3113,7 @@
     ]
   },
   "2020-21": {
-    "tech": {
+    "TECHNOLOGY": {
       "awards": [
         {
           "Name": "Harsh Maheshwari",
@@ -3218,7 +3218,7 @@
         }
       ]
     },
-    "socult": {
+    "SOCIAL & CULTURAL": {
       "awards": [
         {
           "Name": "Piyush Kedia",
@@ -3308,7 +3308,7 @@
         }
       ]
     },
-    "sports": {
+    "SPORTS & GAMES": {
       "awards": [
         {
           "Name": "Pushpak Roy",
@@ -3478,7 +3478,7 @@
         }
       ]
     },
-    "specialRecog": [
+    "SPECIAL RECOGNITION": [
       {
         "Name": "Shivam Singh",
         "Roll": "17IM30030",
@@ -3499,7 +3499,7 @@
     ]
   },
   "2021-22": {
-    "tech": {
+    "TECHNOLOGY": {
       "awards": [
         {
           "Name": "Mann Rakesh Goel",
@@ -3603,7 +3603,7 @@
         }
       ]
     },
-    "socult": {
+    "SOCIAL & CULTURAL": {
       "awards": [
         {
           "Name": "RUPAM KUMAR DUBEY",
@@ -3663,7 +3663,7 @@
         }
       ]
     },
-    "sports": {
+    "SPORTS & GAMES": {
       "awards": [
         {
           "Name": "Shivam Singh",
@@ -3896,7 +3896,7 @@
         }
       ]
     },
-    "specialRecog": [
+    "SPECIAL RECOGNITION": [
       {
         "Name": "Vardhineedi Devaki Nandana Varalakshmi",
         "Roll": "18GG20036",
@@ -3917,7 +3917,7 @@
       }
     ]
   },"2022-23": {
-    "tech": {
+    "TECHNOLOGY": {
       "awards": [
         {
           "Name": "DIVYA",
@@ -4109,7 +4109,7 @@
         }
       ]
     },
-    "socult": {
+    "SOCIAL & CULTURAL": {
       "awards": [
         {
           "Name": "SOUMYADEEP NANDI",
@@ -4267,7 +4267,7 @@
         }
       ]
     },
-    "sports": {
+    "SPORTS & GAMES": {
       "awards": [
         {
           "Name": "SIGANGSA BAGLARI",
@@ -4539,6 +4539,6 @@
         }
       ]
     },
-    "specialRecog": []
+    "SPECIAL RECOGNITION": []
   }
 }

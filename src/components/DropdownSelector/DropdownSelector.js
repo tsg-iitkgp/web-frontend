@@ -3,32 +3,43 @@ import { useLocation } from "react-router-dom";
 import "./DropdownSelector.css";
 
 // CONTACTS PAGE
-import contactsStyles from "../../styles/pages/contacts.module.css";
 import CurrentOfficeBearers from "../../pages/Contacts/CurrentOfficeBearers";
 import PreviousOfficeBearers from "../../pages/Contacts/PreviousOfficeBearers";
 import Staff from "../../pages/Contacts/Staff";
 
-export function DropdownSelector({ itemList }) {
-  // Option state
-  const [option, setOption] = useState("");
+// AWARDS PAGE
+import "../../pages/Awards/Awards.css";
+import AwardSection from "../../pages/Awards/AwardSection";
+import HonourSection from "../../pages/Awards/HonourSection";
 
-  // Update state variable values on the basis of path
+const years = [
+  "2022-23",
+  "2021-22",
+  "2020-21",
+  "2019-20",
+  "2018-19",
+  "2017-18",
+  "2016-17",
+  "2015-16",
+];
+
+export function DropdownSelector({ itemList, defaultOption }) {
+  /**
+   * States
+   */
+  // Option state
+  const [option, setOption] = useState(defaultOption);
+  // Awards states
+  const [year, setYear] = useState("2022-23");
+
+  /**
+   * Constants
+   */
   const location = useLocation();
-  useEffect(() => {
-    if (location.pathname === "/contacts") {
-      setOption("CURRENT OFFICE BEARERS");
-    } else if (location.pathname === "/contacts/cob") {
-      setOption("CURRENT OFFICE BEARERS");
-    } else if (location.pathname === "/contacts/staff") {
-      setOption("STAFF");
-    } else if (location.pathname === "/contacts/pob") {
-      setOption("PREVIOUS OFFICE BEARERS");
-    }
-  }, [location.pathname]);
 
   return (
     <div>
-      {/* Render Dropdown Menu */}
+      {/* Render Dropdown Selector */}
       <div className="dropdownSelector">
         <select
           value={option}
@@ -47,11 +58,37 @@ export function DropdownSelector({ itemList }) {
       {/* Render page content based on Selected option from Dropdown menu */}
 
       {/* CONTACTS PAGE */}
-      <div className={contactsStyles.content}>
-        {option === "CURRENT OFFICE BEARERS" && <CurrentOfficeBearers />}
-        {option === "PREVIOUS OFFICE BEARERS" && <PreviousOfficeBearers />}
-        {option === "STAFF" && <Staff />}
-      </div>
+      {location.pathname === "/contacts" && (
+        <div className="content">
+          {option === "CURRENT OFFICE BEARERS" && <CurrentOfficeBearers />}
+          {option === "PREVIOUS OFFICE BEARERS" && <PreviousOfficeBearers />}
+          {option === "STAFF" && <Staff />}
+        </div>
+      )}
+
+      {/* AWARDS PAGE */}
+      {location.pathname === "/awards" && (
+        <div className="content">
+          {/* Year Dropdown menu selector */}
+          <div className="select GC_dropdown gcSelector">
+            <select value={year} onChange={(e) => setYear(e.target.value)}>
+              {years.map((year) => (
+                <option key={year} value={year}>
+                  {year}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Awards Section */}
+          <AwardSection currentYear={year} currentTab={option} />
+
+          {/* Honour Section */}
+          {option !== "SPECIAL RECOGNITION" && (
+            <HonourSection currentYear={year} currentTab={option} />
+          )}
+        </div>
+      )}
     </div>
   );
 }

@@ -23,3 +23,10 @@
   right: 22%;
   cursor: pointer;
 }
+
+.content {
+  padding: 1rem;
+  /* margin-right: 0.05 rem; */
+  /*max-height: 90vh;
+  overflow-y: scroll;*/
+}

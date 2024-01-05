@@ -13,7 +13,7 @@ function Contacts() {
     <Layout>
       <div className={Styles.maincontainer}>
         <h3>Contacts</h3>
-        <DropdownSelector itemList={contactsDropdownList} />
+        <DropdownSelector itemList={contactsDropdownList} defaultOption={"CURRENT OFFICE BEARERS"} />
       </div>
     </Layout>
   );
