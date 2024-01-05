@@ -6,10 +6,14 @@ export const contactsDropdownList = [
   "PREVIOUS OFFICE BEARERS",
 ];
 
-export const awardsDropdownList = [
+export const eventVerticals = [
   "SPORTS & GAMES",
   "TECHNOLOGY",
   "SOCIAL & CULTURAL",
+]
+
+export const awardsDropdownList = [
+  eventVerticals,
   "SPECIAL RECOGNITION",
 ];
 
