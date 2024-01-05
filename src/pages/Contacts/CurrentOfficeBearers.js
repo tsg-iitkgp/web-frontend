@@ -25,9 +25,8 @@ export default function CurrentOfficeBearers() {
 
   return (
     <>
-      <div className={Styles.contactsContainer} data-aos="zoom-in-up">
+      <div className={Styles.contactsContainer}>
         <div>
-
           <h2 className={Styles.postHeading}>President</h2>
           <ContactCard
             name={President.Name}
@@ -116,7 +115,6 @@ export default function CurrentOfficeBearers() {
             })}
           </div>
         </div>
-
       </div>
     </>
   );
