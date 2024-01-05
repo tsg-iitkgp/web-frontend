@@ -136,7 +136,7 @@ export default function Footer() {
       </div>
       <div className={Styles.footerLine}></div>
       <div>
-        <p className={Styles.copyright}>&copy; Technology Students' Gymkhana, IIT Kharagpur &diams; <a href="https://github.com/tsg-iitkgp/web-frontend" target="_blank" >Source Code</a></p>
+        <p className={Styles.copyright}>&copy; Technology Students' Gymkhana, IIT Kharagpur &diams; <a href="https://github.com/tsg-iitkgp/web-frontend" target="_blank" rel="noreferrer">Source Code</a></p>
       </div>
     </footer>
   );

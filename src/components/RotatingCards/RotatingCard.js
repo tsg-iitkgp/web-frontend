@@ -27,6 +27,7 @@ export default function RotatingCard({
             title="Lorem Ipsum"
             href={facebook_link}
             target="_blank"
+            rel="noreferrer"
           >
             Learn More
           </a>
