@@ -61,6 +61,16 @@ section {
   color: #fff;
 }
 
+.sectionHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  color: #fff;
+}
+
 section .section-heading {
   font-size: 34px;
   margin: 20px 0;
