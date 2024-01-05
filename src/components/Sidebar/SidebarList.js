@@ -1,5 +1,3 @@
-import { data } from "../../pages/FAQ/FaqData";
-
 export const resultsSidebarList = [
   {
     title: "General Championship",
@@ -14,9 +12,3 @@ export const resultsSidebarList = [
     route: "/results/livescore",
   },
 ];
-export const faqSidebarList = data.map((element, index) => {
-  return {
-    title: element.title,
-    route: "#" + element.title,
-  };
-});

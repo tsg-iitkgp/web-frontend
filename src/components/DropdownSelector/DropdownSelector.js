@@ -4,6 +4,7 @@ import "./DropdownSelector.css";
 
 import RenderContactsFromDropdown from "../../pages/Contacts/RenderContacts";
 import RenderAwardsFromDropdown from "../../pages/Awards/RenderAwards";
+import RenderFaqFromDropdown from "../../pages/FAQ/RenderFaq";
 
 export function DropdownSelector({ itemList, defaultOption }) {
   /**
@@ -26,8 +27,8 @@ export function DropdownSelector({ itemList, defaultOption }) {
           className="selector"
         >
           {itemList.map((item) => (
-            <option key={item} value={item}>
-              {item}
+            <option key={item} value={item?.index ?? item}>
+              {item?.title ?? item}
             </option>
           ))}
         </select>
@@ -44,6 +45,11 @@ export function DropdownSelector({ itemList, defaultOption }) {
         {/* AWARDS PAGE */}
         {location.pathname === "/awards" && (
           <RenderAwardsFromDropdown option={option} />
+        )}
+
+        {/* FAQ PAGE */}
+        {location.pathname === "/faq" && (
+          <RenderFaqFromDropdown option={option} />
         )}
       </div>
     </>
