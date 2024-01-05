@@ -10,7 +10,7 @@ function Awards() {
 
   return (
     <Layout>
-      <section className="awards content" data-aos="zoom-in-up">
+      <section className="awards content" >
         <h2 className="awards_h2">HALL OF FAME</h2>
         <DropdownSelector
           itemList={awardsDropdownList}

@@ -10,7 +10,7 @@ function Contacts() {
 
   return (
     <Layout>
-      <section className={Styles.maincontainer} data-aos="zoom-in-up">
+      <section className={Styles.maincontainer} >
         <h3>Contacts</h3>
         <DropdownSelector
           itemList={contactsDropdownList}
