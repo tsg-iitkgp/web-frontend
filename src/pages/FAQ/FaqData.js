@@ -596,7 +596,7 @@ export const data = [
   },
   {
     title:
-      "Following are the topics that need to be taken care of by Academic Deans/ERP/Academic Section etc.",
+      "To be taken care of by Academic Deans/ERP/Academic Section etc.",
     rows: [
       {
         title: "1.	What is the process to apply for a fee receipt?",
