@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../../pages/Awards/Awards.css";
 import AwardSection from "../../pages/Awards/AwardSection";
 import HonourSection from "../../pages/Awards/HonourSection";
 
@@ -20,7 +19,7 @@ export default function RenderAwardsFromDroopdown({ option }) {
   return (
     <>
       {/* Year Dropdown menu selector */}
-      <div className="select GC_dropdown">
+      <div className="select">
         <select value={year} onChange={(e) => setYear(e.target.value)}>
           {years.map((year) => (
             <option key={year} value={year}>

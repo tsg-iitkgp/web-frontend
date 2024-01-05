@@ -10,7 +10,7 @@ function Awards() {
 
   return (
     <Layout>
-      <section className="awards content" >
+      <section className="withTable">
         <p className="pageHeading">HALL OF FAME</p> {/* Global CSS */}
         <DropdownSelector
           itemList={awardsDropdownList}

@@ -23,7 +23,7 @@ export default function Results() {
 
   return (
     <Layout>
-      <section className="awards">
+      <section className="withTable">
         <p className="pageHeading">{pageHeading}</p> {/* GLOBAL CSS */}
         <DropdownSelector
           itemList={eventVerticals}
