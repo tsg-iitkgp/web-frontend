@@ -37,7 +37,6 @@ function Results() {
   return (
     <Layout>
       <div className={Styles.resultsSection}>
-        {/* <Sidebar itemsList={resultsSidebarList} /> */}
 
         <div className={Styles.content}>
           {/* Conditional Rendering of routes on the basis of route */}

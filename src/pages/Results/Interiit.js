@@ -2,7 +2,15 @@ import { useState } from "react";
 import "./interiit.css";
 import InterIITdata from "./InterIITdata";
 
-const years = ["2016-17","2017-18","2018-19","2019-20","2020-21","2021-22", "2022-23"];
+const years = [
+  "2016-17",
+  "2017-18",
+  "2018-19",
+  "2019-20",
+  "2020-21",
+  "2021-22",
+  "2022-23",
+];
 
 export default function InterIIT() {
   const [currentTab, setCurrentTab] = useState("Sports");
@@ -14,26 +22,13 @@ export default function InterIIT() {
 
   return (
     <>
-      <h1>
-        <title>InterIIT 2019</title>
-      </h1>
       <section className="awards">
-        <h2
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            paddingBottom: "3%",
-            alignItems: "center",
-          }}
-        >
-          Inter-IIT {currentYear} {currentTab} Standings
-        </h2>
+        <p className="pageHeading">INTER IIT</p> {/* Global CSS */}
         <div className="tabs">
           <div
             className={`tab${currentTab === "Sports" ? "active" : ""}`}
             onClick={() => handleTabChange("Sports")}
-            style={{display: "flex", justifyContent: "center"}}
+            style={{ display: "flex", justifyContent: "center" }}
           >
             <button className="btn_interiit">Sports &amp; Games</button>
           </div>
@@ -41,14 +36,14 @@ export default function InterIIT() {
           <div
             className={`tab${currentTab === "Technology" ? "active" : ""}`}
             onClick={() => handleTabChange("Technology")}
-            style={{display: "flex", justifyContent: "center"}}
+            style={{ display: "flex", justifyContent: "center" }}
           >
             <button className="btn_interiit">Technology</button>
           </div>
           <div
             className={`tab${currentTab === "Socult" ? "active" : ""}`}
             onClick={() => handleTabChange("Socult")}
-            style={{display: "flex", justifyContent: "center"}}
+            style={{ display: "flex", justifyContent: "center" }}
           >
             <button className="btn_interiit">Socult</button>
           </div>
@@ -65,7 +60,6 @@ export default function InterIIT() {
             ))}
           </select>
         </div>
-
         {currentTab === "Sports" && (
           <>
             <h2 style={{ padding: "1%" }}> Men's Standings</h2>
@@ -116,14 +110,16 @@ export default function InterIIT() {
                   </tr>
                 </thead>
                 <tbody style={{ border: "10px solid #fff" }}>
-                  {InterIITdata[String(currentYear)].Sports.Female.map((item) => (
-                    <tr id="overall">
-                      <td>{item.Sport}</td>
-                      <td>{item.Gold} </td>
-                      <td>{item.Silver} </td>
-                      <td>{item.Bronze} </td>
-                    </tr>
-                  ))}
+                  {InterIITdata[String(currentYear)].Sports.Female.map(
+                    (item) => (
+                      <tr id="overall">
+                        <td>{item.Sport}</td>
+                        <td>{item.Gold} </td>
+                        <td>{item.Silver} </td>
+                        <td>{item.Bronze} </td>
+                      </tr>
+                    )
+                  )}
                 </tbody>
               </table>
             </div>

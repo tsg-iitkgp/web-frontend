@@ -70,7 +70,7 @@ export default function InterIIT() {
 
   return (
     <>
-      <h1>Live Scoreboard</h1>
+            <p className="pageHeading">LIVE SCOREBOARD</p> {/* Global CSS */}
       {heading === 'Athletics' && currentTab==="InterIIT" && <Athletics show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Badminton' && currentTab==="InterIIT" && <Badminton show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
       {heading === 'Basketball' && currentTab==="InterIIT" && <Basketball show={show} data={data} heading={heading} disable={() => { setShow(false); setLoading(false) }} url={url} />}
