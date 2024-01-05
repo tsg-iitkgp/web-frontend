@@ -5,6 +5,7 @@ import "./DropdownSelector.css";
 import RenderContactsFromDropdown from "../../pages/Contacts/RenderContacts";
 import RenderAwardsFromDropdown from "../../pages/Awards/RenderAwards";
 import RenderFaqFromDropdown from "../../pages/FAQ/RenderFaq";
+import RenderGcFromDropDown from "../../pages/Results/GC/RenderGC"
 
 export function DropdownSelector({ itemList, defaultOption }) {
   /**
@@ -50,6 +51,11 @@ export function DropdownSelector({ itemList, defaultOption }) {
         {/* FAQ PAGE */}
         {location.pathname === "/faq" && (
           <RenderFaqFromDropdown option={option} />
+        )}
+
+        {/* GC RESULTS PAGE */}
+        {location.pathname === "/results/gc" && (
+          <RenderGcFromDropDown option={option} />
         )}
       </div>
     </>

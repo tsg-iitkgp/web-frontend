@@ -11,7 +11,6 @@ import Home from "./pages/Homepage/Home";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./routes/PrivateRoute";
 import Contacts from "./pages/Contacts/Contacts";
-import Results from "./pages/Results/Results";
 import Awards from "./pages/Awards/Awards";
 import Societies from "./pages/Societies/Societies";
 import Events from "./pages/Events/Events";
@@ -30,6 +29,8 @@ import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
 import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
+import GC from "./pages/Results/GC/GC";
+import InterIIT from "./pages/Results/InterIIT/InterIIT";
 
 function App() {
   useEffect(() => {
@@ -58,9 +59,8 @@ function App() {
           {/* Events Route */}
           <Route exact path="/events" component={Events} />
           {/* Results Routes */}
-          <Route exact path="/results" component={Results} />
-          <Route exact path="/results/gc" component={Results} />
-          <Route exact path="/results/interiit" component={Results} />
+          <Route exact path="/results/gc" component={GC} />
+          <Route exact path="/results/interiit" component={InterIIT} />
           {/* Awards Route */}
           <Route exact path="/awards" component={Awards} />
           {/* Contacts Routes */}
