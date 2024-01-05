@@ -10,7 +10,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./routes/PrivateRoute";
-import Contacts from "./pages/Contacts";
+import Contacts from "./pages/Contacts/Contacts";
 import Blog from "./pages/Blog";
 import Results from "./pages/Results";
 import Awards from "./pages/Awards";

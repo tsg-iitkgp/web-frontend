@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../components/Layout";
-import Styles from "../styles/pages/contacts.module.css";
+import Layout from "../../components/Layout";
+import Styles from "../../styles/pages/contacts.module.css";
 import {
   DropdownSelector,
   contactsDropdownList,
-} from "../components/DropdownSelector";
+} from "../../components/DropdownSelector";
 
 function Contacts() {
   document.title = "Contacts | TSG";
