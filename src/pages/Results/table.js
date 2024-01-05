@@ -1,6 +1,6 @@
 import { ResponsiveBar } from "@nivo/bar";
 
-export default function Chart(props) {
+export default function Table(props) {
   const theme = {
     axis: {
       ticks: {
@@ -15,6 +15,7 @@ export default function Chart(props) {
       },
     },
   };
+
   return (
     <ResponsiveBar
       data={props.data}

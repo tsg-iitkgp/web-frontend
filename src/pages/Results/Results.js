@@ -4,49 +4,36 @@ import Layout from "../../components/Layouts/Layout";
 import Styles from "../../styles/pages/Results/results.module.css";
 import GC from "./GC";
 import Interiit from "./Interiit";
-import LiveScoreboard from "./LiveScoreboard";
 
-function Results() {
+export default function Results() {
   document.title = "Results | TSG";
-  // state variables for conditional rendering
-  const [gC, setGC] = useState(true);
-  const [interIIT, setInterIIT] = useState(false);
-  const [liveScoreboard, setLiveScoreboard] = useState(false);
-  const location = useLocation();
 
+  // State variables for conditional rendering
+  const [gc, setGC] = useState(true);
+  const [interIIT, setInterIIT] = useState(false);
+
+  const location = useLocation();
   useEffect(() => {
     if (location.pathname === "/results") {
-      setInterIIT(false);
       setGC(true);
-      setLiveScoreboard(false);
+      setInterIIT(false);
     } else if (location.pathname === "/results/gc") {
       setGC(true);
       setInterIIT(false);
-      setLiveScoreboard(false);
     } else if (location.pathname === "/results/interiit") {
+      setGC(false);
       setInterIIT(true);
-      setGC(false);
-      setLiveScoreboard(false);
-    } else if (location.pathname === "/results/livescore") {
-      setInterIIT(false);
-      setGC(false);
-      setLiveScoreboard(true);
     }
   }, [location.pathname]);
 
   return (
     <Layout>
       <div className={Styles.resultsSection}>
-
         <div className={Styles.content}>
-          {/* Conditional Rendering of routes on the basis of route */}
-          {gC && <GC />}
+          {gc && <GC />}
           {interIIT && <Interiit />}
-          {liveScoreboard && <LiveScoreboard />}
         </div>
       </div>
     </Layout>
   );
 }
-
-export default Results;

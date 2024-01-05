@@ -29,6 +29,7 @@ import ElectionCandidates from "./pages/Elections/ElectionCandidates";
 import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
 import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
+import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 
 function App() {
   useEffect(() => {
@@ -71,8 +72,8 @@ function App() {
           {/* 404 - Not Found Route */}
           <Route component={NotFound} />
 
-          {/* Livescoreboard Route */}
-          {/* <Route exact path="/livescore" component={Results} /> */}
+          {/* Live Scoreboard Route */}
+          {/* <Route exact path="/livescoreboard" component={LiveScoreboard} /> */}
 
           {/* Election Routes */}
           {/* <Route exact path="/nominations" component={Nominations} />
