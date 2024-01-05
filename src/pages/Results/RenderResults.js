@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import GC from "./GC/GCdata";
-import InterIITdata from "./InterIIT/InterIITdata";
+import GC from "./data/GCdata";
+import InterIITdata from "./data/InterIITdata";
 
 const years = [
   "2022-23",
@@ -45,7 +45,7 @@ export default function RenderResultsFromDropdown({ option }) {
         <>
           {/* MEN'S STANDINGS */}
           <h2 style={{ padding: "1%", color: "white" }}> Men's Standings</h2>
-          <div className="table-container">
+          <div className="table-container" data-aos="zoom-in-up">
             <table>
               <thead style={{ border: "10px solid #fff" }}>
                 <tr>
@@ -75,7 +75,7 @@ export default function RenderResultsFromDropdown({ option }) {
           </div>
           {/* WOMEN'S STANDINGS */}
           <h2 style={{ padding: "1%", color: "white" }}> Women's Standings</h2>
-          <div className="table-container">
+          <div className="table-container" data-aos="zoom-in-up">
             <table>
               <thead style={{ border: "10px solid #fff" }}>
                 <tr>
@@ -108,7 +108,11 @@ export default function RenderResultsFromDropdown({ option }) {
       {/* SOCIAL & CULTURAL */}
       {option === "SOCIAL & CULTURAL" && (
         <>
-          <div className="table-container" style={{ paddingTop: "3%" }}>
+          <div
+            className="table-container"
+            data-aos="zoom-in-up"
+            style={{ paddingTop: "3%" }}
+          >
             <table>
               <thead style={{ border: "10px solid #fff" }}>
                 <tr>
@@ -141,7 +145,11 @@ export default function RenderResultsFromDropdown({ option }) {
       {/* TECHNOLOGY */}
       {option === "TECHNOLOGY" && (
         <>
-          <div className="table-container" style={{ paddingTop: "3%" }}>
+          <div
+            className="table-container"
+            data-aos="zoom-in-up"
+            style={{ paddingTop: "3%" }}
+          >
             <table>
               <thead style={{ border: "10px solid #fff" }}>
                 <tr>
