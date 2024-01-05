@@ -14,7 +14,7 @@ function Contacts() {
         <p className="pageHeading">CONTACTS</p> {/* Global CSS */}
         <DropdownSelector
           itemList={contactsDropdownList}
-          defaultOption={"CURRENT OFFICE BEARERS"}
+          defaultOption={contactsDropdownList[0]}
         />
       </section>
     </Layout>

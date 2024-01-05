@@ -14,7 +14,7 @@ function Awards() {
         <p className="pageHeading">HALL OF FAME</p> {/* Global CSS */}
         <DropdownSelector
           itemList={awardsDropdownList}
-          defaultOption={"SPORTS & GAMES"}
+          defaultOption={awardsDropdownList[0]}
         />
       </section>
     </Layout>

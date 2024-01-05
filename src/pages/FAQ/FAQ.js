@@ -11,7 +11,10 @@ export default function FA() {
     <Layout>
       <section>
         <p className="pageHeading">FAQs</p> {/* Global CSS */}
-        <DropdownSelector itemList={faqDropdownList} defaultOption={"0"} />
+        <DropdownSelector
+          itemList={faqDropdownList}
+          defaultOption={faqDropdownList[0].index}
+        />
       </section>
     </Layout>
   );
