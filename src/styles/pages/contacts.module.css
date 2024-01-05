@@ -83,10 +83,7 @@ body {
   .maincontainer {
     display: flex;
     flex-direction: column;
-    width: 90%;
     margin: auto;
-    margin-top: 11vh;
-    min-height: 90vh;
   }
 }
 

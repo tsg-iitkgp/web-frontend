@@ -21,7 +21,29 @@
 .expandMore {
   color: #000;
   position: absolute;
-  top: 25%;
+  top: 30%;
   right: 22%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .expandMore {
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .expandMore {
+    top: 18%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .selector {
+    font-size: 1rem;
+  }
+
+  .expandMore {
+    top: 15%;
+  }
 }
