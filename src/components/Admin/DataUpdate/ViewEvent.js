@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Popup from '../../Popup';
-import EventCard from '../../Events/EventCard';
+import EventCard from '../../EventCard/EventCard';
 import ResultsPreview from './ResultsPreview';
 
 const ViewEvent = (props) => {

@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Styles from "./events.module.css";
 // import eventsData from "../components/Events/eventsData";
-import EventCard from "../components/Events/EventCard";
-import Layout from "../components/Layouts/Layout";
+import EventCard from "../../components/EventCard/EventCard";
+import Layout from "../../components/Layouts/Layout";
 // import Highlight from "../components/Events/Highlight";
-import host from "../apiService";
+import host from "../../apiService";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/open-animation.css";
-import Popup from "../components/Popup";
-import ResultsPreview from "../components/Admin/DataUpdate/ResultsPreview";
-import SkeletonElement from "../components/Skeleton/SkeletonElement";
+import Popup from "../../components/Popup";
+import ResultsPreview from "../../components/Admin/DataUpdate/ResultsPreview";
+import SkeletonElement from "../../components/Skeleton/SkeletonElement";
 
 export default function Events() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);

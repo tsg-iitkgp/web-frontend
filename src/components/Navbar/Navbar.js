@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import Badge from "@material-ui/core/Badge";
 import Styles from "../../styles/components/navbar.module.css";
 import useNavbar from "./useNavbar";
-import eventsData from "../Events/eventsData";
+import eventsData from "../../pages/Events/eventsData.js";
 import Notification from "./Notification";
 import { useHistory } from "react-router-dom";
 import Dropdown from "./Dropdown.js";

@@ -8,15 +8,13 @@ import Login from "./pages/admin/Login";
 import Dashboard from "./pages/admin/Dashboard/Dashboard";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Home from "./pages/Homepage/Home";
-import NotFound from "./pages/NotFound";
+import NotFound from "./components/NotFound";
 import PrivateRoute from "./routes/PrivateRoute";
 import Contacts from "./pages/Contacts/Contacts";
-import Blog from "./pages/Blog";
 import Results from "./pages/Results";
 import Awards from "./pages/Awards/Awards";
-import Booking from "./pages/Booking";
 import Societies from "./pages/Societies/Societies";
-import Events from "./pages/Events";
+import Events from "./pages/Events/Events";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./pages/Gallery/Gallery";
 import FAQ from "./pages/FAQ/FAQ";
@@ -69,8 +67,6 @@ function App() {
           <Route exact path="/contacts" component={Contacts} />
           {/* ContactUs Route */}
           <Route exact path="/ContactUs" component={ContactUs} />
-          {/* Blogs Route */}
-          <Route exact path="/blog" component={Blog} />
           {/* FAQ Route */}
           <Route exact path="/faq" component={FAQ} />
           {/* 404 - Not Found Route */}
@@ -84,8 +80,7 @@ function App() {
             component={ElectionCandidates}
           /> */}
           {/* Other Routes */}
-          {/* <Route exact path="/booking" component={Booking} />
-          <Route exact path="/gallery" component={Gallery} /> */}
+          {/*<Route exact path="/gallery" component={Gallery} /> */}
         </Switch>
       </ScrollToTop>
     </Router>
