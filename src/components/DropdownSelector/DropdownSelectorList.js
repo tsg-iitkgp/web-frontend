@@ -13,7 +13,7 @@ export const eventVerticals = [
 ]
 
 export const awardsDropdownList = [
-  eventVerticals,
+  ...eventVerticals,
   "SPECIAL RECOGNITION",
 ];
 
