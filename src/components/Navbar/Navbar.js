@@ -7,7 +7,7 @@ import useNavbar from "./useNavbar";
 import eventsData from "../../pages/Events/eventsData.js";
 import Notification from "./Notification";
 import { useHistory } from "react-router-dom";
-import Dropdown from "./Dropdown.js";
+import ResultsDropdown from "./ResultsDropdown.js";
 
 export default function Navbar() {
   // Custom Hook useNavbar for logic of navbarClass
@@ -104,7 +104,7 @@ export default function Navbar() {
               Results
             </NavLink>
             {dropdown && (
-              <Dropdown
+              <ResultsDropdown
                 handleClick={() => {
                   handleClick();
                 }}
