@@ -1,8 +1,9 @@
 .services-submenu {
+  width: 21rem;
   max-width: 21rem;
   position: absolute;
   top: 100%;
-  left: -20%;
+  left: -15%;
   list-style: none;
   text-align: start;
 }
