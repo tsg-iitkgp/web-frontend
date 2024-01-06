@@ -91,7 +91,7 @@ export default function Navbar() {
 
           {/* RESULTS */}
           <li
-            className={Styles.navItem}
+            className={`${Styles.navItem} ${Styles.results}`}
             onMouseEnter={() => setDropdown(true)}
             onMouseLeave={() => setDropdown(false)}
           >

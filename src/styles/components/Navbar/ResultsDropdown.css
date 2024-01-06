@@ -1,7 +1,8 @@
 .services-submenu {
-  width: 22rem;
+  max-width: 21rem;
   position: absolute;
-  top: 3rem;
+  top: 100%;
+  left: -20%;
   list-style: none;
   text-align: start;
 }
@@ -28,10 +29,8 @@
   padding: 16px;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .services-submenu {
-    right: 4rem;
-    top: 35%;
-    
+    z-index: 100;
   }
 }

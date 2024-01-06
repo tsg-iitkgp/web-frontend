@@ -11,7 +11,6 @@
   height: 6vh;
   background: transparent;
   width: 90%;
-  position: relative;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -43,6 +42,7 @@
   font-size: 1.1rem;
   color: #f1c40f;
   text-align: center;
+  position: relative;
 }
 .activeNavbar {
   background-color: rgba(0, 0, 0, 0.2);
@@ -109,6 +109,9 @@ ul li a {
   box-shadow: 0 0rem 1rem 0 rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(2rem);
   width: 30vw;
+}
+.results{
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .navLogo a {
