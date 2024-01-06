@@ -9,12 +9,14 @@ export default function Staff() {
       <div className={Styles.multipleCards}>
         {staffData.data.map((member, index) => {
           return (
-            <ContactCard
-              name={member.Name}
-              designation={member.Post}
-              email={member.Email}
-              imgSrc={`/data/media/images/staff/${member.RollNo}.png`}
-            />
+            <div data-aos="zoom-in-up">
+              <ContactCard
+                name={member.Name}
+                designation={member.Post}
+                email={member.Email}
+                imgSrc={`/data/media/images/staff/${member.RollNo}.png`}
+              />
+            </div>
           );
         })}
       </div>

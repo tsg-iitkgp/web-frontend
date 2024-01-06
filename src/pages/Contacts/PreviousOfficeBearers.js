@@ -107,19 +107,23 @@ export default function PreviousOfficeBearers() {
               {currentTab !== "specialRecog"
                 ? senateData[currentYear][currentTab]["profs"]?.map(
                     (winner) => (
-                      <ContactCard
-                        name={winner.Name}
-                        imgSrc={primg}
-                        designation={winner.Post}
-                      />
+                      <div data-aos="zoom-in-up">
+                        <ContactCard
+                          name={winner.Name}
+                          imgSrc={primg}
+                          designation={winner.Post}
+                        />
+                      </div>
                     )
                   )
                 : senateData[currentYear][currentTab].map((winner) => (
-                    <ContactCard
-                      name={winner.Name}
-                      imgSrc={"primg"}
-                      designation={winner.Post}
-                    />
+                    <div data-aos="zoom-in-up">
+                      <ContactCard
+                        name={winner.Name}
+                        imgSrc={"primg"}
+                        designation={winner.Post}
+                      />
+                    </div>
                   ))}
             </div>
           </>
@@ -128,17 +132,17 @@ export default function PreviousOfficeBearers() {
           <>
             <div className={Styles.senateCard}>
               {senateData[currentYear][currentTab]["honours"].map((winner) => (
-                <card className={Styles.card1}>
-                  <p>
-                    <span style={{ color: "rgb(190, 190, 190)" }}>
-                      {" "}
-                      {winner.Post}
-                    </span>
-                    <br />
+                  <card className={Styles.card1} data-aos="zoom-in-up">
+                    <p>
+                      <span style={{ color: "rgb(190, 190, 190)" }}>
+                        {" "}
+                        {winner.Post}
+                      </span>
+                      <br />
 
-                    {winner.Name}
-                  </p>
-                </card>
+                      {winner.Name}
+                    </p>
+                  </card>
               ))}
             </div>
           </>
