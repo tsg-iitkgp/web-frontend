@@ -11,6 +11,7 @@ export default function CommitteeCard({ data }) {
             <h2>{data.number}</h2>
             <h3>{data.heading}</h3>
             {/* <p>{data.description}</p> */}
+            <img src={`/data/media/images/committee/${data.photo}`} />
           </div>
         </div>
       </div>
