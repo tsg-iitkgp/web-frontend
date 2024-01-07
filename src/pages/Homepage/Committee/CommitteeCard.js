@@ -10,8 +10,8 @@ export default function CommitteeCard({ data }) {
           <div className={Styles.content}>
             <h2>{data.number}</h2>
             <h3>{data.heading}</h3>
+            <img src={data.background} />
             {/* <p>{data.description}</p> */}
-            <img src={`/data/media/images/committee/${data.photo}`} />
           </div>
         </div>
       </div>
