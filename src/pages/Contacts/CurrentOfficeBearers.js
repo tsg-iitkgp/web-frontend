@@ -13,11 +13,10 @@ export default function CurrentOfficeBearers() {
   const VicePresident = contactsData.data.find(
     (contact) => contact.Post === "Vice President"
   );
-  const generalSecretaries = contactsData.data.filter(
-    (element) => element.Category === "General Secretary"
-  );
-  const nominatedPost = contactsData.data.filter(
-    (element) => element.Category === "Nominated"
+  const thirdYearCouncil = contactsData.data.filter(
+    (element) =>
+      element.Category === "General Secretary" ||
+      element.Category === "Nominated"
   );
   const secretaries = contactsData.data.filter(
     (element) => element.Category === "Secretary"
@@ -27,7 +26,6 @@ export default function CurrentOfficeBearers() {
     <>
       <div className={Styles.contactsContainer}>
         <div>
-          <h2 className={Styles.postHeading}>President</h2>
           <div data-aos="zoom-in-up">
             <ContactCard
               name={President.Name}
@@ -41,7 +39,6 @@ export default function CurrentOfficeBearers() {
         </div>
 
         <div>
-          <h2 className={Styles.postHeading}>Honorary Treasurer</h2>
           <div data-aos="zoom-in-up">
             <ContactCard
               name={HonoraryTreasurer.Name}
@@ -55,7 +52,6 @@ export default function CurrentOfficeBearers() {
         </div>
 
         <div>
-          <h2 className={Styles.postHeading}>Vice President</h2>
           <div data-aos="zoom-in-up">
             <ContactCard
               name={VicePresident.Name}
@@ -69,29 +65,8 @@ export default function CurrentOfficeBearers() {
         </div>
 
         <div>
-          <h2 className={Styles.postHeading}>General Secretaries</h2>
           <div className={Styles.multipleCards}>
-            {generalSecretaries.map((member, index) => {
-              return (
-                <div data-aos="zoom-in-up">
-                  <ContactCard
-                    name={member.Name}
-                    designation={member.Post}
-                    facebook={member.Facebook}
-                    linkedin={member.LinkedIn}
-                    email={member.Email}
-                    imgSrc={`/data/media/images/contacts/${member.img}`}
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <div>
-          <h2 className={Styles.postHeading}>Nominated Posts</h2>
-          <div className={Styles.multipleCards}>
-            {nominatedPost.map((member, index) => {
+            {thirdYearCouncil.map((member, index) => {
               return (
                 <div data-aos="zoom-in-up">
                   <ContactCard
