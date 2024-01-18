@@ -1,0 +1,79 @@
+@media screen and (min-width:1270px){
+    .MatchCard{
+        width: 30vw;
+    }
+
+    .matchData{
+        width:25vw;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1270px){
+    .MatchCard{
+        width:35vw;
+    }
+
+    .matchData{
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width:800px){
+    .MatchCard{
+        width:80vw;
+    }
+
+    .matchData{
+        width:55vw;
+    }
+}
+
+
+.MatchCard{
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.75rem 0;
+    padding: 0.2rem 0;
+    border-radius: 1rem;
+}
+
+.matchData{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.matchStatus{
+    background-color: #dab834;
+    color: white;
+    font-size: 1rem;
+}
+
+.hallImage{
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0.25rem
+}
+
+.matchStatus{
+    background-color: #dab834;
+    border-radius: 0.25rem;
+    padding: 0.15rem 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.score{
+    margin: 0 0.1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.MatchCard p{
+  font-size: 1.25rem;  
+  margin: 0.2rem 0;
+}

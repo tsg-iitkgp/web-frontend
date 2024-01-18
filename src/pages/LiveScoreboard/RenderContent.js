@@ -1,12 +1,11 @@
 import React from 'react'
 import Styles from './template.module.css'
-import {BrowserRouter as Link} from 'react-router-dom' 
-import { withWidth } from '@material-ui/core';
+import MatchCard from '../../components/MatchCard';
 
 export default function RenderContent({activeFilter}){
+  const statusToday = "upcoming";
   switch(activeFilter){
     case 'today':
-    const statusToday = "upcoming";
     return (
         <div style={{width:'80vw',margin:'0 auto'}}>
           <div>
@@ -55,7 +54,13 @@ export default function RenderContent({activeFilter}){
         </section>
       );
     case 'past':
-      return <p>Displaying past matches content.</p>;
+      return (
+        <div style={{width:'80vw',margin:'0 auto',display:'flex',flexWrap:'wrap',justifyContent:'space-between'}}>
+          <MatchCard status={statusToday}/>
+          <MatchCard status={statusToday}/>
+          <MatchCard status={statusToday}/>
+        </div>
+      );
     case 'points':
       return (
         <section className='withTable'>
@@ -94,23 +99,4 @@ export default function RenderContent({activeFilter}){
     default:
       return null;
   }
-}
-
-function MatchCard({status}){
-  return (
-    <div className={Styles.MatchCard}>
-      <p><span>Date&Time</span>:16/01/24,08:00am</p>
-      <div>
-        <div>
-
-        </div>
-        <div>
-          
-        </div>
-      </div>
-      <p>RK Won the match by 60 runs</p>
-      <p><span>Venue</span>Tata Sports Complex</p>
-      <Link to='/'>More details</Link>
-    </div>
-  )
 }
