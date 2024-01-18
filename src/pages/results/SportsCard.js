@@ -12,7 +12,7 @@ export default function SportsCard(props) {
       <div className="sports-card-info">
         <div className="sports-card-info-title">
           <h3 >{sportsData.name}</h3>
-          <h4 >{sportsData.status}</h4>
+          {sportsData.status === "LIVE" && <h4> Live</h4>}
         </div>
       </div>
     </div>

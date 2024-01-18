@@ -6,6 +6,7 @@ import sportsData from './sportsData.json';
 import Layout from "../../components/Layout";
 
 export default function LiveScoreboard() {
+  document.title = "Live Scoreboard | TSG"
   const [data, setData] = useState(null);
 
 
