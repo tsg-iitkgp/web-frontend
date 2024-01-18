@@ -31,6 +31,7 @@ import ElectionCandidates from "./pages/Elections/ElectionCandidates";
 import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
 import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
+import LiveScoreboard from "./pages/results/LiveScoreboard";
 
 function App() {
   useEffect(() => {
@@ -53,7 +54,7 @@ function App() {
           <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/interiit" component={Results} />
-          <Route exact path="/results/livescore" component={Results} />
+          <Route exact path="/results/livescore" component={LiveScoreboard} />
           <Route exact path="/contacts/secretaries" component={Contacts} />
           <Route
             exact
