@@ -1,0 +1,43 @@
+.title {
+    text-align: center;
+    color: #dab834;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.filters {
+    width: 40vw;
+    background-color: #1E1E1E;
+    margin: 1rem auto;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.normal {
+    background-color: #1E1E1E;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.active{
+    background-color: #dab834;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.matchContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.MatchCard{
+    background-color: #1E1E1E;
+    width: 30vw;
+}

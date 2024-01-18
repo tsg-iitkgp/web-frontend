@@ -29,6 +29,7 @@ import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
 import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
+import Template from "./pages/LiveScoreboard/Template";
 import Results from "./pages/Results/Results";
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
           {/* FAQ Route */}
           <Route exact path="/faq" component={FAQ} />
           {/* 404 - Not Found Route */}
+          <Route exact path="/cricket" component={Template} />
           <Route component={NotFound} />
 
           {/* Live Scoreboard Route */}
