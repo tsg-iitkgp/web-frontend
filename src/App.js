@@ -30,6 +30,7 @@ import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 import Results from "./pages/Results/Results";
+import GameDetails from "./pages/LiveScoreboard/GameDetails";
 
 function App() {
   useEffect(() => {
@@ -68,6 +69,7 @@ function App() {
           <Route exact path="/ContactUs" component={ContactUs} />
           {/* FAQ Route */}
           <Route exact path="/faq" component={FAQ} />
+          <Route exact path="/gamedetails" component={GameDetails} />
           {/* 404 - Not Found Route */}
           <Route component={NotFound} />
 
