@@ -142,7 +142,7 @@ const soc = {
       name: "Druheen",
       description:
         "Druheen is the official name of Bengali Technology dramatic society(BTDS) of IIT Kharagpur. It is one of the dramatic society which is under Technology students' Gymkhana and is a part of the Dramatics Subcommittee under the Social and Cultural Committee. This is one of the oldest societies in IIT Kharagpur.",
-      facebook_link: "https://www.facebook.com/tdsdruheen/",
+      facebook_link: "https://www.facebook.com/profile.php?id=100083041579284",
       wiki_link: "https://wiki.metakgp.org/w/Druheen",
       shortform: "druheen",
       category: "Socult",
