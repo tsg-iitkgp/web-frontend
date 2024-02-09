@@ -246,7 +246,7 @@ export default {
       Name: "Malla Sampath Narayana",
       Category: "Secretary",
       Post: "Secretary Entertainment ",
-      img: "22HS10034.jpg",
+      img: "22HS10034.jpeg",
       Email: "sampathnarayana890@gmail.com",
       Contact: 9492780324,
       "Insti Email": "sampath@kgpian.iitkgp.ac.in",
