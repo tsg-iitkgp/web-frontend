@@ -3721,6 +3721,12 @@
           "Award": "Athletics Excellence"
         },
         {
+          "Name": "Tanishq Kishnani",
+          "Roll": "18IM10042",
+          "Game": "Football",
+          "Award": "Institute Blue"
+        },
+        {
           "Name": "Shivam Singh",
           "Roll": "17IM30030",
           "Game": "Athletics",
@@ -4291,12 +4297,6 @@
         }
       ],
       "honours": [
-        {
-          "Name": "TANISHQ KISHNANI",
-          "Roll": "18IM10042",
-          "Game": "FOOTBALL",
-          "Award": "INSTITUTE BLUE"
-        },
         {
           "Name": "SIGANGSA BAGLARI",
           "Roll": "18EC3FP11",
