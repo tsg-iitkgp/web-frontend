@@ -1,5 +1,5 @@
-# Build stage
-FROM node:14-alpine AS build
+# Build
+FROM node:14-alpine
 
 WORKDIR /webapp
 
@@ -11,11 +11,6 @@ COPY . .
 
 RUN yarn build
 
-# Production stage
-FROM nginx:stable-alpine
+RUN yarn global add serve
 
-COPY --from=build /webapp/build /usr/share/nginx/html
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["serve", "-s", "build"]

@@ -7,6 +7,4 @@ services:
     container_name: tsg-site-frontend
     restart: unless-stopped
     ports:
-      - 8000:80
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - 8000:3000

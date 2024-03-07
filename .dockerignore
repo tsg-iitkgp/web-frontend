@@ -1,3 +1,9 @@
+# System Garbage
+.DS_Store
+
+# Docker related
+docker-compose.yml
+
 # Get & Github related
 .git/
 .github/
@@ -8,4 +14,3 @@ README.md
 # Project related
 node_modules/
 scripts/
-nginx.conf
