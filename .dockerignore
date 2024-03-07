@@ -5,6 +5,7 @@
 LICENSE
 README.md
 
-# Project releated
+# Project related
 node_modules/
 scripts/
+nginx.conf
