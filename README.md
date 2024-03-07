@@ -44,6 +44,8 @@ Table of Contents
   - [Libraries/Frameworks Used](#librariesframeworks-used)
   - [File Structure](#file-structure)
   - [Setting Up Locally](#setting-up-locally)
+    - [Bare metal](#bare-metal)
+    - [Docker](#docker) 
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 - [Additional Documentation](#additional-documentaiton)
@@ -89,11 +91,27 @@ This project has been built with the following technologies.
 
 #### Setting Up Locally
 
-- Install [NodeJS](https://nodejs.org/en).
-- Install or enable [Yarn](https://yarnpkg.com/getting-started/install).
-- Clone this repository.
-- Run `yarn install` in the cloned repository to download all dependencies.
-- Run `yarn start` to start a local development server.
+It is prefferred to use docker over bare metal setup.
+
+##### Docker
+
+- Install [docker](https://www.docker.com/get-started) and `docker-compose`. For ubuntu, follow the comamnds below:
+  ```sh
+  sudo apt install docker.io docker-compose
+  ```
+- Start the container using `docker-compose.yml` file
+  ```sh
+  sudo docker-compose up -d
+  ```
+- The site will be hosted at `http://localhost:8000`
+
+##### Bare Metal
+- Install [NodeJS](https://nodejs.org/en)
+- Install or enable [Yarn](https://yarnpkg.com/getting-started/install)
+- Clone this repository
+- Run `yarn install` in the cloned repository to download all dependencies
+- Run `yarn start` to start a local development server
+- The site will be hosted at `http://localhost:3000`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
