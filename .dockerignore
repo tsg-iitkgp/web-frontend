@@ -1,0 +1,9 @@
+# Get & Github related
+.git/
+.github/
+.gitignore
+LICENSE
+README.md
+
+# Project releated
+node_modules/
