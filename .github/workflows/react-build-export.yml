@@ -1,40 +1,14 @@
-# Trigger the workflow on push or pull request
-name: Build and Export the static build to the 'build' branch
+name: Build and Deploy
 on:
   push:
     branches: [ "main" ]
 
 jobs:
-  build-and-export:
-    name: Build and export the react application to the `build` branch
+  invoke-cicd-pipeline:
+    name: Calls cicd pipeline endpoint
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
-
-      - name: Build and export with the latest action rev
-        uses: praneeth-rdy/static-build-export-action@main
-        env:
-          CI: false
-          PROJECT_DIR: .
-          BUILD_BRANCH: build
-          TOKEN: ${{ secrets.ACTIONS_TOKEN }}
-          
-      - name: Configure SSH keys
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_PUBLIC_KEY: ${{ secrets.SSH_PUBLIC_KEY }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/tsgaws
-          echo "$SSH_PUBLIC_KEY" > ~/.ssh/tsgaws.pub
-          chmod 600 ~/.ssh/tsgaws
-          chmod 600 ~/.ssh/tsgaws.pub
-
-      - name: Update the submodule modified above and reflect changes on website
-        env:
-          SERVER_USER: ${{ secrets.SERVER_USER }}
-          SERVER_IP: ${{ secrets.SERVER_IP }}
-        run: |
-          ssh-keyscan -t ed25519 "$SERVER_IP" >> ~/.ssh/known_hosts
-          ssh -i ~/.ssh/tsgaws "$SERVER_USER"@"$SERVER_IP" "cd tsg-backend; git submodule update --remote"
+      - name: Curl Command
+        env: 
+          AUTH_TOKEN: ${{ secrets.CICD_AUTH_TOKEN }}
+        run: curl "http://tsg-cicd.iitkgp.ac.in/tsg-site-frontend/$AUTH_TOKEN"
