@@ -21,6 +21,8 @@ export default function Nominations() {
 
   return (
     <Layout>
+      <div className={Styles.electionHeaderImg}>
+      </div>
       <Container className={Styles.electionsContainer}>
         <Typography
           variant="h4"
