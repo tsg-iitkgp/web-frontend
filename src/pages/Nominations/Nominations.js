@@ -3,17 +3,19 @@ import React, { useState } from "react";
 import Styles from "./nominations.module.css";
 import Layout from "../../components/Layouts/Layout";
 export default function Nominations() {
+  document.title = "Nominations 2024-2025 | TSG";
+
   const [currentTab, setCurrentTab] = useState(null);
 
   const tabFormUrls = {
     "Public Relations' Chairperson":
-      "https://docs.google.com/forms/d/e/1FAIpQLSfvoSEiHuU33zL_d9_wrs1hCk6ol_KjiWa_BkjAaAWYfgut_Q/viewform?embedded=true",
-    "Technology Coordinator":
-      "https://docs.google.com/forms/d/e/1FAIpQLScnLu0Vrb0oPBaSCA6SKf8CcP2O8eZGkKXLsVjMmj6zFJ4Yhg/viewform?embedded=true",
-    Editor:
-      "https://docs.google.com/forms/d/e/1FAIpQLSc26msaYn79qlLxGRtlHM-xKHGUgmtKtBSBOjY0SHw5bYXZfA/viewform?embedded=true",
-    "Institute Girl Sports' Nominee":
-      "https://docs.google.com/forms/d/e/1FAIpQLSe9fvA24HmVoW3frHQtVg3QiAMQEqLSYOlrUyBAxCk5y7n6GA/viewform?embedded=tru",
+      "https://forms.gle/xfKYEfavCnthN2Aj7",
+    "Technology Coordinators":
+      "https://forms.gle/h1BWG1DKGDGt4zQW7",
+    "Editor":
+      "https://forms.gle/CFBc8UhAcCLa1vi86",
+    "Institute Girls' Sports Nominee":
+      "https://forms.gle/DNtiJXFY3z42qrrx7",
   };
 
   const handleTabChange = (s) => {
@@ -29,21 +31,23 @@ export default function Nominations() {
             color: "#f1c40f",
             fontFamily: "Lato",
             fontWeight: "600",
+            margin: "1rem 0"
           }}
           align="center"
         >
-          Applications - Nominated Office Bearers (2023-24)
+          Applications - Nominated Office Bearers (2024-2025)
         </Typography>
 
-        <div className="tabs">
-          {Object.keys(tabFormUrls).map((tab) => (
+        <div className="tabs" style={{ display: "flex", justifyContent: "space-between", margin: "1rem auto", width: "60%", textAlign: "center", alignItems: "center" }}>
+          {Object.keys(tabFormUrls).map((tab, index) => (
             <div
               key={tab}
-              className={`tab ${currentTab === tab ? "active" : ""}`}
+              id={`tab-${index}`}
+              className={`nomination-tab tab ${currentTab === tab ? "active" : ""}`}
+              style={{ width: "20%", textAlign: "center" }}
               onClick={() => handleTabChange(tab)}
-              style={{ display: "flex", justifyContent: "center" }}
             >
-              <button className="btn_interiit">{tab}</button>
+              <button className="btn btn-warning">{tab}</button>
             </div>
           ))}
         </div>

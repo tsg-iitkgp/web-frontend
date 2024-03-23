@@ -66,6 +66,11 @@ function App() {
           <Route exact path="/contacts" component={Contacts} />
           {/* ContactUs Route */}
           <Route exact path="/ContactUs" component={ContactUs} />
+
+          {/* Election Routes */}
+          <Route exact path="/nominations" component={Nominations} />
+          <Route exact path="/elections" component={Elections} />
+          
           {/* FAQ Route */}
           <Route exact path="/faq" component={FAQ} />
           {/* 404 - Not Found Route */}
@@ -74,10 +79,7 @@ function App() {
           {/* Live Scoreboard Route */}
           {/* <Route exact path="/livescoreboard" component={LiveScoreboard} /> */}
 
-          {/* Election Routes */}
-          {/* <Route exact path="/nominations" component={Nominations} />
-          <Route exact path="/elections" component={Elections} />
-          <Route
+          {/* <Route
             exact
             path="/elections/candidates"
             component={ElectionCandidates}

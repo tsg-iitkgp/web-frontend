@@ -1,8 +1,25 @@
+.electionHeaderImg {
+  background-image: url("../../images/display/tsg_new.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+
 .electionsContainer {
-  margin-top: 14vh;
+  margin-top: 5vh;
   min-height: 80vh;
   font-family: "Lato";
 }
+
+@media screen and (min-width: 720px) {
+  .electionsContainer {
+    margin-top: 10vh;
+    min-height: 80vh;
+    font-family: "Lato";
+  }
+}
+
 .electionsContainer p {
   letter-spacing: 1.5px;
   font-size: 1.25rem;
@@ -11,10 +28,19 @@
   font-family: "Lato";
   margin: 2rem 0rem;
 }
+
 .electionBody {
   color: rgba(255, 255, 255, 0.8);
-  margin-top: 2rem;
+  margin-top: 2rem; 
 }
+
+@media screen and (min-width: 720px) {
+  .electionBody {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 2rem 15rem 0; 
+  }
+}
+
 .electionBody > h5 {
   color: #f1c40f;
   font-weight: 300;
