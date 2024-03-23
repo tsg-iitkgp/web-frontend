@@ -1,3 +1,7 @@
+body {
+  margin: auto !important;
+}
+
 .electionsContainer {
   display: block;
   margin: 14vh auto 0;
@@ -11,11 +15,14 @@
     line-height: 125%;
     font-family: "Lato";
     margin: 2rem 0rem;
+    justify-content: center !important;
   }
-  
+
   .electionBody {
     color: rgba(255, 255, 255, 0.8);
-    margin-top: 2rem;
+    display: block;
+    margin: 2rem auto 0;
+    text-align: center;
   }
   .electionBody > h5 {
     color: #f1c40f;
@@ -23,15 +30,16 @@
   }
   /* notices */
   .electionBody .notice {
-    border: 1px solid;
-    border-color: #f1c40f;
+    /* border: 1px solid; */
+    /* border-color: #f1c40f; */
     justify-content: space-between;
     align-items: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 1rem 2rem;
     width: 90%;
-    margin: 1rem 0rem;
+    margin: 1rem auto;
   }
   
   .notices {
