@@ -209,7 +209,7 @@ export default function Elections() {
                 Rules
               </a>
             </Button>
-            <Button>
+            {/* <Button>
               {" "}
               <a
                 href="/data/media/files/nomination_helpfile.pdf"
@@ -218,8 +218,8 @@ export default function Elections() {
               >
                 Nomination Procedure
               </a>
-            </Button>
-            <Button>
+            </Button> */}
+            {/* <Button>
               {" "}
               <a
                 href="/data/media/files/voting_procedure.pdf"
@@ -228,7 +228,7 @@ export default function Elections() {
               >
                 Voting Procedure
               </a>
-            </Button>
+            </Button> */}
             <Button>
               {" "}
               <a
