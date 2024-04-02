@@ -11,4 +11,4 @@ jobs:
       - name: Curl Command
         env: 
           AUTH_TOKEN: ${{ secrets.CICD_AUTH_TOKEN }}
-        run: curl "http://tsg-cicd.iitkgp.ac.in/tsg-site-frontend/$AUTH_TOKEN"
+        run: curl -sS -X GET "http://tsg-cicd.iitkgp.ac.in/tsg-site-frontend/$AUTH_TOKEN"
