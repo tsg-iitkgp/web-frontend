@@ -122,9 +122,9 @@ export default function Elections() {
                 <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong>
               </div>
             </Typography> */}
-            {/* <Typography className={Styles.notice}>
+            <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-              Provisional List of Candidates for TSG Election (2023-24)
+              Provisional List of Candidates for TSG Election (2024-25)
               </div>
               <Button>
               <a
@@ -136,7 +136,7 @@ export default function Elections() {
               View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography> */}
+            </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 TSG Election (2024-2025) Notification
