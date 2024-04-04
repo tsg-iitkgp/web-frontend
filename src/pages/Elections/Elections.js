@@ -35,8 +35,8 @@ export default function Elections() {
             Election is as follows:
           </Typography>
           <Typography variant="body2">
-            Date of Election: 9th April 2024 (Tuesday) <br />
-            Time of Election: 8:00 am to 6:00 pm <br />
+            Date of Election: 13th April 2024 (Saturday) <br />
+            Time of Election: 8:00 AM to 6:00 PM <br />
             Venue: CIC <br />
             Platform: ERP <br />
             <br />
