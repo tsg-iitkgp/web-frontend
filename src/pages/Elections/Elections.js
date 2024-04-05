@@ -124,6 +124,21 @@ export default function Elections() {
             </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
+                TSG Election (2024-2025) Notification
+              </div>
+              <Button>
+                <a
+                  href="/data/media/files/TSG_Election_Schedule_2024-25.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Schedule and Rules &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
               Provisional List of Candidates for TSG Election (2024-25)
               </div>
               <Button>
@@ -136,19 +151,19 @@ export default function Elections() {
               View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
+            </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                TSG Election (2024-2025) Notification
+              Final List of Nominations for TSG Election (2024-25)
               </div>
               <Button>
-                <a
-                  href="/data/media/files/TSG_Election_Schedule_2024-25.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  View Schedule and Rules &nbsp; <LaunchIcon />
+              <a
+              href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
+              lat="notice"
+              target="_blank"
+              rel="noopener"
+              >
+              View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>
@@ -190,15 +205,6 @@ export default function Elections() {
           <Typography variant="h5">Relevant Documents:</Typography>
           <Box className={Styles.buttonGroup}>
             {" "}
-            {/* <Button>
-              <a
-              href="/data/media/files/Results_2023.pdf"
-              alt="result"
-              target="_blank"
-              >
-                Result
-                </a>
-              </Button> */}
             <Button>
               {" "}
               <a
@@ -209,26 +215,6 @@ export default function Elections() {
                 Rules
               </a>
             </Button>
-            {/* <Button>
-              {" "}
-              <a
-                href="/data/media/files/nomination_helpfile.pdf"
-                alt="notification"
-                target="_blank"
-              >
-                Nomination Procedure
-              </a>
-            </Button> */}
-            {/* <Button>
-              {" "}
-              <a
-                href="/data/media/files/voting_procedure.pdf"
-                alt="notification"
-                target="_blank"
-              >
-                Voting Procedure
-              </a>
-            </Button> */}
             <Button>
               {" "}
               <a
@@ -242,13 +228,23 @@ export default function Elections() {
             {/* <Button>
               {" "}
               <a
-                href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
+                href="/data/media/files/voting_procedure.pdf"
                 alt="notification"
                 target="_blank"
-                >
-                Final List of Nominations
-                </a>
-              </Button> */}
+              >
+                Voting Procedure
+              </a>
+            </Button> */}
+            {/* <Button>
+              {" "}
+              <a
+                href="/data/media/files/nomination_helpfile.pdf"
+                alt="notification"
+                target="_blank"
+              >
+                Nomination Procedure
+              </a>
+            </Button> */}
           </Box>
         </Box>
       </Container>
