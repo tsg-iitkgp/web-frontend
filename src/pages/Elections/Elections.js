@@ -125,8 +125,17 @@ export default function Elections() {
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 The Election Officer for the TSG Election (2024 - 2025): 
-                Professor Probal Sengupta (<a href="mailto:probal@gg.iitkgp.ac.in">probal@gg.iitkgp.ac.in</a>)
               </div>
+              <Button>
+                <a
+                  href="mailto:probal@gg.iitkgp.ac.in"
+                  lat="eo_mail"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Probal Sengupta &nbsp; <LaunchIcon />
+                </a>
+              </Button>
             </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
@@ -231,7 +240,7 @@ export default function Elections() {
                 Conduct Guidelines
               </a>
             </Button>
-            {/* <Button>
+            <Button>
               {" "}
               <a
                 href="/data/media/files/voting_procedure.pdf"
@@ -240,7 +249,7 @@ export default function Elections() {
               >
                 Voting Procedure
               </a>
-            </Button> */}
+            </Button>
             {/* <Button>
               {" "}
               <a
