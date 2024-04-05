@@ -37,10 +37,10 @@ export default function Elections() {
           <Typography variant="body2">
             Date of Election: 13th April 2024 (Saturday) <br />
             Time of Election: 8:00 AM to 6:00 PM <br />
-            Venue: CIC <br />
-            Platform: ERP <br />
+            Venue: Computer & Informatics Center (CIC), Takshashila, Srinivasa Ramanujan Complex, IIT Kharagpur <br />
+            Platform: Institute ERP <br />
             <br />
-            Note: Remember to keep your ID card and Institute Email password
+            Note: Remember to keep your ID card, ERP and Institute Email password
             with you when you go for voting!
           </Typography>
         </Box>
@@ -110,18 +110,24 @@ export default function Elections() {
               </a>
               </Button>
             </Typography> */}
-            <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                The Venue for the TSG Election (2024 - 2025) will be Computer &
-                Informatics Center (CIC), Takshashila, Srinivasa Ramanujan
-                Complex, IIT Kharagpur
-              </div>
-            </Typography>
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong>
               </div>
             </Typography> */}
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                The Venue for the TSG Election (2024 - 2025) will be Computer &
+                Informatics Center (CIC), Takshashila, Srinivasa Ramanujan
+                Complex, IIT Kharagpur
+              </div>
+            </Typography> */}
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                The Election Officer for the TSG Election (2024 - 2025): 
+                Professor Probal Sengupta (<a href="mailto:probal@gg.iitkgp.ac.in">probal@gg.iitkgp.ac.in</a>)
+              </div>
+            </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 TSG Election (2024-2025) Notification
