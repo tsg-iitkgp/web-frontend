@@ -133,7 +133,7 @@ export default function Elections() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Probal Sengupta &nbsp; <LaunchIcon />
+                  Prof. Probal Sengupta &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>
