@@ -35,9 +35,9 @@ export default function Elections() {
             Election is as follows:
           </Typography>
           <Typography variant="body2">
-            Date of Election: 13th April 2024 (Saturday) <br />
-            Time of Election: 8:00 AM to 6:00 PM <br />
-            Venue: Computer & Informatics Center (CIC), Takshashila, Srinivasa Ramanujan Complex, IIT Kharagpur <br />
+            <b>Date of Election:</b> 13th April 2024 (Saturday) <br />
+            <b>Time of Election:</b> 8:00 AM to 6:00 PM <br />
+            <b>Venue:</b> Computer & Informatics Center (CIC), Takshashila, Srinivasa Ramanujan Complex, IIT Kharagpur <br />
             Platform: Institute ERP <br />
             <br />
             Note: Remember to keep your ID card, ERP and Institute Email password
@@ -124,7 +124,7 @@ export default function Elections() {
             </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                The Election Officer for the TSG Election (2024 - 2025): 
+                Election Officer (AY 2024 - 2025)
               </div>
               <Button>
                 <a
