@@ -143,7 +143,7 @@ export default function Elections() {
               </div>
               <Button>
                 <a
-                  href="/data/media/files/TSG_Election_Schedule_2024-25.pdf"
+                  href="/data/media/files/revised_election_schedule_2024.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
