@@ -74,16 +74,16 @@ function App() {
           {/* FAQ Route */}
           <Route exact path="/faq" component={FAQ} />
           {/* 404 - Not Found Route */}
-          <Route component={NotFound} />
+          {/* <Route component={NotFound} /> */}
 
           {/* Live Scoreboard Route */}
           {/* <Route exact path="/livescoreboard" component={LiveScoreboard} /> */}
 
-          {/* <Route
+          <Route
             exact
             path="/elections/candidates"
             component={ElectionCandidates}
-          /> */}
+          />
 
           {/* Other Routes */}
           {/*<Route exact path="/gallery" component={Gallery} /> */}
