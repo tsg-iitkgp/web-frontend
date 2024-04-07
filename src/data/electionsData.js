@@ -83,7 +83,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "",
       FacebookLink: "",
-      img: ""
+      img: "dummyImage.png"
     },
     {
       RollNo: "22CH30033",
@@ -106,7 +106,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "",
       FacebookLink: "",
-      img: ""
+      img: "dummyImage.png"
     },
   ],
   Gsec_Socult: [
@@ -120,7 +120,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "",
       FacebookLink: "",
-      img: ""
+      img: "dummyImage.png"
     },
     {
       RollNo: "22CE10087",
