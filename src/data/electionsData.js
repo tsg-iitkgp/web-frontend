@@ -44,7 +44,7 @@ export const candidates = {
       Email: "",
       img: "DSR_VP.png",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "21AG30015.pdf",
       FacebookLink: "",
     },
     {
@@ -56,7 +56,7 @@ export const candidates = {
       Email: "",
       img: "Sagar_VP.jpeg",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "21HS10044.pdf",
       FacebookLink: "",
     },
     {
@@ -68,7 +68,7 @@ export const candidates = {
       Email: "",
       img: "Devansh_VP.jpg",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "21MA10070.pdf",
       FacebookLink: "",
     },
   ],
@@ -81,7 +81,7 @@ export const candidates = {
       Hall: "Nehru",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22BT30014.pdf",
       FacebookLink: "",
       img: "Jival_Sports.jpg"
     },
@@ -93,7 +93,7 @@ export const candidates = {
       Hall: "RK",
       img: "Tejashwi_Sports.jpg",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22CH30033.pdf",
       FacebookLink: "",
     },
     {
@@ -104,7 +104,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22BT10021.pdf",
       FacebookLink: "",
       img: "Pranjal_Sports.jpg"
     },
@@ -118,7 +118,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22CE10062.pdf",
       FacebookLink: "",
       img: "Rounak_Socult.jpg"
     },
@@ -130,7 +130,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22CE10087.pdf",
       FacebookLink: "",
       img: "Yashika_Socult.jpg"
     },
@@ -142,7 +142,7 @@ export const candidates = {
       Hall: "Azad",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22MI10064.pdf",
       FacebookLink: "",
       img: "YesilankaSreeAryan_Socult.jpg"
     },
@@ -154,7 +154,7 @@ export const candidates = {
       Hall: "RK",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22NA10048.pdf",
       FacebookLink: "",
       img: "Vishesh_Socult.jpg"
     },
@@ -168,7 +168,7 @@ export const candidates = {
       Hall: "Nehru",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22CH10021.pdf",
       FacebookLink: "",
       img: "Devan_Tech.jpg"
     },
@@ -180,7 +180,7 @@ export const candidates = {
       Hall: "LLR",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22CY10034.pdf",
       FacebookLink: "",
       img: "Charan_Tech.jpg"
     },
@@ -192,7 +192,7 @@ export const candidates = {
       Hall: "Azad",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22MI33013.pdf",
       FacebookLink: "",
       img: "Mahim_Tech.jpg"
     },
@@ -206,7 +206,7 @@ export const candidates = {
       Hall: "MS",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22AR10027.pdf",
       FacebookLink: "",
       img: "ShashankTiwari_SW.jpg"
     },
@@ -218,7 +218,7 @@ export const candidates = {
       Hall: "VS",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22CY10018.pdf",
       FacebookLink: "",
       img: "Sairam_SW.jpg"
     },
@@ -232,7 +232,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22MI10018.pdf",
       FacebookLink: "",
       img: "Astha_SW.jpg"
     },
