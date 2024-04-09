@@ -185,13 +185,12 @@ export default function Elections() {
 
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-              Details of Candidates contesting for TSG Elections (2024-25)
+              Details of Candidates
               </div>
               <Button>
               <a
               href="/elections/candidates"
               lat="notice"
-              target="_blank"
               rel="noopener"
               >
               View Candidates &nbsp; <LaunchIcon />
