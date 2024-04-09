@@ -185,7 +185,7 @@ export default function Elections() {
 
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-              Details of Candidates
+              Proposals of Candidates
               </div>
               <Button>
               <a
