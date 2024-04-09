@@ -71,7 +71,7 @@ export default function Elections() {
             {candidates[post === "Secy" ? post + "_" + secyPost : post].map(
               (candidate, index) => {
                 const designation =
-                  candidate.Hall + " | " + candidate.Description;
+                  candidate.RollNo;
                 return (
                   <ElectionCard
                     key={index}
