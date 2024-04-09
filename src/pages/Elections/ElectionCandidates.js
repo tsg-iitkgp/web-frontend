@@ -29,7 +29,7 @@ export default function Elections() {
           align="center"
         >
           {" "}
-          Gymkhana Elections 2023
+          TSG Elections 2024-2025
         </Typography>
         <Box className={Styles.postSelector}>
           <select
