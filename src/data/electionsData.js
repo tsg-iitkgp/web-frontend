@@ -42,7 +42,7 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "RP",
       Email: "",
-      img: "DSR_VP.png",
+      img: "DSR_VP.PNG",
       Proposal: "",
       ProposalLink: "21AG30015.pdf",
       FacebookLink: "",
@@ -182,7 +182,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "22CY10034.pdf",
       FacebookLink: "",
-      img: "Charan_Tech.jpg"
+      img: "Charan_Tech.JPG"
     },
     {
       RollNo: "22MI33013",
