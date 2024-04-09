@@ -36,18 +36,6 @@ export const secyPosts = [
 export const candidates = {
   VP: [
     {
-      RollNo: "21MA10070",
-      Description: "MA '25",
-      Name: "Devansh Jain",
-      Contact: "XXX XXX XXX",
-      Hall: "Patel",
-      Email: "",
-      img: "Devansh_VP.jpg",
-      Proposal: "",
-      ProposalLink: "",
-      FacebookLink: "",
-    },
-    {
       RollNo: "21AG30015",
       Description: "AG '26",
       Name: "Divyansh Singh Rana",
@@ -71,6 +59,18 @@ export const candidates = {
       ProposalLink: "",
       FacebookLink: "",
     },
+    {
+      RollNo: "21MA10070",
+      Description: "MA '25",
+      Name: "Devansh Jain",
+      Contact: "XXX XXX XXX",
+      Hall: "Patel",
+      Email: "",
+      img: "Devansh_VP.jpg",
+      Proposal: "",
+      ProposalLink: "",
+      FacebookLink: "",
+    },
   ],
   Gsec_Sports: [
     {
@@ -83,7 +83,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "",
       FacebookLink: "",
-      img: "dummyImage.png"
+      img: "Jival_Sports.jpg"
     },
     {
       RollNo: "22CH30033",
@@ -106,7 +106,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "",
       FacebookLink: "",
-      img: "dummyImage.png"
+      img: "Pranjal_Sports.jpg"
     },
   ],
   Gsec_Socult: [
