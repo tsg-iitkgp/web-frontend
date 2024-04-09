@@ -5,7 +5,9 @@ import Styles from "./elections.module.css";
 
 import { candidates, secyPosts, posts } from "../../data/electionsData";
 import ElectionCard from "./ElectionCard";
+
 export default function Elections() {
+  document.title = "Election Candidates 2024-2025 | TSG";
   const [post, setPost] = useState("VP");
   const [secyPost, setSecyPost] = useState("Football");
   const handlePostChange = (e) => {
