@@ -25,7 +25,7 @@ export default function Elections() {
             color: "#f1c40f",
             fontFamily: "Lato",
             fontWeight: "600",
-            marginTop: "10",
+            marginTop: "5rem",
           }}
           align="center"
         >
