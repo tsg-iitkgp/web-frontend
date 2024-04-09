@@ -120,7 +120,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "",
       FacebookLink: "",
-      img: "dummyImage.png"
+      img: "Rounak_Socult.jpg"
     },
     {
       RollNo: "22CE10087",
