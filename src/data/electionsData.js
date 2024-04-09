@@ -83,7 +83,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "22BT30014.pdf",
       FacebookLink: "",
-      img: "Jival_Sports.jpg"
+      img: "Jival_Sports.JPG"
     },
     {
       RollNo: "22CH30033",
@@ -132,7 +132,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "22CE10087.pdf",
       FacebookLink: "",
-      img: "Yashika_Socult.jpg"
+      img: "Yashika_Socult.JPG"
     },
     {
       RollNo: "22MI10064",
@@ -234,7 +234,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "22MI10018.pdf",
       FacebookLink: "",
-      img: "Astha_SW.jpg"
+      img: "Astha_SW.JPG"
     },
   ],
   // Secy_Aquatics: [
