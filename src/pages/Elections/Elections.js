@@ -87,7 +87,7 @@ export default function Elections() {
               </div>
               <Button>
                 <a
-                  href="/data/media/files/SOAPBOX_Schedule_2024-25"
+                  href="/data/media/files/SOAPBOX_Schedule_2024-25.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -118,23 +118,33 @@ export default function Elections() {
             </Typography> */}
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                The Venue for the TSG Election (2024 - 2025) will be Computer &
-                Informatics Center (CIC), Takshashila, Srinivasa Ramanujan
-                Complex, IIT Kharagpur
+              The Venue for the TSG Election (2024 - 2025) will be Computer &
+              Informatics Center (CIC), Takshashila, Srinivasa Ramanujan
+              Complex, IIT Kharagpur
               </div>
             </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                Election Officer (2024 - 2025)
+                Proposals of Candidates
+              </div>
+              <Button>
+                <a href="/elections/candidates" lat="notice" rel="noopener">
+                  View Proposals &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                Final List of Nominations for TSG Election (2024-25)
               </div>
               <Button>
                 <a
-                  href="mailto:probal@gg.iitkgp.ac.in"
-                  lat="eo_mail"
+                  href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
+                  lat="notice"
                   target="_blank"
                   rel="noopener"
                 >
-                  Prof. Probal Sengupta &nbsp; <LaunchIcon />
+                  View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>
@@ -153,6 +163,21 @@ export default function Elections() {
                 </a>
               </Button>
             </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                Election Officer (2024 - 2025)
+              </div>
+              <Button>
+                <a
+                  href="mailto:probal@gg.iitkgp.ac.in"
+                  lat="eo_mail"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Prof. Probal Sengupta &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
               Provisional List of Candidates for TSG Election (2024-25)
@@ -168,32 +193,6 @@ export default function Elections() {
                 </a>
               </Button>
             </Typography> */}
-            <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                Final List of Nominations for TSG Election (2024-25)
-              </div>
-              <Button>
-                <a
-                  href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  View List &nbsp; <LaunchIcon />
-                </a>
-              </Button>
-            </Typography>
-
-            <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                Proposals of Candidates
-              </div>
-              <Button>
-                <a href="/elections/candidates" lat="notice" rel="noopener">
-                  View Candidates &nbsp; <LaunchIcon />
-                </a>
-              </Button>
-            </Typography>
 
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
