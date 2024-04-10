@@ -37,11 +37,12 @@ export default function Elections() {
           <Typography variant="body2">
             <b>Date of Election:</b> 13th April 2024 (Saturday) <br />
             <b>Time of Election:</b> 8:00 AM to 6:00 PM <br />
-            <b>Venue:</b> Computer & Informatics Center (CIC), Takshashila, IIT Kharagpur <br />
+            <b>Venue:</b> Computer & Informatics Center (CIC), Takshashila, IIT
+            Kharagpur <br />
             Platform: Institute ERP <br />
             <br />
-            Note: Remember to keep your ID card, ERP and Institute Email password
-            with you when you go for voting!
+            Note: Remember to keep your ID card, ERP and Institute Email
+            password with you when you go for voting!
           </Typography>
         </Box>
         <Box className={Styles.electionBody}>
@@ -77,25 +78,25 @@ export default function Elections() {
                   </a>
                   </Button>
                 </Typography> */}
-            {/* <Button>
+            <Button>
               <Link to="/elections/candidates">Candidates And Proposals</Link>
-              </Button>
-              <Typography className={Styles.notice}>
+            </Button>
+            <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-              SOAPBOX SCHEDULE 2023
+                SOAPBOX SCHEDULE 2024-25
               </div>
               <Button>
-              <a
-              href="/data/media/files/SOAPBOX_Schedule_22-23.pdf"
-              lat="notice"
-              target="_blank"
-              rel="noopener"
-              >
-              View Schedule <LaunchIcon />
-              </a>
+                <a
+                  href="/data/media/files/SOAPBOX_Schedule_2024-25"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Schedule <LaunchIcon />
+                </a>
               </Button>
-              </Typography>
-              <Typography className={Styles.notice}>
+            </Typography>
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
               Final List of Candidates for TSG Election (2023-24)
               </div>
@@ -169,35 +170,30 @@ export default function Elections() {
             </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-              Final List of Nominations for TSG Election (2024-25)
+                Final List of Nominations for TSG Election (2024-25)
               </div>
               <Button>
-              <a
-              href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
-              lat="notice"
-              target="_blank"
-              rel="noopener"
-              >
-              View List &nbsp; <LaunchIcon />
+                <a
+                  href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>
 
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-              Proposals of Candidates
+                Proposals of Candidates
               </div>
               <Button>
-              <a
-              href="/elections/candidates"
-              lat="notice"
-              rel="noopener"
-              >
-              View Candidates &nbsp; <LaunchIcon />
+                <a href="/elections/candidates" lat="notice" rel="noopener">
+                  View Candidates &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>
-
 
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
