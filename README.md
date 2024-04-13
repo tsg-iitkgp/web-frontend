@@ -6,14 +6,13 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/tsg-iitkgp/web-frontend">
-    <img src="rm-img/gymkhana-logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86282911/293505563-4c4ecabf-bbee-4cc3-86bc-0500f890f867.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA/20231231/us-east-1/s3/aws4_request&X-Amz-Date=20231231T123604Z&X-Amz-Expires=300&X-Amz-Signature=a3645b7ca15972407adbba4131f12f86922a5213688aaacb05db73d6ff60d213&X-Amz-SignedHeaders=host&actor_id=86282911&key_id=0&repo_id=406055266" alt="Logo" width="80" height="80">
   </a>
+
 
   <h3 align="center">
     TSG Site Frontend
@@ -34,34 +33,38 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
+<details>
+
+<summary>
+Table of Contents
+</summary>
+
 - [Development](#development)
-  - [Setting Up Locally](#setting-up-locally)
-- [Project Structure](#project-structure)
-  - [File Structure](#file-structure)
   - [Libraries/Frameworks Used](#librariesframeworks-used)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
+  - [File Structure](#file-structure)
+  - [Setting Up Locally](#setting-up-locally)
+    - [Bare metal](#bare-metal)
+    - [Docker](#docker) 
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
-<p align="right">(<a href="#top">back to top</a>)</p>
+- [Additional Documentation](#additional-documentaiton)
+
+</details>
 
 <!-- Development -->
 ## Development
 
-### Setting Up Locally
-- Install [NodeJS](https://nodejs.org/en).
-- Install or enable [Yarn](https://yarnpkg.com/getting-started/install).
-- Clone this repository.
-- Run `yarn install` in the cloned repository to download all dependencies.
-- Run `yarn start` to start a local development server.
-<p align="right">(<a href="#top">back to top</a>)</p>
+#### Libraries/Frameworks Used
 
-## Project Structure
-### File Structure
+This project has been built with the following technologies.
+
+- [React](https://reactjs.dev)
+- [Bootstrap](https://getbootstrap.com/)
+- [React Router](https://github.com/remix-run/react-router)
+
+#### File Structure
+
 ```
 .
 ├── public
@@ -74,6 +77,7 @@
    ├── styles
    └── App.js
 ```
+
 - `public`: Contains public files such as `index.html`.
 - `src`: Contains source files (JS, CSS, assets, etc.)
   - `components`: Contains reusable react components.
@@ -85,62 +89,64 @@
   - `utils`: Contains commonly used util functions.
   - `App.js`: Contains the top-level `App` component.
 
-### Libraries/Frameworks Used
+#### Setting Up Locally
 
-This project has been built with the following technologies.
-* [React](https://reactjs.dev)
-* [Bootstrap](https://getbootstrap.com/)
-* [React Router](https://github.com/remix-run/react-router)
+It is prefferred to use docker over bare metal setup.
 
+##### Docker
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+- Install [docker](https://www.docker.com/get-started) and `docker-compose`. For ubuntu, follow the comamnds below:
+  ```sh
+  sudo apt install docker.io docker-compose
+  ```
+- Start the container using `docker-compose.yml` file
+  ```sh
+  sudo docker-compose up -d
+  ```
+- The site will be hosted at `http://localhost:8000`
 
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/tsg-iitkgp/web-frontend/issues) for a list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+##### Bare Metal
+- Install [NodeJS](https://nodejs.org/en)
+- Install or enable [Yarn](https://yarnpkg.com/getting-started/install)
+- Clone this repository
+- Run `yarn install` in the cloned repository to download all dependencies
+- Run `yarn start` to start a local development server
+- The site will be hosted at `http://localhost:3000`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
-For any ideas, suggestions or queries, please mail us at tech.coordi@iitkgp.ac.in
+
+> [!Note]
+> For any ideas, suggestions or queries regarding the website, mail us at <tech.coordi@iitkgp.ac.in>
 
 #### Present Technology Coordinator(s)
 
-_Name:_ **Arpit Bhardwaj**<br>
-_Email:_ **arpitbhardwaj.iitkgp@gmail.com**<br>
-_Phone:_ **+91-9761667733**
-
-_Name:_ **Parth Gupta**<br>
-_Email:_ **guptaparth.iitkgp@gmail.com**<br>
-_Phone:_ **+91-7620821543**
+Name|Email|Phone No.
+-----|-----|---------
+[Arpit Bhardwaj](https://linktr.ee/proffapt) | <arpitbhardwaj.iitkgp@gmail.com> | +91-9761667733
+[Parth Gupta](https://github.com/ParthGupta2510) | <guptaparth.iitkgp@gmail.com> | +91-7620821543
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
+
+- [Img Shields](https://shields.io)
+- [GitHub Pages](https://pages.github.com)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Additional Documentation
 
+- [Changelogs](/.github/CHANGELOG.md)
+- [License](/LICENSE)
+- [Security Policy](/.github/SECURITY.md)
+- [Code of Conduct](/.github/CODE_OF_CONDUCT.md)
+- [Contribution Guidelines](/.github/CONTRIBUTING.md)
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

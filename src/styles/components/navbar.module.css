@@ -8,12 +8,9 @@
   z-index: 99;
 }
 .navbar {
-  height: 10vh;
+  height: 6vh;
   background: transparent;
-  /* background-color: white; */
-  /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1); */
   width: 90%;
-  position: relative;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -35,13 +32,17 @@
   color: white;
   font-size: 1.5rem;
 }
+.navLogo a:hover {
+  color: #f1c40f;
+}
 .navLinks {
-  font-size: 1.1rem;
   color: white;
-  text-align: center;
 }
 .navItem .acitveLink {
+  font-size: 1.1rem;
   color: #f1c40f;
+  text-align: center;
+  position: relative;
 }
 .activeNavbar {
   background-color: rgba(0, 0, 0, 0.2);
@@ -54,14 +55,16 @@
   background-color: transparent;
 }
 ul.navMenu {
-  padding: 0rem 1rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  margin-top: auto;
+  margin-right: 1rem;
+  margin-bottom: auto;
   justify-content: space-between;
 }
 li {
   margin-right: 1rem;
-  padding: 0.25rem;
   display: block;
   list-style: none;
 }
@@ -88,9 +91,6 @@ ul li a {
   transform: translateX(-101%);
   transition: ease-out 0.5s;
 }
-/* .acitveLink {
-  color: #f1c40f;
-} */
 .navbar li > a:hover:before {
   transform: translateX(0);
   z-index: -1;
@@ -109,6 +109,9 @@ ul li a {
   box-shadow: 0 0rem 1rem 0 rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(2rem);
   width: 30vw;
+}
+.results{
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .navLogo a {
@@ -142,6 +145,7 @@ ul li a {
     z-index: 100;
     justify-content: space-between;
     transform: scale(1);
+    flex-direction: column;
   }
   .navMenu {
     display: flex;
@@ -170,4 +174,4 @@ ul li a {
     max-width: 1.5rem;
     max-height: 1.5rem;
   }
-} ;
+}

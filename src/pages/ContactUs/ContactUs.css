@@ -1,0 +1,211 @@
+/* extends */
+
+/* layout css */
+.maindiv_loginpage {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: row;
+  background: url("./../../images/tsg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.background_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.container_cf {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  z-index: 2;
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+/* global css */
+.frm--create-account {
+  width: 100%;
+
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(160, 170, 179, 0.12),
+    0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  -moz-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(160, 170, 179, 0.12),
+    0 8px 10px -5px rgba(171, 191, 216, 0.4);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(160, 170, 179, 0.12),
+    0 8px 10px -5px rgba(171, 191, 216, 0.4);
+}
+
+.frm--create-account label {
+  color: #7b5ddd;
+  font-family: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 0 18px;
+  margin: 0 0 3px;
+  display: block;
+}
+
+.frm-group {
+  margin: 0 0 15px;
+}
+
+.frm-group.inline .frm-group {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -moz-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.frm-group.inline .frm-group:not(:last-child) {
+  margin: 0 15px 15px 0;
+}
+
+.frm__title {
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  margin: 0;
+  padding: 1em 0 1em;
+  color: #613ae2;
+}
+
+.frm-info {
+  margin: 1em 0;
+}
+
+.frm__txt {
+  font-family: inherit;
+  font-size: 14px;
+  text-align: center;
+}
+
+.frm__link {
+  font-family: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #b2002d;
+}
+
+.frm__btn-primary {
+  margin-top: 2rem;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #b2002d;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.frm__btn-primary:hover {
+  background-color: #b2002d;
+}
+
+.frm__or {
+  width: 100%;
+  height: 1px;
+  position: relative;
+  background-color: #f7f7f7;
+  margin: 2em 0;
+}
+
+.frm__or:before {
+  content: "OR";
+  text-align: center;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ebebeb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 0 10px;
+}
+
+.text_image_login {
+  position: absolute;
+  top: 45%;
+  margin-left: 5%;
+
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .container_cf {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container_cf {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .frm-group.inline {
+    display: block;
+  }
+  .frm-group.inline .frm-group:not(:last-child) {
+    margin: 0 0 15px;
+  }
+  .img_loginpage,
+  .text_image_login {
+    display: none;
+  }
+  .frm--create-account {
+    padding: 100px 1em 100px 1em;
+  }
+  .container_cf {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index: 2;
+  }
+  .frm--create-account {
+    padding: 0px 1em 10px 1em;
+  }
+  .frm--create-account input[type="textarea"] {
+    height: 70px;
+  }
+}
+
+.ajay {
+  font-family: sans-serif;
+  font-size: 14px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+}
+.ajay a {
+  text-decoration: none;
+  color: #333;
+}
+.ajay a:hover {
+  text-decoration: underline;
+  color: #000;
+}

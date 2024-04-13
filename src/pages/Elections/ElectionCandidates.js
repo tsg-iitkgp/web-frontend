@@ -1,11 +1,13 @@
 import { Box, Container, Typography } from "@material-ui/core";
 import { useState } from "react";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layouts/Layout";
 import Styles from "./elections.module.css";
 
 import { candidates, secyPosts, posts } from "../../data/electionsData";
 import ElectionCard from "./ElectionCard";
+
 export default function Elections() {
+  document.title = "Election Candidates 2024-2025 | TSG";
   const [post, setPost] = useState("VP");
   const [secyPost, setSecyPost] = useState("Football");
   const handlePostChange = (e) => {
@@ -27,7 +29,7 @@ export default function Elections() {
           align="center"
         >
           {" "}
-          Gymkhana Elections 2023
+          TSG Elections 2024-2025
         </Typography>
         <Box className={Styles.postSelector}>
           <select
@@ -71,7 +73,7 @@ export default function Elections() {
             {candidates[post === "Secy" ? post + "_" + secyPost : post].map(
               (candidate, index) => {
                 const designation =
-                  candidate.Hall + " | " + candidate.Description;
+                  candidate.RollNo;
                 return (
                   <ElectionCard
                     key={index}

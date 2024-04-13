@@ -142,7 +142,7 @@ const soc = {
       name: "Druheen",
       description:
         "Druheen is the official name of Bengali Technology dramatic society(BTDS) of IIT Kharagpur. It is one of the dramatic society which is under Technology students' Gymkhana and is a part of the Dramatics Subcommittee under the Social and Cultural Committee. This is one of the oldest societies in IIT Kharagpur.",
-      facebook_link: "https://www.facebook.com/tdsdruheen/",
+      facebook_link: "https://www.facebook.com/profile.php?id=100083041579284",
       wiki_link: "https://wiki.metakgp.org/w/Druheen",
       shortform: "druheen",
       category: "Socult",
@@ -352,6 +352,46 @@ const soc = {
         category: "Welfare",
         Heads: [],
       },
+
+    {
+      name: "Kharagpur Robosoccer Students' Group",
+      description: "Kharagpur Robosoccer Students’ Group at IIT Kharagpur pioneers innovation in robotics with primary focus on Robosoccer, working on advanced open problems in robotics such as multi-agent coordination, robotic path planning, reinforcement learning, and more. They have been representing the institute and excelling on the global stage in various prestigious robotics competitions including RoboCup and FIRA RoboWorld Cup. KRSSG also fosters hands-on robotics excellence through robosoccer competitions known as Code-O Soccer.",
+      facebook_link: "https://www.facebook.com/krssg/",
+      wiki_link: "https://wiki.metakgp.org/w/Kharagpur_Robosoccer_Students'_Group",
+      shortform: "krssg",
+      category: "Tech",
+      Heads: [],
+    },
+
+    {
+      name: "Grimoire of Code",
+      description: "Grimoire of Code, IIT Kharagpur, abbreviated as GoC, is IIT Kharagpur's competitive programming club involving a group of passionate competitive programmers. The club conducts global and intra-IIT competitive programming contests to enrich competitive programming among peers. The club also conducts workshops for students on campus, fostering the competitive programming culture within IIT Kharagpur.",
+      facebook_link: "https://www.facebook.com/goc.iitkgp/",
+      wiki_link: "",
+      shortform: "goc",
+      category: "Tech",
+      Heads: [],
+    },
+
+    {
+      name: "Kharagpur Data Analytics Group",
+      description: "Aimed at bringing Data Analytics and Machine Learning enthusiasts together under the umbrella of a single Society.",
+      facebook_link: "https://www.facebook.com/kgpdag",
+      wiki_link: "",
+      shortform: "kdag",
+      category: "Tech",
+      Heads: [],
+    },
+
+    {
+      name: "Computer Graphics Society",
+      description: "CGS: Computer Graphics Society, IIT Kharagpur. We believe that technology should serve as a tool to enhance creativity, rather than limit it. Our goal is to empower artists and creators with innovative tools and techniques that allow them to bring their visions to life in new and exciting ways. Our work involves innovative projects in Game development, 3D/2D graphics, AR/VR simulations, advanced visualizations through scripting and graphics programming, fostering a dynamic synergy between academia, industry, and creative exploration.",
+      facebook_link: "https://www.facebook.com/cgsiitkgp",
+      wiki_link: "",
+      shortform: "cgs",
+      category: "Tech",
+      Heads: [],
+    },
   ],
 };
 export default soc;

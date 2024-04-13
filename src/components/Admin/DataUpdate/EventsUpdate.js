@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import ViewEvent from './ViewEvent';
-import EventCardModal from '../../Events/EventCardModal';
+import EventCardModal from '../../EventCard/EventCardModal';
 import axios from 'axios';
 import EventsList from './EventsList'
 import host from '../../../apiService'

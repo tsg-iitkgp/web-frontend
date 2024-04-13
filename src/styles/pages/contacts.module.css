@@ -8,26 +8,18 @@ body {
   justify-content: center;
   align-items: center;
 }
-.pageHeading {
+
+.maincontainer {
+  /*display: flex;*/
+  /*max-height: 120vh;*/
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.postHeading {
   font-size: 2rem;
   text-align: center;
-}
-.maincontainer {
-  display: flex;
-  max-height: 90vh;
-  width: 100%;
-  margin-top: 10vh;
-}
-.content {
-  padding: 2rem;
-  margin-right: 0.05 rem;
-  max-height: 90vh;
-  overflow-y: scroll;
-}
-.postHeading {
-  font-size: 2.25rem;
-  text-align: center;
-  margin: 1.5rem;
+  margin: auto;
   color: #f1c40f;
 }
 .multipleCards {
@@ -35,7 +27,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: c;
+  align-items: center;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+.content::-webkit-scrollbar {
+  display: none;
 }
 .multipleCards > div {
   margin: 1.5rem 1rem;
@@ -88,9 +85,6 @@ body {
   .maincontainer {
     display: flex;
     flex-direction: column;
-    width: 90%;
     margin: auto;
-    margin-top: 11vh;
-    min-height: 90vh;
   }
 }

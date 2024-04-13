@@ -1,14 +1,15 @@
 import { Typography, Container, Box, Button } from "@material-ui/core";
 import React from "react";
 
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layouts/Layout";
 import Styles from "./elections.module.css";
 import LaunchIcon from "@material-ui/icons/Launch";
 import { Link } from "react-router-dom";
 export default function Elections() {
-  document.title = "Elections 2023 | TSG";
+  document.title = "Elections 2024-2025 | TSG";
   return (
     <Layout>
+      <div className={Styles.electionHeaderImg}></div>
       <Container className={Styles.electionsContainer}>
         <Typography
           variant="h4"
@@ -20,7 +21,7 @@ export default function Elections() {
           align="center"
         >
           {" "}
-          Gymkhana Elections 2023
+          TSG Elections 2024-2025
         </Typography>
         <Box className={Styles.electionBody}>
           <Typography variant="body2">
@@ -29,60 +30,64 @@ export default function Elections() {
             conduction of student related activities.
           </Typography>
           <Typography variant="body2">
-            The nomination, approval and
-            voting will be done using digital platform developed by ERP, IIT
-            Kharagpur. The date for Gymkhana Election is as follows:
+            The nomination, approval and voting will be done using digital
+            platform developed by ERP, IIT Kharagpur. The date for Gymkhana
+            Election is as follows:
           </Typography>
           <Typography variant="body2">
-            Date of Election: 4th April 2023 (Tuesday) <br />
-            Time of Election: 9:00 am to 6:00 pm <br />
-            Venue: CIC <br />
-            Platform: ERP
+            <b>Date of Election:</b> 13th April 2024 (Saturday) <br />
+            <b>Time of Election:</b> 8:00 AM to 6:00 PM <br />
+            <b>Venue:</b> Computer & Informatics Center (CIC), Takshashila, IIT
+            Kharagpur <br />
+            Platform: Institute ERP <br />
+            <br />
+            Note: Remember to keep your ID card, ERP and Institute Email
+            password with you when you go for voting!
           </Typography>
         </Box>
         <Box className={Styles.electionBody}>
           <Typography variant="h5">Notices:</Typography>
           <Box className={Styles.notices}>
-          <Typography className={Styles.notice}>
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                Elections 2023 Results
+              Elections 2023 Results
               </div>
               <Button>
-                <a
-                  href="/data/media/files/Results_2023.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
+              <a
+              href="/data/media/files/Results_2023.pdf"
+              lat="notice"
+              target="_blank"
+              rel="noopener"
                 >
-                  View Result <LaunchIcon />
+                View Result <LaunchIcon />
                 </a>
-              </Button>
-            </Typography>
-            <Typography className={Styles.notice}>
+                </Button>
+              </Typography> */}
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 View Votes of Candidates
-              </div>
-              <Button>
+                </div>
+                <Button>
                 <a
-                  href="/data/media/files/Votes_2023.pdf"
+                href="/data/media/files/Votes_2023.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
-                >
+                  >
                   View Votes <LaunchIcon />
-                </a>
-              </Button>
-            </Typography>
+                  </a>
+                  </Button>
+                </Typography> */}
             <Button>
               <Link to="/elections/candidates">Candidates And Proposals</Link>
             </Button>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                SOAPBOX SCHEDULE 2023
+                SOAPBOX SCHEDULE 2024-25
               </div>
               <Button>
                 <a
-                  href="/data/media/files/SOAPBOX_Schedule_22-23.pdf"
+                  href="/data/media/files/SOAPBOX_Schedule_2024-25.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -91,9 +96,46 @@ export default function Elections() {
                 </a>
               </Button>
             </Typography>
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+              Final List of Candidates for TSG Election (2023-24)
+              </div>
+              <Button>
+              <a
+              href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
+              lat="notice"
+              target="_blank"
+              rel="noopener"
+              >
+              View List &nbsp; <LaunchIcon />
+              </a>
+              </Button>
+            </Typography> */}
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong>
+              </div>
+            </Typography> */}
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+              The Venue for the TSG Election (2024 - 2025) will be Computer &
+              Informatics Center (CIC), Takshashila, Srinivasa Ramanujan
+              Complex, IIT Kharagpur
+              </div>
+            </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                Final List of Candidates for TSG Election (2023-24)
+                Proposals of Candidates
+              </div>
+              <Button>
+                <a href="/elections/candidates" lat="notice" rel="noopener">
+                  View Proposals &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                Final List of Nominations for TSG Election (2024-25)
               </div>
               <Button>
                 <a
@@ -108,36 +150,11 @@ export default function Elections() {
             </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                The Venue for the TSG Election (2023 - 2024) will be Computer & Informatics Center (CIC), Takshashila, Srinivasa Ramanujan Complex, IIT Kharagpur
-              </div>
-            </Typography>
-            {/* <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                <strong className="text-danger">The Deadline to get approval from the faculty members for the Gymkhana Elections for the Academic Year (2023 - 2024) has been extended to 24th March 2023, 11:59 PM</strong>
-              </div>
-            </Typography> */}
-            {/* <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                Provisional List of Candidates for TSG Election (2023-24)
+                TSG Election (2024-2025) Notification
               </div>
               <Button>
                 <a
-                  href="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  View List &nbsp; <LaunchIcon />
-                </a>
-              </Button>
-            </Typography> */}
-            <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                TSG Election (2023-24) Notification
-              </div>
-              <Button>
-                <a
-                  href="/data/media/files/Election_2023-24.pdf"
+                  href="/data/media/files/revised_election_schedule_2024.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -146,11 +163,42 @@ export default function Elections() {
                 </a>
               </Button>
             </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                Election Officer (2024 - 2025)
+              </div>
+              <Button>
+                <a
+                  href="mailto:probal@gg.iitkgp.ac.in"
+                  lat="eo_mail"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Prof. Probal Sengupta &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                The date for submission of Revised Proposals the posts of Vice
-                President and General Secretaries is extended upto 10:00 am on
-                March 29, 2022.
+              Provisional List of Candidates for TSG Election (2024-25)
+              </div>
+              <Button>
+              <a
+              href="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
+              lat="notice"
+              target="_blank"
+              rel="noopener"
+              >
+              View List &nbsp; <LaunchIcon />
+                </a>
+              </Button>
+            </Typography> */}
+
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+              The date for submission of Revised Proposals the posts of Vice
+              President and General Secretaries is extended upto 10:00 am on
+              March 29, 2022.
               </div>
               <Button>
                 <a
@@ -173,12 +221,11 @@ export default function Elections() {
                   lat="notice"
                   target="_blank"
                   rel="noopener"
-                >
+                  >
                   View Notice &nbsp; <LaunchIcon />
-                </a>
-              </Button>
-            </Typography> */}
-            
+                  </a>
+                  </Button>
+                </Typography> */}
           </Box>
         </Box>
         <Box className={Styles.electionBody}>
@@ -186,18 +233,9 @@ export default function Elections() {
           <Box className={Styles.buttonGroup}>
             {" "}
             <Button>
-              <a
-                href="/data/media/files/Results_2023.pdf"
-                alt="result"
-                target="_blank"
-              >
-                Result
-              </a>
-            </Button>
-            <Button>
               {" "}
               <a
-                href="/data/media/files/Election-Rules.pdf"
+                href="/data/media/files/Rules_2024-25.pdf"
                 alt="notification"
                 target="_blank"
               >
@@ -207,14 +245,33 @@ export default function Elections() {
             <Button>
               {" "}
               <a
-                href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
+                href="/data/media/files/General_Conduct_Rules_and_Guidelines_of_IIT_Kharagpur.pdf"
                 alt="notification"
                 target="_blank"
               >
-                Final 
-                List of Nominations
+                Conduct Guidelines
               </a>
             </Button>
+            <Button>
+              {" "}
+              <a
+                href="/data/media/files/voting_procedure.pdf"
+                alt="notification"
+                target="_blank"
+              >
+                Voting Procedure
+              </a>
+            </Button>
+            {/* <Button>
+              {" "}
+              <a
+                href="/data/media/files/nomination_helpfile.pdf"
+                alt="notification"
+                target="_blank"
+              >
+                Nomination Procedure
+              </a>
+            </Button> */}
           </Box>
         </Box>
       </Container>

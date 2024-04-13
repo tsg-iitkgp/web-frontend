@@ -39,6 +39,10 @@ body * {
 .active {
   background-color: transparent !important;
 }
+
+.activeSide {
+  background-color: blue;
+}
 .contacts_content__1wT_L {
   padding: 2 rem;
   margin-right: 0.05 rem;
@@ -55,14 +59,24 @@ body * {
 section {
   max-width: 1500px;
   align-self: center;
-  
 }
 
 .pageHeading {
-  font-size: 42px;
-  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
   text-align: center;
-  margin: 25px 0;
+  color: #fff;
+}
+
+.sectionHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  color: #fff;
 }
 
 section .section-heading {
