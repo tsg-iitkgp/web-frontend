@@ -1,0 +1,125 @@
+/* html{
+    font-size: 20px;
+}
+body{
+    background-color: #3c92f4;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins-SemiBold", Helvetica;
+} */
+.viewlog{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    align-items: center;
+}
+.title{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    color: #5da9ff;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.credentials{
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 30px;
+}
+.email{
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid red; */
+    margin: 0px 10px;
+}
+.search{
+    /* border: 2px solid wheat; */
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+}
+.nameofdetails{
+    width: 93%;
+    /* border: 2px solid red; */
+    margin: 20px 5px;
+    color: #3c92f4;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.nameofdetails ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+}
+.valueofdetails{
+    width: 90%;
+    /* border: 2px solid yellowgreen; */
+    margin: 20px 5px;
+    color: #000000;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.valueofdetails ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin:20px 0px;
+    padding: 0px;
+    border-bottom: 2px solid #3c92f4;
+}
+.valueofdetails ul li{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    background-color: #3c92f4;
+    color: white;
+    height: 1.1rem;
+    font-size: 0.8rem;
+}
+.dropdown:hover{
+    color: rgb(243, 231, 231);
+}
+ul li{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 5px;
+    /* border: 2px solid black; */
+}
+@media screen and (max-width: 900px) {
+    html{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 12px;
+    }
+}
+.modalposition{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}

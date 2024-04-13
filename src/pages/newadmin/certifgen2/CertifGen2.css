@@ -1,0 +1,45 @@
+.adminLogo{
+    width: 6vw;
+    margin: 3vw auto 1vw;
+}
+
+.certifGenOptions{
+    display: flex;
+    width: 50vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.optionButton{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 15vw;
+    background-color: #5EA9FF;
+    padding: 1vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonlink{
+    text-decoration: none;
+}
+
+.optionButton:hover{
+    transform: scale(1.05);
+}
+
+.optionName{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 1vw;
+}
+
+.certiftitle{
+    color: black;
+    font-size: 34px;
+    font-weight: 600;
+    padding-bottom: 2.5vw;
+}

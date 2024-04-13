@@ -28,6 +28,14 @@ import ElectionCandidates from "./pages/Elections/ElectionCandidates";
 import CertifGen from "./pages/admin/CertificateGenerator/CertifGen";
 import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
+import CertifGen2 from "./pages/newadmin/certifgen2/CertifGen2";
+import CertifGenerate from "./pages/newadmin/certifgen2/CertifGenerate";
+import NewLogin from "./pages/newadmin/NewLogin";
+import ExistingTemplates from "./pages/newadmin/certifgen2/ExistingTemplates";
+import UploadTemplates from "./pages/newadmin/certifgen2/UploadInterface";
+import Canvas from "./pages/newadmin/certifgen2/Canvas";
+import ViewLog from "./pages/newadmin/certifgen2/ViewLog";
+import CertifPreview from "./pages/CertifPreview";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 import Results from "./pages/Results/Results";
 
@@ -43,6 +51,15 @@ function App() {
           <Route exact path="/login" component={Login} />
           <PrivateRoute exact path="/admin" component={Dashboard} />
           <PrivateRoute exact path="/admin/certificate" component={CertifGen} />
+          <PrivateRoute exact path="/admin/events" component={EventsUpdatePage} />
+          <Route exact path ="/newadmin/certifgen2" component = {CertifGen2}/>
+          <Route exact path ="/newadmin/certifgen2/certifgenerate" component = {CertifGenerate}/>
+          <Route exact path ="/newadmin/login" component = {NewLogin} />
+          <Route exact path = "/newadmin/certifgen2/existingtemplates" component={ExistingTemplates} />
+          <Route exact path ="/newadmin/certifgen2/uploadtemplate" component = {UploadTemplates}/>
+          <Route exact path ="/newadmin/certifgen2/uploadtemplate/canvas" component = {Canvas}/>
+          <Route exact path = "/newadmin/certifgen2/viewlogs" component = {ViewLog} />
+          <Route exact path="/certifpreview" component={CertifPreview} />
           <PrivateRoute
             exact
             path="/admin/events"
