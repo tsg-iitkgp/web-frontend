@@ -59,7 +59,7 @@ function App() {
           <Route exact path ="/newadmin/certifgen2/uploadtemplate" component = {UploadTemplates}/>
           <Route exact path ="/newadmin/certifgen2/uploadtemplate/canvas" component = {Canvas}/>
           <Route exact path = "/newadmin/certifgen2/viewlogs" component = {ViewLog} />
-          <Route exact path="/certifpreview" component={CertifPreview} />
+          <Route exact path="/certifgen/view/:certifid" component={CertifPreview} />
           <PrivateRoute
             exact
             path="/admin/events"
