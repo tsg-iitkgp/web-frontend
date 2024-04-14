@@ -50,6 +50,21 @@ export default function Elections() {
           <Box className={Styles.notices}>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
+                View Votes of Candidates
+                </div>
+                <Button>
+                <a
+                href="/data/media/files/Votes_2024.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                  >
+                  View Votes <LaunchIcon />
+                  </a>
+                  </Button>
+                </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
               Elections 2024-2025 Results
               </div>
               <Button>
@@ -63,24 +78,6 @@ export default function Elections() {
                 </a>
                 </Button>
               </Typography>
-            {/* <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                View Votes of Candidates
-                </div>
-                <Button>
-                <a
-                href="/data/media/files/Votes_2023.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
-                  >
-                  View Votes <LaunchIcon />
-                  </a>
-                  </Button>
-                </Typography> */}
-            <Button>
-              <Link to="/elections/candidates">Candidates And Proposals</Link>
-            </Button>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 SOAPBOX SCHEDULE 2024-25
