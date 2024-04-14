@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import { useParams } from 'react-router-dom';
-import IITKGPLogo from "../images/IIT_Kharagpur_Logo.png";
-import Trail from "../images/WebsiteHackathon.jpg";
+import IITKGPLogo from "../../images/IIT_Kharagpur_Logo.png";
+import Trail from "../../images/WebsiteHackathon.jpg";
 import './CertifPreview.css';
 import Popper from '../../components/Popper';
 import html2canvas from 'html2canvas';

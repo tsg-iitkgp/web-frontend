@@ -56,6 +56,7 @@ function App() {
           <Route exact path="/committees/welfare" component={Welfare} />
           <Route exact path="/committees/socult" component={Socult} />
           <Route exact path="/societies" component={Societies} />
+          <Route exact path="/certifgen/view/:certifid" component={CertifPreview} />
           {/* Events Route */}
           <Route exact path="/events" component={Events} />
           {/* Results Routes */}
