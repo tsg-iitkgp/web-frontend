@@ -48,13 +48,13 @@ export default function Elections() {
         <Box className={Styles.electionBody}>
           <Typography variant="h5">Notices:</Typography>
           <Box className={Styles.notices}>
-            {/* <Typography className={Styles.notice}>
+            <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-              Elections 2023 Results
+              Elections 2024-2025 Results
               </div>
               <Button>
               <a
-              href="/data/media/files/Results_2023.pdf"
+              href="/data/media/files/Results_2024.pdf"
               lat="notice"
               target="_blank"
               rel="noopener"
@@ -62,7 +62,7 @@ export default function Elections() {
                 View Result <LaunchIcon />
                 </a>
                 </Button>
-              </Typography> */}
+              </Typography>
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 View Votes of Candidates
