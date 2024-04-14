@@ -8,7 +8,6 @@ import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
 //https://gymkhana.iitkgp.ac.in/certifgen/view/NjYxYWFlOGM4ZjU0NTJjZmNlM2IxZjIx
-//data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO1SURBVHgB7VjLa9RcFD8nyczU+rX4der4wfetPxUfxQeoaG3KqKjgQhDduXXhA1yoxSKOiOIbH62iC10ouBDc6UJpp7VWfGKnteLjD3ChreioM0mTezypTknuZGpbhc6U/IZLcs/95eb8zjk3k1yAAAECBAjwG8BCAwmdtJjVU6FqEXVAFbStZWafzCEgvKS/ibptW9qmf/Cb76L+utrdf6df708kEkLmNcUfRUP2lIJ+yfMrfqSmZV3/T4XUNTtE3SZmekmYL87UddXLvANwAHm8yeE4zcBMV7OeWi3zLi54GjLx24kcz2nV7evrfT0UkTNuntQ6Ty/qmTasgPO1PXNFCFoFwiaO8X9sivHxH0WB/Qk9qbm5CUgIAnGBx6scHoftX4HUwH1PBLc8WziANl3mlE39MR/EBIgGFlaerwCvcF38leN5G0UpbCjDChAhu9FxJH9iWFqlRnXZ2E+fOtnf5JCBaPnZePcymbe1fV4HIHa4TCuylaou87Yla1qAlCSMEB4Bx1elJnOUlhbgaoqwG2Rjoq3eAgWPDBkQURHUeHbN24ibx2YipEOsMDvYd36Eu3kd5AUREY4RpxZGK0BNqxG+SitEJsD4eb17hWzf3lrTyre94+KtBDNT68O7y9lyZ2HJlLZ1a2VeLKo8ZMduwWgFjAQW2g3OEypvAOEou2796JCCgnaRtBYGY67QcYcw2EcIq6DtlbOw8cZsUwAeHkkWRi2Anaj7m1J50e0T/ffIE12qba7vWiPzzEzmPh9uD82HtNjvibSjreYR622FX/rjwqklL6q0MuslG6cNfxm1a4aysXxS2HZbvwijzia4wZHNBaY9TNaGMnUyuXlpMpZzdG8OzQbUghptrhSTDA9PZOOciavsT/gns8+y7Dk7Oxa+y3G8pVDJzYQRAOvsiOj9TIY3xXwndLvKTyRT0XpNMrzyiUvMFTs+j4ONzz+DId3GKbqc8/7QYIzghVoN5DOAHgeQObF8CvpNGIMxwLMGKmGYd4sixagXcbFhYgnIWiqWWhEFJTTeCASMNyaWgJD9FeWvqWJHUELjjXwBJfYyNNEyUAGlhom4iEv4Zc4Y/B8oLXgEZER5lkhYULTgzRqrzPPh7BGwp3NGmg9PoEjBuxdPdj6Y9dFty1sDbGjkLKShyMDOv9dIOehsUbrtvjV/Tn86g1A7yadzmVEO4wmiAX49e8zVs29Hcn5KHi64aJ1tweb4qyqLrDFvvfwJWMKwK9LwydmihwABAgQI8KfxHeZhcwDKZyzTAAAAAElFTkSuQmCC
 const CertifPreview = () =>{
     const params = useParams();
     const [certificateImage, setCertificateImage] = useState('');
@@ -96,12 +95,6 @@ const CertifPreview = () =>{
         img.src = certificateImage;
     };
     
-    
-    
-    
-    
-
-
     return(
         <div className='certifpreview' style={{maxHeight:"100%"}}>
             <div className='certifpreview_nav' style={{display:"flex",alignItems:"center",width:"100vw",justifyContent:"center",gap:"0.75rem"}}>
@@ -115,9 +108,9 @@ const CertifPreview = () =>{
                 <p style={{color:"white",fontSize:"1.1rem"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec fringilla sem. Mauris fringilla, diam sit amet cursus consectetur, est quam vehicula turpis, in faucibus diam justo feugiat turpis. Nunc ac suscipit mauris. Quisque nec tempus ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc viverra mauris tortor, in convallis augue ultrices a.</p>
                 <div className='certificateimage'>
                     <img src={Trail} alt="Certificate"/>
-                    <div className='download_btns' style={{display:"flex",justifyContent:"space-between",padding:"1rem 0"}}>
-                        <button className='downloadBtn' onClick={downloadImage} ><i class="fa fa-picture-o" aria-hidden="true"></i>Download as Image</button>
-                        <button className='downloadBtn'onClick ={downloadPdf}><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download as Pdf</button>
+                    <div className='download_btns' style={{display:"flex",justifyContent:"space-between",padding:"1.25rem 0"}}>
+                        <button className='downloadBtn' onClick={downloadImage} ><i class="fa fa-picture-o" aria-hidden="true" style={{margin:'0 0.25rem'}}></i>Download as Image</button>
+                        <button className='downloadBtn'onClick ={downloadPdf}><i class="fa fa-file-pdf-o" aria-hidden="true" style={{margin:'0 0.25rem'}}></i>Download as Pdf</button>
                     </div>
                 </div>
                 {/* <div className='certifpreview_share'>
