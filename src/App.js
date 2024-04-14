@@ -30,6 +30,7 @@ import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 import Results from "./pages/Results/Results";
+import CertifPreview from "./pages/certificatePreview/CertifPreview";
 
 function App() {
   useEffect(() => {
@@ -85,7 +86,9 @@ function App() {
             component={ElectionCandidates}
           />
 
+          <Route exact path="/certifpreview/1" component={CertifPreview} />
           {/* Other Routes */}
+          
           {/*<Route exact path="/gallery" component={Gallery} /> */}
         </Switch>
       </ScrollToTop>
