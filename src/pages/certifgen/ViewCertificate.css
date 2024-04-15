@@ -1,0 +1,96 @@
+@media only screen and (min-width:725px){
+    .certificateimage {
+        text-align: center;
+    }
+
+    .certificateimage img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .certifpreview_nav h1{
+        font-size: 2.25rem;
+    }
+
+    .downloadBtn{
+        font-size: 1.25rem;
+        width: auto;
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width:724px){
+    .certificateimage {
+        text-align: center;
+    }
+
+    .certificateimage img{
+        width: 80vw;
+        height: auto;
+    }
+
+    .certifpreview_nav h1{
+        font-size: 1.6rem;
+    }
+
+    .downloadBtn{
+        font-size: 1.25rem;
+        width: 15rem;
+    }
+}
+
+.downloadBtn{
+    color: #F1C40F;
+    background-color: transparent;
+    /* background-color: #F1C40F; */
+    padding: 10px;
+    font: 1rem;
+    transition: all 0.2s;
+    /* border: none; */
+    border: 1px solid #F1C40F;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer !important;
+}
+
+.downloadBtn:hover{
+    background-color: #F1C40F;
+    color: white;
+    cursor: pointer !important;
+}
+
+.gymk_logo,.kgp_logo{
+    width: 6rem;
+    margin: 0 0.6rem;
+}
+
+.certifpreview_body hr{
+    color: #F1C40F;
+    width: 80vw;
+    margin: 0.5rem auto;
+    border: 0.2rem solid #F1C40F;
+}
+
+.certifpreview_share{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.certifshare_text{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.certifshare_link i{
+    color: black;
+    background-color: #F1C40F;
+    border-radius: 50%;
+    width: 2rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+

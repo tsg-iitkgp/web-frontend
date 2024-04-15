@@ -30,6 +30,7 @@ import EventsUpdatePage from "./pages/admin/DataUpdate/EventsUpdatePage";
 import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 import Results from "./pages/Results/Results";
+import ViewCertificate from "./pages/certifgen/ViewCertificate";
 
 function App() {
   useEffect(() => {
@@ -85,6 +86,7 @@ function App() {
             component={ElectionCandidates}
           />
 
+          <Route exact path="/certifgen/view/:id" component={ViewCertificate} />
           {/* Other Routes */}
           {/*<Route exact path="/gallery" component={Gallery} /> */}
         </Switch>
