@@ -1,7 +1,15 @@
 #!/bin/bash
 
+# Make sure we are in the correct directory
 cd /home/techcoordi/tsg-site/frontend || exit 1
-git pull origin main
+
+# Sync with remote repository
+git fetch origin
+git reset --hard origin/main
+
+# Build Stage
 sudo docker build -t proffapt/tsg-site-frontend .
+
+# Deploy Stage
 sudo docker-compose down
 sudo docker-compose up -d
