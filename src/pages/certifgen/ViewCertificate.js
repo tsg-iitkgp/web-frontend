@@ -13,14 +13,14 @@ const ViewCertificate = () => {
 
   const params = useParams();
   //  console.log(params.id);
-  const [certificateImage, setCertificateImage] = useState("");
+  const [certificateImage, setCertificateImage] = useState(undefined);
   const [certifData, setCertifData] = useState({});
 
   useEffect(() => {
     const getCertifData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5050/api/certifgen/generateCertif/${params.id}`
+          `https://adminbackend-3r4e.onrender.com/api/certifgen/generateCertif/${params.id}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch certificate data");
@@ -131,6 +131,7 @@ const ViewCertificate = () => {
         }}
       >
         <h1 style={{ fontSize: "2rem", margin: "auto" }}>CERTIFICATE</h1>
+        {certificateImage ? <>
         <h1
           style={{
             fontSize: "1.5rem",
@@ -139,7 +140,7 @@ const ViewCertificate = () => {
             // border: "1px solid white",
             padding: "10px 20px",
             textDecoration: "underline",
-          }}
+        }}
         >
           {certifData.eventName}
         </h1>
@@ -147,38 +148,53 @@ const ViewCertificate = () => {
           <div
             className="download_btns"
             style={{
-              display: "flex",
-              width: "100%",
-              justifyContent: "space-between",
-              padding: "1.25rem 0",
+                display: "flex",
+                width: "100%",
+                justifyContent: "space-between",
+                padding: "1.25rem 0",
             }}
-          >
+            >
             <button className="downloadBtn" onClick={downloadImage}>
               <i className="fa fa-picture-o" aria-hidden="true"></i>
               Download as Image
             </button>
             {/* <button className="downloadBtn" onClick={downloadPdf}>
               <i
-                className="fa fa-file-pdf-o"
-                aria-hidden="true"
+              className="fa fa-file-pdf-o"
+              aria-hidden="true"
               ></i>
               Download as Pdf
             </button> */}
           </div>
         </div>
         <img src={certificateImage} alt="Certificate" />
+        </> : <>
+            <h1
+              style={{
+                fontSize: "1.5rem",
+                margin: "0.5rem auto 2rem",
+                color: "white",
+                // border: "1px solid white",
+                padding: "10px 20px",
+                textDecoration: "underline",
+            }}
+            >
+              Certificate is loading...
+            </h1>
+            
+        </>}
         {/* <div className='certifpreview_share'>
                     <p className='certifshare_text'>Share it on:</p>
                     <div className='certifshare_links'>
-                        <a href="#" className='certifshare_link'><i class="fa fa-facebook"></i></a>
+                    <a href="#" className='certifshare_link'><i class="fa fa-facebook"></i></a>
                         <a href="#" className='certifshare_link'><i class="fa fa-twitter"></i></a>
                         <a href="#" className='certifshare_link'><i class="fa fa-instagram"></i></a>
                         <a href="#"className='certifshare_link'><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div> */}
+                        </div>
+                    </div> */}
       </div>
       <Popper />
-    </div>
+      </div>
   );
 };
 
