@@ -23,8 +23,8 @@ const ViewCertificate = () => {
     const getCertifData = async () => {
       try {
         const response = await axios.get(
-          // `https://adminbackend-3r4e.onrender.com/api/certifgen/generateCertif/${params.id}`
-          `http://localhost:5050/api/certifgen/generateCertif/${params.id}`
+          `https://adminbackend-3r4e.onrender.com/api/certifgen/generateCertif/${params.id}`
+          // `http://localhost:5050/api/certifgen/generateCertif/${params.id}`
         );
         // console.log(response.data);
         setCertifState(200);
