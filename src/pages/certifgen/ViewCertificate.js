@@ -128,7 +128,6 @@ const ViewCertificate = () => {
         }}
       >
         <h1 style={{ fontSize: "2rem", margin: "auto" }}>CERTIFICATE</h1>
-        {console.log(certifState)}
         {certifState === 404 && (
           <>
             <>
