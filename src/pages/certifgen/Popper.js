@@ -4,7 +4,7 @@ import Confetti from "react-confetti";
 const ConfettiComponent = () => {
   const [isConfettiActive, setConfettiActive] = useState(true);
   const width = window.innerWidth;
-  const height = window.innerHeight;
+  const height = window.innerHeight * 2;
 
   // Use a timeout or any condition to control when to stop the confetti
   useEffect(() => {

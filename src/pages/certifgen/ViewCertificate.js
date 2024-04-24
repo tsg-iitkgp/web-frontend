@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import IITKGPLogo from "../../images/IIT_Kharagpur_Logo.png";
-import Trail from "../../images/WebsiteHackathon.jpg";
+// import IITKGPLogo from "../../images/IIT_Kharagpur_Logo.png";
+// import Trail from "../../images/WebsiteHackathon.jpg";
 import "./ViewCertificate.css";
 import Popper from "./Popper";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
+// import html2canvas from "html2canvas";
+// import jsPDF from "jspdf";
+import axios from "axios";
+import html2pdf from "html2pdf.js";
 
 //https://gymkhana.iitkgp.ac.in/certifgen/view/NjYxYWFlOGM4ZjU0NTJjZmNlM2IxZjIx
 const ViewCertificate = () => {
@@ -15,26 +17,28 @@ const ViewCertificate = () => {
   //  console.log(params.id);
   const [certificateImage, setCertificateImage] = useState(undefined);
   const [certifData, setCertifData] = useState({});
+  const [certifState, setCertifState] = useState(0);
 
   useEffect(() => {
     const getCertifData = async () => {
       try {
-        const response = await fetch(
-          `https://adminbackend-3r4e.onrender.com/api/certifgen/generateCertif/${params.id}`
+        const response = await axios.get(
+          // `https://adminbackend-3r4e.onrender.com/api/certifgen/generateCertif/${params.id}`
+          `http://localhost:5050/api/certifgen/generateCertif/${params.id}`
         );
-        if (!response.ok) {
-          throw new Error("Failed to fetch certificate data");
-        }
-        const data = await response.json();
-        console.log(data);
-        setCertifData(data);
-        setCertificateImage(data.certificate);
+        // console.log(response.data);
+        setCertifState(200);
+        setCertifData(response.data);
+        setCertificateImage(response.data.certificate);
+        // console.log(certifState);
       } catch (error) {
         console.error("Error fetching certificate data:", error);
+        setCertifState(404);
       }
     };
 
     getCertifData();
+    // eslint-disable-next-line
   }, []);
 
   const downloadImage = () => {
@@ -57,47 +61,38 @@ const ViewCertificate = () => {
     document.body.removeChild(link);
   };
 
-  // const downloadPdf = () => {
-  //     const pdf = new jsPDF('p', 'mm', 'a4');
-
-  //     // Calculate the dimensions of the image relative to the page size
-  //     const pageWidth = pdf.internal.pageSize.getWidth();
-  //     const pageHeight = pdf.internal.pageSize.getHeight();
-
-  //     // Load the image to get its natural width and height
-  // const img = new Image();
-  // img.src = certificateImage;
-  //     img.onload = () => {
-  //         const imgWidth = pageWidth;
-  //         const imgHeight = (pageWidth * img.naturalHeight) / img.naturalWidth;
-
-  //         // Add the image to the PDF
-  //         pdf.addImage(certificateImage, 'JPEG', 0, 0, imgWidth, imgHeight);
-
-  //         // Save the PDF
-  //         pdf.save('certificate.pdf');
-  //     };
-  // };
   const downloadPdf = () => {
-    const img = new Image();
-    img.onload = () => {
-      const pdf = new jsPDF("p", "pt", [img.width, img.height]);
-      // Set the width of the image to match the width of the PDF page
-      const imgWidth = pdf.internal.pageSize.getWidth();
-      const imgHeight = (img.height * imgWidth) / img.width;
+    // Create an HTML element with the image
+    const imageElement = document.createElement("img");
+    imageElement.src = certificateImage;
 
-      // Add the image to the PDF
-      pdf.addImage(img, "JPEG", 0, 0, imgWidth, img.height);
+    // Set the image dimensions
+    imageElement.style.width = `${certifData.certifSize.width}px`;
+    imageElement.style.height = `${certifData.certifSize.height}px`;
 
-      // Save the PDF
-      pdf.save("certificate.pdf");
-    };
-    img.src = certificateImage;
+    // Create a container div and append the image to it
+    const container = document.createElement("div");
+    container.appendChild(imageElement);
+
+    // Convert the container to a PDF
+    html2pdf(container, {
+      filename: "image.pdf", // Set the filename
+      margin: 0, // Set the margin
+      jsPDF: {
+        unit: "px", // Set the measurement unit
+        format: [certifData.certifSize.width, certifData.certifSize.height], // Set the page dimensions
+        orientation: "landscape", // Set the orientation to landscape
+      },
+      html2canvas: {
+        scale: 2, // Set the scale factor
+      },
+    });
   };
 
   return (
     <div className="certifpreview" style={{ maxHeight: "100%" }}>
-      <a href="/"
+      <a
+        href="/"
         className="certifpreview_nav"
         style={{
           display: "flex",
@@ -107,7 +102,7 @@ const ViewCertificate = () => {
           gap: "0.75rem",
           margin: "2rem auto",
           textDecoration: "none",
-          cursor: "pointer"
+          cursor: "pointer",
         }}
       >
         <img
@@ -115,9 +110,11 @@ const ViewCertificate = () => {
           alt="gymk_logo"
           className="gymk_logo"
         />
-        <div style={{textAlign: "centre"}}>
+        <div style={{ textAlign: "centre" }}>
           <h1>Technology Students' Gymkhana</h1>
-          <h2 style={{color: "white"}}>Indian Institute of Technology Kharagpur</h2>
+          <h2 style={{ color: "white" }}>
+            Indian Institute of Technology Kharagpur
+          </h2>
         </div>
       </a>
       <div
@@ -131,44 +128,18 @@ const ViewCertificate = () => {
         }}
       >
         <h1 style={{ fontSize: "2rem", margin: "auto" }}>CERTIFICATE</h1>
-        {certificateImage ? <>
-        <h1
-          style={{
-            fontSize: "1.5rem",
-            margin: "0.5rem auto 2rem",
-            color: "white",
-            // border: "1px solid white",
-            padding: "10px 20px",
-            textDecoration: "underline",
-        }}
-        >
-          {certifData.eventName}
-        </h1>
-        <div className="certificateimage">
-          <div
-            className="download_btns"
-            style={{
-                display: "flex",
-                width: "100%",
-                justifyContent: "space-between",
-                padding: "1.25rem 0",
-            }}
-            >
-            <button className="downloadBtn" onClick={downloadImage}>
-              <i className="fa fa-picture-o" aria-hidden="true"></i>
-              Download as Image
-            </button>
-            {/* <button className="downloadBtn" onClick={downloadPdf}>
-              <i
-              className="fa fa-file-pdf-o"
-              aria-hidden="true"
-              ></i>
-              Download as Pdf
-            </button> */}
-          </div>
-        </div>
-        <img src={certificateImage} alt="Certificate" />
-        </> : <>
+        {console.log(certifState)}
+        {certifState === 404 && (
+          <>
+            <>
+              <h1 style={{ fontSize: "2rem", margin: "auto", color: "white" }}>
+                CERTIFICATE NOT FOUND!
+              </h1>
+            </>
+          </>
+        )}
+        {certifState === 200 && (
+          <>
             <h1
               style={{
                 fontSize: "1.5rem",
@@ -177,12 +148,51 @@ const ViewCertificate = () => {
                 // border: "1px solid white",
                 padding: "10px 20px",
                 textDecoration: "underline",
-            }}
+              }}
+            >
+              {certifData.eventName}
+            </h1>
+            <div className="certificateimage">
+              <div
+                className="download_btns"
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  justifyContent: "space-between",
+                  padding: "1.25rem 0",
+                }}
+              >
+                <button className="downloadBtn" onClick={downloadImage}>
+                  <i className="fa fa-picture-o" aria-hidden="true"></i>
+                  Download as Image
+                </button>
+                <button className="downloadBtn" onClick={downloadPdf}>
+                  <i className="fa fa-file-pdf-o" aria-hidden="true"></i>
+                  Download as Pdf
+                </button>
+              </div>
+            </div>
+            <img src={certificateImage} alt="Certificate" />
+            <Popper />
+          </>
+        )}
+
+        {certifState === 0 && (
+          <>
+            <h1
+              style={{
+                fontSize: "1.5rem",
+                margin: "0.5rem auto 2rem",
+                color: "white",
+                // border: "1px solid white",
+                padding: "10px 20px",
+                textDecoration: "underline",
+              }}
             >
               Certificate is loading...
             </h1>
-            
-        </>}
+          </>
+        )}
         {/* <div className='certifpreview_share'>
                     <p className='certifshare_text'>Share it on:</p>
                     <div className='certifshare_links'>
@@ -193,8 +203,7 @@ const ViewCertificate = () => {
                         </div>
                     </div> */}
       </div>
-      <Popper />
-      </div>
+    </div>
   );
 };
 
