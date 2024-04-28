@@ -69,10 +69,12 @@ function App() {
           <Route exact path="/ContactUs" component={ContactUs} />
 
           {/* Election Routes */}
-          {/* <Route exact path="/nominations" component={Nominations} />
-          <Route exact path="/elections" component={Elections} />
+          {/* <Route exact path="/elections" component={Elections} />
           <Route exact path="/elections/candidates" component={ElectionCandidates} /> */}
           
+          {/* Nominations Route */}
+          <Route exact path="/nominations" component={Nominations} />
+
           {/* FAQ Route */}
           <Route exact path="/faq" component={FAQ} />
 
