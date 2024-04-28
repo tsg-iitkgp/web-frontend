@@ -69,24 +69,22 @@ function App() {
           <Route exact path="/ContactUs" component={ContactUs} />
 
           {/* Election Routes */}
-          <Route exact path="/nominations" component={Nominations} />
+          {/* <Route exact path="/nominations" component={Nominations} />
           <Route exact path="/elections" component={Elections} />
+          <Route exact path="/elections/candidates" component={ElectionCandidates} /> */}
           
           {/* FAQ Route */}
           <Route exact path="/faq" component={FAQ} />
+
+          {/* Certifgen2.0 Route */}
+          <Route exact path="/certifgen/view/:id" component={ViewCertificate} />
+
           {/* 404 - Not Found Route */}
           {/* <Route component={NotFound} /> */}
 
           {/* Live Scoreboard Route */}
           {/* <Route exact path="/livescoreboard" component={LiveScoreboard} /> */}
 
-          <Route
-            exact
-            path="/elections/candidates"
-            component={ElectionCandidates}
-          />
-
-          <Route exact path="/certifgen/view/:id" component={ViewCertificate} />
           {/* Other Routes */}
           {/*<Route exact path="/gallery" component={Gallery} /> */}
         </Switch>

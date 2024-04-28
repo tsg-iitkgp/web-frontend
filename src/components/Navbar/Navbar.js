@@ -134,8 +134,8 @@ export default function Navbar() {
             </NavLink>
           </li>
 
-          {/* NOMINATIONS */}
-          <li className={Styles.navItem}>
+          {/* ELECTIONS */}
+          {/* <li className={Styles.navItem}>
             <NavLink
               to="/elections"
               className={Styles.navLinks}
@@ -143,7 +143,7 @@ export default function Navbar() {
             >
               Elections
             </NavLink>
-          </li>
+          </li> */}
 
           {/* NOMINATIONS */}
           <li className={Styles.navItem}>
