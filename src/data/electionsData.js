@@ -118,7 +118,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "22CE10062.pdf",
+      ProposalLink: "",
       FacebookLink: "",
       img: "Rounak_Socult.jpg"
     },
