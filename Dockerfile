@@ -11,6 +11,6 @@ RUN npm install --frozen-lockfile --silent
 
 COPY . .
 
-RUN npm start build
+RUN npm run build
 
 CMD ["serve", "-s", "build"]
