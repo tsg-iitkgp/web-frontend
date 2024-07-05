@@ -1,5 +1,5 @@
 # Build
-FROM node:14-alpine
+FROM node:20-alpine
 
 WORKDIR /webapp
 
