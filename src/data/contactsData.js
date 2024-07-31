@@ -3,7 +3,7 @@ export default {
   data: [
     {
       RollNo: "President",
-      Name: "Professor Ajay Kumar Singh",
+      Name: "Prof. Ajay Kumar Singh",
       Post: "President",
       img: "President.png",
       Facebook: "https://www.facebook.com/100001621282748",
@@ -15,7 +15,7 @@ export default {
     },
     {
       RollNo: "Honorary Treasurer",
-      Name: "Professor Jayanta Chakraborty",
+      Name: "Prof. Jayanta Chakraborty",
       Post: "Honorary Treasurer",
       img: "HonoraryTreasurer.png",
       Facebook: "https://www.facebook.com/jayanta.chakraborty.14855",
