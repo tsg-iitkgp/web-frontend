@@ -3022,5 +3022,97 @@
         }
       ]
     }
+  },
+  "2023-2024": {
+    "senate": {
+      "profs": [
+        {
+          "Post": "President",
+          "Name": "Prof. A K Singh"
+        },
+        {
+          "Post": "Honorary Treasurer",
+          "Name": "Prof. Jayanta Chakraborty"
+        }
+      ],
+      "honours": [
+        {
+          "Post": "Vice President",
+          "Name": "Samarth Singh"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Sachin Kumar Repswal"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "Varsha Kotagiri"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "Soujanya Nayak"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "SSVKSS Jyothiraditya"
+        },
+        {
+          "Post": "G.Sec Students' Welfare",
+          "Name": "Jakkinapalli Satya Ravi Sujit"
+        },
+        {
+          "Post": "G.Sec Students' Welfare",
+          "Name": "Sapharu Veena Nikhita"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Digvijay Singh"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "Vinayak Agarwal"
+        },
+        {
+          "Post": "Technology Coordinator",
+          "Name": "Parth Gupta"
+        },
+        {
+          "Post": "Technology Coordinator",
+          "Name": "Arpit Bhardwaj"
+        },
+        {
+          "Post": "Public Relations Chairperson",
+          "Name": "Irsh Vijayvargia"
+        },
+        {
+          "Post": "Editor",
+          "Name": "Vanshul Shikkewal"
+        },
+        {
+          "Post": "Editor",
+          "Name": "Anushka Aashvi"
+        },
+        {
+          "Post": "Institute Girl Sports' Nominee",
+          "Name": "Shreya Mishra"
+        },
+        {
+          "Post": "Undergraduate Representative",
+          "Name": "Palkit Lohia"
+        },
+        {
+          "Post": "Women Representative",
+          "Name": "Keerthy G S"
+        },
+        {
+          "Post": "Postgraduate Representative",
+          "Name": "Singh Swapnil Rajesh Shashiprabha"
+        },
+        {
+          "Post": "Research Scholar Representative",
+          "Name": "Deepesh Raj"
+        }
+      ]
+    }
   }
 }

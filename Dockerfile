@@ -1,16 +1,16 @@
 # Build
-FROM node:14-alpine
+FROM node:20-alpine
 
 WORKDIR /webapp
 
-RUN yarn global add serve
+RUN npm install --global serve
 
-COPY package.json yarn.lock ./
+COPY package.json package-lock.json ./
 
-RUN yarn install --frozen-lockfile --silent
+RUN npm install --frozen-lockfile --silent
 
 COPY . .
 
-RUN yarn build
+RUN npm run build
 
 CMD ["serve", "-s", "build"]

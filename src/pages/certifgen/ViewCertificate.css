@@ -1,92 +1,93 @@
-@media only screen and (min-width:725px){
+@media only screen and (min-width: 725px) {
     .certificateimage {
         text-align: center;
     }
 
-    .certificateimage img{
+    .certificateimage img {
         width: 100%;
         height: 50%;
     }
 
-    .certifpreview_nav h1{
+    .certifpreview_nav h1 {
         font-size: 2.25rem;
     }
 
-    .downloadBtn{
+    .downloadBtn {
         font-size: 1.25rem;
         width: auto;
         margin: 0 1rem;
     }
 }
 
-@media only screen and (max-width:724px){
+@media only screen and (max-width: 724px) {
     .certificateimage {
         text-align: center;
     }
 
-    .certificateimage img{
+    .certificateimage img {
         width: 80vw;
         height: auto;
     }
 
-    .certifpreview_nav h1{
+    .certifpreview_nav h1 {
         font-size: 1.6rem;
     }
 
-    .downloadBtn{
+    .downloadBtn {
         font-size: 1.25rem;
         width: 15rem;
     }
 }
 
-.downloadBtn{
-    color: #F1C40F;
+.downloadBtn {
+    color: #f1c40f;
     background-color: transparent;
     /* background-color: #F1C40F; */
     padding: 10px;
     font: 1rem;
     transition: all 0.2s;
     /* border: none; */
-    border: 1px solid #F1C40F;
+    border: 1px solid #f1c40f;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer !important;
 }
 
-.downloadBtn:hover{
-    background-color: #F1C40F;
+.downloadBtn:hover {
+    background-color: #f1c40f;
     color: white;
     cursor: pointer !important;
 }
 
-.gymk_logo,.kgp_logo{
+.gymk_logo,
+.kgp_logo {
     width: 6rem;
     margin: 0 0.6rem;
 }
 
-.certifpreview_body hr{
-    color: #F1C40F;
+.certifpreview_body hr {
+    color: #f1c40f;
     width: 80vw;
     margin: 0.5rem auto;
-    border: 0.2rem solid #F1C40F;
+    border: 0.2rem solid #f1c40f;
 }
 
-.certifpreview_share{
+.certifpreview_share {
     width: 40vw;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
-.certifshare_text{
+.certifshare_text {
     color: white;
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-.certifshare_link i{
+.certifshare_link i {
     color: black;
-    background-color: #F1C40F;
+    background-color: #f1c40f;
     border-radius: 50%;
     width: 2rem;
     margin: 0 0.5rem;
@@ -94,3 +95,30 @@
     font-size: 1.25rem;
 }
 
+.error-msg {
+    width: 70vw;
+    color: white;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+.error-msg ol li {
+    list-style: outside decimal !important;
+}
+
+.error-msg a {
+    padding: 0 !important;
+    color: white;
+    display: inline-block;
+    letter-spacing: inherit;
+    text-decoration: underline;
+    text-transform: none;
+    transition: none;
+    position: inherit;
+    z-index: 1;
+    overflow: inherit;
+}
+
+.error-msg a:hover {
+    cursor: pointer;
+}
