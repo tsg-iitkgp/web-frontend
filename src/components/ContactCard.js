@@ -75,7 +75,7 @@ function ContactCard({
             }
           />
         </div>
-        <h2>{name}</h2>
+        <h2>{String(name).toUpperCase()}</h2>
         <span>{designation}</span>
       </div>
     </div>
