@@ -29,8 +29,10 @@ export default function Events() {
     stopIndex: paginationNumber,
   });
   const [events, setEvents] = useState([]);
+  const [images,setImages] = useState([]);
   const [btnStyles, setBtnStyles] = useState("btn-warning");
   const [noMoreEvents, setNoMoreEvents] = useState(false);
+  
   // const [displayEvents] = useState(null);
 
   const handlePosterClick = (videoLink) => {
@@ -45,23 +47,24 @@ export default function Events() {
   useEffect(() => {
     setTimeout(async () => {
       fetch(
-        `${host}/admin/events/some/${eventIndex.startIndex}/${eventIndex.stopIndex}`
+        `${host}/events/`
       )
         .then((response) => response.json())
         .then((responseData) => {
-          setEvents(events.concat(responseData.events));
-          if (responseData.events.length === 0) {
+          setEvents(events.concat(responseData.data));
+          if (responseData.data.length === 0) {
             setNoMoreEvents(true);
           }
-          // console.log(responseData.events);
+          console.log(responseData.data)
         })
         .catch((err) => {
           console.log("the error is", err);
         });
-    });
-
+    }); 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [eventIndex]);
+  }, []);
+  
+  
 
   useEffect(() => {
     if (noMoreEvents) {
@@ -133,6 +136,8 @@ export default function Events() {
           </section>
         </section>
 
+
+        
         <div className={Styles.mainContainer}>
           {/* Upcoming Events Container */}
 
@@ -141,12 +146,15 @@ export default function Events() {
             <div className={Styles.cardsWrapper}>
               {events &&
                 events.map((event) => {
-                  let imgSrc = null;
-                  if (event.image) {
-                    imgSrc = `data:${event.imageMimeType};base64,${Buffer.from(
-                      event.image
-                    ).toString("base64")}`;
-                  }
+                  // Earlier code had a problem with the URL so we hard coded it in line number 157
+                  // let imgSrc = null;
+                  // if (event.image) {
+                  //   imgSrc = `data:${event.image.imageMimeType};base64,${Buffer.from(
+                  //     event.image
+                  //   ).toString("base64")}`;
+                  // }
+                  let imgSrc = `https://gymkhana.iitkgp.ac.in${event.image}`;
+                  console.log(imgSrc);
                   return (
                     <EventCard
                       key={event.id}
@@ -195,7 +203,7 @@ export default function Events() {
               </button>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </Layout>
   );
