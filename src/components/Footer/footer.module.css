@@ -24,7 +24,7 @@ footer {
   width: 70%;
   background-color: transparent;
   border-bottom: 1px solid white;
-  margin: 0.5rem auto;
+  margin: 2rem auto;
 }
 
 .tsgContainer {
@@ -84,7 +84,7 @@ footer {
   text-align: center;
   border-bottom: 1.5px dotted grey;
   padding: 0.5rem 0rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0rem;
   position: relative;
 }
 
@@ -168,6 +168,8 @@ footer {
   text-align: center;
   color: white;
   margin: 1rem auto;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .copyright a{
@@ -196,7 +198,7 @@ footer {
   }
 
   .footerContainer {
-    height: auto;
+    height: auto ;
     flex-direction: column;
   }
   .tsgContainer {
