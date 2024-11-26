@@ -105,6 +105,10 @@ export default function Events() {
           <section className={Styles.eventSlider}>
             <AutoplaySlider play={true} interval={5000}>
               <div
+                data-src="/data/media/images/events/ongoing/director-interview.png"
+                onClick={() => handlePosterClick("https://youtu.be/FlOlb9qSms0")}
+              />
+              <div
                 data-src="/data/media/images/events/upcomingEvents/qs.jpg"
                 onClick={() => handlePosterClick("#")}
               />
