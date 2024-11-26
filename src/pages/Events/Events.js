@@ -149,7 +149,7 @@ export default function Events() {
             <h2 className={Styles.categoryHeading2}>Events</h2>
             <div className={Styles.cardsWrapper}>
               {events &&
-                events.map((event) => {
+                events.map((event, index) => {
                   // Earlier code had a problem with the URL so we hard coded it in line number 157
                   // let imgSrc = null;
                   // if (event.image) {
@@ -167,7 +167,7 @@ export default function Events() {
                       description={event.description}
                       resultExists={event.resultExists}
                       imgSrc={imgSrc}
-                      index={event.id}
+                      index={index}
                       displayTrue={() => {
                         setShow(true);
                         setContent(event);
