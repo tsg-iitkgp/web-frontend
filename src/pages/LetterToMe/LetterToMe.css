@@ -1,0 +1,139 @@
+/* General styling for the form container */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffcc00; /* Yellow background color matching the given theme */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark text color for good contrast */
+  }
+  
+  /* Form heading */
+  .form-container h1 {
+    text-align: center;
+    color: #000; /* Black text for the heading */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form labels */
+  .form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000; /* Black color for labels */
+  }
+  
+  /* Form inputs */
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff; /* White background for input fields */
+  }
+  
+  /* Placeholder text for inputs */
+  .form-container input::placeholder,
+  .form-container textarea::placeholder {
+    color: #999;
+  }
+  
+  /* Textarea styling */
+  .form-container textarea {
+    resize: none;
+  }
+  
+  /* Buttons */
+  .form-container button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #333; /* Dark background for buttons */
+    color: #ffcc00; /* Yellow text for buttons */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .form-container button:hover {
+    background-color: #444;
+  }
+  
+  /* Response message styling */
+  .form-container p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000; /* Black text for messages */
+  }
+  
+  /* Disabled submit button */
+  .form-container button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .form-container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .form-container h1 {
+      font-size: 20px;
+    }
+  
+    .form-container label {
+      font-size: 12px;
+    }
+  
+    .form-container input,
+    .form-container textarea {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .form-container button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .form-container h1 {
+      font-size: 18px;
+    }
+  
+    .form-container label {
+      font-size: 12px;
+    }
+  
+    .form-container input,
+    .form-container textarea {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .form-container button {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
+  
