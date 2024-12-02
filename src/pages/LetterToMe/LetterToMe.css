@@ -1,139 +1,303 @@
-/* General styling for the form container */
+.backgroundImage {
+  width: 100%;
+  height: 100vh;
+  background: url("../../images/iitkgp.jpg");
+  background-size: cover;
+  position: fixed;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw; 
+  background: rgba(0, 0, 0, 0.5);
+  background-image: url("../../images/iitkgp.jpg"); 
+  background-size: cover;
+  background-position: center;
+}
 .form-container {
-    max-width: 500px;
-    margin: 50px auto;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffcc00; /* Yellow theme */
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: 'Roboto', sans-serif;
+  color: #333; /* Neutral text color */
+  transition: transform 0.3s ease;
+}
+
+/* Subtle hover effect for the form container */
+.form-container:hover {
+  transform: scale(1.02);
+}
+
+/* Form heading */
+.form-container h1 {
+  text-align: center;
+  color: #2c3e50; /* Modern dark blue color */
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Form labels */
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+/* Input and textarea fields */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect for inputs */
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #2c3e50;
+  box-shadow: 0px 0px 8px rgba(44, 62, 80, 0.2);
+  outline: none;
+}
+
+/* Placeholder text for inputs */
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: #bbb;
+  font-size: 13px;
+}
+
+/* Textarea styling */
+.form-container textarea {
+  resize: none;
+  height: 120px; /* Increased height for better usability */
+}
+
+/* Buttons */
+.form-container button {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  background-color: #333; /* Black for buttons */
+  color: #ffcc00; /* Yellow text for buttons */
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover and active effects for buttons */
+.form-container button:hover {
+  background-color: #444;
+}
+
+.form-container button:active {
+  transform: scale(0.97);
+}
+
+/* Disabled submit button */
+.form-container button:disabled {
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* Loading spinner for buttons */
+.form-container button.loading {
+  position: relative;
+  color: transparent;
+  cursor: wait;
+}
+
+.form-container button.loading:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border: 3px solid #ffcc00;
+  border-top: 3px solid #333;
+  border-radius: 50%;
+  animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Response message styling */
+.form-container p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2c3e50; /* Consistent color for text */
+}
+
+/* Adjustments for the centered email card */
+.email-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.email-card:hover {
+  transform: scale(1.03);
+}
+
+.email-card h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.email-card label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.email-card input {
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.email-card input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+.email-card button {
+  margin-top: 10px;
+  background-color: #333;
+  color: #ffcc00;
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.email-card button:hover {
+  background-color: #444;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .form-container {
+    margin: 30px;
     padding: 20px;
-    background-color: #ffcc00; /* Yellow background color matching the given theme */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Arial', sans-serif;
-    color: #333; /* Dark text color for good contrast */
   }
-  
-  /* Form heading */
+
   .form-container h1 {
-    text-align: center;
-    color: #000; /* Black text for the heading */
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
   }
-  
-  /* Form labels */
+
   .form-container label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-size: 14px;
-    color: #000; /* Black color for labels */
+    font-size: 13px;
   }
-  
-  /* Form inputs */
+
   .form-container input,
   .form-container textarea {
-    width: 100%;
+    font-size: 13px;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    background-color: #fff; /* White background for input fields */
   }
-  
-  /* Placeholder text for inputs */
-  .form-container input::placeholder,
-  .form-container textarea::placeholder {
-    color: #999;
-  }
-  
-  /* Textarea styling */
-  .form-container textarea {
-    resize: none;
-  }
-  
-  /* Buttons */
+
   .form-container button {
-    display: inline-block;
-    width: 100%;
-    padding: 10px 15px;
-    background-color: #333; /* Dark background for buttons */
-    color: #ffcc00; /* Yellow text for buttons */
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect for buttons */
-  .form-container button:hover {
-    background-color: #444;
-  }
-  
-  /* Response message styling */
-  .form-container p {
-    text-align: center;
-    margin-top: 15px;
     font-size: 14px;
-    color: #000; /* Black text for messages */
+    padding: 12px;
   }
-  
-  /* Disabled submit button */
-  .form-container button:disabled {
-    background-color: #aaa;
-    cursor: not-allowed;
+
+  .email-card h1 {
+    font-size: 20px;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .form-container {
-      margin: 20px;
-      padding: 15px;
-    }
-  
-    .form-container h1 {
-      font-size: 20px;
-    }
-  
-    .form-container label {
-      font-size: 12px;
-    }
-  
-    .form-container input,
-    .form-container textarea {
-      font-size: 12px;
-      padding: 8px;
-    }
-  
-    .form-container button {
-      font-size: 14px;
-      padding: 8px;
-    }
+
+  .email-card label {
+    font-size: 13px;
   }
-  
-  @media (max-width: 480px) {
-    .form-container {
-      margin: 10px;
-      padding: 10px;
-    }
-  
-    .form-container h1 {
-      font-size: 18px;
-    }
-  
-    .form-container label {
-      font-size: 12px;
-    }
-  
-    .form-container input,
-    .form-container textarea {
-      font-size: 12px;
-      padding: 6px;
-    }
-  
-    .form-container button {
-      font-size: 12px;
-      padding: 6px;
-    }
+
+  .email-card input {
+    font-size: 13px;
+    padding: 10px;
   }
-  
+
+  .email-card button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .form-container h1 {
+    font-size: 20px;
+  }
+
+  .form-container label {
+    font-size: 12px;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .form-container button {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .email-card h1 {
+    font-size: 18px;
+  }
+
+  .email-card label {
+    font-size: 12px;
+  }
+
+  .email-card input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .email-card button {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
