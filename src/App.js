@@ -31,6 +31,7 @@ import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
+import LetterToMe from "./pages/LetterToMe/LetterToMe"
 
 function App() {
   useEffect(() => {
@@ -42,6 +43,7 @@ function App() {
         <Switch>
           {/* Admin Routes */}
           <Route exact path="/login" component={Login} />
+          <Route exact path="/letter-to-me" component={LetterToMe} />
           <PrivateRoute exact path="/admin" component={Dashboard} />
           <PrivateRoute exact path="/admin/certificate" component={CertifGen} />
           <PrivateRoute
