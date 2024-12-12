@@ -44,7 +44,7 @@
 
 
 @media  (max-width: 1023px) {
-  .activeTabs{
+  .activeTab{
     font-size: 14px;
     padding: 8px 8px;
     border-radius: 12px;
