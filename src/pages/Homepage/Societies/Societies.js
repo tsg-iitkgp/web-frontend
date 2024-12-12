@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import RotatingCard from "../../../components/RotatingCards/RotatingCard";
 import Styles from "../../../styles/pages/home.module.css";
 import CardsStyles from "../../../styles/components/soc.module.css";
 import Data from "../../../data/soc";
 import { Link } from "react-router-dom";
+import Tab from "./Tab";
+
 export default function Societies() {
+  const [category,setCategory]=useState("Socult")
   return (
     <div className={Styles.container} data-aos="zoom-in-up">
       {/* Heading */}
@@ -15,10 +18,11 @@ export default function Societies() {
         Societies
       </h2>
       {/* Rotating Cards */}
+      <Tab category={category} setCategory={setCategory}></Tab>
       <div className={Styles.societiesSection}>
         <div className={CardsStyles.cardswrapper} style={{ width: "100%" }}>
           {Data.data
-            .filter((data) => data.category === "Socult") //eslint-disable-next-line
+            .filter((data) => data.category == category) //eslint-disable-next-line
             .map((item, i) => {
               while (i < 5) {
                 return (
