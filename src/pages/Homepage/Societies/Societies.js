@@ -1,13 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import RotatingCard from "../../../components/RotatingCards/RotatingCard";
 import Styles from "../../../styles/pages/home.module.css";
 import CardsStyles from "../../../styles/components/soc.module.css";
 import Data from "../../../data/soc";
-import { Link } from "react-router-dom";
 import Tab from "./Tab";
+import Cards from "../../../components/Cards";
+import  "../../../styles/components/card-modules.css";
+import SkeletonCard from "./SkeletonSociety";
 
 export default function Societies() {
-  const [category,setCategory]=useState("Socult")
+  const [loading, setLoading] = useState(true);
+  const [fullData, setFullData] = useState(false);
+  const [category, setCategory] = useState("Socult");
+  const [filteredData, setFilteredData] = useState([]);
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      const filtered = Data.data.filter((data) => data.category === category);
+      setFilteredData(filtered);
+      setLoading(false);
+    }, 1500); 
+    return () => clearTimeout(timer);
+  }, [category,fullData]);
+
+  const tabChangeHandler = (newCategory) => {
+    setCategory(newCategory);
+  };
+
+  const displayedData = fullData ? filteredData : filteredData.slice(0, 6);
+
   return (
     <div className={Styles.container} data-aos="zoom-in-up">
       {/* Heading */}
@@ -17,43 +39,43 @@ export default function Societies() {
       >
         Societies
       </h2>
-      {/* Rotating Cards */}
-      <Tab category={category} setCategory={setCategory}></Tab>
-      <div className={Styles.societiesSection}>
-        <div className={CardsStyles.cardswrapper} style={{ width: "100%" }}>
-          {Data.data
-            .filter((data) => data.category == category) //eslint-disable-next-line
-            .map((item, i) => {
-              while (i < 5) {
-                return (
-                  <RotatingCard
-                    name={item.name}
-                    description={item.description}
-                    shortform={item.shortform}
-                    facebook_link={item.facebook_link}
-                    key={i}
-                  />
-                );
-              }
-            })}
-          {/* ReadMore Button */}
-          <div className={Styles.readMore}>
-            <div className={Styles.animationTrigger}>
-              <div className={Styles.moreWrap}>
-                <Link to="/societies" className={Styles.moreText}>
-                  See more
-                </Link>
-                <div className={Styles.moreDots}>
-                  <div className={`${Styles.dot} ${Styles.dot1}`}></div>
-                  <div className={`${Styles.dot} ${Styles.dot2}`}></div>
-                  <div className={`${Styles.dot} ${Styles.dot3}`}></div>
-                  <div className={`${Styles.dot} ${Styles.dot4}`}></div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+      {/* Tabs */}
+      <Tab
+        category={category}
+        setCategory={setCategory}
+        onTabChange={tabChangeHandler}
+      />
+
+      {/* Cards or Skeletons */}
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" ,maxWidth:"1200px",gap:"20px"}}>
+        <div className="cardParentDiv">
+          {loading
+            ? Array(6) // Render 6 skeleton cards
+                .fill()
+                .map((_, i) => <SkeletonCard key={i} />)
+            : displayedData.map((item, i) => (
+                <Cards
+                  name={item.name}
+                  key={i}
+                  shortform={item.shortform}
+                  facebook_link={item.facebook_link}
+                  linkedin_link={item.linkedin_link}
+                  instagram_link={item.instagram_link}
+                />
+              ))}
         </div>
+        {/* Button */}
+        {!loading && (
+          <button
+            className="btnHandler"
+            onClick={() => setFullData((prevState) => !prevState)}
+          >
+            {fullData ? "See Less" : "See More"}
+          </button>
+        )}
       </div>
     </div>
   );
 }
+

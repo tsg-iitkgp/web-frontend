@@ -1,0 +1,8 @@
+.Tabs{
+  padding: 16px 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.Tabs:hover{
+  background-color: #202020;
+}
