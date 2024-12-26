@@ -1,4 +1,4 @@
-.parentDiv{
+.parentDiv {
   max-width: 1200px;
   margin: 3rem auto;
   display: flex;
@@ -7,24 +7,25 @@
   justify-content: center;
   align-items: center;
 }
-.heading{
+
+.heading {
   font-size: 1.5rem;
   color: #f1c40f;
   text-align: center;
   font-weight: 600;
 }
-.form{
+
+.form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap:18px;
- width: 640px;
+  gap: 18px;
+  width: 640px;
 }
-
 
 .group {
   align-self: center;
   position: relative;
-  width:300px;
+  width: 300px;
   margin-bottom: 1.25rem;
 }
 
@@ -50,7 +51,7 @@
   position: absolute;
   top: 0.4rem;
   font-size: 1rem;
-  color:#b4b5b8 ;
+  color: #ffffff;
   pointer-events: none;
   transition: transform 0.3s, font-size 0.3s, color 0.3s;
 }
@@ -65,39 +66,63 @@
 .input:focus ~ .label {
   color: #f1c40f;
 }
-.btnDiv{
-  text-align:center;
+
+.btnDiv {
+  text-align: center;
 }
-.btn{
-  padding:12px 16px;
-  border-radius:6px;
-  border:1px solid ;
-  background-color:#f1c40f;
-  color:black;
-  font-weight:600;
+
+.btn {
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid;
+  background-color: #f1c40f;
+  color: black;
+  font-weight: 600;
   transition: all 0.3s;
-  text-align:right;
+  text-align: right;
 }
-.btn:hover{
-  background-color:#ffcc0092;
+
+.btn:hover {
+  background-color: #ffcc0092;
 }
-.group{
+
+.group {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.radio{
+
+.radio {
+  display: flex;
   align-self: center;
   grid-column: 1/2;
-  color:#b4b5b8;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.radioInput{
+
+.radioInput {
   cursor: pointer;
   width: 14px;
 }
-.radioOpt{
+
+.radioOpt {
   padding: 0 0.5rem;
+}
+
+.radioOpt input[type="radio"] {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.radioOpt input[type="checkbox"] {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.radioOpt label {
+  color: #ffffff;
 }
