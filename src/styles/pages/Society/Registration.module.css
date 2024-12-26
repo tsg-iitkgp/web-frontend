@@ -22,6 +22,7 @@
 
 
 .group {
+  align-self: center;
   position: relative;
   width:300px;
   margin-bottom: 1.25rem;
@@ -79,4 +80,24 @@
 }
 .btn:hover{
   background-color:#ffcc0092;
+}
+.group{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.radio{
+  align-self: center;
+  grid-column: 1/2;
+  color:#b4b5b8;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.radioInput{
+  cursor: pointer;
+  width: 14px;
+}
+.radioOpt{
+  padding: 0 0.5rem;
 }

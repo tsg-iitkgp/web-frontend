@@ -31,7 +31,7 @@ import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
-// import SocietyLayout from "./pages/Societies/SocietyLayout";
+ import SocietyLayout from "./pages/Societies/SocietyLayout";
 
 function App() {
   useEffect(() => {
@@ -57,7 +57,7 @@ function App() {
           <Route exact path="/committees/welfare" component={Welfare} />
           <Route exact path="/committees/socult" component={Socult} />
           <Route exact path="/societies" component={Societies} />
-          {/* <Route exact path="/societies2" component={SocietyLayout} /> */}
+          <Route exact path="/societies2" component={SocietyLayout} />
           {/* Events Route */}
           <Route exact path="/events" component={Events} />
           {/* Results Routes */}
