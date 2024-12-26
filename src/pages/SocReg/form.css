@@ -1,0 +1,123 @@
+/* Container for the form */
+.society-form-container {
+    max-width: 600px;
+    width: 90%; /* Ensure it takes up most of the screen width */
+    margin: 50px auto; /* Center it horizontally with a top margin */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form title styling */
+.society-form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Form styling */
+.society-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure the form takes up all available space */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input and textarea styling */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in element width */
+}
+
+/* Textarea custom styling */
+textarea {
+    resize: none;
+    height: 120px; /* Ensure textarea has a minimum height */
+}
+
+/* File input styling */
+.society-form input[type="file"] {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button styling */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Make form responsive */
+@media (max-width: 768px) {
+    .society-form-container {
+        width: 90%; /* Full width on smaller screens */
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .society-form-container h1 {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .submit-button {
+        font-size: 16px; /* Increase font size for better touch interaction */
+    }
+
+    textarea {
+        height: 100px; /* Slightly smaller height for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .society-form-container {
+        padding: 10px; /* Reduce padding further on very small screens */
+    }
+
+    .submit-button {
+        font-size: 14px; /* Make button text smaller */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px; /* Smaller padding for small devices */
+    }
+}
