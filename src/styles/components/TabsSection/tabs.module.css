@@ -1,0 +1,155 @@
+.parentDiv{
+  width: 80%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  gap:16px;
+  align-items: center;
+  padding: 0 12px;
+}
+.tabs {
+  color:#eab308 ;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #f59e0b4d;
+  padding: 10px 24px;
+  border-radius: 16px;
+  background-color: #111827bd;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs:hover {
+  border: 2px solid #eab308;
+  background-color:#1f2937 ;
+}
+.activeTab{
+  padding: 10px 24px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(to right, #f59e0b, #d97706); 
+  color: black; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.activeTab:hover{
+  background: linear-gradient(to right, #d97706, #b45309);
+}
+
+.smallParentDiv{
+  display: none;
+}
+
+.smTabContainer{
+  width:240px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:1px solid rgb(185, 157, 43);
+  padding:12px 18px;
+  border-radius:12px;
+  background-color: #0a0b0cbd
+}
+
+.smHeading{
+  color:#eab308;
+  font-size:18px;
+  font-weight:600
+}
+
+.smDropdown{
+  background-color:rgba(10, 11, 12, 0.74);
+  color:white;
+  cursor: pointer;
+  border:0;
+}
+
+.dropdownMenu{
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  border-radius:12px;
+}
+.dropdownItems {
+  width: 240px;
+  padding: 12px 18px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdownItems:hover {
+  background-color: #333;
+}
+
+
+@media  (max-width: 1023px) {
+  .activeTab{
+    font-size: 14px;
+    padding: 8px 8px;
+    border-radius: 12px;
+  }
+  .tabs {
+    font-size: 14px;
+    padding: 8px 8px;
+    border-radius: 12px;
+  }
+}
+
+@media  (max-width: 768px) {
+  .activeTab{
+    font-size: 12px;
+    padding: 8px 8px;
+    border-radius: 12px;
+  }
+  .tabs {
+    font-size: 12px;
+    padding: 8px 8px;
+    border-radius: 12px;
+  }
+}
+@media  (max-width: 548px) {
+  .tabContainer{
+    display: none;
+  }
+  .smallParentDiv{
+    display: block;
+  }
+  /* .activeTab{
+    font-size: 12px;
+    padding: 6px 6px;
+    border-radius: 10px;
+  }
+  .tabs {
+    font-size: 12px;
+    padding: 6px 6px;
+    border-radius: 10px;
+  } */
+}
+
+
+/* @media (min-width: 300px) and (max-width: 432px) {
+  .tabContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:16px;
+  align-items: center;
+  }
+  .activeTab{
+    font-size: 14px;
+  }
+  .tabs {
+    font-size: 14px;
+  }
+} */
+

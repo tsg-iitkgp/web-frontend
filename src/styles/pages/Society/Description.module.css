@@ -1,0 +1,23 @@
+.descriptionDiv{
+  text-align: center;
+  margin:1.5rem auto;
+  padding: 3rem 2.5rem;
+  background-color: #2a2b2f;
+  border-radius: 40px;
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+}
+.descriptionHeading {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  color: #f1c40f;
+}
+.description {
+  letter-spacing: 1.5px;
+  font-size: 1.25rem;
+  color: #a69b9b;
+  line-height: 125%;
+}
