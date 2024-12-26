@@ -10,7 +10,7 @@ function debounce(func, delay) {
 }
 
 const Form = () => {
-  const api = 'http://localhost:5050';
+  const api = 'https://gymkhana.iitkgp.ac.in'
   const [formData, setFormData] = useState({
     name: '',
     email: '',
