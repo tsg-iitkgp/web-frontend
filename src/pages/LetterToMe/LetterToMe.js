@@ -17,18 +17,31 @@ const Form = () => {
     otp: '',
     message: '',
     rollNo: '',
-    gradYear: '',
+    sendDate: '',
   });
   const [isOtpSent, setIsOtpSent] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [emailError, setEmailError] = useState('');
+  const [serverMessage, setServerMessage] = useState('');
+
+  const isEmailValid = formData.email.endsWith('@kgpian.iitkgp.ac.in');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    if (name === 'email') {
+      if (!value.endsWith('@kgpian.iitkgp.ac.in')) {
+        setEmailError('Please put your institute mail');
+      } else {
+        setEmailError('');
+      }
+    }
+
     setFormData({ ...formData, [name]: value });
   };
 
   const sendOtp = debounce(async () => {
-    setIsLoading(true); 
+    setIsLoading(true);
     try {
       const response = await fetch(`${api}/api/letter/sentOtp`, {
         method: 'POST',
@@ -38,15 +51,15 @@ const Form = () => {
       const data = await response.json();
       if (response.ok) {
         setIsOtpSent(true);
-        alert(data.message);
+        setServerMessage(data.message); 
       } else {
-        alert(data.message);
+        setServerMessage(data.message); 
       }
     } catch (error) {
       console.error('Error sending OTP:', error);
-      alert('Error sending OTP. Please try again.');
+      setServerMessage('Error sending OTP. Please try again.');
     } finally {
-      setIsLoading(false); 
+      setIsLoading(false);
     }
   }, 2000);
 
@@ -59,53 +72,31 @@ const Form = () => {
       });
       const data = await response.json();
       if (response.ok) {
-        alert(data.message);
+        setServerMessage(data.message); 
         setFormData({
           name: '',
           email: '',
           otp: '',
           message: '',
           rollNo: '',
-          gradYear: '',
+          sendDate: '',
         });
         setIsOtpSent(false);
       } else {
-        alert(data.message);
+        setServerMessage(data.message); 
       }
     } catch (error) {
       console.error('Error verifying OTP or submitting form:', error);
-      alert('Error verifying OTP or submitting form. Please try again.');
+      setServerMessage('Error verifying OTP or submitting form. Please try again.');
     }
   };
 
   return (
     <div className="backgroundImage">
-    <div className='page-wrapper'>
-    <div className="form-container">
-      <h1>Letter To Me</h1>
-      <form onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        {!isOtpSent && (
-          <button
-            type="button"
-            onClick={sendOtp}
-            className={isLoading ? 'loading' : ''}
-            disabled={isLoading}
-          >
-            Send OTP
-          </button>
-        )}
-        {isOtpSent && (
-          <>
+      <div className="page-wrapper">
+        <div className="form-container">
+          <h1>Letter To Me</h1>
+          <form onSubmit={(e) => e.preventDefault()}>
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -116,16 +107,7 @@ const Form = () => {
               onChange={handleChange}
               required
             />
-            <label htmlFor="otp">OTP</label>
-            <input
-              type="text"
-              id="otp"
-              name="otp"
-              placeholder="Enter OTP"
-              value={formData.otp}
-              onChange={handleChange}
-              required
-            />
+
             <label htmlFor="message">Message</label>
             <textarea
               id="message"
@@ -136,6 +118,7 @@ const Form = () => {
               onChange={handleChange}
               required
             ></textarea>
+
             <label htmlFor="rollNo">Roll Number</label>
             <input
               type="text"
@@ -146,24 +129,61 @@ const Form = () => {
               onChange={handleChange}
               required
             />
-            <label htmlFor="gradYear">Graduation Year</label>
+
+            <label htmlFor="sendDate">Send Date</label>
             <input
-              type="number"
-              id="gradYear"
-              name="gradYear"
-              placeholder="Enter graduation year"
-              value={formData.gradYear}
+              type="date"
+              id="sendDate"
+              name="sendDate"
+              value={formData.sendDate}
               onChange={handleChange}
               required
             />
-            <button type="button" onClick={verifyOtp}>
-              Verify OTP & Submit Form
-            </button>
-          </>
-        )}
-      </form>
+
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            {emailError && <p style={{ color: 'red' }}>{emailError}</p>}
+
+            {!isOtpSent && isEmailValid && (
+              <button
+                type="button"
+                onClick={sendOtp}
+                className={isLoading ? 'loading' : ''}
+                disabled={isLoading}
+              >
+                Send OTP
+              </button>
+            )}
+
+            {isOtpSent && (
+              <>
+                <label htmlFor="otp">OTP</label>
+                <input
+                  type="text"
+                  id="otp"
+                  name="otp"
+                  placeholder="Enter OTP"
+                  value={formData.otp}
+                  onChange={handleChange}
+                  required
+                />
+                <button type="button" onClick={verifyOtp}>
+                  Verify OTP & Submit Form
+                </button>
+              </>
+            )}
+          </form>
+          {serverMessage && <p style={{ color: 'green' }}>{serverMessage}</p>}
+        </div>
       </div>
-    </div>
     </div>
   );
 };
