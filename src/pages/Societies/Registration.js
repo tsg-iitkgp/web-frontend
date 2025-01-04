@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import Styles from "../../styles/pages/Society/Registration.module.css";
 
 const api = "http://localhost:5050";
@@ -9,37 +10,40 @@ export default function Registration() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState("");
+  const location = useLocation();
+
+  const getQueryParams = () => {
+    const params = new URLSearchParams(location.search);
+    return params.get("name");
+  };
 
   useEffect(() => {
     const fetchFormQuestions = async () => {
+      const societyName = getQueryParams(); // Get society name from query params
       try {
-        const response = await fetch(`${api}/api/societies/yukriyf`,
-          {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json',
-            }
-          }
-        );
+        const response = await fetch(`${api}/api/societies/E-Cell`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
         if (!response.ok) {
           throw new Error("Failed to fetch form questions");
         }
-        const data = await response.json();
-        const questions = data.society.formQuestions;
 
-        setFormQuestions(questions);
+        const data = await response.json();
+        setFormQuestions(data.society.formQuestions);
         setLoading(false);
-        console.log(response)
       } catch (err) {
         setError(err.message);
         setLoading(false);
       }
     };
-    
 
     fetchFormQuestions();
-  }, []);
-  
+  }, [location.search]); // Dependency ensures it runs when query params change
+
   const handleInputChange = (questionText, value) => {
     setFormAnswers((prevAnswers) => ({
       ...prevAnswers,
@@ -62,7 +66,7 @@ export default function Registration() {
         throw new Error("Failed to submit form");
       }
 
-      const result = await response.json();
+      await response.json();
       setSuccessMessage("Form submitted successfully!");
     } catch (err) {
       setError(err.message);
@@ -83,22 +87,33 @@ export default function Registration() {
       {successMessage && <div className={Styles.success}>{successMessage}</div>}
       <form onSubmit={handleSubmit} className={Styles.form}>
         {formQuestions.map((question, index) => (
-          <div key={index} className={question.type === "radio" || question.type === "checkbox" ? Styles.radio : Styles.group}>
+          <div
+            key={index}
+            className={
+              question.type === "radio" || question.type === "checkbox"
+                ? Styles.radio
+                : Styles.group
+            }
+          >
             <label className={Styles.label}>{question.questionText}</label>
-            {question.type === "text"  ? (
+            {question.type === "text" ? (
               <input
-                type={question.type}
+                type="text"
                 className={Styles.input}
                 name={question.questionText}
                 required={question.required}
-                onChange={(e) => handleInputChange(question.questionText, e.target.value)}
+                onChange={(e) =>
+                  handleInputChange(question.questionText, e.target.value)
+                }
               />
             ) : question.type === "textarea" ? (
               <textarea
                 className={Styles.input}
                 name={question.questionText}
                 required={question.required}
-                onChange={(e) => handleInputChange(question.questionText, e.target.value)}
+                onChange={(e) =>
+                  handleInputChange(question.questionText, e.target.value)
+                }
               />
             ) : question.type === "radio" ? (
               question.options.map((option, optIndex) => (
@@ -109,7 +124,9 @@ export default function Registration() {
                     name={question.questionText}
                     value={option}
                     required={question.required}
-                    onChange={(e) => handleInputChange(question.questionText, e.target.value)}
+                    onChange={(e) =>
+                      handleInputChange(question.questionText, e.target.value)
+                    }
                   />
                   <label>{option}</label>
                 </div>
