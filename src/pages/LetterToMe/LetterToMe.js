@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import './LetterToMe.css';
+import Layout from "../../components/Layouts/Layout";
 
 function debounce(func, delay) {
   let timer;
@@ -10,7 +11,7 @@ function debounce(func, delay) {
 }
 
 const Form = () => {
-  const api = 'https://gymkhana.iitkgp.ac.in'
+  const api = 'https://gymkhana.iitkgp.ac.in';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -30,40 +31,46 @@ const Form = () => {
     const { name, value } = e.target;
 
     if (name === 'email') {
-      if (!value.endsWith('@kgpian.iitkgp.ac.in')) {
-        setEmailError('Please put your institute mail');
-      } else {
-        setEmailError('');
-      }
+      setEmailError(value.endsWith('@kgpian.iitkgp.ac.in') ? '' : 'Please use your institute email.');
     }
 
     setFormData({ ...formData, [name]: value });
   };
 
-  const sendOtp = debounce(async () => {
-    setIsLoading(true);
-    try {
-      const response = await fetch(`${api}/api/letter/sentOtp`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: formData.email }),
-      });
-      const data = await response.json();
-      if (response.ok) {
-        setIsOtpSent(true);
-        setServerMessage(data.message); 
-      } else {
-        setServerMessage(data.message); 
+  const sendOtp = useCallback(
+    debounce(async () => {
+      if (!isEmailValid) return;
+      setIsLoading(true);
+      try {
+        const response = await fetch(`${api}/api/letter/sentOtp`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: formData.email }),
+        });
+        const data = await response.json();
+        if (response.ok) {
+          setIsOtpSent(true);
+          setServerMessage(data.message);
+        } else {
+          setServerMessage(data.message);
+        }
+      } catch (error) {
+        console.error('Error sending OTP:', error);
+        setServerMessage('Failed to send OTP. Please try again.');
+      } finally {
+        setIsLoading(false);
       }
-    } catch (error) {
-      console.error('Error sending OTP:', error);
-      setServerMessage('Error sending OTP. Please try again.');
-    } finally {
-      setIsLoading(false);
-    }
-  }, 2000);
+    }, 2000),
+    [formData.email]
+  );
 
   const verifyOtp = async () => {
+    if (!formData.otp) {
+      setServerMessage('Please enter the OTP.');
+      return;
+    }
+
+    setIsLoading(true);
     try {
       const response = await fetch(`${api}/api/letter/verifyOtp`, {
         method: 'POST',
@@ -72,7 +79,7 @@ const Form = () => {
       });
       const data = await response.json();
       if (response.ok) {
-        setServerMessage(data.message); 
+        setServerMessage(data.message);
         setFormData({
           name: '',
           email: '',
@@ -83,108 +90,109 @@ const Form = () => {
         });
         setIsOtpSent(false);
       } else {
-        setServerMessage(data.message); 
+        setServerMessage(data.message);
       }
     } catch (error) {
-      console.error('Error verifying OTP or submitting form:', error);
-      setServerMessage('Error verifying OTP or submitting form. Please try again.');
+      console.error('Error verifying OTP:', error);
+      setServerMessage('Failed to verify OTP. Please try again.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
-    <div className="backgroundImage">
-      <div className="page-wrapper">
-        <div className="form-container">
-          <h1>Letter To Me</h1>
-          <form onSubmit={(e) => e.preventDefault()}>
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Enter your message"
-              rows="4"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-
-            <label htmlFor="rollNo">Roll Number</label>
-            <input
-              type="text"
-              id="rollNo"
-              name="rollNo"
-              placeholder="Enter your roll number"
-              value={formData.rollNo}
-              onChange={handleChange}
-              required
-            />
-
-            <label htmlFor="sendDate">Send Date</label>
-            <input
-              type="date"
-              id="sendDate"
-              name="sendDate"
-              value={formData.sendDate}
-              onChange={handleChange}
-              required
-            />
-
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-            {emailError && <p style={{ color: 'red' }}>{emailError}</p>}
-
-            {!isOtpSent && isEmailValid && (
-              <button
-                type="button"
-                onClick={sendOtp}
-                className={isLoading ? 'loading' : ''}
-                disabled={isLoading}
-              >
-                Send OTP
+    <Layout>
+    <div className="letter-to-me-container">
+      <div className="left-column">
+        <h2>A Letter To The Passing Out You!</h2>
+        <p>
+          To all the bright-eyed futurists of today, the Editorship presents this unique opportunity to
+          write a heartfelt "encrypted and totally secure" letter to your future self, one that will be
+          delivered to you on your graduation day.
+        </p>
+        <p>
+          So, why wait? Immerse yourself in reflective thought and let your words weave the bridge
+          between the person you are today and the graduate you will become.
+        </p>
+      </div>
+      <div className="right-column">
+        <form onSubmit={(e) => e.preventDefault()}>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Institute Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          {emailError && <p className="error-message">{emailError}</p>}
+          <input
+            type="text"
+            id="rollNo"
+            name="rollNo"
+            placeholder="Roll Number"
+            value={formData.rollNo}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message"
+            rows="4"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+          <input
+            type="date"
+            id="sendDate"
+            name="sendDate"
+            value={formData.sendDate}
+            onChange={handleChange}
+            required
+          />
+          {!isOtpSent && isEmailValid && (
+            <button
+              type="button"
+              onClick={sendOtp}
+              className={isLoading ? 'loading' : ''}
+              disabled={isLoading || !formData.email}
+            >
+              {isLoading ? 'Sending...' : 'Send OTP'}
+            </button>
+          )}
+          {isOtpSent && (
+            <>
+              <input
+                type="text"
+                id="otp"
+                name="otp"
+                placeholder="Enter OTP"
+                value={formData.otp}
+                onChange={handleChange}
+                required
+              />
+              <button type="button" onClick={verifyOtp} disabled={isLoading}>
+                {isLoading ? 'Verifying...' : 'Verify OTP & Submit'}
               </button>
-            )}
-
-            {isOtpSent && (
-              <>
-                <label htmlFor="otp">OTP</label>
-                <input
-                  type="text"
-                  id="otp"
-                  name="otp"
-                  placeholder="Enter OTP"
-                  value={formData.otp}
-                  onChange={handleChange}
-                  required
-                />
-                <button type="button" onClick={verifyOtp}>
-                  Verify OTP & Submit Form
-                </button>
-              </>
-            )}
-          </form>
-          {serverMessage && <p style={{ color: 'green' }}>{serverMessage}</p>}
-        </div>
+            </>
+          )}
+        </form>
+        {serverMessage && <p className="server-message">{serverMessage}</p>}
       </div>
     </div>
+    </Layout>
   );
 };
 
