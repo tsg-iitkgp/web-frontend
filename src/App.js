@@ -31,9 +31,10 @@ import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
+
 import LetterToMe from "./pages/LetterToMe/LetterToMe"
 import SocietyForm from "./pages/SocReg/form";
-// import SocietyLayout from "./pages/Societies/SocietyLayout";
+>>>>>>>>> Temporary merge branch 2
 
 function App() {
   useEffect(() => {
