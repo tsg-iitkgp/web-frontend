@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import "./LetterToMe.css";
-import Layout from "../../components/Layouts/Layout";
+import Nav from "../../components/Layouts/NavLayout";
 
 function debounce(func, delay) {
   let timer;
@@ -105,7 +105,7 @@ const Form = () => {
   };
 
   return (
-    <Layout>
+    <Nav>
       <div className="letter-to-me-container">
         <div className="left-column">
           <div className="overlay"></div>
@@ -213,7 +213,7 @@ const Form = () => {
           {serverMessage && <p className="server-message">{serverMessage}</p>}
         </div>
       </div>
-    </Layout>
+    </Nav>
   );
 };
 

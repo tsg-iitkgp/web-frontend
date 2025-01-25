@@ -1,14 +1,14 @@
-
-
 .letter-to-me-container {
   display: flex;
+  flex-wrap: wrap; /* Allow columns to stack on smaller screens */
   height: 95vh; /* Full viewport height */
   width: 100%;
+  overflow: hidden;
 }
 
 .left-column {
   position: relative;
-  width:48%;
+  width: 48%;
   background-image: url('../../images/iitkgp.jpg'); 
   background-color: black;
   background-size: cover;
@@ -19,7 +19,8 @@
   justify-content: center;
   align-items: center;
 }
-.overlay{
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -27,14 +28,15 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.content{
+
+.content {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  color:#f7f9f8; 
+  color: #f7f9f8; 
 }
 
 .left-column h2 {
@@ -44,17 +46,16 @@
   font-weight: 900;
   margin-bottom: 28px;
   text-align: center;
-
 }
- .left-column h2 img{
+
+.left-column h2 img {
   position: absolute;
-  top:-40px;
-  left:-60px;
+  top: -40px;
+  left: -60px;
   width: 100px;
   height: 80px;
   transform: rotate(340deg);
-  
- }
+}
 
 .left-column p {
   font-size: 1.1rem;
@@ -62,11 +63,9 @@
   line-height: 1.5;
 }
 
-
-
 .right-column {
   width: 52%;
-  background-color:#1c272b;
+  background-color: #1c272b;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,13 +79,12 @@ form {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  padding:0 60px;
-  /* max-width: 400px; */
+  padding: 0 60px;
 }
 
-
-
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
   background-color: white;
   width: 100%;
   padding: 12px;
@@ -94,28 +92,34 @@ form input, form textarea, form button {
   border-radius: 4px;
   font-size: 1rem;
 }
-.box1{
-  width:100%;
+
+.box1 {
+  width: 100%;
   display: flex;
-  gap:16px;
+  gap: 16px;
   align-items: center;
 }
-#sendDate, #rollNo{
+
+#sendDate,
+#rollNo {
   width: 60%;
 }
-#message{
-  height:220px;
+
+#message {
+  height: 220px;
 }
+
 form button {
-  background-color: #ff9800;
+  background-color: #68d128;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+  border: none;
   transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #e68900;
+  background-color: #4eda0d;
 }
 
 .error-message {
@@ -124,6 +128,49 @@ form button:hover {
 }
 
 .server-message {
-  color: #4caf50;
+  color: #256b27;
   font-size: 0.9rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .letter-to-me-container {
+    flex-direction: column; /* Stack columns vertically */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; /* Full width for each column */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .left-column h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  form {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+  }
+
+  #message {
+    height: 180px; /* Adjust text area height */
+  }
+}
+
+@media (max-width: 480px) {
+  .left-column h2 {
+    font-size: 1.5rem; /* Further reduce font size */
+  }
+
+  .left-column p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 0.9rem; /* Adjust input sizes */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
 }
