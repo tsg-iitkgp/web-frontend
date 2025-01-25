@@ -34,7 +34,7 @@ import ViewCertificate from "./pages/certifgen/ViewCertificate";
 
 import LetterToMe from "./pages/LetterToMe/LetterToMe"
 import SocietyForm from "./pages/SocReg/form";
->>>>>>>>> Temporary merge branch 2
+
 
 function App() {
   useEffect(() => {
