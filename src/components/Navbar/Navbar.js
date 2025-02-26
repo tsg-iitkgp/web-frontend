@@ -89,6 +89,30 @@ export default function Navbar() {
             </NavLink>
           </li>
 
+          {/* BLOGS */}
+          <li className={Styles.navItem}>
+            {
+              <a
+                href="https://tsgblog.iitkgp.ac.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Blogs
+              </a>
+            }
+          </li>
+
+          {/* AWARDS */}
+          <li className={Styles.navItem}>
+            <NavLink
+              to="/awards"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Awards
+            </NavLink>
+          </li>
+
           {/* RESULTS */}
           <li
             className={`${Styles.navItem} ${Styles.results}`}
@@ -112,25 +136,13 @@ export default function Navbar() {
             )}
           </li>
 
-          {/* AWARDS */}
           <li className={Styles.navItem}>
             <NavLink
-              to="/awards"
+              to="/letter-to-you"
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
             >
-              Awards
-            </NavLink>
-          </li>
-
-          {/* CONTACTS */}
-          <li className={Styles.navItem}>
-            <NavLink
-              to="/contacts"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
-              Contacts
+              Letter to you
             </NavLink>
           </li>
 
@@ -167,17 +179,15 @@ export default function Navbar() {
             </NavLink>
           </li> */}
 
-          {/* BLOGS */}
+          {/* CONTACTS */}
           <li className={Styles.navItem}>
-            {
-              <a
-                href="https://tsgblog.iitkgp.ac.in/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Blogs
-              </a>
-            }
+            <NavLink
+              to="/contacts"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Contacts
+            </NavLink>
           </li>
 
           {/* FAQs */}
