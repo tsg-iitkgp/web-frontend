@@ -30,13 +30,13 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.content {
+.desc-content {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #f7f9f8; 
+  color: #f7f9f8;
 }
 
 .left-column h2 {

@@ -109,7 +109,7 @@ const Form = () => {
       <div className="letter-to-me-container">
         <div className="left-column">
           <div className="overlay"></div>
-          <div className="content">
+          <div className="desc-content">
           <h2>
             <img src="https://freedesignfile.com/image/preview/18609/graduation-hat-drawing-black-and-white-clipart.png"/>
             A Letter To The Passing <br></br> Out You!
