@@ -125,8 +125,8 @@ It is prefferred to use docker over bare metal setup.
 
 Name|Email|Phone No.
 -----|-----|---------
-[Arpit Bhardwaj](https://linktr.ee/proffapt) | <arpitbhardwaj.iitkgp@gmail.com> | +91-9761667733
-[Parth Gupta](https://github.com/ParthGupta2510) | <guptaparth.iitkgp@gmail.com> | +91-7620821543
+[Harsh Bansal](https://www.harshbansal.in) | <harshbansal.iitkgp@gmail.com> | +91-9821391634
+[Akash Manna](https://github.com/AkashManna2003) | <mannaakash.iitkgp@gmail.com> | +91-82829101570
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
