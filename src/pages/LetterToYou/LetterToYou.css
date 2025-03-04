@@ -1,7 +1,7 @@
 .letter-to-me-container {
   display: flex;
   flex-wrap: wrap; /* Allow columns to stack on smaller screens */
-  height: 95vh; /* Full viewport height */
+  /* height: 95vh; Full viewport height */
   width: 100%;
   overflow: hidden;
 }
@@ -214,4 +214,3 @@ form button:hover {
     width: 100%; /* Make inputs full-width on small screens */
   }
 }
-

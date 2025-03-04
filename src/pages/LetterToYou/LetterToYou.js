@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
-import "./LetterToMe.css";
-import Nav from "../../components/Layouts/NavLayout";
+import "./LetterToYou.css";
+import Layout from "../../components/Layouts/Layout";
 
 function debounce(func, delay) {
   let timer;
@@ -18,7 +18,7 @@ const Form = () => {
     otp: "",
     message: "",
     rollNo: "",
-    sendDate: "",
+    graduationYear: "",
   });
   const [isOtpSent, setIsOtpSent] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -105,7 +105,7 @@ const Form = () => {
   };
 
   return (
-    <Nav>
+    <Layout>
       <div className="letter-to-me-container">
         <div className="left-column">
           <div className="overlay"></div>
@@ -144,10 +144,11 @@ const Form = () => {
                 required
               />
               <input
-                type="date"
-                id="sendDate"
-                name="sendDate"
-                value={formData.sendDate}
+                type="number"
+                id="graduationYear"
+                name="graduationYear"
+                placeholder="Graduation Year"
+                value={formData.graduationYear}
                 onChange={handleChange}
                 required
               />
@@ -213,9 +214,8 @@ const Form = () => {
           {serverMessage && <p className="server-message">{serverMessage}</p>}
         </div>
       </div>
-    </Nav>
+    </Layout>
   );
 };
 
 export default Form;
-
