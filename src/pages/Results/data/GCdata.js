@@ -1619,6 +1619,143 @@ const GCdata = {
         Bronze: "SN/IG",
       },
     ]
+  },
+  "2023-24": {
+    Sports: {
+      Male: [
+        {
+          Sport: "Overall",
+          Gold: "",
+          Silver: "",
+          Bronze: ""
+        }
+      ],
+      Female: [
+        {
+          Sport: "Overall",
+          Gold: "",
+          Silver: "",
+          Bronze: ""
+        }
+      ]
+    },
+    Technology: [],
+    Socult: [
+      {
+        Event: "Overall",
+        Gold: "",
+        Silver: "",
+        Bronze: ""
+      },
+      {
+        Event: "Hindi Elocution",
+        Gold: "MMM",
+        Silver: "LBS",
+        Bronze: "LLR"
+      },
+      {
+        Event: "English Elocution",
+        Gold: "LLR",
+        Silver: "SN/IG",
+        Bronze: "MT"
+      },
+      {
+        Event: "Sketching",
+        Gold: "RP",
+        Silver: "Nehru",
+        Bronze: "Azad"
+      },
+      {
+        Event: "Groups",
+        Gold: "Nehru",
+        Silver: "MMM",
+        Bronze: ""
+      },
+      {
+        Event: "Western Instrumentals",
+        Gold: "Nehru",
+        Silver: "MT",
+        Bronze: "RK"
+      },
+      {
+        Event: "Western Vocals",
+        Gold: "SN/IG",
+        Silver: "Nehru",
+        Bronze: "MMM"
+      },
+      {
+        Event: "Eastern Vocals",
+        Gold: "MMM",
+        Silver: "RP",
+        Bronze: "RK"
+      },
+      {
+        Event: "Eastern Instrumentals",
+        Gold: "Nehru",
+        Silver: "RK",
+        Bronze: "Azad"
+      },
+      {
+        Event: "General Quiz",
+        Gold: "RP",
+        Silver: "Nehru",
+        Bronze: "VS"
+      },
+      {
+        Event: "Debate",
+        Gold: "MT",
+        Silver: "RK",
+        Bronze: "Azad"
+      },
+      {
+        Event: "What's the Good Word",
+        Gold: "Nehru",
+        Silver: "RK",
+        Bronze: "Patel"
+      },
+      {
+        Event: "Painting",
+        Gold: "SNVH",
+        Silver: "MMM",
+        Bronze: "JCB"
+      },
+      {
+        Event: "Thermocol and Clay Modelling",
+        Gold: "Nehru",
+        Silver: "RK",
+        Bronze: "Patel"
+      },
+      {
+        Event: "Cartooning",
+        Gold: "Nehru",
+        Silver: "Azad",
+        Bronze: "SN/IG"
+      },
+      {
+        Event: "Short Film Making",
+        Gold: "",
+        Silver: "MS",
+        Bronze: "LBS"
+      },
+      {
+        Event: "Stage Play",
+        Gold: "",
+        Silver: "",
+        Bronze: ""
+      },
+      {
+        Event: "Street Play",
+        Gold: "",
+        Silver: "",
+        Bronze: ""
+      },
+      {
+        Event: "Choreography",
+        Gold: "",
+        Silver: "",
+        Bronze: ""
+      }
+    ]
   }
 };
 
