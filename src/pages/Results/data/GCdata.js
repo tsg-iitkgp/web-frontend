@@ -1619,7 +1619,128 @@ const GCdata = {
         Bronze: "SN/IG",
       },
     ]
+  },
+  "2023-24": {
+    Sports: {
+      Male: [
+        {
+          Sport: "Overall",
+          Gold: "",
+          Silver: "",
+          Bronze: ""
+        }
+      ],
+      Female: [
+        {
+          Sport: "Overall",
+          Gold: "",
+          Silver: "",
+          Bronze: ""
+        }
+      ]
+    },
+    Technology: [],
+    Socult: [
+      {
+        Event: "Overall",
+        Gold: "",
+        Silver: "",
+        Bronze: ""
+      },
+      {
+        Event: "Short Film Making",
+        Gold: "",
+        Silver: "Meghnad Saha Hall of Residence",
+        Bronze: "Lal Bahadur Shastri Hall of Residence"
+      },
+      {
+        Event: "Stage Play",
+        Gold: "",
+        Silver: "",
+        Bronze: ""
+      },
+      {
+        Event: "Street Play",
+        Gold: "",
+        Silver: "",
+        Bronze: ""
+      },
+      {
+        Event: "Choreography",
+        Gold: "",
+        Silver: "",
+        Bronze: ""
+      },
+      {
+        Event: "Hindi Elocution",
+        Gold: "Pandit Madan Mohan Malviya Hall of Residence",
+        Silver: "Lal Bahadur Shastri Hall of Residence",
+        Bronze: "Lala Lajpat Rai Hall of Residence"
+      },
+      {
+        Event: "English Elocution",
+        Gold: "Lala Lajpat Rai Hall Of Residence ",
+        Silver: "Sarojini Naidu/Indira Gandhi Hall of Residence",
+        Bronze: "Mother Teresa Hall of Residence"
+      },
+      {
+        Event: "Sketching",
+        Gold: "Rajendra Prasad Hall of Residence",
+        Silver: "Nehru Hall of Residence ",
+        Bronze: "Azad Hall of Residence "
+      },
+      {
+        Event: "Groups",
+        Gold: "Nehru Hall Of Residence",
+        Silver: "Pt. Madan Mohan Malviya Hall of Residence",
+        Bronze: ""
+      },
+      {
+        Event: "Western Instrumentals",
+        Gold: "Nehru Hall of Residence",
+        Silver: "Mother Teresa Hall of Residence",
+        Bronze: "Radhakrishnan Hall of Residence"
+      },
+      {
+        Event: "Western Vocals",
+        Gold: "Sarojini Naidu / Indira Gandhi Hall of Residence",
+        Silver: "Nehru Hall of Residence",
+        Bronze: "Pandit Madan Mohan Malaviya Hall of Residence"
+      },
+      {
+        Event: "Eastern Vocals",
+        Gold: "Pandit Madan Mohan Malaviya Hall of Residence",
+        Silver: "Rajendra Prasad Hall of Residence",
+        Bronze: ""
+      },
+      {
+        Event: "Eastern Instrumentals",
+        Gold: "Nehru Hall of Residence",
+        Silver: "Radhakrishnan Hall of Residence",
+        Bronze: "Azad Hall of Residence"
+      },
+      {
+        Event: "General Quiz",
+        Gold: "Rajendra Prasad Hall of Residence",
+        Silver: "Nehru Hall of Residence",
+        Bronze: "Vidyasagar Hall of Residence"
+      },
+      {
+        Event: "Debate",
+        Gold: "Mother Teresa Hall of Residence",
+        Silver: "Radhakrishnan Hall of Residence",
+        Bronze: "Azad Hall of Residence"
+      },
+      {
+        Event: "What's the Good Word",
+        Gold: "Nehru Hall of Residence",
+        Silver: "Radhakrishnan Hall of Residence",
+        Bronze: "Patel Hall of Residence"
+      }
+    ]
   }
+
+
 };
 
 export default GCdata;
