@@ -350,7 +350,7 @@ const InterIITdata = {
                 Bronze: "Kharagpur",
             },
             {
-                Event: "Indoor Localisation",
+                Event: "Indoor isation",
                 Gold: "Guwhati",
                 Silver: "Kharagpur",
                 Bronze: "Kanpur",
