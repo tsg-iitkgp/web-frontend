@@ -1,9 +1,9 @@
 const InterIITdata = {
     "2016-17": {
-        Sports: 
+        Sports:
         {
             // MALE STANDINGS
-            Male:[
+            Male: [
                 {
                     Sport: "Overall",
                     Gold: "Kanpur",
@@ -84,7 +84,7 @@ const InterIITdata = {
                 }
             ],
             // FEMALE STANDINGS
-            Female:[
+            Female: [
                 {
                     Sport: "Overall",
                     Gold: "Madras , Bombay",
@@ -134,7 +134,7 @@ const InterIITdata = {
                     Bronze: "Kanpur",
                 }
             ]
-    },
+        },
         Technology: [
             {
                 Event: "Overall",
@@ -189,10 +189,10 @@ const InterIITdata = {
         ]
     },
     "2017-18": {
-        Sports: 
+        Sports:
         {
             // MALE STANDINGS
-            Male:[
+            Male: [
                 {
                     Sport: "Overall",
                     Gold: "Bombay",
@@ -279,7 +279,7 @@ const InterIITdata = {
                 }
             ],
             // FEMALE STANDINGS
-            Female:[
+            Female: [
                 {
                     Sport: "Overall",
                     Gold: "Madras , Bombay",
@@ -329,7 +329,7 @@ const InterIITdata = {
                     Bronze: "Kanpur",
                 }
             ]
-    },
+        },
         Technology: [
             {
                 Event: "Final Standings",
@@ -600,10 +600,10 @@ const InterIITdata = {
         ]
     },
     "2018-19": {
-        Sports: 
+        Sports:
         {
             // MALE STANDINGS
-            Male:[
+            Male: [
                 {
                     Sport: "Overall",
                     Gold: " ",
@@ -684,7 +684,7 @@ const InterIITdata = {
                 }
             ],
             // FEMALE STANDINGS
-            Female:[
+            Female: [
                 {
                     Sport: "Overall",
                     Gold: " ",
@@ -734,7 +734,7 @@ const InterIITdata = {
                     Bronze: " ",
                 }
             ]
-    },
+        },
         Technology: [
             {
                 Event: "Overall",
@@ -744,14 +744,14 @@ const InterIITdata = {
             },
         ],
         Socult: [
-            
+
         ]
     },
     "2019-20": {
-        Sports: 
+        Sports:
         {
             // MALE STANDINGS
-            Male:[
+            Male: [
                 {
                     Sport: "Overall",
                     Gold: "Kharagpur",
@@ -838,7 +838,7 @@ const InterIITdata = {
                 }
             ],
             // FEMALE STANDINGS
-            Female:[
+            Female: [
                 {
                     Sport: "Overall",
                     Gold: "Madras",
@@ -888,7 +888,7 @@ const InterIITdata = {
                     Bronze: "Madras",
                 }
             ]
-    },
+        },
         Technology: [
             {
                 Event: "Overall",
@@ -1021,10 +1021,10 @@ const InterIITdata = {
         ]
     },
     "2020-21": {
-        Sports: 
+        Sports:
         {
             // MALE STANDINGS
-            Male:[
+            Male: [
                 {
                     Sport: "EVENTS CANCELLED DUE TO COVID-19",
                     Gold: " ",
@@ -1033,7 +1033,7 @@ const InterIITdata = {
                 },
             ],
             // FEMALE STANDINGS
-            Female:[
+            Female: [
                 {
                     Sport: "EVENTS CANCELLED DUE TO COVID-19",
                     Gold: " ",
@@ -1041,7 +1041,7 @@ const InterIITdata = {
                     Bronze: " ",
                 },
             ]
-    },
+        },
         Technology: [
             {
                 Event: "Overall",
@@ -1051,14 +1051,14 @@ const InterIITdata = {
             }
         ],
         Socult: [
-            
+
         ]
     },
     "2021-22": {
-        Sports: 
+        Sports:
         {
             // MALE STANDINGS
-            Male:[
+            Male: [
                 {
                     Sport: "EVENTS CANCELLED DUE TO COVID-19",
                     Gold: " ",
@@ -1067,7 +1067,7 @@ const InterIITdata = {
                 },
             ],
             // FEMALE STANDINGS
-            Female:[
+            Female: [
                 {
                     Sport: "EVENTS CANCELLED DUE TO COVID-19",
                     Gold: " ",
@@ -1075,7 +1075,7 @@ const InterIITdata = {
                     Bronze: " ",
                 },
             ]
-    },
+        },
         Technology: [
             {
                 Event: "Overall",
@@ -1094,10 +1094,10 @@ const InterIITdata = {
         ]
     },
     "2022-23": {
-        Sports: 
+        Sports:
         {
             // MALE STANDINGS
-            Male:[
+            Male: [
                 {
                     Sport: " ",
                     Gold: " ",
@@ -1106,7 +1106,7 @@ const InterIITdata = {
                 },
             ],
             // FEMALE STANDINGS
-            Female:[
+            Female: [
                 {
                     Sport: " ",
                     Gold: " ",
@@ -1114,7 +1114,7 @@ const InterIITdata = {
                     Bronze: " ",
                 },
             ]
-    },
+        },
         Technology: [
             {
                 Event: "Overall",
@@ -1179,7 +1179,89 @@ const InterIITdata = {
                 Bronze: "Kharagpur",
             }
         ]
+    },
+    "2023-24": {
+        Sports: {
+            Male: [],
+            Female: []
+        },
+        Technology: [],
+        Socult: [
+            {
+                Event: "Overall",
+                Gold: "IIT Kharagpur",
+                Silver: "IIT Bombay",
+                Bronze: "IIT Roorkee"
+            },
+            {
+                Event: "Quiz",
+                Gold: "IIT Madras",
+                Silver: "IIT Kharagpur",
+                Bronze: "IIT Bombay"
+            },
+            {
+                Event: "Literary Arts",
+                Gold: "IIT Bombay",
+                Silver: "IIT Kharagpur",
+                Bronze: "IIT Madras"
+            },
+            {
+                Event: "Speaking and Comedic Arts",
+                Gold: "IIT Kharagpur",
+                Silver: "IIT Kanpur",
+                Bronze: "IIT Roorkee"
+            },
+            {
+                Event: "Dance Arts",
+                Gold: "IIT Bombay",
+                Silver: "IIT Guwahati",
+                Bronze: "IIT Dhanbad"
+            },
+            {
+                Event: "Musical Arts",
+                Gold: "IIT Kharagpur",
+                Silver: "IIT Kanpur",
+                Bronze: "IIT Bombay"
+            },
+            {
+                Event: "Theatre Arts",
+                Gold: "IIT Kharagpur",
+                Silver: "IIT Bombay",
+                Bronze: "IIT Guwahati"
+            },
+            {
+                Event: "Filmmaking",
+                Gold: "IIT Bombay",
+                Silver: "IIT Kharagpur",
+                Bronze: "IIT Guwahati"
+            },
+            {
+                Event: "Fine Arts",
+                Gold: "IIT Kharagpur",
+                Silver: "IIT BHU",
+                Bronze: "IIT Delhi"
+            },
+            {
+                Event: "Digital Arts",
+                Gold: "IIT Kharagpur",
+                Silver: "IIT BHU",
+                Bronze: "IIT Patna"
+            },
+            {
+                Event: "Fashion",
+                Gold: "IIT Roorkee",
+                Silver: "IIT Kharagpur",
+                Bronze: "IIT Bombay"
+            },
+            {
+                Event: "Culinary Arts",
+                Gold: "IIT Bombay",
+                Silver: "IIT Guwahati",
+                Bronze: "IIT Mandi"
+            }
+        ]
     }
+
 };
 
 export default InterIITdata;
