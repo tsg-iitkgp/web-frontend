@@ -31,7 +31,7 @@ const LoginScreen = ({ history }) => {
 
     try {
       const { data } = await axios.post(
-        `${host}/login`,
+        `${host}/user/login`,
         { email, password },
         config
       );
