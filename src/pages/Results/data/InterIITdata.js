@@ -1179,7 +1179,83 @@ const InterIITdata = {
                 Bronze: "Kharagpur",
             }
         ]
-    }
+    },
+    "2023-24": {
+    Sports: {
+        Male: [],
+            Female: []
+    },
+    Technology: [],
+        Socult: [
+        {
+            Event: "Quiz",
+            Gold: "IIT Madras",
+            Silver: "IIT Kharagpur",
+            Bronze: "IIT Bombay"
+        },
+        {
+            Event: "Literary Arts",
+            Gold: "IIT Bombay",
+            Silver: "IIT Kharagpur",
+            Bronze: "IIT Madras"
+        },
+        {
+            Event: "Speaking and Comedic Arts",
+            Gold: "IIT Kharagpur",
+            Silver: "IIT Kanpur",
+            Bronze: "IIT Roorkee"
+        },
+        {
+            Event: "Dance Arts",
+            Gold: "IIT Bombay",
+            Silver: "IIT Guwahati",
+            Bronze: "IIT Dhanbad"
+        },
+        {
+            Event: "Musical Arts",
+            Gold: "IIT Kharagpur",
+            Silver: "IIT Kanpur",
+            Bronze: "IIT Bombay"
+        },
+        {
+            Event: "Theatre Arts",
+            Gold: "IIT Kharagpur",
+            Silver: "IIT Bombay",
+            Bronze: "IIT Guwahati"
+        },
+        {
+            Event: "Filmmaking",
+            Gold: "IIT Bombay",
+            Silver: "IIT Kharagpur",
+            Bronze: "IIT Guwahati"
+        },
+        {
+            Event: "Fine Arts",
+            Gold: "IIT Kharagpur",
+            Silver: "IIT BHU",
+            Bronze: "IIT Delhi"
+        },
+        {
+            Event: "Digital Arts",
+            Gold: "IIT Kharagpur",
+            Silver: "IIT BHU",
+            Bronze: "IIT Patna"
+        },
+        {
+            Event: "Fashion",
+            Gold: "IIT Roorkee",
+            Silver: "IIT Kharagpur",
+            Bronze: "IIT Bombay"
+        },
+        {
+            Event: "Culinary Arts",
+            Gold: "IIT Bombay",
+            Silver: "IIT Guwahati",
+            Bronze: "IIT Mandi"
+        }
+    ]
+}
+
 };
 
 export default InterIITdata;
