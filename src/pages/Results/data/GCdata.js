@@ -1756,6 +1756,83 @@ const GCdata = {
         Bronze: ""
       }
     ]
+  },
+  "2024-25": {
+    Sports: {
+      Male: [
+        {
+          Sport: "Overall",
+          Gold: "",
+          Silver: "",
+          Bronze: ""
+        }
+      ],
+      Female: [
+        {
+          Sport: "Overall",
+          Gold: "",
+          Silver: "",
+          Bronze: ""
+        }
+      ]
+    },
+    Technology: [],
+    Socult: [
+      {
+        Event: "Overall",
+        Gold: "SN/IG",
+        Silver: "Azad",
+        Bronze: "MMM"
+      },
+      {
+        Event: "Cartooning",
+        Gold: "Azad",
+        Silver: "SN/IG",
+        Bronze: "SNVH"
+      },
+      {
+        Event: "English Elocution",
+        Gold: "RP",
+        Silver: "SN/IG",
+        Bronze: "MMM"
+      },
+      {
+        Event: "Sketching",
+        Gold: "RP",
+        Silver: "Azad",
+        Bronze: "Nehru"
+      },
+      {
+        Event: "Eastern Instrumentals",
+        Gold: "LBS",
+        Silver: "Nehru",
+        Bronze: "MS"
+      },
+      {
+        Event: "Street Play",
+        Gold: "MMM",
+        Silver: "Patel",
+        Bronze: "RK"
+      },
+      {
+        Event: "Eastern vocals",
+        Gold: "SN/IG",
+        Silver: "Nehru",
+        Bronze: "BRH"
+      },
+      {
+        Event: "Painting",
+        Gold: "Azad",
+        Silver: "SN/IG",
+        Bronze: "JCB"
+      },
+      {
+        Event: "Western Instrumentals",
+        Gold: "VS",
+        Silver: "JCB",
+        Bronze: "RK"
+      }
+    ]
   }
 };
 
