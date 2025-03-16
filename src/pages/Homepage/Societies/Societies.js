@@ -3,6 +3,7 @@ import RotatingCard from "../../../components/RotatingCards/RotatingCard";
 import Styles from "../../../styles/pages/home.module.css";
 import CardsStyles from "../../../styles/components/soc.module.css";
 import Data from "../../../data/soc";
+import TabsComponent from "../../../components/tabs/tab_component";
 import { Link } from "react-router-dom";
 export default function Societies() {
   return (
