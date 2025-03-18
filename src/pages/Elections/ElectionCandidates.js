@@ -25,6 +25,7 @@ export default function Elections() {
             color: "#f1c40f",
             fontFamily: "Lato",
             fontWeight: "600",
+            marginTop: "5rem",
           }}
           align="center"
         >
@@ -80,7 +81,7 @@ export default function Elections() {
                     name={candidate.Name}
                     imgSrc={`/data/media/images/elections/${candidate.img}`}
                     designation={designation}
-                    proposalLink={candidate.RollNo}
+                    proposalLink={candidate.ProposalLink}
                     post={post}
                   />
                 );

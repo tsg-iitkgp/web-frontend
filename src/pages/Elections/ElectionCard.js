@@ -21,6 +21,7 @@ function ElectionCard({
         <ul className={Styles.sociallinks}>
           <li></li>
           <li>
+       {proposalLink ? (
             <a
               href={`/data/media/files/proposals/${proposalLink}.pdf`}
               target="_blank"
@@ -29,6 +30,14 @@ function ElectionCard({
             >
               <MenuBookIcon />
             </a>
+          ) : (
+            <a
+              alt={`Proposal not submitted`}
+              title={`Proposal not submitted`}
+            >
+              <MenuBookIcon color="disabled" />
+            </a>
+          )}
           </li>
           <li></li>
         </ul>
