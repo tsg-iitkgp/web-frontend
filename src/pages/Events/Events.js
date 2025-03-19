@@ -55,7 +55,7 @@ export default function Events() {
           if (responseData.data.length === 0) {
             setNoMoreEvents(true);
           }
-          console.log(responseData.data)
+          console.log(responseData)
         })
         .catch((err) => {
           console.log("the error is", err);
