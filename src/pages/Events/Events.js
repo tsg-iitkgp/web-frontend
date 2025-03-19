@@ -20,61 +20,28 @@ export default function Events() {
   const [content, setContent] = useState(null);
   const [title, setTitle] = useState(null);
   const [eventResults, setEventResults] = useState(null);
-  // const [resContent, setResContent] = useState(null);
   const [image, setImage] = useState(null);
   const [index, setIndex] = useState(null);
-  const paginationNumber = 4;
-  const [eventIndex, setEventIndex] = useState({
-    startIndex: 1,
-    stopIndex: paginationNumber,
-  });
   const [events, setEvents] = useState([]);
-  const [images,setImages] = useState([]);
-  const [btnStyles, setBtnStyles] = useState("btn-warning");
-  const [noMoreEvents, setNoMoreEvents] = useState(false);
-  
-  // const [displayEvents] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const handlePosterClick = (videoLink) => {
     window.open(videoLink);
   };
   document.title = "Events | TSG";
-  // eslint-disable-next-line
-  // const highlightEvents = events.filter((event) => event.isHighlight);
-  //eslint-disable-next-line
-  // const [isHighlightOpen, setIsHighlightOpen] = useState(true);
-  //eslint-disable-next-line
   useEffect(() => {
-    setTimeout(async () => {
-      fetch(
-        `${host}/events/`
-      )
-        .then((response) => response.json())
-        .then((responseData) => {
-          setEvents(events.concat(responseData.data));
-          if (responseData.data.length === 0) {
-            setNoMoreEvents(true);
-          }
-          console.log(responseData)
-        })
-        .catch((err) => {
-          console.log("the error is", err);
-        });
-    }); 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setLoading(true);
+    fetch(`${host}/events/`)
+      .then((response) => response.json())
+      .then((responseData) => {
+        setEvents(responseData.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log("the error is", err);
+        setLoading(false);
+      });
   }, []);
-  
-  
-
-  useEffect(() => {
-    if (noMoreEvents) {
-      setBtnStyles("btn-secondary");
-    }
-  }, [noMoreEvents]);
-
-  useEffect(() => {
-    setTimeout(async () => {});
-  });
 
   return (
     <Layout>
@@ -140,25 +107,15 @@ export default function Events() {
           </section>
         </section>
 
-
-        
-        <div className={Styles.mainContainer}>
+        {(loading || events?.length) && <div className={Styles.mainContainer}>
           {/* Upcoming Events Container */}
 
           <div className={Styles.categoryContainer} data-aos="zoom-in-up">
             <h2 className={Styles.categoryHeading2}>Events</h2>
             <div className={Styles.cardsWrapper}>
-              {events &&
+              {!loading && events?.length &&
                 events.map((event, index) => {
-                  // Earlier code had a problem with the URL so we hard coded it in line number 157
-                  // let imgSrc = null;
-                  // if (event.image) {
-                  //   imgSrc = `data:${event.image.imageMimeType};base64,${Buffer.from(
-                  //     event.image
-                  //   ).toString("base64")}`;
-                  // }
                   let imgSrc = `https://gymkhana.iitkgp.ac.in${event.image}`;
-                  console.log(imgSrc);
                   return (
                     <EventCard
                       key={event.id}
@@ -177,13 +134,12 @@ export default function Events() {
                         setShowRes(true);
                         setTitle(event.title);
                         setIndex(event.id);
-                        // console.log(`The title is ${title} id = ${event.id}`);
                       }}
                       setEventResults={setEventResults}
                     />
                   );
                 })}
-              {!events.length && (
+              {loading && (
                 <div>
                   <SkeletonElement type="thumbnail" />
                   <SkeletonElement type="thumbnail" />
@@ -191,23 +147,9 @@ export default function Events() {
                   <SkeletonElement type="thumbnail" />
                 </div>
               )}
-
-              <button
-                style={{ width: "30%" }}
-                className={`m-auto btn ${btnStyles} text-white`}
-                disabled={noMoreEvents}
-                onClick={() => {
-                  setEventIndex({
-                    startIndex: eventIndex.startIndex + paginationNumber,
-                    stopIndex: eventIndex.stopIndex + paginationNumber,
-                  });
-                }}
-              >
-                See More Events
-              </button>
             </div>
           </div>
-        </div> 
+        </div>}
       </div>
     </Layout>
   );

@@ -21,7 +21,7 @@ export default function Elections() {
           align="center"
         >
           {" "}
-          TSG Elections 2024-2025
+          TSG Elections 2025-2026
         </Typography>
         <Box className={Styles.electionBody}>
           <Typography variant="body2">
@@ -35,7 +35,7 @@ export default function Elections() {
             Election is as follows:
           </Typography>
           <Typography variant="body2">
-            <b>Date of Election:</b> 13th April 2024 (Saturday) <br />
+            <b>Date of Election:</b> 6th April 2025 (Saturday) <br />
             <b>Time of Election:</b> 8:00 AM to 6:00 PM <br />
             <b>Venue:</b> Computer & Informatics Center (CIC), Takshashila, IIT
             Kharagpur <br />
@@ -48,7 +48,7 @@ export default function Elections() {
         <Box className={Styles.electionBody}>
           <Typography variant="h5">Notices:</Typography>
           <Box className={Styles.notices}>
-            <Typography className={Styles.notice}>
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 View Votes of Candidates
                 </div>
@@ -92,7 +92,7 @@ export default function Elections() {
                   View Schedule <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
+            </Typography> */}
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
               Final List of Candidates for TSG Election (2023-24)
@@ -120,7 +120,7 @@ export default function Elections() {
               Complex, IIT Kharagpur
               </div>
             </Typography> */}
-            <Typography className={Styles.notice}>
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 Proposals of Candidates
               </div>
@@ -144,14 +144,14 @@ export default function Elections() {
                   View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
+            </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                TSG Election (2024-2025) Notification
+                TSG Election (2025-2026) Notification
               </div>
               <Button>
                 <a
-                  href="/data/media/files/revised_election_schedule_2024.pdf"
+                  href="/data/media/files/Election 2025-26.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -162,16 +162,16 @@ export default function Elections() {
             </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                Election Officer (2024 - 2025)
+                Election Officer (2025 - 2026)
               </div>
               <Button>
                 <a
-                  href="mailto:probal@gg.iitkgp.ac.in"
+                  href="mailto:samantaray@mech.iitkgp.ac.in"
                   lat="eo_mail"
                   target="_blank"
                   rel="noopener"
                 >
-                  Prof. Probal Sengupta &nbsp; <LaunchIcon />
+                  Prof. Arun Kumar Samantaray &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>
@@ -232,7 +232,7 @@ export default function Elections() {
             <Button>
               {" "}
               <a
-                href="/data/media/files/Rules_2024-25.pdf"
+                href="/data/media/files/Rules 2025-26.pdf"
                 alt="notification"
                 target="_blank"
               >

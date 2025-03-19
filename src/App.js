@@ -31,8 +31,7 @@ import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
-
-import LetterToMe from "./pages/LetterToMe/LetterToMe"
+import LetterToYou from "./pages/LetterToYou/LetterToYou"
 import SocietyForm from "./pages/SocReg/form";
 
 
@@ -46,7 +45,7 @@ function App() {
         <Switch>
           {/* Admin Routes */}
           <Route exact path="/login" component={Login} />
-          <Route exact path="/letter-to-me" component={LetterToMe} />
+          <Route exact path="/letter-to-you" component={LetterToYou} />
           <Route exact path="/socReg" component={SocietyForm} />
           <PrivateRoute exact path="/admin" component={Dashboard} />
           <PrivateRoute exact path="/admin/certificate" component={CertifGen} />
@@ -76,8 +75,8 @@ function App() {
           <Route exact path="/ContactUs" component={ContactUs} />
 
           {/* Election Routes */}
-          {/* <Route exact path="/elections" component={Elections} />
-          <Route exact path="/elections/candidates" component={ElectionCandidates} /> */}
+          <Route exact path="/elections" component={Elections} />
+          {/* <Route exact path="/elections/candidates" component={ElectionCandidates} /> */}
           
           {/* Nominations Route */}
           {/* <Route exact path="/nominations" component={Nominations} /> */}

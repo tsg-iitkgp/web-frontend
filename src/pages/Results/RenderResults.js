@@ -4,6 +4,8 @@ import GC from "./data/GCdata";
 import InterIITdata from "./data/InterIITdata";
 
 const years = [
+  "2024-25",
+  "2023-24",
   "2022-23",
   "2021-22",
   "2020-21",
