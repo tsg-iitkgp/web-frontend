@@ -33,7 +33,7 @@ import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
 import LetterToYou from "./pages/LetterToYou/LetterToYou"
 import SocietyForm from "./pages/SocReg/form";
-// import SocietyLayout from "./pages/Societies/SocietyLayout";
+
 
 function App() {
   useEffect(() => {

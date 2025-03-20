@@ -39,9 +39,9 @@ const Popup = (props) => {
                             <div className="popup-content text">
                                 <div className='content-date'>{props.content.dates}</div> <br />
                                 <div className='content-description'>{props.content.description}</div> <br />
-                                <div className={showLink1}><span style={{ color: '#f1c40f' }}>Registration Link :</span> <a href={props.content.link1} target="_blank" rel='noreferrer'> Link </a></div>
-                                <div className={showLink2}><span style={{ color: '#f1c40f' }}>Facebook Post Link :</span> <a href={props.content.link2} target="_blank" rel='noreferrer'> Link </a></div>
-                                <div className={showLink3}><span style={{ color: '#f1c40f' }}>Rules and Regulations :</span> <a href={props.content.link3} target="_blank" rel='noreferrer'> Link </a></div>
+                                <div className={showLink1}><span style={{ color: '#f1c40f' }}>Registration Link :</span> <a href={props.content.registrationLink} target="_blank" rel='noreferrer'> {props.content.registrationLink?props.content.registrationLink:"N/A"} </a></div>
+                                <div className={showLink2}><span style={{ color: '#f1c40f' }}>Facebook Post Link :</span> <a href={props.content.fbPostLink} target="_blank" rel='noreferrer'> {props.content.fbPostLink?props.content.fbPostLink:"N/A"} </a></div>
+                                <div className={showLink3}><span style={{ color: '#f1c40f' }}>Rules and Regulations :</span> <a href={props.content.rulesAndRegulationLink} target="_blank" rel='noreferrer'>{props.content.rulesAndRegulationLink?props.content.rulesAndRegulationLink:"N/A"}</a></div>
                             </div>
                         </div>
                     </div>
