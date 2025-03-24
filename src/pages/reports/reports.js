@@ -7,14 +7,7 @@ const AllReports = () => {
     // State management
     const [activeTab, setActiveTab] = useState("all");
     const [currentPage, setCurrentPage] = useState(1);
-    const [noticesData,setNotices] = useState([  {
-        _id: "1",
-        uploadedReportId: "https://example.com/reports/notice1.pdf",
-        date: "2025-03-20T10:00:00Z",
-        title: "Annual Meeting Notice",
-        category: "general"
-      },
-     ]);
+    const [noticesData,setNotices] = useState([]);
     const noticesPerPage = 5;
 
     useEffect(()=>{
