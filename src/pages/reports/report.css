@@ -23,7 +23,7 @@
   /* Tabs styling */
   .tabs {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 20px;
     border-bottom: 1px solid #333;
     overflow-x: auto;
@@ -97,29 +97,23 @@
 }
   .notice-category {
     padding: 4px 8px;
-    border-radius: 12px;
     font-size: 12px;
     font-weight: bold;
-    color: black;
-    background-color: #FFD700;
-
-  }
+    color:  #FFD700;
+    background-color:transparent;
+    box-shadow: 0 0 0 2px  #FFD700; /* Adjust thickness by changing 4px */
+    border-radius: 8px; 
+    }
   
-  .notice-category.important {
-    background-color: #FFD700; /* Golden yellow */
-  }
-  
-  .notice-category.exam {
-    background-color: #FFC107; /* Amber */
-  }
-  
-  .notice-category.academic {
-    background-color: #FFEB3B; /* Yellow */
-  }
-  
-  .notice-category.general {
-    background-color: #FFF59D; /* Light yellow */
-  }
+.notice-download{
+  padding: 4px 8px;
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color:  black;
+  background-color: #FFD700;
+  border-radius: 8px; 
+}
   
   /* Empty state message */
   .empty-state {
