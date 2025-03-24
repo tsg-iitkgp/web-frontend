@@ -1260,6 +1260,93 @@ const InterIITdata = {
                 Bronze: "IIT Mandi"
             }
         ]
+    },
+    "2024-25": {
+        Sports: {
+            Male: [],
+            Female: []
+        },
+        Technology: [],
+        Socult: [
+            {
+                Event: "Overall",
+                Gold: "IIT Bombay",
+                Silver: "IIT Kharagpur",
+                Bronze: "IIT Delhi"
+            },
+            {
+                Event: "Speaking Arts",
+                Gold: "IIT Madras",
+                Silver: "IIT Delhi",
+                Bronze: "IIT Kharagpur"
+            },
+            {
+                Event: "Dance Arts",
+                Gold: "IIT Kanpur",
+                Silver: "IIT Bombay",
+                Bronze: "IIT (BHU) Varanasi"
+            },
+            {
+                Event: "Fine Arts",
+                Gold: "IIT Bombay",
+                Silver: "IIT Patna",
+                Bronze: "IIT Delhi"
+            },
+            {
+                Event: "Literary Arts",
+                Gold: "IIT Madras",
+                Silver: "IIT Bombay",
+                Bronze: "IIT Patna"
+            },
+            {
+                Event: "Music Arts",
+                Gold: "IIT Bombay",
+                Silver: "IIT Guwahati",
+                Bronze: "IIT Roorkee"
+            },
+            {
+                Event: "Theatre Arts",
+                Gold: "IIT Kharagpur",
+                Silver: "IIT Bombay",
+                Bronze: "IIT Delhi"
+            },
+            {
+                Event: "Quiz",
+                Gold: "IIT Madras",
+                Silver: "IIT Kharagpur",
+                Bronze: "IIT Delhi"
+            },
+            {
+                Event: "Culinary",
+                Gold: "IIT Patna",
+                Silver: "IIT Palakkad",
+                Bronze: "IIT Bombay"
+            },
+            {
+                Event: "Comedy",
+                Gold: "IIT Bombay",
+                Silver: "IIT Kharagpur",
+                Bronze: "IIT Madras"
+            },
+            {
+                Event: "Filmmaking",
+                Gold: "IIT Roorkee",
+                Silver: "IIT Guwahati",
+                Bronze: "IIT Kanpur"
+            },
+            {
+                Event: "Digital Arts",
+                Gold: "IIT Kharagpur",
+                Silver: "IIT Kanpur",
+                Bronze: "IIT (BHU) Varanasi"
+            },
+            {
+                Event: "Fashion",
+                Gold: "IIT Bombay",
+                Silver: "IIT Roorkee",
+                Bronze: "IIT Guwahati"
+            }
+        ]
     }
 
 };
