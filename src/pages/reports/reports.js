@@ -7,22 +7,15 @@ const AllReports = () => {
     // State management
     const [activeTab, setActiveTab] = useState("all");
     const [currentPage, setCurrentPage] = useState(1);
-    const [noticesData,setNotices] = useState([  {
-        _id: "1",
-        uploadedReportId: "https://example.com/reports/notice1.pdf",
-        date: "2025-03-20T10:00:00Z",
-        title: "Annual Meeting Notice",
-        category: "general"
-      },
-     ]);
-    const noticesPerPage = 5;
+    const [reportsData,setReports] = useState([]);
+    const reportsPerPage = 10;
 
     useEffect(()=>{
        fetch(`${host}/reports/get-report`)
         .then(async(res)=>{
             if(res.ok){
             const response= await res.json()
-            setNotices(response.report)
+            setReports(response.report)
             }
         }).catch((e)=>{
             console.log(e)
@@ -30,16 +23,16 @@ const AllReports = () => {
 
     },[activeTab,currentPage])
 
-    // Filter notices based on active tab
-    const filteredNotices = activeTab === "all"
-        ? noticesData
-        : noticesData.filter(notice => notice.category === activeTab);
+    // Filter reports based on active tab
+    const filteredReports = activeTab === "all"
+        ? reportsData
+        : reportsData.filter(report => report.category === activeTab);
 
     // Pagination logic
-    const indexOfLastNotice = currentPage * noticesPerPage;
-    const indexOfFirstNotice = indexOfLastNotice - noticesPerPage;
-    const currentNotices = filteredNotices.slice(indexOfFirstNotice, indexOfLastNotice);
-    const totalPages = Math.ceil(filteredNotices.length / noticesPerPage);
+    const indexOfLastReport = currentPage * reportsPerPage;
+    const indexOfFirstReport = indexOfLastReport - reportsPerPage;
+    const currentReports = filteredReports.slice(indexOfFirstReport, indexOfLastReport);
+    const totalPages = Math.ceil(filteredReports.length / reportsPerPage);
 
     // Handle page change
     const handlePageChange = (pageNumber) => {
@@ -47,27 +40,27 @@ const AllReports = () => {
     };
 
     // Handle tab change
-    const handleTabChange = (tab) => {
-        console.log(tab)
-        setActiveTab(tab);
-        setCurrentPage(1); // Reset to first page when changing tabs
-    };
+    // const handleTabChange = (tab) => {
+    //     console.log(tab)
+    //     setActiveTab(tab);
+    //     setCurrentPage(1); // Reset to first page when changing tabs
+    // };
 
 
 
     return (
         <Layout>
-        <div className="notices-container">
-            <h1>Notices</h1>
+        <div className="reports-container">
+            <h1>Reports</h1>
 
             {/* Tab Navigation */}
             <div className="tabs">
-                <button
+                {/* <button
                     className={activeTab === "all" ? "tab active" : "tab"}
                     onClick={() => handleTabChange("all")}
                 >
-                    All Notices
-                </button>
+                    All Reports
+                </button> */}
                 {/* <button
                     className={activeTab === "cultural" ? "tab active" : "tab"}
                     onClick={() => handleTabChange("cultural")}
@@ -94,36 +87,36 @@ const AllReports = () => {
                 </button> */}
             </div>
 
-            {/* Notices List */}
-            <div className="notices-list">
-                {currentNotices.length > 0 ? (
-                    currentNotices.map(notice =>{ 
-                        const urlArrray= notice.uploadedReportId.split("/")
+            {/* Reports List */}
+            <div className="reports-list">
+                {currentReports.length > 0 ? (
+                    currentReports.map(report =>{ 
+                        const urlArrray= report.uploadedReportId.split("/")
                         const modifiedArray= urlArrray.slice(2,);
                         const url= modifiedArray.join('/');
                        
-                        const date = new Date(notice.date);
+                        const date = new Date(report.date);
                         const options = { weekday: "short", month: "short", day: "2-digit", year: "numeric" };
                         const formattedDate = date.toLocaleDateString("en-US", options).replace(',', '');
                        return (
 
-                        <div key={notice._id} className="notice-item">
-                            <div className="notice-date">{formattedDate}</div>
-                            <div className="notice-title">{notice.title}</div>
-                           {activeTab==="all" ? <span className={`notice-category ${notice.category}`}>
-                                {notice.category.charAt(0).toUpperCase() + notice.category.slice(1)}
+                        <div key={report._id} className="report-item">
+                            <div className="report-date">{formattedDate}</div>
+                            <div className="report-title">{report.title}</div>
+                           {activeTab==="all" ? <span className={`report-category ${report.category}`}>
+                                {report.category.charAt(0).toUpperCase() + report.category.slice(1)}
                             </span>: null}
-                            <a href={`${host}/${url}`} className="notice-download">Download</a>
+                            <a href={`${host}/${url}`} className="report-download">Download</a>
                         </div>
                         
                     )})
                 ) : (
-                    <div className="empty-state">No notices available in this category.</div>
+                    <div className="empty-state">No reports available in this category.</div>
                 )}
             </div>
 
             {/* Pagination */}
-            {filteredNotices.length > 0 && (
+            {filteredReports.length > 0 && (
                 <div className="pagination">
                     <button
                         className="page-btn prev"

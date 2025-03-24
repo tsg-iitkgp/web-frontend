@@ -1,5 +1,5 @@
 /* Main container styling */
-.notices-container {
+.reports-container {
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 100px;
@@ -59,12 +59,12 @@
     background-color: #FFD700;
   }
   
-  /* Notices list styling */
-  .notices-list {
+  /* reports list styling */
+  .reports-list {
     margin-bottom: 20px;
   }
   
-  .notice-item {
+  .report-item {
     padding: 15px;
     border: 1px solid #333;
     border-radius: 4px;
@@ -75,18 +75,18 @@
     background-color: #1e1e1e;
   }
   
-  .notice-item:hover {
+  .report-item:hover {
     box-shadow: 0 2px 8px rgba(255, 215, 0, 0.2);
     border-color: #FFD700;
   }
   
-  .notice-date {
+  .report-date {
     min-width: 100px;
     color: #999;
     font-size: 14px;
   }
   
-  .notice-title {
+  .report-title {
     flex: 1;
     font-weight: 500;
     margin: 0 15px;
@@ -95,7 +95,7 @@
   a {
     text-decoration: none;
 }
-  .notice-category {
+  .report-category {
     padding: 4px 8px;
     font-size: 12px;
     font-weight: bold;
@@ -105,9 +105,9 @@
     border-radius: 8px; 
     }
   
-.notice-download{
+.report-download{
   padding: 4px 8px;
-  margin-left: 12px;
+  margin-left: 30px;
   font-size: 12px;
   font-weight: bold;
   color:  black;
@@ -198,16 +198,16 @@
       white-space: nowrap;
     }
     
-    .notice-item {
+    .report-item {
       flex-direction: column;
       align-items: flex-start;
     }
     
-    .notice-date {
+    .report-date {
       margin-bottom: 5px;
     }
     
-    .notice-title {
+    .report-title {
       margin: 5px 0;
       width: 100%;
     }
