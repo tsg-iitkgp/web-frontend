@@ -1,4 +1,4 @@
-import { Typography, Container, Box, Button } from "@material-ui/core";
+import { Typography, Container, Box, Button, CircularProgress } from "@material-ui/core";
 
 import React, { useState } from "react";
 import Styles from "./nominations.module.css";
@@ -7,16 +7,18 @@ export default function Nominations() {
   document.title = "Nominations 2024-2025 | TSG";
 
   const [currentTab, setCurrentTab] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const tabFormUrls = {
-    "Public Relations' Chairperson": "https://forms.gle/xfKYEfavCnthN2Aj7",
-    "Technology Coordinators": "https://forms.gle/h1BWG1DKGDGt4zQW7",
-    Editor: "https://forms.gle/CFBc8UhAcCLa1vi86",
-    "Institute Girls' Sports Nominee": "https://forms.gle/DNtiJXFY3z42qrrx7",
+    "Public Relations' Chairperson": "https://forms.gle/26D1EfaycHzHftca9",
+    "Technology Coordinators": "https://forms.gle/HSRmquLEUuzrNRTy6",
+    "Editors": "https://forms.gle/6GcDdCe2gCPepfqKA",
+    "Institute Girls' Sports Nominee": "https://forms.gle/r42APyuWTPx81RE66",
   };
 
   const handleTabChange = (s) => {
     setCurrentTab(s);
+    setLoading(true); // Set loading to true when a new tab is selected
   };
 
   return (
@@ -34,45 +36,47 @@ export default function Nominations() {
           }}
           align="center"
         >
-          Applications - Nominated Office Bearers (2024-2025)
+          Applications - Nominated Office Bearers (2025-2026)
         </Typography>
 
         <Box className={Styles.electionBody}>
           <Typography className={Styles.notice}>
             <Box className={Styles.buttonGroup}>
               {Object.keys(tabFormUrls).map((tab, index) => (
-                // <div
-                //   key={tab}
-                //   id={`tab-${index}`}
-                //   className={`nomination-tab tab ${
-                //     currentTab === tab ? "active" : ""
-                //   }`}
-                //   style={{ width: "20%", textAlign: "center" }}
-                //   onClick={() => handleTabChange(tab)}
-                // >
-                //   <button className="btn btn-warning">{tab}</button>
-                // </div>
-                // {" "}
-                <Button key={index}>
-                  <a onClick={() => handleTabChange(tab)}>{tab}</a>
+                <Button key={index} onClick={() => handleTabChange(tab)}>
+                  <a>{tab}</a>
                 </Button>
               ))}
             </Box>
           </Typography>
         </Box>
-        
+
         <div>
-          <iframe
-            title={currentTab}
-            src={tabFormUrls[currentTab]}
-            width="1200"
-            height="1717"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-          >
-            Loading…
-          </iframe>
+          {currentTab ? (
+            <>
+              {loading && (
+                <Box display="flex" justifyContent="center" alignItems="center" padding="2rem">
+                  <CircularProgress />
+                  <Typography variant="h6" className={Styles.loadingStateLabel}>
+                    Loading...
+                  </Typography>
+                </Box>
+              )}
+              <iframe
+                title={currentTab}
+                src={tabFormUrls[currentTab]}
+                onLoad={() => setLoading(false)}
+                className={`${Styles.loadingStateLabel} ${Styles.googleForm}`}
+                style={{ display: loading ? 'none' : 'block' }}
+              >
+                Loading…
+              </iframe>
+            </>
+          ) : (
+            <Typography variant="h6" align="center" className={Styles.loadingStateLabel}>
+              Please select a position to view its nomination form
+            </Typography>
+          )}
         </div>
       </Container>
     </Layout>
