@@ -33,6 +33,7 @@ import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
 import LetterToYou from "./pages/LetterToYou/LetterToYou"
 import SocietyForm from "./pages/SocReg/form";
+import allReports from "./pages/reports/reports"
 // import SocietyLayout from "./pages/Societies/SocietyLayout";
 
 function App() {
@@ -86,6 +87,9 @@ function App() {
 
           {/* Certifgen2.0 Route */}
           <Route exact path="/certifgen/view/:id" component={ViewCertificate} />
+
+          <Route exact path="/reports" component={allReports} />
+
 
           {/* 404 - Not Found Route */}
           {/* <Route component={NotFound} /> */}
