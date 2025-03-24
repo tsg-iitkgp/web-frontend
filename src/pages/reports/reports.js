@@ -7,7 +7,14 @@ const AllReports = () => {
     // State management
     const [activeTab, setActiveTab] = useState("all");
     const [currentPage, setCurrentPage] = useState(1);
-    const [noticesData,setNotices] = useState([]);
+    const [noticesData,setNotices] = useState([  {
+        _id: "1",
+        uploadedReportId: "https://example.com/reports/notice1.pdf",
+        date: "2025-03-20T10:00:00Z",
+        title: "Annual Meeting Notice",
+        category: "general"
+      },
+     ]);
     const noticesPerPage = 5;
 
     useEffect(()=>{
@@ -61,7 +68,7 @@ const AllReports = () => {
                 >
                     All Notices
                 </button>
-                <button
+                {/* <button
                     className={activeTab === "cultural" ? "tab active" : "tab"}
                     onClick={() => handleTabChange("cultural")}
                 >
@@ -84,7 +91,7 @@ const AllReports = () => {
                     onClick={() => handleTabChange("sports")}
                 >
                     sports
-                </button>
+                </button> */}
             </div>
 
             {/* Notices List */}
@@ -99,15 +106,16 @@ const AllReports = () => {
                         const options = { weekday: "short", month: "short", day: "2-digit", year: "numeric" };
                         const formattedDate = date.toLocaleDateString("en-US", options).replace(',', '');
                        return (
-                        <a href={`${host}/${url}`}>
+
                         <div key={notice._id} className="notice-item">
                             <div className="notice-date">{formattedDate}</div>
                             <div className="notice-title">{notice.title}</div>
                            {activeTab==="all" ? <span className={`notice-category ${notice.category}`}>
                                 {notice.category.charAt(0).toUpperCase() + notice.category.slice(1)}
                             </span>: null}
+                            <a href={`${host}/${url}`} className="notice-download">Download</a>
                         </div>
-                        </a>
+                        
                     )})
                 ) : (
                     <div className="empty-state">No notices available in this category.</div>
