@@ -4,9 +4,8 @@ import React from "react";
 import Layout from "../../components/Layouts/Layout";
 import Styles from "./elections.module.css";
 import LaunchIcon from "@material-ui/icons/Launch";
-import { Link } from "react-router-dom";
 export default function Elections() {
-  document.title = "Elections 2024-2025 | TSG";
+  document.title = "Elections 2025-2026 | TSG";
   return (
     <Layout>
       <div className={Styles.electionHeaderImg}></div>
