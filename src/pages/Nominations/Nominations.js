@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Styles from "./nominations.module.css";
 import Layout from "../../components/Layouts/Layout";
 export default function Nominations() {
-  document.title = "Nominations 2024-2025 | TSG";
+  document.title = "Nominations 2025-2026 | TSG";
 
   const [currentTab, setCurrentTab] = useState(null);
   const [loading, setLoading] = useState(false);
