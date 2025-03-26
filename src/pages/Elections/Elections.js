@@ -168,27 +168,27 @@ export default function Elections() {
                   href="mailto:samantaray@mech.iitkgp.ac.in"
                   lat="eo_mail"
                   target="_blank"
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   Prof. Arun Kumar Samantaray &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>
-            {/* <Typography className={Styles.notice}>
+            <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-              Provisional List of Candidates for TSG Election (2024-25)
+                Provisional List of Candidates for TSG Election (2025-26)
               </div>
               <Button>
-              <a
-              href="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
-              lat="notice"
-              target="_blank"
-              rel="noopener"
-              >
-              View List &nbsp; <LaunchIcon />
+                <a
+                  href="/data/media/files/Provisional_List_of_Candidates_for_Election_of_Office_Bearers_of_Technology_Students.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography> */}
+            </Typography>
 
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
