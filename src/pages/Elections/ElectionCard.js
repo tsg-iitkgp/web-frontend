@@ -20,16 +20,16 @@ function ElectionCard({
       {post !== "Secy" && (
         <ul className={Styles.sociallinks}>
           <li></li>
-          <li>
+          {proposalLink ? <li>
             <a
-              href={`/data/media/files/proposals/${proposalLink}.pdf`}
+              href={`/data/media/files/proposals/${proposalLink}`}
               target="_blank"
               rel="noreferrer"
               alt={`Proposal_of_${proposalLink}`}
             >
               <MenuBookIcon />
             </a>
-          </li>
+          </li> : <li>Proposal not received by TSG</li>}
           <li></li>
         </ul>
       )}

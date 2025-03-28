@@ -36,207 +36,220 @@ export const secyPosts = [
 export const candidates = {
   VP: [
     {
-      RollNo: "21AG30015",
-      Description: "AG '26",
-      Name: "Divyansh Singh Rana",
+      RollNo: "22BT10031",
+      Description: "BT '26",
+      Name: "Sudhagani Praneeth Kumar",
       Contact: "XXX XXX XXX",
-      Hall: "RP",
+      Hall: "",
       Email: "",
-      img: "DSR_VP.PNG",
+      img: "",
       Proposal: "",
-      ProposalLink: "21AG30015.pdf",
-      FacebookLink: "",
+      ProposalLink: "22BT10031.pdf",
+      FacebookLink: ""
     },
     {
-      RollNo: "21HS10044",
-      Description: "HS '25",
-      Name: "Sagar Kumar",
+      RollNo: "22BT3FP36",
+      Description: "BT '27",
+      Name: "Sreelekshmi Kishore",
       Contact: "XXX XXX XXX",
-      Hall: "LBS",
+      Hall: "",
       Email: "",
-      img: "Sagar_VP.jpeg",
+      img: "",
       Proposal: "",
-      ProposalLink: "21HS10044.pdf",
-      FacebookLink: "",
+      ProposalLink: "22BT3FP36.pdf",
+      FacebookLink: ""
     },
     {
-      RollNo: "21MA10070",
-      Description: "MA '25",
-      Name: "Devansh Jain",
+      RollNo: "22CH3EP23",
+      Description: "CH '27",
+      Name: "Amish Bhatnagar",
       Contact: "XXX XXX XXX",
-      Hall: "Patel",
+      Hall: "",
       Email: "",
-      img: "Devansh_VP.jpg",
+      img: "",
       Proposal: "",
-      ProposalLink: "21MA10070.pdf",
-      FacebookLink: "",
+      ProposalLink: "",
+      FacebookLink: ""
     },
+    {
+      RollNo: "22ME3EP10",
+      Description: "ME '27",
+      Name: "Arman Barik",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      img: "",
+      Proposal: "",
+      ProposalLink: "",
+      FacebookLink: ""
+    }
   ],
   Gsec_Sports: [
     {
-      RollNo: "22BT30014",
-      Description: "BT '27",
-      Name: "Jival Chorawala",
-      Contact: "XXX XXX XXX",
-      Hall: "Nehru",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "22BT30014.pdf",
-      FacebookLink: "",
-      img: "Jival_Sports.JPG"
-    },
-    {
-      RollNo: "22CH30033",
-      Description: "CH '27",
-      Name: "Tejashwi Kumar Jha",
-      Contact: "XXX XXX XXX",
-      Hall: "RK",
-      img: "Tejashwi_Sports.jpg",
-      Proposal: "",
-      ProposalLink: "22CH30033.pdf",
-      FacebookLink: "",
-    },
-    {
-      RollNo: "22BT10021",
-      Description: "BT '26",
-      Name: "Pranjal Paliwal",
+      RollNo: "23AG10038",
+      Description: "AG '27",
+      Name: "Serampally Sidharth Reddy",
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "22BT10021.pdf",
+      ProposalLink: "23AG10038.pdf",
       FacebookLink: "",
-      img: "Pranjal_Sports.jpg"
+      img: ""
     },
+    {
+      RollNo: "23ME30073",
+      Description: "ME '28",
+      Name: "Zalavadiya Dishil",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "",
+      FacebookLink: "",
+      img: ""
+    },
+    {
+      RollNo: "23NA10027",
+      Description: "NA '27",
+      Name: "Namanya Pant",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "",
+      FacebookLink: "",
+      img: ""
+    },
+    {
+      RollNo: "23SD11008",
+      Description: "SD '27",
+      Name: "Mayank Singh",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "",
+      FacebookLink: "",
+      img: ""
+    }
   ],
   Gsec_Socult: [
     {
-      RollNo: "22CE10062",
-      Description: "CE '26",
-      Name: "Rounak Risu",
+      RollNo: "23AG10011",
+      Description: "AG '27",
+      Name: "Archit Kumar Mawandia",
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "22CE10062.pdf",
+      ProposalLink: "23AG10011.pdf",
       FacebookLink: "",
-      img: "Rounak_Socult.jpg"
+      img: ""
     },
     {
-      RollNo: "22CE10087",
-      Description: "CE '26",
-      Name: "Yashika",
+      RollNo: "23ME10047",
+      Description: "ME '27",
+      Name: "Mantra Malpani",
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "22CE10087.pdf",
+      ProposalLink: "23ME10047.pdf",
       FacebookLink: "",
-      img: "Yashika_Socult.JPG"
+      img: ""
     },
     {
-      RollNo: "22MI10064",
-      Description: "MI '26",
-      Name: "Yesilanka Sree Aryan",
+      RollNo: "23MF3IM16",
+      Description: "MF '28",
+      Name: "Priyanshu Bhooshan",
       Contact: "XXX XXX XXX",
-      Hall: "Azad",
+      Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "22MI10064.pdf",
+      ProposalLink: "23MF3IM16.pdf",
       FacebookLink: "",
-      img: "YesilankaSreeAryan_Socult.jpg"
-    },
-    {
-      RollNo: "22NA10048",
-      Description: "NA '26",
-      Name: "Vishesh Bhagwandas Agarwal",
-      Contact: "XXX XXX XXX",
-      Hall: "RK",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "22NA10048.pdf",
-      FacebookLink: "",
-      img: "Vishesh_Socult.jpg"
-    },
+      img: ""
+    }
   ],
   Gsec_Tech: [
     {
-      RollNo: "22CH10021",
-      Description: "CH '26",
-      Name: "Devan Singh Faujdar",
-      Contact: "XXX XXX XXX",
-      Hall: "Nehru",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "22CH10021.pdf",
-      FacebookLink: "",
-      img: "Devan_Tech.jpg"
-    },
-    {
-      RollNo: "22CY10034",
-      Description: "CY '26",
-      Name: "Mandava Sai Charan Chowdary",
-      Contact: "XXX XXX XXX",
-      Hall: "LLR",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "22CY10034.pdf",
-      FacebookLink: "",
-      img: "Charan_Tech.JPG"
-    },
-    {
-      RollNo: "22MI33013",
-      Description: "MI '27",
-      Name: "Mahim Dungarwal",
-      Contact: "XXX XXX XXX",
-      Hall: "Azad",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "22MI33013.pdf",
-      FacebookLink: "",
-      img: "Mahim_Tech.jpg"
-    },
-  ],
-  Gsec_WM: [
-    {
-      RollNo: "22AR10027",
-      Description: "AR '26",
-      Name: "Shashank Tiwari",
-      Contact: "XXX XXX XXX",
-      Hall: "MS",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "22AR10027.pdf",
-      FacebookLink: "",
-      img: "ShashankTiwari_SW.jpg"
-    },
-    {
-      RollNo: "22CY10018",
-      Description: "CY '26",
-      Name: "Challa Sai Ram Reddy",
-      Contact: "XXX XXX XXX",
-      Hall: "VS",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "22CY10018.pdf",
-      FacebookLink: "",
-      img: "Sairam_SW.jpg"
-    },
-  ],
-  Gsec_WF: [
-    {
-      RollNo: "22MI10018",
-      Description: "MI '26",
-      Name: "Astha Kumari",
+      RollNo: "23HS10065",
+      Description: "HS '27",
+      Name: "Pratham Agarwal",
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "22MI10018.pdf",
+      ProposalLink: "23HS10065.pdf",
       FacebookLink: "",
-      img: "Astha_SW.JPG"
+      img: ""
     },
+    {
+      RollNo: "23IM10049",
+      Description: "IM '27",
+      Name: "Prem Pastagia",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "",
+      FacebookLink: "",
+      img: ""
+    },
+    {
+      RollNo: "23ME30086",
+      Description: "ME '28",
+      Name: "Piyush Jaiswal",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "",
+      FacebookLink: "",
+      img: ""
+    }
   ],
+  Gsec_WM: [
+    {
+      RollNo: "23SD11001",
+      Description: "SD '27",
+      Name: "Krish Varshney",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "23SD11001.pdf",
+      FacebookLink: "",
+      img: ""
+    },
+    {
+      RollNo: "23IM10040",
+      Description: "IM '27",
+      Name: "Tanush B Agarwal",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "23IM10040.pdf",
+      FacebookLink: "",
+      img: ""
+    }
+  ],
+  Gsec_WF: [
+    {
+      RollNo: "23IM30008",
+      Description: "IM '28",
+      Name: "Dnyaneshwari Ghare",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "23IM30008.pdf",
+      FacebookLink: "",
+      img: ""
+    }
+  ]
   // Secy_Aquatics: [
   //   {
   //     RollNo: "21AE10037",
