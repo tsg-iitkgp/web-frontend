@@ -128,10 +128,10 @@ export default function Elections() {
                   View Proposals &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
+            </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                Final List of Nominations for TSG Election (2024-25)
+                Final List of Nominations for TSG Election (2025-26)
               </div>
               <Button>
                 <a
@@ -143,7 +143,7 @@ export default function Elections() {
                   View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography> */}
+            </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 TSG Election (2025-2026) Notification
@@ -174,7 +174,7 @@ export default function Elections() {
                 </a>
               </Button>
             </Typography>
-            <Typography className={Styles.notice}>
+            {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 Provisional List of Candidates for TSG Election (2025-26)
               </div>
@@ -188,8 +188,7 @@ export default function Elections() {
                   View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
-
+            </Typography> */}
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
               The date for submission of Revised Proposals the posts of Vice
