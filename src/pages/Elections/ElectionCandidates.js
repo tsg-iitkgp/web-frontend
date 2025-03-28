@@ -69,6 +69,9 @@ export default function Elections() {
           >
             Candidates
           </Typography>
+          <div className={Styles.noticeDescription} style={{ textAlign: "center" }}>
+            <strong className="text-danger">Candidates are requested to send their pictures at <a href="mailto:tech.coordi@iitkgp.ac.in" target="_blank" rel="noreferrer">tech.coordi@iitkgp.ac.in</a></strong>
+          </div>
           <Box className={Styles.candidateContainer}>
             {candidates[post === "Secy" ? post + "_" + secyPost : post].map(
               (candidate, index) => {
