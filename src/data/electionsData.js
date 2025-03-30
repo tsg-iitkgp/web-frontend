@@ -68,7 +68,7 @@ export const candidates = {
       Email: "",
       img: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22CH3EP23.pdf",
       FacebookLink: ""
     },
     {
@@ -80,7 +80,7 @@ export const candidates = {
       Email: "",
       img: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22ME3EP10.pdf",
       FacebookLink: ""
     }
   ],
@@ -95,7 +95,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "23AG10038.pdf",
       FacebookLink: "",
-      img: ""
+      img: "Sidharth_Sports.png"
     },
     {
       RollNo: "23ME30073",
@@ -105,7 +105,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "23ME30073.pdf",
       FacebookLink: "",
       img: ""
     },
@@ -117,9 +117,9 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "23NA10027.pdf",
       FacebookLink: "",
-      img: ""
+      img: "Namanya_Sports.png"
     },
     {
       RollNo: "23SD11008",
@@ -129,7 +129,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "23SD11008.pdf",
       FacebookLink: "",
       img: ""
     }
@@ -193,7 +193,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "23IM10049.pdf",
       FacebookLink: "",
       img: ""
     },
@@ -212,18 +212,6 @@ export const candidates = {
   ],
   Gsec_WM: [
     {
-      RollNo: "23SD11001",
-      Description: "SD '27",
-      Name: "Krish Varshney",
-      Contact: "XXX XXX XXX",
-      Hall: "",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "23SD11001.pdf",
-      FacebookLink: "",
-      img: ""
-    },
-    {
       RollNo: "23IM10040",
       Description: "IM '27",
       Name: "Tanush B Agarwal",
@@ -232,6 +220,18 @@ export const candidates = {
       Email: "",
       Proposal: "",
       ProposalLink: "23IM10040.pdf",
+      FacebookLink: "",
+      img: ""
+    },
+    {
+      RollNo: "23SD11001",
+      Description: "SD '27",
+      Name: "Krish Varshney",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "23SD11001.pdf",
       FacebookLink: "",
       img: ""
     }
