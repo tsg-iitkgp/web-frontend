@@ -121,7 +121,7 @@ export default function Elections() {
             </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                Proposals of Candidates
+                Final Proposals of Candidates
               </div>
               <Button>
                 <a href="/elections/candidates" lat="notice" rel="noopener">

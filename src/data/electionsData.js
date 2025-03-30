@@ -42,7 +42,7 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
-      img: "",
+      img: "Praneeth_VP.jpg",
       Proposal: "",
       ProposalLink: "22BT10031.pdf",
       FacebookLink: ""
@@ -54,7 +54,7 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
-      img: "",
+      img: "Sreelekshmi_VP.jpg",
       Proposal: "",
       ProposalLink: "22BT3FP36.pdf",
       FacebookLink: ""
@@ -66,9 +66,9 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
-      img: "",
+      img: "Amish_VP.jpg",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22CH3EP23.pdf",
       FacebookLink: ""
     },
     {
@@ -78,9 +78,9 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
-      img: "",
+      img: "Arman_VP.jpg",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "22ME3EP10.pdf",
       FacebookLink: ""
     }
   ],
@@ -95,7 +95,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "23AG10038.pdf",
       FacebookLink: "",
-      img: ""
+      img: "Sidharth_Sports.png"
     },
     {
       RollNo: "23ME30073",
@@ -105,7 +105,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "23ME30073.pdf",
       FacebookLink: "",
       img: ""
     },
@@ -117,9 +117,9 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "23NA10027.pdf",
       FacebookLink: "",
-      img: ""
+      img: "Namanya_Sports.png"
     },
     {
       RollNo: "23SD11008",
@@ -129,7 +129,7 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "23SD11008.pdf",
       FacebookLink: "",
       img: ""
     }
@@ -157,7 +157,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "23ME10047.pdf",
       FacebookLink: "",
-      img: ""
+      img: "Mantra_Socult.jpg"
     },
     {
       RollNo: "23MF3IM16",
@@ -183,7 +183,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "23HS10065.pdf",
       FacebookLink: "",
-      img: ""
+      img: "Pratham_Tech.jpg"
     },
     {
       RollNo: "23IM10049",
@@ -193,9 +193,9 @@ export const candidates = {
       Hall: "",
       Email: "",
       Proposal: "",
-      ProposalLink: "",
+      ProposalLink: "23IM10049.pdf",
       FacebookLink: "",
-      img: ""
+      img: "Prem_Tech.jpg"
     },
     {
       RollNo: "23ME30086",
@@ -212,18 +212,6 @@ export const candidates = {
   ],
   Gsec_WM: [
     {
-      RollNo: "23SD11001",
-      Description: "SD '27",
-      Name: "Krish Varshney",
-      Contact: "XXX XXX XXX",
-      Hall: "",
-      Email: "",
-      Proposal: "",
-      ProposalLink: "23SD11001.pdf",
-      FacebookLink: "",
-      img: ""
-    },
-    {
       RollNo: "23IM10040",
       Description: "IM '27",
       Name: "Tanush B Agarwal",
@@ -232,6 +220,18 @@ export const candidates = {
       Email: "",
       Proposal: "",
       ProposalLink: "23IM10040.pdf",
+      FacebookLink: "",
+      img: "Tanush_Welfare.jpg"
+    },
+    {
+      RollNo: "23SD11001",
+      Description: "SD '27",
+      Name: "Krish Varshney",
+      Contact: "XXX XXX XXX",
+      Hall: "",
+      Email: "",
+      Proposal: "",
+      ProposalLink: "23SD11001.pdf",
       FacebookLink: "",
       img: ""
     }
