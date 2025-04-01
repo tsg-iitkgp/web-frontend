@@ -146,6 +146,16 @@ export default function Navbar() {
             </NavLink>
           </li>
 
+          <li className={Styles.navItem}>
+            <NavLink
+              to="/reports"
+              className={Styles.navLinks}
+              activeClassName={Styles.acitveLink}
+            >
+              Reports
+            </NavLink>
+          </li>
+
           {/* ELECTIONS */}
           <li className={Styles.navItem}>
             <NavLink
