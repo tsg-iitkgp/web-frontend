@@ -76,14 +76,14 @@ export default function Elections() {
                 View Result <LaunchIcon />
                 </a>
                 </Button>
-              </Typography>
+              </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                SOAPBOX SCHEDULE 2024-25
+                SOAPBOX SCHEDULE 2025-26
               </div>
               <Button>
                 <a
-                  href="/data/media/files/SOAPBOX_Schedule_2024-25.pdf"
+                  href="/data/media/files/SOAPBOX_Schedule_2025-26.pdf"
                   lat="notice"
                   target="_blank"
                   rel="noopener"
@@ -91,7 +91,7 @@ export default function Elections() {
                   View Schedule <LaunchIcon />
                 </a>
               </Button>
-            </Typography> */}
+            </Typography>
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
               Final List of Candidates for TSG Election (2023-24)
