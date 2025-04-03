@@ -1762,19 +1762,193 @@ const GCdata = {
       Male: [
         {
           Sport: "Overall",
-          Gold: "",
-          Silver: "",
-          Bronze: ""
-        }
+          Gold: "RP",
+          Silver: "Azad",
+          Bronze: "LBS"
+        },
+        {
+          Sport: "Athletics",
+          Gold: "VS",
+          Silver: "RP",
+          Bronze: "AZAD",
+        },
+        {
+          Sport: "Swimming",
+          Gold: "AZAD",
+          Silver: "LBS",
+          Bronze: "NEHRU",
+        },
+        {
+          Sport: "Water Polo",
+          Gold: "AZAD",
+          Silver: "RK",
+          Bronze: "LLR",
+        },
+        {
+          Sport: "Badminton",
+          Gold: "RP",
+          Silver: "LBS",
+          Bronze: "VS",
+        },
+        {
+          Sport: "Basketball",
+          Gold: "RP",
+          Silver: "LBS",
+          Bronze: "BRH",
+        },
+        {
+          Sport: "Cricket",
+          Gold: "PATEL",
+          Silver: "AZAD",
+          Bronze: "RK",
+        },
+        {
+          Sport: "Football",
+          Gold: "PATEL",
+          Silver: "RK",
+          Bronze: "BRH",
+        },
+        {
+          Sport: "Hockey",
+          Gold: "MS",
+          Silver: "ABV",
+          Bronze: "LBS",
+        },
+        {
+          Sport: "Weightlifting",
+          Gold: "AZAD",
+          Silver: "RP",
+          Bronze: "MMM",
+        },
+        {
+          Sport: "Table Tennis",
+          Gold: "RP",
+          Silver: "PATEL",
+          Bronze: "AZAD",
+        },
+        {
+          Sport: "Tennis",
+          Gold: "RP",
+          Silver: "MMM",
+          Bronze: "LLR",
+        },
+        {
+          Sport: "Squash",
+          Gold: "AZAD",
+          Silver: "ABV",
+          Bronze: "NEHRU",
+        },
+        {
+          Sport: "Volleyball",
+          Gold: "LBS",
+          Silver: "NEHRU",
+          Bronze: "RK",
+        },
+        {
+          Sport: "Powerlifting",
+          Gold: "MMM",
+          Silver: "RP",
+          Bronze: "AZAD",
+        },
+        {
+          Sport: "Yoga",
+          Gold: "BRH",
+          Silver: "NEHRU",
+          Bronze: "RP",
+        },
+        {
+          Sport: "Chess",
+          Gold: "MMM",
+          Silver: "LLR",
+          Bronze: "RP",
+        },
+        {
+          Sport: "Bridge",
+          Gold: "MMM",
+          Silver: "LBS",
+          Bronze: "RP",
+        },
       ],
       Female: [
         {
           Sport: "Overall",
-          Gold: "",
-          Silver: "",
-          Bronze: ""
-        }
-      ]
+          Gold: "SN/IG",
+          Silver: "MT",
+          Bronze: "SNVH"
+        },
+        {
+          Sport: "Athletics",
+          Gold: "MT",
+          Silver: "SN/IG",
+          Bronze: "SNVH",
+        },
+        {
+          Sport: "Volleyball",
+          Gold: "SNVH",
+          Silver: "SN/IG",
+          Bronze: "MT",
+        },
+        {
+          Sport: "Badminton",
+          Gold: "SN/IG",
+          Silver: "MT",
+          Bronze: "SNVH",
+        },
+        {
+          Sport: "Aquatics",
+          Gold: "SN/IG",
+          Silver: "SNVH",
+          Bronze: "MT",
+        },
+        {
+          Sport: "Football",
+          Gold: "MT",
+          Silver: "SN/IG",
+          Bronze: "SNVH",
+        },
+        {
+          Sport: "Squash",
+          Gold: "RLB",
+          Silver: "SN/IG",
+          Bronze: "MT",
+        },
+        {
+          Sport: "Tennis",
+          Gold: "SNVH",
+          Silver: "SN/IG",
+          Bronze: "MT",
+        },
+        {
+          Sport: "Table Tennis",
+          Gold: "SN/IG",
+          Silver: "MT",
+          Bronze: "SBP1",
+        },
+        {
+          Sport: "Powerlifting",
+          Gold: "SNVH",
+          Silver: "SN/IG",
+          Bronze: "MT",
+        },
+        {
+          Sport: "Yoga",
+          Gold: "RLB",
+          Silver: "SBP2",
+          Bronze: "SNVH",
+        },
+        {
+          Sport: "Chess",
+          Gold: "SN/IG",
+          Silver: "SNVH",
+          Bronze: "MT",
+        },
+        {
+          Sport: "Bridge",
+          Gold: "SN/IG",
+          Silver: "SNVH",
+          Bronze: "MT",
+        },
+      ],
     },
     Technology: [],
     Socult: [
