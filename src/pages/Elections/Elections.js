@@ -79,6 +79,21 @@ export default function Elections() {
               </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
+                Advisory for TSG Elections 2025-26
+              </div>
+              <Button>
+                <a
+                  href="/data/media/files/Advisory_TSG_Elections_2025-26.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Notice <LaunchIcon />
+                </a>
+              </Button>
+            </Typography>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
                 SOAPBOX SCHEDULE 2025-26
               </div>
               <Button>
