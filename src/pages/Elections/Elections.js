@@ -49,7 +49,7 @@ export default function Elections() {
           <Box className={Styles.notices}>
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-                View Votes of Candidates
+                View Results of Candidates
                 </div>
                 <Button>
                 <a
@@ -61,22 +61,22 @@ export default function Elections() {
                   View Votes <LaunchIcon />
                   </a>
                   </Button>
-                </Typography>
+                </Typography> */}
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
-              Elections 2024-2025 Results
+                Elections 2025-2026 Results
               </div>
               <Button>
-              <a
-              href="/data/media/files/Results_2024.pdf"
-              lat="notice"
-              target="_blank"
-              rel="noopener"
+                <a
+                  href="/data/media/files/Results_2025.pdf"
+                  lat="notice"
+                  target="_blank"
+                  rel="noopener"
                 >
-                View Result <LaunchIcon />
+                  View Result <LaunchIcon />
                 </a>
-                </Button>
-              </Typography> */}
+              </Button>
+            </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
                 Advisory for TSG Elections 2025-26
