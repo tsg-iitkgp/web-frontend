@@ -2017,6 +2017,30 @@ const GCdata = {
         Gold: "Azad",
         Silver: "Nehru",
         Bronze: "RK"
+      },
+      {
+        Event: "Hindi Elocution",
+        Gold: "Azad",
+        Silver: "HJB",
+        Bronze: "SNIG",
+      },
+      {
+        Event: "General Quiz",
+        Gold: "RP",
+        Silver: "Patel",
+        Bronze: "RK",
+      },
+      {
+        Event: "Thermocol and Clay Modelling",
+        Gold: "RK",
+        Silver: "Nehru",
+        Bronze: "Patel",
+      },
+      {
+        Event: "Short Film Making",
+        Gold: "ABV",
+        Silver: "LLR",
+        Bronze: "Azad",
       }
     ]
   }
