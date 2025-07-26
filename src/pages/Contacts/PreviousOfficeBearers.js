@@ -4,8 +4,9 @@ import senateData from "./senateData.json";
 import { useState } from "react";
 import ContactCard from "../../components/ContactCard";
 import primg from "./../Contacts/Images/prf.png";
-
+import CurrentOfficeBearers from "./CurrentOfficeBearers";
 const years = [
+    "2024-2025",
     "2023-2024",
     "2022-2023",
     "2021-2022",
@@ -82,26 +83,16 @@ const years = [
 
 export default function PreviousOfficeBearers() {
     const [currentTab, setCurrentTab] = useState("senate");
-    const [currentYear, setCurrentYear] = useState("2023-2024");
+    const [currentYear, setCurrentYear] = useState("2024-2025");
+const startYear = parseInt(currentYear.split("-")[0], 10);
 
-    return (
-        <div>
-            <section className="awards content">
-                <div className="tabs"></div>
-                <div className="select">
-                    <select
-                        value={currentYear}
-                        onChange={(e) => setCurrentYear(e.target.value)}
-                    >
-                        {years.map((year) => (
-                            <option key={year} value={year}>
-                                {year}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-
-                {(senateData[currentYear][currentTab]["profs"] !== undefined ||
+    let current;
+    if (startYear > 2023) {
+    current = <CurrentOfficeBearers year={currentYear} />;
+}else{
+    current = (
+        <>
+        {(senateData[currentYear][currentTab]["profs"] !== undefined ||
                     currentTab === "specialRecog") && (
                     <>
                         <div className="cards">
@@ -159,6 +150,26 @@ export default function PreviousOfficeBearers() {
                         </div>
                     </>
                 )}
+    </>
+    );
+}
+    return (
+        <div>
+            <section className="awards content">
+                <div className="tabs"></div>
+                <div className="select">
+                    <select
+                        value={currentYear}
+                        onChange={(e) => setCurrentYear(e.target.value)}
+                    >
+                        {years.map((year) => (
+                            <option key={year} value={year}>
+                                {year}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+                {current}
             </section>
         </div>
     );

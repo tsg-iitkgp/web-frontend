@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import ContactCard from "../../components/ContactCard";
+import ContactCard from "../../components/ContactCard.js";
 import contactsData from "../../data/contactsData.js";
 import Styles from "../../styles/pages/contacts.module.css";
 import axios from "axios";
 import apiService from "../../apiService.js";
 
-export default function CurrentOfficeBearers() {
+export default function CurrentOfficeBearers({year}) {
     const [contacts, setContacts] = useState();
     const [refreshContacts, setRefreshContacts] = useState(true);
 
@@ -35,7 +35,7 @@ export default function CurrentOfficeBearers() {
     useEffect(() => {
         const getContacts = async () => {
             const response = await axios.get(
-                `${apiService}/user/getContacts/2024-2025`
+                `${apiService}/user/getContacts/${year}`
             );
 
             if (response.status === 200) {
