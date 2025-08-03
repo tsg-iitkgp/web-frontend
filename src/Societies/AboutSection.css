@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+.about-container {
+  margin-bottom: 2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  animation: slideInLeft 0.8s ease;
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  animation: slideWidth 1s ease 0.5s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideWidth {
+  to {
+    width: 50%;
+  }
+}
+
+.about-quote {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.3s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-description {
+  color: #d1d5db;
+  line-height: 1.75;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.5s forwards;
+}

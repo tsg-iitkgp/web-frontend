@@ -1,0 +1,164 @@
+.header-container {
+  position: relative;
+}
+
+.top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #fbbf24;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 64px;
+  height: 48px;
+  background-color: #3b82f6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: #fbbf24;
+}
+
+.header-content {
+  position: relative;
+  background: linear-gradient(to right, rgba(180, 83, 9, 0.2), rgba(0, 0, 0, 1));
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.header-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.profile-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.profile-logo {
+  width: 224px;
+  height: 224px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  flex: 1;
+  padding-top: 2rem;
+}
+
+.profile-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fbbf24;
+  margin-bottom: 1rem;
+}
+
+.profile-quote {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.profile-domain {
+  margin-bottom: 1rem;
+}
+
+.domain-label {
+  color: #fbbf24;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.domain-value {
+  color: white;
+}
+
+.profile-tags {
+  display: flex;
+  gap: 0.5rem;
+}
+.header-social-icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.tag {
+  background: rgba(55, 65, 81, 0.7);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  border: 1px solid #fbbf24;
+}
+.profile-social-tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-logo {
+    width: 150px;
+    height: 150px;
+    font-size: 3rem;
+  }
+  
+  .profile-title {
+    font-size: 2rem;
+  }
+  
+  .profile-quote {
+    font-size: 1rem;
+  }
+}

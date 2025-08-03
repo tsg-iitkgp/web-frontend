@@ -1,0 +1,10 @@
+export { default as MainProfile } from './MainProfile';
+export { default as AboutSection } from './AboutSection';
+export { default as EventsSection } from './EventsSection';
+export { default as NavigationTabs } from './NavigationTabs';
+export { default as PostModal } from './PostModal';
+export { default as PostsSection } from './PostsSection';
+export { default as ProfileHeader } from './ProfileHeader';
+export { default as TeamSection } from './TeamSection';
+export { default as StatsSection } from './StatsSection';
+export { default as SocietiesList } from './SocietiesList';
