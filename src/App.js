@@ -33,6 +33,8 @@ import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
 import LetterToYou from "./pages/LetterToYou/LetterToYou"
 import SocietyForm from "./pages/SocReg/form";
+
+// Importing the society pages 
 import Profile from "./pages/SocietiesProfile/profile";
 import BrowseSocieties from "./pages/BrowseSocieties";
 // import SocietyLayout from "./pages/Societies/SocietyLayout";
@@ -46,7 +48,7 @@ function App() {
       <ScrollToTop>
         <Switch>
           {/* Redirects */}
-          <Route exact path="/societies/test" render={() => <Profile />} />
+          <Route exact path="/societies/:society_slug" render={() => <Profile />} />
           <Route exact path="/societies/" render={() => <BrowseSocieties />} />
 
           {/* Admin Routes */}  
@@ -104,7 +106,7 @@ function App() {
         </Switch>
       </ScrollToTop>
     </Router>
-  );v
+  );
 }
 
 export default App;

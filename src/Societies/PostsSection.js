@@ -1,48 +1,71 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { useParams } from 'react-router-dom';
 import PostModal from './PostModal';
+import { BASE_URL } from '../constants/api';
 import './PostsSection.css';
 
 const PostsSection = () => {
+  const { society_slug } = useParams();
+  const [posts, setPosts] = useState([]);
   const [selectedPost, setSelectedPost] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [pagination, setPagination] = useState({
+    page: 1,
+    limit: 6,
+    total: 0,
+    totalPages: 0
+  });
+  const [hasMore, setHasMore] = useState(true);
 
-  const posts = [
-    {
-      id: 1,
-      title: "KodeInKGP",
-      image: "/testAssets/post.png",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna quam, elementum sed auctor vitae, maximus in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ultricies suscipit tempus. Suspendisse venenatis lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ultricies suscipit tempus. Suspendisse venenatis lectus.",
-      date: "2024-01-15"
-    },
-    {
-      id: 2,
-      title: "KodeInKGP",
-      image: "/testAssets/post.png",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna quam, elementum sed auctor vitae, maximus in lectus.",
-      date: "2024-01-10"
-    },
-    {
-      id: 3,
-      title: "KodeInKGP",
-      image: "/testAssets/post.png",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna quam, elementum sed auctor vitae, maximus in lectus.",
-      date: "2024-01-05"
-    },
-    {
-      id: 4,
-      title: "KodeInKGP",
-      image: "/testAssets/post.png",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna quam, elementum sed auctor vitae, maximus in lectus.",
-      date: "2023-12-28"
-    },
-    {
-      id: 5,
-      title: "KodeInKGP",
-      image: "/testAssets/post.png",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna quam, elementum sed auctor vitae, maximus in lectus.",
-      date: "2023-12-20"
+  const fetchPosts = useCallback(async (page = 1, isLoadMore = false) => {
+    if (loading) return;
+    setLoading(true);
+
+    try {
+      const queryParams = new URLSearchParams({
+        page: page.toString(),
+        limit: pagination.limit.toString()
+      });
+
+      const response = await fetch(`${BASE_URL}/societies/${encodeURIComponent(society_slug)}/posts?${queryParams}`);
+      const data = await response.json();
+
+      if (isLoadMore) {
+        setPosts(prev => [...prev, ...data.posts]);
+      } else {
+        setPosts(data.posts);
+      }
+
+      setPagination(data.pagination);
+      setHasMore(data.pagination.page < data.pagination.totalPages);
+
+    } catch (err) {
+      console.error('Error fetching posts:', err);
+    } finally {
+      setLoading(false);
     }
-  ];
+  }, [loading, pagination.limit, society_slug]);
+
+  useEffect(() => {
+    fetchPosts(1, false);
+  }, [society_slug]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + document.documentElement.scrollTop 
+        >= document.documentElement.offsetHeight - 1000 &&
+        hasMore &&
+        !loading
+      ) {
+        fetchPosts(pagination.page + 1, true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [fetchPosts, hasMore, loading, pagination.page]);
 
   const handlePostClick = (post) => {
     setSelectedPost(post);
@@ -54,27 +77,54 @@ const PostsSection = () => {
     setSelectedPost(null);
   };
 
+  const imagePosts = posts.filter(post => post.image_url);
+
   return (
     <div className="posts-container">
-      <div className="posts-grid">
-        {posts.map((post) => (
-          <div 
-            key={post.id} 
-            className="post-card"
-            onClick={() => handlePostClick(post)}
-          >
-            <div className="post-image">
-              <img 
-                src={post.image} 
-                alt={post.title}
-                onError={(e) => {
-                  e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZiYmYyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlPC90ZXh0Pjwvc3ZnPg==';
-                }}
-              />
+      {imagePosts.length === 0 && !loading ? (
+        <div
+          style={{
+            color: '#fbbf24',
+            fontSize: '2rem',
+            fontWeight: 'bold',
+            textAlign: 'center',
+            margin: '4rem 0',
+          }}
+        >
+          No posts available
+        </div>
+      ) : (
+        <div className="posts-grid">
+          {imagePosts.map((post) => (
+            <div 
+              key={post.id} 
+              className="post-card"
+              onClick={() => handlePostClick(post)}
+            >
+              <div className="post-image">
+                <img src={post.image_url} alt="" />
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
+
+      {loading && (
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          margin: '2rem 0'
+        }}>
+          <div className="loading-spinner"></div>
+          <span style={{
+            color: '#fbbf24',
+            fontWeight: 'bold',
+            fontSize: '1.2rem',
+            marginTop: '1rem'
+          }}>Loading...</span>
+        </div>
+      )}
 
       {isModalOpen && selectedPost && (
         <PostModal 

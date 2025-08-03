@@ -3,7 +3,7 @@
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.92);
+  background: rgba(0,0,0,0.7) !important;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -115,15 +115,14 @@
   height: 32px;
   border-radius: 4px;
   object-fit: cover;
-    background: #3b82f6;
+    background: transparent;
   border: none;
-  box-shadow: 0 2px 8px rgba(251,191,36,0.15);
 }
 
 .modal-title {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #fbbf24;
+  color: #fbbf24 !important;
   margin: 0;
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.5px;
@@ -156,7 +155,7 @@
 }
 
 .modal-date {
-  color: #fbbf24;
+  color: #fbbf24 !important;
   font-size: 1rem;
   text-align: left;
   margin-top: 1.5rem;

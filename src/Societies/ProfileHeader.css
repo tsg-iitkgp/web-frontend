@@ -75,7 +75,7 @@
 .profile-logo {
   width: 224px;
   height: 224px;
-  background-color: #3b82f6;
+  background: transparent;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -123,10 +123,7 @@
   display: flex;
   gap: 0.5rem;
 }
-.header-social-icons{
-    display: flex;
-    gap: 1rem;
-}
+
 
 .tag {
   background: rgba(55, 65, 81, 0.7);
@@ -139,6 +136,72 @@
 .profile-social-tags {
   display: flex;
   justify-content: space-between;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #fbbf24;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(251, 191, 36, 0.3);
+  border-left: 4px solid #fbbf24;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.profile-tags{
+  height: 30px;
+  
+}
+
+.error-container {
+  text-align: center;
+  color: #ef4444;
+  padding: 2rem;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-social-icon {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.header-social-icon:hover {
+  color: #fbbf24;
+  transform: translateY(-2px);
+}
+
+
+.header-social-icon.facebook:hover {
+  color: #1877f2;
+}
+
+.header-social-icon.instagram:hover {
+  color: #e4405f;
+}
+
+.header-social-icon.linkedin:hover {
+  color: #0077b5;
 }
 
 @media (max-width: 768px) {
