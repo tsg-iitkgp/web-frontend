@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory, useLocation } from 'react-router-dom';
 import PostModal from './PostModal';
 import { BASE_URL } from '../constants/api';
 import './PostsSection.css';
 
 const PostsSection = () => {
   const { society_slug } = useParams();
+  const history = useHistory();
+  const location = useLocation();
+
   const [posts, setPosts] = useState([]);
   const [selectedPost, setSelectedPost] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -67,17 +70,50 @@ const PostsSection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [fetchPosts, hasMore, loading, pagination.page]);
 
+  // --- Modal URL logic starts here ---
+
+  // Open modal if postid is in URL
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const postid = params.get('postid');
+    if (postid && posts.length > 0) {
+      const post = posts.find(p => p.id === postid);
+      if (post) {
+        setSelectedPost(post);
+        setIsModalOpen(true);
+      }
+    }
+  }, [location.search, posts]);
+
+  // When a post is clicked, update the URL and open modal
   const handlePostClick = (post) => {
+    const params = new URLSearchParams(location.search);
+    params.set('postid', post.id);
+    window.history.replaceState(
+      null,
+      '',
+      `${location.pathname}?${params.toString()}`
+    );
     setSelectedPost(post);
     setIsModalOpen(true);
   };
 
+  // When modal closes, remove postid from URL
   const closeModal = () => {
+    const params = new URLSearchParams(location.search);
+    params.delete('postid');
+    window.history.replaceState(
+      null,
+      '',
+      `${location.pathname}?${params.toString()}`
+    );
     setIsModalOpen(false);
     setSelectedPost(null);
   };
 
-  const imagePosts = posts.filter(post => post.image_url);
+  const imagePosts = posts
+    .filter(post => post.image_url)
+    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
   return (
     <div className="posts-container">

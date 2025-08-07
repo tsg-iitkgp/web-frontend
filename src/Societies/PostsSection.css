@@ -8,20 +8,23 @@
 }
 
 .posts-grid {
-  columns: 3;
-  column-gap: 15px;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .posts-grid {
-    columns: 2;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
   .posts-grid {
-    columns: 1;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 

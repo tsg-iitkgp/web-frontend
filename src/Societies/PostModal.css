@@ -164,6 +164,37 @@
   opacity: 0.8;
 }
 
+.modal-share-bottom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.4rem;
+  background: linear-gradient(90deg, #fbbf24 60%, #f59e0b 100%);
+  color: #232323;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #fbbf2430;
+  transition: background 0.18s, color 0.18s, transform 0.18s, box-shadow 0.18s;
+  min-width: 90px;
+  position: relative;
+  width: 20px;
+  height:25px;
+}
+.modal-share-bottom svg {
+  margin-right: 0.4rem;
+  font-size: 1.1em;
+}
+.modal-share-bottom:hover {
+  background: #fbbf24;
+  color: #000;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px #fbbf2440;
+}
+
 @media (max-width: 900px) {
   .modal-container {
     max-width: 98vw;

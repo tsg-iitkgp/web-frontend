@@ -1,88 +1,65 @@
-import React, { useState } from 'react';
-import { FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { FaYoutube, FaInstagram, FaLinkedin, FaFacebook, FaTwitter, FaGlobe } from 'react-icons/fa';
+import { useLocation, useParams } from 'react-router-dom';
 import ProfileHeader from './ProfileHeader';
 import NavigationTabs from './NavigationTabs';
 import AboutSection from './AboutSection';
-import StatsSection from './StatsSection';
 import PostsSection from './PostsSection';
 import EventsSection from './EventsSection';
 import TeamSection from './TeamSection';
 import './MainProfile.css'; 
+import { BASE_URL } from '../constants/api';
 
 const MainProfile = () => {
   const location = useLocation();
+  const { society_slug } = useParams();
   const params = new URLSearchParams(location.search);
-  const activeTab = params.get('tab') || 'about';
+  const postid = params.get('postid');
+  const activeTab = params.get('tab') || (postid ? 'posts' : 'posts'); // default to posts if postid is present
+
+  const [society, setSociety] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (!society_slug) return;
+    setLoading(true);
+    fetch(`${BASE_URL}/societies/${encodeURIComponent(society_slug)}`)
+      .then(res => res.json())
+      .then(data => {
+        setSociety(data.society);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, [society_slug]);
 
   const renderTabContent = () => {
+    if (loading) return <div className="content-wrapper">Loading...</div>;
+    if (!society) return <div className="content-wrapper">No data found.</div>;
+
+    // Parse contact info
+    let contact = {};
+    try {
+      contact = society.contact_info ? JSON.parse(society.contact_info) : {};
+    } catch {}
+
+    const socials = society.social_media || {};
+
     switch(activeTab) {
       case 'about':
         return (
           <div className="content-wrapper">
-            <AboutSection />
-            <StatsSection />
-            
-            <div className="expertise-section">
-              <h3 className="section-title">Our Expertise :</h3>
-              
-              <div className="expertise-items">
-                <div className="expertise-item">
-                  <h4 className="expertise-title">
-                    <span className="highlight">AI & Metaverse :</span>
-                  </h4>
-                  <p className="expertise-description">
-                    Enter a realm where AI drives immersive Metaverse encounters, pushing boundaries of what's possible.
-                  </p>
-                </div>
-                
-                <div className="expertise-item">
-                  <h4 className="expertise-title">
-                    <span className="highlight">Web :</span>
-                  </h4>
-                  <p className="expertise-description">
-                    Crafting dynamic, responsive websites that deliver exceptional user experiences across all devices.
-                  </p>
-                </div>
-                
-                <div className="expertise-item">
-                  <h4 className="expertise-title">
-                    <span className="highlight">Blockchain :</span>
-                  </h4>
-                  <p className="expertise-description">
-                    Building the decentralized future with secure, transparent blockchain solutions and smart contracts.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="website-section">
-                <h3 className="section-title">Official Website :</h3>
-                <div className="website-link">
-                  <span className="website-url">https://kodeinkgp.in/</span>
-                  <button className="visit-button">visit</button>
-                </div>
-              </div>
-              
-              <div className="social-section">
-                <h3 className="section-title">Social Media Handles :</h3>
-                <div className="social-icons">
-                  <FaYoutube className="social-icon youtube" />
-                  <FaInstagram className="social-icon instagram" />
-                  <FaLinkedin className="social-icon linkedin" />
-                </div>
-              </div>
-            </div>
+            <AboutSection society={society} />
           </div>
         );
       
       case 'posts':
-        return <PostsSection />;
+        return <PostsSection society={society} />;
       
       case 'event':
-        return <EventsSection />;
+        return <EventsSection society={society} />;
       
       case 'team':
-        return <TeamSection />;
+        return <TeamSection society={society} />;
       
       default:
         return null;
@@ -91,8 +68,8 @@ const MainProfile = () => {
 
   return (
     <div className="profile-container">
-      <ProfileHeader />
-      <NavigationTabs />
+      <ProfileHeader society={society} />
+      <NavigationTabs activeTab={activeTab} /> {/* Pass activeTab here */}
       {renderTabContent()}
     </div>
   );

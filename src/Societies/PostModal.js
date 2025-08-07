@@ -1,17 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { FaTimes } from 'react-icons/fa';
-import { BASE_URL } from '../constants/api';
-import './PostModal.css';
+import React, { useEffect, useState } from "react";
+import { FaTimes } from "react-icons/fa";
+import { Share2 } from "lucide-react"; // <-- Add this import
+import { BASE_URL } from "../constants/api";
+import "./PostModal.css";
 
 const PostModal = ({ post, onClose }) => {
   const [postData, setPostData] = useState(null);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const handleEscape = (e) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === "Escape") onClose();
     };
-    document.addEventListener('keydown', handleEscape);
-    document.body.style.overflow = 'hidden';
+    document.addEventListener("keydown", handleEscape);
+    document.body.style.overflow = "hidden";
 
     // Fetch post details
     async function fetchPost() {
@@ -26,13 +28,25 @@ const PostModal = ({ post, onClose }) => {
     if (post?.id) fetchPost();
 
     return () => {
-      document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
     };
   }, [onClose, post]);
 
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) onClose();
+  };
+
+  // Share handler
+  const handleShare = async () => {
+    const url = `${window.location.origin}${window.location.pathname}?postid=${post.id}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
   };
 
   if (!postData) {
@@ -42,9 +56,17 @@ const PostModal = ({ post, onClose }) => {
           <button className="modal-close" onClick={onClose}>
             <FaTimes />
           </button>
+          <button
+            className="modal-share"
+            onClick={handleShare}
+            title="Share this post"
+          >
+            <Share2 size={20} />
+          </button>
           <div className="modal-image">
             <div className="loading-spinner"></div>
           </div>
+          {copied && <div className="modal-copied-msg">Link copied!</div>}
         </div>
       </div>
     );
@@ -62,7 +84,7 @@ const PostModal = ({ post, onClose }) => {
             alt={postData.title}
             onError={(e) => {
               e.target.src =
-                'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZiYmYyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlPC90ZXh0Pjwvc3ZnPg==';
+                "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZiYmYyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlPC90ZXh0Pjwvc3ZnPg==";
             }}
           />
         </div>
@@ -77,11 +99,31 @@ const PostModal = ({ post, onClose }) => {
           </div>
           <hr className="modal-divider" />
           <div className="modal-text">{postData.description}</div>
-          <div className="modal-date">{new Date(postData.created_at).toLocaleDateString()}</div>
+          <div className="modal-footer" style={{ display: "flex", justifyContent: "space-between" }}>
+            <div className="modal-date">
+              {new Date(postData.created_at).toLocaleDateString()}
+            </div>
+            {postData.form_structure && (
+              <button className="modal-share-bottom modal-register-button">
+                Register
+              </button>
+            )}
+            <button
+              className="modal-share-bottom"
+              onClick={handleShare}
+              title="Share this post"
+            >
+              <Share2 size={18} style={{ marginRight: '0.4rem' }} />
+              Share
+            </button>
+            {copied && <div className="modal-copied-msg">Link copied!</div>}
+          </div>
         </div>
+        {/* Share button at the bottom */}
       </div>
     </div>
   );
 };
 
 export default PostModal;
+
