@@ -33,7 +33,7 @@ import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
 import LetterToYou from "./pages/LetterToYou/LetterToYou"
 import SocietyForm from "./pages/SocReg/form";
-import PostFormPage from "./pages/Posts/PostFormPage";
+import PostFormPage from "./Societies/PostFormPage";
 
 // Importing the society pages 
 import Profile from "./pages/SocietiesProfile/profile";
@@ -104,7 +104,7 @@ function App() {
 
           {/* Other Routes */}
           {/*<Route exact path="/gallery" component={Gallery} /> */}
-          <Route exact path="/:formid/form" component={PostFormPage} />
+          <Route exact path="/posts/:postid/form" component={PostFormPage} />
         </Switch>
       </ScrollToTop>
     </Router>

@@ -104,7 +104,13 @@ const PostModal = ({ post, onClose }) => {
               {new Date(postData.created_at).toLocaleDateString()}
             </div>
             {postData.form_structure && (
-              <button className="modal-share-bottom modal-register-button">
+              <button
+                className="modal-share-bottom modal-register-button"
+                onClick={() => {
+                  // Navigate to the form page for this post
+                  window.location.href = `/posts/${postData.id}/form`;
+                }}
+              >
                 Register
               </button>
             )}
@@ -126,4 +132,3 @@ const PostModal = ({ post, onClose }) => {
 };
 
 export default PostModal;
-
