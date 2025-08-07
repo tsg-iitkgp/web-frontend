@@ -1,46 +1,96 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { BASE_URL } from "../constants/api";
+import "./PostFormPage.css";
 
 const inputTypes = {
-  text: (props) => <input type="text" {...props} />,
-  email: (props) => <input type="email" {...props} />,
-  phone: (props) => <input type="tel" {...props} />,
-  textarea: (props) => <textarea {...props} />,
-  date: (props) => <input type="date" {...props} />,
+  text: (props) => {
+    const inputId = `${props.name}-input`;
+    return (
+      <>
+        <input type='text' id={inputId} className='form-input' {...props} />
+      </>
+    );
+  },
+  email: (props) => {
+    const inputId = `${props.name}-input`;
+    return (
+      <>
+        <input type='email' id={inputId} className='form-input' {...props} />
+      </>
+    );
+  },
+  phone: (props) => {
+    const inputId = `${props.name}-input`;
+    return (
+      <>
+        <input type='tel' id={inputId} className='form-input' {...props} />
+      </>
+    );
+  },
+  textarea: (props) => {
+    const inputId = `${props.name}-input`;
+    return (
+      <>
+        <textarea id={inputId} className='form-textarea' {...props} />
+      </>
+    );
+  },
+  date: (props) => {
+    const inputId = `${props.name}-input`;
+    return (
+      <>
+        <input type='date' id={inputId} className='form-input' {...props} />
+      </>
+    );
+  },
   checkbox: ({ options = [], name, value = [], onChange, required }) => (
-    <div>
-      {options.map((opt, idx) => (
-        <label key={idx} style={{ marginRight: 16 }}>
-          <input
-            type="checkbox"
-            name={name}
-            value={opt}
-            checked={value.includes(opt)}
-            onChange={onChange}
-            required={required && value.length === 0}
-          />{" "}
-          {opt}
-        </label>
-      ))}
-    </div>
+    <ul className='form-options-list'>
+      {options.map((opt, idx) => {
+        const inputId = `${name}-${idx}`;
+        return (
+          <li key={idx} className='form-option-item'>
+            <input
+              id={inputId}
+              type='checkbox'
+              name={name}
+              value={opt}
+              checked={value.includes(opt)}
+              onChange={onChange}
+              required={required && value.length === 0}
+              className='form-checkbox'
+            />
+            <label htmlFor={inputId} className='form-option-label'>
+              {opt}
+            </label>
+          </li>
+        );
+      })}
+    </ul>
   ),
   radio: ({ options = [], name, value, onChange, required }) => (
-    <div>
-      {options.map((opt, idx) => (
-        <label key={idx} style={{ marginRight: 16 }}>
-          <input
-            type="radio"
-            name={name}
-            value={opt}
-            checked={value === opt}
-            onChange={onChange}
-            required={required}
-          />{" "}
-          {opt}
-        </label>
-      ))}
-    </div>
+    <ul className='form-options-list'>
+      {options.map((opt, idx) => {
+        const inputId = `${name}-${idx}`;
+        return (
+          <li key={idx} className='form-option-item'>
+            <input
+              id={inputId}
+              type='radio'
+              name={name}
+              value={opt}
+              checked={value === opt}
+              onChange={onChange}
+              required={required && idx === 0}
+              className='form-radio'
+            />
+            <label htmlFor={inputId} className='form-option-label'>
+              {opt}
+            </label>
+          </li>
+        );
+      })}
+    </ul>
   ),
 };
 
@@ -76,6 +126,9 @@ const PostFormPage = () => {
       });
   }, [postid]);
 
+  if (post && post.form_id) {
+    document.title = `Form for ${post.title} | TSG`;
+  }
   const handleChange = (label, input_type) => (e) => {
     if (input_type === "checkbox") {
       const valueArr = formData[label] || [];
@@ -92,33 +145,61 @@ const PostFormPage = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can send formData to your backend here
-    setSubmitted(true);
+
+    try {
+      // Find the form ID from the post data
+      const formId = post.form_id; // Assuming the form ID is the same as post ID
+
+      const response = await fetch(`${BASE_URL}/forms/${formId}/submit`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log("Form submitted successfully:", result);
+        setSubmitted(true);
+      } else {
+        const errorData = await response.json();
+        console.error("Form submission failed:", errorData);
+        alert(`Form submission failed: ${errorData.message || "Unknown error"}`);
+      }
+    } catch (error) {
+      console.error("Network error during form submission:", error);
+      alert("Network error. Please try again.");
+    }
   };
 
-  if (loading) return <div>Loading...</div>;
-  if (!post) return <div>Post not found.</div>;
-  if (!post.form_structure) return <div>No form available for this post.</div>;
-  if (submitted) return <div style={{ color: "#16a34a", fontWeight: 700, fontSize: "1.3rem", margin: "2rem" }}>Form submitted successfully!</div>;
+  if (loading) return <div className='loading-message'>Loading...</div>;
+  if (!post) return <div className='error-message'>Post not found.</div>;
+  if (!post.form_structure) return <div className='error-message'>No form available for this post.</div>;
+  if (submitted) return <div className='success-message'>Form submitted successfully!</div>;
 
   return (
-    <div style={{ maxWidth: 540, margin: "2.5rem auto", background: "#232323", borderRadius: 16, padding: "2.5rem 2rem", boxShadow: "0 2px 16px #0004" }}>
-      <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 24 }}>
-        <img src={post.society_logo} alt={post.society_name} style={{ width: 48, height: 48, borderRadius: "50%" }} />
+    <div className='form-container'>
+      <div className='form-header'>
+        <img src={post.society_logo} alt={post.society_name} className='form-logo' />
         <div>
-          <div style={{ fontWeight: 900, fontSize: "1.3rem", color: "#fbbf24" }}>{post.society_name}</div>
-          <div style={{ fontWeight: 700, fontSize: "1.1rem", color: "#fff" }}>{post.title}</div>
+          <div className='form-society-name'>{post.society_name}</div>
+          <div className='form-title'>{post.title}</div>
         </div>
       </div>
-      <div style={{ color: "#fbbf24", fontWeight: 600, marginBottom: 12 }}>{post.description}</div>
-      <form onSubmit={handleSubmit}>
+      <div className='form-description'>{post.description}</div>
+      <form onSubmit={handleSubmit} className='form'>
         {formFields.map((field, idx) => (
-          <div key={idx} style={{ marginBottom: 22 }}>
-            <label style={{ color: "#fff", fontWeight: 600, display: "block", marginBottom: 6 }}>
+          <div key={idx} className='form-field'>
+            <label
+              className='form-label'
+              htmlFor={
+                field.input_type === "checkbox" || field.input_type === "radio" ? undefined : `${field.label}-input`
+              }>
               {field.label}
-              {field.required && <span style={{ color: "#f87171", marginLeft: 4 }}>*</span>}
+              {field.required && <span className='form-required'>*</span>}
             </label>
             {inputTypes[field.input_type] &&
               inputTypes[field.input_type]({
@@ -130,22 +211,7 @@ const PostFormPage = () => {
               })}
           </div>
         ))}
-        <button
-          type="submit"
-          style={{
-            background: "linear-gradient(90deg, #fbbf24 60%, #f59e0b 100%)",
-            color: "#232323",
-            fontWeight: 800,
-            fontSize: "1.1rem",
-            borderRadius: 10,
-            border: "none",
-            padding: "0.9rem 2.2rem",
-            marginTop: 18,
-            cursor: "pointer",
-            boxShadow: "0 2px 12px #fbbf2430",
-            transition: "background 0.2s, color 0.2s, transform 0.2s",
-          }}
-        >
+        <button type='submit' className='form-submit-button'>
           Submit
         </button>
       </form>

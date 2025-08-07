@@ -51,34 +51,27 @@ const PostModal = ({ post, onClose }) => {
 
   if (!postData) {
     return (
-      <div className="modal-backdrop" onClick={handleBackdropClick}>
-        <div className="modal-container">
-          <button className="modal-close" onClick={onClose}>
+      <div className='modal-backdrop' onClick={handleBackdropClick}>
+        <div className='modal-container'>
+          <button className='modal-close' onClick={onClose}>
             <FaTimes />
           </button>
-          <button
-            className="modal-share"
-            onClick={handleShare}
-            title="Share this post"
-          >
-            <Share2 size={20} />
-          </button>
-          <div className="modal-image">
-            <div className="loading-spinner"></div>
+          <div className='modal-image'>
+            <div className='loading-spinner'></div>
           </div>
-          {copied && <div className="modal-copied-msg">Link copied!</div>}
+          {copied && <div className='modal-copied-msg'>Link copied!</div>}
         </div>
       </div>
     );
   }
 
   return (
-    <div className="modal-backdrop" onClick={handleBackdropClick}>
-      <div className="modal-container">
-        <button className="modal-close" onClick={onClose}>
+    <div className='modal-backdrop' onClick={handleBackdropClick}>
+      <div className='modal-container'>
+        <button className='modal-close' onClick={onClose}>
           <FaTimes />
         </button>
-        <div className="modal-image">
+        <div className='modal-image'>
           <img
             src={postData.image_url}
             alt={postData.title}
@@ -88,41 +81,46 @@ const PostModal = ({ post, onClose }) => {
             }}
           />
         </div>
-        <div className="modal-info">
-          <div className="modal-header-info">
-            <img
-              src={postData.society_logo}
-              alt={postData.society_name}
-              className="modal-logo-img"
-            />
-            <span className="modal-title">{postData.society_name}</span>
-          </div>
-          <hr className="modal-divider" />
-          <div className="modal-text">{postData.description}</div>
-          <div className="modal-footer" style={{ display: "flex", justifyContent: "space-between" }}>
-            <div className="modal-date">
-              {new Date(postData.created_at).toLocaleDateString()}
+        <div className='modal-info'>
+          <span className='modal-title'>{postData.title}</span>
+          <div className='modal-header-info'>
+            <div>
+              <img src={postData.society_logo} alt={postData.title} className='modal-logo-img' />
+              <span>{postData.society_name}</span>
             </div>
+            <span>
+              {(() => {
+                const d = new Date(postData.created_at);
+                const day = d.getDate();
+                const month = d.toLocaleString("default", { month: "short" });
+                const year = d.getFullYear();
+                const suffix =
+                  [, "st", "nd", "rd"][day % 10] && ![11, 12, 13].includes(day % 100)
+                    ? [, "st", "nd", "rd"][day % 10]
+                    : "th";
+                return `${day}${suffix} ${month}, ${year}`;
+              })()}
+            </span>
+          </div>
+          <hr className='modal-divider' />
+          <div className='modal-text'>{postData.description}</div>
+          <div className='modal-footer' style={{ display: "flex", justifyContent: "space-between" }}>
             {postData.form_structure && (
               <button
-                className="modal-share-bottom modal-register-button"
+                className='modal-share-bottom modal-register-button'
                 onClick={() => {
                   // Navigate to the form page for this post
                   window.location.href = `/posts/${postData.id}/form`;
-                }}
-              >
+                }}>
                 Register
               </button>
             )}
-            <button
-              className="modal-share-bottom"
-              onClick={handleShare}
-              title="Share this post"
-            >
-              <Share2 size={18} style={{ marginRight: '0.4rem' }} />
-              Share
-            </button>
-            {copied && <div className="modal-copied-msg">Link copied!</div>}
+            <>
+              <button className='modal-share-bottom' onClick={handleShare} title='Share this post'>
+                {/* <Share2 size={28} style={{ color: "red" }} /> */}
+                {copied ? "Link copied!" : "Share"}
+              </button>
+            </>
           </div>
         </div>
         {/* Share button at the bottom */}

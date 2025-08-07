@@ -1,8 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { FaInstagram, FaLinkedin, FaFacebook, FaYoutube, FaTwitter, FaGlobe, FaEnvelope, FaPhone, FaMapMarkerAlt, FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-import './AboutSection.css';
-import { BASE_URL } from '../constants/api';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaFacebook,
+  FaYoutube,
+  FaTwitter,
+  FaGlobe,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaQuoteLeft,
+  FaQuoteRight,
+} from "react-icons/fa";
+import "./AboutSection.css";
+import { BASE_URL } from "../constants/api";
 
 const AboutSection = ({ society: propSociety }) => {
   const { society_slug } = useParams();
@@ -18,13 +30,13 @@ const AboutSection = ({ society: propSociety }) => {
     if (propSociety || !society_slug) return;
     setLoading(true);
     fetch(`${BASE_URL}/societies/${encodeURIComponent(society_slug)}`)
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         setSociety(data.society);
         setLoading(false);
       })
       .catch(() => {
-        setError('Could not load society details.');
+        setError("Could not load society details.");
         setLoading(false);
       });
   }, [society_slug, propSociety]);
@@ -34,8 +46,8 @@ const AboutSection = ({ society: propSociety }) => {
     if (!society_slug) return;
     setGalleryLoading(true);
     fetch(`${BASE_URL}/societies/${encodeURIComponent(society_slug)}/gallery?page=1&limit=20`)
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         setGallery(data.images || []);
         setGalleryLoading(false);
       })
@@ -50,10 +62,11 @@ const AboutSection = ({ society: propSociety }) => {
   };
   const handleThumbClick = (idx) => setCurrentSlide(idx);
 
-  if (loading) return <div className="about-loading">Loading...</div>;
-  if (error) return <div className="about-error">{error}</div>;
+  if (loading) return <div className='about-loading'>Loading...</div>;
+  if (error) return <div className='about-error'>{error}</div>;
   if (!society) return null;
 
+  console.log(society);
   // Parse contact info
   let contact = {};
   try {
@@ -64,148 +77,101 @@ const AboutSection = ({ society: propSociety }) => {
   const socials = society.social_media || {};
 
   return (
-    <div className="about-section">
-      {/* Hero Section */}
-      <div className="about-hero">
-        <div className="about-hero-content">
-          <h1 className="about-title">{society.name}</h1>
-          {society.one_liner && (
-            <div className="about-one-liner">
-              <FaQuoteLeft className="one-liner-quote" />
-              <span>{society.one_liner}</span>
-              <FaQuoteRight className="one-liner-quote" />
-            </div>
-          )}
-          <div className="about-badges">
-            {society.tags && society.tags.map((tag, idx) => (
-              <span className="about-badge" key={idx}>{tag}</span>
-            ))}
-            <span className="about-badge category">{society.category_name}</span>
-            <span className={`about-badge status ${society.status}`}>{society.status}</span>
-          </div>
-          <div className="about-socials-row">
-            {socials.facebook && (
-              <a href={socials.facebook} target="_blank" rel="noopener noreferrer" title="Facebook" className="about-social-icon-btn facebook">
-                <FaFacebook />
-              </a>
-            )}
-            {socials.instagram && (
-              <a href={socials.instagram} target="_blank" rel="noopener noreferrer" title="Instagram" className="about-social-icon-btn instagram">
-                <FaInstagram />
-              </a>
-            )}
-            {socials.linkedin && (
-              <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn" className="about-social-icon-btn linkedin">
-                <FaLinkedin />
-              </a>
-            )}
-            {socials.youtube && (
-              <a href={socials.youtube} target="_blank" rel="noopener noreferrer" title="YouTube" className="about-social-icon-btn youtube">
-                <FaYoutube />
-              </a>
-            )}
-            {socials.twitter && socials.twitter.length > 5 && (
-              <a href={socials.twitter} target="_blank" rel="noopener noreferrer" title="Twitter" className="about-social-icon-btn twitter">
-                <FaTwitter />
-              </a>
-            )}
-            {contact.website && (
-              <a href={contact.website} target="_blank" rel="noopener noreferrer" title="Website" className="about-social-icon-btn globe">
-                <FaGlobe />
-              </a>
-            )}
-          </div>
-        </div>
-      </div>
+    <div className='content-wrapper'>
+      <div className='about-section'>
+        {/* Hero Section */}
 
-      {/* Main Content Grid */}
-      <div className="about-content">
-        {/* Description Section */}
-        <div className="about-description-card">
-          <h3 className="card-title">About Us</h3>
-          <p className="about-description">
-            {society.description}
-          </p>
-        </div>
-
-        {/* Contact & Website Section */}
-        <div className="about-contact-card">
-          <h3 className="card-title">Get In Touch</h3>
-          <div className="contact-grid">
-            {contact.email && (
-              <div className="contact-item">
-                <FaEnvelope className="contact-icon" />
-                <div>
-                  <span className="contact-label">Email</span>
-                  <a href={`mailto:${contact.email}`} className="contact-value">{contact.email}</a>
-                </div>
-              </div>
-            )}
-            {contact.mobile && (
-              <div className="contact-item">
-                <FaPhone className="contact-icon" />
-                <div>
-                  <span className="contact-label">Phone</span>
-                  <a href={`tel:${contact.mobile}`} className="contact-value">{contact.mobile}</a>
-                </div>
-              </div>
-            )}
-            {contact.location && (
-              <div className="contact-item">
-                <FaMapMarkerAlt className="contact-icon" />
-                <div>
-                  <span className="contact-label">Location</span>
-                  <span className="contact-value">{contact.location}</span>
-                </div>
-              </div>
-            )}
+        {/* Main Content Grid */}
+        <div className='about-content'>
+          {/* Description Section */}
+          <div className='about-description-card'>
+            <h3 className='card-title'>About Us</h3>
+            <p className='about-description'>{society.description}</p>
           </div>
-          {contact.website && (
-            <div className="website-cta-row">
-              <a href={contact.website} target="_blank" rel="noopener noreferrer" className="website-cta-btn">
-                <FaGlobe />
-                <span>Visit Website</span>
-              </a>
-            </div>
-          )}
-        </div>
-      </div>
 
-      {/* Full-width Gallery Slider */}
-      {!galleryLoading && gallery.length > 0 && (
-        <div className="about-gallery-slider-full">
-          <h3 className="gallery-title">Gallery</h3>
-          <div className="gallery-slider-main">
-            <button className="gallery-arrow left" onClick={handlePrev} aria-label="Previous">
-              &#8592;
-            </button>
-            <div className="gallery-slider-image-wrapper">
-              <img
-                src={gallery[currentSlide].image_url}
-                alt={gallery[currentSlide].caption || `Gallery ${currentSlide + 1}`}
-                className="gallery-slider-image"
-              />
-              {gallery[currentSlide].caption && (
-                <div className="gallery-slider-caption">{gallery[currentSlide].caption}</div>
+          {/* Contact & Website Section */}
+          <div className='about-contact-card'>
+            <h3 className='card-title'>Get In Touch</h3>
+            <div className='contact-grid'>
+              {contact.email && (
+                <div className='contact-item'>
+                  <FaEnvelope className='contact-icon' />
+                  <div>
+                    <span className='contact-label'>Email</span>
+                    <a href={`mailto:${contact.email}`} className='contact-value'>
+                      {contact.email}
+                    </a>
+                  </div>
+                </div>
+              )}
+              {contact.mobile && (
+                <div className='contact-item'>
+                  <FaPhone className='contact-icon' />
+                  <div>
+                    <span className='contact-label'>Phone</span>
+                    <a href={`tel:${contact.mobile}`} className='contact-value'>
+                      {contact.mobile}
+                    </a>
+                  </div>
+                </div>
+              )}
+              {contact.location && (
+                <div className='contact-item'>
+                  <FaMapMarkerAlt className='contact-icon' />
+                  <div>
+                    <span className='contact-label'>Location</span>
+                    <span className='contact-value'>{contact.location}</span>
+                  </div>
+                </div>
               )}
             </div>
-            <button className="gallery-arrow right" onClick={handleNext} aria-label="Next">
-              &#8594;
-            </button>
-          </div>
-          <div className="gallery-slider-thumbnails">
-            {gallery.map((img, idx) => (
-              <img
-                key={img.id || idx}
-                src={img.image_url}
-                alt={img.caption || `Gallery ${idx + 1}`}
-                className={`gallery-slider-thumb${idx === currentSlide ? ' active' : ''}`}
-                onClick={() => handleThumbClick(idx)}
-              />
-            ))}
+            {contact.website && (
+              <div className='website-cta-row'>
+                <a href={contact.website} target='_blank' rel='noopener noreferrer' className='website-cta-btn'>
+                  <FaGlobe />
+                  <span>Visit Website</span>
+                </a>
+              </div>
+            )}
           </div>
         </div>
-      )}
+
+        {/* Full-width Gallery Slider */}
+        {!galleryLoading && gallery.length > 0 && (
+          <div className='about-gallery-slider-full'>
+            <h3 className='gallery-title'>Gallery</h3>
+            <div className='gallery-slider-main'>
+              <button className='gallery-arrow left' onClick={handlePrev} aria-label='Previous'>
+                &#8592;
+              </button>
+              <div className='gallery-slider-image-wrapper'>
+                <img
+                  src={gallery[currentSlide].image_url}
+                  alt={gallery[currentSlide].caption || `Gallery ${currentSlide + 1}`}
+                  className='gallery-slider-image'
+                />
+                {gallery[currentSlide].caption && (
+                  <div className='gallery-slider-caption'>{gallery[currentSlide].caption}</div>
+                )}
+              </div>
+              <button className='gallery-arrow right' onClick={handleNext} aria-label='Next'>
+                &#8594;
+              </button>
+            </div>
+            <div className='gallery-slider-thumbnails'>
+              {gallery.map((img, idx) => (
+                <img
+                  key={img.id || idx}
+                  src={img.image_url}
+                  alt={img.caption || `Gallery ${idx + 1}`}
+                  className={`gallery-slider-thumb${idx === currentSlide ? " active" : ""}`}
+                  onClick={() => handleThumbClick(idx)}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
