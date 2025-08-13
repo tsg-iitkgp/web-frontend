@@ -127,7 +127,25 @@
 
 .profile-tags {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.5rem;;
+}
+.gymkhana-logo-badge {
+  transition: transform 0.18s;
+}
+.gymkhana-logo-badge:hover {
+  transform: scale(1.08) rotate(-8deg);
+  box-shadow: 0 4px 16px #fbbf2444;
+}
+
+@media (max-width: 768px) {
+  .profile-social-tags{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .profile-tags{
+    width: 20px;
+  }
 }
 
 .tag {
@@ -227,4 +245,30 @@
   .profile-quote {
     font-size: 1rem;
   }
+}
+.gymkhana-logo-badge {
+  position: relative;
+}
+
+.gymkhana-tooltip {
+  display: none;
+  position: absolute;
+  bottom: 110%;
+  right: 0;
+  background: #232323;
+  color: #fff;
+  padding: 0.45em 1em;
+  border-radius: 8px;
+  font-size: 0.98rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px #0005;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s;
+}
+
+.gymkhana-logo-badge:hover + .gymkhana-tooltip {
+  display: block;
+  opacity: 1;
 }

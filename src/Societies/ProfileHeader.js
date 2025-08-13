@@ -98,7 +98,7 @@ const ProfileHeader = () => {
         <div className='header-wrapper'>
           <div className='profile-section'>
             {/* Profile Logo */}
-            <div className='profile-logo'>
+            <div className='profile-logo' style={{ position: "relative", alignSelf: "top" }}>
               <img
                 src={society.logo_url}
                 alt={`${society.name} Logo`}
@@ -115,6 +115,27 @@ const ProfileHeader = () => {
                     "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvcnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZiYmYyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvZ288L3RleHQ+PC9zdmc+";
                 }}
               />
+              {society.is_under_gymkhana && (
+                <div style={{ position: "absolute", bottom: "-1px", right: "-1px" }}>
+                  <img
+                    src="/tsg-logo.png"
+                    alt="Gymkhana"
+                    className="gymkhana-logo-badge"
+                    style={{
+                      width: "36px",
+                      height: "36px",
+                      background: "#000000ff",
+                      borderRadius: "50%",
+                      border: "1.5px solid #fbbf24",
+                      boxShadow: "0 2px 8px #fbbf2433",
+                      padding: "6px",
+                      zIndex: 2,
+                      cursor: "pointer"
+                    }}  
+                  />
+                  <span className="gymkhana-tooltip">This society is under Gymkhana</span>
+                </div>
+              )}
             </div>
 
             {/* Profile Info */}

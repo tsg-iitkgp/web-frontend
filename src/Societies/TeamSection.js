@@ -39,13 +39,26 @@ const TeamSection = () => {
     }
   };
 
+  function mergeGroupsByPosition(groups) {
+    const merged = {};
+    groups.forEach((group) => {
+      if (!merged[group.position]) {
+        merged[group.position] = { ...group, members: [...group.members] };
+      } else {
+        merged[group.position].members.push(...group.members);
+      }
+    });
+    // Sort by priority (lowest first)
+    return Object.values(merged).sort((a, b) => a.priority - b.priority);
+  }
+
   if (loading) {
     return <div className="team-container">Loading...</div>;
   }
 
   return (
     <div className="team-container">
-      {teamGroups.map((group, idx) => (
+      {mergeGroupsByPosition(teamGroups).map((group, idx) => (
         <div key={idx} className="team-section">
           <h2 className="team-category-title">{group.position}</h2>
           <div className="team-grid">
@@ -60,7 +73,7 @@ const TeamSection = () => {
                       className="member-image"
                       onError={(e) => {
                         e.target.src =
-                          'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZiYmYyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlPC90ZXh0Pjwvc3ZnPg==';
+                          'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvcnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZiYmYyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlPC90ZXh0Pjwvc3ZnPg==';
                       }}
                     />
                     <div className="social-overlay">
