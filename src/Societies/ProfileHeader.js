@@ -112,7 +112,7 @@ const ProfileHeader = () => {
                 }}
                 onError={(e) => {
                   e.target.src =
-                    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZiYmYyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvZ288L3RleHQ+PC9zdmc+";
+                    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvcnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZiYmYyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvZ288L3RleHQ+PC9zdmc+";
                 }}
               />
             </div>
@@ -121,6 +121,25 @@ const ProfileHeader = () => {
             <div className='profile-info'>
               <div className='profile-header-content'>
                 <h1 className='profile-title'>{society.name}</h1>
+                {society.one_liner && (
+                  <blockquote
+                    className='profile-one-liner'
+                    style={{
+                      color: "#fbbf24",
+                      fontWeight: 600,
+                      fontSize: "1.08rem",
+                      fontStyle: "italic",
+                      margin: "0.3rem auto 0.7rem auto",
+                      borderLeft: "4px solid #fbbf24",
+                      paddingLeft: "1rem",
+                      background: "rgba(251,191,36,0.07)",
+                      textAlign: "center",
+                      maxWidth: "600px"
+                    }}
+                  >
+                    {society.one_liner}
+                  </blockquote>
+                )}
                 <blockquote className='profile-quote'>{society.description}</blockquote>
                 <div className='profile-domain'>
                   <span className='domain-label'>Category</span>
@@ -130,8 +149,13 @@ const ProfileHeader = () => {
 
               <div className='profile-social-tags'>
                 <div className='profile-tags'>
-                  <span className='tag'>{society.category_name.toLowerCase()}</span>
+                  <span className='tag'>{society.category_name?.toLowerCase()}</span>
                   <span className='tag'>active</span>
+                  {/* Render tags from API response if present */}
+                  {Array.isArray(society.tags) &&
+                    society.tags.map((tag, idx) => (
+                      <span className='tag' key={idx}>{tag}</span>
+                    ))}
                 </div>
 
                 <div className='header-social-icons'>

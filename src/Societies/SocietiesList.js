@@ -8,23 +8,26 @@ const SocietiesList = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [activeCategory, setActiveCategory] = useState('');
-  const [categories] = useState([
-    'Social and Cultural',
-    'Technology', 
-    'Sports and Games',
-    "Student's Welfare"
-  ]);
+  const [categories, setCategories] = useState([]);
+
+  // Fetch categories from API
+  useEffect(() => {
+    fetch(`${BASE_URL}/categories`)
+      .then(res => res.json())
+      .then(data => setCategories(data.categories || []))
+      .catch(() => setCategories([]));
+  }, []);
 
   const fetchSocieties = async (category = '') => {
     setLoading(true);
     setError(null);
-    
+
     try {
       const queryParams = new URLSearchParams({
         status: 'active',
         limit: '50'
       });
-      
+
       if (category) {
         queryParams.append('category', category);
       }
@@ -35,11 +38,11 @@ const SocietiesList = () => {
           'Content-Type': 'application/json',
         },
       });
-      
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
       const data = await response.json();
       setSocieties(data.societies || []);
     } catch (err) {
@@ -74,15 +77,20 @@ const SocietiesList = () => {
     <div className="societies-container">
       <div className="societies-header">
         <h1 className="societies-title">Societies</h1>
-        
-        <div className="category-filters">
+        <div className="category-filters category-tabs">
+          <button
+            className={`category-btn ${activeCategory === '' ? 'active' : ''}`}
+            onClick={() => handleCategoryChange('')}
+          >
+            All
+          </button>
           {categories.map((category) => (
             <button
-              key={category}
-              onClick={() => handleCategoryChange(category)}
-              className={`category-btn ${activeCategory === category ? 'active' : ''}`}
+              key={category.id}
+              onClick={() => handleCategoryChange(category.name)}
+              className={`category-btn ${activeCategory === category.name ? 'active' : ''}`}
             >
-              {category}
+              {category.name}
             </button>
           ))}
         </div>
@@ -104,7 +112,12 @@ const SocietiesList = () => {
           </div>
         ) : (
           societies.map((society) => (
-            <div key={society.id} className="society-card">
+            <a
+              key={society.id}
+              className="society-card"
+              href={`/societies/${society.slug}`}
+              style={{ textDecoration: "none" }}
+            >
               <div className="society-logo">
                 <img
                   src={society.logo_url}
@@ -114,28 +127,27 @@ const SocietiesList = () => {
                   }}
                 />
               </div>
-              
               <div className="society-info">
                 <h3 className="society-name">{society.name}</h3>
                 <div className="social-icons">
                   {society.social_media?.facebook && (
-                    <a href={society.social_media.facebook} className="social-link" target="_blank" rel="noopener noreferrer">
+                    <a href={society.social_media.facebook} className="social-link" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
                       <FaFacebook />
                     </a>
                   )}
                   {society.social_media?.instagram && (
-                    <a href={society.social_media.instagram} className="social-link" target="_blank" rel="noopener noreferrer">
+                    <a href={society.social_media.instagram} className="social-link" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
                       <FaInstagram />
                     </a>
                   )}
                   {society.social_media?.linkedin && (
-                    <a href={society.social_media.linkedin} className="social-link" target="_blank" rel="noopener noreferrer">
+                    <a href={society.social_media.linkedin} className="social-link" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
                       <FaLinkedin />
                     </a>
                   )}
                 </div>
               </div>
-            </div>
+            </a>
           ))
         )}
       </div>

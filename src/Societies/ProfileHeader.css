@@ -37,6 +37,12 @@
   font-weight: bold;
 }
 
+.profile-one-liner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav-social {
   display: flex;
   gap: 1rem;
