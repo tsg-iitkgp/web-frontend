@@ -72,27 +72,6 @@ const ProfileHeader = () => {
 
   return (
     <div className='header-container'>
-      {/* Top Navigation */}
-      <nav className='top-nav'>
-        <div className='nav-content'>
-          <div className='nav-left'>
-            <div className='logo'>
-              <img
-                src='../testAssets/tsg-logo.png'
-                alt='TSG Logo'
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                  background: "transparent",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </nav>
-
       {/* Header Content */}
       <div className='header-content'>
         <div className='header-wrapper'>
@@ -118,9 +97,9 @@ const ProfileHeader = () => {
               {society.is_under_gymkhana && (
                 <div style={{ position: "absolute", bottom: "-1px", right: "-1px" }}>
                   <img
-                    src="/tsg-logo.png"
-                    alt="Gymkhana"
-                    className="gymkhana-logo-badge"
+                    src='/tsg-logo.png'
+                    alt='Gymkhana'
+                    className='gymkhana-logo-badge'
                     style={{
                       width: "36px",
                       height: "36px",
@@ -130,10 +109,10 @@ const ProfileHeader = () => {
                       boxShadow: "0 2px 8px #fbbf2433",
                       padding: "6px",
                       zIndex: 2,
-                      cursor: "pointer"
-                    }}  
+                      cursor: "pointer",
+                    }}
                   />
-                  <span className="gymkhana-tooltip">This society is under Gymkhana</span>
+                  <span className='gymkhana-tooltip'>This society is under Gymkhana</span>
                 </div>
               )}
             </div>
@@ -155,9 +134,8 @@ const ProfileHeader = () => {
                       paddingLeft: "1rem",
                       background: "rgba(251,191,36,0.07)",
                       textAlign: "center",
-                      maxWidth: "600px"
-                    }}
-                  >
+                      maxWidth: "600px",
+                    }}>
                     {society.one_liner}
                   </blockquote>
                 )}
@@ -175,7 +153,9 @@ const ProfileHeader = () => {
                   {/* Render tags from API response if present */}
                   {Array.isArray(society.tags) &&
                     society.tags.map((tag, idx) => (
-                      <span className='tag' key={idx}>{tag}</span>
+                      <span className='tag' key={idx}>
+                        {tag}
+                      </span>
                     ))}
                 </div>
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { BASE_URL } from "../constants/api";
 import "./PostFormPage.css";
+import Layout from "../components/Layouts/Layout";
 
 const inputTypes = {
   text: (props) => {
@@ -175,47 +176,77 @@ const PostFormPage = () => {
     }
   };
 
-  if (loading) return <div className='loading-message'>Loading...</div>;
-  if (!post) return <div className='error-message'>Post not found.</div>;
-  if (!post.form_structure) return <div className='error-message'>No form available for this post.</div>;
-  if (submitted) return <div className='success-message'>Form submitted successfully!</div>;
+  if (loading)
+    return (
+      <Layout>
+        <div className='loading-message' style={{ marginTop: "5rem" }}>
+          Loading...
+        </div>
+      </Layout>
+    );
+  if (!post)
+    return (
+      <Layout>
+        <div className='error-message' style={{ marginTop: "5rem" }}>
+          Post not found.
+        </div>
+      </Layout>
+    );
+  if (!post.form_structure)
+    return (
+      <Layout>
+        <div className='error-message' style={{ marginTop: "5rem" }}>
+          No form available for this post.
+        </div>
+      </Layout>
+    );
+  if (submitted)
+    return (
+      <Layout>
+        <div className='success-message' style={{ marginTop: "5rem" }}>
+          Form submitted successfully!
+        </div>
+      </Layout>
+    );
 
   return (
-    <div className='form-container'>
-      <div className='form-header'>
-        <img src={post.society_logo} alt={post.society_name} className='form-logo' />
-        <div>
-          <div className='form-society-name'>{post.society_name}</div>
-          <div className='form-title'>{post.title}</div>
-        </div>
-      </div>
-      <div className='form-description'>{post.description}</div>
-      <form onSubmit={handleSubmit} className='form'>
-        {formFields.map((field, idx) => (
-          <div key={idx} className='form-field'>
-            <label
-              className='form-label'
-              htmlFor={
-                field.input_type === "checkbox" || field.input_type === "radio" ? undefined : `${field.label}-input`
-              }>
-              {field.label}
-              {field.required && <span className='form-required'>*</span>}
-            </label>
-            {inputTypes[field.input_type] &&
-              inputTypes[field.input_type]({
-                name: field.label,
-                value: formData[field.label],
-                onChange: handleChange(field.label, field.input_type),
-                required: field.required,
-                options: field.options,
-              })}
+    <Layout>
+      <div className='form-container' style={{ marginTop: "5rem" }}>
+        <div className='form-header'>
+          <img src={post.society_logo} alt={post.society_name} className='form-logo' />
+          <div>
+            <div className='form-society-name'>{post.society_name}</div>
+            <div className='form-title'>{post.title}</div>
           </div>
-        ))}
-        <button type='submit' className='form-submit-button'>
-          Submit
-        </button>
-      </form>
-    </div>
+        </div>
+        <div className='form-description'>{post.description}</div>
+        <form onSubmit={handleSubmit} className='form'>
+          {formFields.map((field, idx) => (
+            <div key={idx} className='form-field'>
+              <label
+                className='form-label'
+                htmlFor={
+                  field.input_type === "checkbox" || field.input_type === "radio" ? undefined : `${field.label}-input`
+                }>
+                {field.label}
+                {field.required && <span className='form-required'>*</span>}
+              </label>
+              {inputTypes[field.input_type] &&
+                inputTypes[field.input_type]({
+                  name: field.label,
+                  value: formData[field.label],
+                  onChange: handleChange(field.label, field.input_type),
+                  required: field.required,
+                  options: field.options,
+                })}
+            </div>
+          ))}
+          <button type='submit' className='form-submit-button'>
+            Submit
+          </button>
+        </form>
+      </div>
+    </Layout>
   );
 };
 

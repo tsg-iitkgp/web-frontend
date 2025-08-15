@@ -49,12 +49,9 @@ export default function Navbar() {
       <nav className={Styles.navbar}>
         {/* Navbar logo */}
         <div className={Styles.navLogo}>
-          <NavLink to="/" style={{ display: "flex", alignItems: "center" }}>
+          <NavLink to='/' style={{ display: "flex", alignItems: "center" }}>
             {" "}
-            <img
-              src="/data/media/images/general/gymkhanaLogo.png"
-              alt="KGP_logo"
-            />
+            <img src='/data/media/images/general/gymkhanaLogo.png' alt='KGP_logo' />
             <span>&nbsp;TSG</span>
           </NavLink>
         </div>
@@ -68,23 +65,20 @@ export default function Navbar() {
         <ul className={listClass}>
           {/* HOME */}
           <li className={Styles.navItem}>
-            <NavLink
-              to="/"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-              exact
-            >
+            <NavLink to='/' className={Styles.navLinks} activeClassName={Styles.acitveLink} exact>
               Home
+            </NavLink>
+          </li>
+
+          <li className={Styles.navItem}>
+            <NavLink to='/societies' className={Styles.navLinks} activeClassName={Styles.acitveLink} exact>
+              Societies
             </NavLink>
           </li>
 
           {/* EVENTS */}
           <li className={Styles.navItem}>
-            <NavLink
-              to="/events"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
+            <NavLink to='/events' className={Styles.navLinks} activeClassName={Styles.acitveLink}>
               Events
             </NavLink>
           </li>
@@ -92,11 +86,7 @@ export default function Navbar() {
           {/* BLOGS */}
           <li className={Styles.navItem}>
             {
-              <a
-                href="https://tsgblog.iitkgp.ac.in/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href='https://tsgblog.iitkgp.ac.in/' target='_blank' rel='noreferrer'>
                 Blogs
               </a>
             }
@@ -104,11 +94,7 @@ export default function Navbar() {
 
           {/* AWARDS */}
           <li className={Styles.navItem}>
-            <NavLink
-              to="/awards"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
+            <NavLink to='/awards' className={Styles.navLinks} activeClassName={Styles.acitveLink}>
               Awards
             </NavLink>
           </li>
@@ -117,14 +103,12 @@ export default function Navbar() {
           <li
             className={`${Styles.navItem} ${Styles.results}`}
             onMouseEnter={() => setDropdown(true)}
-            onMouseLeave={() => setDropdown(false)}
-          >
+            onMouseLeave={() => setDropdown(false)}>
             <NavLink
               to={NaN}
               className={Styles.navLinks}
               activeClassName={Styles.acitveLink}
-              style={{ cursor: "default" }}
-            >
+              style={{ cursor: "default" }}>
               Results
             </NavLink>
             {dropdown && (
@@ -137,33 +121,21 @@ export default function Navbar() {
           </li>
 
           <li className={Styles.navItem}>
-            <NavLink
-              to="/letter-to-you"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
+            <NavLink to='/letter-to-you' className={Styles.navLinks} activeClassName={Styles.acitveLink}>
               Letter to you
             </NavLink>
           </li>
 
           {/* ELECTIONS */}
           <li className={Styles.navItem}>
-            <NavLink
-              to="/elections"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
+            <NavLink to='/elections' className={Styles.navLinks} activeClassName={Styles.acitveLink}>
               Elections
             </NavLink>
           </li>
 
           {/* NOMINATIONS */}
           <li className={Styles.navItem}>
-            <NavLink
-              to="/nominations"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
+            <NavLink to='/nominations' className={Styles.navLinks} activeClassName={Styles.acitveLink}>
               Nominations
             </NavLink>
           </li>
@@ -181,22 +153,14 @@ export default function Navbar() {
 
           {/* CONTACTS */}
           <li className={Styles.navItem}>
-            <NavLink
-              to="/contacts"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
+            <NavLink to='/contacts' className={Styles.navLinks} activeClassName={Styles.acitveLink}>
               Contacts
             </NavLink>
           </li>
 
           {/* FAQs */}
           <li className={Styles.navItem}>
-            <NavLink
-              to="/faq"
-              className={Styles.navLinks}
-              activeClassName={Styles.acitveLink}
-            >
+            <NavLink to='/faq' className={Styles.navLinks} activeClassName={Styles.acitveLink}>
               FAQ
             </NavLink>
           </li>
