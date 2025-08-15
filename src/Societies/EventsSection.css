@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+.events-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Lato', sans-serif;
+  background: #000;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.event-card {
+  display: flex;
+  background: #333;
+  border: 2px solid #fbbf24;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  min-height: 220px;
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.3);
+}
+
+.event-image {
+  width: 280px;
+  min-width: 280px;
+  height: auto;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.event-content {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  color: #fff;
+  position: relative;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fbbf24;
+  margin: 0 0 1rem 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.event-description {
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 auto 0;
+  font-family: 'Lato', sans-serif;
+  flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.event-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+.event-period {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.period-label {
+  color: #fbbf24;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.period-value {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.details-button {
+  background: transparent;
+  border: none;
+  color: #fbbf24;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.details-button:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .events-container {
+    padding: 1rem;
+  }
+  
+  .event-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .event-image {
+    width: 100%;
+    min-width: 0;
+    height: 200px;
+  }
+  
+  .event-content {
+    padding: 1rem;
+  }
+  
+  .event-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .details-button {
+    align-self: flex-end;
+  }
+}

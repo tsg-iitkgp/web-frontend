@@ -12,7 +12,7 @@ import NotFound from "./pages/NotFound";
 import PrivateRoute from "./routes/PrivateRoute";
 import Contacts from "./pages/Contacts/Contacts";
 import Awards from "./pages/Awards/Awards";
-import Societies from "./pages/Societies/Societies";
+import Societies from "./pages/SocietiesProfile/profile";
 import Events from "./pages/Events/Events";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./pages/Gallery/Gallery";
@@ -33,6 +33,11 @@ import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
 import LetterToYou from "./pages/LetterToYou/LetterToYou"
 import SocietyForm from "./pages/SocReg/form";
+import PostFormPage from "./Societies/PostFormPage";
+
+// Importing the society pages 
+import Profile from "./pages/SocietiesProfile/profile";
+import BrowseSocieties from "./pages/BrowseSocieties";
 // import SocietyLayout from "./pages/Societies/SocietyLayout";
 
 function App() {
@@ -43,7 +48,11 @@ function App() {
     <Router>
       <ScrollToTop>
         <Switch>
-          {/* Admin Routes */}
+          {/* Redirects */}
+          <Route exact path="/societies/:society_slug" render={() => <Profile />} />
+          <Route exact path="/societies/" render={() => <BrowseSocieties />} />
+
+          {/* Admin Routes */}  
           <Route exact path="/login" component={Login} />
           <Route exact path="/letter-to-you" component={LetterToYou} />
           <Route exact path="/socReg" component={SocietyForm} />
@@ -95,6 +104,7 @@ function App() {
 
           {/* Other Routes */}
           {/*<Route exact path="/gallery" component={Gallery} /> */}
+          <Route exact path="/posts/:postid/form" component={PostFormPage} />
         </Switch>
       </ScrollToTop>
     </Router>
