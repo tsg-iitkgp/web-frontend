@@ -17,6 +17,7 @@ import Events from "./pages/Events/Events";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./pages/Gallery/Gallery";
 import FAQ from "./pages/FAQ/FAQ";
+import ApnaInsti from "./pages/apnaInsti/apnaInsti";
 import Tech from "./pages/Committees/2021/Tech";
 import Sports from "./pages/Committees/2021/Sports";
 import Welfare from "./pages/Committees/2021/Welfare";
@@ -70,6 +71,7 @@ function App() {
           <Route exact path="/committees/welfare" component={Welfare} />
           <Route exact path="/committees/socult" component={Socult} />
           <Route exact path="/societies" component={Societies} />
+          <Route exact path="/apnaInsti" component={ApnaInsti} />
           {/* <Route exact path="/societies2" component={SocietyLayout} /> */}
           {/* Events Route */}
           <Route exact path="/events" component={Events} />
