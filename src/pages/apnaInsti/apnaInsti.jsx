@@ -1,4 +1,4 @@
-// src/pages/apnaInsti/apnaInsti.jsx (updated)
+// src/pages/apnaInsti/apnaInsti.jsx
 import React, { useState, useEffect } from "react";
 import data from "../../data/apnaInstiData.json";
 import "./apnaInsti.css";

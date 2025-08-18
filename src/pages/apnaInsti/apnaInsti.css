@@ -1,4 +1,4 @@
-/* src/pages/apnaInsti/apnaInsti.css (updated) */
+/* src/pages/apnaInsti/apnaInsti.css */
 :root{
   --bg:#E4EDF8;
   --panel:#ffffff;
@@ -145,10 +145,19 @@ html,body,#__next,#root {
 .card-title{ font-size:16px; color:#07243a; margin:0; font-weight:700; }
 .card-desc{ color:var(--muted); font-size:14px; margin:0; }
 
-.ai-footer{ background:transparent; color:#000; text-align:center; padding-top:8px; font-size:13px; }
+/* footer as a white panel with requested color #F7F7F7 */
+.ai-footer{
+  background: #F7F7F7;
+  color:#000;
+  text-align:center;
+  padding:14px 16px;
+  font-size:13px;
+  border-radius:12px;
+  border:1px solid rgba(8,18,36,0.04);
+}
 
 /* Footer logo — scoped rules to prevent global img styles from breaking it
-   Increased size here. Desktop: 26px, Mobile: 20px */
+   Desktop: 26px, Mobile: 20px */
 .ai-footer .devsoc-logo {
   height: 26px !important;
   width: auto !important;
