@@ -15,10 +15,15 @@
   --pill-bg-ghost: transparent;
   --pill-text-secondary: var(--text-color);
   --pill-radius: 999px;
-  --band-bg: #061125;
-  --band-text: #ffffff;
+
   --credit-bg: #F7F7F7;
   --credit-text: #0f1724;
+
+  --band-bg: var(--bg);         /* cards band = page background in light mode */
+  --band-text: var(--text-color);
+
+  --footer-band-bg: var(--credit-bg);  /* footer matches the small pill in light mode */
+  --footer-band-text: var(--credit-text);
 }
 
 .dark-mode{
@@ -34,6 +39,14 @@
   --pill-border: rgba(255,255,255,0.06);
   --pill-bg-ghost: rgba(255,255,255,0.02);
   --pill-text-secondary: var(--text-color);
+  --credit-bg: #F7F7F7;
+  --credit-text: #0f1724;
+
+  --band-bg: #061125;          /* dark band for cards section in dark mode */
+  --band-text: #ffffff;
+
+  --footer-band-bg: var(--band-bg);  /* footer becomes dark band in dark mode */
+  --footer-band-text: var(--band-text);
 }
 
 html,body,#__next,#root {
@@ -179,7 +192,7 @@ html,body,#__next,#root {
 
 .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
 
-.feature-card{ background:var(--panel); border-radius:12px; padding:18px; min-height:130px; display:flex; flex-direction:column; gap:10px; transition: transform 220ms ease; border:1px solid rgba(255,255,255,0.04); box-shadow:none; }
+.feature-card{ background:var(--panel); border-radius:12px; padding:18px; min-height:130px; display:flex; flex-direction:column; gap:10px; transition: transform 220ms ease; border:1px solid rgba(0,0,0,0.04); box-shadow:none; }
 .feature-card:hover{ transform:none; box-shadow:none; }
 
 .icon { width:56px; height:56px; border-radius:10px; display:grid; place-items:center; font-size:22px; font-weight:700; color:white; flex-shrink:0; }
@@ -194,8 +207,8 @@ html,body,#__next,#root {
 .card-desc{ color:var(--muted); font-size:14px; margin:0; }
 
 .ai-footer{
-  background: var(--band-bg) !important;
-  color: var(--band-text) !important;
+  background: var(--footer-band-bg);
+  color: var(--footer-band-text);
   text-align:center;
   padding:28px 16px;
   font-size:13px;
@@ -220,15 +233,12 @@ html,body,#__next,#root {
   color: var(--credit-text);
   padding:8px 12px;
   border-radius:10px;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.45);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.12);
   border: 1px solid rgba(0,0,0,0.06);
   width: fit-content;
   max-width: 92%;
 }
 
-/* text inside the pill */
 .ai-footer .footer-credit .credit-text{
   font-size:13px;
   color: var(--credit-text);
@@ -236,21 +246,20 @@ html,body,#__next,#root {
   white-space:nowrap;
 }
 
-/* ensure the logo fits nicely */
 .ai-footer .devsoc-logo { height: 22px !important; width: auto !important; display: inline-block !important; vertical-align: middle !important; object-fit: contain !important; margin-left: 0 !important; filter: none; }
 .ai-footer .devsoc-fallback { font-weight: 700; display: inline-block; vertical-align: middle; color: var(--credit-text); }
 
-/* make sure the band (last section + footer) stays dark */
+/* Cards band (Coming Soon) uses band color */
 .ai-main > .section:last-of-type,
-.ai-main > .section:last-of-type + footer,
-.ai-main > footer {
-  background: var(--band-bg) !important;
-  color: var(--band-text) !important;
-  margin-top: 0 !important;
-  box-shadow: none !important;
-  border-top: 0 !important;
+.ai-main > .section:last-of-type + footer {
+  background: var(--band-bg);
+  color: var(--band-text);
+  margin-top: 0;
+  box-shadow: none;
+  border-top: 0;
 }
 
+/* ensure the last section padding and footer styling */
 .ai-main > .section:last-of-type {
   padding: 28px 6px;
   border-radius: 0;
@@ -263,13 +272,14 @@ html,body,#__next,#root {
   width: 100%;
 }
 
+/* fallback site-wide selectors */
 footer.ai-footer,
 .page-footer,
 .footer-outer,
 .site-footer-outer,
 .footer {
-  background: var(--band-bg) !important;
-  color: var(--band-text) !important;
+  background: var(--footer-band-bg);
+  color: var(--footer-band-text);
   width:100%;
   box-shadow:none;
   border-radius:0;
