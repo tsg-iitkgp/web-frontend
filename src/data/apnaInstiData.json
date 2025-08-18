@@ -1,57 +1,56 @@
 {
-    "brand": {
-      "name": "ApnaInsti",
-      "logo": "/apnaInstilogo.png"
+  "brand": {
+    "name": "ApnaInsti",
+    "logo": "/apnaInstilogo.png"
+  },
+  "hero": {
+    "title": "ApnaInsti",
+    "subtitle": "KGP DESERVES ONE APP, NOT TEN\nWE BRING IT ALL TOGETHER FOR YOU",
+    "buttonText": "Download the app",
+    "meta": "Available on: Android",
+    "previewImage": "/apnaInsti.png"
+  },
+  "currentFeatures": [
+    {
+      "title": "Event updates",
+      "desc": "Stay informed about all campus events with real-time updates.",
+      "icon": "📅",
+      "color": "accent-1"
     },
-    "hero": {
-      "title": "ApnaInsti",
-      "subtitle": "KGP DESERVES ONE APP, NOT TEN\nWE BRING IT ALL TOGETHER FOR YOU",
-      "buttonText": "Download the app",
-      "meta": "Available on: Android",
-      "previewImage": "/apnaInsti.png"
+    {
+      "title": "Announcements",
+      "desc": "Never miss important notices from clubs, societies, and the institute.",
+      "icon": "📢",
+      "color": "accent-2"
     },
-    "currentFeatures": [
-      {
-        "title": "Fast onboarding",
-        "desc": "Sign up and start using the app in under a minute.",
-        "icon": "⚡",
-        "color": "accent-1"
-      },
-      {
-        "title": "Offline mode",
-        "desc": "Use core features even without an internet connection.",
-        "icon": "📱",
-        "color": "accent-2"
-      },
-      {
-        "title": "Secure sync",
-        "desc": "Encrypted cloud sync across all your devices.",
-        "icon": "🔒",
-        "color": "accent-3"
-      }
-    ],
-    "upcomingFeatures": [
-      {
-        "title": "Dark theme",
-        "desc": "A polished dark UI for low-light use.",
-        "icon": "🌙",
-        "color": "accent-4"
-      },
-      {
-        "title": "Collaborative mode",
-        "desc": "Real-time collaboration with teammates.",
-        "icon": "👥",
-        "color": "accent-5"
-      },
-      {
-        "title": "Advanced analytics",
-        "desc": "Detailed usage reports and charts.",
-        "icon": "📊",
-        "color": "accent-6"
-      }
-    ],
-    "footer": {
-      "text": "Made by Development Society"
+    {
+      "title": "Opportunities",
+      "desc": "Get notified about internships, competitions, and new openings on time.",
+      "icon": "🎯",
+      "color": "accent-3"
     }
+  ],
+  "upcomingFeatures": [
+    {
+      "title": "Live bus tracking",
+      "desc": "Track campus buses in real-time for smoother commutes.",
+      "icon": "🚌",
+      "color": "accent-4"
+    },
+    {
+      "title": "Live GC scoreboard",
+      "desc": "Follow General Championship matches live with instant score updates.",
+      "icon": "🏆",
+      "color": "accent-5"
+    },
+    {
+      "title": "Slot booking",
+      "desc": "Book slots for gym, tennis, table tennis, or pool hassle-free.",
+      "icon": "📅",
+      "color": "accent-6"
+    }
+  ],
+  "footer": {
+    "text": "Made by Development Society"
   }
-  
+}

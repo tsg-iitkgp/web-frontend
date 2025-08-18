@@ -1,4 +1,4 @@
-// src/pages/apnaInsti/apnaInsti.jsx
+// src/pages/apnaInsti/apnaInsti.jsx (updated)
 import React, { useState, useEffect } from "react";
 import data from "../../data/apnaInstiData.json";
 import "./apnaInsti.css";
@@ -6,6 +6,7 @@ import "./apnaInsti.css";
 export default function ApnaInstiPage({ downloadUrl = "" }) {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [logoError, setLogoError] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -77,7 +78,6 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
       </header>
 
       <main className="ai-main">
-        {/* HERO */}
         <section className="hero">
           <div className="hero-left">
             <div className="hero-content">
@@ -111,10 +111,7 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
                 <img src={data.hero.previewImage} alt="App preview" />
               </div>
 
-              {/* dedicated sibling element for the shadow directly under the mobile */}
               <div className="phone-shadow" aria-hidden></div>
-
-              <div className="phone-note">Live preview</div>
             </div>
           </div>
         </section>
@@ -142,7 +139,19 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
         </section>
 
         <footer className="ai-footer">
-          <div>{data.footer.text}</div>
+          <div>
+            Made by{" "}
+            {!logoError ? (
+              <img
+                className="devsoc-logo"
+                src="/devsoclogo.jpeg"
+                alt="Development Society"
+                onError={() => setLogoError(true)}
+              />
+            ) : (
+              <span className="devsoc-fallback">Development Society</span>
+            )}
+          </div>
         </footer>
       </main>
     </div>
