@@ -1,34 +1,36 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import data from "../../data/apnaInstiData.json";
 import "./apnaInsti.css";
 
 export default function ApnaInstiPage({ downloadUrl = "" }) {
-  const [isVisible, setIsVisible] = useState(false);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [logoError, setLogoError] = useState(false);
-  const [dark, setDark] = useState(false);
+  const featuresRef = useRef(null);
+  const upcomingRef = useRef(null);
 
   useEffect(() => {
-    setIsVisible(true);
-    const saved = typeof window !== "undefined" && localStorage.getItem("apnainsti-dark");
-    const prefersDark = typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initial = saved === null ? prefersDark : saved === "true";
-    setDark(initial);
+    document.documentElement.classList.add("dark-mode");
   }, []);
 
   useEffect(() => {
-    if (typeof document !== "undefined") {
-      document.documentElement.classList.toggle("dark-mode", dark);
-      localStorage.setItem("apnainsti-dark", dark ? "true" : "false");
-    }
-  }, [dark]);
+    const grids = [featuresRef.current, upcomingRef.current].filter(Boolean);
+    if (grids.length === 0) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          } else {
+            entry.target.classList.remove("in-view");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+    grids.forEach((el) => observer.observe(el));
+    return () => {
+      grids.forEach((el) => observer.unobserve(el));
+      observer.disconnect();
     };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   const handleDownload = () => {
@@ -52,14 +54,11 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
   };
 
   const Card = ({ title, desc, icon, color, index }) => {
-    const px = (mousePosition.x / (window.innerWidth || 1) - 0.5) * 6;
-    const py = (mousePosition.y / (window.innerHeight || 1) - 0.5) * 6;
     return (
       <div
-        className={`feature-card ${isVisible ? "visible" : ""}`}
+        className={`feature-card`}
         style={{
-          transitionDelay: `${index * 80}ms`,
-          transform: `rotateX(${py}deg) rotateY(${px}deg)`
+          transitionDelay: `${index * 80}ms`
         }}
       >
         <div className={`icon ${color}`}>
@@ -73,6 +72,9 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
 
   return (
     <div className="ai-root">
+      <div className="stars-medium" aria-hidden="true" />
+      <div className="stars-large" aria-hidden="true" />
+      <div className="nebula" aria-hidden="true" />
       <header className="ai-header">
         <div className="brand">
           <div className="logo">
@@ -82,24 +84,7 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
         </div>
 
         <nav className="ai-nav" aria-label="Main navigation">
-          <button
-            className="theme-toggle"
-            onClick={() => setDark((d) => !d)}
-            aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
-            title={dark ? "Switch to light mode" : "Switch to dark mode"}
-          >
-            {dark ? "☀️" : "🌙"}
-          </button>
-
           <div className="nav-buttons" role="group" aria-label="Site actions">
-            <a className="pill secondary" href="#features" aria-label="Go to features">
-              Features
-            </a>
-
-            <a className="pill secondary" href="#upcoming" aria-label="Go to upcoming features">
-              Upcoming
-            </a>
-
             <button
               className="pill primary"
               onClick={handleDownload}
@@ -142,6 +127,8 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
 
           <div className="hero-right">
             <div className="phone-stage">
+              <div className="orbit" aria-hidden="true"></div>
+              <div className="grid-glow" aria-hidden="true"></div>
               <div className="phone-mock image-mode">
                 <img src={data.hero.previewImage} alt="App preview" />
               </div>
@@ -155,7 +142,7 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
           <div className="section-head">
             <h2>Current Features</h2>
           </div>
-          <div className="grid">
+          <div className="grid" ref={featuresRef}>
             {data.currentFeatures.map((f, i) => (
               <Card key={i} {...f} index={i} />
             ))}
@@ -166,7 +153,7 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
           <div className="section-head">
             <h2>Coming Soon</h2>
           </div>
-          <div className="grid">
+          <div className="grid" ref={upcomingRef}>
             {data.upcomingFeatures.map((f, i) => (
               <Card key={i} {...f} index={i + 3} />
             ))}
@@ -174,19 +161,7 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
         </section>
 
         <footer className="ai-footer">
-          <div className="footer-credit">
-            <span className="credit-text">Made by</span>
-            {!logoError ? (
-              <img
-                className="devsoc-logo"
-                src="/devsoclogo.jpeg"
-                alt="Development Society"
-                onError={() => setLogoError(true)}
-              />
-            ) : (
-              <span className="devsoc-fallback">Development Society</span>
-            )}
-          </div>
+          <span className="footer-text">Made with ❤️ by Developers' Society</span>
         </footer>
       </main>
     </div>
