@@ -1,4 +1,3 @@
-// src/pages/apnaInsti/apnaInsti.jsx
 import React, { useState, useEffect } from "react";
 import data from "../../data/apnaInstiData.json";
 import "./apnaInsti.css";
@@ -7,9 +6,24 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [logoError, setLogoError] = useState(false);
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
+    const saved = typeof window !== "undefined" && localStorage.getItem("apnainsti-dark");
+    const prefersDark = typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initial = saved === null ? prefersDark : saved === "true";
+    setDark(initial);
+  }, []);
+
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.documentElement.classList.toggle("dark-mode", dark);
+      localStorage.setItem("apnainsti-dark", dark ? "true" : "false");
+    }
+  }, [dark]);
+
+  useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
@@ -25,8 +39,7 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
       a.click();
       return;
     }
-    const content =
-      "This is a placeholder file. Replace with a real download URL for your app.";
+    const content = "This is a placeholder file. Replace with a real download URL for your app.";
     const blob = new Blob([content], { type: "text/plain" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -68,12 +81,34 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
           <div className="brand-text">{data.brand.name}</div>
         </div>
 
-        <nav className="ai-nav">
-          <a href="#features">Features</a>
-          <a href="#upcoming">Upcoming</a>
-          <button className="download-btn large" onClick={handleDownload}>
-            Download
+        <nav className="ai-nav" aria-label="Main navigation">
+          <button
+            className="theme-toggle"
+            onClick={() => setDark((d) => !d)}
+            aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+            title={dark ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {dark ? "☀️" : "🌙"}
           </button>
+
+          <div className="nav-buttons" role="group" aria-label="Site actions">
+            <a className="pill secondary" href="#features" aria-label="Go to features">
+              Features
+            </a>
+
+            <a className="pill secondary" href="#upcoming" aria-label="Go to upcoming features">
+              Upcoming
+            </a>
+
+            <button
+              className="pill primary"
+              onClick={handleDownload}
+              aria-label="Download the app"
+              title="Download the app"
+            >
+              Download
+            </button>
+          </div>
         </nav>
       </header>
 
@@ -139,8 +174,8 @@ export default function ApnaInstiPage({ downloadUrl = "" }) {
         </section>
 
         <footer className="ai-footer">
-          <div>
-            Made by{" "}
+          <div className="footer-credit">
+            <span className="credit-text">Made by</span>
             {!logoError ? (
               <img
                 className="devsoc-logo"
