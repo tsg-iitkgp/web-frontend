@@ -70,12 +70,16 @@ html,body,#__next,#root {
   position: relative;
 }
 
-/* Night sky base gradient fixed behind everything */
 .ai-root::before{
   content:"";
   position: fixed;
   top:0; left:0; width:100%; height:100%;
-  background: linear-gradient(180deg, #02041D 0%, #0A0E34 100%);
+  background:
+    radial-gradient(80vw 60vw at 30% 20%, rgba(255,255,255,0.10), rgba(255,255,255,0.0) 58%),
+    linear-gradient(180deg, #2a6fb0 0%, #2264c0 45%, #1744bd 75%, #082c7e 100%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 64px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 64px);
+  background-blend-mode: soft-light, normal, soft-light, soft-light;
   z-index:-3;
 }
 
@@ -117,8 +121,8 @@ html,body,#__next,#root {
     38vw 92vh #FFF,
     48vw 44vh #FFF,
     58vw 64vh #FFF;
-  opacity: .45;
-  animation: twinkle 4.8s infinite ease-in-out;
+  opacity: .25;
+  animation: twinkle 6.2s infinite ease-in-out;
   z-index:-2;
   pointer-events:none;
 }
@@ -148,8 +152,8 @@ html,body,#__next,#root {
     34vw 60vh #FFF,
     54vw 96vh #FFF,
     74vw 86vh #FFF;
-  opacity: .5;
-  animation: twinkle 6.4s infinite ease-in-out;
+  opacity: .3;
+  animation: twinkle 7.4s infinite ease-in-out;
   z-index:-1;
   pointer-events:none;
 }
@@ -172,8 +176,8 @@ html,body,#__next,#root {
     24vw 46vh #FFF,
     44vw 86vh #FFF,
     64vw 6vh #FFF;
-  opacity: .55;
-  animation: twinkle 7.2s infinite ease-in-out;
+  opacity: .35;
+  animation: twinkle 8.6s infinite ease-in-out;
   z-index:-1;
   pointer-events:none;
 }
@@ -265,7 +269,7 @@ html,body,#__next,#root {
 }
 .hero-left, .hero-right { display:flex; align-items:center; justify-content:center; min-height:320px; }
 
-.hero-content { max-width:560px; text-align:center; }
+.hero-content { max-width:560px; text-align:center; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(170,200,255,0.18); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 18px 20px; border-radius: 16px; box-shadow: 0 12px 32px rgba(88,166,255,0.25), 0 0 48px rgba(88,166,255,0.20); }
 .hero-title{ font-size:44px; line-height:1.03; margin:0 0 12px 0; color:var(--text-color); font-weight:900; display:block; text-shadow: 0 0 16px rgba(100, 200, 255, 0.6); }
 .hero-sub{ display:block; font-size:22px; font-weight:800; color:var(--text-color); margin-top:8px; line-height:1.08; letter-spacing:0.6px; text-shadow: 0 0 14px rgba(100, 200, 255, 0.5); }
 
@@ -317,7 +321,7 @@ html,body,#__next,#root {
 
 .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
 
-.feature-card{ background:var(--panel); border-radius:12px; padding:18px; min-height:130px; display:flex; flex-direction:column; gap:10px; transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), opacity 520ms ease; border:1px solid rgba(255,255,255,0.06); box-shadow:none; opacity: 0; transform: translateY(30px) scale(0.98); will-change: transform, opacity; }
+.feature-card{ background: rgba(46, 122, 255, 0.10); border-radius:12px; padding:18px; min-height:130px; display:flex; flex-direction:column; gap:10px; transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), opacity 520ms ease; border:1px solid rgba(170,200,255,0.22); box-shadow: 0 8px 26px rgba(30, 58, 138, 0.25); opacity: 0; transform: translateY(30px) scale(0.98); will-change: transform, opacity; }
 .feature-card:hover{ transform:none; box-shadow:none; }
 
 .grid.in-view .feature-card{ opacity: 1; transform: translateY(0) scale(1); }
