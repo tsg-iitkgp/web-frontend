@@ -17,6 +17,7 @@ import Events from "./pages/Events/Events";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./pages/Gallery/Gallery";
 import FAQ from "./pages/FAQ/FAQ";
+import ApnaInsti from "./pages/apnaInsti/apnaInsti";
 import Tech from "./pages/Committees/2021/Tech";
 import Sports from "./pages/Committees/2021/Sports";
 import Welfare from "./pages/Committees/2021/Welfare";
@@ -52,7 +53,7 @@ function App() {
           <Route exact path="/societies/:society_slug" render={() => <Profile />} />
           <Route exact path="/societies/" render={() => <BrowseSocieties />} />
 
-          {/* Admin Routes */}  
+          {/* Admin Routes */}
           <Route exact path="/login" component={Login} />
           <Route exact path="/letter-to-you" component={LetterToYou} />
           <Route exact path="/socReg" component={SocietyForm} />
@@ -70,6 +71,14 @@ function App() {
           <Route exact path="/committees/welfare" component={Welfare} />
           <Route exact path="/committees/socult" component={Socult} />
           <Route exact path="/societies" component={Societies} />
+          {/* <Route exact path="/apnaInsti" component={ApnaInsti} /> */}
+          <Route
+            exact
+            path="/apnaInsti"
+            render={(props) => (
+              <ApnaInsti {...props} downloadUrl="/apnaInsti.apk" />
+            )}
+          />
           {/* <Route exact path="/societies2" component={SocietyLayout} /> */}
           {/* Events Route */}
           <Route exact path="/events" component={Events} />
