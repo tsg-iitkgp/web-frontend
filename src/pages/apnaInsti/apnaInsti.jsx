@@ -1,169 +1,163 @@
-import React, { useEffect, useRef } from "react";
-import data from "../../data/apnaInstiData.json";
+import React, { useEffect, useState } from "react";
 import "./apnaInsti.css";
+import bgImage from "./website.png";
 
-export default function ApnaInstiPage({ downloadUrl = "" }) {
-  const featuresRef = useRef(null);
-  const upcomingRef = useRef(null);
-
-  useEffect(() => {
-    document.documentElement.classList.add("dark-mode");
-  }, []);
+export default function ApnaInstiPage() {
+  const [imageHeight, setImageHeight] = useState("100vh");
 
   useEffect(() => {
-    const grids = [featuresRef.current, upcomingRef.current].filter(Boolean);
-    if (grids.length === 0) return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-          } else {
-            entry.target.classList.remove("in-view");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
+    const calculateHeight = () => {
+      const img = new Image();
+      img.onload = () => {
+        const aspectRatio = img.height / img.width;
+        const calculatedHeight = window.innerWidth * aspectRatio;
+        setImageHeight(`${calculatedHeight}px`);
+      };
+      img.src = bgImage;
+    };
 
-    grids.forEach((el) => observer.observe(el));
+    calculateHeight();
+    window.addEventListener("resize", calculateHeight);
+    window.addEventListener("orientationchange", calculateHeight);
+
     return () => {
-      grids.forEach((el) => observer.unobserve(el));
-      observer.disconnect();
+      window.removeEventListener("resize", calculateHeight);
+      window.removeEventListener("orientationchange", calculateHeight);
     };
   }, []);
 
   const handleDownload = () => {
-    if (downloadUrl) {
-      const a = document.createElement("a");
-      a.href = downloadUrl;
-      a.setAttribute("download", "");
-      a.click();
-      return;
-    }
-    const content = "This is a placeholder file. Replace with a real download URL for your app.";
-    const blob = new Blob([content], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
+    // Replace with actual APK download URL
+    const apkUrl = "https://d39x976q8ms3rx.cloudfront.net/ApnaInsti%20-%20The%20%27One%20App%20For%20KGP%27.apk "; // Update this with the actual APK file path
     const a = document.createElement("a");
-    a.href = url;
-    a.download = "my-app.txt";
+    a.href = apkUrl;
+    a.download = "ApnaInsti.apk";
     document.body.appendChild(a);
     a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
+    document.body.removeChild(a);
   };
 
-  const Card = ({ title, desc, icon, color, index }) => {
-    return (
-      <div
-        className={`feature-card`}
-        style={{
-          transitionDelay: `${index * 80}ms`
-        }}
-      >
-        <div className={`icon ${color}`}>
-          <span aria-hidden>{icon}</span>
-        </div>
-        <h3 className="card-title">{title}</h3>
-        <p className="card-desc">{desc}</p>
-      </div>
-    );
+  // Get responsive button styles based on screen size
+  const getButtonStyles = () => {
+    const isSmallScreen = window.innerWidth < 768;
+    return {
+      position: "absolute",
+      top: "85%",
+      left: "47%",
+      transform: "translate(-50%, -50%)",
+      backgroundColor: "#2b6af0",
+      color: "white",
+      border: "none",
+      borderRadius: isSmallScreen ? "8px" : "8px",
+      padding: isSmallScreen ? "15px 30px" : "50px 100px",
+      fontSize: isSmallScreen ? "16px" : "30px",
+      fontWeight: "600",
+      cursor: "pointer",
+      boxShadow: "0 4px 12px rgba(43, 106, 240, 0.3)",
+      transition: "all 0.3s ease",
+      zIndex: 10,
+      maxWidth: "90vw",
+      textAlign: "center",
+    };
   };
+
+  const [buttonStyles, setButtonStyles] = useState(getButtonStyles());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setButtonStyles(getButtonStyles());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
-    <div className="ai-root">
-      <div className="stars-medium" aria-hidden="true" />
-      <div className="stars-large" aria-hidden="true" />
-      <div className="nebula" aria-hidden="true" />
-      <header className="ai-header">
-        <div className="brand">
-          <div className="logo">
-            <img src={data.brand.logo} alt={`${data.brand.name} logo`} />
-          </div>
-          <div className="brand-text">{data.brand.name}</div>
-        </div>
+    <div style={{ minHeight: "100vh", position: "relative" }}>
+      <div
+        style={{
+          width: "100vw",
+          height: imageHeight,
+          background: `url(${bgImage}) top center / cover no-repeat`,
+          backgroundSize: "100% auto",
+          backgroundColor: "#4A90E2",
+          overflowX: "hidden",
+          margin: 0,
+          padding: 0,
+          position: "relative",
+        }}
+      >
+        {/* Download Button */}
+        <button
+          onClick={handleDownload}
+          style={buttonStyles}
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = "#1e5ad1";
+            e.target.style.transform = "translate(-50%, -50%) translateY(-2px)";
+            e.target.style.boxShadow = "0 6px 16px rgba(43, 106, 240, 0.4)";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = "#2b6af0";
+            e.target.style.transform = "translate(-50%, -50%)";
+            e.target.style.boxShadow = "0 4px 12px rgba(43, 106, 240, 0.3)";
+          }}
+        >
+          Download APK
+        </button>
+      </div>
 
-        <nav className="ai-nav" aria-label="Main navigation">
-          <div className="nav-buttons" role="group" aria-label="Site actions">
-            <button
-              className="pill primary"
-              onClick={handleDownload}
-              aria-label="Download the app"
-              title="Download the app"
+      {/* Footer */}
+      <footer
+        style={{
+          width: "100vw",
+          backgroundColor: "#2b6af0",
+          color: "white",
+          padding: "20px",
+          textAlign: "center",
+          fontSize: "16px",
+          fontWeight: "500",
+          minHeight: "80px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          gap: "10px",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            gap: "30px",
+            flexWrap: "wrap",
+          }}
+        >
+          <span>
+            Daksh Yadav:{" "}
+            <a
+              href="tel:8795675974"
+              style={{
+                color: "white",
+                textDecoration: "underline",
+              }}
             >
-              Download
-            </button>
-          </div>
-        </nav>
-      </header>
-
-      <main className="ai-main">
-        <section className="hero">
-          <div className="hero-left">
-            <div className="hero-content">
-              <h1 className="hero-title">
-                {data.hero.title}
-                <span className="hero-sub">
-                  {data.hero.subtitle.split("\n").map((line, idx) => (
-                    <React.Fragment key={idx}>
-                      {line}
-                      <br />
-                    </React.Fragment>
-                  ))}
-                </span>
-              </h1>
-
-              <div className="hero-ctas">
-                <button className="cta-primary large" onClick={handleDownload}>
-                  {data.hero.buttonText}
-                </button>
-              </div>
-
-              <div className="meta">
-                <span className="meta-item">{data.hero.meta}</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="hero-right">
-            <div className="phone-stage">
-              <div className="orbit" aria-hidden="true"></div>
-              <div className="grid-glow" aria-hidden="true"></div>
-              <div className="phone-mock image-mode">
-                <img src={data.hero.previewImage} alt="App preview" />
-              </div>
-
-              <div className="phone-shadow" aria-hidden></div>
-            </div>
-          </div>
-        </section>
-
-        <section id="features" className="section">
-          <div className="section-head">
-            <h2>Current Features</h2>
-          </div>
-          <div className="grid" ref={featuresRef}>
-            {data.currentFeatures.map((f, i) => (
-              <Card key={i} {...f} index={i} />
-            ))}
-          </div>
-        </section>
-
-        <section id="upcoming" className="section">
-          <div className="section-head">
-            <h2>Coming Soon</h2>
-          </div>
-          <div className="grid" ref={upcomingRef}>
-            {data.upcomingFeatures.map((f, i) => (
-              <Card key={i} {...f} index={i + 3} />
-            ))}
-          </div>
-        </section>
-
-        <footer className="ai-footer">
-          <span className="footer-text">Made with ❤️ by Developers' Society</span>
-        </footer>
-      </main>
+              8795675974
+            </a>
+          </span>
+          <span>
+            Devansh Soni:{" "}
+            <a
+              href="tel:7999892181"
+              style={{
+                color: "white",
+                textDecoration: "underline",
+              }}
+            >
+              7999892181
+            </a>
+          </span>
+        </div>
+      </footer>
     </div>
   );
 }
