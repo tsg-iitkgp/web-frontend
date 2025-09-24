@@ -68,7 +68,7 @@ export default function CurrentOfficeBearers({ year }) {
                     <div data-aos="zoom-in-up">
                         <ContactCard
                             name={Associate_President1.Name}
-                            designation={Associate_President1.Post}
+                            designation={Associate_President1.RollNo}
                             facebook={Associate_President1.Facebook}
                             linkedin={Associate_President1.LinkedIn}
                             email={Associate_President1.Email}
@@ -80,7 +80,7 @@ export default function CurrentOfficeBearers({ year }) {
                     <div data-aos="zoom-in-up">
                         <ContactCard
                             name={Associate_President2.Name}
-                            designation={Associate_President2.Post}
+                            designation={Associate_President2.RollNo}
                             facebook={Associate_President2.Facebook}
                             linkedin={Associate_President2.LinkedIn}
                             email={Associate_President2.Email}
