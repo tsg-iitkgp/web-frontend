@@ -3114,5 +3114,201 @@
         }
       ]
     }
+  },
+  "2024-2025": {
+    "senate": {
+      "profs": [
+        {
+          "Post": "President",
+          "Name": "PROF. JITENDRA MAHAKUD"
+        },
+        {
+          "Post": "Associate President",
+          "Name": "PROF. ARIJIT DE"
+        },
+        {
+          "Post": "Honorary Treasurer",
+          "Name": "PROF. JAYANTA CHAKRABORTY"
+        }
+      ],
+      "honours": [
+        {
+          "Post": "Vice President",
+          "Name": "SAGAR KUMAR"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "YASHIKA"
+        },
+        {
+          "Post": "G.Sec Social & Cultural",
+          "Name": "YESILANKA SREE ARYAN"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "JIVAL CHORAWALA"
+        },
+        {
+          "Post": "G.Sec Sports & Games",
+          "Name": "TEJASHWI KUMAR JHA"
+        },
+        {
+          "Post": "G.Sec Students' Welfare",
+          "Name": "ASTHA KUMARI"
+        },
+        {
+          "Post": "G.Sec Students' Welfare",
+          "Name": "SHASHANK TIWARI"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "MAHIM DUNGARWAL"
+        },
+        {
+          "Post": "G.Sec Technology",
+          "Name": "MANDAVA SAI CHARAN CHOWDARY"
+        },
+        {
+          "Post": "Technology Coordinator",
+          "Name": "AKASH MANNA"
+        },
+        {
+          "Post": "Technology Coordinator",
+          "Name": "HARSH BANSAL"
+        },
+        {
+          "Post": "Editor",
+          "Name": "MUSKAN KHEMKA"
+        },
+        {
+          "Post": "Editor",
+          "Name": "VIHAAN S KUMAR"
+        },
+        {
+          "Post": "Public Relations Chairman",
+          "Name": "BANOTH ESHWAR NAIK"
+        },
+        {
+          "Post": "Institute Girls' Sports' Nominee",
+          "Name": "CHAVI AGARWAL"
+        },
+        {
+          "Post": "Undergraduate Representative",
+          "Name": ""
+        },
+        {
+          "Post": "Women Representative",
+          "Name": ""
+        },
+        {
+          "Post": "Postgraduate Representative",
+          "Name": ""
+        },
+        {
+          "Post": "Research Scholar Representative",
+          "Name": ""
+        }
+      ]
+    }
+  },
+  "2025-2026": {
+  "senate": {
+    "profs": [
+      {
+        "Post": "President",
+        "Name": "PROF. JITENDRA MAHAKUD"
+      },
+      {
+        "Post": "Associate President",
+        "Name": "Dr. Kingshook Bhattacharyya"
+      },
+      {
+        "Post": "Associate President",
+        "Name": "Dr. Gayatri Mukherjee"
+      },
+      {
+        "Post": "Honorary Treasurer",
+        "Name": "Dr Probal Senaupnta"
+      }
+    ],
+    "honours": [
+      {
+        "Post": "Vice President",
+        "Name": "SUDHAGANI PRANEETH KUMAR"
+      },
+      {
+        "Post": "G.Sec Social & Cultural",
+        "Name": "MANTRA MALPANI"
+      },
+      {
+        "Post": "G.Sec Social & Cultural",
+        "Name": "PRIYANSHU BHOOSHAN"
+      },
+      {
+        "Post": "G.Sec Sports & Games",
+        "Name": "MAYANK SINGH"
+      },
+      {
+        "Post": "G.Sec Sports & Games",
+        "Name": "SIDHARTH REDDY"
+      },
+      {
+        "Post": "G.Sec Students' Welfare",
+        "Name": "DNYANESHWARI GHARE"
+      },
+      {
+        "Post": "G.Sec Students' Welfare",
+        "Name": "TANUSH B AGARWAL"
+      },
+      {
+        "Post": "G.Sec Technology",
+        "Name": "PRATHAM AGARWAL"
+      },
+      {
+        "Post": "G.Sec Technology",
+        "Name": "PREM PASTAGIA"
+      },
+      {
+        "Post": "Technology Coordinator",
+        "Name": "DAKSH YADAV"
+      },
+      {
+        "Post": "Technology Coordinator",
+        "Name": "DEVANSH SONI"
+      },
+      {
+        "Post": "Public Relations Chairman",
+        "Name": "VIRAJ VEKARIYA"
+      },
+      {
+        "Post": "Editor",
+        "Name": "ADWAY JHA"
+      },
+      {
+        "Post": "Editor",
+        "Name": "TUHINA RAI"
+      },
+      {
+        "Post": "Institute Girls' Sports' Nominee",
+        "Name": "JYOTI"
+      },
+      {
+        "Post": "Undergraduate Representative",
+        "Name": ""
+      },
+      {
+        "Post": "Women Representative",
+        "Name": ""
+      },
+      {
+        "Post": "Postgraduate Representative",
+        "Name": ""
+      },
+      {
+        "Post": "Research Scholar Representative",
+        "Name": ""
+      }
+    ]
   }
+}
 }

@@ -5,15 +5,18 @@ import Styles from "../../styles/pages/contacts.module.css";
 import axios from "axios";
 import apiService from "../../apiService.js";
 
-export default function CurrentOfficeBearers({year}) {
+export default function CurrentOfficeBearers({ year }) {
     const [contacts, setContacts] = useState();
     const [refreshContacts, setRefreshContacts] = useState(true);
 
     const President = contactsData.data.find(
         (contact) => contact.Post === "President"
     );
-    const Associate_President = contactsData.data.find(
-        (contact) => contact.Post === "Associate President"
+    const Associate_President1 = contactsData.data.find(
+        (contact) => contact.Post === "Associate President 1"
+    );
+    const Associate_President2 = contactsData.data.find(
+        (contact) => contact.Post === "Associate President 2"
     );
     const HonoraryTreasurer = contactsData.data.find(
         (contact) => contact.Post === "Honorary Treasurer"
@@ -64,16 +67,27 @@ export default function CurrentOfficeBearers({year}) {
                 <div>
                     <div data-aos="zoom-in-up">
                         <ContactCard
-                            name={Associate_President.Name}
-                            designation={Associate_President.Post}
-                            facebook={Associate_President.Facebook}
-                            linkedin={Associate_President.LinkedIn}
-                            email={Associate_President.Email}
-                            imgSrc={`/data/media/images/contacts/${Associate_President.img}`}
+                            name={Associate_President1.Name}
+                            designation={Associate_President1.Post}
+                            facebook={Associate_President1.Facebook}
+                            linkedin={Associate_President1.LinkedIn}
+                            email={Associate_President1.Email}
+                            imgSrc={`/data/media/images/contacts/${Associate_President1.img}`}
                         />
                     </div>
                 </div>
-
+                <div>
+                    <div data-aos="zoom-in-up">
+                        <ContactCard
+                            name={Associate_President2.Name}
+                            designation={Associate_President2.Post}
+                            facebook={Associate_President2.Facebook}
+                            linkedin={Associate_President2.LinkedIn}
+                            email={Associate_President2.Email}
+                            imgSrc={`/data/media/images/contacts/${Associate_President2.img}`}
+                        />
+                    </div>
+                </div>
                 <div>
                     <div data-aos="zoom-in-up">
                         <ContactCard
