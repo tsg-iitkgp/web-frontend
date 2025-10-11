@@ -21,7 +21,7 @@ export default {
       Facebook: "",
       LinkedIn: "",
       Contact: "",
-      Email: "king@mech.itkgp.ac.in",
+      Email: "king@mech.iitkgp.ac.in",
       "Institue ids": "",
       "Institute mail ids": "",
     },
