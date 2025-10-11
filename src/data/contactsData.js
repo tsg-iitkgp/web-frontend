@@ -45,7 +45,7 @@ export default {
       Facebook: "",
       LinkedIn: "",
       Contact: "",
-      Email: "probal@gg.itkgp.ac.in
+      Email: "probal@gg.iitkgp.ac.in
       "Institue ids":"",
       "Institute mail ids": "",
     },
