@@ -42,7 +42,45 @@ export default function CurrentOfficeBearers({ year }) {
             );
 
             if (response.status === 200) {
-                setContacts(response.data.contacts);
+                const contactsResp = response.data.contacts;
+
+                // Reorder SECRETARY group: SECRETARY WEB first (Z->A), then SECRETARY DESIGN (Z->A), then remaining (Z->A)
+                if (
+                    contactsResp &&
+                    contactsResp["SECRETARY"] &&
+                    Array.isArray(contactsResp["SECRETARY"])
+                ) {
+                    const sortDescByName = (a, b) =>
+                        (b.name || "").localeCompare(a.name || "");
+
+                    const allSecretaries = [...contactsResp["SECRETARY"]];
+                    const web = allSecretaries
+                        .filter(
+                            (s) =>
+                                (s.por || "").toString().toUpperCase() ===
+                                "SECRETARY WEB"
+                        )
+                        .sort(sortDescByName);
+                    const design = allSecretaries
+                        .filter(
+                            (s) =>
+                                (s.por || "").toString().toUpperCase() ===
+                                "SECRETARY DESIGN"
+                        )
+                        .sort(sortDescByName);
+                    const others = allSecretaries
+                        .filter(
+                            (s) =>
+                                !["SECRETARY WEB", "SECRETARY DESIGN"].includes(
+                                    (s.por || "").toString().toUpperCase()
+                                )
+                        )
+                        .sort(sortDescByName);
+
+                    contactsResp["SECRETARY"] = [...web, ...design, ...others];
+                }
+
+                setContacts(contactsResp);
             }
         };
 
