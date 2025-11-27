@@ -72,8 +72,14 @@ export default function Events() {
           <section className={Styles.eventSlider}>
             <AutoplaySlider play={true} interval={5000}>
               <div
+                data-src="/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab.JPEG"
+                onClick={() => handlePosterClick("/events/gaia-2025")}
+              />
+              <div
                 data-src="/data/media/images/events/ongoing/director-interview.png"
-                onClick={() => handlePosterClick("https://youtu.be/FlOlb9qSms0")}
+                onClick={() =>
+                  handlePosterClick("https://youtu.be/FlOlb9qSms0")
+                }
               />
               <div
                 data-src="/data/media/images/events/upcomingEvents/qs.jpg"
@@ -107,49 +113,52 @@ export default function Events() {
           </section>
         </section>
 
-        {(loading || events?.length) && <div className={Styles.mainContainer}>
-          {/* Upcoming Events Container */}
+        {(loading || events?.length) && (
+          <div className={Styles.mainContainer}>
+            {/* Upcoming Events Container */}
 
-          <div className={Styles.categoryContainer} data-aos="zoom-in-up">
-            <h2 className={Styles.categoryHeading2}>Events</h2>
-            <div className={Styles.cardsWrapper}>
-              {!loading && events?.length &&
-                events.map((event, index) => {
-                  let imgSrc = `https://gymkhana.iitkgp.ac.in${event.image}`;
-                  return (
-                    <EventCard
-                      key={event.id}
-                      title={event.title}
-                      date={event.dates}
-                      description={event.description}
-                      resultExists={event.resultExists}
-                      imgSrc={imgSrc}
-                      index={index}
-                      displayTrue={() => {
-                        setShow(true);
-                        setContent(event);
-                        setImage(imgSrc);
-                      }}
-                      displayResults={() => {
-                        setShowRes(true);
-                        setTitle(event.title);
-                        setIndex(event.id);
-                      }}
-                      setEventResults={setEventResults}
-                    />
-                  );
-                })}
-              {loading && (
-                <div>
-                  <SkeletonElement type="thumbnail" />
-                  <SkeletonElement type="thumbnail" />
-                  <SkeletonElement type="thumbnail" />
-                  <SkeletonElement type="thumbnail" />
-                </div>
-              )}
+            <div className={Styles.categoryContainer} data-aos="zoom-in-up">
+              <h2 className={Styles.categoryHeading2}>Events</h2>
+              <div className={Styles.cardsWrapper}>
+                {!loading &&
+                  events?.length &&
+                  events.map((event, index) => {
+                    let imgSrc = `https://gymkhana.iitkgp.ac.in${event.image}`;
+                    return (
+                      <EventCard
+                        key={event.id}
+                        title={event.title}
+                        date={event.dates}
+                        description={event.description}
+                        resultExists={event.resultExists}
+                        imgSrc={imgSrc}
+                        index={index}
+                        displayTrue={() => {
+                          setShow(true);
+                          setContent(event);
+                          setImage(imgSrc);
+                        }}
+                        displayResults={() => {
+                          setShowRes(true);
+                          setTitle(event.title);
+                          setIndex(event.id);
+                        }}
+                        setEventResults={setEventResults}
+                      />
+                    );
+                  })}
+                {loading && (
+                  <div>
+                    <SkeletonElement type="thumbnail" />
+                    <SkeletonElement type="thumbnail" />
+                    <SkeletonElement type="thumbnail" />
+                    <SkeletonElement type="thumbnail" />
+                  </div>
+                )}
+              </div>
             </div>
           </div>
-        </div>}
+        )}
       </div>
     </Layout>
   );

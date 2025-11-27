@@ -14,6 +14,7 @@ import Contacts from "./pages/Contacts/Contacts";
 import Awards from "./pages/Awards/Awards";
 import Societies from "./pages/SocietiesProfile/profile";
 import Events from "./pages/Events/Events";
+import GaiaEvent2025 from "./pages/Events/GaiaEvent2025";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./pages/Gallery/Gallery";
 import FAQ from "./pages/FAQ/FAQ";
@@ -31,11 +32,11 @@ import Nominations from "./pages/Nominations/Nominations";
 import LiveScoreboard from "./pages/LiveScoreboard/LiveScoreboard";
 import Results from "./pages/Results/Results";
 import ViewCertificate from "./pages/certifgen/ViewCertificate";
-import LetterToYou from "./pages/LetterToYou/LetterToYou"
+import LetterToYou from "./pages/LetterToYou/LetterToYou";
 import SocietyForm from "./pages/SocReg/form";
 import PostFormPage from "./Societies/PostFormPage";
 
-// Importing the society pages 
+// Importing the society pages
 import Profile from "./pages/SocietiesProfile/profile";
 import BrowseSocieties from "./pages/BrowseSocieties";
 // import SocietyLayout from "./pages/Societies/SocietyLayout";
@@ -49,10 +50,14 @@ function App() {
       <ScrollToTop>
         <Switch>
           {/* Redirects */}
-          <Route exact path="/societies/:society_slug" render={() => <Profile />} />
+          <Route
+            exact
+            path="/societies/:society_slug"
+            render={() => <Profile />}
+          />
           <Route exact path="/societies/" render={() => <BrowseSocieties />} />
 
-          {/* Admin Routes */}  
+          {/* Admin Routes */}
           <Route exact path="/login" component={Login} />
           <Route exact path="/letter-to-you" component={LetterToYou} />
           <Route exact path="/socReg" component={SocietyForm} />
@@ -73,6 +78,7 @@ function App() {
           {/* <Route exact path="/societies2" component={SocietyLayout} /> */}
           {/* Events Route */}
           <Route exact path="/events" component={Events} />
+          <Route exact path="/events/gaia-2025" component={GaiaEvent2025} />
           {/* Results Routes */}
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/interiit" component={Results} />
@@ -85,7 +91,11 @@ function App() {
 
           {/* Election Routes */}
           <Route exact path="/elections" component={Elections} />
-          <Route exact path="/elections/candidates" component={ElectionCandidates} />
+          <Route
+            exact
+            path="/elections/candidates"
+            component={ElectionCandidates}
+          />
 
           {/* Nominations Route */}
           <Route exact path="/nominations" component={Nominations} />
