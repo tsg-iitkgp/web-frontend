@@ -24,6 +24,54 @@
   line-height: 1.3;
 }
 
+.gaia-event-breaking-news {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  margin-bottom: 35px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+        to right,
+        #f1c40f 0%,
+        #f1c40f 30%,
+        transparent 30%,
+        transparent 70%,
+        #f1c40f 70%,
+        #f1c40f 100%
+      )
+      top left / 100% 2px no-repeat,
+    linear-gradient(
+        to right,
+        #f1c40f 0%,
+        #f1c40f 30%,
+        transparent 30%,
+        transparent 70%,
+        #f1c40f 70%,
+        #f1c40f 100%
+      )
+      bottom left / 100% 2px no-repeat,
+    linear-gradient(
+        to bottom,
+        #f1c40f 0%,
+        #f1c40f 30%,
+        transparent 30%,
+        transparent 70%,
+        #f1c40f 70%,
+        #f1c40f 100%
+      )
+      top left / 2px 100% no-repeat,
+    linear-gradient(
+        to bottom,
+        #f1c40f 0%,
+        #f1c40f 30%,
+        transparent 30%,
+        transparent 70%,
+        #f1c40f 70%,
+        #f1c40f 100%
+      )
+      top right / 2px 100% no-repeat;
+}
+
 .gaia-event-subtitle {
   font-size: 1.3rem;
   font-weight: 600;

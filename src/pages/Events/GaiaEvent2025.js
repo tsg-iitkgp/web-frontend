@@ -9,6 +9,9 @@ export default function GaiaEvent2025() {
     <Layout>
       <div className="gaia-event-container">
         <div className="gaia-event-header">
+          <h1 className="gaia-event-title gaia-event-breaking-news">
+            GLOBAL BREAKING NEWS!
+          </h1>
           <h1 className="gaia-event-title">
             IIT Kharagpur - University of Cambridge, UK
             <br />
