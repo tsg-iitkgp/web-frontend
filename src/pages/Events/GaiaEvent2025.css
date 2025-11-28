@@ -111,7 +111,7 @@
 }
 
 .gaia-event-paragraph {
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin-bottom: 15px;
   text-align: justify;
 }
@@ -137,6 +137,11 @@
   text-decoration: none;
   word-break: break-all;
 }
+
+.gaia-event-highlight {
+  color: #f1c40f;
+  font-weight: 600;
+}
 @media (max-width: 700px) {
   .gaia-event-container {
     margin-top: 50px;
@@ -159,7 +164,7 @@
   }
 
   .gaia-event-paragraph {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
   }
 
   .gaia-event-speaker {

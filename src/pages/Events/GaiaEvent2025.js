@@ -1,12 +1,41 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../../components/Layouts/Layout";
 import "./GaiaEvent2025.css";
 
 export default function GaiaEvent2025() {
-  document.title = "Gaia Event 2025 | TSG";
+  const pageTitle = "Gaia Event 2025 - IIT Kharagpur Cambridge Collaboration | TSG";
+  const pageDescription = "Historic collaboration between IIT Kharagpur and University of Cambridge for the Gaia Platform. Inaugural event of the 2nd phase of the International Software Derby organized by 1 Earth Holdings Inc.";
+  const pageImage = "https://gymkhana.iitkgp.ac.in/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab.JPEG";
+  const pageUrl = "https://gymkhana.iitkgp.ac.in/events/gaia-2025";
 
   return (
     <Layout>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={pageImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={pageUrl} />
+        <meta property="twitter:title" content={pageTitle} />
+        <meta property="twitter:description" content={pageDescription} />
+        <meta property="twitter:image" content={pageImage} />
+        
+        {/* WhatsApp */}
+        <meta property="og:site_name" content="Technology Students' Gymkhana - IIT Kharagpur" />
+        <meta property="og:locale" content="en_US" />
+      </Helmet>
+      
       <div className="gaia-event-container">
         <div className="gaia-event-header">
           <h1 className="gaia-event-title gaia-event-breaking-news">
@@ -82,8 +111,8 @@ export default function GaiaEvent2025() {
             commitment to establishing a historic collaboration with the{" "}
             <strong>University of Cambridge, UK</strong>, to accelerate the
             launch of the Gaia Platform. A working prototype has already been
-            developed under our SAVE initiative - Software for Awakening Voice
-            for Earth.
+            developed under our <span className="gaia-event-highlight">SAVE initiative - Software for Awakening Voice
+            for Earth</span>.
           </p>
 
           <p className="gaia-event-paragraph">
@@ -152,7 +181,7 @@ export default function GaiaEvent2025() {
             loved by 6 billion people.
           </p>
 
-          <p className="gaia-event-quote">
+          <p className="gaia-event-quote gaia-event-highlight">
             "Mankind invented the atomic bomb, but no mouse would ever construct
             a mousetrap. Let us hope it is not too late to restore wisdom and
             sanity." - Albert Einstein
@@ -170,9 +199,15 @@ export default function GaiaEvent2025() {
         </div>
 
         <div className="gaia-event-section">
+          <p className="gaia-event-paragraph">
+            During a private meeting with stakeholders, the soft-spoken founder of 1 Earth Holdings Inc. Sammy remarked that Nandani Jangid and her Gen Z sister Raisa Ameen from Canada shall be the Greta Thunberg duo from the Global South. Nandani and Raisa, together as the face of the Earth Cup and the Gaia Platform, will generate astronomical network effects & a positive feedback loop within the global soccer and sports fans congregation towards achieving the goal of 6 billion planet friendly shoppers. The SAVE project is building the Great Attractor.
+          </p>
+        </div>
+
+        <div className="gaia-event-section">
           <h2 className="gaia-event-section-title">Documentary</h2>
           <p className="gaia-event-paragraph">
-            <strong>IIT Kharagpur Inaugural Events Documentary:</strong>
+            <strong>Link to IIT Kharagpur Inaugural Events Documentary:</strong>
             <br />
             <a
               href="https://www.dropbox.com/scl/fi/3v06ihn00j2cysv22gt65/IIT-Kharagpur-Inaugural-Events-Part-1-to-Part-4-Einstein-Tagore-Spotlight.mp4?rlkey=txs8aqjpj34yeq5z3qlo36u8v&st=2cgnqlsu&dl=0"
