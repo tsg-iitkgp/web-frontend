@@ -85,29 +85,38 @@ export default function GaiaEvent2025() {
     <Layout>
       <Helmet>
         <title>{pageTitle}</title>
+
+        {/* Primary Meta Tags - these will override the Layout defaults */}
         <meta name="description" content={pageDescription} />
-        
-        {/* Open Graph / Facebook */}
+
+        {/* Open Graph / Facebook / WhatsApp - Override default meta tags */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:image" content={pageImage} />
+        <meta property="og:image:secure_url" content={pageImage} />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        
-        {/* Twitter */}
+        <meta
+          property="og:image:alt"
+          content="Gaia Platform - IIT Kharagpur Cambridge Collaboration"
+        />
+        <meta
+          property="og:site_name"
+          content="Technology Students' Gymkhana - IIT Kharagpur"
+        />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter - Override default meta tags */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={pageUrl} />
         <meta property="twitter:title" content={pageTitle} />
         <meta property="twitter:description" content={pageDescription} />
         <meta property="twitter:image" content={pageImage} />
-        
-        {/* WhatsApp */}
-        <meta property="og:site_name" content="Technology Students' Gymkhana - IIT Kharagpur" />
-        <meta property="og:locale" content="en_US" />
       </Helmet>
-      
+
       <div className="gaia-event-container">
         <div className="gaia-event-header">
           <h1 className="gaia-event-title gaia-event-breaking-news">
@@ -255,8 +264,11 @@ export default function GaiaEvent2025() {
             commitment to establishing a historic collaboration with the{" "}
             <strong>University of Cambridge, UK</strong>, to accelerate the
             launch of the Gaia Platform. A working prototype has already been
-            developed under our <span className="gaia-event-highlight">SAVE initiative - Software for Awakening Voice
-            for Earth</span>.
+            developed under our{" "}
+            <span className="gaia-event-highlight">
+              SAVE initiative - Software for Awakening Voice for Earth
+            </span>
+            .
           </p>
 
           <p className="gaia-event-paragraph">
