@@ -73,7 +73,7 @@ export default function Events() {
             <AutoplaySlider play={true} interval={5000}>
               <div
                 data-src="/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab.JPEG"
-                onClick={() => handlePosterClick("/events/gaia-2025")}
+                onClick={() => handlePosterClick("/events/iit-kharagpur-university-cambridge-gaia-platform-collaboration-2025")}
               />
               <div
                 data-src="/data/media/images/events/ongoing/director-interview.png"

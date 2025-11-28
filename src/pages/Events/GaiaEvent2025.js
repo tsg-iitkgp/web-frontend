@@ -1,16 +1,85 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../../components/Layouts/Layout";
+import { Share2, X as CloseIcon } from "lucide-react";
 import "./GaiaEvent2025.css";
 
 export default function GaiaEvent2025() {
-  const pageTitle =
-    "Gaia Event 2025 - IIT Kharagpur Cambridge Collaboration | TSG";
-  const pageDescription =
-    "Historic collaboration between IIT Kharagpur and University of Cambridge for the Gaia Platform. Inaugural event of the 2nd phase of the International Software Derby organized by 1 Earth Holdings Inc.";
-  const pageImage =
-    "https://gymkhana.iitkgp.ac.in/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab.JPEG";
-  const pageUrl = "https://gymkhana.iitkgp.ac.in/events/gaia-2025";
+  const pageTitle = "Gaia Event 2025 - IIT Kharagpur Cambridge Collaboration | TSG";
+  const pageDescription = "Historic collaboration between IIT Kharagpur and University of Cambridge for the Gaia Platform. Inaugural event of the 2nd phase of the International Software Derby organized by 1 Earth Holdings Inc.";
+  const pageImage = "https://gymkhana.iitkgp.ac.in/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab.JPEG";
+  const pageUrl = typeof window !== "undefined" ? window.location.href : "https://gymkhana.iitkgp.ac.in/events/iit-kharagpur-university-cambridge-gaia-platform-collaboration-2025";
+  
+  const [showShareMenu, setShowShareMenu] = useState(false);
+  const [linkCopied, setLinkCopied] = useState(false);
+  const shareMenuRef = useRef(null);
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(pageUrl).then(() => {
+      setLinkCopied(true);
+      setTimeout(() => {
+        setLinkCopied(false);
+        setShowShareMenu(false);
+      }, 2000);
+    }).catch(() => {
+      // Fallback for older browsers
+      const textArea = document.createElement("textarea");
+      textArea.value = pageUrl;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      setLinkCopied(true);
+      setTimeout(() => {
+        setLinkCopied(false);
+        setShowShareMenu(false);
+      }, 2000);
+    });
+  };
+
+  const handleShare = (platform) => {
+    const encodedUrl = encodeURIComponent(pageUrl);
+    const encodedTitle = encodeURIComponent(pageTitle);
+    const encodedDescription = encodeURIComponent(pageDescription);
+
+    let shareUrl = "";
+
+    switch (platform) {
+      case "facebook":
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+        break;
+      case "twitter":
+        shareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`;
+        break;
+      case "whatsapp":
+        shareUrl = `https://wa.me/?text=${encodedUrl}`;
+        break;
+      default:
+        return;
+    }
+
+    if (shareUrl) {
+      window.open(shareUrl, "_blank", "width=600,height=400");
+      setShowShareMenu(false);
+    }
+  };
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (shareMenuRef.current && !shareMenuRef.current.contains(event.target)) {
+        setShowShareMenu(false);
+      }
+    };
+
+    if (showShareMenu) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showShareMenu]);
 
   return (
     <Layout>
@@ -54,9 +123,7 @@ export default function GaiaEvent2025() {
             GLOBAL BREAKING NEWS!
           </h1>
           <h1 className="gaia-event-title">
-            IIT Kharagpur - University of Cambridge, UK
-            <br />
-            Collaboration for Defense of Nature
+            IIT Kharagpur - University of Cambridge, UK Collaboration for Defense of Nature
           </h1>
           <h2 className="gaia-event-subtitle">
             Inaugural Event of the 2nd Phase of the International Software Derby
@@ -67,7 +134,7 @@ export default function GaiaEvent2025() {
           <div className="gaia-event-meta">
             <strong>Date:</strong> 17 November 2025
             <br />
-            <strong>Location:</strong> Indian Institute of Technology Kharagpur
+            <strong>Location:</strong> Indian Institute of Technology Kharagpur (IIT Kharagpur)
           </div>
         </div>
 
@@ -77,6 +144,80 @@ export default function GaiaEvent2025() {
             className="gaia-event-image"
             alt="Gaia Event 2025 - IIT Kharagpur Cambridge Collaboration"
           />
+          <div className="gaia-event-image-caption-wrapper">
+            <p className="gaia-event-image-caption">
+              Photo taken on the same day at IIT Kharagpur Administrative Building with the Earth Cup team.
+            </p>
+            <div className="gaia-event-share-wrapper" ref={shareMenuRef}>
+              <button
+                type="button"
+                className="gaia-event-share-button"
+                onClick={() => setShowShareMenu(!showShareMenu)}
+                aria-label="Share"
+              >
+                <Share2 size={20} />
+              </button>
+            {showShareMenu && (
+              <div className="gaia-event-share-menu">
+                <button
+                  type="button"
+                  className={`gaia-event-share-item ${linkCopied ? 'gaia-event-share-item-copied' : ''}`}
+                  onClick={handleCopyLink}
+                  title={linkCopied ? "Link Copied!" : "Copy Link"}
+                >
+                  {linkCopied ? (
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  ) : (
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className="gaia-event-share-item"
+                  onClick={() => handleShare("facebook")}
+                  title="Share on Facebook"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  className="gaia-event-share-item"
+                  onClick={() => handleShare("twitter")}
+                  title="Share on X (Twitter)"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  className="gaia-event-share-item"
+                  onClick={() => handleShare("whatsapp")}
+                  title="Share on WhatsApp"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  className="gaia-event-share-close"
+                  onClick={() => setShowShareMenu(false)}
+                  aria-label="Close"
+                >
+                  <CloseIcon size={18} />
+                </button>
+              </div>
+            )}
+            </div>
+          </div>
         </div>
 
         <div className="gaia-event-section">
@@ -214,16 +355,8 @@ export default function GaiaEvent2025() {
         </div>
 
         <div className="gaia-event-section">
-          <p className="gaia-event-paragraph">
-            During a private meeting with stakeholders, the soft-spoken founder
-            of 1 Earth Holdings Inc. Sammy remarked that Nandani Jangid and her
-            Gen Z sister Raisa Ameen from Canada shall be the Greta Thunberg duo
-            from the Global South. Nandani and Raisa, together as the face of
-            the Earth Cup and the Gaia Platform, will generate astronomical
-            network effects & a positive feedback loop within the global soccer
-            and sports fans congregation towards achieving the goal of 6 billion
-            planet friendly shoppers. The SAVE project is building the Great
-            Attractor.
+          <p className="gaia-event-paragraph gaia-event-yellow-text">
+            During a private meeting with stakeholders, the soft-spoken founder of 1 Earth Holdings Inc. Sammy remarked that Nandani Jangid and her Gen Z sister Raisa Ameen from Canada shall be the Greta Thunberg duo from the Global South. Nandani and Raisa, together as the face of the Earth Cup and the Gaia Platform, will generate astronomical network effects & a positive feedback loop within the global soccer and sports fans congregation towards achieving the goal of 6 billion planet friendly shoppers. The SAVE project is building the Great Attractor.
           </p>
         </div>
 
