@@ -78,7 +78,7 @@ function App() {
           {/* <Route exact path="/societies2" component={SocietyLayout} /> */}
           {/* Events Route */}
           <Route exact path="/events" component={Events} />
-          <Route exact path="/events/gaia-2025" component={GaiaEvent2025} />
+          <Route exact path="/events/iit-kharagpur-university-cambridge-gaia-platform-collaboration-2025" component={GaiaEvent2025} />
           {/* Results Routes */}
           <Route exact path="/results/gc" component={Results} />
           <Route exact path="/results/interiit" component={Results} />
