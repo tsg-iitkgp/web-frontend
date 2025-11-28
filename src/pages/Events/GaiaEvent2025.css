@@ -22,14 +22,22 @@
   /* color: #1a1a1a; */
   margin-bottom: 10px;
   line-height: 1.3;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .gaia-event-breaking-news {
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 20px 40px;
   margin-bottom: 35px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f1c40f;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 3px solid #f1c40f;
   background: linear-gradient(
         to right,
         #f1c40f 0%,
@@ -39,7 +47,7 @@
         #f1c40f 70%,
         #f1c40f 100%
       )
-      top left / 100% 2px no-repeat,
+      top left / 100% 3px no-repeat,
     linear-gradient(
         to right,
         #f1c40f 0%,
@@ -49,7 +57,7 @@
         #f1c40f 70%,
         #f1c40f 100%
       )
-      bottom left / 100% 2px no-repeat,
+      bottom left / 100% 3px no-repeat,
     linear-gradient(
         to bottom,
         #f1c40f 0%,
@@ -59,7 +67,7 @@
         #f1c40f 70%,
         #f1c40f 100%
       )
-      top left / 2px 100% no-repeat,
+      top left / 3px 100% no-repeat,
     linear-gradient(
         to bottom,
         #f1c40f 0%,
@@ -69,7 +77,7 @@
         #f1c40f 70%,
         #f1c40f 100%
       )
-      top right / 2px 100% no-repeat;
+      top right / 3px 100% no-repeat;
 }
 
 .gaia-event-subtitle {
@@ -81,7 +89,7 @@
 
 .gaia-event-meta {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.125rem;
   /* color: #666; */
   margin-top: 20px;
 }
@@ -96,6 +104,136 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gaia-event-image-caption-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.gaia-event-image-caption {
+  margin: 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #aaa;
+  text-align: left;
+  line-height: 1.5;
+  flex: 1;
+  min-width: 0;
+}
+
+
+.gaia-event-share-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.gaia-event-share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(241, 196, 15, 0.2);
+}
+
+.gaia-event-share-button:hover {
+  background-color: rgba(241, 196, 15, 0.1);
+  border-color: #f1c40f;
+  color: #f1c40f;
+}
+
+.gaia-event-share-menu {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.gaia-event-share-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: transparent;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(241, 196, 15, 0.2);
+}
+
+.gaia-event-share-close:hover {
+  background-color: rgba(241, 196, 15, 0.1);
+  border-color: #f1c40f;
+  color: #f1c40f;
+}
+
+.gaia-event-share-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: transparent;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(241, 196, 15, 0.2);
+}
+
+.gaia-event-share-item:hover {
+  background-color: rgba(241, 196, 15, 0.1);
+  border-color: #f1c40f;
+  color: #f1c40f;
+}
+
+.gaia-event-share-item-copied {
+  background-color: rgba(76, 175, 80, 0.2) !important;
+  border-color: #4caf50 !important;
+  color: #4caf50 !important;
+}
+
+.gaia-event-share-item svg {
+  width: 20px;
+  height: 20px;
 }
 
 .gaia-event-section {
@@ -113,7 +251,7 @@
 .gaia-event-paragraph {
   font-size: 1.125rem;
   margin-bottom: 15px;
-  text-align: justify;
+  text-align: left;
 }
 
 .gaia-event-speaker {
@@ -142,36 +280,116 @@
   color: #f1c40f;
   font-weight: 600;
 }
+
+.gaia-event-yellow-text {
+  color: #f1c40f;
+}
+
 @media (max-width: 700px) {
   .gaia-event-container {
     margin-top: 50px;
   }
 
   .gaia-event-title {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
+    line-height: 1.4;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .gaia-event-breaking-news {
+    font-size: 2.0rem;
+    padding: 12px 20px;
+    letter-spacing: 1px;
   }
 
   .gaia-event-subtitle {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
 
   .gaia-event-meta {
-    font-size: 1.05rem;
+    font-size: 1.5rem;
   }
 
   .gaia-event-section-title {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .gaia-event-paragraph {
-    font-size: 1.15rem;
+    font-size: 1.45rem;
   }
 
   .gaia-event-speaker {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .gaia-event-quote {
-    font-size: 1.05rem;
+    font-size: 1.35rem;
+  }
+
+  .gaia-event-image-caption-wrapper {
+    gap: 10px;
+    margin-top: 12px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gaia-event-share-wrapper {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .gaia-event-image-caption {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .gaia-event-share-button {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    touch-action: manipulation;
+  }
+
+  .gaia-event-share-button svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .gaia-event-share-menu {
+    flex-direction: column;
+    padding: 12px 10px;
+    gap: 8px;
+    top: 55px;
+    width: auto;
+    min-width: 60px;
+    max-width: calc(100vw - 20px);
+    align-items: stretch;
+  }
+
+  .gaia-event-share-item {
+    width: 100%;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    touch-action: manipulation;
+  }
+
+  .gaia-event-share-item svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .gaia-event-share-close {
+    width: 100%;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .gaia-event-share-close svg {
+    width: 18px !important;
+    height: 18px !important;
   }
 }
