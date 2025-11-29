@@ -160,7 +160,7 @@ export default function GaiaEvent2025() {
           />
           <div className="gaia-event-image-caption-wrapper">
             <p className="gaia-event-image-caption">
-              Photo taken on the same day at IIT Kharagpur Administrative Building with the Earth Cup team.
+              Fortress of talent : 1 Earth Holdings Inc.'s Tiger Team of solution architects and information alchemists at the inaugural event
             </p>
             <div className="gaia-event-share-wrapper" ref={shareMenuRef}>
               <button
