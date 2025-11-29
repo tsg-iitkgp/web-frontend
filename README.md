@@ -125,8 +125,8 @@ It is prefferred to use docker over bare metal setup.
 
 Name|Email|Phone No.
 -----|-----|---------
-[Harsh Bansal](https://www.harshbansal.in) | <harshbansal.iitkgp@gmail.com> | +91-9821391634
-[Akash Manna](https://github.com/AkashManna2003) | <mannaakash.iitkgp@gmail.com> | +91-82829101570
+[Daksh Yadav](https://github.com/dakshyadav1810) | <dakshyadav.iitkgp@gmail.com> | +91-8795675974
+[Devansh Soni](https://github.com/indenigrate) | <devanshsoni.iitkgp@gmail.com> | +91-7999892181
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
