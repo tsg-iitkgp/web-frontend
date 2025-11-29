@@ -1,4 +1,10 @@
 Options -MultiViews
 RewriteEngine On
+
+# Serve static HTML files for specific event pages to crawlers
+RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|WhatsApp|Twitterbot|LinkedInBot|crawler|spider|bot) [NC]
+RewriteRule ^events/iit-kharagpur-university-cambridge-gaia-platform-collaboration-2025/?$ /events/iit-kharagpur-university-cambridge-gaia-platform-collaboration-2025.html [L]
+
+# Default SPA fallback for all other requests
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.html [QSA,L]
