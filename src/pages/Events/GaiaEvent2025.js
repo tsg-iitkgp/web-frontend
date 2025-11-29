@@ -6,9 +6,22 @@ import "./GaiaEvent2025.css";
 
 export default function GaiaEvent2025() {
   const pageTitle = "Gaia Event 2025 - IIT Kharagpur Cambridge Collaboration | TSG";
+  const ogTitle = "IIT Kharagpur - University of Cambridge Collaboration for Gaia Platform";
   const pageDescription = "Historic collaboration between IIT Kharagpur and University of Cambridge for the Gaia Platform. Inaugural event of the 2nd phase of the International Software Derby organized by 1 Earth Holdings Inc.";
-  const pageImage = "https://gymkhana.iitkgp.ac.in/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab.JPEG";
-  const pageUrl = typeof window !== "undefined" ? window.location.href : "https://gymkhana.iitkgp.ac.in/events/iit-kharagpur-university-cambridge-gaia-platform-collaboration-2025";
+  const ogDescription = "IIT Kharagpur partners with University of Cambridge for the Gaia Platform. Historic collaboration marks the inaugural event of the 2nd phase of the International Software Derby organized by 1 Earth Holdings Inc.";
+  
+  // Use current host for meta tags (works with ngrok and production)
+  const getBaseUrl = () => {
+    if (typeof window !== "undefined") {
+      return window.location.origin;
+    }
+    return "https://gymkhana.iitkgp.ac.in";
+  };
+  
+  const baseUrl = getBaseUrl();
+  // Use optimized thumbnail for WhatsApp (under 300KB requirement)
+  const pageImage = `${baseUrl}/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab_thumb.JPEG`;
+  const pageUrl = typeof window !== "undefined" ? window.location.href : `${baseUrl}/events/iit-kharagpur-university-cambridge-gaia-platform-collaboration-2025`;
   
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [linkCopied, setLinkCopied] = useState(false);
@@ -87,25 +100,35 @@ export default function GaiaEvent2025() {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         
-        {/* Open Graph / Facebook */}
+        {/* Open Graph / Facebook / WhatsApp */}
+        {/* WhatsApp requires og:image to be first after og:type and og:url */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content={pageUrl} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={pageDescription} />
         <meta property="og:image" content={pageImage} />
+        <meta property="og:image:secure_url" content={pageImage} />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={pageUrl} />
-        <meta property="twitter:title" content={pageTitle} />
-        <meta property="twitter:description" content={pageDescription} />
-        <meta property="twitter:image" content={pageImage} />
-        
-        {/* WhatsApp */}
+        <meta property="og:image:height" content="675" />
+        <meta property="og:image:alt" content="IIT Kharagpur - University of Cambridge Collaboration for Gaia Platform" />
+        <meta property="og:title" content={ogTitle} />
+        <meta property="og:description" content={ogDescription} />
         <meta property="og:site_name" content="Technology Students' Gymkhana - IIT Kharagpur" />
         <meta property="og:locale" content="en_US" />
+        
+        {/* WhatsApp specific optimizations */}
+        <meta property="og:image:url" content={pageImage} />
+        <link rel="image_src" href={pageImage} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={pageUrl} />
+        <meta name="twitter:title" content={ogTitle} />
+        <meta name="twitter:description" content={ogDescription} />
+        <meta name="twitter:image" content={pageImage} />
+        <meta name="twitter:image:alt" content="IIT Kharagpur - University of Cambridge Collaboration for Gaia Platform" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href={pageUrl} />
       </Helmet>
       
       <div className="gaia-event-container">
