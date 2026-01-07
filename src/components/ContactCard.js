@@ -39,7 +39,11 @@ function ContactCard({
       <ul className={Styles.sociallinks}>
         <li>
           <a href={`${facebook}`} target="_blank" rel="noreferrer">
-            <i className="fab fa-facebook-f"></i>
+            {facebook && facebook.includes('instagram.com') ? (
+              <i className="fab fa-instagram"></i>
+            ) : (
+              <i className="fab fa-facebook-f"></i>
+            )}
           </a>
         </li>
         <li>
