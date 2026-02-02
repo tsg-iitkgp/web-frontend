@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { FaYoutube, FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { BASE_URL } from "../constants/api";
 import "./ProfileHeader.css";
+import gymkhanaLogo from "../assets/gymkhanaLogo.png";
 
 const cache = {};
 
@@ -97,7 +98,7 @@ const ProfileHeader = () => {
               {society.is_under_gymkhana && (
                 <div style={{ position: "absolute", bottom: "-1px", right: "-1px" }}>
                   <img
-                    src='/tsg-logo.png'
+                    src={gymkhanaLogo}
                     alt='Gymkhana'
                     className='gymkhana-logo-badge'
                     style={{

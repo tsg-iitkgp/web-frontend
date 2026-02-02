@@ -1,5 +1,5 @@
 /* filepath: d:\gym-web-frontend\src\testComponents\EventsSection.js */
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { BASE_URL } from "../constants/api";
 import "./EventsSection.css";
@@ -8,6 +8,9 @@ const EventsSection = () => {
   const { society_slug } = useParams();
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [expandedEvents, setExpandedEvents] = useState({});
+  const [overflowingEvents, setOverflowingEvents] = useState({});
+  const descriptionRefs = useRef({});
   const [pagination, setPagination] = useState({
     page: 1,
     limit: 10,
@@ -66,6 +69,36 @@ const EventsSection = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [fetchEvents, hasMore, loading, pagination.page]);
 
+  // Check for text overflow after events are loaded
+  useEffect(() => {
+    const checkOverflow = () => {
+      const newOverflowing = {};
+      events.forEach((event) => {
+        const el = descriptionRefs.current[event.id];
+        if (el) {
+          newOverflowing[event.id] = el.scrollHeight > el.clientHeight;
+        }
+      });
+      setOverflowingEvents(newOverflowing);
+    };
+
+    // Small delay to ensure DOM is updated
+    const timeoutId = setTimeout(checkOverflow, 100);
+    window.addEventListener("resize", checkOverflow);
+    
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("resize", checkOverflow);
+    };
+  }, [events]);
+
+  const toggleExpanded = (eventId) => {
+    setExpandedEvents((prev) => ({
+      ...prev,
+      [eventId]: !prev[eventId],
+    }));
+  };
+
   const formatEventPeriod = (eventDate) => {
     const date = new Date(eventDate);
     return date.toLocaleDateString("en-US", { month: "long", year: "numeric" });
@@ -103,13 +136,28 @@ const EventsSection = () => {
               </div>
               <div className='event-content'>
                 <h3 className='event-title'>{event.title}</h3>
-                <p className='event-description'>{event.description}</p>
+                <div className='event-description-wrapper'>
+                  <p
+                    ref={(el) => (descriptionRefs.current[event.id] = el)}
+                    className={`event-description ${expandedEvents[event.id] ? 'expanded' : ''}`}
+                  >
+                    {event.description}
+                  </p>
+                  {(overflowingEvents[event.id] || expandedEvents[event.id]) && (
+                    <button
+                      className={`read-more-button ${expandedEvents[event.id] ? 'expanded' : ''}`}
+                      onClick={() => toggleExpanded(event.id)}
+                    >
+                      {expandedEvents[event.id] ? 'Read Less' : 'Read More'}
+                      <span className='arrow'>▼</span>
+                    </button>
+                  )}
+                </div>
                 <div className='event-footer'>
                   <div className='event-period'>
                     <span className='period-label'>Event Period :</span>
                     <span className='period-value'>{formatEventPeriod(event.event_date)}</span>
                   </div>
-                  <button className='details-button'>Details →</button>
                 </div>
               </div>
             </div>
