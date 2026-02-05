@@ -206,6 +206,16 @@ const PostFormPage = () => {
         <div className='success-message' style={{ marginTop: "5rem" }}>
           Form submitted successfully!
         </div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
+          <button
+            type="button"
+            className="form-submit-button"
+            style={{ minWidth: 120 }}
+            onClick={() => window.history.back()}
+          >
+            Go Back
+          </button>
+        </div>
       </Layout>
     );
 

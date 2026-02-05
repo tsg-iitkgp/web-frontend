@@ -2,6 +2,39 @@
   position: relative;
 }
 
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  color: #fbbf24;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.back-button:hover {
+  background: #fbbf24;
+  color: #000;
+  transform: translateX(-4px);
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+}
+
+.back-icon {
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.back-button:hover .back-icon {
+  transform: translateX(-3px);
+}
+
 .top-nav {
   position: absolute;
   top: 0;

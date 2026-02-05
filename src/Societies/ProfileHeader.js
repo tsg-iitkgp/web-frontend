@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { FaYoutube, FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { useParams, useHistory } from "react-router-dom";
+import { FaYoutube, FaInstagram, FaLinkedin, FaFacebook, FaArrowLeft } from "react-icons/fa";
 import { BASE_URL } from "../constants/api";
 import "./ProfileHeader.css";
 import gymkhanaLogo from "../assets/gymkhanaLogo.png";
@@ -9,6 +9,7 @@ const cache = {};
 
 const ProfileHeader = () => {
   const { society_slug } = useParams();
+  const history = useHistory();
   const [society, setSociety] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -41,6 +42,10 @@ const ProfileHeader = () => {
       fetchSociety();
     }
   }, [society_slug]);
+
+  const handleGoBack = () => {
+    history.goBack();
+  };
 
   if (loading) {
     return (
@@ -76,6 +81,10 @@ const ProfileHeader = () => {
       {/* Header Content */}
       <div className='header-content'>
         <div className='header-wrapper'>
+          <button className='back-button' onClick={handleGoBack} style={{ position: 'absolute', top: 24, left: 24, zIndex: 20 }}>
+            <FaArrowLeft className='back-icon' />
+            <span>Back</span>
+          </button>
           <div className='profile-section'>
             {/* Profile Logo */}
             <div className='profile-logo' style={{ position: "relative", alignSelf: "top" }}>
