@@ -42,6 +42,8 @@ const ProfileHeader = () => {
       fetchSociety();
     }
   }, [society_slug]);
+  const capitalizeWords = (str) =>
+    str.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
 
   const handleGoBack = () => {
     history.goBack();
@@ -158,13 +160,12 @@ const ProfileHeader = () => {
 
               <div className='profile-social-tags'>
                 <div className='profile-tags'>
-                  <span className='tag'>{society.category_name?.toLowerCase()}</span>
-                  <span className='tag'>active</span>
+                  <span className='tag'>Active</span>
                   {/* Render tags from API response if present */}
                   {Array.isArray(society.tags) &&
                     society.tags.map((tag, idx) => (
                       <span className='tag' key={idx}>
-                        {tag}
+                        {capitalizeWords(tag)}
                       </span>
                     ))}
                 </div>
