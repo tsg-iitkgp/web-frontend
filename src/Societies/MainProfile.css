@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 .profile-container {
+  margin-top:6vh;
   min-height: 100vh;
   background-color: #000000;
   color: #ffffff;
