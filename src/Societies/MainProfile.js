@@ -9,7 +9,7 @@ import EventsSection from "./EventsSection";
 import TeamSection from "./TeamSection";
 import "./MainProfile.css";
 import { BASE_URL } from "../constants/api";
-import Layout from "../components/Layouts/Layout";
+import Footer from "../components/Footer/Footer";
 
 const MainProfile = () => {
   const location = useLocation();
@@ -68,13 +68,14 @@ const MainProfile = () => {
   };
 
   return (
-    <Layout>
+    <>
       <div className='profile-container'>
         <ProfileHeader society={society} />
         <NavigationTabs activeTab={activeTab} /> {/* Pass activeTab here */}
         {renderTabContent()}
       </div>
-    </Layout>
+      <Footer />
+    </>
   );
 };
 
