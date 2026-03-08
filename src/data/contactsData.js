@@ -3,13 +3,13 @@ export default {
   data: [
     {
       RollNo: "President",
-      Name: "Prof. Jitendra Mahakud",
+      Name: "Prof. Debalay Chakrabarti",
       Post: "President",
       img: "President.png",
       Facebook: "",
-      LinkedIn: "https://www.linkedin.com/in/jitendra-mahakud-26463b109/",
+      LinkedIn: "https://www.linkedin.com/in/debalay-chakrabarti-2a30111b8/",
       Contact: "",
-      Email: "jmahakud@hss.iitkgp.ac.in",
+      Email: "debalay@metal.iitkgp.ac.in",
       "Institue ids": "",
       "Institute mail ids": "",
     },
