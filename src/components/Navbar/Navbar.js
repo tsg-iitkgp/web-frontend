@@ -70,11 +70,11 @@ export default function Navbar() {
             </NavLink>
           </li>
 
-          <li className={Styles.navItem}>
+          {/* <li className={Styles.navItem}>
             <NavLink to='/societies' className={Styles.navLinks} activeClassName={Styles.acitveLink} exact>
               Societies
             </NavLink>
-          </li>
+          </li> */}
 
           {/* EVENTS */}
           <li className={Styles.navItem}>

@@ -68,97 +68,48 @@ export default function Events() {
 
         <h2 className={Styles.categoryHeading1}>Recent Events</h2>
 
-        <section className="m-content">
+        <section className='m-content'>
           <section className={Styles.eventSlider}>
             <AutoplaySlider play={true} interval={5000}>
+              <div data-src='https://gymkhana.iitkgp.ac.in/api/images/events/1764867808454-710781229.jpg' />
               <div
-                data-src="/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab.JPEG"
-                onClick={() => handlePosterClick("/events/iit-kharagpur-university-cambridge-gaia-platform-collaboration-2025")}
-              />
-              <div
-                data-src="/data/media/images/events/ongoing/director-interview.png"
+                data-src='/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab.JPEG'
                 onClick={() =>
-                  handlePosterClick("https://youtu.be/FlOlb9qSms0")
+                  handlePosterClick("/events/iit-kharagpur-university-cambridge-gaia-platform-collaboration-2025")
                 }
               />
               <div
-                data-src="/data/media/images/events/upcomingEvents/qs.jpg"
-                onClick={() => handlePosterClick("#")}
+                data-src='/data/media/images/events/ongoing/director-interview.png'
+                onClick={() => handlePosterClick("https://youtu.be/FlOlb9qSms0")}
               />
+              <div data-src='/data/media/images/events/upcomingEvents/qs.jpg' onClick={() => handlePosterClick("#")} />
               <div
-                data-src="/data/media/images/events/ongoing/Feedback_Form.jpg"
+                data-src='/data/media/images/events/ongoing/Feedback_Form.jpg'
                 onClick={() =>
                   handlePosterClick(
-                    "https://www.facebook.com/100068477642783/posts/pfbid02ya4fpTr1CMo31BFamDe4zdCeQSWi1HekFrUg3pNVcR73r5kes5V5U7uQJhC4AiJ7l/?mibextid=Nif5oz"
+                    "https://www.facebook.com/100068477642783/posts/pfbid02ya4fpTr1CMo31BFamDe4zdCeQSWi1HekFrUg3pNVcR73r5kes5V5U7uQJhC4AiJ7l/?mibextid=Nif5oz",
                   )
                 }
               />
               <div
-                data-src="/data/media/images/events/ongoing/Inter_IIT.jpg"
+                data-src='/data/media/images/events/ongoing/Inter_IIT.jpg'
                 onClick={() =>
                   handlePosterClick(
-                    "https://www.facebook.com/100064570724530/posts/pfbid025gTAVLrqBr5NYeMRTHhHDePwXC88HWafUdE221YraCibcafMQ7wgtF7iodqSBhYfl/?mibextid=Nif5oz"
+                    "https://www.facebook.com/100064570724530/posts/pfbid025gTAVLrqBr5NYeMRTHhHDePwXC88HWafUdE221YraCibcafMQ7wgtF7iodqSBhYfl/?mibextid=Nif5oz",
                   )
                 }
               />
               <div
-                data-src="/data/media/images/events/Freshers.jpg"
+                data-src='/data/media/images/events/Freshers.jpg'
                 onClick={() =>
                   handlePosterClick(
-                    "https://www.facebook.com/100064570724530/posts/pfbid031xm5yrMnEBDWsLeVrr9SeJrVsA9WP8fpYNDbo3CjWgp8r56yhRNPF6MTTFpcMp7bl/?mibextid=Nif5oz"
+                    "https://www.facebook.com/100064570724530/posts/pfbid031xm5yrMnEBDWsLeVrr9SeJrVsA9WP8fpYNDbo3CjWgp8r56yhRNPF6MTTFpcMp7bl/?mibextid=Nif5oz",
                   )
                 }
               />
             </AutoplaySlider>
           </section>
         </section>
-
-        {(loading || events?.length) && (
-          <div className={Styles.mainContainer}>
-            {/* Upcoming Events Container */}
-
-            <div className={Styles.categoryContainer} data-aos="zoom-in-up">
-              <h2 className={Styles.categoryHeading2}>Events</h2>
-              <div className={Styles.cardsWrapper}>
-                {!loading &&
-                  events?.length &&
-                  events.map((event, index) => {
-                    let imgSrc = `https://gymkhana.iitkgp.ac.in${event.image}`;
-                    return (
-                      <EventCard
-                        key={event.id}
-                        title={event.title}
-                        date={event.dates}
-                        description={event.description}
-                        resultExists={event.resultExists}
-                        imgSrc={imgSrc}
-                        index={index}
-                        displayTrue={() => {
-                          setShow(true);
-                          setContent(event);
-                          setImage(imgSrc);
-                        }}
-                        displayResults={() => {
-                          setShowRes(true);
-                          setTitle(event.title);
-                          setIndex(event.id);
-                        }}
-                        setEventResults={setEventResults}
-                      />
-                    );
-                  })}
-                {loading && (
-                  <div>
-                    <SkeletonElement type="thumbnail" />
-                    <SkeletonElement type="thumbnail" />
-                    <SkeletonElement type="thumbnail" />
-                    <SkeletonElement type="thumbnail" />
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </Layout>
   );
