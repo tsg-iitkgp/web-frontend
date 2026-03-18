@@ -1,7 +1,6 @@
 const GCdata = {
   "2016-17": {
-    Sports:
-    {
+    Sports: {
       // MALE STANDINGS
       Male: [
         {
@@ -19,7 +18,7 @@ const GCdata = {
           Silver: " ",
           Bronze: " ",
         },
-      ]
+      ],
     },
     Technology: [
       {
@@ -120,11 +119,10 @@ const GCdata = {
         Silver: "MS",
         Bronze: "Patel",
       },
-    ]
+    ],
   },
   "2017-18": {
-    Sports:
-    {
+    Sports: {
       // MALE STANDINGS
       Male: [
         {
@@ -142,7 +140,7 @@ const GCdata = {
           Silver: " ",
           Bronze: " ",
         },
-      ]
+      ],
     },
     Technology: [
       {
@@ -337,12 +335,10 @@ const GCdata = {
         Silver: "RK",
         Bronze: "LLR",
       },
-
-    ]
+    ],
   },
   "2018-19": {
-    Sports:
-    {
+    Sports: {
       // MALE STANDINGS
       Male: [
         {
@@ -435,7 +431,7 @@ const GCdata = {
           Gold: "RK",
           Silver: "Azad",
           Bronze: "Patel",
-        }
+        },
       ],
       // FEMALE STANDINGS
       Female: [
@@ -486,8 +482,8 @@ const GCdata = {
           Gold: "SNVH",
           Silver: "MT",
           Bronze: "SN/IG",
-        }
-      ]
+        },
+      ],
     },
     Technology: [
       {
@@ -690,11 +686,10 @@ const GCdata = {
         Silver: "RK",
         Bronze: "Azad",
       },
-    ]
+    ],
   },
   "2019-20": {
-    Sports:
-    {
+    Sports: {
       // MALE STANDINGS
       Male: [
         {
@@ -712,7 +707,7 @@ const GCdata = {
           Silver: " ",
           Bronze: " ",
         },
-      ]
+      ],
     },
     Technology: [
       {
@@ -801,11 +796,10 @@ const GCdata = {
         Silver: "RK",
         Bronze: "LLR",
       },
-    ]
+    ],
   },
   "2020-21": {
-    Sports:
-    {
+    Sports: {
       // MALE STANDINGS
       Male: [
         {
@@ -885,7 +879,7 @@ const GCdata = {
           Gold: " ",
           Silver: " ",
           Bronze: " ",
-        }
+        },
       ],
       // FEMALE STANDINGS
       Female: [
@@ -936,8 +930,8 @@ const GCdata = {
           Gold: " ",
           Silver: " ",
           Bronze: " ",
-        }
-      ]
+        },
+      ],
     },
     Technology: [
       {
@@ -945,7 +939,7 @@ const GCdata = {
         Gold: " ",
         Silver: " ",
         Bronze: " ",
-      }
+      },
     ],
     Socult: [
       {
@@ -953,8 +947,8 @@ const GCdata = {
         Gold: " ",
         Silver: " ",
         Bronze: " ",
-      }
-    ]
+      },
+    ],
   },
   "2021-22": {
     Sports: {
@@ -1111,8 +1105,8 @@ const GCdata = {
           Gold: "SNVH",
           Silver: "SN/IG",
           Bronze: "MT",
-        }
-      ]
+        },
+      ],
     },
     Technology: [
       // {
@@ -1255,7 +1249,7 @@ const GCdata = {
         Silver: "RK",
         Bronze: "LBS",
       },
-    ]
+    ],
   },
   "2022-23": {
     Sports: {
@@ -1350,7 +1344,6 @@ const GCdata = {
           Silver: "VS",
           Bronze: "RK",
         },
-
       ],
 
       Female: [
@@ -1420,7 +1413,7 @@ const GCdata = {
           Silver: "SNVH",
           Bronze: "MT",
         },
-      ]
+      ],
     },
     Technology: [
       // {
@@ -1618,7 +1611,7 @@ const GCdata = {
         Silver: "RP",
         Bronze: "SN/IG",
       },
-    ]
+    ],
   },
   "2023-24": {
     Sports: {
@@ -1627,17 +1620,17 @@ const GCdata = {
           Sport: "Overall",
           Gold: "",
           Silver: "",
-          Bronze: ""
-        }
+          Bronze: "",
+        },
       ],
       Female: [
         {
           Sport: "Overall",
           Gold: "",
           Silver: "",
-          Bronze: ""
-        }
-      ]
+          Bronze: "",
+        },
+      ],
     },
     Technology: [],
     Socult: [
@@ -1645,117 +1638,117 @@ const GCdata = {
         Event: "Overall",
         Gold: "",
         Silver: "",
-        Bronze: ""
+        Bronze: "",
       },
       {
         Event: "Hindi Elocution",
         Gold: "MMM",
         Silver: "LBS",
-        Bronze: "LLR"
+        Bronze: "LLR",
       },
       {
         Event: "English Elocution",
         Gold: "LLR",
         Silver: "SN/IG",
-        Bronze: "MT"
+        Bronze: "MT",
       },
       {
         Event: "Sketching",
         Gold: "RP",
         Silver: "Nehru",
-        Bronze: "Azad"
+        Bronze: "Azad",
       },
       {
         Event: "Groups",
         Gold: "Nehru",
         Silver: "MMM",
-        Bronze: ""
+        Bronze: "",
       },
       {
         Event: "Western Instrumentals",
         Gold: "Nehru",
         Silver: "MT",
-        Bronze: "RK"
+        Bronze: "RK",
       },
       {
         Event: "Western Vocals",
         Gold: "SN/IG",
         Silver: "Nehru",
-        Bronze: "MMM"
+        Bronze: "MMM",
       },
       {
         Event: "Eastern Vocals",
         Gold: "MMM",
         Silver: "RP",
-        Bronze: "RK"
+        Bronze: "RK",
       },
       {
         Event: "Eastern Instrumentals",
         Gold: "Nehru",
         Silver: "RK",
-        Bronze: "Azad"
+        Bronze: "Azad",
       },
       {
         Event: "General Quiz",
         Gold: "RP",
         Silver: "Nehru",
-        Bronze: "VS"
+        Bronze: "VS",
       },
       {
         Event: "Debate",
         Gold: "MT",
         Silver: "RK",
-        Bronze: "Azad"
+        Bronze: "Azad",
       },
       {
         Event: "What's the Good Word",
         Gold: "Nehru",
         Silver: "RK",
-        Bronze: "Patel"
+        Bronze: "Patel",
       },
       {
         Event: "Painting",
         Gold: "SNVH",
         Silver: "MMM",
-        Bronze: "JCB"
+        Bronze: "JCB",
       },
       {
         Event: "Thermocol and Clay Modelling",
         Gold: "Nehru",
         Silver: "RK",
-        Bronze: "Patel"
+        Bronze: "Patel",
       },
       {
         Event: "Cartooning",
         Gold: "Nehru",
         Silver: "Azad",
-        Bronze: "SN/IG"
+        Bronze: "SN/IG",
       },
       {
         Event: "Short Film Making",
         Gold: "",
         Silver: "MS",
-        Bronze: "LBS"
+        Bronze: "LBS",
       },
       {
         Event: "Stage Play",
         Gold: "",
         Silver: "",
-        Bronze: ""
+        Bronze: "",
       },
       {
         Event: "Street Play",
         Gold: "",
         Silver: "",
-        Bronze: ""
+        Bronze: "",
       },
       {
         Event: "Choreography",
         Gold: "",
         Silver: "",
-        Bronze: ""
-      }
-    ]
+        Bronze: "",
+      },
+    ],
   },
   "2024-25": {
     Sports: {
@@ -1764,7 +1757,7 @@ const GCdata = {
           Sport: "Overall",
           Gold: "RP",
           Silver: "Azad",
-          Bronze: "LBS"
+          Bronze: "LBS",
         },
         {
           Sport: "Athletics",
@@ -1874,7 +1867,7 @@ const GCdata = {
           Sport: "Overall",
           Gold: "SN/IG",
           Silver: "MT",
-          Bronze: "SNVH"
+          Bronze: "SNVH",
         },
         {
           Sport: "Athletics",
@@ -1956,70 +1949,217 @@ const GCdata = {
         Event: "Overall",
         Gold: "",
         Silver: "",
-        Bronze: ""
+        Bronze: "",
       },
       {
         Event: "Cartooning",
         Gold: "Azad",
         Silver: "SN/IG",
-        Bronze: "SNVH"
+        Bronze: "SNVH",
       },
       {
         Event: "English Elocution",
         Gold: "RP",
         Silver: "SN/IG",
-        Bronze: "MMM"
+        Bronze: "MMM",
       },
       {
         Event: "Sketching",
         Gold: "RP",
         Silver: "Azad",
-        Bronze: "Nehru"
+        Bronze: "Nehru",
       },
       {
         Event: "Eastern Instrumentals",
         Gold: "LBS",
         Silver: "Nehru",
-        Bronze: "MS"
+        Bronze: "MS",
       },
       {
         Event: "Street Play",
         Gold: "MMM",
         Silver: "Patel",
-        Bronze: "RK"
+        Bronze: "RK",
       },
       {
         Event: "Eastern vocals",
         Gold: "SN/IG",
         Silver: "Nehru",
-        Bronze: "BRH"
+        Bronze: "BRH",
       },
       {
         Event: "Painting",
         Gold: "Azad",
         Silver: "SN/IG",
-        Bronze: "JCB"
+        Bronze: "JCB",
       },
       {
         Event: "Western Instrumentals",
         Gold: "VS",
         Silver: "JCB",
-        Bronze: "RK"
+        Bronze: "RK",
       },
       {
         Event: "Debate",
         Gold: "SN/IG",
         Silver: "MT",
-        Bronze: "RP"
+        Bronze: "RP",
       },
       {
         Event: "Western Vocals",
         Gold: "Azad",
         Silver: "Nehru",
-        Bronze: "RK"
-      }
-    ]
-  }
+        Bronze: "RK",
+      },
+    ],
+  },
+  "2025-26": {
+    Sports: {
+      Male: [],
+      Female: [],
+    },
+    Technology: [],
+    Socult: [
+      {
+        Event: "Overall",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "Street Play",
+        Gold: "MMM",
+        Silver: "RPH",
+        Bronze: "LLR",
+      },
+      {
+        Event: "Stage Play",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "Monologue",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "Group Dance",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "Duet Dance",
+        Gold: "RPH",
+        Silver: "LBS",
+        Bronze: "NHR",
+      },
+      {
+        Event: "E Instrumentals",
+        Gold: "PTH",
+        Silver: "NHR",
+        Bronze: "RKH",
+      },
+      {
+        Event: "W Instrumentals",
+        Gold: "PTH",
+        Silver: "RPH",
+        Bronze: "NHR",
+      },
+      {
+        Event: "E Vocals",
+        Gold: "RKH",
+        Silver: "RPH",
+        Bronze: "NHR",
+      },
+      {
+        Event: "W Vocals",
+        Gold: "RKH",
+        Silver: "AZAD",
+        Bronze: "SBP - 1",
+      },
+      {
+        Event: "Groups",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "Painting",
+        Gold: "NHR",
+        Silver: "RPH",
+        Bronze: "AZAD",
+      },
+      {
+        Event: "Sketching",
+        Gold: "LLR",
+        Silver: "RPH",
+        Bronze: "NHR",
+      },
+      {
+        Event: "Cartooning",
+        Gold: "AZAD",
+        Silver: "MS",
+        Bronze: "SNIG",
+      },
+      {
+        Event: "Design Marathon",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "General Quiz",
+        Gold: "PTH",
+        Silver: "VS",
+        Bronze: "NHR",
+      },
+      {
+        Event: "Asian Parliamentary Debate",
+        Gold: "NHR",
+        Silver: "SNIG",
+        Bronze: "RPH",
+      },
+      {
+        Event: "Poetry Slam (English and Hindi)",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "Creative Writing (English and Hindi)",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "Scrabble",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "Standup Comedy",
+        Gold: "PTH",
+        Silver: "RKH",
+        Bronze: "LLR",
+      },
+      {
+        Event: "Short Film Making",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+      {
+        Event: "Photostory",
+        Gold: "",
+        Silver: "",
+        Bronze: "",
+      },
+    ],
+  },
 };
 
 export default GCdata;

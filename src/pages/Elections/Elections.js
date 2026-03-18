@@ -5,47 +5,42 @@ import Layout from "../../components/Layouts/Layout";
 import Styles from "./elections.module.css";
 import LaunchIcon from "@material-ui/icons/Launch";
 export default function Elections() {
-  document.title = "Elections 2025-2026 | TSG";
+  document.title = "Elections 2026-2027 | TSG";
   return (
     <Layout>
       <div className={Styles.electionHeaderImg}></div>
       <Container className={Styles.electionsContainer}>
         <Typography
-          variant="h4"
+          variant='h4'
           style={{
             color: "#f1c40f",
             fontFamily: "Lato",
             fontWeight: "600",
           }}
-          align="center"
-        >
+          align='center'>
           {" "}
-          TSG Elections 2025-2026
+          TSG Elections 2026-2027
         </Typography>
         <Box className={Styles.electionBody}>
-          <Typography variant="body2">
-            Each year Technology Students’ Gymkhana (TSG), IIT Kharagpur carries
-            out election to select office bearers from students for smooth
-            conduction of student related activities.
+          <Typography variant='body2'>
+            Each year Technology Students’ Gymkhana (TSG), IIT Kharagpur carries out election to select office bearers
+            from students for smooth conduction of student related activities.
           </Typography>
-          <Typography variant="body2">
-            The nomination, approval and voting will be done using digital
-            platform developed by ERP, IIT Kharagpur. The date for Gymkhana
-            Election is as follows:
+          <Typography variant='body2'>
+            The nomination, approval and voting will be done using digital platform developed by ERP, IIT Kharagpur. The
+            date for Gymkhana Election is as follows:
           </Typography>
-          <Typography variant="body2">
-            <b>Date of Election:</b> 6th April 2025 (Saturday) <br />
-            <b>Time of Election:</b> 8:00 AM to 6:00 PM <br />
-            <b>Venue:</b> Computer & Informatics Center (CIC), Takshashila, IIT
-            Kharagpur <br />
+          <Typography variant='body2'>
+            <b>Date of Election:</b> 5th April 2026 (Sunday) <br />
+            <b>Time of Election:</b> 9:00 AM to 6:00 PM <br />
+            <b>Venue:</b> Computer & Informatics Center (CIC), Takshashila, IIT Kharagpur <br />
             Platform: Institute ERP <br />
             <br />
-            Note: Remember to keep your ID card, ERP and Institute Email
-            password with you when you go for voting!
+            Note: Remember to keep your ID card, ERP and Institute Email password with you when you go for voting!
           </Typography>
         </Box>
         <Box className={Styles.electionBody}>
-          <Typography variant="h5">Notices:</Typography>
+          <Typography variant='h5'>Notices:</Typography>
           <Box className={Styles.notices}>
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
@@ -62,51 +57,34 @@ export default function Elections() {
                   </a>
                   </Button>
                 </Typography> */}
-            <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                Elections 2025-2026 Results
-              </div>
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>Elections 2026-2027 Results</div>
               <Button>
-                <a
-                  href="/data/media/files/Results_2025.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
-                >
+                <a href='/data/media/files/Results_2026.pdf' lat='notice' target='_blank' rel='noopener'>
                   View Result <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
-            <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                Advisory for TSG Elections 2025-26
-              </div>
+            </Typography> */}
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>Advisory for TSG Elections 2026-27</div>
               <Button>
                 <a
-                  href="/data/media/files/Advisory_TSG_Elections_2025-26.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
-                >
+                  href='/data/media/files/Advisory_TSG_Elections_2026-27.pdf'
+                  lat='notice'
+                  target='_blank'
+                  rel='noopener'>
                   View Notice <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
-            <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                SOAPBOX SCHEDULE 2025-26
-              </div>
+            </Typography> */}
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>SOAPBOX SCHEDULE 2026-27</div>
               <Button>
-                <a
-                  href="/data/media/files/SOAPBOX_Schedule_2025-26.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
-                >
+                <a href='/data/media/files/SOAPBOX_Schedule_2026-27.pdf' lat='notice' target='_blank' rel='noopener'>
                   View Schedule <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
+            </Typography> */}
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>
               Final List of Candidates for TSG Election (2023-24)
@@ -134,58 +112,39 @@ export default function Elections() {
               Complex, IIT Kharagpur
               </div>
             </Typography> */}
-            <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                Final Proposals of Candidates
-              </div>
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>Final Proposals of Candidates</div>
               <Button>
-                <a href="/elections/candidates" lat="notice" rel="noopener">
+                <a href='/elections/candidates' lat='notice' rel='noopener'>
                   View Proposals &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
-            <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                Final List of Nominations for TSG Election (2025-26)
-              </div>
+            </Typography> */}
+            {/* <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>Final List of Nominations for TSG Election (2026-27)</div>
               <Button>
                 <a
-                  href="/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
-                >
+                  href='/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf'
+                  lat='notice'
+                  target='_blank'
+                  rel='noopener'>
                   View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography>
+            </Typography> */}
             <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                TSG Election (2025-2026) Notification
-              </div>
+              <div className={Styles.noticeDescription}>TSG Election (2026-2027) Notification</div>
               <Button>
-                <a
-                  href="/data/media/files/Election 2025-26.pdf"
-                  lat="notice"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  View Schedule and Rules &nbsp; <LaunchIcon />
+                <a href='/data/media/files/Election 2026-27.pdf' lat='notice' target='_blank' rel='noopener'>
+                  View Schedule and Rules <LaunchIcon />
                 </a>
               </Button>
             </Typography>
             <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>
-                Election Officer (2025 - 2026)
-              </div>
+              <div className={Styles.noticeDescription}>Election Officer (2026 - 2027)</div>
               <Button>
-                <a
-                  href="mailto:samantaray@mech.iitkgp.ac.in"
-                  lat="eo_mail"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Prof. Arun Kumar Samantaray &nbsp; <LaunchIcon />
+                <a href='mailto:uday@rgsoipl.iitkgp.ac.in' lat='eo_mail' target='_blank' rel='noreferrer'>
+                  Prof. Uday Shankar &nbsp; <LaunchIcon />
                 </a>
               </Button>
             </Typography>
@@ -239,36 +198,27 @@ export default function Elections() {
           </Box>
         </Box>
         <Box className={Styles.electionBody}>
-          <Typography variant="h5">Relevant Documents:</Typography>
+          <Typography variant='h5'>Relevant Documents:</Typography>
           <Box className={Styles.buttonGroup}>
             {" "}
             <Button>
               {" "}
-              <a
-                href="/data/media/files/Rules 2025-26.pdf"
-                alt="notification"
-                target="_blank"
-              >
+              <a href='/data/media/files/Rules 2026-27.pdf' alt='notification' target='_blank'>
                 Rules
               </a>
             </Button>
             <Button>
               {" "}
               <a
-                href="/data/media/files/General_Conduct_Rules_and_Guidelines_of_IIT_Kharagpur.pdf"
-                alt="notification"
-                target="_blank"
-              >
+                href='/data/media/files/General_Conduct_Rules_and_Guidelines_of_IIT_Kharagpur.pdf'
+                alt='notification'
+                target='_blank'>
                 Conduct Guidelines
               </a>
             </Button>
             <Button>
               {" "}
-              <a
-                href="/data/media/files/voting_procedure.pdf"
-                alt="notification"
-                target="_blank"
-              >
+              <a href='/data/media/files/voting_procedure.pdf' alt='notification' target='_blank'>
                 Voting Procedure
               </a>
             </Button>

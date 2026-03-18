@@ -4,6 +4,7 @@ import GC from "./data/GCdata";
 import InterIITdata from "./data/InterIITdata";
 
 const years = [
+  "2025-26",
   "2024-25",
   "2023-24",
   "2022-23",
@@ -32,7 +33,7 @@ export default function RenderResultsFromDropdown({ option }) {
   return (
     <>
       {/* Year Dropdown menu selector */}
-      <div className="select">
+      <div className='select'>
         <select value={year} onChange={(e) => setYear(e.target.value)}>
           {years.map((year) => (
             <option key={year} value={year}>
@@ -46,26 +47,26 @@ export default function RenderResultsFromDropdown({ option }) {
       {option === "SPORTS & GAMES" && (
         <>
           {/* MEN'S STANDINGS */}
-          <h2 className="sectionHeading"> Men's Standings</h2>
-          <div className="table-container" data-aos="zoom-in-up">
+          <h2 className='sectionHeading'> Men's Standings</h2>
+          <div className='table-container' data-aos='zoom-in-up'>
             <table>
               <thead style={{ border: "10px solid #fff" }}>
                 <tr>
                   <th>Sport</th>
                   <th>
-                    <span className="medal gold"></span> Gold
+                    <span className='medal gold'></span> Gold
                   </th>
                   <th>
-                    <span className="medal silver"></span> Silver
+                    <span className='medal silver'></span> Silver
                   </th>
                   <th>
-                    <span className="medal bronze"></span> Bronze
+                    <span className='medal bronze'></span> Bronze
                   </th>
                 </tr>
               </thead>
               <tbody style={{ border: "10px solid #fff" }}>
                 {data[String(year)]?.Sports.Male.map((item) => (
-                  <tr id="overall">
+                  <tr id='overall'>
                     <td>{item.Sport}</td>
                     <td>{item.Gold} </td>
                     <td>{item.Silver} </td>
@@ -76,26 +77,26 @@ export default function RenderResultsFromDropdown({ option }) {
             </table>
           </div>
           {/* WOMEN'S STANDINGS */}
-          <h2 className="sectionHeading"> Women's Standings</h2>
-          <div className="table-container" data-aos="zoom-in-up">
+          <h2 className='sectionHeading'> Women's Standings</h2>
+          <div className='table-container' data-aos='zoom-in-up'>
             <table>
               <thead style={{ border: "10px solid #fff" }}>
                 <tr>
                   <th>Sport</th>
                   <th>
-                    <span className="medal gold"></span> Gold
+                    <span className='medal gold'></span> Gold
                   </th>
                   <th>
-                    <span className="medal silver"></span> Silver
+                    <span className='medal silver'></span> Silver
                   </th>
                   <th>
-                    <span className="medal bronze"></span> Bronze
+                    <span className='medal bronze'></span> Bronze
                   </th>
                 </tr>
               </thead>
               <tbody style={{ border: "10px solid #fff" }}>
                 {data[String(year)]?.Sports.Female.map((item) => (
-                  <tr id="overall">
+                  <tr id='overall'>
                     <td>{item.Sport}</td>
                     <td>{item.Gold} </td>
                     <td>{item.Silver} </td>
@@ -110,29 +111,25 @@ export default function RenderResultsFromDropdown({ option }) {
       {/* SOCIAL & CULTURAL */}
       {option === "SOCIAL & CULTURAL" && (
         <>
-          <div
-            className="table-container"
-            data-aos="zoom-in-up"
-            style={{ paddingTop: "2rem" }}
-          >
+          <div className='table-container' data-aos='zoom-in-up' style={{ paddingTop: "2rem" }}>
             <table>
               <thead style={{ border: "10px solid #fff" }}>
                 <tr>
                   <th>Event Genre</th>
                   <th>
-                    <span className="medal gold"></span> Gold
+                    <span className='medal gold'></span> Gold
                   </th>
                   <th>
-                    <span className="medal silver"></span> Silver
+                    <span className='medal silver'></span> Silver
                   </th>
                   <th>
-                    <span className="medal bronze"></span> Bronze
+                    <span className='medal bronze'></span> Bronze
                   </th>
                 </tr>
               </thead>
               <tbody style={{ border: "10px solid #fff" }}>
                 {data[String(year)]?.Socult.map((item) => (
-                  <tr id="overall">
+                  <tr id='overall'>
                     <td>{item.Event}</td>
                     <td>{item.Gold} </td>
                     <td>{item.Silver} </td>
@@ -147,29 +144,25 @@ export default function RenderResultsFromDropdown({ option }) {
       {/* TECHNOLOGY */}
       {option === "TECHNOLOGY" && (
         <>
-          <div
-            className="table-container"
-            data-aos="zoom-in-up"
-            style={{ paddingTop: "2rem" }}
-          >
+          <div className='table-container' data-aos='zoom-in-up' style={{ paddingTop: "2rem" }}>
             <table>
               <thead style={{ border: "10px solid #fff" }}>
                 <tr>
                   <th>Event Genre</th>
                   <th>
-                    <span className="medal gold"></span> Gold
+                    <span className='medal gold'></span> Gold
                   </th>
                   <th>
-                    <span className="medal silver"></span> Silver
+                    <span className='medal silver'></span> Silver
                   </th>
                   <th>
-                    <span className="medal bronze"></span> Bronze
+                    <span className='medal bronze'></span> Bronze
                   </th>
                 </tr>
               </thead>
               <tbody style={{ border: "10px solid #fff" }}>
                 {data[String(year)]?.Technology.map((item) => (
-                  <tr id="overall">
+                  <tr id='overall'>
                     <td>{item.Event}</td>
                     <td>{item.Gold} </td>
                     <td>{item.Silver} </td>
