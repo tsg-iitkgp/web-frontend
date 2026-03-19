@@ -71,7 +71,7 @@ export default function Events() {
         <section className='m-content'>
           <section className={Styles.eventSlider}>
             <AutoplaySlider play={true} interval={5000}>
-              <div data-src='https://gymkhana.iitkgp.ac.in/api/images/events/1764867808454-710781229.jpg' />
+              <div data-src='/data/media/images/events/kgpAct.jpeg' />
               <div
                 data-src='/data/media/images/events/Gaia_Platform_KGP-Cambridge_Collab.JPEG'
                 onClick={() =>

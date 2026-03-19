@@ -112,14 +112,14 @@ export default function Elections() {
               Complex, IIT Kharagpur
               </div>
             </Typography> */}
-            {/* <Typography className={Styles.notice}>
+            <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>Final Proposals of Candidates</div>
               <Button>
                 <a href='/elections/candidates' lat='notice' rel='noopener'>
                   View Proposals &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography> */}
+            </Typography>
             {/* <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>Final List of Nominations for TSG Election (2026-27)</div>
               <Button>
