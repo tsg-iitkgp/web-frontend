@@ -7,7 +7,7 @@ import { candidates, secyPosts, posts } from "../../data/electionsData";
 import ElectionCard from "./ElectionCard";
 
 export default function Elections() {
-  document.title = "Election Candidates 2025-2026 | TSG";
+  document.title = "Election Candidates 2026-2027 | TSG";
   const [post, setPost] = useState("VP");
   const [secyPost, setSecyPost] = useState("Football");
   const handlePostChange = (e) => {
@@ -29,7 +29,7 @@ export default function Elections() {
           align="center"
         >
           {" "}
-          TSG Elections 2025-2026
+          TSG Elections 2026-2027
         </Typography>
         <Box className={Styles.postSelector}>
           <select
