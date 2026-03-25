@@ -120,18 +120,20 @@ export default function Elections() {
                 </a>
               </Button>
             </Typography>
-            {/* <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>Final List of Nominations for TSG Election (2026-27)</div>
+            <Typography className={Styles.notice}>
+              <div className={Styles.noticeDescription}>
+                List of the Candidates filled Nominations - TSG Election 2026
+              </div>
               <Button>
                 <a
-                  href='/data/media/files/Final_List_of_Candidates_for_Election_of_Office_Bearers_of_TSG.pdf'
+                  href='/data/media/files/List of the Candidates filled Nominations - TSG Election 2026.pdf'
                   lat='notice'
                   target='_blank'
                   rel='noopener'>
                   View List &nbsp; <LaunchIcon />
                 </a>
               </Button>
-            </Typography> */}
+            </Typography>
             <Typography className={Styles.notice}>
               <div className={Styles.noticeDescription}>TSG Election (2026-2027) Notification</div>
               <Button>
