@@ -7,7 +7,7 @@
 }
 
 .electionsContainer {
-  margin-top: 5vh;
+  margin-top: 10vh;
   min-height: 80vh;
   font-family: "Lato";
 }
@@ -31,13 +31,13 @@
 
 .electionBody {
   color: rgba(255, 255, 255, 0.8);
-  margin-top: 2rem; 
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 720px) {
   .electionBody {
     color: rgba(255, 255, 255, 0.8);
-    margin: 2rem 15rem 0; 
+    margin: 2rem 15rem 0;
   }
 }
 
