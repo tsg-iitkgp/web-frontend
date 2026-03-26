@@ -10,10 +10,10 @@ export default function Nominations() {
   const [loading, setLoading] = useState(false);
 
   const tabFormUrls = {
-    "Public Relations' Chairperson": "https://forms.gle/26D1EfaycHzHftca9",
-    "Technology Coordinators": "https://forms.gle/HSRmquLEUuzrNRTy6",
-    "Editors": "https://forms.gle/6GcDdCe2gCPepfqKA",
-    "Institute Girls' Sports Nominee": "https://forms.gle/r42APyuWTPx81RE66",
+    "Public Relations' Chairperson": "https://forms.gle/zbmqWn5DBc73rA8a7",
+    "Technology Coordinators": "https://docs.google.com/forms/d/e/1FAIpQLScYUBiVw9YU_0pLtcE6Q3TRnIDe1hkawNNjwe2-Uk5kYYUNag/viewform?usp=header",
+    "Editors": "https://forms.gle/ZbMfoG3k6NGFkHWJA",
+    "Institute Girls' Sports Nominee": "https://docs.google.com/forms/d/e/1FAIpQLScYh3heOcACxbfWs0mSRkuWB2HYXNF88AjIO4k3vG1VghAllQ/viewform",
   };
 
   const handleTabChange = (s) => {
