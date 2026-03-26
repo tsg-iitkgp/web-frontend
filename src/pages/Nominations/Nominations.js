@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Styles from "./nominations.module.css";
 import Layout from "../../components/Layouts/Layout";
 export default function Nominations() {
-  document.title = "Nominations 2025-2026 | TSG";
+  document.title = "Nominations 2026-2027 | TSG";
 
   const [currentTab, setCurrentTab] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -36,7 +36,7 @@ export default function Nominations() {
           }}
           align="center"
         >
-          Applications - Nominated Office Bearers (2025-2026)
+          Applications - Nominated Office Bearers (2026-2027)
         </Typography>
 
         <Box className={Styles.electionBody}>
