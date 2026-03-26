@@ -121,10 +121,10 @@ export default function Elections() {
               </Button>
             </Typography>
             <Typography className={Styles.notice}>
-              <div className={Styles.noticeDescription}>Initial List of Candidates - TSG Election 2026</div>
+              <div className={Styles.noticeDescription}>Final List of Candidates - TSG Election 2026</div>
               <Button>
                 <a
-                  href='/data/media/files/Initial List of Candidates - TSG Election 2026.pdf'
+                  href='/data/media/files/Final List of Candidates - TSG Election 2026.pdf'
                   lat='notice'
                   target='_blank'
                   rel='noopener'>
