@@ -112,7 +112,7 @@ export const candidates = {
     {
       RollNo: "24MF10024",
       Description: "MF",
-      Name: "Bhirgu Raj",
+      Name: "Bhrigu Raj",
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
