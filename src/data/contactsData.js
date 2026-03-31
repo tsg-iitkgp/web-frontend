@@ -39,7 +39,7 @@ export default {
     },
     {
       RollNo: "Honorary Treasurer",
-      Name: "Prof. Probal Senaupnta",
+      Name: "Prof. Probal Sengupta",
       Post: "Honorary Treasurer",
       img: "HonoraryTreasurer.jpeg",
       Facebook: "",
