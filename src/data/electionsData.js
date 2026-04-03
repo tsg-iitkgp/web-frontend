@@ -145,7 +145,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24AR10031.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Nitesh_Socult.jpeg",
     },
     {
       RollNo: "24AG10047",
@@ -222,7 +222,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24AR10014.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Aayan_Welfare.jpeg",
     },
     {
       RollNo: "24IM10045",
