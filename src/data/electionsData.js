@@ -42,7 +42,7 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
-      img: "",
+      img: "Sangekar_VP.jpeg",
       Proposal: "",
       ProposalLink: "23EX10031.pdf",
       FacebookLink: "",
@@ -54,7 +54,7 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
-      img: "",
+      img: "Divyansh_VP.JPG",
       Proposal: "",
       ProposalLink: "23HS10020.pdf",
       FacebookLink: "",
@@ -66,7 +66,7 @@ export const candidates = {
       Contact: "XXX XXX XXX",
       Hall: "",
       Email: "",
-      img: "",
+      img: "Neeraj_VP.webp",
       Proposal: "",
       ProposalLink: "23MT10008.pdf",
       FacebookLink: "",
@@ -95,7 +95,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24GG10014.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Daksh_Sports.jpg",
     },
     {
       RollNo: "24AR10028",
@@ -107,7 +107,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24AR10028.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Meenu_Sports.jpeg",
     },
     {
       RollNo: "24MF10024",
@@ -119,7 +119,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24MF10024.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Bhrigu_Sports.jpg",
     },
     {
       RollNo: "24MT10028",
@@ -131,7 +131,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24MT10028.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Aparajita_Sports.jpg",
     },
   ],
   Gsec_Socult: [
@@ -157,7 +157,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24AG10047.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Lokesh_Socult.jpg",
     },
 
     {
@@ -184,7 +184,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24CH10074.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Modi_Tech.jpeg",
     },
     {
       RollNo: "24CY10021",
@@ -196,7 +196,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24CY10021.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Gyan_Tech.jpeg",
     },
     {
       RollNo: "24MI10078",
@@ -208,7 +208,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24MI10078.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Patil_Tech.jpg",
     },
   ],
   Gsec_WM: [
@@ -234,7 +234,7 @@ export const candidates = {
       Proposal: "",
       ProposalLink: "24IM10045.pdf",
       FacebookLink: "",
-      img: "",
+      img: "Kshitij_Welfare.jpeg",
     },
   ],
   Gsec_WF: [],
